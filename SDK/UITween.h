@@ -56,9 +56,9 @@ public:
 
 	/// Functions
 	// Function /Script/UITween.UITween.Create
-	// class UUITweenInstance* Create(class UWidget* targetWidget, float Duration, float Delay, EEasingType Easing);         // [0x4a116b0] Final|Native|Static|Public|BlueprintCallable 
+	// class UUITweenInstance* Create(class UWidget* targetWidget, float Duration, float Delay, EEasingType Easing);         // [0x49cb860] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/UITween.UITween.Clear
-	// void Clear(class UWidget* targetWidget);                                                                              // [0x4a11630] Final|Native|Static|Public|BlueprintCallable 
+	// void Clear(class UWidget* targetWidget);                                                                              // [0x49cb7e0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/UITween.UITweenMaterialScalarProperties
@@ -84,8 +84,8 @@ public:
 class UUITweenInstance : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,3209) /* FMulticastInlineDelegate */ __um(TweenCompletedDelegate);                            // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,3210) /* FMulticastInlineDelegate */ __um(TweenUpdatedDelegate);                              // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,3283) /* FMulticastInlineDelegate */ __um(TweenCompletedDelegate);                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,3284) /* FMulticastInlineDelegate */ __um(TweenUpdatedDelegate);                              // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x98];                                      // 0x0050   (0x0098)  MISSED
 	TArray<class UUITweenMaterialScalarProperties*>    _materialScalarProperties;                                  // 0x00E8   (0x0010)  
 	TArray<class UUITweenMaterialVectorProperties*>    _materialVectorProperties;                                  // 0x00F8   (0x0010)  
@@ -94,48 +94,48 @@ public:
 
 	/// Functions
 	// Function /Script/UITween.UITweenInstance.TweenFloatProperty
-	// class UUITweenInstance* TweenFloatProperty(float startValue, float targetValue);                                      // [0x4a12430] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* TweenFloatProperty(float startValue, float targetValue);                                      // [0x49cc5e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToTranslation
-	// class UUITweenInstance* ToTranslation(FVector2D targetValue);                                                         // [0x4a12390] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* ToTranslation(FVector2D targetValue);                                                         // [0x49cc540] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToScale
-	// class UUITweenInstance* ToScale(FVector2D targetValue);                                                               // [0x4a122f0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* ToScale(FVector2D targetValue);                                                               // [0x49cc4a0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToReset
-	// class UUITweenInstance* ToReset();                                                                                    // [0x4a12270] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* ToReset();                                                                                    // [0x49cc420] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToOpacity
-	// class UUITweenInstance* ToOpacity(float targetValue);                                                                 // [0x4a121d0] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* ToOpacity(float targetValue);                                                                 // [0x49cc380] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToMaterialVectorParameter
-	// class UUITweenInstance* ToMaterialVectorParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, FLinearColor targetValue); // [0x4a12080] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* ToMaterialVectorParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, FLinearColor targetValue); // [0x49cc230] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToMaterialScalarParameter
-	// class UUITweenInstance* ToMaterialScalarParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, float targetValue); // [0x4a11f40] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* ToMaterialScalarParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, float targetValue); // [0x49cc0f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.ToColor
-	// class UUITweenInstance* ToColor(FLinearColor targetValue);                                                            // [0x4a11eb0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* ToColor(FLinearColor targetValue);                                                            // [0x49cc060] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.GetTargetWidget
-	// class UWidget* GetTargetWidget();                                                                                     // [0x4a11e80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UWidget* GetTargetWidget();                                                                                     // [0x49cc030] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UITween.UITweenInstance.GetProgress
-	// float GetProgress();                                                                                                  // [0x4a11e60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetProgress();                                                                                                  // [0x49cc010] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UITween.UITweenInstance.GetFloatValue
-	// float GetFloatValue();                                                                                                // [0x4a11e20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFloatValue();                                                                                                // [0x49cbfd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UITween.UITweenInstance.GetEasing
-	// EEasingType GetEasing();                                                                                              // [0x4a11e00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EEasingType GetEasing();                                                                                              // [0x49cbfb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UITween.UITweenInstance.GetDuration
-	// float GetDuration();                                                                                                  // [0x4a11de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDuration();                                                                                                  // [0x49cbf90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UITween.UITweenInstance.GetDelay
-	// float GetDelay();                                                                                                     // [0x4a11dc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDelay();                                                                                                     // [0x49cbf70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/UITween.UITweenInstance.FromTranslation
-	// class UUITweenInstance* FromTranslation(FVector2D startValue);                                                        // [0x4a11d10] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* FromTranslation(FVector2D startValue);                                                        // [0x49cbec0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.FromScale
-	// class UUITweenInstance* FromScale(FVector2D startValue);                                                              // [0x4a11c60] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* FromScale(FVector2D startValue);                                                              // [0x49cbe10] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.FromOpacity
-	// class UUITweenInstance* FromOpacity(float startValue);                                                                // [0x4a11bc0] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* FromOpacity(float startValue);                                                                // [0x49cbd70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.FromMaterialVectorParameter
-	// class UUITweenInstance* FromMaterialVectorParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, FLinearColor targetValue); // [0x4a11a70] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* FromMaterialVectorParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, FLinearColor targetValue); // [0x49cbc20] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.FromMaterialScalarParameter
-	// class UUITweenInstance* FromMaterialScalarParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, float targetValue); // [0x4a11930] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* FromMaterialScalarParameter(class UMaterialInstanceDynamic* targetMaterialInstance, FName targetParameterName, float targetValue); // [0x49cbae0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.FromColor
-	// class UUITweenInstance* FromColor(FLinearColor startValue);                                                           // [0x4a11890] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// class UUITweenInstance* FromColor(FLinearColor startValue);                                                           // [0x49cba40] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.Easing
-	// class UUITweenInstance* Easing(EEasingType InType);                                                                   // [0x4a11800] Final|Native|Public|BlueprintCallable 
+	// class UUITweenInstance* Easing(EEasingType InType);                                                                   // [0x49cb9b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/UITween.UITweenInstance.Begin
-	// void Begin();                                                                                                         // [0x4a11610] Final|Native|Public|BlueprintCallable 
+	// void Begin();                                                                                                         // [0x49cb7c0] Final|Native|Public|BlueprintCallable 
 };
 

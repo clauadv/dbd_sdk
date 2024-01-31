@@ -36,13 +36,13 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.BaseModifierContainer.OnRep_EventDrivenConditionData_Internal
-	// void OnRep_EventDrivenConditionData_Internal(FModifierReplicatedEventConditionData& oldReplicatedCondition);          // [0x8563b30] Final|Native|Private|HasOutParms 
+	// void OnRep_EventDrivenConditionData_Internal(FModifierReplicatedEventConditionData& oldReplicatedCondition);          // [0x8574f10] Final|Native|Private|HasOutParms 
 	// Function /Script/Competence.BaseModifierContainer.IsApplicable
-	// bool IsApplicable();                                                                                                  // [0x5db7b60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsApplicable();                                                                                                  // [0x5dc55d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Competence.BaseModifierContainer.CreateAndSetEventDrivenCondition
-	// class UEventDrivenModifierCondition* CreateAndSetEventDrivenCondition(class UClass* conditionType);                   // [0x8563a90] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// class UEventDrivenModifierCondition* CreateAndSetEventDrivenCondition(class UClass* conditionType);                   // [0x8574e70] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/Competence.BaseModifierContainer.Authority_OnInstantiateModifierConditions
-	// void Authority_OnInstantiateModifierConditions();                                                                     // [0x61c32d0] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
+	// void Authority_OnInstantiateModifierConditions();                                                                     // [0x61d2f50] BlueprintAuthorityOnly|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Competence.BaseModifierCondition
@@ -57,15 +57,15 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.BaseModifierCondition.SetSubjectProviderClass
-	// void SetSubjectProviderClass(class UClass* subjectProviderClass);                                                     // [0x8563610] Final|Native|Public|BlueprintCallable 
+	// void SetSubjectProviderClass(class UClass* subjectProviderClass);                                                     // [0x85749f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Competence.BaseModifierCondition.OnRep_SubjectProviderClass
-	// void OnRep_SubjectProviderClass();                                                                                    // [0x85635f0] Final|Native|Private 
+	// void OnRep_SubjectProviderClass();                                                                                    // [0x85749d0] Final|Native|Private 
 	// Function /Script/Competence.BaseModifierCondition.OnRep_OwningModifier
-	// void OnRep_OwningModifier();                                                                                          // [0x85635d0] Final|Native|Private 
+	// void OnRep_OwningModifier();                                                                                          // [0x85749b0] Final|Native|Private 
 	// Function /Script/Competence.BaseModifierCondition.InitializeSubjectProviderClass
-	// void InitializeSubjectProviderClass();                                                                                // [0x4e01240] Native|Event|Protected|BlueprintEvent 
+	// void InitializeSubjectProviderClass();                                                                                // [0x4dd4860] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/Competence.BaseModifierCondition.GetOwningActor
-	// class AActor* GetOwningActor();                                                                                       // [0x85635a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetOwningActor();                                                                                       // [0x8574980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Competence.EventDrivenModifierCondition
@@ -87,9 +87,9 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.RangeBasedCondition.SetRange
-	// void SetRange(float newRange);                                                                                        // [0x8566ae0] Final|Native|Public|BlueprintCallable 
+	// void SetRange(float newRange);                                                                                        // [0x8577ec0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Competence.RangeBasedCondition.OnRep_Range
-	// void OnRep_Range();                                                                                                   // [0x8566ac0] Final|Native|Private 
+	// void OnRep_Range();                                                                                                   // [0x8577ea0] Final|Native|Private 
 };
 
 /// Class /Script/Competence.ModifierSubjectProvider
@@ -111,7 +111,7 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.SingleModifierCondition.OnRep_Condition
-	// void OnRep_Condition();                                                                                               // [0x8566d90] Final|Native|Protected 
+	// void OnRep_Condition();                                                                                               // [0x8578170] Final|Native|Protected 
 };
 
 /// Class /Script/Competence.CompositeModifierCondition
@@ -125,7 +125,7 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.CompositeModifierCondition.OnRep_Conditions
-	// void OnRep_Conditions();                                                                                              // [0x8563f80] Final|Native|Private 
+	// void OnRep_Conditions();                                                                                              // [0x8575360] Final|Native|Private 
 };
 
 /// Class /Script/Competence.AndModifierCondition
@@ -152,23 +152,23 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.ConditionFactory.Or
-	// class UOrModifierCondition* Or(TScriptInterface<Class> ConditionReceiver);                                            // [0x8564a70] Final|Native|Static|Public|BlueprintCallable 
+	// class UOrModifierCondition* Or(TScriptInterface<Class> ConditionReceiver);                                            // [0x8575e50] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.Not
-	// class UNotModifierCondition* Not(TScriptInterface<Class> ConditionReceiver);                                          // [0x85649d0] Final|Native|Static|Public|BlueprintCallable 
+	// class UNotModifierCondition* Not(TScriptInterface<Class> ConditionReceiver);                                          // [0x8575db0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.Lingering
-	// class ULingeringModifierCondition* Lingering(TScriptInterface<Class> ConditionReceiver, float timeToTrack);           // [0x85648e0] Final|Native|Static|Public|BlueprintCallable 
+	// class ULingeringModifierCondition* Lingering(TScriptInterface<Class> ConditionReceiver, float timeToTrack);           // [0x8575cc0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.IsTimerDone
-	// class UIsTimerDoneCondition* IsTimerDone(TScriptInterface<Class> ConditionReceiver, class UTimerObject* Timer);       // [0x85647f0] Final|Native|Static|Public|BlueprintCallable 
+	// class UIsTimerDoneCondition* IsTimerDone(TScriptInterface<Class> ConditionReceiver, class UTimerObject* Timer);       // [0x8575bd0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.CreateRangeBasedConditionWithSubject
-	// class URangeBasedCondition* CreateRangeBasedConditionWithSubject(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType, float Range, class UClass* subjectProviderClass); // [0x8564680] Final|Native|Static|Public|BlueprintCallable 
+	// class URangeBasedCondition* CreateRangeBasedConditionWithSubject(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType, float Range, class UClass* subjectProviderClass); // [0x8575a60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.CreateRangeBasedCondition
-	// class URangeBasedCondition* CreateRangeBasedCondition(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType, float Range); // [0x8564540] Final|Native|Static|Public|BlueprintCallable 
+	// class URangeBasedCondition* CreateRangeBasedCondition(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType, float Range); // [0x8575920] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.CreateAndReceiveConditionWithSubjectForBP
-	// class UEventDrivenModifierCondition* CreateAndReceiveConditionWithSubjectForBP(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType, class UClass* subjectProviderClass); // [0x8564410] Final|Native|Static|Public|BlueprintCallable 
+	// class UEventDrivenModifierCondition* CreateAndReceiveConditionWithSubjectForBP(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType, class UClass* subjectProviderClass); // [0x85757f0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.CreateAndReceiveConditionForBP
-	// class UEventDrivenModifierCondition* CreateAndReceiveConditionForBP(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType); // [0x8564320] Final|Native|Static|Public|BlueprintCallable 
+	// class UEventDrivenModifierCondition* CreateAndReceiveConditionForBP(TScriptInterface<Class> ConditionReceiver, class UClass* conditionType); // [0x8575700] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/Competence.ConditionFactory.And
-	// class UAndModifierCondition* And(TScriptInterface<Class> ConditionReceiver);                                          // [0x8564280] Final|Native|Static|Public|BlueprintCallable 
+	// class UAndModifierCondition* And(TScriptInterface<Class> ConditionReceiver);                                          // [0x8575660] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/Competence.HasObjectState
@@ -182,7 +182,7 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.HasObjectState.SetState
-	// void SetState(FGameplayTag State);                                                                                    // [0x8565810] Final|Native|Public|BlueprintCallable 
+	// void SetState(FGameplayTag State);                                                                                    // [0x8576bf0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Competence.HasObjectStateWithMaxDuration
@@ -197,7 +197,7 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.HasObjectStateWithMaxDuration.SetMaxDuration
-	// void SetMaxDuration(float Duration);                                                                                  // [0x57add90] Final|Native|Public|BlueprintCallable 
+	// void SetMaxDuration(float Duration);                                                                                  // [0x57b0c10] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Competence.CompetenceFlagProvider
@@ -232,9 +232,9 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.IsTimerDoneCondition.SetTimer
-	// void SetTimer(class UTimerObject* Timer);                                                                             // [0x8565fa0] Final|Native|Public|BlueprintCallable 
+	// void SetTimer(class UTimerObject* Timer);                                                                             // [0x8577380] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Competence.IsTimerDoneCondition.OnRep_Timer
-	// void OnRep_Timer();                                                                                                   // [0x8565f80] Final|Native|Private 
+	// void OnRep_Timer();                                                                                                   // [0x8577360] Final|Native|Private 
 };
 
 /// Class /Script/Competence.LingeringModifierCondition
@@ -249,7 +249,7 @@ public:
 
 	/// Functions
 	// Function /Script/Competence.LingeringModifierCondition.OnTimerEnd
-	// void OnTimerEnd();                                                                                                    // [0x8566300] Final|Native|Private 
+	// void OnTimerEnd();                                                                                                    // [0x85776e0] Final|Native|Private 
 };
 
 /// Class /Script/Competence.NotModifierCondition

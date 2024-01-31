@@ -458,7 +458,7 @@ enum class EHoudiniRuntimeSettingsSessionType : uint8_t
 class UHoudiniAsset : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4702) /* FString */               __um(AssetFileName);                                        // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5096) /* FString */               __um(AssetFileName);                                        // 0x0030   (0x0010)  
 	TArray<char>                                       AssetBytes;                                                 // 0x0040   (0x0010)  
 	uint32_t                                           AssetBytesCount;                                            // 0x0050   (0x0004)  
 	bool                                               bAssetLimitedCommercial;                                    // 0x0054   (0x0001)  
@@ -483,7 +483,7 @@ struct FHoudiniStaticMeshGenerationProperties
 	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0001   (0x0007)  MISSED
 	class UPhysicalMaterial*                           GeneratedPhysMaterial;                                      // 0x0008   (0x0008)  
 	FBodyInstance                                      DefaultBodyInstance;                                        // 0x0010   (0x0160)  
-	SDK_UNDEFINED(1,4703) /* TEnumAsByte<ECollisionTraceFlag> */ __um(GeneratedCollisionTraceFlag);                // 0x0170   (0x0001)  
+	SDK_UNDEFINED(1,5097) /* TEnumAsByte<ECollisionTraceFlag> */ __um(GeneratedCollisionTraceFlag);                // 0x0170   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0171   (0x0003)  MISSED
 	int32_t                                            GeneratedLightMapResolution;                                // 0x0174   (0x0004)  
 	FWalkableSlopeOverride                             GeneratedWalkableSlopeOverride;                             // 0x0178   (0x0010)  
@@ -500,7 +500,7 @@ struct FHoudiniStaticMeshGenerationProperties
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FHoudiniBakedOutput
 { 
-	SDK_UNDEFINED(80,4704) /* TMap<FHoudiniBakedOutputObjectIdentifier, FHoudiniBakedOutputObject> */ __um(BakedOutputObjects); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,5098) /* TMap<FHoudiniBakedOutputObjectIdentifier, FHoudiniBakedOutputObject> */ __um(BakedOutputObjects); // 0x0000   (0x0050)  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniAssetComponent
@@ -534,11 +534,11 @@ public:
 	unsigned char                                      UnknownData04_5[0x2];                                       // 0x06AA   (0x0002)  MISSED
 	int32_t                                            AssetId;                                                    // 0x06AC   (0x0004)  
 	TArray<int32_t>                                    NodeIdsToCook;                                              // 0x06B0   (0x0010)  
-	SDK_UNDEFINED(80,4705) /* TMap<int32_t, int32_t> */ __um(OutputNodeCookCounts);                                // 0x06C0   (0x0050)  
-	SDK_UNDEFINED(80,4706) /* TSet<UHoudiniAssetComponent*> */ __um(DownstreamHoudiniAssets);                      // 0x0710   (0x0050)  
+	SDK_UNDEFINED(80,5099) /* TMap<int32_t, int32_t> */ __um(OutputNodeCookCounts);                                // 0x06C0   (0x0050)  
+	SDK_UNDEFINED(80,5100) /* TSet<UHoudiniAssetComponent*> */ __um(DownstreamHoudiniAssets);                      // 0x0710   (0x0050)  
 	FGuid                                              ComponentGUID;                                              // 0x0760   (0x0010)  
 	FGuid                                              HapiGUID;                                                   // 0x0770   (0x0010)  
-	SDK_UNDEFINED(16,4707) /* FString */               __um(HapiAssetName);                                        // 0x0780   (0x0010)  
+	SDK_UNDEFINED(16,5101) /* FString */               __um(HapiAssetName);                                        // 0x0780   (0x0010)  
 	EHoudiniAssetState                                 AssetState;                                                 // 0x0790   (0x0001)  
 	EHoudiniAssetState                                 DebugLastAssetState;                                        // 0x0791   (0x0001)  
 	EHoudiniAssetStateResult                           AssetStateResult;                                           // 0x0792   (0x0001)  
@@ -562,7 +562,7 @@ public:
 	TArray<class UHoudiniInput*>                       Inputs;                                                     // 0x07F8   (0x0010)  
 	TArray<class UHoudiniOutput*>                      Outputs;                                                    // 0x0808   (0x0010)  
 	TArray<FHoudiniBakedOutput>                        BakedOutputs;                                               // 0x0818   (0x0010)  
-	SDK_UNDEFINED(16,4708) /* TArray<TWeakObjectPtr<AActor*>> */ __um(UntrackedOutputs);                           // 0x0828   (0x0010)  
+	SDK_UNDEFINED(16,5102) /* TArray<TWeakObjectPtr<AActor*>> */ __um(UntrackedOutputs);                           // 0x0828   (0x0010)  
 	TArray<class UHoudiniHandleComponent*>             HandleComponents;                                           // 0x0838   (0x0010)  
 	bool                                               bHasComponentTransformChanged;                              // 0x0848   (0x0001)  
 	bool                                               bFullyLoaded;                                               // 0x0849   (0x0001)  
@@ -572,7 +572,7 @@ public:
 	unsigned char                                      UnknownData08_5[0x18];                                      // 0x0860   (0x0018)  MISSED
 	bool                                               bNoProxyMeshNextCookRequested;                              // 0x0878   (0x0001)  
 	unsigned char                                      UnknownData09_5[0x7];                                       // 0x0879   (0x0007)  MISSED
-	SDK_UNDEFINED(80,4709) /* TMap<UObject*, int32_t> */ __um(InputPresets);                                       // 0x0880   (0x0050)  
+	SDK_UNDEFINED(80,5103) /* TMap<UObject*, int32_t> */ __um(InputPresets);                                       // 0x0880   (0x0050)  
 	bool                                               bBakeAfterNextCook;                                         // 0x08D0   (0x0001)  
 	unsigned char                                      UnknownData10_5[0x5F];                                      // 0x08D1   (0x005F)  MISSED
 	bool                                               bCachedIsPreview;                                           // 0x0930   (0x0001)  
@@ -594,18 +594,18 @@ public:
 	bool                                               bCanDeleteHoudiniNodes;                                     // 0x09AC   (0x0001)  
 	bool                                               bHasRegisteredComponentTemplate;                            // 0x09AD   (0x0001)  
 	unsigned char                                      UnknownData01_5[0xA];                                       // 0x09AE   (0x000A)  MISSED
-	SDK_UNDEFINED(80,4710) /* TMap<FHoudiniOutputObjectIdentifier, FGuid> */ __um(CachedOutputNodes);              // 0x09B8   (0x0050)  
-	SDK_UNDEFINED(80,4711) /* TMap<FGuid, FGuid> */    __um(CachedInputNodes);                                     // 0x0A08   (0x0050)  
+	SDK_UNDEFINED(80,5104) /* TMap<FHoudiniOutputObjectIdentifier, FGuid> */ __um(CachedOutputNodes);              // 0x09B8   (0x0050)  
+	SDK_UNDEFINED(80,5105) /* TMap<FGuid, FGuid> */    __um(CachedInputNodes);                                     // 0x0A08   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0A58   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/HoudiniEngineRuntime.HoudiniAssetBlueprintComponent.SetToggleValueAt
-	// void SetToggleValueAt(FString Name, bool value, int32_t index);                                                       // [0x45920f0] Final|Native|Public|BlueprintCallable 
+	// void SetToggleValueAt(FString Name, bool value, int32_t index);                                                       // [0x4526e70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoudiniEngineRuntime.HoudiniAssetBlueprintComponent.SetFloatParameter
-	// void SetFloatParameter(FString Name, float value, int32_t index);                                                     // [0x4591f90] Final|Native|Public|BlueprintCallable 
+	// void SetFloatParameter(FString Name, float value, int32_t index);                                                     // [0x4526d10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HoudiniEngineRuntime.HoudiniAssetBlueprintComponent.HasParameter
-	// bool HasParameter(FString Name);                                                                                      // [0x4591e90] Final|Native|Public|BlueprintCallable 
+	// bool HasParameter(FString Name);                                                                                      // [0x4526c10] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniAssetParameter
@@ -780,7 +780,7 @@ public:
 	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0481   (0x0007)  MISSED
 	class UPhysicalMaterial*                           GeneratedPhysMaterial;                                      // 0x0488   (0x0008)  
 	FBodyInstance                                      DefaultBodyInstance;                                        // 0x0490   (0x0160)  
-	SDK_UNDEFINED(1,4712) /* TEnumAsByte<ECollisionTraceFlag> */ __um(GeneratedCollisionTraceFlag);                // 0x05F0   (0x0001)  
+	SDK_UNDEFINED(1,5106) /* TEnumAsByte<ECollisionTraceFlag> */ __um(GeneratedCollisionTraceFlag);                // 0x05F0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x05F1   (0x0003)  MISSED
 	int32_t                                            GeneratedLightMapResolution;                                // 0x05F4   (0x0004)  
 	float                                              GeneratedDistanceFieldResolutionScale;                      // 0x05F8   (0x0004)  
@@ -791,8 +791,8 @@ public:
 	float                                              GeneratedStreamingDistanceMultiplier;                       // 0x0614   (0x0004)  
 	class UFoliageType_InstancedStaticMesh*            GeneratedFoliageDefaultSettings;                            // 0x0618   (0x0008)  
 	TArray<class UAssetUserData*>                      GeneratedAssetUserData;                                     // 0x0620   (0x0010)  
-	SDK_UNDEFINED(24,4713) /* FText */                 __um(BakeFolder);                                           // 0x0630   (0x0018)  
-	SDK_UNDEFINED(24,4714) /* FText */                 __um(TempCookFolder);                                       // 0x0648   (0x0018)  
+	SDK_UNDEFINED(24,5107) /* FText */                 __um(BakeFolder);                                           // 0x0630   (0x0018)  
+	SDK_UNDEFINED(24,5108) /* FText */                 __um(TempCookFolder);                                       // 0x0648   (0x0018)  
 	unsigned char                                      UnknownData03_6[0x340];                                     // 0x0660   (0x0340)  MISSED
 };
 
@@ -839,7 +839,7 @@ public:
 	class UHoudiniHandleParameter*                     RotOrderParm;                                               // 0x0230   (0x0008)  
 	EHoudiniHandleType                                 HandleType;                                                 // 0x0238   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0239   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4715) /* FString */               __um(HandleName);                                           // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,5109) /* FString */               __um(HandleName);                                           // 0x0240   (0x0010)  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniInput
@@ -847,8 +847,8 @@ public:
 class UHoudiniInput : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4716) /* FString */               __um(Name);                                                 // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4717) /* FString */               __um(label);                                                // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5110) /* FString */               __um(Name);                                                 // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5111) /* FString */               __um(label);                                                // 0x0040   (0x0010)  
 	EHoudiniInputType                                  Type;                                                       // 0x0050   (0x0001)  
 	EHoudiniInputType                                  PreviousType;                                               // 0x0051   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0052   (0x0002)  MISSED
@@ -863,7 +863,7 @@ public:
 	bool                                               bNeedsToTriggerUpdate;                                      // 0x0079   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x007A   (0x0002)  MISSED
 	FBox                                               CachedBounds;                                               // 0x007C   (0x001C)  
-	SDK_UNDEFINED(16,4718) /* FString */               __um(Help);                                                 // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,5112) /* FString */               __um(Help);                                                 // 0x0098   (0x0010)  
 	EHoudiniXformType                                  KeepWorldTransform;                                         // 0x00A8   (0x0001)  
 	bool                                               bPackBeforeMerge;                                           // 0x00A9   (0x0001)  
 	bool                                               bImportAsReference;                                         // 0x00AA   (0x0001)  
@@ -898,8 +898,8 @@ public:
 	float                                              UnrealSplineResolution;                                     // 0x013C   (0x0004)  
 	TArray<class UHoudiniInputObject*>                 SkeletalInputObjects;                                       // 0x0140   (0x0010)  
 	TArray<class UHoudiniInputObject*>                 GeometryCollectionInputObjects;                             // 0x0150   (0x0010)  
-	SDK_UNDEFINED(80,4719) /* TSet<ULandscapeComponent*> */ __um(LandscapeSelectedComponents);                     // 0x0160   (0x0050)  
-	SDK_UNDEFINED(80,4720) /* TSet<int32_t> */         __um(InputNodesPendingDelete);                              // 0x01B0   (0x0050)  
+	SDK_UNDEFINED(80,5113) /* TSet<ULandscapeComponent*> */ __um(LandscapeSelectedComponents);                     // 0x0160   (0x0050)  
+	SDK_UNDEFINED(80,5114) /* TSet<int32_t> */         __um(InputNodesPendingDelete);                              // 0x01B0   (0x0050)  
 	TArray<class UHoudiniInputHoudiniSplineComponent*> LastInsertedInputs;                                         // 0x0200   (0x0010)  
 	TArray<class UHoudiniInputObject*>                 LastUndoDeletedInputs;                                      // 0x0210   (0x0010)  
 	bool                                               bUpdateInputLandscape;                                      // 0x0220   (0x0001)  
@@ -919,7 +919,7 @@ public:
 class UHoudiniInputObject : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,4721) /* TWeakObjectPtr<UObject*> */ __um(InputObject);                                       // 0x0030   (0x0030)  
+	SDK_UNDEFINED(48,5115) /* TWeakObjectPtr<UObject*> */ __um(InputObject);                                       // 0x0030   (0x0030)  
 	FTransform                                         Transform;                                                  // 0x0060   (0x0030)  
 	EHoudiniInputObjectType                            Type;                                                       // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0091   (0x0003)  MISSED
@@ -935,7 +935,7 @@ public:
 	bool                                               bImportAsReferenceBboxEnabled;                              // 0x00DD   (0x0001)  
 	bool                                               bImportAsReferenceMaterialEnabled;                          // 0x00DE   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x1];                                       // 0x00DF   (0x0001)  MISSED
-	SDK_UNDEFINED(16,4722) /* TArray<FString> */       __um(MaterialReferences);                                   // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,5116) /* TArray<FString> */       __um(MaterialReferences);                                   // 0x00E0   (0x0010)  
 	bool                                               bCanDeleteHoudiniNodes;                                     // 0x00F0   (0x0001)  
 	unsigned char                                      UnknownData03_6[0xF];                                       // 0x00F1   (0x000F)  MISSED
 };
@@ -974,7 +974,7 @@ public:
 class UHoudiniInputMeshComponent : public UHoudiniInputSceneComponent
 { 
 public:
-	SDK_UNDEFINED(48,4723) /* TWeakObjectPtr<UStaticMesh*> */ __um(StaticMesh);                                    // 0x0130   (0x0030)  
+	SDK_UNDEFINED(48,5117) /* TWeakObjectPtr<UStaticMesh*> */ __um(StaticMesh);                                    // 0x0130   (0x0030)  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniInputInstancedMeshComponent
@@ -1053,7 +1053,7 @@ class UHoudiniInputActor : public UHoudiniInputObject
 { 
 public:
 	TArray<class UHoudiniInputSceneComponent*>         ActorComponents;                                            // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(80,4724) /* TSet<TWeakObjectPtr<UObject*>> */ __um(ActorSceneComponents);                        // 0x0108   (0x0050)  
+	SDK_UNDEFINED(80,5118) /* TSet<TWeakObjectPtr<UObject*>> */ __um(ActorSceneComponents);                        // 0x0108   (0x0050)  
 	int32_t                                            LastUpdateNumComponentsAdded;                               // 0x0158   (0x0004)  
 	int32_t                                            LastUpdateNumComponentsRemoved;                             // 0x015C   (0x0004)  
 };
@@ -1071,12 +1071,12 @@ public:
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FHoudiniBrushInfo
 { 
-	SDK_UNDEFINED(8,4725) /* TWeakObjectPtr<ABrush*> */ __um(BrushActor);                                          // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,5119) /* TWeakObjectPtr<ABrush*> */ __um(BrushActor);                                          // 0x0000   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0008   (0x0008)  MISSED
 	FTransform                                         CachedTransform;                                            // 0x0010   (0x0030)  
 	FVector                                            CachedOrigin;                                               // 0x0040   (0x000C)  
 	FVector                                            CachedExtent;                                               // 0x004C   (0x000C)  
-	SDK_UNDEFINED(1,4726) /* TEnumAsByte<EBrushType> */ __um(CachedBrushType);                                     // 0x0058   (0x0001)  
+	SDK_UNDEFINED(1,5120) /* TEnumAsByte<EBrushType> */ __um(CachedBrushType);                                     // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0059   (0x0007)  MISSED
 	uint64_t                                           CachedSurfaceHash;                                          // 0x0060   (0x0008)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0068   (0x0008)  MISSED
@@ -1090,7 +1090,7 @@ public:
 	TArray<FHoudiniBrushInfo>                          BrushesInfo;                                                // 0x0160   (0x0010)  
 	class UModel*                                      CombinedModel;                                              // 0x0170   (0x0008)  
 	bool                                               bIgnoreInputObject;                                         // 0x0178   (0x0001)  
-	SDK_UNDEFINED(1,4727) /* TEnumAsByte<EBrushType> */ __um(CachedInputBrushType);                                // 0x0179   (0x0001)  
+	SDK_UNDEFINED(1,5121) /* TEnumAsByte<EBrushType> */ __um(CachedInputBrushType);                                // 0x0179   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x017A   (0x0006)  MISSED
 };
 
@@ -1114,7 +1114,7 @@ class UHoudiniInputBlueprint : public UHoudiniInputObject
 { 
 public:
 	TArray<class UHoudiniInputSceneComponent*>         BPComponents;                                               // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(80,4728) /* TSet<TWeakObjectPtr<UObject*>> */ __um(BPSceneComponents);                           // 0x0108   (0x0050)  
+	SDK_UNDEFINED(80,5122) /* TSet<TWeakObjectPtr<UObject*>> */ __um(BPSceneComponents);                           // 0x0108   (0x0050)  
 	int32_t                                            LastUpdateNumComponentsAdded;                               // 0x0158   (0x0004)  
 	int32_t                                            LastUpdateNumComponentsRemoved;                             // 0x015C   (0x0004)  
 };
@@ -1143,7 +1143,7 @@ public:
 class UHoudiniLandscapePtr : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,4729) /* TWeakObjectPtr<ALandscapeProxy*> */ __um(LandscapeSoftPtr);                          // 0x0030   (0x0030)  
+	SDK_UNDEFINED(48,5123) /* TWeakObjectPtr<ALandscapeProxy*> */ __um(LandscapeSoftPtr);                          // 0x0030   (0x0030)  
 	EHoudiniLandscapeOutputBakeType                    BakeType;                                                   // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0061   (0x0003)  MISSED
 	FName                                              EditLayerName;                                              // 0x0064   (0x000C)  
@@ -1154,8 +1154,8 @@ public:
 class UHoudiniLandscapeEditLayer : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,4730) /* TWeakObjectPtr<ALandscapeProxy*> */ __um(LandscapeSoftPtr);                          // 0x0030   (0x0030)  
-	SDK_UNDEFINED(16,4731) /* FString */               __um(LayerName);                                            // 0x0060   (0x0010)  
+	SDK_UNDEFINED(48,5124) /* TWeakObjectPtr<ALandscapeProxy*> */ __um(LandscapeSoftPtr);                          // 0x0030   (0x0030)  
+	SDK_UNDEFINED(16,5125) /* FString */               __um(LayerName);                                            // 0x0060   (0x0010)  
 };
 
 /// Struct /Script/HoudiniEngineRuntime.HoudiniMeshSocket
@@ -1171,25 +1171,25 @@ struct FHoudiniGeoPartObject
 { 
 	int32_t                                            AssetId;                                                    // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4732) /* FString */               __um(AssetName);                                            // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5126) /* FString */               __um(AssetName);                                            // 0x0008   (0x0010)  
 	int32_t                                            ObjectId;                                                   // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4733) /* FString */               __um(ObjectName);                                           // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5127) /* FString */               __um(ObjectName);                                           // 0x0020   (0x0010)  
 	int32_t                                            GeoId;                                                      // 0x0030   (0x0004)  
 	int32_t                                            PartId;                                                     // 0x0034   (0x0004)  
-	SDK_UNDEFINED(16,4734) /* FString */               __um(PartName);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5128) /* FString */               __um(PartName);                                             // 0x0038   (0x0010)  
 	bool                                               bHasCustomPartName;                                         // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0049   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4735) /* TArray<FString> */       __um(SplitGroups);                                          // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,5129) /* TArray<FString> */       __um(SplitGroups);                                          // 0x0050   (0x0010)  
 	FTransform                                         TransformMatrix;                                            // 0x0060   (0x0030)  
-	SDK_UNDEFINED(16,4736) /* FString */               __um(NodePath);                                             // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,5130) /* FString */               __um(NodePath);                                             // 0x0090   (0x0010)  
 	EHoudiniPartType                                   Type;                                                       // 0x00A0   (0x0001)  
 	EHoudiniInstancerType                              InstancerType;                                              // 0x00A1   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x6];                                       // 0x00A2   (0x0006)  MISSED
-	SDK_UNDEFINED(16,4737) /* FString */               __um(VolumeName);                                           // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,5131) /* FString */               __um(VolumeName);                                           // 0x00A8   (0x0010)  
 	bool                                               bHasEditLayers;                                             // 0x00B8   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x7];                                       // 0x00B9   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4738) /* FString */               __um(VolumeLayerName);                                      // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5132) /* FString */               __um(VolumeLayerName);                                      // 0x00C0   (0x0010)  
 	int32_t                                            VolumeTileIndex;                                            // 0x00D0   (0x0004)  
 	bool                                               bIsVisible;                                                 // 0x00D4   (0x0001)  
 	bool                                               bIsEditable;                                                // 0x00D5   (0x0001)  
@@ -1211,10 +1211,10 @@ public:
 	EHoudiniOutputType                                 Type;                                                       // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
 	TArray<FHoudiniGeoPartObject>                      HoudiniGeoPartObjects;                                      // 0x0038   (0x0010)  
-	SDK_UNDEFINED(80,4739) /* TMap<FHoudiniOutputObjectIdentifier, FHoudiniOutputObject> */ __um(OutputObjects);   // 0x0048   (0x0050)  
-	SDK_UNDEFINED(80,4740) /* TMap<FHoudiniOutputObjectIdentifier, FHoudiniInstancedOutput> */ __um(InstancedOutputs); // 0x0098   (0x0050)  
-	SDK_UNDEFINED(80,4741) /* TMap<FString, UMaterialInterface*> */ __um(AssignementMaterials);                    // 0x00E8   (0x0050)  
-	SDK_UNDEFINED(80,4742) /* TMap<FString, UMaterialInterface*> */ __um(ReplacementMaterials);                    // 0x0138   (0x0050)  
+	SDK_UNDEFINED(80,5133) /* TMap<FHoudiniOutputObjectIdentifier, FHoudiniOutputObject> */ __um(OutputObjects);   // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,5134) /* TMap<FHoudiniOutputObjectIdentifier, FHoudiniInstancedOutput> */ __um(InstancedOutputs); // 0x0098   (0x0050)  
+	SDK_UNDEFINED(80,5135) /* TMap<FString, UMaterialInterface*> */ __um(AssignementMaterials);                    // 0x00E8   (0x0050)  
+	SDK_UNDEFINED(80,5136) /* TMap<FString, UMaterialInterface*> */ __um(ReplacementMaterials);                    // 0x0138   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0188   (0x0004)  MISSED
 	bool                                               bLandscapeWorldComposition;                                 // 0x018C   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x018D   (0x0003)  MISSED
@@ -1232,8 +1232,8 @@ public:
 class UHoudiniParameter : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4743) /* FString */               __um(Name);                                                 // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4744) /* FString */               __um(label);                                                // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5137) /* FString */               __um(Name);                                                 // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5138) /* FString */               __um(label);                                                // 0x0040   (0x0010)  
 	EHoudiniParameterType                              ParmType;                                                   // 0x0050   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0051   (0x0003)  MISSED
 	uint32_t                                           TupleSize;                                                  // 0x0054   (0x0004)  
@@ -1254,14 +1254,14 @@ public:
 	bool                                               bPendingRevertToDefault;                                    // 0x0072   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x5];                                       // 0x0073   (0x0005)  MISSED
 	TArray<int32_t>                                    TuplePendingRevertToDefault;                                // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,4745) /* FString */               __um(Help);                                                 // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,5139) /* FString */               __um(Help);                                                 // 0x0088   (0x0010)  
 	uint32_t                                           TagCount;                                                   // 0x0098   (0x0004)  
 	int32_t                                            ValueIndex;                                                 // 0x009C   (0x0004)  
 	bool                                               bHasExpression;                                             // 0x00A0   (0x0001)  
 	bool                                               bShowExpression;                                            // 0x00A1   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x00A2   (0x0006)  MISSED
-	SDK_UNDEFINED(16,4746) /* FString */               __um(ParamExpression);                                      // 0x00A8   (0x0010)  
-	SDK_UNDEFINED(80,4747) /* TMap<FString, FString> */ __um(Tags);                                                // 0x00B8   (0x0050)  
+	SDK_UNDEFINED(16,5140) /* FString */               __um(ParamExpression);                                      // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(80,5141) /* TMap<FString, FString> */ __um(Tags);                                                // 0x00B8   (0x0050)  
 	bool                                               bAutoUpdate;                                                // 0x0108   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0109   (0x0007)  MISSED
 };
@@ -1280,7 +1280,7 @@ class UHoudiniParameterButtonStrip : public UHoudiniParameter
 public:
 	int32_t                                            Count;                                                      // 0x0110   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0114   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4748) /* TArray<FString> */       __um(Labels);                                               // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,5142) /* TArray<FString> */       __um(Labels);                                               // 0x0118   (0x0010)  
 	TArray<int32_t>                                    Values;                                                     // 0x0128   (0x0010)  
 };
 
@@ -1291,10 +1291,10 @@ class UHoudiniParameterChoice : public UHoudiniParameter
 public:
 	int32_t                                            IntValue;                                                   // 0x0110   (0x0004)  
 	int32_t                                            DefaultIntValue;                                            // 0x0114   (0x0004)  
-	SDK_UNDEFINED(16,4749) /* FString */               __um(StringValue);                                          // 0x0118   (0x0010)  
-	SDK_UNDEFINED(16,4750) /* FString */               __um(DefaultStringValue);                                   // 0x0128   (0x0010)  
-	SDK_UNDEFINED(16,4751) /* TArray<FString> */       __um(StringChoiceValues);                                   // 0x0138   (0x0010)  
-	SDK_UNDEFINED(16,4752) /* TArray<FString> */       __um(StringChoiceLabels);                                   // 0x0148   (0x0010)  
+	SDK_UNDEFINED(16,5143) /* FString */               __um(StringValue);                                          // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,5144) /* FString */               __um(DefaultStringValue);                                   // 0x0128   (0x0010)  
+	SDK_UNDEFINED(16,5145) /* TArray<FString> */       __um(StringChoiceValues);                                   // 0x0138   (0x0010)  
+	SDK_UNDEFINED(16,5146) /* TArray<FString> */       __um(StringChoiceLabels);                                   // 0x0148   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x0158   (0x0010)  MISSED
 	bool                                               bIsChildOfRamp;                                             // 0x0168   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0169   (0x0007)  MISSED
@@ -1317,9 +1317,9 @@ public:
 class UHoudiniParameterFile : public UHoudiniParameter
 { 
 public:
-	SDK_UNDEFINED(16,4753) /* TArray<FString> */       __um(Values);                                               // 0x0110   (0x0010)  
-	SDK_UNDEFINED(16,4754) /* TArray<FString> */       __um(DefaultValues);                                        // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,4755) /* FString */               __um(Filters);                                              // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,5147) /* TArray<FString> */       __um(Values);                                               // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,5148) /* TArray<FString> */       __um(DefaultValues);                                        // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,5149) /* FString */               __um(Filters);                                              // 0x0130   (0x0010)  
 	bool                                               bIsReadOnly;                                                // 0x0140   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0141   (0x0007)  MISSED
 };
@@ -1331,7 +1331,7 @@ class UHoudiniParameterFloat : public UHoudiniParameter
 public:
 	TArray<float>                                      Values;                                                     // 0x0110   (0x0010)  
 	TArray<float>                                      DefaultValues;                                              // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,4756) /* FString */               __um(Unit);                                                 // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,5150) /* FString */               __um(Unit);                                                 // 0x0130   (0x0010)  
 	bool                                               bNoSwap;                                                    // 0x0140   (0x0001)  
 	bool                                               bHasMin;                                                    // 0x0141   (0x0001)  
 	bool                                               bHasMax;                                                    // 0x0142   (0x0001)  
@@ -1379,7 +1379,7 @@ class UHoudiniParameterInt : public UHoudiniParameter
 public:
 	TArray<int32_t>                                    Values;                                                     // 0x0110   (0x0010)  
 	TArray<int32_t>                                    DefaultValues;                                              // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,4757) /* FString */               __um(Unit);                                                 // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,5151) /* FString */               __um(Unit);                                                 // 0x0130   (0x0010)  
 	bool                                               bHasMin;                                                    // 0x0140   (0x0001)  
 	bool                                               bHasMax;                                                    // 0x0141   (0x0001)  
 	bool                                               bHasUIMin;                                                  // 0x0142   (0x0001)  
@@ -1397,7 +1397,7 @@ public:
 class UHoudiniParameterLabel : public UHoudiniParameter
 { 
 public:
-	SDK_UNDEFINED(16,4758) /* TArray<FString> */       __um(LabelStrings);                                         // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,5152) /* TArray<FString> */       __um(LabelStrings);                                         // 0x0110   (0x0010)  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniParameterMultiParm
@@ -1408,7 +1408,7 @@ public:
 	bool                                               bIsShown;                                                   // 0x0110   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0111   (0x0003)  MISSED
 	int32_t                                            value;                                                      // 0x0114   (0x0004)  
-	SDK_UNDEFINED(16,4759) /* FString */               __um(TemplateName);                                         // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,5153) /* FString */               __um(TemplateName);                                         // 0x0118   (0x0010)  
 	int32_t                                            MultiparmValue;                                             // 0x0128   (0x0004)  
 	uint32_t                                           MultiParmInstanceNum;                                       // 0x012C   (0x0004)  
 	uint32_t                                           MultiParmInstanceLength;                                    // 0x0130   (0x0004)  
@@ -1425,7 +1425,7 @@ public:
 class UHoudiniParameterOperatorPath : public UHoudiniParameter
 { 
 public:
-	SDK_UNDEFINED(8,4760) /* TWeakObjectPtr<UHoudiniInput*> */ __um(HoudiniInput);                                 // 0x0110   (0x0008)  
+	SDK_UNDEFINED(8,5154) /* TWeakObjectPtr<UHoudiniInput*> */ __um(HoudiniInput);                                 // 0x0110   (0x0008)  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniParameterRampModificationEvent
@@ -1520,8 +1520,8 @@ public:
 class UHoudiniParameterString : public UHoudiniParameter
 { 
 public:
-	SDK_UNDEFINED(16,4761) /* TArray<FString> */       __um(Values);                                               // 0x0110   (0x0010)  
-	SDK_UNDEFINED(16,4762) /* TArray<FString> */       __um(DefaultValues);                                        // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,5155) /* TArray<FString> */       __um(Values);                                               // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,5156) /* TArray<FString> */       __um(DefaultValues);                                        // 0x0120   (0x0010)  
 	TArray<class UObject*>                             ChosenAssets;                                               // 0x0130   (0x0010)  
 	bool                                               bIsAssetRef;                                                // 0x0140   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0141   (0x0007)  MISSED
@@ -1549,8 +1549,8 @@ struct FOutputActorOwner
 struct FTOPWorkResultObject
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
-	SDK_UNDEFINED(16,4763) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,4764) /* FString */               __um(FilePath);                                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5157) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5158) /* FString */               __um(FilePath);                                             // 0x0018   (0x0010)  
 	EPDGWorkResultState                                State;                                                      // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	int32_t                                            WorkItemResultInfoIndex;                                    // 0x002C   (0x0004)  
@@ -1580,13 +1580,13 @@ struct FWorkItemTallyBase
 /// Size: 0x0230 (0x000008 - 0x000238)
 struct FWorkItemTally : FWorkItemTallyBase
 { 
-	SDK_UNDEFINED(80,4765) /* TSet<int32_t> */         __um(AllWorkItems);                                         // 0x0008   (0x0050)  
-	SDK_UNDEFINED(80,4766) /* TSet<int32_t> */         __um(WaitingWorkItems);                                     // 0x0058   (0x0050)  
-	SDK_UNDEFINED(80,4767) /* TSet<int32_t> */         __um(ScheduledWorkItems);                                   // 0x00A8   (0x0050)  
-	SDK_UNDEFINED(80,4768) /* TSet<int32_t> */         __um(CookingWorkItems);                                     // 0x00F8   (0x0050)  
-	SDK_UNDEFINED(80,4769) /* TSet<int32_t> */         __um(CookedWorkItems);                                      // 0x0148   (0x0050)  
-	SDK_UNDEFINED(80,4770) /* TSet<int32_t> */         __um(ErroredWorkItems);                                     // 0x0198   (0x0050)  
-	SDK_UNDEFINED(80,4771) /* TSet<int32_t> */         __um(CookCancelledWorkItems);                               // 0x01E8   (0x0050)  
+	SDK_UNDEFINED(80,5159) /* TSet<int32_t> */         __um(AllWorkItems);                                         // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,5160) /* TSet<int32_t> */         __um(WaitingWorkItems);                                     // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,5161) /* TSet<int32_t> */         __um(ScheduledWorkItems);                                   // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,5162) /* TSet<int32_t> */         __um(CookingWorkItems);                                     // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,5163) /* TSet<int32_t> */         __um(CookedWorkItems);                                      // 0x0148   (0x0050)  
+	SDK_UNDEFINED(80,5164) /* TSet<int32_t> */         __um(ErroredWorkItems);                                     // 0x0198   (0x0050)  
+	SDK_UNDEFINED(80,5165) /* TSet<int32_t> */         __um(CookCancelledWorkItems);                               // 0x01E8   (0x0050)  
 };
 
 /// Struct /Script/HoudiniEngineRuntime.AggregatedWorkItemTally
@@ -1610,9 +1610,9 @@ class UTOPNode : public UObject
 public:
 	int32_t                                            NodeId;                                                     // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4772) /* FString */               __um(NodeName);                                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4773) /* FString */               __um(NodePath);                                             // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,4774) /* FString */               __um(ParentName);                                           // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,5166) /* FString */               __um(NodeName);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5167) /* FString */               __um(NodePath);                                             // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5168) /* FString */               __um(ParentName);                                           // 0x0058   (0x0010)  
 	class UObject*                                     WorkResultParent;                                           // 0x0068   (0x0008)  
 	TArray<FTOPWorkResult>                             WorkResult;                                                 // 0x0070   (0x0010)  
 	bool                                               bHidden;                                                    // 0x0080   (0x0001)  
@@ -1622,11 +1622,11 @@ public:
 	bool                                               bCachedHaveLoadedWorkResults;                               // 0x0084   (0x0001)  
 	bool                                               bHasChildNodes;                                             // 0x0085   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0086   (0x0002)  MISSED
-	SDK_UNDEFINED(80,4775) /* TSet<FString> */         __um(ClearedLandscapeLayers);                               // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,5169) /* TSet<FString> */         __um(ClearedLandscapeLayers);                               // 0x0088   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x88];                                      // 0x00D8   (0x0088)  MISSED
 	bool                                               bShow;                                                      // 0x0160   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0161   (0x0007)  MISSED
-	SDK_UNDEFINED(80,4776) /* TMap<FString, FHoudiniPDGWorkResultObjectBakedOutput> */ __um(BakedWorkResultObjectOutputs); // 0x0168   (0x0050)  
+	SDK_UNDEFINED(80,5170) /* TMap<FString, FHoudiniPDGWorkResultObjectBakedOutput> */ __um(BakedWorkResultObjectOutputs); // 0x0168   (0x0050)  
 	FWorkItemTally                                     WorkItemTally;                                              // 0x01B8   (0x0238)  
 	FAggregatedWorkItemTally                           AggregatedWorkItemTally;                                    // 0x03F0   (0x0028)  
 	bool                                               bHasReceivedCookCompleteEvent;                              // 0x0418   (0x0001)  
@@ -1641,12 +1641,12 @@ class UTOPNetwork : public UObject
 public:
 	int32_t                                            NodeId;                                                     // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4777) /* FString */               __um(NodeName);                                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4778) /* FString */               __um(NodePath);                                             // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5171) /* FString */               __um(NodeName);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5172) /* FString */               __um(NodePath);                                             // 0x0048   (0x0010)  
 	TArray<class UTOPNode*>                            AllTOPNodes;                                                // 0x0058   (0x0010)  
 	int32_t                                            SelectedTOPIndex;                                           // 0x0068   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x006C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4779) /* FString */               __um(ParentName);                                           // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,5173) /* FString */               __um(ParentName);                                           // 0x0070   (0x0010)  
 	bool                                               bShowResults;                                               // 0x0080   (0x0001)  
 	bool                                               bAutoLoadResults;                                           // 0x0081   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x1E];                                      // 0x0082   (0x001E)  MISSED
@@ -1657,8 +1657,8 @@ public:
 class UHoudiniPDGAssetLink : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4780) /* FString */               __um(AssetName);                                            // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4781) /* FString */               __um(AssetNodePath);                                        // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5174) /* FString */               __um(AssetName);                                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5175) /* FString */               __um(AssetNodePath);                                        // 0x0040   (0x0010)  
 	int32_t                                            AssetId;                                                    // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0054   (0x0004)  MISSED
 	TArray<class UTOPNetwork*>                         AllTOPNetworks;                                             // 0x0058   (0x0010)  
@@ -1667,12 +1667,12 @@ public:
 	bool                                               bAutoCook;                                                  // 0x006D   (0x0001)  
 	bool                                               bUseTOPNodeFilter;                                          // 0x006E   (0x0001)  
 	bool                                               bUseTOPOutputFilter;                                        // 0x006F   (0x0001)  
-	SDK_UNDEFINED(16,4782) /* FString */               __um(TOPNodeFilter);                                        // 0x0070   (0x0010)  
-	SDK_UNDEFINED(16,4783) /* FString */               __um(TOPOutputFilter);                                      // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,5176) /* FString */               __um(TOPNodeFilter);                                        // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,5177) /* FString */               __um(TOPOutputFilter);                                      // 0x0080   (0x0010)  
 	int32_t                                            NumWorkItems;                                               // 0x0090   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0094   (0x0004)  MISSED
 	FAggregatedWorkItemTally                           WorkItemTally;                                              // 0x0098   (0x0028)  
-	SDK_UNDEFINED(16,4784) /* FString */               __um(OutputCachePath);                                      // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5178) /* FString */               __um(OutputCachePath);                                      // 0x00C0   (0x0010)  
 	bool                                               bNeedsUIRefresh;                                            // 0x00D0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00D1   (0x0007)  MISSED
 	class AActor*                                      OutputParentActor;                                          // 0x00D8   (0x0008)  
@@ -1685,12 +1685,12 @@ public:
 class UHoudiniRuntimeSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(1,4785) /* TEnumAsByte<EHoudiniRuntimeSettingsSessionType> */ __um(SessionType);                 // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,5179) /* TEnumAsByte<EHoudiniRuntimeSettingsSessionType> */ __um(SessionType);                 // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4786) /* FString */               __um(ServerHost);                                           // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5180) /* FString */               __um(ServerHost);                                           // 0x0038   (0x0010)  
 	int32_t                                            ServerPort;                                                 // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x004C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4787) /* FString */               __um(ServerPipeName);                                       // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,5181) /* FString */               __um(ServerPipeName);                                       // 0x0050   (0x0010)  
 	bool                                               bStartAutomaticServer;                                      // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0061   (0x0003)  MISSED
 	float                                              AutomaticServerTimeout;                                     // 0x0064   (0x0004)  
@@ -1704,8 +1704,8 @@ public:
 	bool                                               bPauseCookingOnStart;                                       // 0x006F   (0x0001)  
 	bool                                               bDisplaySlateCookingNotifications;                          // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0071   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4788) /* FString */               __um(DefaultTemporaryCookFolder);                           // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,4789) /* FString */               __um(DefaultBakeFolder);                                    // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,5182) /* FString */               __um(DefaultTemporaryCookFolder);                           // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,5183) /* FString */               __um(DefaultBakeFolder);                                    // 0x0088   (0x0010)  
 	bool                                               bEnableTheReferenceCountedInputSystem;                      // 0x0098   (0x0001)  
 	bool                                               MarshallingLandscapesUseDefaultUnrealScaling;               // 0x0099   (0x0001)  
 	bool                                               MarshallingLandscapesUseFullResolution;                     // 0x009A   (0x0001)  
@@ -1728,7 +1728,7 @@ public:
 	unsigned char                                      UnknownData07_4[0x7];                                       // 0x00B9   (0x0007)  MISSED
 	class UPhysicalMaterial*                           PhysMaterial;                                               // 0x00C0   (0x0008)  
 	FBodyInstance                                      DefaultBodyInstance;                                        // 0x00C8   (0x0160)  
-	SDK_UNDEFINED(1,4790) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionTraceFlag);                         // 0x0228   (0x0001)  
+	SDK_UNDEFINED(1,5184) /* TEnumAsByte<ECollisionTraceFlag> */ __um(CollisionTraceFlag);                         // 0x0228   (0x0001)  
 	unsigned char                                      UnknownData08_5[0x3];                                       // 0x0229   (0x0003)  MISSED
 	int32_t                                            LightMapResolution;                                         // 0x022C   (0x0004)  
 	float                                              LpvBiasMultiplier;                                          // 0x0230   (0x0004)  
@@ -1747,9 +1747,9 @@ public:
 	int32_t                                            DstLightmapIndex;                                           // 0x0278   (0x0004)  
 	int32_t                                            MinLightmapResolution;                                      // 0x027C   (0x0004)  
 	bool                                               bRemoveDegenerates;                                         // 0x0280   (0x0001)  
-	SDK_UNDEFINED(1,4791) /* TEnumAsByte<EHoudiniRuntimeSettingsRecomputeFlag> */ __um(GenerateLightmapUVsFlag);   // 0x0281   (0x0001)  
-	SDK_UNDEFINED(1,4792) /* TEnumAsByte<EHoudiniRuntimeSettingsRecomputeFlag> */ __um(RecomputeNormalsFlag);      // 0x0282   (0x0001)  
-	SDK_UNDEFINED(1,4793) /* TEnumAsByte<EHoudiniRuntimeSettingsRecomputeFlag> */ __um(RecomputeTangentsFlag);     // 0x0283   (0x0001)  
+	SDK_UNDEFINED(1,5185) /* TEnumAsByte<EHoudiniRuntimeSettingsRecomputeFlag> */ __um(GenerateLightmapUVsFlag);   // 0x0281   (0x0001)  
+	SDK_UNDEFINED(1,5186) /* TEnumAsByte<EHoudiniRuntimeSettingsRecomputeFlag> */ __um(RecomputeNormalsFlag);      // 0x0282   (0x0001)  
+	SDK_UNDEFINED(1,5187) /* TEnumAsByte<EHoudiniRuntimeSettingsRecomputeFlag> */ __um(RecomputeTangentsFlag);     // 0x0283   (0x0001)  
 	bool                                               bUseMikkTSpace;                                             // 0x0284   (0x0001)  
 	bool                                               bBuildAdjacencyBuffer;                                      // 0x0285   (0x0001)  
 	bool                                               bComputeWeightedNormals : 1;                                // 0x0286:0 (0x0001)  
@@ -1765,16 +1765,16 @@ public:
 	bool                                               bUseCustomHoudiniLocation;                                  // 0x0290   (0x0001)  
 	unsigned char                                      UnknownData13_5[0x7];                                       // 0x0291   (0x0007)  MISSED
 	FDirectoryPath                                     CustomHoudiniLocation;                                      // 0x0298   (0x0010)  
-	SDK_UNDEFINED(1,4794) /* TEnumAsByte<EHoudiniExecutableType> */ __um(HoudiniExecutable);                       // 0x02A8   (0x0001)  
+	SDK_UNDEFINED(1,5188) /* TEnumAsByte<EHoudiniExecutableType> */ __um(HoudiniExecutable);                       // 0x02A8   (0x0001)  
 	unsigned char                                      UnknownData14_5[0x7];                                       // 0x02A9   (0x0007)  MISSED
 	FDirectoryPath                                     CustomHoudiniHomeLocation;                                  // 0x02B0   (0x0010)  
 	int32_t                                            CookingThreadStackSize;                                     // 0x02C0   (0x0004)  
 	unsigned char                                      UnknownData15_5[0x4];                                       // 0x02C4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4795) /* FString */               __um(HoudiniEnvironmentFiles);                              // 0x02C8   (0x0010)  
-	SDK_UNDEFINED(16,4796) /* FString */               __um(OtlSearchPath);                                        // 0x02D8   (0x0010)  
-	SDK_UNDEFINED(16,4797) /* FString */               __um(DsoSearchPath);                                        // 0x02E8   (0x0010)  
-	SDK_UNDEFINED(16,4798) /* FString */               __um(ImageDsoSearchPath);                                   // 0x02F8   (0x0010)  
-	SDK_UNDEFINED(16,4799) /* FString */               __um(AudioDsoSearchPath);                                   // 0x0308   (0x0010)  
+	SDK_UNDEFINED(16,5189) /* FString */               __um(HoudiniEnvironmentFiles);                              // 0x02C8   (0x0010)  
+	SDK_UNDEFINED(16,5190) /* FString */               __um(OtlSearchPath);                                        // 0x02D8   (0x0010)  
+	SDK_UNDEFINED(16,5191) /* FString */               __um(DsoSearchPath);                                        // 0x02E8   (0x0010)  
+	SDK_UNDEFINED(16,5192) /* FString */               __um(ImageDsoSearchPath);                                   // 0x02F8   (0x0010)  
+	SDK_UNDEFINED(16,5193) /* FString */               __um(AudioDsoSearchPath);                                   // 0x0308   (0x0010)  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniSplineComponent
@@ -1785,7 +1785,7 @@ public:
 	TArray<FTransform>                                 CurvePoints;                                                // 0x0220   (0x0010)  
 	TArray<FVector>                                    DisplayPoints;                                              // 0x0230   (0x0010)  
 	TArray<int32_t>                                    DisplayPointIndexDivider;                                   // 0x0240   (0x0010)  
-	SDK_UNDEFINED(16,4800) /* FString */               __um(HoudiniSplineName);                                    // 0x0250   (0x0010)  
+	SDK_UNDEFINED(16,5194) /* FString */               __um(HoudiniSplineName);                                    // 0x0250   (0x0010)  
 	bool                                               bClosed;                                                    // 0x0260   (0x0001)  
 	bool                                               bReversed;                                                  // 0x0261   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0262   (0x0002)  MISSED
@@ -1803,7 +1803,7 @@ public:
 	bool                                               bIsInputCurve;                                              // 0x04A2   (0x0001)  
 	bool                                               bIsEditableOutputCurve;                                     // 0x04A3   (0x0001)  
 	int32_t                                            NodeId;                                                     // 0x04A4   (0x0004)  
-	SDK_UNDEFINED(16,4801) /* FString */               __um(PartName);                                             // 0x04A8   (0x0010)  
+	SDK_UNDEFINED(16,5195) /* FString */               __um(PartName);                                             // 0x04A8   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x04B8   (0x0008)  MISSED
 };
 
@@ -1832,89 +1832,89 @@ public:
 
 	/// Functions
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetVertexPosition
-	// void SetVertexPosition(uint32_t InVertexIndex, FVector& InPosition);                                                  // [0x459c810] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetVertexPosition(uint32_t InVertexIndex, FVector& InPosition);                                                  // [0x4531590] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexVTangent
-	// void SetTriangleVertexVTangent(uint32_t InTriangleIndex, char InTriangleVertexIndex, FVector& InVTangent);            // [0x459c6f0] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetTriangleVertexVTangent(uint32_t InTriangleIndex, char InTriangleVertexIndex, FVector& InVTangent);            // [0x4531470] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexUV
-	// void SetTriangleVertexUV(uint32_t InTriangleIndex, char InTriangleVertexIndex, char InUVLayer, FVector2D& InUV);      // [0x459c590] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetTriangleVertexUV(uint32_t InTriangleIndex, char InTriangleVertexIndex, char InUVLayer, FVector2D& InUV);      // [0x4531310] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexUTangent
-	// void SetTriangleVertexUTangent(uint32_t InTriangleIndex, char InTriangleVertexIndex, FVector& InUTangent);            // [0x459c470] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetTriangleVertexUTangent(uint32_t InTriangleIndex, char InTriangleVertexIndex, FVector& InUTangent);            // [0x45311f0] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexNormal
-	// void SetTriangleVertexNormal(uint32_t InTriangleIndex, char InTriangleVertexIndex, FVector& InNormal);                // [0x459c350] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetTriangleVertexNormal(uint32_t InTriangleIndex, char InTriangleVertexIndex, FVector& InNormal);                // [0x45310d0] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexIndices
-	// void SetTriangleVertexIndices(uint32_t InTriangleIndex, FIntVector& InTriangleVertexIndices);                         // [0x459c280] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetTriangleVertexIndices(uint32_t InTriangleIndex, FIntVector& InTriangleVertexIndices);                         // [0x4531000] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleVertexColor
-	// void SetTriangleVertexColor(uint32_t InTriangleIndex, char InTriangleVertexIndex, FColor& InColor);                   // [0x459c160] Final|Native|Public|HasOutParms|HasDefaults 
+	// void SetTriangleVertexColor(uint32_t InTriangleIndex, char InTriangleVertexIndex, FColor& InColor);                   // [0x4530ee0] Final|Native|Public|HasOutParms|HasDefaults 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetTriangleMaterialID
-	// void SetTriangleMaterialID(uint32_t InTriangleIndex, int32_t InMaterialID);                                           // [0x459c090] Final|Native|Public  
+	// void SetTriangleMaterialID(uint32_t InTriangleIndex, int32_t InMaterialID);                                           // [0x4530e10] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetStaticMaterial
-	// void SetStaticMaterial(uint32_t InMaterialIndex, FStaticMaterial& InStaticMaterial);                                  // [0x459bf80] Final|Native|Public|HasOutParms 
+	// void SetStaticMaterial(uint32_t InMaterialIndex, FStaticMaterial& InStaticMaterial);                                  // [0x4530d00] Final|Native|Public|HasOutParms 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetNumUVLayers
-	// void SetNumUVLayers(uint32_t InNumUVLayers);                                                                          // [0x459bef0] Final|Native|Public  
+	// void SetNumUVLayers(uint32_t InNumUVLayers);                                                                          // [0x4530c70] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetNumStaticMaterials
-	// void SetNumStaticMaterials(uint32_t InNumStaticMaterials);                                                            // [0x459be60] Final|Native|Public  
+	// void SetNumStaticMaterials(uint32_t InNumStaticMaterials);                                                            // [0x4530be0] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetHasTangents
-	// void SetHasTangents(bool bInHasTangents);                                                                             // [0x459bdd0] Final|Native|Public  
+	// void SetHasTangents(bool bInHasTangents);                                                                             // [0x4530b50] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetHasPerFaceMaterials
-	// void SetHasPerFaceMaterials(bool bInHasPerFaceMaterials);                                                             // [0x459bd40] Final|Native|Public  
+	// void SetHasPerFaceMaterials(bool bInHasPerFaceMaterials);                                                             // [0x4530ac0] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetHasNormals
-	// void SetHasNormals(bool bInHasNormals);                                                                               // [0x459bcb0] Final|Native|Public  
+	// void SetHasNormals(bool bInHasNormals);                                                                               // [0x4530a30] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.SetHasColors
-	// void SetHasColors(bool bInHasColors);                                                                                 // [0x459bc20] Final|Native|Public  
+	// void SetHasColors(bool bInHasColors);                                                                                 // [0x45309a0] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.Optimize
-	// void Optimize();                                                                                                      // [0x459bc00] Final|Native|Public  
+	// void Optimize();                                                                                                      // [0x4530980] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.IsValid
-	// bool IsValid(bool bInSkipVertexIndicesCheck);                                                                         // [0x459bb60] Final|Native|Public|Const 
+	// bool IsValid(bool bInSkipVertexIndicesCheck);                                                                         // [0x45308e0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.Initialize
-	// void Initialize(uint32_t InNumVertices, uint32_t InNumTriangles, uint32_t InNumUVLayers, uint32_t InInitialNumStaticMaterials, bool bInHasNormals, bool bInHasTangents, bool bInHasColors, bool bInHasPerFaceMaterials); // [0x459b8f0] Final|Native|Public  
+	// void Initialize(uint32_t InNumVertices, uint32_t InNumTriangles, uint32_t InNumUVLayers, uint32_t InInitialNumStaticMaterials, bool bInHasNormals, bool bInHasTangents, bool bInHasColors, bool bInHasPerFaceMaterials); // [0x4530670] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.HasTangents
-	// bool HasTangents();                                                                                                   // [0x459b8d0] Final|Native|Public|Const 
+	// bool HasTangents();                                                                                                   // [0x4530650] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.HasPerFaceMaterials
-	// bool HasPerFaceMaterials();                                                                                           // [0x459b8b0] Final|Native|Public|Const 
+	// bool HasPerFaceMaterials();                                                                                           // [0x4530630] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.HasNormals
-	// bool HasNormals();                                                                                                    // [0x459b890] Final|Native|Public|Const 
+	// bool HasNormals();                                                                                                    // [0x4530610] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.HasColors
-	// bool HasColors();                                                                                                     // [0x459b870] Final|Native|Public|Const 
+	// bool HasColors();                                                                                                     // [0x45305f0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexPositions
-	// TArray<FVector> GetVertexPositions();                                                                                 // [0x459b840] Final|Native|Public|Const 
+	// TArray<FVector> GetVertexPositions();                                                                                 // [0x45305c0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceVTangents
-	// TArray<FVector> GetVertexInstanceVTangents();                                                                         // [0x459b810] Final|Native|Public|Const 
+	// TArray<FVector> GetVertexInstanceVTangents();                                                                         // [0x4530590] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceUVs
-	// TArray<FVector2D> GetVertexInstanceUVs();                                                                             // [0x459b780] Final|Native|Public|Const 
+	// TArray<FVector2D> GetVertexInstanceUVs();                                                                             // [0x4530500] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceUTangents
-	// TArray<FVector> GetVertexInstanceUTangents();                                                                         // [0x459b750] Final|Native|Public|Const 
+	// TArray<FVector> GetVertexInstanceUTangents();                                                                         // [0x45304d0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceNormals
-	// TArray<FVector> GetVertexInstanceNormals();                                                                           // [0x459b720] Final|Native|Public|Const 
+	// TArray<FVector> GetVertexInstanceNormals();                                                                           // [0x45304a0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetVertexInstanceColors
-	// TArray<FColor> GetVertexInstanceColors();                                                                             // [0x459b690] Final|Native|Public|Const 
+	// TArray<FColor> GetVertexInstanceColors();                                                                             // [0x4530410] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetTriangleIndices
-	// TArray<FIntVector> GetTriangleIndices();                                                                              // [0x459b600] Final|Native|Public|Const 
+	// TArray<FIntVector> GetTriangleIndices();                                                                              // [0x4530380] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetStaticMaterials
-	// TArray<FStaticMaterial> GetStaticMaterials();                                                                         // [0x459b570] Final|Native|Public|Const 
+	// TArray<FStaticMaterial> GetStaticMaterials();                                                                         // [0x45302f0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetNumVertices
-	// uint32_t GetNumVertices();                                                                                            // [0x459b550] Final|Native|Public|Const 
+	// uint32_t GetNumVertices();                                                                                            // [0x45302d0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetNumVertexInstances
-	// uint32_t GetNumVertexInstances();                                                                                     // [0x459b530] Final|Native|Public|Const 
+	// uint32_t GetNumVertexInstances();                                                                                     // [0x45302b0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetNumUVLayers
-	// uint32_t GetNumUVLayers();                                                                                            // [0x459b510] Final|Native|Public|Const 
+	// uint32_t GetNumUVLayers();                                                                                            // [0x4530290] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetNumTriangles
-	// uint32_t GetNumTriangles();                                                                                           // [0x459b4f0] Final|Native|Public|Const 
+	// uint32_t GetNumTriangles();                                                                                           // [0x4530270] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetNumStaticMaterials
-	// uint32_t GetNumStaticMaterials();                                                                                     // [0x459b4d0] Final|Native|Public|Const 
+	// uint32_t GetNumStaticMaterials();                                                                                     // [0x4530250] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetMaterialIndex
-	// int32_t GetMaterialIndex(FName InMaterialSlotName);                                                                   // [0x459b420] Final|Native|Public|Const 
+	// int32_t GetMaterialIndex(FName InMaterialSlotName);                                                                   // [0x45301a0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetMaterialIDsPerTriangle
-	// TArray<int32_t> GetMaterialIDsPerTriangle();                                                                          // [0x459b3f0] Final|Native|Public|Const 
+	// TArray<int32_t> GetMaterialIDsPerTriangle();                                                                          // [0x4530170] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.GetMaterial
-	// class UMaterialInterface* GetMaterial(int32_t InMaterialIndex);                                                       // [0x459b350] Final|Native|Public  
+	// class UMaterialInterface* GetMaterial(int32_t InMaterialIndex);                                                       // [0x45300d0] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.CalculateTangents
-	// void CalculateTangents(bool bInComputeWeightedNormals);                                                               // [0x459b2c0] Final|Native|Public  
+	// void CalculateTangents(bool bInComputeWeightedNormals);                                                               // [0x4530040] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.CalculateNormals
-	// void CalculateNormals(bool bInComputeWeightedNormals);                                                                // [0x459b230] Final|Native|Public  
+	// void CalculateNormals(bool bInComputeWeightedNormals);                                                                // [0x452ffb0] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.CalcBounds
-	// FBox CalcBounds();                                                                                                    // [0x459b1e0] Final|Native|Public|HasDefaults|Const 
+	// FBox CalcBounds();                                                                                                    // [0x452ff60] Final|Native|Public|HasDefaults|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMesh.AddStaticMaterial
-	// uint32_t AddStaticMaterial(FStaticMaterial& InStaticMaterial);                                                        // [0x459b0c0] Final|Native|Public|HasOutParms 
+	// uint32_t AddStaticMaterial(FStaticMaterial& InStaticMaterial);                                                        // [0x452fe40] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniStaticMeshComponent
@@ -1930,15 +1930,15 @@ public:
 
 	/// Functions
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMeshComponent.SetMesh
-	// void SetMesh(class UHoudiniStaticMesh* InMesh);                                                                       // [0x459cd30] Final|Native|Public  
+	// void SetMesh(class UHoudiniStaticMesh* InMesh);                                                                       // [0x4531ab0] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMeshComponent.SetHoudiniIconVisible
-	// void SetHoudiniIconVisible(bool bInHoudiniIconVisible);                                                               // [0x459cca0] Final|Native|Public  
+	// void SetHoudiniIconVisible(bool bInHoudiniIconVisible);                                                               // [0x4531a20] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMeshComponent.NotifyMeshUpdated
-	// void NotifyMeshUpdated();                                                                                             // [0x459cc80] Final|Native|Public  
+	// void NotifyMeshUpdated();                                                                                             // [0x4531a00] Final|Native|Public  
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMeshComponent.IsHoudiniIconVisible
-	// bool IsHoudiniIconVisible();                                                                                          // [0x459cc60] Final|Native|Public|Const 
+	// bool IsHoudiniIconVisible();                                                                                          // [0x45319e0] Final|Native|Public|Const 
 	// Function /Script/HoudiniEngineRuntime.HoudiniStaticMeshComponent.GetMesh
-	// class UHoudiniStaticMesh* GetMesh();                                                                                  // [0x459cc40] Final|Native|Public  
+	// class UHoudiniStaticMesh* GetMesh();                                                                                  // [0x45319c0] Final|Native|Public  
 };
 
 /// Class /Script/HoudiniEngineRuntime.HoudiniAssetStateEvents
@@ -1970,8 +1970,8 @@ struct FHoudiniAssetBlueprintInstanceData : FActorComponentInstanceData
 	FGuid                                              HapiGUID;                                                   // 0x0098   (0x0010)  
 	bool                                               bRegisteredComponentTemplate;                               // 0x00A8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00A9   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4802) /* FString */               __um(SourceName);                                           // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(80,4803) /* TMap<FHoudiniOutputObjectIdentifier, FHoudiniAssetBlueprintOutput> */ __um(Outputs); // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(16,5196) /* FString */               __um(SourceName);                                           // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(80,5197) /* TMap<FHoudiniOutputObjectIdentifier, FHoudiniAssetBlueprintOutput> */ __um(Outputs); // 0x00C0   (0x0050)  
 	TArray<class UHoudiniInput*>                       Inputs;                                                     // 0x0110   (0x0010)  
 };
 
@@ -1983,8 +1983,8 @@ struct FHoudiniOutputObjectIdentifier
 	int32_t                                            GeoId;                                                      // 0x0004   (0x0004)  
 	int32_t                                            PartId;                                                     // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4804) /* FString */               __um(SplitIdentifier);                                      // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,4805) /* FString */               __um(PartName);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5198) /* FString */               __um(SplitIdentifier);                                      // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5199) /* FString */               __um(PartName);                                             // 0x0020   (0x0010)  
 	int32_t                                            PrimitiveIndex;                                             // 0x0030   (0x0004)  
 	int32_t                                            PointIndex;                                                 // 0x0034   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0038   (0x0008)  MISSED
@@ -2015,12 +2015,12 @@ struct FHoudiniOutputObject
 	bool                                               bIsImplicit;                                                // 0x0021   (0x0001)  
 	bool                                               bIsGeometryCollectionPiece;                                 // 0x0022   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x5];                                       // 0x0023   (0x0005)  MISSED
-	SDK_UNDEFINED(16,4806) /* FString */               __um(GeometryCollectionPieceName);                          // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,4807) /* FString */               __um(BakeName);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5200) /* FString */               __um(GeometryCollectionPieceName);                          // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,5201) /* FString */               __um(BakeName);                                             // 0x0038   (0x0010)  
 	FHoudiniCurveOutputProperties                      CurveOutputProperty;                                        // 0x0048   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0054   (0x0004)  MISSED
-	SDK_UNDEFINED(80,4808) /* TMap<FString, FString> */ __um(CachedAttributes);                                    // 0x0058   (0x0050)  
-	SDK_UNDEFINED(80,4809) /* TMap<FString, FString> */ __um(CachedTokens);                                        // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(80,5202) /* TMap<FString, FString> */ __um(CachedAttributes);                                    // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,5203) /* TMap<FString, FString> */ __um(CachedTokens);                                        // 0x00A8   (0x0050)  
 };
 
 /// Struct /Script/HoudiniEngineRuntime.HoudiniAssetBlueprintOutput
@@ -2036,7 +2036,7 @@ struct FHoudiniAssetBlueprintOutput
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FHoudiniGenericAttribute
 { 
-	SDK_UNDEFINED(16,4810) /* FString */               __um(AttributeName);                                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5204) /* FString */               __um(AttributeName);                                        // 0x0000   (0x0010)  
 	EAttribStorageType                                 AttributeType;                                              // 0x0010   (0x0001)  
 	EAttribOwner                                       AttributeOwner;                                             // 0x0011   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0012   (0x0002)  MISSED
@@ -2045,7 +2045,7 @@ struct FHoudiniGenericAttribute
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	TArray<double>                                     DoubleValues;                                               // 0x0020   (0x0010)  
 	TArray<int64_t>                                    IntValues;                                                  // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4811) /* TArray<FString> */       __um(StringValues);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5205) /* TArray<FString> */       __um(StringValues);                                         // 0x0040   (0x0010)  
 };
 
 /// Struct /Script/HoudiniEngineRuntime.HoudiniGenericAttributeChangedProperty
@@ -2097,33 +2097,33 @@ struct FHoudiniBakedOutputObjectIdentifier
 { 
 	int32_t                                            PartId;                                                     // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4812) /* FString */               __um(SplitIdentifier);                                      // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5206) /* FString */               __um(SplitIdentifier);                                      // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/HoudiniEngineRuntime.HoudiniBakedOutputObject
 /// Size: 0x00C0 (0x000000 - 0x0000C0)
 struct FHoudiniBakedOutputObject
 { 
-	SDK_UNDEFINED(16,4813) /* FString */               __um(Actor);                                                // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4814) /* FString */               __um(Blueprint);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5207) /* FString */               __um(Actor);                                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5208) /* FString */               __um(Blueprint);                                            // 0x0010   (0x0010)  
 	FName                                              ActorBakeName;                                              // 0x0020   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4815) /* FString */               __um(BakedObject);                                          // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4816) /* FString */               __um(BakedComponent);                                       // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,4817) /* TArray<FString> */       __um(InstancedActors);                                      // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,4818) /* TArray<FString> */       __um(InstancedComponents);                                  // 0x0060   (0x0010)  
-	SDK_UNDEFINED(80,4819) /* TMap<FName, FString> */  __um(LandscapeLayers);                                      // 0x0070   (0x0050)  
+	SDK_UNDEFINED(16,5209) /* FString */               __um(BakedObject);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5210) /* FString */               __um(BakedComponent);                                       // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5211) /* TArray<FString> */       __um(InstancedActors);                                      // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,5212) /* TArray<FString> */       __um(InstancedComponents);                                  // 0x0060   (0x0010)  
+	SDK_UNDEFINED(80,5213) /* TMap<FName, FString> */  __um(LandscapeLayers);                                      // 0x0070   (0x0050)  
 };
 
 /// Struct /Script/HoudiniEngineRuntime.HoudiniInstancedOutput
 /// Size: 0x0090 (0x000000 - 0x000090)
 struct FHoudiniInstancedOutput
 { 
-	SDK_UNDEFINED(48,4820) /* TWeakObjectPtr<UObject*> */ __um(OriginalObject);                                    // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,5214) /* TWeakObjectPtr<UObject*> */ __um(OriginalObject);                                    // 0x0000   (0x0030)  
 	int32_t                                            OriginalObjectIndex;                                        // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
 	TArray<FTransform>                                 OriginalTransforms;                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4821) /* TArray<TWeakObjectPtr<UObject*>> */ __um(VariationObjects);                          // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5215) /* TArray<TWeakObjectPtr<UObject*>> */ __um(VariationObjects);                          // 0x0048   (0x0010)  
 	TArray<FTransform>                                 VariationTransformOffsets;                                  // 0x0058   (0x0010)  
 	TArray<int32_t>                                    TransformVariationIndices;                                  // 0x0068   (0x0010)  
 	TArray<int32_t>                                    OriginalInstanceIndices;                                    // 0x0078   (0x0010)  

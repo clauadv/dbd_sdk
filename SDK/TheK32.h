@@ -79,9 +79,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.InK32PodZoneLingeringEffect.Authority_OnKillerPodDisabledChanged
-	// void Authority_OnKillerPodDisabledChanged(bool IsDisabled);                                                           // [0x5cde620] Final|Native|Private 
+	// void Authority_OnKillerPodDisabledChanged(bool IsDisabled);                                                           // [0x5ceb7c0] Final|Native|Private 
 	// Function /Script/TheK32.InK32PodZoneLingeringEffect.Authority_OnKillerPodAcquiredChanged
-	// void Authority_OnKillerPodAcquiredChanged(bool IsAcquired);                                                           // [0x5cde590] Final|Native|Private 
+	// void Authority_OnKillerPodAcquiredChanged(bool IsAcquired);                                                           // [0x5ceb730] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32AnimInstance
@@ -104,9 +104,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32AnimInstance.ResetIsShootingPod
-	// void ResetIsShootingPod();                                                                                            // [0x5c9dde0] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsShootingPod();                                                                                            // [0x5caab80] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK32.K32AnimInstance.OnGameEventReceived
-	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5cdebd0] Final|Native|Private|HasOutParms 
+	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5cebdb0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK32.K32AntiCampZoneIdentifierComponent
@@ -156,9 +156,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32AssimilationAnimInstance.ResetIsDestroyedByHook
-	// void ResetIsDestroyedByHook();                                                                                        // [0x5cdf210] Final|Native|Public|BlueprintCallable 
+	// void ResetIsDestroyedByHook();                                                                                        // [0x5cec3f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK32.K32AssimilationAnimInstance.ResetIsDestroyedByEmp
-	// void ResetIsDestroyedByEmp();                                                                                         // [0x5cdf1f0] Final|Native|Public|BlueprintCallable 
+	// void ResetIsDestroyedByEmp();                                                                                         // [0x5cec3d0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK32.K32BaseProjectile
@@ -167,7 +167,7 @@ class AK32BaseProjectile : public AActor
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0230   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5136) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0238   (0x0010)  
+	SDK_UNDEFINED(16,5526) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0238   (0x0010)  
 	FDBDTunableRowHandle                               _speedInMeterPerSecond;                                     // 0x0248   (0x0028)  
 	FDBDTunableRowHandle                               _hitDistance;                                               // 0x0270   (0x0028)  
 	unsigned char                                      UnknownData01_5[0x98];                                      // 0x0298   (0x0098)  MISSED
@@ -177,11 +177,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32BaseProjectile.OnRep_IsAcquiredFromPool
-	// void OnRep_IsAcquiredFromPool(bool oldIsAcquiredFromPool);                                                            // [0x5cdee40] Final|Native|Private 
+	// void OnRep_IsAcquiredFromPool(bool oldIsAcquiredFromPool);                                                            // [0x5cec020] Final|Native|Private 
 	// Function /Script/TheK32.K32BaseProjectile.Cosmetic_OnProjectileVisible
-	// void Cosmetic_OnProjectileVisible();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnProjectileVisible();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32BaseProjectile.Cosmetic_OnProjectileHidden
-	// void Cosmetic_OnProjectileHidden();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnProjectileHidden();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32CollectItemInItemBoxInteraction
@@ -199,7 +199,7 @@ class AK32Emp : public ABaseCamperCollectable
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0510   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5137) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0518   (0x0010)  
+	SDK_UNDEFINED(16,5527) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0518   (0x0010)  
 	FVector                                            _customStrafingOffset;                                      // 0x0528   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0534   (0x0004)  MISSED
 	FDBDTunableRowHandle                               _strafingOffsetMultiplier;                                  // 0x0538   (0x0028)  
@@ -215,50 +215,49 @@ public:
 	bool                                               _isVisible;                                                 // 0x0614   (0x0001)  
 	bool                                               _isAcquiredFromPool;                                        // 0x0615   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x2];                                       // 0x0616   (0x0002)  MISSED
-	SDK_UNDEFINED(80,5138) /* TMap<ADBDPlayer*, UStatusEffect*> */ __um(_revealToSurvivorStatusEffects);           // 0x0618   (0x0050)  
+	SDK_UNDEFINED(80,5528) /* TMap<ADBDPlayer*, UStatusEffect*> */ __um(_revealToSurvivorStatusEffects);           // 0x0618   (0x0050)  
 	class ADBDPlayer*                                  _previousCollector;                                         // 0x0668   (0x0008)  
 	unsigned char                                      UnknownData03_6[0x88];                                      // 0x0670   (0x0088)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK32.K32Emp.SetComponentContextProviders
-	// void SetComponentContextProviders();                                                                                  // [0x5cdf230] Final|Native|Private 
+	// void SetComponentContextProviders();                                                                                  // [0x5cec410] Final|Native|Private 
 	// Function /Script/TheK32.K32Emp.OnRep_NumTargetsInRange
-	// void OnRep_NumTargetsInRange();                                                                                       // [0x5cdefc0] Final|Native|Private 
+	// void OnRep_NumTargetsInRange();                                                                                       // [0x5cec1a0] Final|Native|Private 
 	// Function /Script/TheK32.K32Emp.OnRep_IsVisible
-	// void OnRep_IsVisible(bool previousIsVisible);                                                                         // [0x5cdef30] Final|Native|Private 
+	// void OnRep_IsVisible(bool previousIsVisible);                                                                         // [0x5cec110] Final|Native|Private 
 	// Function /Script/TheK32.K32Emp.OnRep_IsAcquiredFromPool
-	// void OnRep_IsAcquiredFromPool();                                                                                      // [0x5cdeed0] Final|Native|Private 
+	// void OnRep_IsAcquiredFromPool();                                                                                      // [0x5cec0b0] Final|Native|Private 
 	// Function /Script/TheK32.K32Emp.OnEmpInteractionFinished
-	// void OnEmpInteractionFinished(class ADBDPlayer* interactingPlayer);                                                   // [0x5cdeb40] Final|Native|Private 
+	// void OnEmpInteractionFinished(class ADBDPlayer* interactingPlayer, bool hasInteractionStarted);                       // [0x5cebce0] Final|Native|Private 
 	// Function /Script/TheK32.K32Emp.OnEmpInteractionEntered
-	// void OnEmpInteractionEntered(class ADBDPlayer* interactingPlayer);                                                    // [0x5cdeab0] Final|Native|Private 
+	// void OnEmpInteractionEntered(class ADBDPlayer* interactingPlayer);                                                    // [0x5cebc50] Final|Native|Private 
 	// Function /Script/TheK32.K32Emp.Multicast_UseEmp
-	// void Multicast_UseEmp(int32_t numAffectedTargets, class ADBDPlayer* interactingPlayer);                               // [0x5cde860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_UseEmp(int32_t numAffectedTargets, class ADBDPlayer* interactingPlayer);                               // [0x5ceba00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnVisibilityChanged
-	// void Cosmetic_OnVisibilityChanged(bool previousIsVisible, bool IsVisible);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVisibilityChanged(bool previousIsVisible, bool IsVisible);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnPickedUp
-	// void Cosmetic_OnPickedUp();                                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPickedUp();                                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnNumTargetsInRangeChanged
-	// void Cosmetic_OnNumTargetsInRangeChanged(int32_t numberOfAffectedTargets);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNumTargetsInRangeChanged(int32_t numberOfAffectedTargets);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnEmpInteractionStarted
-	// void Cosmetic_OnEmpInteractionStarted();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnEmpInteractionStarted();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnEmpInteractionFinished
-	// void Cosmetic_OnEmpInteractionFinished(int32_t numberOfAffectedTargets, class ADBDPlayer* interactingPlayer);         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnEmpInteractionFinished(int32_t numberOfAffectedTargets, class ADBDPlayer* interactingPlayer);         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnEmpInteractionCancelled
-	// void Cosmetic_OnEmpInteractionCancelled();                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnEmpInteractionCancelled();                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32Emp.Cosmetic_OnDropped
-	// void Cosmetic_OnDropped();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDropped();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32EmpInteraction
-/// Size: 0x0020 (0x000790 - 0x0007B0)
+/// Size: 0x0010 (0x000790 - 0x0007A0)
 class UK32EmpInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
-	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x07A0   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x07A8   (0x0008)  MISSED
+	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0790   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0798   (0x0008)  MISSED
 };
 
 /// Class /Script/TheK32.K32EmpScoreComponent
@@ -311,21 +310,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32ItemBox.OnRep_State
-	// void OnRep_State();                                                                                                   // [0x5cdf1d0] Final|Native|Private 
+	// void OnRep_State();                                                                                                   // [0x5cec3b0] Final|Native|Private 
 	// Function /Script/TheK32.K32ItemBox.OnRep_SpawnedItem
-	// void OnRep_SpawnedItem();                                                                                             // [0x5cdf1b0] Final|Native|Private 
+	// void OnRep_SpawnedItem();                                                                                             // [0x5cec390] Final|Native|Private 
 	// Function /Script/TheK32.K32ItemBox.OnRep_IsSurvivorInteracting
-	// void OnRep_IsSurvivorInteracting();                                                                                   // [0x5cdef10] Final|Native|Private 
+	// void OnRep_IsSurvivorInteracting();                                                                                   // [0x5cec0f0] Final|Native|Private 
 	// Function /Script/TheK32.K32ItemBox.OnChargeableCompleteEvent
-	// void OnChargeableCompleteEvent(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                            // [0x5cde930] Final|Native|Private|HasOutParms 
+	// void OnChargeableCompleteEvent(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                            // [0x5cebad0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK32.K32ItemBox.Multicast_SetIsChargeTimeExtended
-	// void Multicast_SetIsChargeTimeExtended(bool isAddonExtendingFirstActivationTimer);                                    // [0x57fdea0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetIsChargeTimeExtended(bool isAddonExtendingFirstActivationTimer);                                    // [0x58012e0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32ItemBox.Cosmetic_OnSurvivorInteractingChanged
-	// void Cosmetic_OnSurvivorInteractingChanged(bool IsInteracting);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSurvivorInteractingChanged(bool IsInteracting);                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32ItemBox.Cosmetic_OnStateChanged
-	// void Cosmetic_OnStateChanged(EK32ItemBoxState NewState);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStateChanged(EK32ItemBoxState NewState);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32ItemBox.Authority_OnItemPickup
-	// void Authority_OnItemPickup(class ADBDPlayer* Player);                                                                // [0x5cde500] Final|Native|Private 
+	// void Authority_OnItemPickup(class ADBDPlayer* Player);                                                                // [0x5ceb6a0] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32ItemBoxAnimInstance
@@ -343,7 +342,7 @@ public:
 class UK32ItemBoxIterativeWeightAdjustmentStrategy : public UIterativeWeightAdjustmentStrategy
 { 
 public:
-	SDK_UNDEFINED(16,5139) /* TArray<TScriptInterface<Class>> */ __um(_selectedSpawners);                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5529) /* TArray<TScriptInterface<Class>> */ __um(_selectedSpawners);                          // 0x0030   (0x0010)  
 	class UCurveFloat*                                 _penaltyFromDistanceToClosestK32ItemBox;                    // 0x0040   (0x0008)  
 };
 
@@ -359,9 +358,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32ItemBoxManagerComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5cde6b0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5ceb850] Final|Native|Private 
 	// Function /Script/TheK32.K32ItemBoxManagerComponent.Authority_OnItemBoxDeactivated
-	// void Authority_OnItemBoxDeactivated(FGameplayTag GameplayTag, FGameEventData& GameEventData);                         // [0x5cde3f0] Final|Native|Private|HasOutParms 
+	// void Authority_OnItemBoxDeactivated(FGameplayTag GameplayTag, FGameEventData& GameEventData);                         // [0x5ceb590] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK32.K32ItemBoxOutlineUpdateStrategy
@@ -376,21 +375,22 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32ItemBoxOutlineUpdateStrategy.OnDistanceStatValueUpdated
-	// void OnDistanceStatValueUpdated(float distance);                                                                      // [0x5cdea30] Final|Native|Private 
+	// void OnDistanceStatValueUpdated(float distance);                                                                      // [0x5cebbd0] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32ItemBoxSpeedUpInteraction
-/// Size: 0x0090 (0x000790 - 0x000820)
+/// Size: 0x00A0 (0x000790 - 0x000830)
 class UK32ItemBoxSpeedUpInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
-	FTunableStat                                       _interactionProgressMultiplier;                             // 0x07A0   (0x0080)  
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0790   (0x0018)  MISSED
+	FTunableStat                                       _interactionProgressMultiplier;                             // 0x07A8   (0x0080)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0828   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK32.K32ItemBoxSpeedUpInteraction.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5cdee20] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5cec000] Final|Native|Private 
 };
 
 /// Struct /Script/TheK32.K32KillerPodSettings
@@ -417,8 +417,8 @@ class AK32KillerPod : public AActor
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0230   (0x0018)  MISSED
-	SDK_UNDEFINED(16,5140) /* FMulticastInlineDelegate */ __um(OnDisabledChanged);                                 // 0x0248   (0x0010)  
-	SDK_UNDEFINED(16,5141) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0258   (0x0010)  
+	SDK_UNDEFINED(16,5530) /* FMulticastInlineDelegate */ __um(OnDisabledChanged);                                 // 0x0248   (0x0010)  
+	SDK_UNDEFINED(16,5531) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0258   (0x0010)  
 	class UStaticMeshComponent*                        _overlapTestingMeshComponent;                               // 0x0268   (0x0008)  
 	class UMapActorComponent*                          _mapActorComponent;                                         // 0x0270   (0x0008)  
 	FTunableStat                                       _podDisableTime;                                            // 0x0278   (0x0080)  
@@ -433,45 +433,45 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPod.OnVisibilityChanged
-	// void OnVisibilityChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnVisibilityChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.OnRep_Settings
-	// void OnRep_Settings(FK32KillerPodSettings previousSettings);                                                          // [0x5cdefe0] Final|Native|Private 
+	// void OnRep_Settings(FK32KillerPodSettings previousSettings);                                                          // [0x5cec1c0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPod.OnRep_IsAcquiredFromPool
-	// void OnRep_IsAcquiredFromPool();                                                                                      // [0x5cdeef0] Final|Native|Private 
+	// void OnRep_IsAcquiredFromPool();                                                                                      // [0x5cec0d0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPod.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5cdee00] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5cebfe0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPod.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5cded70] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5cebf50] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPod.OnKillerLocallyObservedChanged
-	// void OnKillerLocallyObservedChanged(bool isKillerLocallyObserved);                                                    // [0x5cdece0] Final|Native|Private 
+	// void OnKillerLocallyObservedChanged(bool isKillerLocallyObserved);                                                    // [0x5cebec0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPod.Multicast_OnPodDisabled
-	// void Multicast_OnPodDisabled();                                                                                       // [0x57fbd00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnPodDisabled();                                                                                       // [0x57ff130] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPod.Multicast_OnDestroyedByRecycle
-	// void Multicast_OnDestroyedByRecycle();                                                                                // [0x5920750] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnDestroyedByRecycle();                                                                                // [0x592b820] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPod.Multicast_OnDestroyedByManualRemoval
-	// void Multicast_OnDestroyedByManualRemoval();                                                                          // [0x5b98c20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnDestroyedByManualRemoval();                                                                          // [0x5ba6220] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPod.Multicast_OnDestroyedByEmp
-	// void Multicast_OnDestroyedByEmp(class ADBDPlayer* destroyingSurvivor);                                                // [0x5cde7d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnDestroyedByEmp(class ADBDPlayer* destroyingSurvivor);                                                // [0x5ceb970] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPod.GetSettings
-	// FK32KillerPodSettings GetSettings();                                                                                  // [0x5cde6d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FK32KillerPodSettings GetSettings();                                                                                  // [0x5ceb870] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnSettingsChanged
-	// void Cosmetic_OnSettingsChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSettingsChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnDisabledChanged
-	// void Cosmetic_OnDisabledChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDisabledChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnDestroyedByRecycle
-	// void Cosmetic_OnDestroyedByRecycle();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDestroyedByRecycle();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnDestroyedByManualRemoval
-	// void Cosmetic_OnDestroyedByManualRemoval();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDestroyedByManualRemoval();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnDestroyedByEmp
-	// void Cosmetic_OnDestroyedByEmp(class ADBDPlayer* destroyingSurvivor);                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDestroyedByEmp(class ADBDPlayer* destroyingSurvivor);                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnControlledByKillerChanged
-	// void Cosmetic_OnControlledByKillerChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnControlledByKillerChanged(FK32KillerPodSettings previousSettings, FK32KillerPodSettings Settings);    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_OnAddon14Started
-	// void Cosmetic_OnAddon14Started();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAddon14Started();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Cosmetic_IsBlockingPodSpawningChanged
-	// void Cosmetic_IsBlockingPodSpawningChanged(bool isBlocking, float distanceBetweenPods);                               // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_IsBlockingPodSpawningChanged(bool isBlocking, float distanceBetweenPods);                               // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPod.Authority_OnDisabledTimerDone
-	// void Authority_OnDisabledTimerDone();                                                                                 // [0x5cde3d0] Final|Native|Private 
+	// void Authority_OnDisabledTimerDone();                                                                                 // [0x5ceb570] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32KillerPodOutlineUpdateStrategy
@@ -493,21 +493,21 @@ public:
 	FDBDTunableRowHandle                               _lastControlledPodLingerTime;                               // 0x0198   (0x0028)  
 	FDBDTunableRowHandle                               _destroyPodDelay;                                           // 0x01C0   (0x0028)  
 	FDBDTunableRowHandle                               _initialDestroyPodDelay;                                    // 0x01E8   (0x0028)  
-	SDK_UNDEFINED(8,5142) /* TWeakObjectPtr<AK32KillerPod*> */ __um(_controlledPod);                               // 0x0210   (0x0008)  
+	SDK_UNDEFINED(8,5532) /* TWeakObjectPtr<AK32KillerPod*> */ __um(_controlledPod);                               // 0x0210   (0x0008)  
 	unsigned char                                      UnknownData00_6[0xE0];                                      // 0x0218   (0x00E0)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodPool.OnLingeringLastControlledPodExpired
-	// void OnLingeringLastControlledPodExpired();                                                                           // [0x5ce2f50] Final|Native|Private 
+	// void OnLingeringLastControlledPodExpired();                                                                           // [0x5cf0130] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodPool.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5ce2f10] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5cf00f0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodPool.OnKillerPodCreated
-	// void OnKillerPodCreated(class AActor* Actor);                                                                         // [0x5ce2dd0] Final|Native|Private 
+	// void OnKillerPodCreated(class AActor* Actor);                                                                         // [0x5ceffb0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodPool.OnKillerPodAcquiredChanged
-	// void OnKillerPodAcquiredChanged(bool IsAcquired);                                                                     // [0x5ce2d40] Final|Native|Private 
+	// void OnKillerPodAcquiredChanged(bool IsAcquired);                                                                     // [0x5ceff20] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodPool.Authority_OnDestroyPodDelayTimerDone
-	// void Authority_OnDestroyPodDelayTimerDone(class ADBDPlayer* launchingSurvivor);                                       // [0x5ce2680] Final|Native|Private 
+	// void Authority_OnDestroyPodDelayTimerDone(class ADBDPlayer* launchingSurvivor);                                       // [0x5cef860] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32KillerPodRestrictedZone
@@ -519,9 +519,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodRestrictedZone.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5ce2ef0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5cf00d0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodRestrictedZone.GetStaticMesh
-	// class UStaticMeshComponent* GetStaticMesh();                                                                          // [0x61c32d0] Event|Protected|BlueprintEvent|Const 
+	// class UStaticMeshComponent* GetStaticMesh();                                                                          // [0x61d2f50] Event|Protected|BlueprintEvent|Const 
 };
 
 /// Class /Script/TheK32.K32KillerPodSpawningComponent
@@ -572,13 +572,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodSpawningComponent.Server_FireKillerProjectile
-	// void Server_FireKillerProjectile(FK32KillerPodSpawningInputData InputData, EK32KillerPodSpawningResult expectedResult); // [0x5ce3020] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_FireKillerProjectile(FK32KillerPodSpawningInputData InputData, EK32KillerPodSpawningResult expectedResult); // [0x5cf0200] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK32.K32KillerPodSpawningComponent.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5ce2c00] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x5cefde0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodSpawningComponent.Multicast_FireKillerProjectile
-	// void Multicast_FireKillerProjectile();                                                                                // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_FireKillerProjectile();                                                                                // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPodSpawningComponent.Cosmetic_OnInvalidPodTriggers
-	// void Cosmetic_OnInvalidPodTriggers(FVector& invalidLocation);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
+	// void Cosmetic_OnInvalidPodTriggers(FVector& invalidLocation);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent|Const 
 };
 
 /// Struct /Script/TheK32.K32KillerPodSpawningIndicatorSettings
@@ -604,9 +604,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodSpawningIndicator.GetSettings
-	// FK32KillerPodSpawningIndicatorSettings GetSettings();                                                                 // [0x5ce2710] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FK32KillerPodSpawningIndicatorSettings GetSettings();                                                                 // [0x5cef8f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32KillerPodSpawningIndicator.Cosmetic_OnSettingsChanged
-	// void Cosmetic_OnSettingsChanged(FK32KillerPodSpawningIndicatorSettings previousSettings, FK32KillerPodSpawningIndicatorSettings Settings); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSettingsChanged(FK32KillerPodSpawningIndicatorSettings previousSettings, FK32KillerPodSpawningIndicatorSettings Settings); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/TheK32.K32KillerPodTargetIndicatorSettings
@@ -630,9 +630,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodTargetIndicator.GetSettings
-	// FK32KillerPodTargetIndicatorSettings GetSettings();                                                                   // [0x5ce2710] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FK32KillerPodTargetIndicatorSettings GetSettings();                                                                   // [0x5cef8f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32KillerPodTargetIndicator.Cosmetic_OnSettingsChanged
-	// void Cosmetic_OnSettingsChanged(FK32KillerPodTargetIndicatorSettings previousSettings, FK32KillerPodTargetIndicatorSettings Settings); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSettingsChanged(FK32KillerPodTargetIndicatorSettings previousSettings, FK32KillerPodTargetIndicatorSettings Settings); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32KillerPodTargetingComponent
@@ -645,11 +645,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodTargetingComponent.Cosmetic_Local_NewKillerPodTargeted
-	// void Cosmetic_Local_NewKillerPodTargeted(class AK32KillerPod* newTarget);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_NewKillerPodTargeted(class AK32KillerPod* newTarget);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32KillerPodVisionController
-/// Size: 0x0198 (0x000230 - 0x0003C8)
+/// Size: 0x01A0 (0x000230 - 0x0003D0)
 class AK32KillerPodVisionController : public AActor
 { 
 public:
@@ -661,45 +661,46 @@ public:
 	FDBDTunableRowHandle                               _collisionDisableTime;                                      // 0x02C8   (0x0028)  
 	float                                              _observerRotationSpeed;                                     // 0x02F0   (0x0004)  
 	float                                              _minTimeBetweenCameraRotationUpdateRPC;                     // 0x02F4   (0x0004)  
-	bool                                               _hasVisionFromKillerPod;                                    // 0x02F8   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xCF];                                      // 0x02F9   (0x00CF)  MISSED
+	class UCameraComponent*                            _camera;                                                    // 0x02F8   (0x0008)  
+	bool                                               _hasVisionFromKillerPod;                                    // 0x0300   (0x0001)  
+	unsigned char                                      UnknownData01_6[0xCF];                                      // 0x0301   (0x00CF)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodVisionController.Server_TakeControlOfPod
-	// void Server_TakeControlOfPod(class AK32KillerPod* killerPodToBeControlled);                                           // [0x5ce32a0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_TakeControlOfPod(class AK32KillerPod* killerPodToBeControlled);                                           // [0x5cf0480] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK32.K32KillerPodVisionController.Server_SetCameraOrientation
-	// void Server_SetCameraOrientation(FRotator NewOrientation);                                                            // [0x5ce3140] Final|Net|Native|Event|Private|NetServer|HasDefaults 
+	// void Server_SetCameraOrientation(FRotator NewOrientation);                                                            // [0x5cf0320] Final|Net|Native|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK32.K32KillerPodVisionController.Server_ReleaseControlOfPods
-	// void Server_ReleaseControlOfPods();                                                                                   // [0x43c1740] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_ReleaseControlOfPods();                                                                                   // [0x435f040] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK32.K32KillerPodVisionController.OnRep_HasVisionFromKillerPod
-	// void OnRep_HasVisionFromKillerPod();                                                                                  // [0x5ce2f70] Final|Native|Private 
+	// void OnRep_HasVisionFromKillerPod();                                                                                  // [0x5cf0150] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5ce2e60] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5cf0040] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.OnKillerLocallyObservedChanged
-	// void OnKillerLocallyObservedChanged(bool isKillerLocallyObserved);                                                    // [0x5ce2cb0] Final|Native|Private 
+	// void OnKillerLocallyObservedChanged(bool isKillerLocallyObserved);                                                    // [0x5cefe90] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.OnInteractionStarted
-	// void OnInteractionStarted(class UInteractionDefinition* Interaction);                                                 // [0x5ce2b70] Final|Native|Private 
+	// void OnInteractionStarted(class UInteractionDefinition* Interaction);                                                 // [0x5cefd50] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.OnControlledPodUnacquiredFromPool
-	// void OnControlledPodUnacquiredFromPool(bool IsAcquired);                                                              // [0x5ce2ae0] Final|Native|Private 
+	// void OnControlledPodUnacquiredFromPool(bool IsAcquired);                                                              // [0x5cefcc0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.Multicast_SetLocationAndRotation
-	// void Multicast_SetLocationAndRotation(FVector Location);                                                              // [0x5ce2900] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetLocationAndRotation(FVector Location);                                                              // [0x5cefae0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK32.K32KillerPodVisionController.Multicast_SetKillerCollisionDisabledForSurvivors
-	// void Multicast_SetKillerCollisionDisabledForSurvivors(bool IsDisabled);                                               // [0x57e12a0] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_SetKillerCollisionDisabledForSurvivors(bool IsDisabled);                                               // [0x57e9b10] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.Multicast_SetCameraOrientation
-	// void Multicast_SetCameraOrientation(FRotator NewOrientation);                                                         // [0x5ce2870] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetCameraOrientation(FRotator NewOrientation);                                                         // [0x5cefa50] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK32.K32KillerPodVisionController.Multicast_OnControlledPodDisabledChanged
-	// void Multicast_OnControlledPodDisabledChanged(bool IsDisabled);                                                       // [0x57e1330] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_OnControlledPodDisabledChanged(bool IsDisabled);                                                       // [0x57e9c20] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.Cosmetic_Local_OnTakingControlOfPod
-	// void Cosmetic_Local_OnTakingControlOfPod();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_OnTakingControlOfPod();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPodVisionController.Cosmetic_Local_OnReleasingControlOfPod
-	// void Cosmetic_Local_OnReleasingControlOfPod();                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_OnReleasingControlOfPod();                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPodVisionController.Cosmetic_Local_OnCurrentPodDisabledChanged
-	// void Cosmetic_Local_OnCurrentPodDisabledChanged(bool IsDisabled);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_OnCurrentPodDisabledChanged(bool IsDisabled);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPodVisionController.Authority_OnControlledPodDisabledChanged
-	// void Authority_OnControlledPodDisabledChanged(bool IsDisabled);                                                       // [0x5ce25f0] Final|Native|Private 
+	// void Authority_OnControlledPodDisabledChanged(bool IsDisabled);                                                       // [0x5cef7d0] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerPodVisionController.Authority_OnCollisionDisableTimerComplete
-	// void Authority_OnCollisionDisableTimerComplete();                                                                     // [0x5ce25d0] Final|Native|Private 
+	// void Authority_OnCollisionDisableTimerComplete();                                                                     // [0x5cef7b0] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32KillerPodVisionLockOnComponent
@@ -727,19 +728,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Server_SetSurvivorBeingLockedOn
-	// void Server_SetSurvivorBeingLockedOn(class ACamperPlayer* TargetSurvivor);                                            // [0x507e2f0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetSurvivorBeingLockedOn(class ACamperPlayer* TargetSurvivor);                                            // [0x505fd60] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Server_LaunchAssimilationProjectile
-	// void Server_LaunchAssimilationProjectile(class ACamperPlayer* TargetSurvivor, class AK32KillerPod* currentPod);       // [0x58cff00] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_LaunchAssimilationProjectile(class ACamperPlayer* TargetSurvivor, class AK32KillerPod* currentPod);       // [0x58d65a0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Multicast_ShootPodProjectileAtSurvivor
-	// void Multicast_ShootPodProjectileAtSurvivor(class AK32KillerPod* originKillerPod, class ACamperPlayer* TargetSurvivor); // [0x4db2940] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ShootPodProjectileAtSurvivor(class AK32KillerPod* originKillerPod, class ACamperPlayer* TargetSurvivor); // [0x4d828a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Cosmetic_ShootPodProjectileAtSurvivor
-	// void Cosmetic_ShootPodProjectileAtSurvivor(class AK32KillerPod* currentPod, class ACamperPlayer* TargetSurvivor);     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ShootPodProjectileAtSurvivor(class AK32KillerPod* currentPod, class ACamperPlayer* TargetSurvivor);     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Cosmetic_Local_OnCooldownStarted
-	// void Cosmetic_Local_OnCooldownStarted();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_OnCooldownStarted();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Cosmetic_Local_OnCooldownEnded
-	// void Cosmetic_Local_OnCooldownEnded();                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_OnCooldownEnded();                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerPodVisionLockOnComponent.Cosmetic_Local_IsChargingChanged
-	// void Cosmetic_Local_IsChargingChanged(bool IsCharging);                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_Local_IsChargingChanged(bool IsCharging);                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32KillerProjectileSpawnChargeableInteractionDefinition
@@ -747,15 +748,15 @@ public:
 class UK32KillerProjectileSpawnChargeableInteractionDefinition : public UChargeableInteractionDefinition
 { 
 public:
-	FDBDTunableRowHandle                               _reloadTime;                                                // 0x0788   (0x0028)  
-	FDBDTunableRowHandle                               _secondsToCharge;                                           // 0x07B0   (0x0028)  
-	FDBDTunableRowHandle                               _dechargeRate;                                              // 0x07D8   (0x0028)  
-	unsigned char                                      UnknownData00_6[0xB0];                                      // 0x0800   (0x00B0)  MISSED
+	FDBDTunableRowHandle                               _reloadTime;                                                // 0x0790   (0x0028)  
+	FDBDTunableRowHandle                               _secondsToCharge;                                           // 0x07B8   (0x0028)  
+	FDBDTunableRowHandle                               _dechargeRate;                                              // 0x07E0   (0x0028)  
+	unsigned char                                      UnknownData00_6[0xA8];                                      // 0x0808   (0x00A8)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerProjectileSpawnChargeableInteractionDefinition.Cosmetic_OnPodShot
-	// void Cosmetic_OnPodShot();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPodShot();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32KillerToPodVisionInteractionDefinition
@@ -786,29 +787,29 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Server_SetTeleportTarget
-	// void Server_SetTeleportTarget(class ACamperPlayer* Survivor, class AK32KillerPod* initiatedPod);                      // [0x5ce31d0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetTeleportTarget(class ACamperPlayer* Survivor, class AK32KillerPod* initiatedPod);                      // [0x5cf03b0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.OnTeleportationComplete
-	// void OnTeleportationComplete(class ADBDPlayer* Player);                                                               // [0x5ce2f90] Final|Native|Private 
+	// void OnTeleportationComplete(class ADBDPlayer* Player);                                                               // [0x5cf0170] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5ce2f30] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5cf0110] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.OnKillerCollisionIngoreLingerComplete
-	// void OnKillerCollisionIngoreLingerComplete(class ADBDPlayer* Player);                                                 // [0x5ce2c20] Final|Native|Private 
+	// void OnKillerCollisionIngoreLingerComplete(class ADBDPlayer* Player);                                                 // [0x5cefe00] Final|Native|Private 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Multicast_SetTeleportTarget
-	// void Multicast_SetTeleportTarget(class ACamperPlayer* Survivor, FVector teleportEndLocation, FVector teleportStartLocation, class AK32KillerPod* initiatedPod); // [0x5ce2980] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetTeleportTarget(class ACamperPlayer* Survivor, FVector teleportEndLocation, FVector teleportStartLocation, class AK32KillerPod* initiatedPod); // [0x5cefb60] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Multicast_OnTeleportStarted
-	// void Multicast_OnTeleportStarted(class ADBDPlayer* Player, FVector teleportStartLocation, FVector teleportEndLocation); // [0x5ce2760] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_OnTeleportStarted(class ADBDPlayer* Player, FVector teleportStartLocation, FVector teleportEndLocation); // [0x5cef940] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Multicast_OnTeleportEnded
-	// void Multicast_OnTeleportEnded(class ADBDPlayer* Player);                                                             // [0x50ae490] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnTeleportEnded(class ADBDPlayer* Player);                                                             // [0x5092240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Multicast_DestroyPallet
-	// void Multicast_DestroyPallet(class APallet* Pallet);                                                                  // [0x5087b00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DestroyPallet(class APallet* Pallet);                                                                  // [0x50696d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Cosmetic_OnTeleportStart
-	// void Cosmetic_OnTeleportStart(FVector& teleportEndLocation, FVector& teleportStartLocation);                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_OnTeleportStart(FVector& teleportEndLocation, FVector& teleportStartLocation);                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Cosmetic_OnTeleportEnd
-	// void Cosmetic_OnTeleportEnd();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTeleportEnd();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Cosmetic_EnableTeleportVignette
-	// void Cosmetic_EnableTeleportVignette(class ASlasherPlayer* killer);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_EnableTeleportVignette(class ASlasherPlayer* killer);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32KillerToSurvivorTeleportInteractionDefinition.Cosmetic_DisableTeleportVignette
-	// void Cosmetic_DisableTeleportVignette(class ASlasherPlayer* killer);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DisableTeleportVignette(class ASlasherPlayer* killer);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32OverclockStatusEffectBase
@@ -823,7 +824,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32OverclockStatusEffectBase.Multicast_DestroyPallet
-	// void Multicast_DestroyPallet(class APallet* Pallet, class ASlasherPlayer* killer);                                    // [0x50103c0] Net|NetReliableNative|Event|NetMulticast|Protected|Const 
+	// void Multicast_DestroyPallet(class APallet* Pallet, class ASlasherPlayer* killer);                                    // [0x4fedca0] Net|NetReliableNative|Event|NetMulticast|Protected|Const 
 };
 
 /// Class /Script/TheK32.K32OverheatStatusEffectBase
@@ -845,7 +846,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32P01.GetExhaustionDurationAtLevel
-	// float GetExhaustionDurationAtLevel();                                                                                 // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustionDurationAtLevel();                                                                                 // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK32.K32P02
@@ -862,11 +863,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32P02.GetPerkRangeAtLevel
-	// float GetPerkRangeAtLevel();                                                                                          // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkRangeAtLevel();                                                                                          // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32P02.GetPerkCooldownAtLevel
-	// float GetPerkCooldownAtLevel();                                                                                       // [0x500a9b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkCooldownAtLevel();                                                                                       // [0x4fe8260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32P02.GetHinderedEffectDurationAtLevel
-	// float GetHinderedEffectDurationAtLevel();                                                                             // [0x50230e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHinderedEffectDurationAtLevel();                                                                             // [0x5000c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK32.K32P03
@@ -886,15 +887,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32P03.OnRep_CompromisedGenerator
-	// void OnRep_CompromisedGenerator();                                                                                    // [0x5ce6a10] Final|Native|Private 
+	// void OnRep_CompromisedGenerator();                                                                                    // [0x5cf3bf0] Final|Native|Private 
 	// Function /Script/TheK32.K32P03.GetStatusEffectDurationAtLevel
-	// float GetStatusEffectDurationAtLevel();                                                                               // [0x500f7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStatusEffectDurationAtLevel();                                                                               // [0x4fed0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32P03.GetHastePercent
-	// float GetHastePercent();                                                                                              // [0x5ce6530] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHastePercent();                                                                                              // [0x5cf3710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.K32P03.Cosmetic_OnTriggerCompromiseVFX
-	// void Cosmetic_OnTriggerCompromiseVFX(class AGenerator* compromisedGenerator);                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTriggerCompromiseVFX(class AGenerator* compromisedGenerator);                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK32.K32P03.Cosmetic_OnCompromiseCompletedVFX
-	// void Cosmetic_OnCompromiseCompletedVFX(class AGenerator* compromisedGenerator);                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnCompromiseCompletedVFX(class AGenerator* compromisedGenerator);                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32P03IconStrategy
@@ -992,7 +993,7 @@ struct FK32SurvivorStatus
 	bool                                               IsAssimilated;                                              // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
 	TArray<FVector>                                    RecentLocations;                                            // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,5143) /* TMap<ACamperPlayer*, float> */ __um(Authority_CrossAssimilationStartedTime);         // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,5533) /* TMap<ACamperPlayer*, float> */ __um(Authority_CrossAssimilationStartedTime);         // 0x0020   (0x0050)  
 	bool                                               Authority_IsBeingCrossAssimilated;                          // 0x0070   (0x0001)  
 	bool                                               Authority_CanBeAffectedByPower;                             // 0x0071   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0072   (0x0002)  MISSED
@@ -1017,32 +1018,32 @@ public:
 	FDBDTunableRowHandle                               _assimilationCooldownTime;                                  // 0x0230   (0x0028)  
 	TArray<FK32SurvivorStatus>                         _survivorStatusList;                                        // 0x0258   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0268   (0x0008)  MISSED
-	SDK_UNDEFINED(80,5144) /* TMap<ACamperPlayer*, FFastTimer> */ __um(_assimilationCooldownTimers);               // 0x0270   (0x0050)  
+	SDK_UNDEFINED(80,5534) /* TMap<ACamperPlayer*, FFastTimer> */ __um(_assimilationCooldownTimers);               // 0x0270   (0x0050)  
 	TArray<FGameplayTag>                               _survivorTagsToPreventPositionStorage;                      // 0x02C0   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x50];                                      // 0x02D0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.OnRep_SurvivorStatusList
-	// void OnRep_SurvivorStatusList(TArray<FK32SurvivorStatus> oldSurvivorStatus);                                          // [0x5ce6a30] Final|Native|Private 
+	// void OnRep_SurvivorStatusList(TArray<FK32SurvivorStatus> oldSurvivorStatus);                                          // [0x5cf3c10] Final|Native|Private 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5ce67d0] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x5cf39b0] Final|Native|Private 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Multicast_SurvivorScream
-	// void Multicast_SurvivorScream(class ACamperPlayer* Survivor);                                                         // [0x57e0340] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_SurvivorScream(class ACamperPlayer* Survivor);                                                         // [0x57e83c0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Multicast_OnInRangeOfAssimilationSpreadingSurvivor
-	// void Multicast_OnInRangeOfAssimilationSpreadingSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x5b9cd30] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_OnInRangeOfAssimilationSpreadingSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x5baa330] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Multicast_OnAssimilationSpreadingToSurvivor
-	// void Multicast_OnAssimilationSpreadingToSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x4db2940] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_OnAssimilationSpreadingToSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x4d828a0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Cosmetic_OnInRangeOfAssimilationSpreadingSurvivor
-	// void Cosmetic_OnInRangeOfAssimilationSpreadingSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInRangeOfAssimilationSpreadingSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Cosmetic_OnAssimilationSpreadingToSurvivor
-	// void Cosmetic_OnAssimilationSpreadingToSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAssimilationSpreadingToSurvivor(class ACamperPlayer* originatingSurvivor, class ACamperPlayer* TargetSurvivor); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Cosmetic_OnAssimilationChanged
-	// void Cosmetic_OnAssimilationChanged(class ACamperPlayer* Survivor, bool IsAssimilated);                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAssimilationChanged(class ACamperPlayer* Survivor, bool IsAssimilated);                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.BP_SurvivorScream
-	// void BP_SurvivorScream(class ACamperPlayer* Survivor);                                                                // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_SurvivorScream(class ACamperPlayer* Survivor);                                                                // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32PowerStatusHandlerComponent.Authority_OnSurvivorAdded
-	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5ce6370] Final|Native|Private 
+	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5cf3550] Final|Native|Private 
 };
 
 /// Class /Script/TheK32.K32SurvivorAnimInstance
@@ -1063,11 +1064,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32SurvivorAnimInstance.ResetHasBeenCleansedFromAssimilation
-	// void ResetHasBeenCleansedFromAssimilation();                                                                          // [0x5ce6b70] Final|Native|Protected|BlueprintCallable 
+	// void ResetHasBeenCleansedFromAssimilation();                                                                          // [0x5cf3d50] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK32.K32SurvivorAnimInstance.ResetHasBeenAssimilatedByKiller
-	// void ResetHasBeenAssimilatedByKiller();                                                                               // [0x5ce6b50] Final|Native|Protected|BlueprintCallable 
+	// void ResetHasBeenAssimilatedByKiller();                                                                               // [0x5cf3d30] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK32.K32SurvivorAnimInstance.ResetHasBeenAssimilatedByAnotherSurvivor
-	// void ResetHasBeenAssimilatedByAnotherSurvivor();                                                                      // [0x5ce6b30] Final|Native|Protected|BlueprintCallable 
+	// void ResetHasBeenAssimilatedByAnotherSurvivor();                                                                      // [0x5cf3d10] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheK32.K32SurvivorCosmeticHelperActor
@@ -1081,21 +1082,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.OnSurvivorDisguisedOrUndisguised
-	// void OnSurvivorDisguisedOrUndisguised(bool isDisguised);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnSurvivorDisguisedOrUndisguised(bool isDisguised);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.OnKillerNoLongerLocksOnToSurvivor
-	// void OnKillerNoLongerLocksOnToSurvivor(FGameplayTag gameEventType, FGameEventData& GameEventData);                    // [0x5ce6900] Final|Native|Private|HasOutParms 
+	// void OnKillerNoLongerLocksOnToSurvivor(FGameplayTag gameEventType, FGameEventData& GameEventData);                    // [0x5cf3ae0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.OnKillerLocksOnToSurvivor
-	// void OnKillerLocksOnToSurvivor(FGameplayTag gameEventType, FGameEventData& GameEventData);                            // [0x5ce67f0] Final|Native|Private|HasOutParms 
+	// void OnKillerLocksOnToSurvivor(FGameplayTag gameEventType, FGameEventData& GameEventData);                            // [0x5cf39d0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.GetNoseLocation
-	// FVector GetNoseLocation();                                                                                            // [0x5ce65e0] Final|Native|Protected|HasDefaults|BlueprintCallable 
+	// FVector GetNoseLocation();                                                                                            // [0x5cf37c0] Final|Native|Protected|HasDefaults|BlueprintCallable 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.Cosmetic_OnTeleportStart
-	// void Cosmetic_OnTeleportStart(FVector& teleportStartLocation, FVector& teleportEndLocation);                          // [0x61c32d0] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_OnTeleportStart(FVector& teleportStartLocation, FVector& teleportEndLocation);                          // [0x61d2f50] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.Cosmetic_OnKillerNoLongerLocksOnToSurvivor
-	// void Cosmetic_OnKillerNoLongerLocksOnToSurvivor();                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerNoLongerLocksOnToSurvivor();                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.Cosmetic_OnKillerLocksOnToSurvivor
-	// void Cosmetic_OnKillerLocksOnToSurvivor(bool isTargetAssimilated);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerLocksOnToSurvivor(bool isTargetAssimilated);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK32.K32SurvivorCosmeticHelperActor.Cosmetic_OnIsEffectiveEmpInRangeChanged
-	// void Cosmetic_OnIsEffectiveEmpInRangeChanged(bool isEffectiveEmpInRange);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsEffectiveEmpInRangeChanged(bool isEffectiveEmpInRange);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK32.K32SurvivorStatusComponent
@@ -1115,13 +1116,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.K32Utilities.IsSurvivorAbleToBeAffectedByPower
-	// bool IsSurvivorAbleToBeAffectedByPower(class ACamperPlayer* Survivor, class ASlasherPlayer* killer);                  // [0x5ce6700] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSurvivorAbleToBeAffectedByPower(class ACamperPlayer* Survivor, class ASlasherPlayer* killer);                  // [0x5cf38e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK32.K32Utilities.IsPodOutlineAndIndicatorVisible
-	// bool IsPodOutlineAndIndicatorVisible(class ASlasherPlayer* killer);                                                   // [0x5ce6670] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsPodOutlineAndIndicatorVisible(class ASlasherPlayer* killer);                                                   // [0x5cf3850] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK32.K32Utilities.GetK32Power
-	// class AK32Power* GetK32Power(class UObject* WorldContextObject);                                                      // [0x5ce6550] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK32Power* GetK32Power(class UObject* WorldContextObject);                                                      // [0x5cf3730] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK32.K32Utilities.DoesEmpReach
-	// bool DoesEmpReach(FVector& launchPosition, FVector& targetLocation, float rangeSquared);                              // [0x5ce6400] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// bool DoesEmpReach(FVector& launchPosition, FVector& targetLocation, float rangeSquared);                              // [0x5cf35e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK32.S37P01
@@ -1139,9 +1140,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.S37P01.GetKillerRevealedTimeAtLevel
-	// float GetKillerRevealedTimeAtLevel();                                                                                 // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKillerRevealedTimeAtLevel();                                                                                 // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.S37P01.GetChaseLingeringTimerAtLevel
-	// float GetChaseLingeringTimerAtLevel();                                                                                // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChaseLingeringTimerAtLevel();                                                                                // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK32.S37P02
@@ -1158,9 +1159,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.S37P02.GetHasteSpeedAmountAtLevel
-	// float GetHasteSpeedAmountAtLevel();                                                                                   // [0x500a890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteSpeedAmountAtLevel();                                                                                   // [0x4fe8140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.S37P02.GetEnduranceEffectTimerAtLevel
-	// float GetEnduranceEffectTimerAtLevel();                                                                               // [0x500f7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEnduranceEffectTimerAtLevel();                                                                               // [0x4fed0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK32.S37P03
@@ -1180,9 +1181,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK32.S37P03.GetRepairSpeedDebuffTimeAtLevel
-	// float GetRepairSpeedDebuffTimeAtLevel();                                                                              // [0x5ce6620] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRepairSpeedDebuffTimeAtLevel();                                                                              // [0x5cf3800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK32.S37P03.GetRepairSpeedDebuffAmount
-	// float GetRepairSpeedDebuffAmount();                                                                                   // [0x500f6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRepairSpeedDebuffAmount();                                                                                   // [0x4fecfd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TheK32.K32BaseProjectilePayload

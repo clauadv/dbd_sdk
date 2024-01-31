@@ -57,16 +57,6 @@ enum class EProfileMenuState : uint8_t
 	EProfileMenuState__EProfileMenuState_MAX                                         = 3
 };
 
-/// Enum /Script/DBDUIViewInterfaces.EStoreCharactersMenuState
-/// Size: 0x04
-enum class EStoreCharactersMenuState : uint8_t
-{
-	EStoreCharactersMenuState__Selection                                             = 0,
-	EStoreCharactersMenuState__Customizations                                        = 1,
-	EStoreCharactersMenuState__Bio                                                   = 2,
-	EStoreCharactersMenuState__EStoreCharactersMenuState_MAX                         = 3
-};
-
 /// Enum /Script/DBDUIViewInterfaces.EStoreMenuState
 /// Size: 0x07
 enum class EStoreMenuState : uint8_t
@@ -190,6 +180,43 @@ enum class EInteractionPromptType : uint8_t
 	EInteractionPromptType__EInteractionPromptType_MAX                               = 7
 };
 
+/// Enum /Script/DBDUIViewInterfaces.ELockedElementType
+/// Size: 0x04
+enum class ELockedElementType : uint8_t
+{
+	ELockedElementType__Default                                                      = 0,
+	ELockedElementType__MainMenuButton                                               = 1,
+	ELockedElementType__FooterButton                                                 = 2,
+	ELockedElementType__ELockedElementType_MAX                                       = 3
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EMainMenuButtonType
+/// Size: 0x21
+enum class EMainMenuButtonType : uint8_t
+{
+	EMainMenuButtonType__News                                                        = 0,
+	EMainMenuButtonType__Play                                                        = 1,
+	EMainMenuButtonType__PlaySurvivor                                                = 2,
+	EMainMenuButtonType__PlayKiller                                                  = 3,
+	EMainMenuButtonType__KillYourFriends                                             = 4,
+	EMainMenuButtonType__PlayLTE                                                     = 5,
+	EMainMenuButtonType__PlaySurvivorLTE                                             = 6,
+	EMainMenuButtonType__PlayKillerLTE                                               = 7,
+	EMainMenuButtonType__DailyRituals                                                = 8,
+	EMainMenuButtonType__Store                                                       = 9,
+	EMainMenuButtonType__Settings                                                    = 10,
+	EMainMenuButtonType__Onboarding                                                  = 11,
+	EMainMenuButtonType__Credits                                                     = 12,
+	EMainMenuButtonType__QuitGame                                                    = 13,
+	EMainMenuButtonType__Friends                                                     = 14,
+	EMainMenuButtonType__Archives                                                    = 15,
+	EMainMenuButtonType__Event                                                       = 16,
+	EMainMenuButtonType__MarketingInvitation                                         = 17,
+	EMainMenuButtonType__Challenges                                                  = 18,
+	EMainMenuButtonType__Count                                                       = 19,
+	EMainMenuButtonType__EMainMenuButtonType_MAX                                     = 20
+};
+
 /// Enum /Script/DBDUIViewInterfaces.EMilestoneTrackerItemState
 /// Size: 0x04
 enum class EMilestoneTrackerItemState : uint8_t
@@ -198,6 +225,36 @@ enum class EMilestoneTrackerItemState : uint8_t
 	EMilestoneTrackerItemState__InProgress                                           = 1,
 	EMilestoneTrackerItemState__Locked                                               = 2,
 	EMilestoneTrackerItemState__EMilestoneTrackerItemState_MAX                       = 3
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EButtonDisableState
+/// Size: 0x04
+enum class EButtonDisableState : uint8_t
+{
+	EButtonDisableState__Default                                                     = 0,
+	EButtonDisableState__Loading                                                     = 1,
+	EButtonDisableState__Locked                                                      = 2,
+	EButtonDisableState__EButtonDisableState_MAX                                     = 3
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EStoreCharactersActionButtonState
+/// Size: 0x04
+enum class EStoreCharactersActionButtonState : uint8_t
+{
+	EStoreCharactersActionButtonState__Hidden                                        = 0,
+	EStoreCharactersActionButtonState__Disabled                                      = 1,
+	EStoreCharactersActionButtonState__Visible                                       = 2,
+	EStoreCharactersActionButtonState__EStoreCharactersActionButtonState_MAX         = 3
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EStoreCharactersMenuState
+/// Size: 0x04
+enum class EStoreCharactersMenuState : uint8_t
+{
+	EStoreCharactersMenuState__Selection                                             = 0,
+	EStoreCharactersMenuState__Customizations                                        = 1,
+	EStoreCharactersMenuState__Bio                                                   = 2,
+	EStoreCharactersMenuState__EStoreCharactersMenuState_MAX                         = 3
 };
 
 /// Enum /Script/DBDUIViewInterfaces.EStoreCollectionsMenuState
@@ -235,11 +292,44 @@ enum class EStoreSpecialPacksMenuState : uint8_t
 };
 
 /// Enum /Script/DBDUIViewInterfaces.ETestBuildFlagPosition
-/// Size: 0x02
+/// Size: 0x04
 enum class ETestBuildFlagPosition : uint8_t
 {
 	ETestBuildFlagPosition__Hud                                                      = 0,
-	ETestBuildFlagPosition__ETestBuildFlagPosition_MAX                               = 1
+	ETestBuildFlagPosition__MainMenu                                                 = 1,
+	ETestBuildFlagPosition__Lobby                                                    = 2,
+	ETestBuildFlagPosition__ETestBuildFlagPosition_MAX                               = 3
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EFlagItemType
+/// Size: 0x04
+enum class EFlagItemType : uint8_t
+{
+	EFlagItemType__Unbreakable                                                       = 0,
+	EFlagItemType__Outfit                                                            = 1,
+	EFlagItemType__Item                                                              = 2,
+	EFlagItemType__EFlagItemType_MAX                                                 = 3
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EFlagSize
+/// Size: 0x05
+enum class EFlagSize : uint8_t
+{
+	EFlagSize__Short                                                                 = 0,
+	EFlagSize__Medium                                                                = 1,
+	EFlagSize__Large                                                                 = 2,
+	EFlagSize__Preview                                                               = 3,
+	EFlagSize__EFlagSize_MAX                                                         = 4
+};
+
+/// Enum /Script/DBDUIViewInterfaces.EFlagType
+/// Size: 0x04
+enum class EFlagType : uint8_t
+{
+	EFlagType__Sale                                                                  = 0,
+	EFlagType__Limited                                                               = 1,
+	EFlagType__ArchiveRift                                                           = 2,
+	EFlagType__EFlagType_MAX                                                         = 3
 };
 
 /// Class /Script/DBDUIViewInterfaces.AddonViewInterface
@@ -251,9 +341,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.AddonViewInterface.SetData
-	// void SetData(FAddonViewData& BaseLoadoutPartViewData);                                                                // [0x49d66b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FAddonViewData& BaseLoadoutPartViewData);                                                                // [0x4988350] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.AddonViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.AlertsViewInterface
@@ -272,9 +362,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.AntiCampSelfUnhookMeterViewInterface.SetState
-	// void SetState(EAntiCampSelfUnhookMeterState NewState);                                                                // [0x49d70c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetState(EAntiCampSelfUnhookMeterState NewState);                                                                // [0x4988d60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.AntiCampSelfUnhookMeterViewInterface.SetProgress
-	// void SetProgress(float Progress);                                                                                     // [0x49d6d20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetProgress(float progress);                                                                                     // [0x49889c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveCompendiumViewInterface
@@ -286,7 +376,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveCompendiumViewInterface.SetPastTomesViewData
-	// void SetPastTomesViewData(TArray<FCompendiumButtonData>& pastStoryButtonData);                                        // [0x49d6bf0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPastTomesViewData(TArray<FCompendiumButtonData>& pastStoryButtonData);                                        // [0x4988890] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveEditorViewInterface
@@ -298,9 +388,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveEditorViewInterface.InitEditor
-	// void InitEditor();                                                                                                    // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitEditor();                                                                                                    // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveEditorViewInterface.DisplayEditorSaving
-	// void DisplayEditorSaving(FString Path);                                                                               // [0x49d5ef0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisplayEditorSaving(FString Path);                                                                               // [0x4987b90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveImageViewerViewInterface
@@ -312,13 +402,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveImageViewerViewInterface.UpdateContent
-	// void UpdateContent(FArchivesVignetteEntryViewData& Data);                                                             // [0x49d8140] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateContent(FArchivesVignetteEntryViewData& Data);                                                             // [0x4989e60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveImageViewerViewInterface.SetVoiceOverPlaying
-	// void SetVoiceOverPlaying(bool voiceOverPlaying);                                                                      // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetVoiceOverPlaying(bool voiceOverPlaying);                                                                      // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveImageViewerViewInterface.SetVoiceOverAutoplay
-	// void SetVoiceOverAutoplay(bool voiceOverAutoplay);                                                                    // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetVoiceOverAutoplay(bool voiceOverAutoplay);                                                                    // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveImageViewerViewInterface.SetTextVisibility
-	// void SetTextVisibility(bool visible);                                                                                 // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTextVisibility(bool visible);                                                                                 // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface
@@ -330,25 +420,25 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetVoiceOverPlaying
-	// void SetVoiceOverPlaying(bool voiceOverPlaying);                                                                      // [0x49d7ca0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetVoiceOverPlaying(bool voiceOverPlaying);                                                                      // [0x4989980] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetVoiceOverAutoplay
-	// void SetVoiceOverAutoplay(bool voiceOverAutoplay);                                                                    // [0x49d7030] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetVoiceOverAutoplay(bool voiceOverAutoplay);                                                                    // [0x4988cd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetVignetteList
-	// void SetVignetteList(TArray<FArchivesVignetteViewData>& vignetteDataList);                                            // [0x49d7ab0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetVignetteList(TArray<FArchivesVignetteViewData>& vignetteDataList);                                            // [0x4989790] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetVignetteInputsEnabled
-	// void SetVignetteInputsEnabled(bool Enabled);                                                                          // [0x49d6620] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetVignetteInputsEnabled(bool Enabled);                                                                          // [0x49882c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetVignetteData
-	// void SetVignetteData(FArchivesVignetteViewData& vignetteViewData);                                                    // [0x49d78b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetVignetteData(FArchivesVignetteViewData& vignetteViewData);                                                    // [0x4989590] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetEntryData
-	// void SetEntryData(FArchivesVignetteEntryViewData& entryViewData);                                                     // [0x49d6770] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetEntryData(FArchivesVignetteEntryViewData& entryViewData);                                                     // [0x4988410] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetCinematicButtonsEnabled
-	// void SetCinematicButtonsEnabled(bool Enabled);                                                                        // [0x49d6590] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCinematicButtonsEnabled(bool Enabled);                                                                        // [0x4988230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.SetArrowButtonEnabled
-	// void SetArrowButtonEnabled(bool IsEnabled);                                                                           // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetArrowButtonEnabled(bool IsEnabled);                                                                           // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.OnImageViewerVoiceOverPlayed
-	// void OnImageViewerVoiceOverPlayed();                                                                                  // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnImageViewerVoiceOverPlayed();                                                                                  // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveJournalViewInterface.OnImageViewerVoiceOverAutoplay
-	// void OnImageViewerVoiceOverAutoplay(bool autoplay);                                                                   // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnImageViewerVoiceOverAutoplay(bool autoplay);                                                                   // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface
@@ -360,23 +450,23 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.UpdateLevelStatus
-	// void UpdateLevelStatus(int32_t Level, EArchivesStoryLevelStatus Status);                                              // [0x49d8260] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateLevelStatus(int32_t Level, EArchivesStoryLevelStatus Status);                                              // [0x4989f80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.SetTomeRewardsData
-	// void SetTomeRewardsData(TArray<FRewardWrapperViewData>& RewardsData, bool areLocked);                                 // [0x49d7740] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTomeRewardsData(TArray<FRewardWrapperViewData>& RewardsData, bool areLocked);                                 // [0x49893e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.SetTomeLevelsData
-	// void SetTomeLevelsData(TArray<UArchiveStoryLevelViewData*>& levelsData, int32_t selectedLevel);                       // [0x49d7640] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTomeLevelsData(TArray<UArchiveStoryLevelViewData*>& levelsData, int32_t selectedLevel);                       // [0x49892e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.SetRewardsContainerVisibility
-	// void SetRewardsContainerVisibility(bool IsVisible);                                                                   // [0x49d6590] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetRewardsContainerVisibility(bool IsVisible);                                                                   // [0x4988230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.SetLevelSelectorVisibility
-	// void SetLevelSelectorVisibility(bool IsVisible);                                                                      // [0x49d6ae0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetLevelSelectorVisibility(bool IsVisible);                                                                      // [0x4988780] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.SetLevelSelectorEnabled
-	// void SetLevelSelectorEnabled(bool Enabled);                                                                           // [0x49d6a50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetLevelSelectorEnabled(bool Enabled);                                                                           // [0x49886f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.SetActiveLevel
-	// void SetActiveLevel(int32_t levelIndex, bool performAction);                                                          // [0x49d61b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetActiveLevel(int32_t levelIndex, bool performAction);                                                          // [0x4987e50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.PlayRewardsAnimation
-	// void PlayRewardsAnimation();                                                                                          // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayRewardsAnimation();                                                                                          // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveLevelProgressionViewInterface.GoToNextLevel
-	// void GoToNextLevel(int32_t levelIndex);                                                                               // [0x49d6050] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void GoToNextLevel(int32_t levelIndex);                                                                               // [0x4987cf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveStoryLevelViewData
@@ -399,61 +489,61 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.UpdateBackgroundSkin
-	// void UpdateBackgroundSkin(int32_t Key, FArchiveTomeSkinData& Data);                                                   // [0x49d8040] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateBackgroundSkin(int32_t Key, FArchiveTomeSkinData& Data);                                                   // [0x4989d60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.ShowUI
-	// void ShowUI();                                                                                                        // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowUI();                                                                                                        // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.ShowSlotSelector
-	// void ShowSlotSelector(FArchiveNodeViewData& Data);                                                                    // [0x49d7d30] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowSlotSelector(FArchiveNodeViewData& Data);                                                                    // [0x4989a10] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetTitle
-	// void SetTitle(FText& Title);                                                                                          // [0x49d7570] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTitle(FText& Title);                                                                                          // [0x4989210] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetTabsInputsEnabled
-	// void SetTabsInputsEnabled(bool Enabled);                                                                              // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabsInputsEnabled(bool Enabled);                                                                              // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetTabSelected
-	// void SetTabSelected(int32_t Key);                                                                                     // [0x49d7370] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabSelected(int32_t Key);                                                                                     // [0x4989010] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetTabsData
-	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x49d7400] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x49890a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetTabEnabled
-	// void SetTabEnabled(int32_t Key, bool Enabled);                                                                        // [0x49d72a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabEnabled(int32_t Key, bool Enabled);                                                                        // [0x4988f40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetSubtitleVisible
-	// void SetSubtitleVisible(bool IsVisible);                                                                              // [0x49d7210] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSubtitleVisible(bool IsVisible);                                                                              // [0x4988eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetSubtitle
-	// void SetSubtitle(FText& Subtitle);                                                                                    // [0x49d7140] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetSubtitle(FText& Subtitle);                                                                                    // [0x4988de0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetReminderSlotsEnabled
-	// void SetReminderSlotsEnabled(bool Enabled);                                                                           // [0x49d7030] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetReminderSlotsEnabled(bool Enabled);                                                                           // [0x4988cd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetRemainingTimeVisible
-	// void SetRemainingTimeVisible(bool IsVisible);                                                                         // [0x49d6fa0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetRemainingTimeVisible(bool IsVisible);                                                                         // [0x4988c40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetRemainingTime
-	// void SetRemainingTime(FString RemainingTime, bool isMoreThanWarningThreshold, EArchiveMenuState menuState);           // [0x49d6e70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetRemainingTime(FString RemainingTime, bool isMoreThanWarningThreshold, EArchiveMenuState menuState);           // [0x4988b10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetQuestNodeHoverEffect
-	// void SetQuestNodeHoverEffect(EPlayerRole Role, bool IsHovered);                                                       // [0x49d6da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetQuestNodeHoverEffect(EPlayerRole Role, bool IsHovered);                                                       // [0x4988a40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetMenuState
-	// void SetMenuState(EArchiveMenuState menuState);                                                                       // [0x49d6b70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMenuState(EArchiveMenuState menuState);                                                                       // [0x4988810] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetInfoButtonVisible
-	// void SetInfoButtonVisible(bool IsVisible);                                                                            // [0x49d69c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetInfoButtonVisible(bool IsVisible);                                                                            // [0x4988660] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetInfoButtonEnabled
-	// void SetInfoButtonEnabled(bool IsEnabled);                                                                            // [0x49d6930] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetInfoButtonEnabled(bool IsEnabled);                                                                            // [0x49885d0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetEventLabel
-	// void SetEventLabel(FString eventLabel);                                                                               // [0x49d6890] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetEventLabel(FString eventLabel);                                                                               // [0x4988530] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetControllerElementsEnabled
-	// void SetControllerElementsEnabled(bool Enabled);                                                                      // [0x49d6620] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetControllerElementsEnabled(bool Enabled);                                                                      // [0x49882c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetChallengeReminderVisibility
-	// void SetChallengeReminderVisibility(bool IsVisible);                                                                  // [0x49d6500] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetChallengeReminderVisibility(bool IsVisible);                                                                  // [0x49881a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.SetChallengeReminderData
-	// void SetChallengeReminderData(FArchiveChallengeReminderViewData& Data, EPlayerRole Role, bool needsAnimation, FVector2D& animationOriginalPosition); // [0x49d6310] Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetChallengeReminderData(FArchiveChallengeReminderViewData& Data, EPlayerRole Role, bool needsAnimation, FVector2D& animationOriginalPosition); // [0x4987fb0] Native|Event|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.Init
-	// void Init();                                                                                                          // [0x49d60e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Init();                                                                                                          // [0x4987d80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.HideUI
-	// void HideUI();                                                                                                        // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideUI();                                                                                                        // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.GetArchiveTomeInterface
-	// TScriptInterface<Class> GetArchiveTomeInterface();                                                                    // [0x49d6010] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetArchiveTomeInterface();                                                                    // [0x4987cb0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.GetArchiveRiftInterface
-	// TScriptInterface<Class> GetArchiveRiftInterface();                                                                    // [0x49d5fd0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetArchiveRiftInterface();                                                                    // [0x4987c70] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.GetArchiveCompendiumInterface
-	// TScriptInterface<Class> GetArchiveCompendiumInterface();                                                              // [0x49d5f90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetArchiveCompendiumInterface();                                                              // [0x4987c30] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.CloseSlotSelector
-	// void CloseSlotSelector();                                                                                             // [0x49d5ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CloseSlotSelector();                                                                                             // [0x4987b70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveMenuViewInterface.ClearChallengeReminderData
-	// void ClearChallengeReminderData(EPlayerRole Role);                                                                    // [0x49d5e30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearChallengeReminderData(EPlayerRole Role);                                                                    // [0x4987ad0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.BasePopupViewData
@@ -463,15 +553,15 @@ class UBasePopupViewData : public UObject
 public:
 	EPopupPriority                                     Priority;                                                   // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1268) /* FText */                 __um(Title);                                                // 0x0038   (0x0018)  
-	SDK_UNDEFINED(24,1269) /* FText */                 __um(Message);                                              // 0x0050   (0x0018)  
+	SDK_UNDEFINED(24,1273) /* FText */                 __um(Title);                                                // 0x0038   (0x0018)  
+	SDK_UNDEFINED(24,1274) /* FText */                 __um(Message);                                              // 0x0050   (0x0018)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.PopupButtonViewData
 /// Size: 0x0080 (0x000000 - 0x000080)
 struct FPopupButtonViewData
 { 
-	SDK_UNDEFINED(24,1270) /* FText */                 __um(label);                                                // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1275) /* FText */                 __um(label);                                                // 0x0000   (0x0018)  
 	FKey                                               Key;                                                        // 0x0018   (0x0020)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x0038   (0x0048)  MISSED
 };
@@ -492,8 +582,8 @@ public:
 class UArchivePassPurchasePopupViewData : public UGenericPopupViewData
 { 
 public:
-	SDK_UNDEFINED(24,1271) /* FText */                 __um(AvailabilityDates);                                    // 0x01F0   (0x0018)  
-	SDK_UNDEFINED(48,1272) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x0208   (0x0030)  
+	SDK_UNDEFINED(24,1276) /* FText */                 __um(AvailabilityDates);                                    // 0x01F0   (0x0018)  
+	SDK_UNDEFINED(48,1277) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x0208   (0x0030)  
 	ECurrencyType                                      CurrencyType;                                               // 0x0238   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0239   (0x0003)  MISSED
 	int32_t                                            Price;                                                      // 0x023C   (0x0004)  
@@ -518,13 +608,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveQuestMapViewInterface.UpdateQuestMapData
-	// void UpdateQuestMapData(TArray<FArchiveNodeGraphViewData>& nodeDataList, TArray<FArchiveMapPathViewData>& pathDataList); // [0x49ddb60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateQuestMapData(TArray<FArchiveNodeGraphViewData>& nodeDataList, TArray<FArchiveMapPathViewData>& pathDataList); // [0x498f910] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveQuestMapViewInterface.SetQuestMapData
-	// void SetQuestMapData(TArray<FArchiveNodeGraphViewData>& nodeDataList, TArray<FArchiveMapPathViewData>& pathDataList, bool needsCascadeAppear); // [0x49dd520] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetQuestMapData(TArray<FArchiveNodeGraphViewData>& nodeDataList, TArray<FArchiveMapPathViewData>& pathDataList, bool needsCascadeAppear); // [0x498f2d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveQuestMapViewInterface.SetLoadingSpinner
-	// void SetLoadingSpinner(bool isLoading);                                                                               // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetLoadingSpinner(bool isLoading);                                                                               // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveQuestMapViewInterface.Reset
-	// void Reset();                                                                                                         // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Reset();                                                                                                         // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface
@@ -536,17 +626,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface.SetRiftFragmentTooltipViewData
-	// void SetRiftFragmentTooltipViewData(FCurrencyProgressionTooltipViewData& RiftFragmentTooltipViewData);                // [0x49dd7a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetRiftFragmentTooltipViewData(FCurrencyProgressionTooltipViewData& RiftFragmentTooltipViewData);                // [0x498f550] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface.SetRewardTiersData
-	// void SetRewardTiersData(TArray<FArchiveRiftTierRewardsViewData>& riftTiersData);                                      // [0x49dd6d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetRewardTiersData(TArray<FArchiveRiftTierRewardsViewData>& riftTiersData);                                      // [0x498f480] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface.SetMatchmakingSoftlockState
-	// void SetMatchmakingSoftlockState(bool isInMatchmakingSoftlock);                                                       // [0x49d7030] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMatchmakingSoftlockState(bool isInMatchmakingSoftlock);                                                       // [0x4988cd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface.SetImagePreviewAreaData
-	// void SetImagePreviewAreaData(FCustomizationItemPreviewAreaViewData& ViewData);                                        // [0x49dd320] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetImagePreviewAreaData(FCustomizationItemPreviewAreaViewData& ViewData);                                        // [0x498f0d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface.SetData
-	// void SetData(FArchivesRiftGenericViewData& Data);                                                                     // [0x49dd270] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FArchivesRiftGenericViewData& Data);                                                                     // [0x498f020] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveRiftViewInterface.PlayUnlockingAnimation
-	// void PlayUnlockingAnimation(FArchivesRiftUnlockSequenceData& Data);                                                   // [0x49dd1d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void PlayUnlockingAnimation(FArchivesRiftUnlockSequenceData& Data);                                                   // [0x498ef80] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ArchiveTierPurchasePopupViewData
@@ -554,7 +644,7 @@ public:
 class UArchiveTierPurchasePopupViewData : public UGenericPopupViewData
 { 
 public:
-	SDK_UNDEFINED(48,1273) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x01F0   (0x0030)  
+	SDK_UNDEFINED(48,1278) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x01F0   (0x0030)  
 	int32_t                                            MaxTiers;                                                   // 0x0220   (0x0004)  
 	int32_t                                            currentTier;                                                // 0x0224   (0x0004)  
 	ECurrencyType                                      CurrencyType;                                               // 0x0228   (0x0001)  
@@ -587,31 +677,31 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.UpdateBackgroundSkin
-	// void UpdateBackgroundSkin(int32_t Key, class UMaterialInterface* skinMaterail);                                       // [0x49dda90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateBackgroundSkin(int32_t Key, class UMaterialInterface* skinMaterail);                                       // [0x498f840] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.ToggleEditor
-	// void ToggleEditor(bool IsEnabled);                                                                                    // [0x49d6590] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ToggleEditor(bool IsEnabled);                                                                                    // [0x4988230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.SetUiTakeoverActive
-	// void SetUiTakeoverActive(bool IsActive);                                                                              // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetUiTakeoverActive(bool IsActive);                                                                              // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.SetSideNavTabsVisibility
-	// void SetSideNavTabsVisibility(int32_t Key, bool IsVisible);                                                           // [0x49dd9c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSideNavTabsVisibility(int32_t Key, bool IsVisible);                                                           // [0x498f770] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.SetSideNavTabsEnabled
-	// void SetSideNavTabsEnabled(int32_t Key, bool IsEnabled);                                                              // [0x49d61b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSideNavTabsEnabled(int32_t Key, bool IsEnabled);                                                              // [0x4987e50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.SetSideNavTabsData
-	// void SetSideNavTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                       // [0x49dd850] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetSideNavTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                       // [0x498f600] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.SetNotificationVisibility
-	// void SetNotificationVisibility(int32_t Key, bool HasNotification);                                                    // [0x49dd450] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetNotificationVisibility(int32_t Key, bool HasNotification);                                                    // [0x498f200] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.SetMenuState
-	// void SetMenuState(EArchiveTomeMenuState menuState);                                                                   // [0x49dd3d0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMenuState(EArchiveTomeMenuState menuState);                                                                   // [0x498f180] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.GetMenuState
-	// EArchiveTomeMenuState GetMenuState();                                                                                 // [0x49dd1a0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// EArchiveTomeMenuState GetMenuState();                                                                                 // [0x498ef50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.GetArchiveQuestMapInterface
-	// TScriptInterface<Class> GetArchiveQuestMapInterface();                                                                // [0x49dd160] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetArchiveQuestMapInterface();                                                                // [0x498ef10] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.GetArchiveLevelProgressionInterface
-	// TScriptInterface<Class> GetArchiveLevelProgressionInterface();                                                        // [0x49dd120] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetArchiveLevelProgressionInterface();                                                        // [0x498eed0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.GetArchiveJournalInterface
-	// TScriptInterface<Class> GetArchiveJournalInterface();                                                                 // [0x49dd0e0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetArchiveJournalInterface();                                                                 // [0x498ee90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ArchiveTomeViewInterface.GetArchiveEditorInterface
-	// FEditorInterfaces GetArchiveEditorInterface();                                                                        // [0x49dd080] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// FEditorInterfaces GetArchiveEditorInterface();                                                                        // [0x498ee30] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.AuricCellsViewInterface
@@ -623,7 +713,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.AuricCellsViewInterface.SetData
-	// void SetData(FAuricCellsViewData& ViewData);                                                                          // [0x49e2bb0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FAuricCellsViewData& ViewData);                                                                          // [0x4994da0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.BasePopupViewInterface
@@ -635,9 +725,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.BasePopupViewInterface.Leave
-	// void Leave();                                                                                                         // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Leave();                                                                                                         // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.BasePopupViewInterface.Enter
-	// void Enter(class UBasePopupViewData* Data);                                                                           // [0x49e2600] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Enter(class UBasePopupViewData* Data);                                                                           // [0x4994770] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ChallengeTrackerViewInterface
@@ -649,43 +739,44 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ChallengeTrackerViewInterface.UpdateWidgetProgression
-	// void UpdateWidgetProgression(FArchiveNodeObjectiveViewData& ProgressionData);                                         // [0x49e2df0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateWidgetProgression(FArchiveNodeObjectiveViewData& ProgressionData);                                         // [0x4994fe0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ChallengeTrackerViewInterface.OpenWidget
-	// void OpenWidget();                                                                                                    // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OpenWidget();                                                                                                    // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ChallengeTrackerViewInterface.InitWidgetData
-	// void InitWidgetData(FChallengeTrackerViewData& ViewData);                                                             // [0x49e2830] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void InitWidgetData(FChallengeTrackerViewData& ViewData);                                                             // [0x4994a20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ChallengeTrackerViewInterface.CloseWidget
-	// void CloseWidget();                                                                                                   // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void CloseWidget();                                                                                                   // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Struct /Script/DBDUIViewInterfaces.LoadoutTooltipData
-/// Size: 0x0090 (0x000000 - 0x000090)
+/// Size: 0x00A0 (0x000000 - 0x0000A0)
 struct FLoadoutTooltipData
 { 
 	FName                                              ItemId;                                                     // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1274) /* FText */                 __um(DisplayName);                                          // 0x0010   (0x0018)  
-	SDK_UNDEFINED(24,1275) /* FText */                 __um(ParentDisplayName);                                    // 0x0028   (0x0018)  
-	SDK_UNDEFINED(24,1276) /* FText */                 __um(Description);                                          // 0x0040   (0x0018)  
+	SDK_UNDEFINED(24,1279) /* FText */                 __um(DisplayName);                                          // 0x0010   (0x0018)  
+	SDK_UNDEFINED(24,1280) /* FText */                 __um(ParentDisplayName);                                    // 0x0028   (0x0018)  
+	SDK_UNDEFINED(24,1281) /* FText */                 __um(Description);                                          // 0x0040   (0x0018)  
 	int32_t                                            Level;                                                      // 0x0058   (0x0004)  
 	EItemRarity                                        Rarity;                                                     // 0x005C   (0x0001)  
 	bool                                               IsLocked;                                                   // 0x005D   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x005E   (0x0002)  MISSED
-	SDK_UNDEFINED(24,1277) /* FText */                 __um(EventName);                                            // 0x0060   (0x0018)  
-	SDK_UNDEFINED(16,1278) /* FString */               __um(EventId);                                              // 0x0078   (0x0010)  
+	SDK_UNDEFINED(24,1282) /* FText */                 __um(EventName);                                            // 0x0060   (0x0018)  
+	SDK_UNDEFINED(16,1283) /* FString */               __um(eventID);                                              // 0x0078   (0x0010)  
 	bool                                               IsPastEvent;                                                // 0x0088   (0x0001)  
 	EInventoryItemType                                 ItemType;                                                   // 0x0089   (0x0001)  
 	EItemAvailability                                  Availability;                                               // 0x008A   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x5];                                       // 0x008B   (0x0005)  MISSED
+	unsigned char                                      UnknownData02_5[0x5];                                       // 0x008B   (0x0005)  MISSED
+	SDK_UNDEFINED(16,1284) /* FString */               __um(EventBannerLabel);                                     // 0x0090   (0x0010)  
 };
 
 /// Class /Script/DBDUIViewInterfaces.CharacterPerkViewData
-/// Size: 0x0098 (0x000030 - 0x0000C8)
+/// Size: 0x00A8 (0x000030 - 0x0000D8)
 class UCharacterPerkViewData : public UObject
 { 
 public:
 	class UMenuPerkViewData*                           Perk;                                                       // 0x0030   (0x0008)  
-	FLoadoutTooltipData                                PerkTooltip;                                                // 0x0038   (0x0090)  
+	FLoadoutTooltipData                                PerkTooltip;                                                // 0x0038   (0x00A0)  
 };
 
 /// Class /Script/DBDUIViewInterfaces.CinematicViewInterface
@@ -696,14 +787,25 @@ public:
 
 
 	/// Functions
+	// Function /Script/DBDUIViewInterfaces.CinematicViewInterface.SetSkipInputSwitcherVisibility
+	// void SetSkipInputSwitcherVisibility(bool IsVisible);                                                                  // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.CinematicViewInterface.SetSkipInputSwitcherEnabled
+	// void SetSkipInputSwitcherEnabled(bool IsEnabled);                                                                     // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CinematicViewInterface.SetSize
-	// void SetSize(FVector2D Size);                                                                                         // [0x49e2ca0] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetSize(FVector2D Size);                                                                                         // [0x4994e90] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CinematicViewInterface.GetBinkVideoPlayer
-	// class UBinkMediaPlayer* GetBinkVideoPlayer();                                                                         // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// class UBinkMediaPlayer* GetBinkVideoPlayer();                                                                         // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CinematicViewInterface.FadeOutAnimation
-	// void FadeOutAnimation(float fadeOutDuration, float Delay);                                                            // [0x49e2760] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void FadeOutAnimation(float fadeOutDuration, float Delay);                                                            // [0x49948d0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CinematicViewInterface.FadeInAnimation
-	// void FadeInAnimation(float fadeInDuration, float Delay);                                                              // [0x49e2690] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void FadeInAnimation(float fadeInDuration, float Delay);                                                              // [0x4994800] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+};
+
+/// Class /Script/DBDUIViewInterfaces.CommonUIDelegates
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UCommonUIDelegates : public UObject
+{ 
+public:
 };
 
 /// Class /Script/DBDUIViewInterfaces.CoreBaseViewInterface
@@ -715,9 +817,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.CoreBaseViewInterface.OnStopAsyncOperation
-	// void OnStopAsyncOperation();                                                                                          // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnStopAsyncOperation();                                                                                          // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CoreBaseViewInterface.OnStartAsyncOperation
-	// void OnStartAsyncOperation();                                                                                         // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnStartAsyncOperation();                                                                                         // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.CoreBaseViewInterface.GetLockedFeatureElements
+	// TArray<TScriptInterface<Class>> GetLockedFeatureElements();                                                           // [0x49949a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.CreditsViewInterface
@@ -729,11 +833,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.CreditsViewInterface.SetText
-	// void SetText(FText& Text);                                                                                            // [0x49e2d20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetText(FText& Text);                                                                                            // [0x4994f10] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CreditsViewInterface.ScrollToName
-	// void ScrollToName(FString Name, float Delay);                                                                         // [0x49e2970] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ScrollToName(FString Name, float Delay);                                                                         // [0x4994b60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.CreditsViewInterface.ScrollToEnd
-	// void ScrollToEnd();                                                                                                   // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ScrollToEnd();                                                                                                   // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.CurrencyConversionPopupViewData
@@ -741,7 +845,7 @@ public:
 class UCurrencyConversionPopupViewData : public UGenericPopupViewData
 { 
 public:
-	SDK_UNDEFINED(24,1279) /* FText */                 __um(EventName);                                            // 0x01F0   (0x0018)  
+	SDK_UNDEFINED(24,1285) /* FText */                 __um(EventName);                                            // 0x01F0   (0x0018)  
 	ECurrencyType                                      FromCurrencyType;                                           // 0x0208   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0209   (0x0003)  MISSED
 	int32_t                                            FromCurrencyAmount;                                         // 0x020C   (0x0004)  
@@ -767,13 +871,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.DailyRitualsPopupViewInterface.StartAnim
-	// void StartAnim();                                                                                                     // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartAnim();                                                                                                     // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.DailyRitualsPopupViewInterface.SetIsOnboardingRitualsExperimentActive
+	// void SetIsOnboardingRitualsExperimentActive(bool isOnboardingRitualsExperimentActive);                                // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.DailyRitualsPopupViewInterface.SetDailyRitualsData
-	// void SetDailyRitualsData(TArray<FDailyRitualViewData>& dailyRitualsData, bool isAfterTrial);                          // [0x49e2a60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetDailyRitualsData(TArray<FDailyRitualViewData>& dailyRitualsData, bool isAfterTrial);                          // [0x4994c50] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.DailyRitualsPopupViewInterface.SetCanRemoveDailyRitual
-	// void SetCanRemoveDailyRitual(bool canRemoveDailyRitual);                                                              // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCanRemoveDailyRitual(bool canRemoveDailyRitual);                                                              // [0x49882c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.DailyRitualsPopupViewInterface.SetAllDailyRitualTilesVisible
-	// void SetAllDailyRitualTilesVisible();                                                                                 // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetAllDailyRitualTilesVisible();                                                                                 // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.DisplayStandViewInterface
@@ -785,7 +891,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.DisplayStandViewInterface.SetDragZone
-	// void SetDragZone(FDisplayStandViewData& layoutData);                                                                  // [0x49e9b40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetDragZone(FDisplayStandViewData& layoutData);                                                                  // [0x499b0b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EndGameCollapseBarViewInterface
@@ -797,13 +903,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.EndGameCollapseBarViewInterface.StartEndGameScenario
-	// void StartEndGameScenario();                                                                                          // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartEndGameScenario();                                                                                          // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EndGameCollapseBarViewInterface.SetEndGameScenarioProgressionValue
-	// void SetEndGameScenarioProgressionValue(float Amount);                                                                // [0x49e9c00] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetEndGameScenarioProgressionValue(float Amount, bool forceUpdate);                                              // [0x499b170] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EndGameCollapseBarViewInterface.SetEndGameScenarioProgressionMode
-	// void SetEndGameScenarioProgressionMode(bool isSlowMode);                                                              // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetEndGameScenarioProgressionMode(bool isSlowMode);                                                              // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EndGameCollapseBarViewInterface.InitEndGameScenario
-	// void InitEndGameScenario();                                                                                           // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitEndGameScenario();                                                                                           // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EquippedItemViewInterface
@@ -815,13 +921,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.EquippedItemViewInterface.SetFakeItem
-	// void SetFakeItem(bool isHoldingFakeItem, TWeakObjectPtr<UTexture2D*>& fakeItemIcon, FKey InputKey, int32_t Count);    // [0x49e9d30] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetFakeItem(bool isHoldingFakeItem, TWeakObjectPtr<UTexture2D*>& fakeItemIcon, FKey InputKey, int32_t Count);    // [0x499b2f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EquippedItemViewInterface.SetData
-	// void SetData(FItemBundleViewData& itemBundleData);                                                                    // [0x49e98d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FItemBundleViewData& itemBundleData);                                                                    // [0x499ae40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EquippedItemViewInterface.SetActiveState
-	// void SetActiveState(bool IsActive);                                                                                   // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetActiveState(bool IsActive);                                                                                   // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EquippedItemViewInterface.ClearData
-	// void ClearData(bool fullClear);                                                                                       // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData(bool fullClear);                                                                                       // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EquippedPowerViewInterface
@@ -833,13 +939,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.EquippedPowerViewInterface.SetData
-	// void SetData(FPowerBundleViewData& powerBundleData);                                                                  // [0x49e99c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FPowerBundleViewData& powerBundleData);                                                                  // [0x499af30] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EquippedPowerViewInterface.SetCarryingMode
-	// void SetCarryingMode(bool IsCarrying);                                                                                // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCarryingMode(bool IsCarrying);                                                                                // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EquippedPowerViewInterface.SetActiveState
-	// void SetActiveState(bool IsActive);                                                                                   // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetActiveState(bool IsActive);                                                                                   // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EquippedPowerViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EventCollectionViewInterface
@@ -851,27 +957,27 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.SetSelectedReward
-	// void SetSelectedReward(int32_t selectedIndex);                                                                        // [0x49ea360] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSelectedReward(int32_t selectedIndex);                                                                        // [0x499b920] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.SetPreviewAreaData
-	// void SetPreviewAreaData(FCustomizationItemPreviewAreaViewData& ViewData);                                             // [0x49ea2b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPreviewAreaData(FCustomizationItemPreviewAreaViewData& ViewData);                                             // [0x499b870] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.SetItemsData
-	// void SetItemsData(TArray<UStoreCustomizationItemViewData*>& customizationRewardsData, int32_t selectedIndex);         // [0x49ea070] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetItemsData(TArray<UStoreCustomizationItemViewData*>& customizationRewardsData, int32_t selectedIndex);         // [0x499b630] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.SetInstructionWidgetData
-	// void SetInstructionWidgetData(FCustomizationItemOriginViewData& ViewData);                                            // [0x49e9f20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetInstructionWidgetData(FCustomizationItemOriginViewData& ViewData);                                            // [0x499b4e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.Init
-	// void Init(FEventEntryPopupSkinUIData& skinData);                                                                      // [0x49e9050] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Init(FEventEntryPopupSkinUIData& skinData);                                                                      // [0x499a940] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.DisableInstructionStoreButton
-	// void DisableInstructionStoreButton();                                                                                 // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisableInstructionStoreButton();                                                                                 // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.DisableInstructionInputs
-	// void DisableInstructionInputs();                                                                                      // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisableInstructionInputs();                                                                                      // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.DisableInstructionCurrencyButton
-	// void DisableInstructionCurrencyButton();                                                                              // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisableInstructionCurrencyButton();                                                                              // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.DisableInstructionArchivesButton
-	// void DisableInstructionArchivesButton();                                                                              // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisableInstructionArchivesButton();                                                                              // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.DeselectReward
-	// void DeselectReward();                                                                                                // [0x49d5ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DeselectReward();                                                                                                // [0x4987b70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventCollectionViewInterface.Deinit
-	// void Deinit();                                                                                                        // [0x49e8ca0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Deinit();                                                                                                        // [0x499a5c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EventDetailsViewInterface
@@ -883,9 +989,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.EventDetailsViewInterface.Init
-	// void Init(FDetailsTabViewData& ViewData, FEventEntryPopupSkinUIData& skinData);                                       // [0x49e9100] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Init(FDetailsTabViewData& ViewData, FEventEntryPopupSkinUIData& skinData);                                       // [0x499a9f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventDetailsViewInterface.Deinit
-	// void Deinit();                                                                                                        // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Deinit();                                                                                                        // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EventEntryViewData
@@ -893,15 +999,15 @@ public:
 class UEventEntryViewData : public UObject
 { 
 public:
-	SDK_UNDEFINED(24,1280) /* FText */                 __um(Title);                                                // 0x0030   (0x0018)  
-	SDK_UNDEFINED(16,1281) /* FString */               __um(Message);                                              // 0x0048   (0x0010)  
+	SDK_UNDEFINED(24,1286) /* FText */                 __um(Title);                                                // 0x0030   (0x0018)  
+	SDK_UNDEFINED(16,1287) /* FString */               __um(Message);                                              // 0x0048   (0x0010)  
 	FDateTime                                          StartDate;                                                  // 0x0058   (0x0008)  
 	FDateTime                                          EndDate;                                                    // 0x0060   (0x0008)  
-	SDK_UNDEFINED(24,1282) /* FText */                 __um(AvailabilityDates);                                    // 0x0068   (0x0018)  
-	SDK_UNDEFINED(24,1283) /* FText */                 __um(EventFrameLabel);                                      // 0x0080   (0x0018)  
-	SDK_UNDEFINED(24,1284) /* FText */                 __um(ImageBannerText);                                      // 0x0098   (0x0018)  
-	SDK_UNDEFINED(24,1285) /* FText */                 __um(EventTabMessage);                                      // 0x00B0   (0x0018)  
-	SDK_UNDEFINED(48,1286) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x00C8   (0x0030)  
+	SDK_UNDEFINED(24,1288) /* FText */                 __um(AvailabilityDates);                                    // 0x0068   (0x0018)  
+	SDK_UNDEFINED(24,1289) /* FText */                 __um(EventFrameLabel);                                      // 0x0080   (0x0018)  
+	SDK_UNDEFINED(24,1290) /* FText */                 __um(ImageBannerText);                                      // 0x0098   (0x0018)  
+	SDK_UNDEFINED(24,1291) /* FText */                 __um(EventTabMessage);                                      // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(48,1292) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x00C8   (0x0030)  
 	bool                                               ShouldShowEventTomeButton;                                  // 0x00F8   (0x0001)  
 	bool                                               ShouldActivateUiTakeover;                                   // 0x00F9   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x00FA   (0x0006)  MISSED
@@ -916,33 +1022,33 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.SetTabsData
-	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x49ea3f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x499b9b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.SetOverlayState
-	// void SetOverlayState(EEventEntryTabState& tabState);                                                                  // [0x49ea220] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetOverlayState(EEventEntryTabState& tabState);                                                                  // [0x499b7e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.SetMilestoneTrackerData
-	// void SetMilestoneTrackerData(FMilestoneTrackerViewData& ViewData);                                                    // [0x49ea170] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetMilestoneTrackerData(FMilestoneTrackerViewData& ViewData);                                                    // [0x499b730] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.SelectMilestoneTrackerItem
-	// void SelectMilestoneTrackerItem(FName ItemId);                                                                        // [0x49e94b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SelectMilestoneTrackerItem(FName ItemId);                                                                        // [0x499ada0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.RequestOverlayClosure
-	// void RequestOverlayClosure();                                                                                         // [0x49e9490] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void RequestOverlayClosure();                                                                                         // [0x499ad80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.InitializeOverlay
-	// void InitializeOverlay(class UEventEntryViewData* ViewData);                                                          // [0x49e9400] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitializeOverlay(class UEventEntryViewData* ViewData);                                                          // [0x499acf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.GetStoreSubPresenterInterface
-	// TScriptInterface<Class> GetStoreSubPresenterInterface();                                                              // [0x49e8ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreSubPresenterInterface();                                                              // [0x499a7c0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.GetRowDataFromEventSkinDataTable
-	// bool GetRowDataFromEventSkinDataTable(FEventEntryPopupSkinUIData& skinData, FText& EventFrameLabel);                  // [0x49e8d80] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// bool GetRowDataFromEventSkinDataTable(FEventEntryPopupSkinUIData& skinData, FText& EventFrameLabel);                  // [0x499a670] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.GetEventSubPresenterInterface
-	// TScriptInterface<Class> GetEventSubPresenterInterface();                                                              // [0x49e8d40] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetEventSubPresenterInterface();                                                              // [0x499a630] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.GetEventSkinDataTable
-	// class UDataTable* GetEventSkinDataTable();                                                                            // [0x49e8d10] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UDataTable* GetEventSkinDataTable();                                                                            // [0x499a600] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.GetDetailsSubPresenterInterface
-	// TScriptInterface<Class> GetDetailsSubPresenterInterface();                                                            // [0x49dd160] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetDetailsSubPresenterInterface();                                                            // [0x498ef10] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.GetCollectionSubPresenterInterface
-	// TScriptInterface<Class> GetCollectionSubPresenterInterface();                                                         // [0x49dd120] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetCollectionSubPresenterInterface();                                                         // [0x498eed0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.DeselectMilestoneTrackerItems
-	// void DeselectMilestoneTrackerItems();                                                                                 // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DeselectMilestoneTrackerItems();                                                                                 // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventEntryViewInterface.ChangeSelectedTab
-	// void ChangeSelectedTab(int32_t Key);                                                                                  // [0x49d6050] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ChangeSelectedTab(int32_t Key);                                                                                  // [0x4987cf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.EventTabViewData
@@ -950,10 +1056,10 @@ public:
 class UEventTabViewData : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,1287) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x0030   (0x0030)  
+	SDK_UNDEFINED(48,1293) /* TWeakObjectPtr<UTexture2D*> */ __um(ImageTexture);                                   // 0x0030   (0x0030)  
 	bool                                               ShouldShowEventTomeButton;                                  // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0061   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1288) /* FText */                 __um(Message);                                              // 0x0068   (0x0018)  
+	SDK_UNDEFINED(24,1294) /* FText */                 __um(Message);                                              // 0x0068   (0x0018)  
 };
 
 /// Class /Script/DBDUIViewInterfaces.EventInfoViewInterface
@@ -964,12 +1070,14 @@ public:
 
 
 	/// Functions
+	// Function /Script/DBDUIViewInterfaces.EventInfoViewInterface.SetArchivesButtonVisibility
+	// void SetArchivesButtonVisibility(bool IsVisible);                                                                     // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventInfoViewInterface.Init
-	// void Init(class UEventTabViewData* ViewData, FEventEntryPopupSkinUIData& skinData);                                   // [0x49e9300] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Init(class UEventTabViewData* ViewData, FEventEntryPopupSkinUIData& skinData);                                   // [0x499abf0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventInfoViewInterface.DisableArchivesButton
-	// void DisableArchivesButton();                                                                                         // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DisableArchivesButton();                                                                                         // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.EventInfoViewInterface.Deinit
-	// void Deinit();                                                                                                        // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Deinit();                                                                                                        // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ExampleViewInterface
@@ -981,9 +1089,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ExampleViewInterface.SetExampleText
-	// void SetExampleText(FString Text);                                                                                    // [0x49e9c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetExampleText(FString Text);                                                                                    // [0x499b250] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ExampleViewInterface.SetExampleProgressRatio
-	// void SetExampleProgressRatio(float Ratio);                                                                            // [0x49d6d20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetExampleProgressRatio(float Ratio);                                                                            // [0x49889c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface
@@ -995,17 +1103,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface.ShowExternalPerk
-	// void ShowExternalPerk(FPerkViewData& PerkViewData);                                                                   // [0x49ea640] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowExternalPerk(FPerkViewData& PerkViewData);                                                                   // [0x499bc00] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface.ShowExternalAddon
-	// void ShowExternalAddon(FAddonViewData& AddonViewData);                                                                // [0x49ea560] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowExternalAddon(FAddonViewData& AddonViewData);                                                                // [0x499bb20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface.HideExternalPerk
-	// void HideExternalPerk(FName ItemId);                                                                                  // [0x49e8fb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideExternalPerk(FName ItemId);                                                                                  // [0x499a8a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface.HideExternalAddon
-	// void HideExternalAddon(FName ItemId);                                                                                 // [0x49e8f10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideExternalAddon(FName ItemId);                                                                                 // [0x499a800] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface.HideAllExternalPerks
-	// void HideAllExternalPerks();                                                                                          // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideAllExternalPerks();                                                                                          // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ExternalEffectsViewInterface.HideAllExternalAddons
-	// void HideAllExternalAddons();                                                                                         // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideAllExternalAddons();                                                                                         // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.FearMarketPopupViewData
@@ -1046,11 +1154,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.GameManualViewInterface.SetCurrentManualMenuState
-	// void SetCurrentManualMenuState(EGameManualMenuState menuState);                                                       // [0x49e9850] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCurrentManualMenuState(EGameManualMenuState menuState);                                                       // [0x49a1570] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.GameManualViewInterface.SetCategoryData
-	// void SetCategoryData(FHelpCategoryData categoryData, TArray<FHelpTopicData>& topicsData);                             // [0x49e9550] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetCategoryData(FHelpCategoryData categoryData, TArray<FHelpTopicData>& topicsData);                             // [0x49a1270] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.GameManualViewInterface.GetCurrentManualMenuState
-	// EGameManualMenuState GetCurrentManualMenuState();                                                                     // [0x49e8ce0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// EGameManualMenuState GetCurrentManualMenuState();                                                                     // [0x49a0f40] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.GenericPopupViewInterface
@@ -1079,7 +1187,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.GenericRefreshingPopupViewInterface.Refresh
-	// void Refresh(float RemainingTime);                                                                                    // [0x49d6d20] Native|Event|Public|BlueprintEvent 
+	// void Refresh(float RemainingTime);                                                                                    // [0x49889c0] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.GenericTextInputPopupViewData
@@ -1106,7 +1214,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.GlobalLoadSpinnerViewInterface.SetGlobalSpinnerVisibility
-	// void SetGlobalSpinnerVisibility(bool IsVisible);                                                                      // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetGlobalSpinnerVisibility(bool IsVisible);                                                                      // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HookCountViewInterface
@@ -1118,13 +1226,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HookCountViewInterface.SetHookCountVisibility
-	// void SetHookCountVisibility(bool visible);                                                                            // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetHookCountVisibility(bool visible);                                                                            // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HookCountViewInterface.SetData
-	// void SetData(int32_t currentHookCount, int32_t maxHookCount, int32_t initialMaxHookCount);                            // [0x49efdf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(int32_t currentHookCount, int32_t maxHookCount, int32_t initialMaxHookCount);                            // [0x49a15f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HookCountViewInterface.InitWidget
-	// void InitWidget();                                                                                                    // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitWidget();                                                                                                    // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HookCountViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudAimingCrosshairViewInterface
@@ -1136,9 +1244,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudAimingCrosshairViewInterface.SetState
-	// void SetState(EAimingCrosshairState NewState);                                                                        // [0x49d70c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetState(EAimingCrosshairState NewState);                                                                        // [0x4988d60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudAimingCrosshairViewInterface.SetProgress
-	// void SetProgress(float Progress);                                                                                     // [0x49d6d20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetProgress(float progress);                                                                                     // [0x49889c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudAlertViewInterface
@@ -1150,15 +1258,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudAlertViewInterface.ShowStatusEffectAlert
-	// void ShowStatusEffectAlert(FStatusEffectAlertViewData& Data);                                                         // [0x49f04b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowStatusEffectAlert(FStatusEffectAlertViewData& Data);                                                         // [0x49a1cb0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudAlertViewInterface.ShowScoreAlert
-	// void ShowScoreAlert(FScoreAlertViewData& Data);                                                                       // [0x49f03f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowScoreAlert(FScoreAlertViewData& Data);                                                                       // [0x49a1bf0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudAlertViewInterface.SetScoreEventsVisibility
-	// void SetScoreEventsVisibility(bool visible);                                                                          // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetScoreEventsVisibility(bool visible);                                                                          // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudAlertViewInterface.FadeOut
-	// void FadeOut(float Delay);                                                                                            // [0x49e9c00] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void FadeOut(float Delay);                                                                                            // [0x49a0eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudAlertViewInterface.FadeIn
-	// void FadeIn();                                                                                                        // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void FadeIn();                                                                                                        // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudDirectionalMiniGameViewInterface
@@ -1170,15 +1278,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudDirectionalMiniGameViewInterface.UpdateResult
-	// void UpdateResult(int32_t index, bool IsSuccessful);                                                                  // [0x49f0950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateResult(int32_t index, bool IsSuccessful);                                                                  // [0x49a21b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudDirectionalMiniGameViewInterface.UpdateFinalResult
-	// void UpdateFinalResult(EDirectionalMinigameResult finalResult);                                                       // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateFinalResult(EDirectionalMinigameResult finalResult);                                                       // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudDirectionalMiniGameViewInterface.Show
-	// void Show(TArray<EDirectionalInputKey>& directions);                                                                  // [0x49f0340] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void Show(TArray<EDirectionalInputKey>& directions);                                                                  // [0x49a1b40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudDirectionalMiniGameViewInterface.Init
-	// void Init(int32_t maxItems, EDirectionalMiniGameType Type);                                                           // [0x49efa50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Init(int32_t maxItems, EDirectionalMiniGameType Type);                                                           // [0x49a0f70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudDirectionalMiniGameViewInterface.Hide
-	// void Hide();                                                                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Hide();                                                                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface
@@ -1190,21 +1298,21 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.SetWidgetState
-	// void SetWidgetState(EEventObjectiveItemState eventItemState);                                                         // [0x49f02c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetWidgetState(EEventObjectiveItemState eventItemState);                                                         // [0x49a1ac0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.SetWidgetData
-	// void SetWidgetData(EEventObjectiveItemState eventItemState, int32_t charges, int32_t maxCharges, float ChargePercent); // [0x49f0170] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetWidgetData(EEventObjectiveItemState eventItemState, int32_t charges, int32_t maxCharges, float ChargePercent); // [0x49a1970] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.SetInputKey
-	// void SetInputKey(FKey InputKey);                                                                                      // [0x49effa0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetInputKey(FKey InputKey);                                                                                      // [0x49a17a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.SetCooldownPercentage
-	// void SetCooldownPercentage(float cooldownPercent);                                                                    // [0x49d6d20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCooldownPercentage(float cooldownPercent);                                                                    // [0x49889c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.SetChargePercentage
-	// void SetChargePercentage(float ChargePercent);                                                                        // [0x49e9c00] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetChargePercentage(float ChargePercent);                                                                        // [0x49a0eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.SetAvailableCharges
-	// void SetAvailableCharges(int32_t charges, int32_t maxCharges);                                                        // [0x49efd20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetAvailableCharges(int32_t charges, int32_t maxCharges);                                                        // [0x49a11a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.InitWidget
-	// void InitWidget();                                                                                                    // [0x49efc60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitWidget();                                                                                                    // [0x49a1180] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventObjectiveItemViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49efa30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x49a0e90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudEventProgression2023ViewInterface
@@ -1216,15 +1324,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudEventProgression2023ViewInterface.UpdateVoidZoneState
-	// void UpdateVoidZoneState(FHudEventProgression2023ViewData& HudEventProgressionViewData);                              // [0x49f0a20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateVoidZoneState(FHudEventProgression2023ViewData& HudEventProgressionViewData);                              // [0x49a2280] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgression2023ViewInterface.UpdateHauntTarget
-	// void UpdateHauntTarget(FHudEventProgression2023ViewData& HudEventProgressionViewData);                                // [0x49f07a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateHauntTarget(FHudEventProgression2023ViewData& HudEventProgressionViewData);                                // [0x49a1fa0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgression2023ViewInterface.UpdateEnergyProgress
-	// void UpdateEnergyProgress(FHudEventProgression2023ViewData& HudEventProgressionViewData);                             // [0x49f05c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateEnergyProgress(FHudEventProgression2023ViewData& HudEventProgressionViewData);                             // [0x49a1dc0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgression2023ViewInterface.InitEventProgression
-	// void InitEventProgression(FHudEventProgression2023ViewData& HudEventProgressionViewData);                             // [0x49efb20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void InitEventProgression(FHudEventProgression2023ViewData& HudEventProgressionViewData);                             // [0x49a1040] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgression2023ViewInterface.EnableEventProgression
-	// void EnableEventProgression(bool IsEnabled);                                                                          // [0x49d7030] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EnableEventProgression(bool IsEnabled);                                                                          // [0x4988cd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudEventProgressionViewInterface
@@ -1236,13 +1344,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudEventProgressionViewInterface.UpdateEventPendingProgress
-	// void UpdateEventPendingProgress(FHudEventProgressionViewData& HudEventProgressionViewData);                           // [0x49f0700] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateEventPendingProgress(FHudEventProgressionViewData& HudEventProgressionViewData);                           // [0x49a1f00] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgressionViewInterface.UpdateEventBankedProgress
-	// void UpdateEventBankedProgress(FHudEventProgressionViewData& HudEventProgressionViewData);                            // [0x49f0660] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateEventBankedProgress(FHudEventProgressionViewData& HudEventProgressionViewData);                            // [0x49a1e60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgressionViewInterface.InitEventProgression
-	// void InitEventProgression(FHudEventProgressionViewData& HudEventProgressionViewData);                                 // [0x49efbc0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void InitEventProgression(FHudEventProgressionViewData& HudEventProgressionViewData);                                 // [0x49a10e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudEventProgressionViewInterface.EnableEventProgression
-	// void EnableEventProgression(bool IsEnabled);                                                                          // [0x49d6620] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EnableEventProgression(bool IsEnabled);                                                                          // [0x49882c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.HudObjectivesViewInterface
@@ -1254,17 +1362,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.HudObjectivesViewInterface.SetHudObjectiveData
-	// void SetHudObjectiveData(FHudObjectivesViewData& hudObjectiveViewData);                                               // [0x49efef0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetHudObjectiveData(FHudObjectivesViewData& hudObjectiveViewData);                                               // [0x49a16f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudObjectivesViewInterface.SetHookCountVisibility
-	// void SetHookCountVisibility(bool visible);                                                                            // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetHookCountVisibility(bool visible);                                                                            // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudObjectivesViewInterface.SetHookCountData
-	// void SetHookCountData(int32_t currentHookCount, int32_t maxHookCount, int32_t initialMaxHookCount);                   // [0x49efdf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetHookCountData(int32_t currentHookCount, int32_t maxHookCount, int32_t initialMaxHookCount);                   // [0x49a15f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudObjectivesViewInterface.InitWidget
-	// void InitWidget();                                                                                                    // [0x49efa30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitWidget();                                                                                                    // [0x49a0e90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudObjectivesViewInterface.ClearHookCountData
-	// void ClearHookCountData();                                                                                            // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearHookCountData();                                                                                            // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.HudObjectivesViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.InteractionProgressViewInterface
@@ -1276,13 +1384,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.InteractionProgressViewInterface.UpdateInputProgress
-	// void UpdateInputProgress(float Progress, float itemCharge, bool IsBlocked);                                           // [0x49f0840] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateInputProgress(float progress, float itemCharge, bool IsBlocked, float PercentageStopDischarge);            // [0x49a2040] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.InteractionProgressViewInterface.SetInputProgressPrompt
-	// void SetInputProgressPrompt(FInteractionProgressViewData& Data);                                                      // [0x49f0090] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetInputProgressPrompt(FInteractionProgressViewData& Data);                                                      // [0x49a1890] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.InteractionProgressViewInterface.PlayHemorrhageAnimation
-	// void PlayHemorrhageAnimation();                                                                                       // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayHemorrhageAnimation();                                                                                       // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.InteractionProgressViewInterface.HideInputProgressPrompt
-	// void HideInputProgressPrompt();                                                                                       // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideInputProgressPrompt();                                                                                       // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.InteractionPromptsContainerViewInterface
@@ -1294,11 +1402,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.InteractionPromptsContainerViewInterface.RemovePrompt
-	// void RemovePrompt(FName ID);                                                                                          // [0x49efc80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void RemovePrompt(FName ID);                                                                                          // [0x49a7740] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.InteractionPromptsContainerViewInterface.RemoveAllPrompts
-	// void RemoveAllPrompts();                                                                                              // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void RemoveAllPrompts();                                                                                              // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.InteractionPromptsContainerViewInterface.AddPrompt
-	// void AddPrompt(FInteractionPromptViewData& Data);                                                                     // [0x49ef880] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AddPrompt(FInteractionPromptViewData& Data);                                                                     // [0x49a74e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ItemBundleViewInterface
@@ -1310,9 +1418,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ItemBundleViewInterface.SetData
-	// void SetData(FItemBundleViewData& ItemBundleViewData);                                                                // [0x49f5730] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FItemBundleViewData& ItemBundleViewData);                                                                // [0x49a7ec0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ItemBundleViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ItemInteractionViewInterface
@@ -1324,9 +1432,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ItemInteractionViewInterface.SetData
-	// void SetData(FItemBundleViewData& itemBundleData);                                                                    // [0x49f5730] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FItemBundleViewData& itemBundleData);                                                                    // [0x49a7ec0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ItemInteractionViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ItemViewInterface
@@ -1338,9 +1446,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ItemViewInterface.SetData
-	// void SetData(FItemViewData& ItemViewData);                                                                            // [0x49f5820] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FItemViewData& ItemViewData);                                                                            // [0x49a7fb0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ItemViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.LeaningArrowsViewInterface
@@ -1352,7 +1460,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.LeaningArrowsViewInterface.SetData
-	// void SetData(ELeanState& leanState);                                                                                  // [0x49f5950] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(ELeanState& leanState);                                                                                  // [0x49a80e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.LightSensitivityViewInterface
@@ -1364,63 +1472,90 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.LightSensitivityViewInterface.StartFadeOut
-	// void StartFadeOut();                                                                                                  // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartFadeOut();                                                                                                  // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
-/// Class /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewData
-/// Size: 0x0110 (0x0001F0 - 0x000300)
-class ULoadoutMenuPopupViewData : public UGenericPopupViewData
+/// Class /Script/DBDUIViewInterfaces.LoadoutMenuViewData
+/// Size: 0x0118 (0x000030 - 0x000148)
+class ULoadoutMenuViewData : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,1289) /* TWeakObjectPtr<UTexture2D*> */ __um(LoadoutIcon);                                    // 0x01F0   (0x0030)  
-	FName                                              ItemId;                                                     // 0x0220   (0x000C)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x022C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1290) /* FText */                 __um(DisplayName);                                          // 0x0230   (0x0018)  
-	SDK_UNDEFINED(24,1291) /* FText */                 __um(ParentDisplayName);                                    // 0x0248   (0x0018)  
-	SDK_UNDEFINED(24,1292) /* FText */                 __um(ParentTypeDisplayName);                                // 0x0260   (0x0018)  
-	bool                                               IsParentAvailable;                                          // 0x0278   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0279   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1293) /* FText */                 __um(Description);                                          // 0x0280   (0x0018)  
-	EInventoryItemType                                 ItemType;                                                   // 0x0298   (0x0001)  
-	EItemRarity                                        Rarity;                                                     // 0x0299   (0x0001)  
-	EStatusEffectType                                  StatusEffectType;                                           // 0x029A   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x1];                                       // 0x029B   (0x0001)  MISSED
-	int32_t                                            Level;                                                      // 0x029C   (0x0004)  
-	SDK_UNDEFINED(24,1294) /* FText */                 __um(Subtitle);                                             // 0x02A0   (0x0018)  
-	int32_t                                            StackCount;                                                 // 0x02B8   (0x0004)  
-	EItemAvailability                                  Availability;                                               // 0x02BC   (0x0001)  
-	bool                                               IsTeachablePerk;                                            // 0x02BD   (0x0001)  
-	bool                                               IsSlasherPerk;                                              // 0x02BE   (0x0001)  
-	bool                                               IsSlasher;                                                  // 0x02BF   (0x0001)  
-	bool                                               IsLocked;                                                   // 0x02C0   (0x0001)  
-	bool                                               IsKillSwitch;                                               // 0x02C1   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x6];                                       // 0x02C2   (0x0006)  MISSED
-	SDK_UNDEFINED(24,1295) /* FText */                 __um(EventName);                                            // 0x02C8   (0x0018)  
-	SDK_UNDEFINED(16,1296) /* FString */               __um(EventId);                                              // 0x02E0   (0x0010)  
-	bool                                               IsPastEvent;                                                // 0x02F0   (0x0001)  
-	unsigned char                                      UnknownData04_6[0xF];                                       // 0x02F1   (0x000F)  MISSED
+	SDK_UNDEFINED(48,1295) /* TWeakObjectPtr<UTexture2D*> */ __um(LoadoutIcon);                                    // 0x0030   (0x0030)  
+	FName                                              ItemId;                                                     // 0x0060   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x006C   (0x0004)  MISSED
+	SDK_UNDEFINED(24,1296) /* FText */                 __um(DisplayName);                                          // 0x0070   (0x0018)  
+	SDK_UNDEFINED(24,1297) /* FText */                 __um(ParentDisplayName);                                    // 0x0088   (0x0018)  
+	SDK_UNDEFINED(24,1298) /* FText */                 __um(ParentTypeDisplayName);                                // 0x00A0   (0x0018)  
+	bool                                               IsParentAvailable;                                          // 0x00B8   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x00B9   (0x0007)  MISSED
+	SDK_UNDEFINED(24,1299) /* FText */                 __um(Description);                                          // 0x00C0   (0x0018)  
+	EInventoryItemType                                 ItemType;                                                   // 0x00D8   (0x0001)  
+	EItemRarity                                        Rarity;                                                     // 0x00D9   (0x0001)  
+	EStatusEffectType                                  StatusEffectType;                                           // 0x00DA   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x1];                                       // 0x00DB   (0x0001)  MISSED
+	int32_t                                            Level;                                                      // 0x00DC   (0x0004)  
+	SDK_UNDEFINED(24,1300) /* FText */                 __um(Subtitle);                                             // 0x00E0   (0x0018)  
+	int32_t                                            StackCount;                                                 // 0x00F8   (0x0004)  
+	EItemAvailability                                  Availability;                                               // 0x00FC   (0x0001)  
+	bool                                               IsTeachablePerk;                                            // 0x00FD   (0x0001)  
+	bool                                               IsSlasherPerk;                                              // 0x00FE   (0x0001)  
+	bool                                               IsSlasher;                                                  // 0x00FF   (0x0001)  
+	bool                                               IsLocked;                                                   // 0x0100   (0x0001)  
+	bool                                               IsKillSwitch;                                               // 0x0101   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x6];                                       // 0x0102   (0x0006)  MISSED
+	SDK_UNDEFINED(24,1301) /* FText */                 __um(EventName);                                            // 0x0108   (0x0018)  
+	SDK_UNDEFINED(16,1302) /* FString */               __um(eventID);                                              // 0x0120   (0x0010)  
+	bool                                               IsPastEvent;                                                // 0x0130   (0x0001)  
+	unsigned char                                      UnknownData04_5[0x7];                                       // 0x0131   (0x0007)  MISSED
+	SDK_UNDEFINED(16,1303) /* FString */               __um(EventBannerLabel);                                     // 0x0138   (0x0010)  
 };
 
-/// Class /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface
+/// Class /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface
 /// Size: 0x0000 (0x000030 - 0x000030)
-class ULoadoutMenuPopupViewInterface : public UInterface
+class ULoadoutMenuViewInterface : public UInterface
 { 
 public:
 
 
 	/// Functions
-	// Function /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface.UpdatePresetData
-	// void UpdatePresetData(TArray<int32_t>& presetData, int32_t selectedPreset);                                           // [0x49f6150] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface.SetSelectedInventoryItem
-	// void SetSelectedInventoryItem(TArray<int32_t>& selectedIndex, bool isUnequip);                                        // [0x49f6050] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface.SetSelectableCharacters
-	// void SetSelectableCharacters(TArray<FTabWidgetData>& selectableCharacters, FTabWidgetData selectedCharacterData, int32_t botIndex); // [0x49f5db0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface.SetLoadoutMenuSlotData
-	// void SetLoadoutMenuSlotData(TArray<ULoadoutMenuPopupViewData*>& loadoutMenuSlotButtonData);                           // [0x49f5d00] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface.SetLoadoutMenuInventoryData
-	// void SetLoadoutMenuInventoryData(TArray<ULoadoutMenuPopupViewData*>& loadoutMenuSlotButtonData, ELoadoutSlot slotSelected, bool isNextSlot); // [0x49f5bd0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.LoadoutMenuPopupViewInterface.SetIsPerkSurfacingExperimentActive
-	// void SetIsPerkSurfacingExperimentActive(bool isPerkSurfacingExperimentActive);                                        // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface.UpdatePresetData
+	// void UpdatePresetData(TArray<int32_t>& presetData, int32_t selectedPreset);                                           // [0x49a8d00] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface.SetSelectedInventoryItem
+	// void SetSelectedInventoryItem(TArray<int32_t>& selectedIndex, bool isUnequip);                                        // [0x49a88a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface.SetSelectableCharacters
+	// void SetSelectableCharacters(TArray<FTabWidgetData>& selectableCharacters, FTabWidgetData selectedCharacterData, int32_t botIndex); // [0x49a8640] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface.SetLoadoutMenuSlotData
+	// void SetLoadoutMenuSlotData(TArray<ULoadoutMenuViewData*>& loadoutMenuSlotButtonData);                                // [0x49a8470] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface.SetLoadoutMenuInventoryData
+	// void SetLoadoutMenuInventoryData(TArray<ULoadoutMenuViewData*>& loadoutMenuSlotButtonData, ELoadoutSlot slotSelected, bool isNextSlot); // [0x49a8340] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.LoadoutMenuViewInterface.SetIsPerkSurfacingExperimentActive
+	// void SetIsPerkSurfacingExperimentActive(bool isPerkSurfacingExperimentActive);                                        // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+};
+
+/// Class /Script/DBDUIViewInterfaces.LockedFeatureElementViewInterface
+/// Size: 0x0000 (0x000030 - 0x000030)
+class ULockedFeatureElementViewInterface : public UInterface
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.LockedFeatureElementViewInterface.IsLockedFeature
+	// bool IsLockedFeature();                                                                                               // [0x49a7710] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+};
+
+/// Class /Script/DBDUIViewInterfaces.MainMenuButtonViewInterface
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UMainMenuButtonViewInterface : public UInterface
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.MainMenuButtonViewInterface.SetMainMenuButtonType
+	// void SetMainMenuButtonType(EMainMenuButtonType mainMenuButtonType);                                                   // [0x49a1570] Native|Event|Public|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuButtonViewInterface.GetMainMenuButtonType
+	// EMainMenuButtonType GetMainMenuButtonType();                                                                          // [0x49a0f40] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.MainMenuViewInterface
@@ -1431,12 +1566,50 @@ public:
 
 
 	/// Functions
-	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetEventButton
-	// void SetEventButton(bool isEventActive, FMainMenuButtonViewData& Data);                                               // [0x49f5ab0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetBloodPointBonus
-	// void SetBloodPointBonus(bool isOnKiller, FMainMenuButtonViewData& Data);                                              // [0x49f5610] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetArchivesButton
-	// void SetArchivesButton(FMainMenuButtonViewData& Data);                                                                // [0x49f5550] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetUiTakeoverActive
+	// void SetUiTakeoverActive(bool IsActive);                                                                              // [0x4988230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetSubtitleVisible
+	// void SetSubtitleVisible(EMainMenuButtonType ButtonType, bool IsVisible);                                              // [0x49a8c30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetSubtitle
+	// void SetSubtitle(EMainMenuButtonType ButtonType, FText& Subtitle);                                                    // [0x49a8b10] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetStoreButtonFlags
+	// void SetStoreButtonFlags(bool hasNewItem, FTimerFlagViewData& remainingLimitedItemTimeData, FTimerFlagViewData& remainingSaleTimeData); // [0x49a89a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetMatchmakingIncentive
+	// void SetMatchmakingIncentive(FName& GameMode, EPlayerRole Role, int32_t percentAmount);                               // [0x49a8520] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetLTEButtons
+	// void SetLTEButtons(TArray<FName>& eventNames);                                                                        // [0x49a8170] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetLabelButton
+	// void SetLabelButton(EMainMenuButtonType ButtonType, FText& label);                                                    // [0x49a8220] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetChangeAccountInputSwitcherVisible
+	// void SetChangeAccountInputSwitcherVisible(bool visible);                                                              // [0x49a7e30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetChangeAccountInputSwitcherPlayerNickname
+	// void SetChangeAccountInputSwitcherPlayerNickname(FString playerNickname);                                             // [0x4988530] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetChallengesButtonVisibility
+	// void SetChallengesButtonVisibility(bool IsVisible);                                                                   // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonVisibility
+	// void SetButtonVisibility(EMainMenuButtonType ButtonType, bool IsVisible);                                             // [0x49a7d60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonNotificationVisibility
+	// void SetButtonNotificationVisibility(EMainMenuButtonType ButtonType, bool IsVisible);                                 // [0x49a7c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonIcon
+	// void SetButtonIcon(EMainMenuButtonType ButtonType, FString iconId);                                                   // [0x49a7bb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonEnabled
+	// void SetButtonEnabled(EMainMenuButtonType ButtonType, bool IsEnabled);                                                // [0x49a7ae0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonDisableState
+	// void SetButtonDisableState(EMainMenuButtonType ButtonType, EButtonDisableState buttonDisableState);                   // [0x49a7a10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonDecorationVisible
+	// void SetButtonDecorationVisible(EMainMenuButtonType ButtonType, bool IsVisible);                                      // [0x4988a40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonDecoration
+	// void SetButtonDecoration(EMainMenuButtonType ButtonType, FString decorationId);                                       // [0x49a7930] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.SetButtonBetaFeatureVisibility
+	// void SetButtonBetaFeatureVisibility(EMainMenuButtonType ButtonType, bool IsVisible);                                  // [0x49a7860] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.ResetButton
+	// void ResetButton(EMainMenuButtonType ButtonType);                                                                     // [0x49a77e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.DisplayMainMenu
+	// void DisplayMainMenu(bool IsDisplayed);                                                                               // [0x49885d0] Native|Event|Public|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.ClearButtonTimerFlags
+	// void ClearButtonTimerFlags(EMainMenuButtonType ButtonType);                                                           // [0x49a7690] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.MainMenuViewInterface.AddButtonTimerFlag
+	// void AddButtonTimerFlag(EMainMenuButtonType ButtonType, FTimerFlagViewData& TimerFlagViewData);                       // [0x49a73e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.MatchResultViewInterface
@@ -1448,11 +1621,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.MatchResultViewInterface.UpdateWidget
-	// void UpdateWidget(FMatchResultViewData& Data);                                                                        // [0x49f6250] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateWidget(FMatchResultViewData& Data);                                                                        // [0x49ae750] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.MatchResultViewInterface.SetMatchResultVisibility
-	// void SetMatchResultVisibility(ESlateVisibility Visibility);                                                           // [0x49e9850] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMatchResultVisibility(ESlateVisibility Visibility);                                                           // [0x49a1570] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.MatchResultViewInterface.PlayAnimationSequence
-	// void PlayAnimationSequence();                                                                                         // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayAnimationSequence();                                                                                         // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.MenuLoadoutPartViewData
@@ -1462,11 +1635,11 @@ class UMenuLoadoutPartViewData : public UObject
 public:
 	FName                                              ItemId;                                                     // 0x0030   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x003C   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1297) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0040   (0x0030)  
+	SDK_UNDEFINED(48,1304) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0040   (0x0030)  
 	EItemRarity                                        Rarity;                                                     // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0071   (0x0003)  MISSED
 	int32_t                                            StackCount;                                                 // 0x0074   (0x0004)  
-	SDK_UNDEFINED(24,1298) /* FText */                 __um(ParentDisplayName);                                    // 0x0078   (0x0018)  
+	SDK_UNDEFINED(24,1305) /* FText */                 __um(ParentDisplayName);                                    // 0x0078   (0x0018)  
 	bool                                               IsLocked;                                                   // 0x0090   (0x0001)  
 	EItemAvailability                                  Availability;                                               // 0x0091   (0x0001)  
 	bool                                               IsKillSwitchEnabled;                                        // 0x0092   (0x0001)  
@@ -1501,19 +1674,34 @@ class UMenuPerkViewData : public UMenuLoadoutPartViewData
 public:
 	int32_t                                            Level;                                                      // 0x0098   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x009C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1299) /* FText */                 __um(DisplayName);                                          // 0x00A0   (0x0018)  
-	SDK_UNDEFINED(24,1300) /* FText */                 __um(Description);                                          // 0x00B8   (0x0018)  
-	SDK_UNDEFINED(24,1301) /* FText */                 __um(EventName);                                            // 0x00D0   (0x0018)  
-	SDK_UNDEFINED(16,1302) /* FString */               __um(EventId);                                              // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(24,1306) /* FText */                 __um(DisplayName);                                          // 0x00A0   (0x0018)  
+	SDK_UNDEFINED(24,1307) /* FText */                 __um(Description);                                          // 0x00B8   (0x0018)  
+	SDK_UNDEFINED(24,1308) /* FText */                 __um(EventName);                                            // 0x00D0   (0x0018)  
+	SDK_UNDEFINED(16,1309) /* FString */               __um(eventID);                                              // 0x00E8   (0x0010)  
 };
 
 /// Class /Script/DBDUIViewInterfaces.MenuPowerViewData
-/// Size: 0x0030 (0x000098 - 0x0000C8)
+/// Size: 0x0050 (0x000098 - 0x0000E8)
 class UMenuPowerViewData : public UMenuLoadoutPartViewData
 { 
 public:
-	SDK_UNDEFINED(24,1303) /* FText */                 __um(Description);                                          // 0x0098   (0x0018)  
-	SDK_UNDEFINED(24,1304) /* FText */                 __um(EventName);                                            // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(24,1310) /* FText */                 __um(DisplayName);                                          // 0x0098   (0x0018)  
+	SDK_UNDEFINED(24,1311) /* FText */                 __um(Description);                                          // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(24,1312) /* FText */                 __um(EventName);                                            // 0x00C8   (0x0018)  
+	EInventoryItemType                                 ItemType;                                                   // 0x00E0   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x00E1   (0x0007)  MISSED
+};
+
+/// Class /Script/DBDUIViewInterfaces.MultipleDisableStateButtonViewInterface
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UMultipleDisableStateButtonViewInterface : public UInterface
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.MultipleDisableStateButtonViewInterface.SetButtonDisableState
+	// void SetButtonDisableState(EButtonDisableState buttonDisableState);                                                   // [0x49a1570] Native|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.NewActiveTomePopupViewData
@@ -1532,9 +1720,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.NewActiveTomePopupViewInterface.SetRiftEnabled
-	// void SetRiftEnabled(bool IsEnabled);                                                                                  // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetRiftEnabled(bool IsEnabled);                                                                                  // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.NewActiveTomePopupViewInterface.SetRemainingTime
-	// void SetRemainingTime(FString RemainingTime);                                                                         // [0x49e9c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetRemainingTime(FString RemainingTime);                                                                         // [0x499b250] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.OfferingInteractionViewInterface
@@ -1546,9 +1734,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.OfferingInteractionViewInterface.SetData
-	// void SetData(FOfferingViewData& OfferingData);                                                                        // [0x49f59e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FOfferingViewData& OfferingData);                                                                        // [0x49ade80] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OfferingInteractionViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.OfferingViewInterface
@@ -1560,9 +1748,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.OfferingViewInterface.SetData
-	// void SetData(FOfferingViewData& OfferingViewData);                                                                    // [0x49f59e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FOfferingViewData& OfferingViewData);                                                                    // [0x49ade80] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OfferingViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface
@@ -1574,23 +1762,23 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetUIEnabled
-	// void SetUIEnabled(bool Enabled);                                                                                      // [0x49d7030] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetUIEnabled(bool Enabled);                                                                                      // [0x4988cd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetQuitGameButtonVisible
-	// void SetQuitGameButtonVisible(bool visible);                                                                          // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetQuitGameButtonVisible(bool visible);                                                                          // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetOnboardingMenuState
-	// void SetOnboardingMenuState(EOnboardingMenuState menuState);                                                          // [0x49fce50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetOnboardingMenuState(EOnboardingMenuState menuState);                                                          // [0x49ae160] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetFirstTimeUserExperience
-	// void SetFirstTimeUserExperience(bool ftue);                                                                           // [0x49d7ca0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetFirstTimeUserExperience(bool ftue);                                                                           // [0x4989980] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetChangeAccountInputSwitcherVisible
-	// void SetChangeAccountInputSwitcherVisible(bool visible);                                                              // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetChangeAccountInputSwitcherVisible(bool visible);                                                              // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetChangeAccountInputSwitcherPlayerNickname
-	// void SetChangeAccountInputSwitcherPlayerNickname(FString playerNickname);                                             // [0x49d5ef0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetChangeAccountInputSwitcherPlayerNickname(FString playerNickname);                                             // [0x4987b90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.SetBackButtonVisible
-	// void SetBackButtonVisible(bool visible);                                                                              // [0x49d6620] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetBackButtonVisible(bool visible);                                                                              // [0x49882c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.GetOnboardingTutorialInterface
-	// TScriptInterface<Class> GetOnboardingTutorialInterface();                                                             // [0x49fca00] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetOnboardingTutorialInterface();                                                             // [0x49add90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.OnboardingMenuViewInterface.GetGameManualInterface
-	// TScriptInterface<Class> GetGameManualInterface();                                                                     // [0x49fc9c0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetGameManualInterface();                                                                     // [0x49add50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface
@@ -1602,19 +1790,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.UpdateProgress
-	// void UpdateProgress(TArray<FOnboardingStepViewData>& before, TArray<FOnboardingStepViewData>& after, TArray<FRewardWrapperViewData>& Rewards); // [0x49fd4c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateProgress(TArray<FOnboardingStepViewData>& before, TArray<FOnboardingStepViewData>& after, TArray<FRewardWrapperViewData>& Rewards); // [0x49ae4d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.StopLoadingSpinner
-	// void StopLoadingSpinner();                                                                                            // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StopLoadingSpinner();                                                                                            // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.SetUIEnabled
-	// void SetUIEnabled(bool Enabled);                                                                                      // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetUIEnabled(bool Enabled);                                                                                      // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.SetTutorialProgressionFeedbacks
-	// void SetTutorialProgressionFeedbacks(FString completedStepId, bool isOnboardingEnabled);                              // [0x49fd1d0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTutorialProgressionFeedbacks(FString completedStepId, bool isOnboardingEnabled);                              // [0x49ae2c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.SetProgress
-	// void SetProgress(TArray<FOnboardingStepViewData>& Progress);                                                          // [0x49fd0f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetProgress(TArray<FOnboardingStepViewData>& progress);                                                          // [0x49ae1e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.SetIsKillSwitch
-	// void SetIsKillSwitch(bool IsKillSwitch);                                                                              // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetIsKillSwitch(bool IsKillSwitch);                                                                              // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.OnboardingTutorialViewInterface.SetCanShowGoToMainMenuTutorialButton
-	// void SetCanShowGoToMainMenuTutorialButton(bool canShowGoToMainMenuTutorialButton);                                    // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCanShowGoToMainMenuTutorialButton(bool canShowGoToMainMenuTutorialButton);                                    // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PerksContainerViewInterface
@@ -1626,7 +1814,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PerksContainerViewInterface.GetPerkInterface
-	// TScriptInterface<Class> GetPerkInterface(int32_t index);                                                              // [0x49fca40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// TScriptInterface<Class> GetPerkInterface(int32_t index);                                                              // [0x49addd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PerkViewInterface
@@ -1638,11 +1826,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PerkViewInterface.UpdatePerkCooldown
-	// void UpdatePerkCooldown(float cooldownValue, bool IsRechargeable, bool IsRechargeableActive);                         // [0x49fd3a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdatePerkCooldown(float cooldownValue, bool IsRechargeable, bool IsRechargeableActive);                         // [0x49ae3b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PerkViewInterface.SetData
-	// void SetData(FPerkViewData& PerkViewData);                                                                            // [0x49fcb90] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FPerkViewData& PerkViewData);                                                                            // [0x49adf50] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PerkViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PingStatusViewInterface
@@ -1654,11 +1842,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PingStatusViewInterface.SetLocalPingStatus
-	// void SetLocalPingStatus(EConnectionQuality& localPing);                                                               // [0x49fcdc0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetLocalPingStatus(EConnectionQuality& localPing);                                                               // [0x49ae0d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PingStatusViewInterface.SetLocalPacketLossStatus
-	// void SetLocalPacketLossStatus(EConnectionQuality& localPacketLoss);                                                   // [0x49fcd30] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetLocalPacketLossStatus(EConnectionQuality& localPacketLoss);                                                   // [0x49ae040] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PingStatusViewInterface.SetKillerConnectionQualityStatus
-	// void SetKillerConnectionQualityStatus(EConnectionQuality& killerConnectionQuality);                                   // [0x49f5950] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetKillerConnectionQualityStatus(EConnectionQuality& killerConnectionQuality);                                   // [0x49a80e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PlayerCardAnimationViewInterface
@@ -1669,10 +1857,14 @@ public:
 
 
 	/// Functions
+	// Function /Script/DBDUIViewInterfaces.PlayerCardAnimationViewInterface.SetRetainerBoxOpacity
+	// void SetRetainerBoxOpacity(float Opacity);                                                                            // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.PlayerCardAnimationViewInterface.SetRetainerBoxMaterial
+	// void SetRetainerBoxMaterial(TWeakObjectPtr<UTexture2D*>& bannerTexture);                                              // [0x61d2f50] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerCardAnimationViewInterface.OnStopAnimation
-	// void OnStopAnimation();                                                                                               // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnStopAnimation();                                                                                               // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerCardAnimationViewInterface.OnPlayAnimation
-	// void OnPlayAnimation();                                                                                               // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnPlayAnimation();                                                                                               // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PlayerCardViewInterface
@@ -1684,7 +1876,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PlayerCardViewInterface.SetData
-	// void SetData(FPlayerCardViewData playerCardData);                                                                     // [0x49fcc50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetData(FPlayerCardViewData playerCardData);                                                                     // [0x49b47a0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PlayerProfileViewInterface
@@ -1696,33 +1888,37 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.UpdateWallet
-	// void UpdateWallet(ECurrencyType Type, int32_t newBalance, int32_t previousBalance);                                   // [0x49fd700] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateWallet(ECurrencyType Type, int32_t newBalance, int32_t previousBalance);                                   // [0x49b55c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.UpdatePlayerProfileOpacity
-	// void UpdatePlayerProfileOpacity(bool isFocused);                                                                      // [0x49d7030] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdatePlayerProfileOpacity(bool isFocused);                                                                      // [0x4988230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.UpdatePlayerCardButton
-	// void UpdatePlayerCardButton(bool isProfileMenuContextEntered);                                                        // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdatePlayerCardButton(bool isProfileMenuContextEntered);                                                        // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.ShowUI
-	// void ShowUI();                                                                                                        // [0x49d5ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowUI();                                                                                                        // [0x49b5510] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.ShowPlayerCard
+	// void ShowPlayerCard();                                                                                                // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetWalletVisibility
-	// void SetWalletVisibility(bool IsVisible);                                                                             // [0x49d6500] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetWalletVisibility(bool IsVisible);                                                                             // [0x49b5480] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetWalletData
-	// void SetWalletData(TArray<FCurrencyLabelViewData>& walletData);                                                       // [0x49fd2c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetWalletData(TArray<FCurrencyLabelViewData>& walletData);                                                       // [0x49b53a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetPlayerName
-	// void SetPlayerName(FText& playerNameText);                                                                            // [0x49fd020] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPlayerName(FText& playerNameText);                                                                            // [0x49b5060] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetPlayerCardEnabled
-	// void SetPlayerCardEnabled(bool IsEnabled);                                                                            // [0x49d6fa0] Native|Public        
+	// void SetPlayerCardEnabled(bool IsEnabled);                                                                            // [0x49b4fd0] Native|Public        
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetPlayerCardBannerOpacity
-	// void SetPlayerCardBannerOpacity(float Opacity);                                                                       // [0x49d6d20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetPlayerCardBannerOpacity(float Opacity);                                                                       // [0x49a0eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetPlayerCardAnimationMode
+	// void SetPlayerCardAnimationMode(EPlayerCardAnimationMode PlayerCardAnimationMode);                                    // [0x49a1570] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.SetPlayerCard
-	// void SetPlayerCard(FPlayerCardViewData& Badge, FPlayerCardViewData& Banner);                                          // [0x49fced0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPlayerCard(FPlayerCardViewData& Badge, FPlayerCardViewData& Banner);                                          // [0x49b4e60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.HideUI
-	// void HideUI();                                                                                                        // [0x49efa30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideUI();                                                                                                        // [0x49a1180] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.HidePlayerName
-	// void HidePlayerName();                                                                                                // [0x49efc60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HidePlayerName();                                                                                                // [0x499a5c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.HidePlayerCard
-	// void HidePlayerCard();                                                                                                // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HidePlayerCard();                                                                                                // [0x499ad80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerProfileViewInterface.FullUpdateCurrency
-	// void FullUpdateCurrency(FCurrencyLabelViewData& ViewData);                                                            // [0x49fc900] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void FullUpdateCurrency(FCurrencyLabelViewData& ViewData);                                                            // [0x49b4490] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PlayerStatusesContainerViewInterface
@@ -1734,7 +1930,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusesContainerViewInterface.GetPlayerStatusInterface
-	// TScriptInterface<Class> GetPlayerStatusInterface(int32_t index);                                                      // [0x49fca40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// TScriptInterface<Class> GetPlayerStatusInterface(int32_t index);                                                      // [0x49addd0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.KillerStatusData
@@ -1746,7 +1942,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.KillerStatusData.IsEqual
-	// bool IsEqual(class UKillerStatusData* Other);                                                                         // [0x49fcaf0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEqual(class UKillerStatusData* Other);                                                                         // [0x49b4620] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.DoctorStatusData
@@ -1867,9 +2063,10 @@ public:
 	bool                                               IsCondemnedActive;                                          // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0031   (0x0003)  MISSED
 	float                                              CondemnedProgress;                                          // 0x0034   (0x0004)  
-	bool                                               IsFullCondemned;                                            // 0x0038   (0x0001)  
-	bool                                               IsHoldingTape;                                              // 0x0039   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x6];                                       // 0x003A   (0x0006)  MISSED
+	float                                              LockedProgress;                                             // 0x0038   (0x0004)  
+	bool                                               IsFullCondemned;                                            // 0x003C   (0x0001)  
+	bool                                               IsHoldingTape;                                              // 0x003D   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x2];                                       // 0x003E   (0x0002)  MISSED
 };
 
 /// Class /Script/DBDUIViewInterfaces.K28StatusData
@@ -1934,33 +2131,33 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.UpdateSurvivorSpecificPingIcon
-	// void UpdateSurvivorSpecificPingIcon(EConnectionQuality& connectionQuality);                                           // [0x4a03cd0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void UpdateSurvivorSpecificPingIcon(EConnectionQuality& connectionQuality);                                           // [0x49b5530] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.UpdateSurvivorActivityProgress
-	// void UpdateSurvivorActivityProgress(float Progress);                                                                  // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateSurvivorActivityProgress(float progress);                                                                  // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.TriggerAfflictionHit
-	// void TriggerAfflictionHit();                                                                                          // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void TriggerAfflictionHit();                                                                                          // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.ShowSurvivorActivity
-	// void ShowSurvivorActivity(TWeakObjectPtr<UTexture2D*>& activityIcon, bool ShouldDisplayProgress);                     // [0x61c32d0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowSurvivorActivity(TWeakObjectPtr<UTexture2D*>& activityIcon, bool ShouldDisplayProgress);                     // [0x61d2f50] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.SetTimerProgress
-	// void SetTimerProgress(float value, bool IsDeepWound);                                                                 // [0x4a037c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTimerProgress(float value, bool IsDeepWound);                                                                 // [0x49b52c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.SetPlayerNameVisibility
-	// void SetPlayerNameVisibility(bool visible);                                                                           // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetPlayerNameVisibility(bool visible);                                                                           // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.SetKiller
-	// void SetKiller(FGameplayTag killerTag);                                                                               // [0x4a032c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetKiller(FGameplayTag killerTag);                                                                               // [0x49b4dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.SetData
-	// void SetData(FPlayerStatusViewData& Data);                                                                            // [0x4a02d70] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FPlayerStatusViewData& Data);                                                                            // [0x49b4870] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.SetCampProgress
-	// void SetCampProgress(float value, bool IsLocalPlayerAKiller);                                                         // [0x4a02c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetCampProgress(float value, bool IsLocalPlayerAKiller);                                                         // [0x49b46c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.PlayTimerAnimation
-	// void PlayTimerAnimation();                                                                                            // [0x49e9490] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayTimerAnimation();                                                                                            // [0x499ad80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.PlayHookEscapeFailedAnimation
-	// void PlayHookEscapeFailedAnimation();                                                                                 // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void PlayHookEscapeFailedAnimation();                                                                                 // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.HideSurvivorActivity
-	// void HideSurvivorActivity();                                                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideSurvivorActivity();                                                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.EnableChasesMode
-	// void EnableChasesMode(bool isChased);                                                                                 // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EnableChasesMode(bool isChased);                                                                                 // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PlayerStatusViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49efc60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x49a1180] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PowerBundleViewInterface
@@ -1972,9 +2169,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PowerBundleViewInterface.SetData
-	// void SetData(FPowerBundleViewData& PowerBundleViewData);                                                              // [0x4a02e40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FPowerBundleViewData& PowerBundleViewData);                                                              // [0x49b4940] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PowerBundleViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.PowerViewInterface
@@ -1986,9 +2183,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.PowerViewInterface.SetData
-	// void SetData(FPowerViewData& PowerViewData);                                                                          // [0x4a02fc0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FPowerViewData& PowerViewData);                                                                          // [0x49b4ac0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.PowerViewInterface.ClearData
-	// void ClearData();                                                                                                     // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ClearData();                                                                                                     // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ProcessingPopupViewData
@@ -2014,21 +2211,21 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.SetSelectedItem
-	// void SetSelectedItem(int32_t selectedIndex);                                                                          // [0x4a03460] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSelectedItem(int32_t selectedIndex);                                                                          // [0x49b5230] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.SetPreviewAreaData
-	// void SetPreviewAreaData(FCustomizationItemPreviewAreaViewData& ViewData, bool noCustomizationEquipped);               // [0x4a03360] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPreviewAreaData(FCustomizationItemPreviewAreaViewData& ViewData, bool noCustomizationEquipped);               // [0x49b5130] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.SetItemsData
-	// void SetItemsData(TArray<UStoreCustomizationItemViewData*>& customizationRewardsData, int32_t selectedIndex);         // [0x4a031c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetItemsData(TArray<UStoreCustomizationItemViewData*>& customizationRewardsData, int32_t selectedIndex);         // [0x49b4cc0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.SetEquipButtonText
-	// void SetEquipButtonText(bool canEquip, bool IsEquipped);                                                              // [0x4a030f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetEquipButtonText(bool canEquip, bool IsEquipped);                                                              // [0x49b4bf0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.Init
-	// void Init(ECustomizationCategory CustomizationCategory, EItemSorting itemSortingType);                                // [0x4a02bc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Init(ECustomizationCategory CustomizationCategory, ESortingOption sortingOption);                                // [0x49b4550] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.EnableInputs
-	// void EnableInputs(bool enable);                                                                                       // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void EnableInputs(bool enable);                                                                                       // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.DeselectItem
-	// void DeselectItem();                                                                                                  // [0x49e8cc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DeselectItem();                                                                                                  // [0x499a5e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuCustomizationViewInterface.Deinit
-	// void Deinit();                                                                                                        // [0x49d5ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Deinit();                                                                                                        // [0x4987b70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ProfileMenuStatsViewInterface
@@ -2040,9 +2237,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuStatsViewInterface.SetPlayerRanks
-	// void SetPlayerRanks(FRankViewData& survivorViewData, FRankViewData& killerViewData);                                  // [0x61c32d0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPlayerRanks(FRankViewData& survivorViewData, FRankViewData& killerViewData);                                  // [0x61d2f50] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuStatsViewInterface.SetPlayerLevel
-	// void SetPlayerLevel(FPlayerLevelViewData& ViewData);                                                                  // [0x61c32d0] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetPlayerLevel(FPlayerLevelViewData& ViewData);                                                                  // [0x61d2f50] Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ProfileMenuViewInterface
@@ -2054,23 +2251,25 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetTitle
-	// void SetTitle(FText& Title);                                                                                          // [0x4a038a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTitle(FText& Title);                                                                                          // [0x49bb920] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetTabSelected
-	// void SetTabSelected(int32_t Key);                                                                                     // [0x4a035c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabSelected(int32_t Key);                                                                                     // [0x49bb250] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetTabsData
-	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x4a03650] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x49bb7b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetTabEnabled
-	// void SetTabEnabled(int32_t Key, bool Enabled);                                                                        // [0x49d61b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabEnabled(int32_t Key, bool Enabled);                                                                        // [0x498f770] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetSubtitle
-	// void SetSubtitle(FText& Subtitle);                                                                                    // [0x4a034f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetSubtitle(FText& Subtitle);                                                                                    // [0x49bb6e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetMenuState
-	// void SetMenuState(EProfileMenuState menuState);                                                                       // [0x49f02c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMenuState(EProfileMenuState menuState);                                                                       // [0x49bb540] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.SetIsFocused
+	// void SetIsFocused(bool isFocused);                                                                                    // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.GetProfileMenuStatsInterface
-	// TScriptInterface<Class> GetProfileMenuStatsInterface();                                                               // [0x49fca00] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetProfileMenuStatsInterface();                                                               // [0x498ee90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.GetProfileMenuBannerInterface
-	// TScriptInterface<Class> GetProfileMenuBannerInterface();                                                              // [0x4a02b80] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetProfileMenuBannerInterface();                                                              // [0x49add50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.ProfileMenuViewInterface.GetProfileMenuBadgeInterface
-	// TScriptInterface<Class> GetProfileMenuBadgeInterface();                                                               // [0x49fc9c0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetProfileMenuBadgeInterface();                                                               // [0x49add90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.ProgressionSystemInfoPopupViewData
@@ -2125,27 +2324,35 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.ScreenIndicatorsContainerViewInterface.ShowDirectionIndicator
-	// void ShowDirectionIndicator(FScreenIndicatorViewData& Data);                                                          // [0x4a03970] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowDirectionIndicator(FScreenIndicatorViewData& Data);                                                          // [0x49bbaa0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.ScreenIndicatorsContainerViewInterface.RemoveDirectionIndicator
-	// void RemoveDirectionIndicator(FString ID);                                                                            // [0x49d5ef0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void RemoveDirectionIndicator(FString ID);                                                                            // [0x4987b90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+};
+
+/// Class /Script/DBDUIViewInterfaces.SearchBarViewInterface
+/// Size: 0x0000 (0x000030 - 0x000030)
+class USearchBarViewInterface : public UInterface
+{ 
+public:
 };
 
 /// Struct /Script/DBDUIViewInterfaces.RewardViewData
-/// Size: 0x0030 (0x000000 - 0x000030)
+/// Size: 0x0060 (0x000000 - 0x000060)
 struct FRewardViewData
 { 
-	SDK_UNDEFINED(48,1305) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1313) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1314) /* TWeakObjectPtr<UClass*> */ __um(AnimationWidgetClass);                               // 0x0030   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CharacterTooltipViewData
 /// Size: 0x00A0 (0x000000 - 0x0000A0)
 struct FCharacterTooltipViewData
 { 
-	SDK_UNDEFINED(24,1306) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,1307) /* FText */                 __um(Biography);                                            // 0x0018   (0x0018)  
-	SDK_UNDEFINED(24,1308) /* FText */                 __um(DLCTitle);                                             // 0x0030   (0x0018)  
-	SDK_UNDEFINED(24,1309) /* FText */                 __um(PackId);                                               // 0x0048   (0x0018)  
-	SDK_UNDEFINED(24,1310) /* FText */                 __um(PackTitle);                                            // 0x0060   (0x0018)  
+	SDK_UNDEFINED(24,1315) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1316) /* FText */                 __um(Biography);                                            // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,1317) /* FText */                 __um(DLCTitle);                                             // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,1318) /* FText */                 __um(PackId);                                               // 0x0048   (0x0018)  
+	SDK_UNDEFINED(24,1319) /* FText */                 __um(PackTitle);                                            // 0x0060   (0x0018)  
 	int32_t                                            Level;                                                      // 0x0078   (0x0004)  
 	int32_t                                            Prestige;                                                   // 0x007C   (0x0004)  
 	bool                                               IsUnlocked;                                                 // 0x0080   (0x0001)  
@@ -2156,21 +2363,21 @@ struct FCharacterTooltipViewData
 	ECharacterDifficulty                               Difficulty;                                                 // 0x0085   (0x0001)  
 	bool                                               IsEnabled;                                                  // 0x0086   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0087   (0x0001)  MISSED
-	SDK_UNDEFINED(24,1311) /* FText */                 __um(CharacterDisabledMessage);                             // 0x0088   (0x0018)  
+	SDK_UNDEFINED(24,1320) /* FText */                 __um(CharacterDisabledMessage);                             // 0x0088   (0x0018)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CharacterRewardViewData
-/// Size: 0x00C0 (0x000030 - 0x0000F0)
+/// Size: 0x00C0 (0x000060 - 0x000120)
 struct FCharacterRewardViewData : FRewardViewData
 { 
-	FName                                              ItemId;                                                     // 0x0030   (0x000C)  
-	bool                                               IsOwned;                                                    // 0x003C   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x3];                                       // 0x003D   (0x0003)  MISSED
-	int32_t                                            Level;                                                      // 0x0040   (0x0004)  
-	int32_t                                            Prestige;                                                   // 0x0044   (0x0004)  
-	FCharacterTooltipViewData                          TooltipData;                                                // 0x0048   (0x00A0)  
-	bool                                               IsEnabled;                                                  // 0x00E8   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00E9   (0x0007)  MISSED
+	FName                                              ItemId;                                                     // 0x0060   (0x000C)  
+	bool                                               IsOwned;                                                    // 0x006C   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x006D   (0x0003)  MISSED
+	int32_t                                            Level;                                                      // 0x0070   (0x0004)  
+	int32_t                                            Prestige;                                                   // 0x0074   (0x0004)  
+	FCharacterTooltipViewData                          TooltipData;                                                // 0x0078   (0x00A0)  
+	bool                                               IsEnabled;                                                  // 0x0118   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0119   (0x0007)  MISSED
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CurrencyExpirationLabelViewData
@@ -2179,7 +2386,7 @@ struct FCurrencyExpirationLabelViewData
 { 
 	int32_t                                            Amount;                                                     // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1312) /* FText */                 __um(ExpirationDate);                                       // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,1321) /* FText */                 __um(ExpirationDate);                                       // 0x0008   (0x0018)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CurrencyProgressionTooltipViewData
@@ -2188,28 +2395,28 @@ struct FCurrencyProgressionTooltipViewData
 { 
 	bool                                               IsCurrency;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1313) /* FText */                 __um(Title);                                                // 0x0008   (0x0018)  
-	SDK_UNDEFINED(24,1314) /* FText */                 __um(Description);                                          // 0x0020   (0x0018)  
-	SDK_UNDEFINED(48,1315) /* TWeakObjectPtr<UMaterialInterface*> */ __um(TooltipHeaderMaterial);                  // 0x0038   (0x0030)  
-	SDK_UNDEFINED(48,1316) /* TWeakObjectPtr<UTexture2D*> */ __um(TooltipDecorationIcon);                          // 0x0068   (0x0030)  
-	SDK_UNDEFINED(24,1317) /* FText */                 __um(EventName);                                            // 0x0098   (0x0018)  
-	SDK_UNDEFINED(24,1318) /* FText */                 __um(EventDescription);                                     // 0x00B0   (0x0018)  
-	SDK_UNDEFINED(24,1319) /* FText */                 __um(EventTimer);                                           // 0x00C8   (0x0018)  
+	SDK_UNDEFINED(24,1322) /* FText */                 __um(Title);                                                // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,1323) /* FText */                 __um(Description);                                          // 0x0020   (0x0018)  
+	SDK_UNDEFINED(48,1324) /* TWeakObjectPtr<UMaterialInterface*> */ __um(TooltipHeaderMaterial);                  // 0x0038   (0x0030)  
+	SDK_UNDEFINED(48,1325) /* TWeakObjectPtr<UTexture2D*> */ __um(TooltipDecorationIcon);                          // 0x0068   (0x0030)  
+	SDK_UNDEFINED(24,1326) /* FText */                 __um(EventName);                                            // 0x0098   (0x0018)  
+	SDK_UNDEFINED(24,1327) /* FText */                 __um(EventDescription);                                     // 0x00B0   (0x0018)  
+	SDK_UNDEFINED(24,1328) /* FText */                 __um(EventTimer);                                           // 0x00C8   (0x0018)  
 	TArray<FCurrencyExpirationLabelViewData>           ExpirationData;                                             // 0x00E0   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CurrencyProgressionRewardViewData
-/// Size: 0x0130 (0x000030 - 0x000160)
+/// Size: 0x0130 (0x000060 - 0x000190)
 struct FCurrencyProgressionRewardViewData : FRewardViewData
 { 
-	ECurrencyType                                      CurrencyType;                                               // 0x0030   (0x0001)  
-	EProgressionType                                   ProgressionType;                                            // 0x0031   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0032   (0x0002)  MISSED
-	int32_t                                            Amount;                                                     // 0x0034   (0x0004)  
-	bool                                               IsAffordable;                                               // 0x0038   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0039   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1320) /* TWeakObjectPtr<UMaterialInterface*> */ __um(RewardBackgroundMaterial);               // 0x0040   (0x0030)  
-	FCurrencyProgressionTooltipViewData                TooltipData;                                                // 0x0070   (0x00F0)  
+	ECurrencyType                                      CurrencyType;                                               // 0x0060   (0x0001)  
+	EProgressionType                                   ProgressionType;                                            // 0x0061   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0062   (0x0002)  MISSED
+	int32_t                                            Amount;                                                     // 0x0064   (0x0004)  
+	bool                                               IsAffordable;                                               // 0x0068   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0069   (0x0007)  MISSED
+	SDK_UNDEFINED(48,1329) /* TWeakObjectPtr<UMaterialInterface*> */ __um(RewardBackgroundMaterial);               // 0x0070   (0x0030)  
+	FCurrencyProgressionTooltipViewData                TooltipData;                                                // 0x00A0   (0x00F0)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.PriceTagViewData
@@ -2230,15 +2437,15 @@ struct FPriceTagViewData
 /// Size: 0x0118 (0x000000 - 0x000118)
 struct FCustomizationTooltipViewData
 { 
-	SDK_UNDEFINED(24,1321) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,1322) /* FText */                 __um(ParentName);                                           // 0x0018   (0x0018)  
-	SDK_UNDEFINED(24,1323) /* FText */                 __um(RarityPartInfo);                                       // 0x0030   (0x0018)  
-	SDK_UNDEFINED(24,1324) /* FText */                 __um(CollectionDisplayName);                                // 0x0048   (0x0018)  
-	SDK_UNDEFINED(24,1325) /* FText */                 __um(Description);                                          // 0x0060   (0x0018)  
-	SDK_UNDEFINED(24,1326) /* FText */                 __um(RoleCategoryInfo);                                     // 0x0078   (0x0018)  
+	SDK_UNDEFINED(24,1330) /* FText */                 __um(DisplayName);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1331) /* FText */                 __um(ParentName);                                           // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,1332) /* FText */                 __um(RarityPartInfo);                                       // 0x0030   (0x0018)  
+	SDK_UNDEFINED(24,1333) /* FText */                 __um(CollectionDisplayName);                                // 0x0048   (0x0018)  
+	SDK_UNDEFINED(24,1334) /* FText */                 __um(Description);                                          // 0x0060   (0x0018)  
+	SDK_UNDEFINED(24,1335) /* FText */                 __um(RoleCategoryInfo);                                     // 0x0078   (0x0018)  
 	EOriginWidgetState                                 CustomizationOriginState;                                   // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0091   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1327) /* FText */                 __um(CustomizationOriginInfo);                              // 0x0098   (0x0018)  
+	SDK_UNDEFINED(24,1336) /* FText */                 __um(CustomizationOriginInfo);                              // 0x0098   (0x0018)  
 	bool                                               IsLocked;                                                   // 0x00B0   (0x0001)  
 	bool                                               IsUnbreakable;                                              // 0x00B1   (0x0001)  
 	bool                                               IsEquipped;                                                 // 0x00B2   (0x0001)  
@@ -2246,52 +2453,52 @@ struct FCustomizationTooltipViewData
 	bool                                               IsOwned;                                                    // 0x00B4   (0x0001)  
 	bool                                               IsOutfitPart;                                               // 0x00B5   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x00B6   (0x0002)  MISSED
-	SDK_UNDEFINED(24,1328) /* FText */                 __um(OutfitInfoText);                                       // 0x00B8   (0x0018)  
+	SDK_UNDEFINED(24,1337) /* FText */                 __um(OutfitInfoText);                                       // 0x00B8   (0x0018)  
 	EPlayerRole                                        AssociatedRole;                                             // 0x00D0   (0x0001)  
 	EItemRarity                                        Rarity;                                                     // 0x00D1   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x00D2   (0x0006)  MISSED
 	TArray<FPriceTagViewData>                          Prices;                                                     // 0x00D8   (0x0010)  
 	bool                                               IsEnabled;                                                  // 0x00E8   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x00E9   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1329) /* FText */                 __um(CustomizationDisabledMessage);                         // 0x00F0   (0x0018)  
-	SDK_UNDEFINED(16,1330) /* FString */               __um(EventBannerLabel);                                     // 0x0108   (0x0010)  
+	SDK_UNDEFINED(24,1338) /* FText */                 __um(CustomizationDisabledMessage);                         // 0x00F0   (0x0018)  
+	SDK_UNDEFINED(16,1339) /* FString */               __um(EventBannerLabel);                                     // 0x0108   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CustomizationRewardViewData
-/// Size: 0x0180 (0x000030 - 0x0001B0)
+/// Size: 0x0170 (0x000060 - 0x0001D0)
 struct FCustomizationRewardViewData : FRewardViewData
 { 
-	FName                                              CustomizationId;                                            // 0x0030   (0x000C)  
-	FName                                              OutfitId;                                                   // 0x003C   (0x000C)  
-	FDateTime                                          ReleaseDate;                                                // 0x0048   (0x0008)  
-	EItemRarity                                        Rarity;                                                     // 0x0050   (0x0001)  
-	bool                                               IsOwned;                                                    // 0x0051   (0x0001)  
-	bool                                               IsBuyable;                                                  // 0x0052   (0x0001)  
-	bool                                               IsEquipped;                                                 // 0x0053   (0x0001)  
-	bool                                               IsUnbreakable;                                              // 0x0054   (0x0001)  
-	bool                                               IsEventItem;                                                // 0x0055   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0056   (0x0002)  MISSED
-	FCustomizationTooltipViewData                      TooltipData;                                                // 0x0058   (0x0118)  
-	ECustomizationCategory                             CustomizationCategory;                                      // 0x0170   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0171   (0x0003)  MISSED
-	int32_t                                            AssociatedCharacter;                                        // 0x0174   (0x0004)  
-	bool                                               IsEnabled;                                                  // 0x0178   (0x0001)  
-	bool                                               GrantsMilestonePointOnUnlock;                               // 0x0179   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x6];                                       // 0x017A   (0x0006)  MISSED
-	TArray<FPriceTagViewData>                          PriceTagData;                                               // 0x0180   (0x0010)  
-	SDK_UNDEFINED(16,1331) /* FString */               __um(LimitedTimeText);                                      // 0x0190   (0x0010)  
-	SDK_UNDEFINED(16,1332) /* FString */               __um(DiscountTimeText);                                     // 0x01A0   (0x0010)  
+	FName                                              CustomizationId;                                            // 0x0060   (0x000C)  
+	FName                                              OutfitId;                                                   // 0x006C   (0x000C)  
+	FDateTime                                          ReleaseDate;                                                // 0x0078   (0x0008)  
+	EItemRarity                                        Rarity;                                                     // 0x0080   (0x0001)  
+	bool                                               IsOwned;                                                    // 0x0081   (0x0001)  
+	bool                                               IsBuyable;                                                  // 0x0082   (0x0001)  
+	bool                                               IsEquipped;                                                 // 0x0083   (0x0001)  
+	bool                                               IsUnbreakable;                                              // 0x0084   (0x0001)  
+	bool                                               IsEventItem;                                                // 0x0085   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0086   (0x0002)  MISSED
+	FCustomizationTooltipViewData                      TooltipData;                                                // 0x0088   (0x0118)  
+	ECustomizationCategory                             CustomizationCategory;                                      // 0x01A0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01A1   (0x0003)  MISSED
+	int32_t                                            AssociatedCharacter;                                        // 0x01A4   (0x0004)  
+	bool                                               IsEnabled;                                                  // 0x01A8   (0x0001)  
+	bool                                               GrantsMilestonePointOnUnlock;                               // 0x01A9   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x6];                                       // 0x01AA   (0x0006)  MISSED
+	TArray<FPriceTagViewData>                          PriceTagData;                                               // 0x01B0   (0x0010)  
+	SDK_UNDEFINED(16,1340) /* FString */               __um(InclusionVersion);                                     // 0x01C0   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.RewardWrapperViewData
-/// Size: 0x0408 (0x000000 - 0x000408)
+/// Size: 0x0498 (0x000000 - 0x000498)
 struct FRewardWrapperViewData
 { 
 	ERewardType                                        RewardType;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	FCharacterRewardViewData                           CharacterRewardViewData;                                    // 0x0008   (0x00F0)  
-	FCurrencyProgressionRewardViewData                 CurrencyProgressionRewardViewData;                          // 0x00F8   (0x0160)  
-	FCustomizationRewardViewData                       CustomizationRewardViewData;                                // 0x0258   (0x01B0)  
+	FCharacterRewardViewData                           CharacterRewardViewData;                                    // 0x0008   (0x0120)  
+	FCurrencyProgressionRewardViewData                 CurrencyProgressionRewardViewData;                          // 0x0128   (0x0190)  
+	FCustomizationRewardViewData                       CustomizationRewardViewData;                                // 0x02B8   (0x01D0)  
+	SDK_UNDEFINED(16,1341) /* FString */               __um(EventThemeLabel);                                      // 0x0488   (0x0010)  
 };
 
 /// Class /Script/DBDUIViewInterfaces.SeasonEndRankRewardsPopupViewData
@@ -2313,6 +2520,20 @@ class USeasonEndRankRewardsPopupViewInterface : public UInterface
 public:
 };
 
+/// Class /Script/DBDUIViewInterfaces.ShrineOfSecretsViewInterface
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UShrineOfSecretsViewInterface : public UInterface
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.ShrineOfSecretsViewInterface.UpdateItemsFromPurchase
+	// void UpdateItemsFromPurchase(FShrineOfSecretsViewData& ShrineOfSecretsViewData, FShrineOfSecretsItemViewData& purchasedItem); // [0x49bbd60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.ShrineOfSecretsViewInterface.SetData
+	// void SetData(FShrineOfSecretsViewData& ShrineOfSecretsViewData);                                                      // [0x49bb440] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+};
+
 /// Class /Script/DBDUIViewInterfaces.SkillCheckViewInterface
 /// Size: 0x0000 (0x000030 - 0x000030)
 class USkillCheckViewInterface : public UInterface
@@ -2322,19 +2543,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.UpdateProgress
-	// void UpdateProgress(float value);                                                                                     // [0x4a03c40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateProgress(float value);                                                                                     // [0x49bbfc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.UpdatePositionOffset
-	// void UpdatePositionOffset(int32_t X, int32_t Y);                                                                      // [0x4a03b70] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdatePositionOffset(int32_t X, int32_t Y);                                                                      // [0x49bbef0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.ShowSkillCheckSuccess
-	// void ShowSkillCheckSuccess(bool IsBonus);                                                                             // [0x49d7c10] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowSkillCheckSuccess(bool IsBonus);                                                                             // [0x49898f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.ShowSkillCheckFail
-	// void ShowSkillCheckFail();                                                                                            // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowSkillCheckFail();                                                                                            // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.ShowSkillCheck
-	// void ShowSkillCheck(FSkillCheckViewData& skillCheckData);                                                             // [0x4a03a50] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowSkillCheck(FSkillCheckViewData& skillCheckData);                                                             // [0x49bbb80] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.HideSkillCheck
-	// void HideSkillCheck();                                                                                                // [0x49efa30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideSkillCheck();                                                                                                // [0x49a0e90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SkillCheckViewInterface.ApplyScaleFactor
-	// void ApplyScaleFactor(float Scale);                                                                                   // [0x49d6d20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ApplyScaleFactor(float Scale);                                                                                   // [0x49889c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.SpectateBarViewInterface
@@ -2346,13 +2567,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.SpectateBarViewInterface.SetSpectatedName
-	// void SetSpectatedName(FString playerName);                                                                            // [0x49e9c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSpectatedName(FString playerName);                                                                            // [0x499b250] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SpectateBarViewInterface.SetSpectateBarVisibility
-	// void SetSpectateBarVisibility(bool IsVisible);                                                                        // [0x49d6620] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSpectateBarVisibility(bool IsVisible);                                                                        // [0x49882c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SpectateBarViewInterface.SetBotTag
-	// void SetBotTag(bool IsBot);                                                                                           // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetBotTag(bool IsBot);                                                                                           // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SpectateBarViewInterface.SetArrowsVisibility
-	// void SetArrowsVisibility(bool IsVisible);                                                                             // [0x49d6120] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetArrowsVisibility(bool IsVisible);                                                                             // [0x4987dc0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StartSequenceViewInterface
@@ -2364,11 +2585,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StartSequenceViewInterface.ShowStartSequence
-	// void ShowStartSequence(FStartSequenceViewData& Data);                                                                 // [0x49f5550] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowStartSequence(FStartSequenceViewData& Data);                                                                 // [0x49bbca0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StartSequenceViewInterface.HideStartSequence
-	// void HideStartSequence();                                                                                             // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideStartSequence();                                                                                             // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StartSequenceViewInterface.GetIsStartSequenceVisible
-	// bool GetIsStartSequenceVisible();                                                                                     // [0x4a08d20] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool GetIsStartSequenceVisible();                                                                                     // [0x49bb2e0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StatusEffectViewInterface
@@ -2380,9 +2601,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StatusEffectViewInterface.ShowActiveStatusEffect
-	// void ShowActiveStatusEffect(FStatusEffectViewData& statusEffectData);                                                 // [0x4a098c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowActiveStatusEffect(FStatusEffectViewData& statusEffectData);                                                 // [0x49bb9f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StatusEffectViewInterface.RemoveExistingStatusEffect
-	// void RemoveExistingStatusEffect(FName& statusEffectID);                                                               // [0x4a08f50] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void RemoveExistingStatusEffect(FName& statusEffectId);                                                               // [0x49bb310] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreBaseSubTabsViewInterface
@@ -2394,15 +2615,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreBaseSubTabsViewInterface.UpdateTabData
-	// void UpdateTabData(int32_t subTabId, FTabWidgetData TabWidgetData);                                                   // [0x4a09970] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateTabData(int32_t subTabId, FTabWidgetData TabWidgetData);                                                   // [0x49bc050] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreBaseSubTabsViewInterface.UnselectCurrentTab
-	// void UnselectCurrentTab();                                                                                            // [0x49e2950] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UnselectCurrentTab();                                                                                            // [0x4994b40] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreBaseSubTabsViewInterface.SetSubTabsData
-	// void SetSubTabsData(TArray<FTabWidgetData>& tabsData);                                                                // [0x4a097a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetSubTabsData(TArray<FTabWidgetData>& tabsData);                                                                // [0x49bb5c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreBaseSubTabsViewInterface.SelectSubTab
-	// void SelectSubTab(int32_t SelectedKey);                                                                               // [0x4a08ff0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SelectSubTab(int32_t SelectedKey);                                                                               // [0x49bb3b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreBaseSubTabsViewInterface.ActivateSubTabContent
-	// void ActivateSubTabContent(int32_t State);                                                                            // [0x4a08c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ActivateSubTabContent(int32_t State);                                                                            // [0x49bb250] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreChapterPacksListViewInterface
@@ -2414,28 +2635,29 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreChapterPacksListViewInterface.SetData
-	// void SetData(TArray<UStoreChapterPackViewData*>& Data);                                                               // [0x4a09210] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(TArray<UStoreChapterPackViewData*>& Data);                                                               // [0x49c1080] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreChapterPackViewData
-/// Size: 0x00A0 (0x000030 - 0x0000D0)
+/// Size: 0x0090 (0x000030 - 0x0000C0)
 class UStoreChapterPackViewData : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1333) /* FString */               __um(ID);                                                   // 0x0030   (0x0010)  
-	SDK_UNDEFINED(24,1334) /* FText */                 __um(DisplayTitle);                                         // 0x0040   (0x0018)  
-	SDK_UNDEFINED(48,1335) /* TWeakObjectPtr<UTexture2D*> */ __um(PackImage);                                      // 0x0058   (0x0030)  
-	FPriceTagViewData                                  PriceTagData;                                               // 0x0088   (0x0020)  
-	TArray<class UStoreCharacterItemViewData*>         CharactersData;                                             // 0x00A8   (0x0010)  
-	TArray<class UStoreCustomizationItemViewData*>     CustomizationsData;                                         // 0x00B8   (0x0010)  
-	int32_t                                            SortOrder;                                                  // 0x00C8   (0x0004)  
-	bool                                               IsNew;                                                      // 0x00CC   (0x0001)  
-	bool                                               IsOwned;                                                    // 0x00CD   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x2];                                       // 0x00CE   (0x0002)  MISSED
+	SDK_UNDEFINED(16,1342) /* FString */               __um(ID);                                                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(24,1343) /* FText */                 __um(DisplayTitle);                                         // 0x0040   (0x0018)  
+	SDK_UNDEFINED(16,1344) /* FString */               __um(heritagePackId);                                       // 0x0058   (0x0010)  
+	SDK_UNDEFINED(48,1345) /* TWeakObjectPtr<UTexture2D*> */ __um(PackImage);                                      // 0x0068   (0x0030)  
+	TArray<class UStoreCharacterItemViewData*>         CharactersData;                                             // 0x0098   (0x0010)  
+	TArray<class UStoreCustomizationItemViewData*>     CustomizationsData;                                         // 0x00A8   (0x0010)  
+	int32_t                                            SortOrder;                                                  // 0x00B8   (0x0004)  
+	bool                                               IsNew;                                                      // 0x00BC   (0x0001)  
+	bool                                               IsOwned;                                                    // 0x00BD   (0x0001)  
+	bool                                               IsIndividuallyAvailable;                                    // 0x00BE   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x1];                                       // 0x00BF   (0x0001)  MISSED
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreItemViewData
-/// Size: 0x0038 (0x000030 - 0x000068)
+/// Size: 0x0090 (0x000030 - 0x0000C0)
 class UStoreItemViewData : public UObject
 { 
 public:
@@ -2443,53 +2665,60 @@ public:
 	bool                                               IsInStore;                                                  // 0x0040   (0x0001)  
 	bool                                               IsNewInStore;                                               // 0x0041   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0042   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1336) /* FString */               __um(LimitedTimeText);                                      // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,1337) /* FString */               __um(DiscountTimeText);                                     // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1346) /* FString */               __um(LimitedTimeText);                                      // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1347) /* FString */               __um(DiscountTimeText);                                     // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1348) /* FString */               __um(DLCId);                                                // 0x0068   (0x0010)  
+	SDK_UNDEFINED(24,1349) /* FText */                 __um(DLCTitle);                                             // 0x0078   (0x0018)  
+	SDK_UNDEFINED(16,1350) /* FString */               __um(PackId);                                               // 0x0090   (0x0010)  
+	SDK_UNDEFINED(24,1351) /* FText */                 __um(PackTitle);                                            // 0x00A0   (0x0018)  
+	bool                                               IsDLCValid;                                                 // 0x00B8   (0x0001)  
+	bool                                               IsDLCPurchasable;                                           // 0x00B9   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x6];                                       // 0x00BA   (0x0006)  MISSED
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.StoreItemViewData.GetIsBuyable
+	// bool GetIsBuyable();                                                                                                  // [0x49c63d0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/DBDUIViewInterfaces.SpecialEventInfoViewData
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FSpecialEventInfoViewData
 { 
-	SDK_UNDEFINED(16,1338) /* FString */               __um(EventId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1339) /* FString */               __um(EventBannerFrameLabel);                                // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1340) /* FString */               __um(EventThemeFrameLabel);                                 // 0x0020   (0x0010)  
-	SDK_UNDEFINED(24,1341) /* FText */                 __um(EventName);                                            // 0x0030   (0x0018)  
+	SDK_UNDEFINED(16,1352) /* FString */               __um(eventID);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1353) /* FString */               __um(EventBannerFrameLabel);                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1354) /* FString */               __um(EventThemeFrameLabel);                                 // 0x0020   (0x0010)  
+	SDK_UNDEFINED(24,1355) /* FText */                 __um(EventName);                                            // 0x0030   (0x0018)  
 	bool                                               IsPastEvent;                                                // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0049   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1342) /* FString */               __um(BloodwebCollectSoundEvent);                            // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,1356) /* FString */               __um(BloodwebCollectSoundEvent);                            // 0x0050   (0x0010)  
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCharacterItemViewData
-/// Size: 0x01F8 (0x000068 - 0x000260)
+/// Size: 0x01E0 (0x0000C0 - 0x0002A0)
 class UStoreCharacterItemViewData : public UStoreItemViewData
 { 
 public:
-	FCharacterRewardViewData                           CharacterReward;                                            // 0x0068   (0x00F0)  
-	int32_t                                            characterIndex;                                             // 0x0158   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x015C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1343) /* FText */                 __um(DisplayName);                                          // 0x0160   (0x0018)  
-	SDK_UNDEFINED(24,1344) /* FText */                 __um(Biography);                                            // 0x0178   (0x0018)  
-	EPlayerRole                                        playerRole;                                                 // 0x0190   (0x0001)  
-	ECharacterDifficulty                               Difficulty;                                                 // 0x0191   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0192   (0x0006)  MISSED
-	FSpecialEventInfoViewData                          EventInfo;                                                  // 0x0198   (0x0060)  
-	FName                                              KillerPowerId;                                              // 0x01F8   (0x000C)  
-	bool                                               IsUnlocked;                                                 // 0x0204   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0205   (0x0003)  MISSED
-	int32_t                                            UnlockInfo;                                                 // 0x0208   (0x0004)  
-	int32_t                                            ItemsOwned;                                                 // 0x020C   (0x0004)  
-	int32_t                                            TotalItems;                                                 // 0x0210   (0x0004)  
-	bool                                               HasNonSelectedPerks;                                        // 0x0214   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0215   (0x0003)  MISSED
-	SDK_UNDEFINED(16,1345) /* FString */               __um(DLCId);                                                // 0x0218   (0x0010)  
-	SDK_UNDEFINED(16,1346) /* FString */               __um(DLCTitle);                                             // 0x0228   (0x0010)  
-	SDK_UNDEFINED(16,1347) /* FString */               __um(PackId);                                               // 0x0238   (0x0010)  
-	SDK_UNDEFINED(16,1348) /* FString */               __um(PackTitle);                                            // 0x0248   (0x0010)  
-	bool                                               IsDLCPurchasable;                                           // 0x0258   (0x0001)  
-	bool                                               IsDlcLockedKiller;                                          // 0x0259   (0x0001)  
-	bool                                               IsLegacyRewardPrestigeEnabled;                              // 0x025A   (0x0001)  
-	unsigned char                                      UnknownData04_6[0x5];                                       // 0x025B   (0x0005)  MISSED
+	FCharacterRewardViewData                           CharacterReward;                                            // 0x00C0   (0x0120)  
+	int32_t                                            CharacterIndex;                                             // 0x01E0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x01E4   (0x0004)  MISSED
+	SDK_UNDEFINED(24,1357) /* FText */                 __um(DisplayName);                                          // 0x01E8   (0x0018)  
+	SDK_UNDEFINED(24,1358) /* FText */                 __um(Biography);                                            // 0x0200   (0x0018)  
+	EPlayerRole                                        PlayerRole;                                                 // 0x0218   (0x0001)  
+	ECharacterDifficulty                               Difficulty;                                                 // 0x0219   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x6];                                       // 0x021A   (0x0006)  MISSED
+	FSpecialEventInfoViewData                          EventInfo;                                                  // 0x0220   (0x0060)  
+	FName                                              KillerPowerId;                                              // 0x0280   (0x000C)  
+	bool                                               IsEquipped;                                                 // 0x028C   (0x0001)  
+	bool                                               IsUnlocked;                                                 // 0x028D   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x2];                                       // 0x028E   (0x0002)  MISSED
+	int32_t                                            UnlockInfo;                                                 // 0x0290   (0x0004)  
+	int32_t                                            ItemsOwned;                                                 // 0x0294   (0x0004)  
+	int32_t                                            TotalItems;                                                 // 0x0298   (0x0004)  
+	bool                                               HasNonSelectedPerks;                                        // 0x029C   (0x0001)  
+	bool                                               IsDlcLockedKiller;                                          // 0x029D   (0x0001)  
+	bool                                               IsLegacyRewardPrestigeEnabled;                              // 0x029E   (0x0001)  
+	unsigned char                                      UnknownData03_6[0x1];                                       // 0x029F   (0x0001)  MISSED
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCharactersBioViewInterface
@@ -2501,7 +2730,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersBioViewInterface.SetData
-	// void SetData(FText& characterBio);                                                                                    // [0x4a092c0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FText& characterBio);                                                                                    // [0x49c1130] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCharactersCustomizationsViewInterface
@@ -2512,10 +2741,14 @@ public:
 
 
 	/// Functions
+	// Function /Script/DBDUIViewInterfaces.StoreCharactersCustomizationsViewInterface.UpdateSelectedCustomizations
+	// void UpdateSelectedCustomizations(TArray<FName>& SelectedCustomizationIds);                                           // [0x49a1b40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreCharactersCustomizationsViewInterface.UpdateCustomizations
+	// void UpdateCustomizations(TArray<UStoreCustomizationItemViewData*>& Customizations);                                  // [0x49c15f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersCustomizationsViewInterface.SetData
-	// void SetData(FStoreCharactersCustomizationsViewData& Data);                                                           // [0x4a09390] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FStoreCharactersCustomizationsViewData& Data);                                                           // [0x49c1200] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersCustomizationsViewInterface.GetStoreCharactersFilterInterface
-	// TScriptInterface<Class> GetStoreCharactersFilterInterface();                                                          // [0x4a08dd0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreCharactersFilterInterface();                                                          // [0x49c0ab0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCharactersFilterViewInterface
@@ -2527,9 +2760,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersFilterViewInterface.SetRarityFiltersVisibility
-	// void SetRarityFiltersVisibility(bool showRarityFilters);                                                              // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetRarityFiltersVisibility(bool showRarityFilters);                                                              // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersFilterViewInterface.SetFiltersState
-	// void SetFiltersState(FStoreCharactersFiltersData newFiltersData);                                                     // [0x4a09580] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetFiltersState(FStoreCharactersFiltersData newFiltersData);                                                     // [0x49c13f0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCharactersSelectionViewInterface
@@ -2540,10 +2773,14 @@ public:
 
 
 	/// Functions
+	// Function /Script/DBDUIViewInterfaces.StoreCharactersSelectionViewInterface.UpdateSelectedCharacter
+	// void UpdateSelectedCharacter(int32_t SelectedCharacterIndex);                                                         // [0x49bb250] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreCharactersSelectionViewInterface.UpdateCharacters
+	// void UpdateCharacters(TArray<UStoreCharacterItemViewData*>& Characters);                                              // [0x49c15f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersSelectionViewInterface.SetData
-	// void SetData(FStoreCharactersSelectionViewData& Data);                                                                // [0x4a094d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(FStoreCharactersSelectionViewData& Data);                                                                // [0x49c1340] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersSelectionViewInterface.GetStoreCharactersFilterInterface
-	// TScriptInterface<Class> GetStoreCharactersFilterInterface();                                                          // [0x4a08dd0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreCharactersFilterInterface();                                                          // [0x49c0ab0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCharactersViewInterface
@@ -2555,15 +2792,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.SetKillerPower
-	// void SetKillerPower(class UMenuPowerViewData* KillerPower);                                                           // [0x4a09710] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetKillerPower(class UMenuPowerViewData* killerPowerViewData);                                                   // [0x49c1560] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.SetCustomizationButtons
+	// void SetCustomizationButtons(FStoreCharactersActionButtonsViewData& buttonsViewData);                                 // [0x49c0f60] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.SetCharacterData
-	// void SetCharacterData(FText& characterName, EPlayerRole Role, TArray<UCharacterPerkViewData*>& characterPerks);       // [0x4a09080] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetCharacterData(FText& characterName, EPlayerRole Role, TArray<UCharacterPerkViewData*>& characterPerks);       // [0x49c0dd0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.SetCharacterButtons
+	// void SetCharacterButtons(FStoreCharactersActionButtonsViewData& buttonsViewData);                                     // [0x49c0ca0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.GetStoreCharactersSelectionInterface
-	// TScriptInterface<Class> GetStoreCharactersSelectionInterface();                                                       // [0x4a08e10] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreCharactersSelectionInterface();                                                       // [0x49c0af0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.GetStoreCharactersCustomizationsInterface
-	// TScriptInterface<Class> GetStoreCharactersCustomizationsInterface();                                                  // [0x4a08d90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreCharactersCustomizationsInterface();                                                  // [0x49c0a70] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCharactersViewInterface.GetStoreCharactersBioInterface
-	// TScriptInterface<Class> GetStoreCharactersBioInterface();                                                             // [0x4a08d50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreCharactersBioInterface();                                                             // [0x49c0a30] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCollectionsListViewInterface
@@ -2582,71 +2823,84 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreCollectionsViewInterface.GetTabSpecialInterface
-	// TScriptInterface<Class> GetTabSpecialInterface();                                                                     // [0x4a08d50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetTabSpecialInterface();                                                                     // [0x49c0b70] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCollectionsViewInterface.GetTabFeaturedInterface
-	// TScriptInterface<Class> GetTabFeaturedInterface();                                                                    // [0x4a08e50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetTabFeaturedInterface();                                                                    // [0x49c0b30] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCollectionsViewInterface.GetTabAllInterface
-	// TScriptInterface<Class> GetTabAllInterface();                                                                         // [0x4a08dd0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetTabAllInterface();                                                                         // [0x49c0ab0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCollectionViewData
-/// Size: 0x0110 (0x000030 - 0x000140)
+/// Size: 0x0108 (0x000030 - 0x000138)
 class UStoreCollectionViewData : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1349) /* FString */               __um(CollectionId);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1350) /* FString */               __um(DisplayTitle);                                         // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,1351) /* FString */               __um(DisplaySubtitle);                                      // 0x0050   (0x0010)  
-	FDateTime                                          ActiveFrom;                                                 // 0x0060   (0x0008)  
-	FDateTime                                          ActiveTo;                                                   // 0x0068   (0x0008)  
-	int32_t                                            SortOrder;                                                  // 0x0070   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	FSoftRemoteContentCacheObjectPtr                   HeroImage;                                                  // 0x0078   (0x0060)  
-	SDK_UNDEFINED(48,1352) /* TWeakObjectPtr<UFileMediaSource*> */ __um(HeroVideo);                                // 0x00D8   (0x0030)  
-	TArray<FSoftRemoteContentCacheObjectPtr>           AdditionalImages;                                           // 0x0108   (0x0010)  
-	bool                                               IsNew;                                                      // 0x0118   (0x0001)  
-	bool                                               IsFeatured;                                                 // 0x0119   (0x0001)  
-	bool                                               IsSpecial;                                                  // 0x011A   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x5];                                       // 0x011B   (0x0005)  MISSED
-	FDateTime                                          SpecialStartDate;                                           // 0x0120   (0x0008)  
-	FDateTime                                          SpecialEndDate;                                             // 0x0128   (0x0008)  
-	TArray<class UStoreCustomizationItemViewData*>     Items;                                                      // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,1359) /* FString */               __um(collectionId);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1360) /* FString */               __um(DisplayTitle);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1361) /* FString */               __um(DisplaySubtitle);                                      // 0x0050   (0x0010)  
+	FDateTime                                          LimitedAvailabilityStartDate;                               // 0x0060   (0x0008)  
+	bool                                               VisibleBeforeStartDate;                                     // 0x0068   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0069   (0x0007)  MISSED
+	FDateTime                                          LimitedAvailabilityEndDate;                                 // 0x0070   (0x0008)  
+	bool                                               VisibleAfterEndDate;                                        // 0x0078   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0079   (0x0003)  MISSED
+	int32_t                                            SortOrder;                                                  // 0x007C   (0x0004)  
+	FSoftRemoteContentCacheObjectPtr                   HeroImage;                                                  // 0x0080   (0x0060)  
+	SDK_UNDEFINED(48,1362) /* TWeakObjectPtr<UFileMediaSource*> */ __um(HeroVideo);                                // 0x00E0   (0x0030)  
+	TArray<FSoftRemoteContentCacheObjectPtr>           AdditionalImages;                                           // 0x0110   (0x0010)  
+	bool                                               IsNew;                                                      // 0x0120   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0121   (0x0007)  MISSED
+	TArray<class UStoreCustomizationItemViewData*>     Items;                                                      // 0x0128   (0x0010)  
 
 
 	/// Functions
-	// Function /Script/DBDUIViewInterfaces.StoreCollectionViewData.IsSpecialActive
-	// bool IsSpecialActive();                                                                                               // [0x4a08f20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/DBDUIViewInterfaces.StoreCollectionViewData.IsSpecial
+	// bool IsSpecial();                                                                                                     // [0x49c0c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/DBDUIViewInterfaces.StoreCollectionViewData.IsCollectionHidden
+	// bool IsCollectionHidden();                                                                                            // [0x49c0c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCollectionViewData.IsCollectionActive
-	// bool IsCollectionActive();                                                                                            // [0x4a08ef0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCollectionActive();                                                                                            // [0x49c0c10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCollectionViewData.HasHeroVideo
-	// bool HasHeroVideo();                                                                                                  // [0x4a08ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasHeroVideo();                                                                                                  // [0x49c0be0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreCollectionViewData.HasHeroImage
-	// bool HasHeroImage();                                                                                                  // [0x4a08e90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasHeroImage();                                                                                                  // [0x49c0bb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreCustomizationItemViewData
-/// Size: 0x02F8 (0x000068 - 0x000360)
+/// Size: 0x0318 (0x0000C0 - 0x0003D8)
 class UStoreCustomizationItemViewData : public UStoreItemViewData
 { 
 public:
-	FCustomizationRewardViewData                       CustomizationReward;                                        // 0x0068   (0x01B0)  
-	FName                                              MirrorsId;                                                  // 0x0218   (0x000C)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0224   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1353) /* FString */               __um(DisplayName);                                          // 0x0228   (0x0010)  
-	SDK_UNDEFINED(16,1354) /* FString */               __um(DisplayCollectionName);                                // 0x0238   (0x0010)  
-	SDK_UNDEFINED(16,1355) /* FString */               __um(Description);                                          // 0x0248   (0x0010)  
-	SDK_UNDEFINED(16,1356) /* FString */               __um(RoleCategoryInfo);                                     // 0x0258   (0x0010)  
-	SDK_UNDEFINED(16,1357) /* FString */               __um(RarityPartInfo);                                       // 0x0268   (0x0010)  
-	FSpecialEventInfoViewData                          EventInfo;                                                  // 0x0278   (0x0060)  
-	TArray<FName>                                      ParentBundleIds;                                            // 0x02D8   (0x0010)  
-	TArray<FName>                                      ChildrenItemIds;                                            // 0x02E8   (0x0010)  
-	FCustomTransformation                              CustomTransformation;                                       // 0x02F8   (0x0014)  
-	bool                                               IsVisceral;                                                 // 0x030C   (0x0001)  
-	bool                                               IsLocked;                                                   // 0x030D   (0x0001)  
-	EPlayerRole                                        AssociatedRole;                                             // 0x030E   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x1];                                       // 0x030F   (0x0001)  MISSED
-	FDateTime                                          ReleaseDate;                                                // 0x0310   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x48];                                      // 0x0318   (0x0048)  MISSED
+	FCustomizationRewardViewData                       CustomizationReward;                                        // 0x00C0   (0x01D0)  
+	FName                                              MirrorsId;                                                  // 0x0290   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x029C   (0x0004)  MISSED
+	SDK_UNDEFINED(16,1363) /* FString */               __um(DisplayName);                                          // 0x02A0   (0x0010)  
+	SDK_UNDEFINED(16,1364) /* FString */               __um(DisplayCollectionName);                                // 0x02B0   (0x0010)  
+	SDK_UNDEFINED(16,1365) /* FString */               __um(Description);                                          // 0x02C0   (0x0010)  
+	SDK_UNDEFINED(16,1366) /* FString */               __um(RoleCategoryInfo);                                     // 0x02D0   (0x0010)  
+	SDK_UNDEFINED(16,1367) /* FString */               __um(RarityPartInfo);                                       // 0x02E0   (0x0010)  
+	FSpecialEventInfoViewData                          EventInfo;                                                  // 0x02F0   (0x0060)  
+	TArray<FName>                                      ParentBundleIds;                                            // 0x0350   (0x0010)  
+	TArray<FName>                                      ChildrenItemIds;                                            // 0x0360   (0x0010)  
+	FCustomTransformation                              CustomTransformation;                                       // 0x0370   (0x0014)  
+	bool                                               IsVisceral;                                                 // 0x0384   (0x0001)  
+	bool                                               IsLocked;                                                   // 0x0385   (0x0001)  
+	EPlayerRole                                        AssociatedRole;                                             // 0x0386   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x1];                                       // 0x0387   (0x0001)  MISSED
+	FDateTime                                          ReleaseDate;                                                // 0x0388   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x48];                                      // 0x0390   (0x0048)  MISSED
+};
+
+/// Class /Script/DBDUIViewInterfaces.StoreFeaturedChapterPackViewData
+/// Size: 0x0090 (0x000030 - 0x0000C0)
+class UStoreFeaturedChapterPackViewData : public UObject
+{ 
+public:
+	FSoftRemoteContentCacheObjectPtr                   Image;                                                      // 0x0030   (0x0060)  
+	SDK_UNDEFINED(24,1368) /* FText */                 __um(Title);                                                // 0x0090   (0x0018)  
+	SDK_UNDEFINED(16,1369) /* FString */               __um(AssociatedDlcId);                                      // 0x00A8   (0x0010)  
+	bool                                               IsOwned;                                                    // 0x00B8   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x00B9   (0x0007)  MISSED
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreFeaturedViewInterface
@@ -2658,11 +2912,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreFeaturedViewInterface.InitFeaturedCustomizationItems
-	// void InitFeaturedCustomizationItems(TArray<UStoreCustomizationItemViewData*>& viewDataArray);                         // [0x4a0e420] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void InitFeaturedCustomizationItems(TArray<UStoreCustomizationItemViewData*>& viewDataArray);                         // [0x49c15f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreFeaturedViewInterface.InitFeaturedCharacters
-	// void InitFeaturedCharacters(TArray<FStoreFeaturedCharacterViewData>& characterViewDataArray);                         // [0x4a0e320] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
-	// Function /Script/DBDUIViewInterfaces.StoreFeaturedViewInterface.FocusFeaturedCharacter
-	// void FocusFeaturedCharacter(int32_t characterIndex);                                                                  // [0x4a08c90] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void InitFeaturedCharacters(TArray<FStoreFeaturedCharacterViewData>& characterViewDataArray);                         // [0x49c6400] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreFeaturedViewInterface.InitFeaturedChapterPacks
+	// void InitFeaturedChapterPacks(TArray<UStoreFeaturedChapterPackViewData*>& viewDataArray);                             // [0x49c1080] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreMenuViewInterface
@@ -2674,23 +2928,25 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.SetTabSelected
-	// void SetTabSelected(int32_t Key);                                                                                     // [0x4a035c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabSelected(int32_t Key);                                                                                     // [0x49c6540] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.SetTabsData
-	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x4a03650] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTabsData(TArray<FTabWidgetData>& tabsData, int32_t SelectedKey);                                              // [0x49c69b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.SetTabEnabled
-	// void SetTabEnabled(int32_t Key, bool Enabled);                                                                        // [0x49d61b0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetTabEnabled(int32_t Key, bool Enabled);                                                                        // [0x4987e50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.SetMenuState
-	// void SetMenuState(EStoreMenuState State);                                                                             // [0x49f02c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMenuState(EStoreMenuState State);                                                                             // [0x49a1ac0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreSurvivorsInterface
+	// TScriptInterface<Class> GetStoreSurvivorsInterface();                                                                 // [0x49c0a30] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreSpecialsInterface
-	// TScriptInterface<Class> GetStoreSpecialsInterface();                                                                  // [0x49fc9c0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreSpecialsInterface();                                                                  // [0x49add90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreSpecialPacksInterface
-	// TScriptInterface<Class> GetStoreSpecialPacksInterface();                                                              // [0x4a0e2e0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreSpecialPacksInterface();                                                              // [0x49c0af0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreKillersInterface
+	// TScriptInterface<Class> GetStoreKillersInterface();                                                                   // [0x49c0a70] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreFeaturedInterface
-	// TScriptInterface<Class> GetStoreFeaturedInterface();                                                                  // [0x49fca00] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreFeaturedInterface();                                                                  // [0x498ee90] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreCollectionsInterface
-	// TScriptInterface<Class> GetStoreCollectionsInterface();                                                               // [0x4a02b80] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
-	// Function /Script/DBDUIViewInterfaces.StoreMenuViewInterface.GetStoreCharactersInterface
-	// TScriptInterface<Class> GetStoreCharactersInterface();                                                                // [0x4a08e10] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetStoreCollectionsInterface();                                                               // [0x49add50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreSpecialPacksHeritageViewInterface
@@ -2698,6 +2954,11 @@ public:
 class UStoreSpecialPacksHeritageViewInterface : public UInterface
 { 
 public:
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.StoreSpecialPacksHeritageViewInterface.SetData
+	// void SetData(TArray<FStoreHeritagePackViewData>& Data);                                                               // [0x49c67b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreSpecialPacksListViewInterface
@@ -2709,7 +2970,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreSpecialPacksListViewInterface.SetData
-	// void SetData(TArray<UStoreSpecialPackViewData*>& Data);                                                               // [0x4a09210] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetData(TArray<UStoreSpecialPackViewData*>& Data);                                                               // [0x49c1080] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreSpecialPacksViewInterface
@@ -2721,39 +2982,44 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreSpecialPacksViewInterface.GetTabSpecialsInterface
-	// TScriptInterface<Class> GetTabSpecialsInterface();                                                                    // [0x4a08d50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetTabSpecialsInterface();                                                                    // [0x49c0b70] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreSpecialPacksViewInterface.GetTabHeritageInterface
-	// TScriptInterface<Class> GetTabHeritageInterface();                                                                    // [0x4a08dd0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetTabHeritageInterface();                                                                    // [0x49c0ab0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDUIViewInterfaces.StoreSpecialPacksViewInterface.GetTabChaptersInterface
-	// TScriptInterface<Class> GetTabChaptersInterface();                                                                    // [0x4a08e50] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// TScriptInterface<Class> GetTabChaptersInterface();                                                                    // [0x49c0b30] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+};
+
+/// Struct /Script/DBDUIViewInterfaces.StoreArchivePassViewData
+/// Size: 0x0058 (0x000000 - 0x000058)
+struct FStoreArchivePassViewData
+{ 
+	SDK_UNDEFINED(16,1370) /* FString */               __um(PassId);                                               // 0x0000   (0x0010)  
+	FName                                              archiveId;                                                  // 0x0010   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
+	SDK_UNDEFINED(24,1371) /* FText */                 __um(DisplayName);                                          // 0x0020   (0x0018)  
+	SDK_UNDEFINED(24,1372) /* FText */                 __um(Description);                                          // 0x0038   (0x0018)  
+	bool                                               IsOwned;                                                    // 0x0050   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0051   (0x0007)  MISSED
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreSpecialPackViewData
-/// Size: 0x00A8 (0x000030 - 0x0000D8)
+/// Size: 0x0130 (0x000030 - 0x000160)
 class UStoreSpecialPackViewData : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1358) /* FString */               __um(ID);                                                   // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1359) /* FString */               __um(DisplayTitle);                                         // 0x0040   (0x0010)  
-	SDK_UNDEFINED(48,1360) /* TWeakObjectPtr<UTexture2D*> */ __um(PackImage);                                      // 0x0050   (0x0030)  
-	FPriceTagViewData                                  PriceTagData;                                               // 0x0080   (0x0020)  
-	TArray<class UStoreCharacterItemViewData*>         CharactersData;                                             // 0x00A0   (0x0010)  
-	TArray<class UStoreCustomizationItemViewData*>     CustomizationsData;                                         // 0x00B0   (0x0010)  
-	FDateTime                                          ActivationStartDate;                                        // 0x00C0   (0x0008)  
-	FDateTime                                          ActivationEndDate;                                          // 0x00C8   (0x0008)  
-	int32_t                                            SortOrder;                                                  // 0x00D0   (0x0004)  
-	bool                                               IsNew;                                                      // 0x00D4   (0x0001)  
-	bool                                               IsOwned;                                                    // 0x00D5   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x2];                                       // 0x00D6   (0x0002)  MISSED
-};
-
-/// Class /Script/DBDUIViewInterfaces.StoreSpecialsItemViewData
-/// Size: 0x0010 (0x000068 - 0x000078)
-class UStoreSpecialsItemViewData : public UStoreItemViewData
-{ 
-public:
-	FDateTime                                          EndTime;                                                    // 0x0068   (0x0008)  
-	class UStoreItemViewData*                          Item;                                                       // 0x0070   (0x0008)  
+	SDK_UNDEFINED(16,1373) /* FString */               __um(ID);                                                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1374) /* FString */               __um(DisplayTitle);                                         // 0x0040   (0x0010)  
+	FSoftRemoteContentCacheObjectPtr                   PackImage;                                                  // 0x0050   (0x0060)  
+	FPriceTagViewData                                  PriceTagData;                                               // 0x00B0   (0x0020)  
+	TArray<class UStoreCharacterItemViewData*>         CharactersData;                                             // 0x00D0   (0x0010)  
+	TArray<class UStoreCustomizationItemViewData*>     CustomizationsData;                                         // 0x00E0   (0x0010)  
+	FStoreArchivePassViewData                          ArchivePassViewData;                                        // 0x00F0   (0x0058)  
+	FDateTime                                          ActivationStartDate;                                        // 0x0148   (0x0008)  
+	FDateTime                                          ActivationEndDate;                                          // 0x0150   (0x0008)  
+	int32_t                                            SortOrder;                                                  // 0x0158   (0x0004)  
+	bool                                               IsNew;                                                      // 0x015C   (0x0001)  
+	bool                                               IsOwned;                                                    // 0x015D   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x2];                                       // 0x015E   (0x0002)  MISSED
 };
 
 /// Class /Script/DBDUIViewInterfaces.StoreSpecialsViewInterface
@@ -2765,9 +3031,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.StoreSpecialsViewInterface.SetSpecialsData
-	// void SetSpecialsData(TArray<UStoreSpecialsItemViewData*>& specialsData);                                              // [0x49f0340] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetSpecialsData(TArray<UStoreCustomizationItemViewData*>& specialsData);                                         // [0x49a1b40] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.StoreSpecialsViewInterface.SetAuricCellsSpecialOfferData
-	// void SetAuricCellsSpecialOfferData(FAuricCellsBundleViewData& auricCellsSpecialOfferData);                            // [0x4a0e570] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetAuricCellsSpecialOfferData(FAuricCellsBundleViewData& auricCellsSpecialOfferData);                            // [0x49c65d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.StoreSpecialsViewInterface.HideAuricCellsSpecialOffer
+	// void HideAuricCellsSpecialOffer();                                                                                    // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.SubtitlesViewInterface
@@ -2779,17 +3047,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.SubtitlesViewInterface.ShowSubtitle
-	// void ShowSubtitle(FText& subtitleText);                                                                               // [0x4a038a0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowSubtitle(FText& subtitleText);                                                                               // [0x49bb6e0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SubtitlesViewInterface.SetSubtitlesSize
-	// void SetSubtitlesSize(ESubtitlesSize Size);                                                                           // [0x4a0e850] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSubtitlesSize(ESubtitlesSize Size);                                                                           // [0x49c6930] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SubtitlesViewInterface.SetSubtitlesPosition
-	// void SetSubtitlesPosition(ESubtitlesPosition position);                                                               // [0x49d70c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSubtitlesPosition(ESubtitlesPosition position);                                                               // [0x4988d60] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SubtitlesViewInterface.SetSubtitlesBackgroundOpacity
-	// void SetSubtitlesBackgroundOpacity(ESubtitlesBackgroundOpacity Opacity);                                              // [0x49f02c0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSubtitlesBackgroundOpacity(ESubtitlesBackgroundOpacity Opacity);                                              // [0x49a1ac0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SubtitlesViewInterface.SetConstrainAspectRatioChanged
-	// void SetConstrainAspectRatioChanged(bool isConstrained, float AspectRatio);                                           // [0x4a0e680] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetConstrainAspectRatioChanged(bool isConstrained, float AspectRatio);                                           // [0x49c66e0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.SubtitlesViewInterface.HideSubtitles
-	// void HideSubtitles();                                                                                                 // [0x49e9490] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideSubtitles();                                                                                                 // [0x499ad80] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.TemplateViewInterface
@@ -2801,7 +3069,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.TemplateViewInterface.TemplateExampleFunction
-	// void TemplateExampleFunction(FTemplateViewData& templateData);                                                        // [0x4a0ea90] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void TemplateExampleFunction(FTemplateViewData& templateData);                                                        // [0x49c6b20] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.TestBuildFlagViewInterface
@@ -2813,7 +3081,21 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.TestBuildFlagViewInterface.UpdateWidget
-	// void UpdateWidget(ETestBuildType testBuildType, ETestBuildFlagPosition testBuildFlagPosition);                        // [0x4a0eb20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateWidget(ETestBuildType testBuildType, ETestBuildFlagPosition testBuildFlagPosition);                        // [0x49c6bb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+};
+
+/// Class /Script/DBDUIViewInterfaces.ToastNotificationContainerViewInterface
+/// Size: 0x0000 (0x000030 - 0x000030)
+class UToastNotificationContainerViewInterface : public UInterface
+{ 
+public:
+
+
+	/// Functions
+	// Function /Script/DBDUIViewInterfaces.ToastNotificationContainerViewInterface.RemoveToastNotification
+	// void RemoveToastNotification(int32_t notificationId);                                                                 // [0x49c6540] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDUIViewInterfaces.ToastNotificationContainerViewInterface.AddToastNotification
+	// void AddToastNotification(FToastNotificationViewData& toastData);                                                     // [0x49c6300] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.TutorialHighlightViewInterface
@@ -2825,7 +3107,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.TutorialHighlightViewInterface.SetTutorialHighlight
-	// void SetTutorialHighlight(bool Show, EHudComponent& componentId);                                                     // [0x4a0e8d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void SetTutorialHighlight(bool Show, EHudComponent& componentId);                                                     // [0x49c8990] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.TutorialMysteryNoteViewInterface
@@ -2837,9 +3119,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.TutorialMysteryNoteViewInterface.ShowMysteryNote
-	// void ShowMysteryNote(FNotifTutorialPopupViewData& notifData);                                                         // [0x4a0e9b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowMysteryNote(FNotifTutorialPopupViewData& notifData);                                                         // [0x49c8a70] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.TutorialMysteryNoteViewInterface.HideMysteryNote
-	// void HideMysteryNote();                                                                                               // [0x49d5eb0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideMysteryNote();                                                                                               // [0x4987b50] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.TutorialObjectivesViewInterface
@@ -2851,13 +3133,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.TutorialObjectivesViewInterface.RemoveTutorialObjective
-	// void RemoveTutorialObjective(FName& ID);                                                                              // [0x4a0e4d0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void RemoveTutorialObjective(FName& ID);                                                                              // [0x49c87f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.TutorialObjectivesViewInterface.RemoveAllTutorialObjectives
-	// void RemoveAllTutorialObjectives();                                                                                   // [0x49d6100] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void RemoveAllTutorialObjectives();                                                                                   // [0x4987da0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.TutorialObjectivesViewInterface.CompleteTutorialObjective
-	// void CompleteTutorialObjective(FName& ID, bool removeAfterCompletion);                                                // [0x4a0e110] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void CompleteTutorialObjective(FName& ID, bool removeAfterCompletion);                                                // [0x49c8620] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.TutorialObjectivesViewInterface.AddTutorialObjective
-	// void AddTutorialObjective(FName& ID, FTutorialObjectivesViewData& InteractionPromptViewData);                         // [0x4a0dfe0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void AddTutorialObjective(FName& ID, FTutorialObjectivesViewData& InteractionPromptViewData);                         // [0x49c84f0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.TutorialPopupViewInterface
@@ -2869,9 +3151,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.TutorialPopupViewInterface.ShowNotifTutorialPopup
-	// void ShowNotifTutorialPopup(FNotifTutorialPopupViewData& notifTutoData);                                              // [0x4a0e9b0] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// void ShowNotifTutorialPopup(FNotifTutorialPopupViewData& notifTutoData);                                              // [0x49c8a70] Native|Event|Public|HasOutParms|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewInterfaces.TutorialPopupViewInterface.HideTutorialPopup
-	// void HideTutorialPopup(bool playSoundEffect);                                                                         // [0x49d6280] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideTutorialPopup(bool PlaySoundEffect);                                                                         // [0x4987f20] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDUIViewInterfaces.UIUtilities
@@ -2883,7 +3165,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.UIUtilities.ConvertArchiveCurrentAndMaxProgressionInPercentage
-	// void ConvertArchiveCurrentAndMaxProgressionInPercentage(int32_t& outCurrentProgression, int32_t& outMaxProgression);  // [0x4a0e200] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ConvertArchiveCurrentAndMaxProgressionInPercentage(int32_t& outCurrentProgression, int32_t& outMaxProgression);  // [0x49c8710] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DBDUIViewInterfaces.UnlockPersonalPerksPopupViewData
@@ -2910,14 +3192,14 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewInterfaces.WatermarkViewInterface.SetSteamValuesText
-	// void SetSteamValuesText(FString SteamName, FString SteamId);                                                          // [0x4a0e750] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSteamValuesText(FString SteamName, FString SteamId);                                                          // [0x49c8890] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Struct /Script/DBDUIViewInterfaces.ArchiveNodeObjectiveViewData
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FArchiveNodeObjectiveViewData
 { 
-	SDK_UNDEFINED(24,1361) /* FText */                 __um(Description);                                          // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1375) /* FText */                 __um(Description);                                          // 0x0000   (0x0018)  
 	int32_t                                            CurrentProgress;                                            // 0x0018   (0x0004)  
 	int32_t                                            MaxProgress;                                                // 0x001C   (0x0004)  
 	EQuestProgressionType                              ProgressionType;                                            // 0x0020   (0x0001)  
@@ -2932,18 +3214,18 @@ struct FArchiveNodeViewData
 	EArchiveNodeType                                   Type;                                                       // 0x0000   (0x0001)  
 	EStoryNodeState                                    Status;                                                     // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0002   (0x0006)  MISSED
-	SDK_UNDEFINED(24,1362) /* FText */                 __um(Title);                                                // 0x0008   (0x0018)  
-	SDK_UNDEFINED(24,1363) /* FText */                 __um(Subtitle);                                             // 0x0020   (0x0018)  
-	SDK_UNDEFINED(24,1364) /* FText */                 __um(Description);                                          // 0x0038   (0x0018)  
-	SDK_UNDEFINED(16,1365) /* FString */               __um(DebugInfo);                                            // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,1366) /* FString */               __um(IconPath);                                             // 0x0060   (0x0010)  
+	SDK_UNDEFINED(24,1376) /* FText */                 __um(Title);                                                // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,1377) /* FText */                 __um(Subtitle);                                             // 0x0020   (0x0018)  
+	SDK_UNDEFINED(24,1378) /* FText */                 __um(Description);                                          // 0x0038   (0x0018)  
+	SDK_UNDEFINED(16,1379) /* FString */               __um(DebugInfo);                                            // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,1380) /* FString */               __um(IconPath);                                             // 0x0060   (0x0010)  
 	TArray<FArchiveNodeObjectiveViewData>              Objectives;                                                 // 0x0070   (0x0010)  
 	TArray<FRewardWrapperViewData>                     Rewards;                                                    // 0x0080   (0x0010)  
-	SDK_UNDEFINED(16,1367) /* TArray<FText> */         __um(VignetteTitles);                                       // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,1381) /* TArray<FText> */         __um(VignetteTitles);                                       // 0x0090   (0x0010)  
 	EPlayerRole                                        Role;                                                       // 0x00A0   (0x0001)  
 	bool                                               IsImageReward;                                              // 0x00A1   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x00A2   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1368) /* FString */               __um(VignetteId);                                           // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,1382) /* FString */               __um(VignetteId);                                           // 0x00A8   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.ArchiveNodeGraphViewData
@@ -2958,6 +3240,20 @@ struct FArchiveNodeGraphViewData
 	TArray<int32_t>                                    PathIndices;                                                // 0x00E0   (0x0010)  
 };
 
+/// Struct /Script/DBDUIViewInterfaces.ShrineOfSecretsItemViewData
+/// Size: 0x00E0 (0x000000 - 0x0000E0)
+struct FShrineOfSecretsItemViewData
+{ 
+	FName                                              ItemId;                                                     // 0x0000   (0x000C)  
+	int32_t                                            BPCost;                                                     // 0x000C   (0x0004)  
+	class UMenuPerkViewData*                           Perk;                                                       // 0x0010   (0x0008)  
+	FLoadoutTooltipData                                PerkTooltip;                                                // 0x0018   (0x00A0)  
+	bool                                               PerkMaxed;                                                  // 0x00B8   (0x0001)  
+	bool                                               BPClaimed;                                                  // 0x00B9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x00BA   (0x0006)  MISSED
+	FPriceTagViewData                                  PriceTag;                                                   // 0x00C0   (0x0020)  
+};
+
 /// Struct /Script/DBDUIViewInterfaces.StoreCharactersFiltersData
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FStoreCharactersFiltersData
@@ -2965,7 +3261,7 @@ struct FStoreCharactersFiltersData
 	bool                                               IsFavorite;                                                 // 0x0000   (0x0001)  
 	bool                                               IsOwned;                                                    // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0002   (0x0006)  MISSED
-	SDK_UNDEFINED(80,1369) /* TMap<EItemRarity, bool> */ __um(RarityFiltersMap);                                   // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,1383) /* TMap<EItemRarity, bool> */ __um(_rarityFiltersMap);                                  // 0x0008   (0x0050)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.TabWidgetData
@@ -2974,15 +3270,15 @@ struct FTabWidgetData
 { 
 	int32_t                                            Key;                                                        // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1370) /* FText */                 __um(Title);                                                // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,1384) /* FText */                 __um(Title);                                                // 0x0008   (0x0018)  
 	bool                                               HasNotification;                                            // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0021   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1371) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0028   (0x0030)  
+	SDK_UNDEFINED(48,1385) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0028   (0x0030)  
 	bool                                               ForcesIconSize;                                             // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0059   (0x0003)  MISSED
 	FVector2D                                          IconSize;                                                   // 0x005C   (0x0008)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x0064   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1372) /* FString */               __um(AnalyticsName);                                        // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1386) /* FString */               __um(AnalyticsName);                                        // 0x0068   (0x0010)  
 	bool                                               IsKillSwitchEnabled;                                        // 0x0078   (0x0001)  
 	unsigned char                                      UnknownData04_6[0x7];                                       // 0x0079   (0x0007)  MISSED
 };
@@ -3012,8 +3308,8 @@ struct FBaseLoadoutPartViewData
 { 
 	FName                                              ItemId;                                                     // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1373) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0010   (0x0030)  
-	SDK_UNDEFINED(16,1374) /* FString */               __um(DisplayName);                                          // 0x0040   (0x0010)  
+	SDK_UNDEFINED(48,1387) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0010   (0x0030)  
+	SDK_UNDEFINED(16,1388) /* FString */               __um(DisplayName);                                          // 0x0040   (0x0010)  
 	EItemRarity                                        Rarity;                                                     // 0x0050   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0051   (0x0007)  MISSED
 };
@@ -3031,11 +3327,11 @@ struct FAddonViewData : FBaseLoadoutPartViewData
 };
 
 /// Struct /Script/DBDUIViewInterfaces.AlertsViewData
-/// Size: 0x0040 (0x000000 - 0x000040)
+/// Size: 0x0020 (0x000000 - 0x000020)
 struct FAlertsViewData
 { 
 	TArray<FRewardWrapperViewData>                     AlertRewards;                                               // 0x0000   (0x0010)  
-	SDK_UNDEFINED(48,1375) /* TWeakObjectPtr<UTexture2D*> */ __um(EventBackground);                                // 0x0010   (0x0030)  
+	SDK_UNDEFINED(16,1389) /* FString */               __um(AlertHeader);                                          // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.ArchiveChallengeReminderViewData
@@ -3043,21 +3339,21 @@ struct FAlertsViewData
 struct FArchiveChallengeReminderViewData
 { 
 	FArchiveNodeViewData                               NodeViewData;                                               // 0x0000   (0x00B8)  
-	SDK_UNDEFINED(24,1376) /* FText */                 __um(TomeSourceSubtitle);                                   // 0x00B8   (0x0018)  
+	SDK_UNDEFINED(24,1390) /* FText */                 __um(TomeSourceSubtitle);                                   // 0x00B8   (0x0018)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.CompendiumButtonData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FCompendiumButtonData
 { 
-	SDK_UNDEFINED(16,1377) /* FString */               __um(tomeId);                                               // 0x0000   (0x0010)  
-	SDK_UNDEFINED(24,1378) /* FText */                 __um(TomeTitle);                                            // 0x0010   (0x0018)  
+	SDK_UNDEFINED(16,1391) /* FString */               __um(tomeId);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(24,1392) /* FText */                 __um(TomeTitle);                                            // 0x0010   (0x0018)  
 	bool                                               IsMastered;                                                 // 0x0028   (0x0001)  
 	bool                                               IsActive;                                                   // 0x0029   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x002A   (0x0002)  MISSED
 	int32_t                                            VolumeIndex;                                                // 0x002C   (0x0004)  
 	TArray<class UArchiveStoryLevelViewData*>          TomeLevels;                                                 // 0x0030   (0x0010)  
-	SDK_UNDEFINED(48,1379) /* TWeakObjectPtr<UTexture2D*> */ __um(StoryBookMarkTexture);                           // 0x0040   (0x0030)  
+	SDK_UNDEFINED(48,1393) /* TWeakObjectPtr<UTexture2D*> */ __um(StoryBookMarkTexture);                           // 0x0040   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.ArchiveMapPathViewData
@@ -3078,7 +3374,7 @@ struct FArchiveRewardNodeTooltipViewData
 { 
 	ERewardType                                        RewardType;                                                 // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1380) /* FString */               __um(NodeDebugInfo);                                        // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1394) /* FString */               __um(NodeDebugInfo);                                        // 0x0008   (0x0010)  
 	FCustomizationTooltipViewData                      CustomizationTooltipViewData;                               // 0x0018   (0x0118)  
 	FCurrencyProgressionTooltipViewData                CurrencyProgressionTooltipViewData;                         // 0x0130   (0x00F0)  
 };
@@ -3087,12 +3383,12 @@ struct FArchiveRewardNodeTooltipViewData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FArchivesVignetteEntryViewData
 { 
-	SDK_UNDEFINED(24,1381) /* FText */                 __um(Title);                                                // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,1382) /* FText */                 __um(Description);                                          // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,1395) /* FText */                 __um(Title);                                                // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1396) /* FText */                 __um(Description);                                          // 0x0018   (0x0018)  
 	bool                                               IsRead;                                                     // 0x0030   (0x0001)  
 	bool                                               HasAudio;                                                   // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0032   (0x0006)  MISSED
-	SDK_UNDEFINED(48,1383) /* TWeakObjectPtr<UTexture2D*> */ __um(RewardImage);                                    // 0x0038   (0x0030)  
+	SDK_UNDEFINED(48,1397) /* TWeakObjectPtr<UTexture2D*> */ __um(RewardImage);                                    // 0x0038   (0x0030)  
 	float                                              PreviewTextureOffset;                                       // 0x0068   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x006C   (0x0004)  MISSED
 };
@@ -3101,9 +3397,9 @@ struct FArchivesVignetteEntryViewData
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FArchivesVignetteViewData
 { 
-	SDK_UNDEFINED(16,1384) /* FString */               __um(VignetteId);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(24,1385) /* FText */                 __um(Title);                                                // 0x0010   (0x0018)  
-	SDK_UNDEFINED(24,1386) /* FText */                 __um(Subtitle);                                             // 0x0028   (0x0018)  
+	SDK_UNDEFINED(16,1398) /* FString */               __um(VignetteId);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(24,1399) /* FText */                 __um(Title);                                                // 0x0010   (0x0018)  
+	SDK_UNDEFINED(24,1400) /* FText */                 __um(Subtitle);                                             // 0x0028   (0x0018)  
 	int32_t                                            LastShownProgressValue;                                     // 0x0040   (0x0004)  
 	int32_t                                            CurrentProgress;                                            // 0x0044   (0x0004)  
 	int32_t                                            MaxProgress;                                                // 0x0048   (0x0004)  
@@ -3115,13 +3411,13 @@ struct FArchivesVignetteViewData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FArchivesPastTomeViewData
 { 
-	SDK_UNDEFINED(16,1387) /* FString */               __um(tomeId);                                               // 0x0000   (0x0010)  
-	SDK_UNDEFINED(24,1388) /* FText */                 __um(TomeTitle);                                            // 0x0010   (0x0018)  
+	SDK_UNDEFINED(16,1401) /* FString */               __um(tomeId);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(24,1402) /* FText */                 __um(TomeTitle);                                            // 0x0010   (0x0018)  
 	bool                                               HasActiveNode;                                              // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	int32_t                                            VolumeIndex;                                                // 0x002C   (0x0004)  
 	TArray<class UArchiveStoryLevelViewData*>          TomeLevels;                                                 // 0x0030   (0x0010)  
-	SDK_UNDEFINED(48,1389) /* TWeakObjectPtr<UTexture2D*> */ __um(StoryBookMarkTexture);                           // 0x0040   (0x0030)  
+	SDK_UNDEFINED(48,1403) /* TWeakObjectPtr<UTexture2D*> */ __um(StoryBookMarkTexture);                           // 0x0040   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.ArchivesRiftGenericViewData
@@ -3167,9 +3463,9 @@ struct FArchivesRiftUnlockSequenceData
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FEditorInterfaces
 { 
-	SDK_UNDEFINED(16,1390) /* TScriptInterface<Class> */ __um(QuestMapInterface);                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1391) /* TScriptInterface<Class> */ __um(LevelProgressionInterface);                          // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1392) /* TScriptInterface<Class> */ __um(EditorInterface);                                    // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1404) /* TScriptInterface<Class> */ __um(QuestMapInterface);                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1405) /* TScriptInterface<Class> */ __um(LevelProgressionInterface);                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1406) /* TScriptInterface<Class> */ __um(EditorInterface);                                    // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.AuricCellsBundleViewData
@@ -3178,14 +3474,14 @@ struct FAuricCellsBundleViewData
 { 
 	FName                                              ID;                                                         // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1393) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0010   (0x0030)  
-	SDK_UNDEFINED(24,1394) /* FText */                 __um(BundleName);                                           // 0x0040   (0x0018)  
+	SDK_UNDEFINED(48,1407) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0010   (0x0030)  
+	SDK_UNDEFINED(24,1408) /* FText */                 __um(BundleName);                                           // 0x0040   (0x0018)  
 	int32_t                                            CurrencyAmount;                                             // 0x0058   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x005C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1395) /* FString */               __um(DisplayedPrice);                                       // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,1409) /* FString */               __um(DisplayedPrice);                                       // 0x0060   (0x0010)  
 	float                                              BonusPercentage;                                            // 0x0070   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1396) /* FString */               __um(LimitedTimeText);                                      // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,1410) /* FString */               __um(LimitedTimeText);                                      // 0x0078   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.AuricCellsFirstPurchaseViewData
@@ -3194,9 +3490,9 @@ struct FAuricCellsFirstPurchaseViewData
 { 
 	bool                                               IsFirstPurchase;                                            // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1397) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0008   (0x0030)  
-	SDK_UNDEFINED(16,1398) /* FString */               __um(Title);                                                // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1399) /* FString */               __um(Description);                                          // 0x0048   (0x0010)  
+	SDK_UNDEFINED(48,1411) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0008   (0x0030)  
+	SDK_UNDEFINED(16,1412) /* FString */               __um(Title);                                                // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1413) /* FString */               __um(Description);                                          // 0x0048   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.AuricCellsViewData
@@ -3205,14 +3501,14 @@ struct FAuricCellsViewData
 { 
 	TArray<FAuricCellsBundleViewData>                  Bundles;                                                    // 0x0000   (0x0010)  
 	FAuricCellsFirstPurchaseViewData                   FirstPurchase;                                              // 0x0010   (0x0058)  
-	SDK_UNDEFINED(16,1400) /* FString */               __um(TaxIncludeMessage);                                    // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1414) /* FString */               __um(TaxIncludeMessage);                                    // 0x0068   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.ChallengeTrackerViewData
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FChallengeTrackerViewData
 { 
-	SDK_UNDEFINED(24,1401) /* FText */                 __um(ChallengeTitle);                                       // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,1415) /* FText */                 __um(ChallengeTitle);                                       // 0x0000   (0x0018)  
 	FArchiveNodeObjectiveViewData                      ProgressionData;                                            // 0x0018   (0x0028)  
 };
 
@@ -3222,7 +3518,7 @@ struct FCurrencyLabelViewData
 { 
 	ECurrencyType                                      Type;                                                       // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1402) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0008   (0x0030)  
+	SDK_UNDEFINED(48,1416) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0008   (0x0030)  
 	int32_t                                            Amount;                                                     // 0x0038   (0x0004)  
 	bool                                               PlayBonusAnimation;                                         // 0x003C   (0x0001)  
 	bool                                               isClickable;                                                // 0x003D   (0x0001)  
@@ -3236,7 +3532,7 @@ struct FCustomizationItemOriginViewData
 { 
 	EOriginWidgetState                                 State;                                                      // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1403) /* TArray<FText> */         __um(Args);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1417) /* TArray<FText> */         __um(Args);                                                 // 0x0008   (0x0010)  
 	FPriceTagViewData                                  CurrencyData;                                               // 0x0018   (0x0020)  
 };
 
@@ -3254,10 +3550,10 @@ struct FCustomizationItemPreviewAreaViewData
 /// Size: 0x0078 (0x000000 - 0x000078)
 struct FDailyRitualViewData
 { 
-	SDK_UNDEFINED(16,1404) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1405) /* FString */               __um(Title);                                                // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1406) /* FString */               __um(Description);                                          // 0x0020   (0x0010)  
-	SDK_UNDEFINED(48,1407) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0030   (0x0030)  
+	SDK_UNDEFINED(16,1418) /* FString */               __um(Key);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1419) /* FString */               __um(Title);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1420) /* FString */               __um(Description);                                          // 0x0020   (0x0010)  
+	SDK_UNDEFINED(48,1421) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0030   (0x0030)  
 	EDailyRitualState                                  RitualState;                                                // 0x0060   (0x0001)  
 	bool                                               IsNew;                                                      // 0x0061   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0062   (0x0002)  MISSED
@@ -3286,7 +3582,7 @@ struct FDetailsTabViewData
 	EDetailsTabLayout                                  Layout;                                                     // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	TArray<FSpecialEventDetailsTabContentData>         ContentData;                                                // 0x0008   (0x0010)  
-	SDK_UNDEFINED(48,1408) /* TWeakObjectPtr<UTexture2D*> */ __um(Image);                                          // 0x0018   (0x0030)  
+	SDK_UNDEFINED(48,1422) /* TWeakObjectPtr<UTexture2D*> */ __um(Image);                                          // 0x0018   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.EventEntryPopupSkinUIData
@@ -3294,19 +3590,19 @@ struct FDetailsTabViewData
 struct FEventEntryPopupSkinUIData : FTableRowBase
 { 
 	FLinearColor                                       ScrollBarColor;                                             // 0x0008   (0x0010)  
-	SDK_UNDEFINED(48,1409) /* TWeakObjectPtr<UTexture2D*> */ __um(EventImage);                                     // 0x0018   (0x0030)  
-	SDK_UNDEFINED(48,1410) /* TWeakObjectPtr<UTexture2D*> */ __um(PreviewAreaBackground);                          // 0x0048   (0x0030)  
+	SDK_UNDEFINED(48,1423) /* TWeakObjectPtr<UTexture2D*> */ __um(EventImage);                                     // 0x0018   (0x0030)  
+	SDK_UNDEFINED(48,1424) /* TWeakObjectPtr<UTexture2D*> */ __um(PreviewAreaBackground);                          // 0x0048   (0x0030)  
 	FLinearColor                                       BaseColor;                                                  // 0x0078   (0x0010)  
-	SDK_UNDEFINED(48,1411) /* TWeakObjectPtr<UMaterialInstance*> */ __um(BackgroundTexture);                       // 0x0088   (0x0030)  
-	SDK_UNDEFINED(48,1412) /* TWeakObjectPtr<UTexture2D*> */ __um(BackgroundCenterImage);                          // 0x00B8   (0x0030)  
-	SDK_UNDEFINED(48,1413) /* TWeakObjectPtr<UMaterialInstance*> */ __um(TabMaterialInstance);                     // 0x00E8   (0x0030)  
+	SDK_UNDEFINED(48,1425) /* TWeakObjectPtr<UMaterialInstance*> */ __um(BackgroundTexture);                       // 0x0088   (0x0030)  
+	SDK_UNDEFINED(48,1426) /* TWeakObjectPtr<UTexture2D*> */ __um(BackgroundCenterImage);                          // 0x00B8   (0x0030)  
+	SDK_UNDEFINED(48,1427) /* TWeakObjectPtr<UMaterialInstance*> */ __um(TabMaterialInstance);                     // 0x00E8   (0x0030)  
 	bool                                               IsUsingBackgroundTexture;                                   // 0x0118   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0119   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1414) /* TWeakObjectPtr<UMaterialInstance*> */ __um(TitleBannerMaterial);                     // 0x0120   (0x0030)  
-	SDK_UNDEFINED(48,1415) /* TWeakObjectPtr<UTexture2D*> */ __um(TitleIcon);                                      // 0x0150   (0x0030)  
-	SDK_UNDEFINED(48,1416) /* TWeakObjectPtr<UMaterialInstance*> */ __um(HeaderBackgroundMaterial);                // 0x0180   (0x0030)  
-	SDK_UNDEFINED(48,1417) /* TWeakObjectPtr<UMaterialInstance*> */ __um(MilestoneTrackerBackground);              // 0x01B0   (0x0030)  
-	SDK_UNDEFINED(48,1418) /* TWeakObjectPtr<UMaterialInstance*> */ __um(MilestoneTrackerHighlightBar);            // 0x01E0   (0x0030)  
+	SDK_UNDEFINED(48,1428) /* TWeakObjectPtr<UMaterialInstance*> */ __um(TitleBannerMaterial);                     // 0x0120   (0x0030)  
+	SDK_UNDEFINED(48,1429) /* TWeakObjectPtr<UTexture2D*> */ __um(TitleIcon);                                      // 0x0150   (0x0030)  
+	SDK_UNDEFINED(48,1430) /* TWeakObjectPtr<UMaterialInstance*> */ __um(HeaderBackgroundMaterial);                // 0x0180   (0x0030)  
+	SDK_UNDEFINED(48,1431) /* TWeakObjectPtr<UMaterialInstance*> */ __um(MilestoneTrackerBackground);              // 0x01B0   (0x0030)  
+	SDK_UNDEFINED(48,1432) /* TWeakObjectPtr<UMaterialInstance*> */ __um(MilestoneTrackerHighlightBar);            // 0x01E0   (0x0030)  
 	FLinearColor                                       PreviewBGTintColor;                                         // 0x0210   (0x0010)  
 };
 
@@ -3346,8 +3642,8 @@ struct FItemViewData : FBaseLoadoutPartViewData
 /// Size: 0x01B0 (0x000000 - 0x0001B0)
 struct FStatusEffectAlertViewData
 { 
-	SDK_UNDEFINED(16,1419) /* FString */               __um(StatusEffectName);                                     // 0x0000   (0x0010)  
-	SDK_UNDEFINED(48,1420) /* TWeakObjectPtr<UTexture2D*> */ __um(StatusEffectIcon);                               // 0x0010   (0x0030)  
+	SDK_UNDEFINED(16,1433) /* FString */               __um(StatusEffectName);                                     // 0x0000   (0x0010)  
+	SDK_UNDEFINED(48,1434) /* TWeakObjectPtr<UTexture2D*> */ __um(StatusEffectIcon);                               // 0x0010   (0x0030)  
 	EStatusEffectType                                  StatusEffectType;                                           // 0x0040   (0x0001)  
 	EHudStatusEffectAlertViewType                      SourceViewType;                                             // 0x0041   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0042   (0x0006)  MISSED
@@ -3362,9 +3658,9 @@ struct FScoreAlertViewData
 { 
 	EDBDScoreCategory                                  scoreType;                                                  // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1421) /* FString */               __um(Title);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1435) /* FString */               __um(Title);                                                // 0x0008   (0x0010)  
 	int32_t                                            ScoreValue;                                                 // 0x0018   (0x0004)  
-	float                                              Progress;                                                   // 0x001C   (0x0004)  
+	float                                              progress;                                                   // 0x001C   (0x0004)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.HudEventProgression2023ViewData
@@ -3408,7 +3704,7 @@ struct FStatusEffectViewData
 { 
 	FName                                              ID;                                                         // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1422) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0010   (0x0030)  
+	SDK_UNDEFINED(48,1436) /* TWeakObjectPtr<UTexture2D*> */ __um(iconTexture);                                    // 0x0010   (0x0030)  
 	EStatusEffectType                                  StatusEffectType;                                           // 0x0040   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0041   (0x0003)  MISSED
 	int32_t                                            Level;                                                      // 0x0044   (0x0004)  
@@ -3421,17 +3717,17 @@ struct FStatusEffectViewData
 /// Size: 0x0070 (0x000000 - 0x000070)
 struct FInteractionProgressViewData
 { 
-	SDK_UNDEFINED(16,1423) /* FString */               __um(Message);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1424) /* FString */               __um(SecondaryMessage);                                     // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1437) /* FString */               __um(Message);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1438) /* FString */               __um(SecondaryMessage);                                     // 0x0010   (0x0010)  
 	EBarColor                                          BarColor;                                                   // 0x0020   (0x0001)  
 	EBarColor                                          ChargeBarColor;                                             // 0x0021   (0x0001)  
 	bool                                               ShowIcon;                                                   // 0x0022   (0x0001)  
 	bool                                               ShowIconCharge;                                             // 0x0023   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1425) /* TWeakObjectPtr<UTexture2D*> */ __um(ItemIcon);                                       // 0x0028   (0x0030)  
+	SDK_UNDEFINED(48,1439) /* TWeakObjectPtr<UTexture2D*> */ __um(ItemIcon);                                       // 0x0028   (0x0030)  
 	TArray<FStatusEffectViewData>                      Proficiencies;                                              // 0x0058   (0x0010)  
 	float                                              PermanentProgress;                                          // 0x0068   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x006C   (0x0004)  MISSED
+	float                                              PercentageStopDischarge;                                    // 0x006C   (0x0004)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.InteractionPromptViewData
@@ -3440,7 +3736,7 @@ struct FInteractionPromptViewData
 { 
 	FName                                              ID;                                                         // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1426) /* FString */               __um(Message);                                              // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1440) /* FString */               __um(Message);                                              // 0x0010   (0x0010)  
 	EInteractionPromptType                             Type;                                                       // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0021   (0x0007)  MISSED
 	FKey                                               InputKey1;                                                  // 0x0028   (0x0020)  
@@ -3471,14 +3767,41 @@ struct FKillerStatusDataMapping : FDBDTableRowBase
 	class UClass*                                      WidgetClass;                                                // 0x0020   (0x0008)  
 };
 
+/// Struct /Script/DBDUIViewInterfaces.LockedFeatureTooltipViewData
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FLockedFeatureTooltipViewData
+{ 
+	ELockedElementType                                 LockedElementType;                                          // 0x0000   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
+	FDBDFeatureLockProgress                            FeatureLockProgress;                                        // 0x0004   (0x000C)  
+};
+
+/// Struct /Script/DBDUIViewInterfaces.TimerFlagViewData
+/// Size: 0x0018 (0x000000 - 0x000018)
+struct FTimerFlagViewData
+{ 
+	EFlagType                                          FlagType;                                                   // 0x0000   (0x0001)  
+	EFlagSize                                          FlagSize;                                                   // 0x0001   (0x0001)  
+	EFlagItemType                                      ItemType;                                                   // 0x0002   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x5];                                       // 0x0003   (0x0005)  MISSED
+	SDK_UNDEFINED(16,1441) /* FString */               __um(TimerText);                                            // 0x0008   (0x0010)  
+};
+
 /// Struct /Script/DBDUIViewInterfaces.MainMenuButtonViewData
-/// Size: 0x0028 (0x000000 - 0x000028)
+/// Size: 0x0038 (0x000000 - 0x000038)
 struct FMainMenuButtonViewData
 { 
-	SDK_UNDEFINED(16,1427) /* FString */               __um(Bonus);                                                // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1428) /* FString */               __um(Timer);                                                // 0x0010   (0x0010)  
-	bool                                               IsNew;                                                      // 0x0020   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
+	EMainMenuButtonType                                ButtonType;                                                 // 0x0000   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
+	SDK_UNDEFINED(16,1442) /* FString */               __um(Bonus);                                                // 0x0008   (0x0010)  
+	FTimerFlagViewData                                 Timer;                                                      // 0x0018   (0x0018)  
+	bool                                               IsNew;                                                      // 0x0030   (0x0001)  
+	bool                                               IsLoadingSaveActivityInProgress;                            // 0x0031   (0x0001)  
+	bool                                               IsLoadingPlayerFacade;                                      // 0x0032   (0x0001)  
+	bool                                               IsLoadingChunking;                                          // 0x0033   (0x0001)  
+	bool                                               IsLockedFeature;                                            // 0x0034   (0x0001)  
+	bool                                               IsDisabled;                                                 // 0x0035   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x2];                                       // 0x0036   (0x0002)  MISSED
 };
 
 /// Struct /Script/DBDUIViewInterfaces.MatchResultViewData
@@ -3524,10 +3847,10 @@ struct FMilestoneTrackerUpdateItemViewData
 /// Size: 0x0080 (0x000000 - 0x000080)
 struct FNotifTutorialPopupViewData
 { 
-	SDK_UNDEFINED(16,1429) /* FString */               __um(Title);                                                // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1430) /* FString */               __um(Description);                                          // 0x0010   (0x0010)  
-	SDK_UNDEFINED(48,1431) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0020   (0x0030)  
-	SDK_UNDEFINED(48,1432) /* TWeakObjectPtr<UTexture2D*> */ __um(Image);                                          // 0x0050   (0x0030)  
+	SDK_UNDEFINED(16,1443) /* FString */               __um(Title);                                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1444) /* FString */               __um(Description);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(48,1445) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0020   (0x0030)  
+	SDK_UNDEFINED(48,1446) /* TWeakObjectPtr<UTexture2D*> */ __um(Image);                                          // 0x0050   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.OfferingViewData
@@ -3543,7 +3866,7 @@ struct FOfferingViewData : FBaseLoadoutPartViewData
 /// Size: 0x0078 (0x000000 - 0x000078)
 struct FOnboardingTutorialViewData
 { 
-	SDK_UNDEFINED(16,1433) /* FString */               __um(tutorialId);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1447) /* FString */               __um(tutorialId);                                           // 0x0000   (0x0010)  
 	bool                                               COMPLETED;                                                  // 0x0010   (0x0001)  
 	bool                                               MainRewardClaimed;                                          // 0x0011   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0012   (0x0006)  MISSED
@@ -3552,8 +3875,8 @@ struct FOnboardingTutorialViewData
 	EOnboardingTutorialType                            TutorialType;                                               // 0x0038   (0x0001)  
 	EOnboardingTutorialButtonStyle                     ButtonStyle;                                                // 0x0039   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x003A   (0x0006)  MISSED
-	SDK_UNDEFINED(24,1434) /* FText */                 __um(DisplayName);                                          // 0x0040   (0x0018)  
-	SDK_UNDEFINED(24,1435) /* FText */                 __um(Description);                                          // 0x0058   (0x0018)  
+	SDK_UNDEFINED(24,1448) /* FText */                 __um(DisplayName);                                          // 0x0040   (0x0018)  
+	SDK_UNDEFINED(24,1449) /* FText */                 __um(Description);                                          // 0x0058   (0x0018)  
 	class UTexture2D*                                  Icon;                                                       // 0x0070   (0x0008)  
 };
 
@@ -3561,26 +3884,26 @@ struct FOnboardingTutorialViewData
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FOnboardingStepViewData
 { 
-	SDK_UNDEFINED(16,1436) /* FString */               __um(stepId);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1450) /* FString */               __um(stepId);                                               // 0x0000   (0x0010)  
 	EOnboardingStepStatus                              Status;                                                     // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
 	TArray<FOnboardingTutorialViewData>                Tutorials;                                                  // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.PlayerCardViewData
-/// Size: 0x0068 (0x000000 - 0x000068)
+/// Size: 0x0090 (0x000000 - 0x000090)
 struct FPlayerCardViewData
 { 
-	SDK_UNDEFINED(48,1437) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0000   (0x0030)  
-	SDK_UNDEFINED(48,1438) /* TWeakObjectPtr<UTexture2D*> */ __um(SecondaryIcon);                                  // 0x0030   (0x0030)  
-	class UClass*                                      AnimationRef;                                               // 0x0060   (0x0008)  
+	SDK_UNDEFINED(48,1451) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1452) /* TWeakObjectPtr<UTexture2D*> */ __um(SecondaryIcon);                                  // 0x0030   (0x0030)  
+	SDK_UNDEFINED(48,1453) /* TWeakObjectPtr<UClass*> */ __um(AnimationWidgetClass);                               // 0x0060   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.PlayerStatusViewData
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FPlayerStatusViewData
 { 
-	SDK_UNDEFINED(16,1439) /* FString */               __um(playerName);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1454) /* FString */               __um(playerName);                                           // 0x0000   (0x0010)  
 	class UTexture2D*                                  PlayerPortraitIcon;                                         // 0x0010   (0x0008)  
 	class UTexture2D*                                  PlayerPortraitIconOverride;                                 // 0x0018   (0x0008)  
 	EPlayerStatus                                      PlayerStatusState;                                          // 0x0020   (0x0001)  
@@ -3590,9 +3913,10 @@ struct FPlayerStatusViewData
 	bool                                               IsBroken;                                                   // 0x0029   (0x0001)  
 	bool                                               IsBot;                                                      // 0x002A   (0x0001)  
 	bool                                               IsLocalPlayerAKiller;                                       // 0x002B   (0x0001)  
-	EObsessionUIState                                  ObsessionState;                                             // 0x002C   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x3];                                       // 0x002D   (0x0003)  MISSED
-	int32_t                                            DrainStage;                                                 // 0x0030   (0x0004)  
+	bool                                               IsActivityHidden;                                           // 0x002C   (0x0001)  
+	EObsessionUIState                                  ObsessionState;                                             // 0x002D   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x2];                                       // 0x002E   (0x0002)  MISSED
+	int32_t                                            drainStage;                                                 // 0x0030   (0x0004)  
 	EConnectionQuality                                 ConnectionQualityStatus;                                    // 0x0034   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0035   (0x0003)  MISSED
 	class UKillerStatusData*                           KillerStatusData;                                           // 0x0038   (0x0008)  
@@ -3632,7 +3956,7 @@ struct FRankTooltipViewData
 	int32_t                                            Rank;                                                       // 0x0000   (0x0004)  
 	bool                                               IsKiller;                                                   // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
-	SDK_UNDEFINED(16,1440) /* FString */               __um(RankName);                                             // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1455) /* FString */               __um(RankName);                                             // 0x0008   (0x0010)  
 	int32_t                                            RankPipsCount;                                              // 0x0018   (0x0004)  
 	int32_t                                            ActivePipsCount;                                            // 0x001C   (0x0004)  
 };
@@ -3645,6 +3969,15 @@ struct FRankViewData
 	bool                                               IsKiller;                                                   // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
 	FRankTooltipViewData                               tooltipViewData;                                            // 0x0008   (0x0020)  
+};
+
+/// Struct /Script/DBDUIViewInterfaces.ShrineOfSecretsViewData
+/// Size: 0x0020 (0x000000 - 0x000020)
+struct FShrineOfSecretsViewData
+{ 
+	FDateTime                                          OfferDate;                                                  // 0x0000   (0x0008)  
+	FDateTime                                          EndDate;                                                    // 0x0008   (0x0008)  
+	TArray<FShrineOfSecretsItemViewData>               ItemsViewData;                                              // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.SkillCheckViewData
@@ -3669,8 +4002,8 @@ struct FSkillCheckViewData
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FStartSequenceViewData
 { 
-	SDK_UNDEFINED(16,1441) /* FString */               __um(ThemeName);                                            // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1442) /* FString */               __um(MapName);                                              // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1456) /* FString */               __um(ThemeName);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1457) /* FString */               __um(MapName);                                              // 0x0010   (0x0010)  
 	EThemeColorId                                      ThemeColorId;                                               // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0021   (0x0007)  MISSED
 };
@@ -3681,8 +4014,22 @@ struct FStoreCategoryViewData
 { 
 	ECustomizationCategory                             category;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1443) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0008   (0x0030)  
-	SDK_UNDEFINED(24,1444) /* FText */                 __um(DisplayName);                                          // 0x0038   (0x0018)  
+	SDK_UNDEFINED(48,1458) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                           // 0x0008   (0x0030)  
+	SDK_UNDEFINED(24,1459) /* FText */                 __um(DisplayName);                                          // 0x0038   (0x0018)  
+};
+
+/// Struct /Script/DBDUIViewInterfaces.StoreCharactersActionButtonsViewData
+/// Size: 0x0030 (0x000000 - 0x000030)
+struct FStoreCharactersActionButtonsViewData
+{ 
+	EStoreCharactersActionButtonState                  UnlockState;                                                // 0x0000   (0x0001)  
+	EStoreCharactersActionButtonState                  EquipState;                                                 // 0x0001   (0x0001)  
+	EStoreCharactersActionButtonState                  EquipAllState;                                              // 0x0002   (0x0001)  
+	EStoreCharactersActionButtonState                  SelectAllState;                                             // 0x0003   (0x0001)  
+	EStoreCharactersActionButtonState                  SeePackState;                                               // 0x0004   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
+	TArray<FPriceTagViewData>                          PriceTagData;                                               // 0x0008   (0x0010)  
+	SDK_UNDEFINED(24,1460) /* FText */                 __um(PackName);                                             // 0x0018   (0x0018)  
 };
 
 /// Struct /Script/DBDUIViewInterfaces.StoreCharactersCustomizationsViewData
@@ -3691,7 +4038,7 @@ struct FStoreCharactersCustomizationsViewData
 { 
 	TArray<class UStoreCustomizationItemViewData*>     Customizations;                                             // 0x0000   (0x0010)  
 	TArray<FName>                                      SelectedCustomizationIds;                                   // 0x0010   (0x0010)  
-	int32_t                                            MaxSelectedCustomizations;                                  // 0x0020   (0x0004)  
+	int32_t                                            SelectedSlotIndex;                                          // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0024   (0x0004)  MISSED
 	TArray<FStoreCategoryViewData>                     Categories;                                                 // 0x0028   (0x0010)  
 	ECustomizationCategory                             SelectedCategory;                                           // 0x0038   (0x0001)  
@@ -3708,14 +4055,29 @@ struct FStoreCharactersSelectionViewData
 };
 
 /// Struct /Script/DBDUIViewInterfaces.StoreFeaturedCharacterViewData
-/// Size: 0x0028 (0x000000 - 0x000028)
+/// Size: 0x0080 (0x000000 - 0x000080)
 struct FStoreFeaturedCharacterViewData
 { 
-	int32_t                                            characterIndex;                                             // 0x0000   (0x0004)  
-	EPlayerRole                                        playerRole;                                                 // 0x0004   (0x0001)  
+	int32_t                                            CharacterIndex;                                             // 0x0000   (0x0004)  
+	EPlayerRole                                        PlayerRole;                                                 // 0x0004   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
-	class UTexture2D*                                  CharacterPortrait;                                          // 0x0008   (0x0008)  
-	SDK_UNDEFINED(24,1445) /* FText */                 __um(characterName);                                        // 0x0010   (0x0018)  
+	FSoftRemoteContentCacheObjectPtr                   CharacterPortrait;                                          // 0x0008   (0x0060)  
+	SDK_UNDEFINED(24,1461) /* FText */                 __um(characterName);                                        // 0x0068   (0x0018)  
+};
+
+/// Struct /Script/DBDUIViewInterfaces.StoreHeritagePackViewData
+/// Size: 0x0088 (0x000000 - 0x000088)
+struct FStoreHeritagePackViewData
+{ 
+	SDK_UNDEFINED(16,1462) /* FString */               __um(HeritageId);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(24,1463) /* FText */                 __um(DisplayName);                                          // 0x0010   (0x0018)  
+	SDK_UNDEFINED(24,1464) /* FText */                 __um(Description);                                          // 0x0028   (0x0018)  
+	SDK_UNDEFINED(48,1465) /* TWeakObjectPtr<UTexture2D*> */ __um(PackImage);                                      // 0x0040   (0x0030)  
+	TArray<class UStoreChapterPackViewData*>           ChapterPacks;                                               // 0x0070   (0x0010)  
+	int32_t                                            SortOrder;                                                  // 0x0080   (0x0004)  
+	bool                                               IsNew;                                                      // 0x0084   (0x0001)  
+	bool                                               IsOwned;                                                    // 0x0085   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x2];                                       // 0x0086   (0x0002)  MISSED
 };
 
 /// Struct /Script/DBDUIViewInterfaces.TemplateViewData
@@ -3725,11 +4087,33 @@ struct FTemplateViewData
 	unsigned char                                      UnknownData00_1[0x1];                                       // 0x0000   (0x0001)  MISSED
 };
 
+/// Struct /Script/DBDUIViewInterfaces.ToastNotificationViewData
+/// Size: 0x00B8 (0x000000 - 0x0000B8)
+struct FToastNotificationViewData
+{ 
+	float                                              DisplayDuration;                                            // 0x0000   (0x0004)  
+	float                                              DelayBeforeInteraction;                                     // 0x0004   (0x0004)  
+	SDK_UNDEFINED(80,1466) /* TMap<int32_t, FToastInput> */ __um(Inputs);                                          // 0x0008   (0x0050)  
+	SDK_UNDEFINED(24,1467) /* FText */                 __um(Text);                                                 // 0x0058   (0x0018)  
+	SDK_UNDEFINED(16,1468) /* FString */               __um(Title);                                                // 0x0070   (0x0010)  
+	SDK_UNDEFINED(48,1469) /* TWeakObjectPtr<UTexture2D*> */ __um(ToastIcon);                                      // 0x0080   (0x0030)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00B0   (0x0008)  MISSED
+};
+
+/// Struct /Script/DBDUIViewInterfaces.ToastInput
+/// Size: 0x0030 (0x000000 - 0x000030)
+struct FToastInput
+{ 
+	SDK_UNDEFINED(24,1470) /* FText */                 __um(InputName);                                            // 0x0000   (0x0018)  
+	bool                                               IsRegression;                                               // 0x0018   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x17];                                      // 0x0019   (0x0017)  MISSED
+};
+
 /// Struct /Script/DBDUIViewInterfaces.TutorialObjectivesViewData
 /// Size: 0x0170 (0x000000 - 0x000170)
 struct FTutorialObjectivesViewData
 { 
-	SDK_UNDEFINED(16,1446) /* FString */               __um(Description);                                          // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1471) /* FString */               __um(Description);                                          // 0x0000   (0x0010)  
 	FInteractionPromptViewData                         PrimaryInteractionPromptViewData;                           // 0x0010   (0x00B0)  
 	FInteractionPromptViewData                         SecondaryInteractionPromptViewData;                         // 0x00C0   (0x00B0)  
 };
@@ -3738,6 +4122,6 @@ struct FTutorialObjectivesViewData
 /// Size: 0x0010 (0x000008 - 0x000018)
 struct FCustomIconPathExclusionUIDataRow : FTableRowBase
 { 
-	SDK_UNDEFINED(16,1447) /* FString */               __um(Path);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1472) /* FString */               __um(Path);                                                 // 0x0008   (0x0010)  
 };
 

@@ -52,8 +52,8 @@ struct FNiagaraDataInterfaceGeneratedFunction
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FNiagaraDataInterfaceGPUParamInfo
 { 
-	SDK_UNDEFINED(16,1485) /* FString */               __um(DataInterfaceHLSLSymbol);                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1486) /* FString */               __um(DIClassName);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1510) /* FString */               __um(DataInterfaceHLSLSymbol);                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1511) /* FString */               __um(DIClassName);                                          // 0x0010   (0x0010)  
 	TArray<FNiagaraDataInterfaceGeneratedFunction>     GeneratedFunctions;                                         // 0x0020   (0x0010)  
 };
 
@@ -63,8 +63,8 @@ struct FNiagaraCompileEvent
 { 
 	FNiagaraCompileEventSeverity                       Severity;                                                   // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1487) /* FString */               __um(Message);                                              // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1488) /* FString */               __um(ShortDescription);                                     // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1512) /* FString */               __um(Message);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1513) /* FString */               __um(ShortDescription);                                     // 0x0018   (0x0010)  
 	bool                                               bDismissable;                                               // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	FGuid                                              NodeGuid;                                                   // 0x002C   (0x0010)  

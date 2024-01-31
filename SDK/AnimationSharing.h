@@ -25,7 +25,7 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationSharing.AnimSharingStateInstance.GetInstancedActors
-	// void GetInstancedActors(TArray<AActor*>& Actors);                                                                     // [0x4c76a70] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// void GetInstancedActors(TArray<AActor*>& Actors);                                                                     // [0x4c469c0] Final|Native|Protected|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AnimationSharing.AnimSharingTransitionInstance
@@ -33,8 +33,8 @@ public:
 class UAnimSharingTransitionInstance : public UAnimInstance
 { 
 public:
-	SDK_UNDEFINED(8,3442) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(FromComponent);                       // 0x02C0   (0x0008)  
-	SDK_UNDEFINED(8,3443) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(ToComponent);                         // 0x02C8   (0x0008)  
+	SDK_UNDEFINED(8,3558) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(FromComponent);                       // 0x02C0   (0x0008)  
+	SDK_UNDEFINED(8,3559) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(ToComponent);                         // 0x02C8   (0x0008)  
 	float                                              BlendTime;                                                  // 0x02D0   (0x0004)  
 	bool                                               bBlendBool;                                                 // 0x02D4   (0x0001)  
 	unsigned char                                      UnknownData00_6[0xB];                                       // 0x02D5   (0x000B)  MISSED
@@ -45,8 +45,8 @@ public:
 class UAnimSharingAdditiveInstance : public UAnimInstance
 { 
 public:
-	SDK_UNDEFINED(8,3444) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(BaseComponent);                       // 0x02C0   (0x0008)  
-	SDK_UNDEFINED(8,3445) /* TWeakObjectPtr<UAnimSequence*> */ __um(AdditiveAnimation);                            // 0x02C8   (0x0008)  
+	SDK_UNDEFINED(8,3560) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(BaseComponent);                       // 0x02C0   (0x0008)  
+	SDK_UNDEFINED(8,3561) /* TWeakObjectPtr<UAnimSequence*> */ __um(AdditiveAnimation);                            // 0x02C8   (0x0008)  
 	float                                              alpha;                                                      // 0x02D0   (0x0004)  
 	bool                                               bStateBool;                                                 // 0x02D4   (0x0001)  
 	unsigned char                                      UnknownData00_6[0xB];                                       // 0x02D5   (0x000B)  MISSED
@@ -80,13 +80,13 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationSharing.AnimationSharingManager.RegisterActorWithSkeletonBP
-	// void RegisterActorWithSkeletonBP(class AActor* InActor, class USkeleton* SharingSkeleton);                            // [0x4c76ce0] Final|Native|Public|BlueprintCallable 
+	// void RegisterActorWithSkeletonBP(class AActor* InActor, class USkeleton* SharingSkeleton);                            // [0x4c46c30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AnimationSharing.AnimationSharingManager.GetAnimationSharingManager
-	// class UAnimationSharingManager* GetAnimationSharingManager(class UObject* WorldContextObject);                        // [0x4c769b0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAnimationSharingManager* GetAnimationSharingManager(class UObject* WorldContextObject);                        // [0x4c46900] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnimationSharing.AnimationSharingManager.CreateAnimationSharingManager
-	// bool CreateAnimationSharingManager(class UObject* WorldContextObject, class UAnimationSharingSetup* Setup);           // [0x4c768e0] Final|Native|Static|Public|BlueprintCallable 
+	// bool CreateAnimationSharingManager(class UObject* WorldContextObject, class UAnimationSharingSetup* Setup);           // [0x4c46830] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnimationSharing.AnimationSharingManager.AnimationSharingEnabled
-	// bool AnimationSharingEnabled();                                                                                       // [0x4c768b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool AnimationSharingEnabled();                                                                                       // [0x4c46800] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AnimationSharing.AnimationSetup
@@ -158,14 +158,14 @@ public:
 class UAnimationSharingStateProcessor : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,3446) /* TWeakObjectPtr<UEnum*> */ __um(AnimationStateEnum);                                  // 0x0030   (0x0030)  
+	SDK_UNDEFINED(48,3562) /* TWeakObjectPtr<UEnum*> */ __um(AnimationStateEnum);                                  // 0x0030   (0x0030)  
 
 
 	/// Functions
 	// Function /Script/AnimationSharing.AnimationSharingStateProcessor.ProcessActorState
-	// void ProcessActorState(int32_t& OutState, class AActor* InActor, char CurrentState, char OnDemandState, bool& bShouldProcess); // [0x4c76b20] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void ProcessActorState(int32_t& OutState, class AActor* InActor, char CurrentState, char OnDemandState, bool& bShouldProcess); // [0x4c46a70] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/AnimationSharing.AnimationSharingStateProcessor.GetAnimationStateEnum
-	// class UEnum* GetAnimationStateEnum();                                                                                 // [0x4c76a40] Native|Event|Public|BlueprintEvent 
+	// class UEnum* GetAnimationStateEnum();                                                                                 // [0x4c46990] Native|Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/AnimationSharing.TickAnimationSharingFunction

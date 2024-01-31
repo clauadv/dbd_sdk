@@ -10,6 +10,7 @@
 /// dependency: AnimationUtilities
 /// dependency: Competence
 /// dependency: CoreUObject
+/// dependency: DBDAnimation
 /// dependency: DBDAttack
 /// dependency: DBDBots
 /// dependency: DBDCompetence
@@ -63,7 +64,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.AbsorbBloodOrbsInteraction.SetPlayerOwner
-	// void SetPlayerOwner(class ADBDPlayer* Player);                                                                        // [0x5db8130] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerOwner(class ADBDPlayer* Player);                                                                        // [0x5dc5ba0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheOni.AISkill_FindOrb
@@ -105,7 +106,7 @@ public:
 	class UDBDOutlineComponent*                        _outlineComponent;                                          // 0x0240   (0x0008)  
 	float                                              _despawnDelay;                                              // 0x0248   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x024C   (0x0004)  MISSED
-	SDK_UNDEFINED(8,4140) /* TWeakObjectPtr<ADBDPlayer*> */ __um(_droppingPlayer);                                 // 0x0250   (0x0008)  
+	SDK_UNDEFINED(8,4233) /* TWeakObjectPtr<ADBDPlayer*> */ __um(_droppingPlayer);                                 // 0x0250   (0x0008)  
 	EBloodOrbState                                     _state;                                                     // 0x0258   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0259   (0x0007)  MISSED
 	class UBloodOrbFadeComponent*                      _fadeComponent;                                             // 0x0260   (0x0008)  
@@ -114,27 +115,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrb.UpdateAttracted_Cosmetic
-	// void UpdateAttracted_Cosmetic(FVector Destination, class ADBDPlayer* absorber, float DeltaTime);                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasDefaults|BlueprintEvent 
+	// void UpdateAttracted_Cosmetic(FVector Destination, class ADBDPlayer* absorber, float DeltaTime);                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/TheOni.BloodOrb.UpdateAbsorbed_Cosmetic
-	// void UpdateAbsorbed_Cosmetic(FVector Destination, class ADBDPlayer* absorber, float DeltaTime);                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasDefaults|BlueprintEvent 
+	// void UpdateAbsorbed_Cosmetic(FVector Destination, class ADBDPlayer* absorber, float DeltaTime);                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/TheOni.BloodOrb.OnRep_State
-	// void OnRep_State(EBloodOrbState oldState);                                                                            // [0x5db8020] Final|Native|Private 
+	// void OnRep_State(EBloodOrbState oldState);                                                                            // [0x5dc5a90] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrb.OnIsAttractedChangedCosmetic
-	// void OnIsAttractedChangedCosmetic(bool isAttracted);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnIsAttractedChangedCosmetic(bool isAttracted);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheOni.BloodOrb.OnDestroyedCosmetic
-	// void OnDestroyedCosmetic();                                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnDestroyedCosmetic();                                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheOni.BloodOrb.OnAbsorbedCosmetic
-	// void OnAbsorbedCosmetic();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnAbsorbedCosmetic();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheOni.BloodOrb.GetDroppingPlayer
-	// class ADBDPlayer* GetDroppingPlayer();                                                                                // [0x5db7af0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetDroppingPlayer();                                                                                // [0x5dc5560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.BloodOrb.Authority_OnDropped
-	// void Authority_OnDropped(class ADBDPlayer* droppedBy, float ImpulseFactor);                                           // [0x61c32d0] BlueprintAuthorityOnly|Event|Public|BlueprintEvent 
+	// void Authority_OnDropped(class ADBDPlayer* droppedBy, float ImpulseFactor);                                           // [0x61d2f50] BlueprintAuthorityOnly|Event|Public|BlueprintEvent 
 	// Function /Script/TheOni.BloodOrb.Authority_OnDropFinished
-	// void Authority_OnDropFinished();                                                                                      // [0x5db74e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_OnDropFinished();                                                                                      // [0x5dc4f50] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrb.Authority_DestroyBloodOrb
-	// void Authority_DestroyBloodOrb();                                                                                     // [0x5db6b30] Final|Native|Private 
+	// void Authority_DestroyBloodOrb();                                                                                     // [0x5dc45a0] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrb.Authority_Despawn
-	// void Authority_Despawn();                                                                                             // [0x5db6b10] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_Despawn();                                                                                             // [0x5dc4580] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheOni.BloodOrbAbsorberComponent
@@ -142,8 +143,8 @@ public:
 class UBloodOrbAbsorberComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4141) /* FMulticastInlineDelegate */ __um(Authority_OnBloodOrbAbsorbed);                      // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4142) /* FMulticastInlineDelegate */ __um(OnIsAbsorbingChanged);                              // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,4234) /* FMulticastInlineDelegate */ __um(Authority_OnBloodOrbAbsorbed);                      // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,4235) /* FMulticastInlineDelegate */ __um(OnIsAbsorbingChanged);                              // 0x00C8   (0x0010)  
 	FVector                                            AbsorbLocationOffset;                                       // 0x00D8   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x1C];                                      // 0x00E4   (0x001C)  MISSED
 	TArray<class UBloodOrbDropperComponent*>           _camperBloodOrbDropperComponents;                           // 0x0100   (0x0010)  
@@ -151,9 +152,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbAbsorberComponent.SetInAbsorbMode
-	// void SetInAbsorbMode(bool inAbsorptionMode);                                                                          // [0x5db80a0] Final|Native|Public|BlueprintCallable 
+	// void SetInAbsorbMode(bool inAbsorptionMode);                                                                          // [0x5dc5b10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrbAbsorberComponent.IsInAbsorbMode
-	// bool IsInAbsorbMode();                                                                                                // [0x5db7b60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInAbsorbMode();                                                                                                // [0x5dc55d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheOni.BloodOrbCollection
@@ -192,15 +193,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbConfiguratorComponent.UpdateSurvivorBloodOrbVisibilityRange
-	// void UpdateSurvivorBloodOrbVisibilityRange(class UBloodOrbVisibilityComponent* BloodOrbVisibilityComponent, class ADBDPlayer* killer); // [0x5db8530] Final|Native|Private|Const 
+	// void UpdateSurvivorBloodOrbVisibilityRange(class UBloodOrbVisibilityComponent* BloodOrbVisibilityComponent, class ADBDPlayer* killer); // [0x5dc5fa0] Final|Native|Private|Const 
 	// Function /Script/TheOni.BloodOrbConfiguratorComponent.UpdateKillerBloodOrbVisiblityRanges
-	// void UpdateKillerBloodOrbVisiblityRanges(class UBloodOrbVisibilityComponent* BloodOrbVisibilityComponent, class ADBDPlayer* killer); // [0x5db8460] Final|Native|Private|Const 
+	// void UpdateKillerBloodOrbVisiblityRanges(class UBloodOrbVisibilityComponent* BloodOrbVisibilityComponent, class ADBDPlayer* killer); // [0x5dc5ed0] Final|Native|Private|Const 
 	// Function /Script/TheOni.BloodOrbConfiguratorComponent.UpdateBloodOrbAttractSpeed
-	// void UpdateBloodOrbAttractSpeed(class UBloodOrbAbsorberComponent* BloodOrbAbsorberComponent, class ADBDPlayer* killer); // [0x5db8390] Final|Native|Private|Const 
+	// void UpdateBloodOrbAttractSpeed(class UBloodOrbAbsorberComponent* BloodOrbAbsorberComponent, class ADBDPlayer* killer); // [0x5dc5e00] Final|Native|Private|Const 
 	// Function /Script/TheOni.BloodOrbConfiguratorComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5db7f30] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5dc59a0] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbConfiguratorComponent.Authority_UpdateSurvivorBloodOrbDropperOnCrouchModifier
-	// void Authority_UpdateSurvivorBloodOrbDropperOnCrouchModifier(class ADBDPlayer* killer);                               // [0x5db7880] Final|Native|Private|Const 
+	// void Authority_UpdateSurvivorBloodOrbDropperOnCrouchModifier(class ADBDPlayer* killer);                               // [0x5dc52f0] Final|Native|Private|Const 
 };
 
 /// Class /Script/TheOni.BloodOrbDropperComponent
@@ -213,19 +214,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbDropperComponent.DBD_DropBloodOrbs
-	// void DBD_DropBloodOrbs(int32_t numOrbs);                                                                              // [0x4e00fc0] Final|Exec|Native|Private|Const 
+	// void DBD_DropBloodOrbs(int32_t numOrbs);                                                                              // [0x4dd9ef0] Final|Exec|Native|Private|Const 
 	// Function /Script/TheOni.BloodOrbDropperComponent.Authority_SetPaused
-	// void Authority_SetPaused(bool paused);                                                                                // [0x5db77f0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_SetPaused(bool paused);                                                                                // [0x5dc5260] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrbDropperComponent.Authority_OnOwningCamperDamageStateChanged
-	// void Authority_OnOwningCamperDamageStateChanged(ECamperDamageState oldState, ECamperDamageState NewState);            // [0x5db7690] Final|Native|Private 
+	// void Authority_OnOwningCamperDamageStateChanged(ECamperDamageState oldState, ECamperDamageState NewState);            // [0x5dc5100] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbDropperComponent.Authority_OnDropOrbsGameEvent
-	// void Authority_OnDropOrbsGameEvent(FGameplayTag GameEvent, FGameEventData& GameEventData, FBloodOrbDropParams dropParams); // [0x5db7500] Final|Native|Private|HasOutParms|Const 
+	// void Authority_OnDropOrbsGameEvent(FGameplayTag GameEvent, FGameEventData& GameEventData, FBloodOrbDropParams dropParams); // [0x5dc4f70] Final|Native|Private|HasOutParms|Const 
 	// Function /Script/TheOni.BloodOrbDropperComponent.Authority_OnCamperUnhooked
-	// void Authority_OnCamperUnhooked(FGameplayTag GameEvent, FGameEventData& GameEventData);                               // [0x5db72c0] Final|Native|Private|HasOutParms 
+	// void Authority_OnCamperUnhooked(FGameplayTag GameEvent, FGameEventData& GameEventData);                               // [0x5dc4d30] Final|Native|Private|HasOutParms 
 	// Function /Script/TheOni.BloodOrbDropperComponent.Authority_OnCamperHooked
-	// void Authority_OnCamperHooked(FGameplayTag GameEvent, FGameEventData& GameEventData);                                 // [0x5db71b0] Final|Native|Private|HasOutParms|Const 
+	// void Authority_OnCamperHooked(FGameplayTag GameEvent, FGameEventData& GameEventData);                                 // [0x5dc4c20] Final|Native|Private|HasOutParms|Const 
 	// Function /Script/TheOni.BloodOrbDropperComponent.Authority_OnCamperCrouched
-	// void Authority_OnCamperCrouched(FGameplayTag GameEvent, FGameEventData& GameEventData);                               // [0x5db70a0] Final|Native|Private|HasOutParms 
+	// void Authority_OnCamperCrouched(FGameplayTag GameEvent, FGameEventData& GameEventData);                               // [0x5dc4b10] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheOni.BloodOrbFadeComponent
@@ -248,15 +249,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbOverlapComponent.OnRep_CurrentOverlappingOrbs
-	// void OnRep_CurrentOverlappingOrbs(int32_t previousOverlappingOrbs);                                                   // [0x5db7f90] Final|Native|Private 
+	// void OnRep_CurrentOverlappingOrbs(int32_t previousOverlappingOrbs);                                                   // [0x5dc5a00] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbOverlapComponent.Authority_OnDestroyedBloodOrb
-	// void Authority_OnDestroyedBloodOrb(class AActor* DestroyedActor);                                                     // [0x5db7450] Final|Native|Private 
+	// void Authority_OnDestroyedBloodOrb(class AActor* DestroyedActor);                                                     // [0x5dc4ec0] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbOverlapComponent.Authority_OnBloodOrbVisibilityModeChanged
-	// void Authority_OnBloodOrbVisibilityModeChanged(EBloodOrbVisibilityMode visibilityMode);                               // [0x5db7020] Final|Native|Private 
+	// void Authority_OnBloodOrbVisibilityModeChanged(EBloodOrbVisibilityMode visibilityMode);                               // [0x5dc4a90] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbOverlapComponent.Authority_OnBloodOrbEndOverlap
-	// void Authority_OnBloodOrbEndOverlap(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5db6ec0] Final|Native|Private 
+	// void Authority_OnBloodOrbEndOverlap(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5dc4930] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbOverlapComponent.Authority_OnBloodOrbBeginOverlap
-	// void Authority_OnBloodOrbBeginOverlap(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5db6ca0] Final|Native|Private|HasOutParms 
+	// void Authority_OnBloodOrbBeginOverlap(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5dc4710] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheOni.BloodOrbOverlapRevealToKiller
@@ -272,17 +273,17 @@ public:
 class UBloodOrbStateMonitorComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4143) /* FMulticastInlineDelegate */ __um(OnBloodOrbAbsorbedCosmetic);                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,4236) /* FMulticastInlineDelegate */ __um(OnBloodOrbAbsorbedCosmetic);                        // 0x00B8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x60];                                      // 0x00C8   (0x0060)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbStateMonitorComponent.OnBloodOrbStateChanged
-	// void OnBloodOrbStateChanged(EBloodOrbState oldState, EBloodOrbState NewState, class ABloodOrb* BloodOrb);             // [0x5db7d70] Final|Native|Private|Const 
+	// void OnBloodOrbStateChanged(EBloodOrbState oldState, EBloodOrbState NewState, class ABloodOrb* BloodOrb);             // [0x5dc57e0] Final|Native|Private|Const 
 	// Function /Script/TheOni.BloodOrbStateMonitorComponent.OnBloodOrbSpawned
-	// void OnBloodOrbSpawned(class ABloodOrb* BloodOrb);                                                                    // [0x5db7c50] Final|Native|Private 
+	// void OnBloodOrbSpawned(class ABloodOrb* BloodOrb);                                                                    // [0x5dc56c0] Final|Native|Private 
 	// Function /Script/TheOni.BloodOrbStateMonitorComponent.OnBloodOrbDestroyed
-	// void OnBloodOrbDestroyed(class ABloodOrb* BloodOrb);                                                                  // [0x5db7bc0] Final|Native|Private 
+	// void OnBloodOrbDestroyed(class ABloodOrb* BloodOrb);                                                                  // [0x5dc5630] Final|Native|Private 
 };
 
 /// Class /Script/TheOni.BloodOrbUtilities
@@ -294,7 +295,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbUtilities.GetAllBloodOrbs
-	// TArray<ABloodOrb*> GetAllBloodOrbs(class UObject* WorldContextObject);                                                // [0x5db7940] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<ABloodOrb*> GetAllBloodOrbs(class UObject* WorldContextObject);                                                // [0x5dc53b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheOni.BloodOrbVisibilityComponent
@@ -307,15 +308,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.BloodOrbVisibilityComponent.SetVisibilityRange
-	// void SetVisibilityRange(float visibilityRange);                                                                       // [0x507f030] Final|Native|Public|BlueprintCallable 
+	// void SetVisibilityRange(float visibilityRange);                                                                       // [0x5060aa0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrbVisibilityComponent.SetVisibilityMode
-	// void SetVisibilityMode(EBloodOrbVisibilityMode visibilityMode);                                                       // [0x5db8250] Final|Native|Public|BlueprintCallable 
+	// void SetVisibilityMode(EBloodOrbVisibilityMode visibilityMode);                                                       // [0x5dc5cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrbVisibilityComponent.SetShowAttractedBloodOrbsAuras
-	// void SetShowAttractedBloodOrbsAuras(bool Show);                                                                       // [0x5db81c0] Final|Native|Public|BlueprintCallable 
+	// void SetShowAttractedBloodOrbsAuras(bool Show);                                                                       // [0x5dc5c30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrbVisibilityComponent.SetAuraVisibilityRange
-	// void SetAuraVisibilityRange(float auraVisibilityRange);                                                               // [0x507f0b0] Final|Native|Public|BlueprintCallable 
+	// void SetAuraVisibilityRange(float auraVisibilityRange);                                                               // [0x5060b20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.BloodOrbVisibilityComponent.OnBloodOrbSpawned
-	// void OnBloodOrbSpawned(class ABloodOrb* BloodOrb);                                                                    // [0x5db7ce0] Final|Native|Private|Const 
+	// void OnBloodOrbSpawned(class ABloodOrb* BloodOrb);                                                                    // [0x5dc5750] Final|Native|Private|Const 
 };
 
 /// Class /Script/TheOni.DemonModeComponent
@@ -323,13 +324,13 @@ public:
 class UDemonModeComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4144) /* FMulticastInlineDelegate */ __um(OnDemonModeReady);                                  // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4145) /* FMulticastInlineDelegate */ __um(OnDemonModeStarted);                                // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,4146) /* FMulticastInlineDelegate */ __um(OnDemonModeEnded);                                  // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,4147) /* FMulticastInlineDelegate */ __um(OnDemonModeInterruptedDuringStartup);               // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,4148) /* FMulticastInlineDelegate */ __um(OnDemonModeInterruptedDuringEnding);                // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,4149) /* FMulticastInlineDelegate */ __um(OnChargeGainedAfterAttackCosmetic);                 // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,4150) /* FMulticastInlineDelegate */ __um(OnChargeGainedAfterLockerGrabCosmetic);             // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,4237) /* FMulticastInlineDelegate */ __um(OnDemonModeReady);                                  // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,4238) /* FMulticastInlineDelegate */ __um(OnDemonModeStarted);                                // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,4239) /* FMulticastInlineDelegate */ __um(OnDemonModeEnded);                                  // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,4240) /* FMulticastInlineDelegate */ __um(OnDemonModeInterruptedDuringStartup);               // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,4241) /* FMulticastInlineDelegate */ __um(OnDemonModeInterruptedDuringEnding);                // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,4242) /* FMulticastInlineDelegate */ __um(OnChargeGainedAfterAttackCosmetic);                 // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,4243) /* FMulticastInlineDelegate */ __um(OnChargeGainedAfterLockerGrabCosmetic);             // 0x0118   (0x0010)  
 	class UPowerChargeComponent*                       _powerChargeComponent;                                      // 0x0128   (0x0008)  
 	class UPowerToggleComponent*                       _powerToggleComponent;                                      // 0x0130   (0x0008)  
 	class UInteractionStarterComponent*                _authority_demonModeCooldownStarterComponent;               // 0x0138   (0x0008)  
@@ -344,47 +345,47 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.DemonModeComponent.ShowDemonModeCustomization
-	// void ShowDemonModeCustomization(bool showDemonMode);                                                                  // [0x5db8300] Final|Native|Public|BlueprintCallable 
+	// void ShowDemonModeCustomization(bool showDemonMode);                                                                  // [0x5dc5d70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.DemonModeComponent.ShouldLoseDemonModeOnStun
-	// bool ShouldLoseDemonModeOnStun();                                                                                     // [0x5db82d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldLoseDemonModeOnStun();                                                                                     // [0x5dc5d40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.OnPowerChargeFull
-	// void OnPowerChargeFull();                                                                                             // [0x5db7f70] Final|Native|Private|Const 
+	// void OnPowerChargeFull();                                                                                             // [0x5dc59e0] Final|Native|Private|Const 
 	// Function /Script/TheOni.DemonModeComponent.OnPowerChargeEmpty
-	// void OnPowerChargeEmpty();                                                                                            // [0x5db7f50] Final|Native|Private|Const 
+	// void OnPowerChargeEmpty();                                                                                            // [0x5dc59c0] Final|Native|Private|Const 
 	// Function /Script/TheOni.DemonModeComponent.OnIsPowerChanged
-	// void OnIsPowerChanged(bool IsInPower);                                                                                // [0x5db7ea0] Final|Native|Private|Const 
+	// void OnIsPowerChanged(bool IsInPower);                                                                                // [0x5dc5910] Final|Native|Private|Const 
 	// Function /Script/TheOni.DemonModeComponent.OnCustomizationChanged
-	// void OnCustomizationChanged();                                                                                        // [0x5db7e80] Final|Native|Private 
+	// void OnCustomizationChanged();                                                                                        // [0x5dc58f0] Final|Native|Private 
 	// Function /Script/TheOni.DemonModeComponent.Multicast_DemonModeInterruptedOnStartup
-	// void Multicast_DemonModeInterruptedOnStartup();                                                                       // [0x4db2a10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DemonModeInterruptedOnStartup();                                                                       // [0x4d82970] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheOni.DemonModeComponent.Multicast_DemonModeInterruptedOnEnding
-	// void Multicast_DemonModeInterruptedOnEnding();                                                                        // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DemonModeInterruptedOnEnding();                                                                        // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheOni.DemonModeComponent.IsInDemonMode
-	// bool IsInDemonMode();                                                                                                 // [0x5db7b90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInDemonMode();                                                                                                 // [0x5dc5600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.GetNormalModeCustomization
-	// TArray<USkeletalMeshComponent*> GetNormalModeCustomization();                                                         // [0x5db7b20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<USkeletalMeshComponent*> GetNormalModeCustomization();                                                         // [0x5dc5590] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.GetDemonModeState
-	// EDemonModeState GetDemonModeState();                                                                                  // [0x5db7ac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDemonModeState GetDemonModeState();                                                                                  // [0x5dc5530] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.GetDemonModeCustomization
-	// TArray<USkeletalMeshComponent*> GetDemonModeCustomization();                                                          // [0x5db7a80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<USkeletalMeshComponent*> GetDemonModeCustomization();                                                          // [0x5dc54f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.GetCurrentCharge
-	// float GetCurrentCharge();                                                                                             // [0x5db7a50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentCharge();                                                                                             // [0x5dc54c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.GetChargePercent
-	// float GetChargePercent();                                                                                             // [0x5db7a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChargePercent();                                                                                             // [0x5dc5490] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.DBD_DemonModeForever
-	// void DBD_DemonModeForever(bool forever);                                                                              // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_DemonModeForever(bool forever);                                                                              // [0x581c030] Final|Exec|Native|Public 
 	// Function /Script/TheOni.DemonModeComponent.CanStartDemonMode
-	// bool CanStartDemonMode();                                                                                             // [0x5db7910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanStartDemonMode();                                                                                             // [0x5dc5380] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheOni.DemonModeComponent.Authority_SetDemonModeCooldownInteraction
-	// void Authority_SetDemonModeCooldownInteraction(class UInteractionDefinition* Interaction);                            // [0x5db7760] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_SetDemonModeCooldownInteraction(class UInteractionDefinition* Interaction);                            // [0x5dc51d0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.DemonModeComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5db7670] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5dc50e0] Final|Native|Private 
 	// Function /Script/TheOni.DemonModeComponent.Authority_OnChargeChanged
-	// void Authority_OnChargeChanged(float currentChargePercent);                                                           // [0x5db73d0] Final|Native|Private 
+	// void Authority_OnChargeChanged(float currentChargePercent);                                                           // [0x5dc4e40] Final|Native|Private 
 	// Function /Script/TheOni.DemonModeComponent.Authority_InterruptedMontage
-	// void Authority_InterruptedMontage(FAnimationMontageDescriptor Montage, bool interrupted);                             // [0x5db6b50] Final|Native|Private 
+	// void Authority_InterruptedMontage(FAnimationMontageDescriptor Montage, bool interrupted);                             // [0x5dc45c0] Final|Native|Private 
 	// Function /Script/TheOni.DemonModeComponent.Authority_AddCharge
-	// void Authority_AddCharge(float ChargeAmount);                                                                         // [0x5db6a90] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_AddCharge(float ChargeAmount);                                                                         // [0x5dc4500] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheOni.DemonModeCooldownInteraction
@@ -397,9 +398,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.DemonModeCooldownInteraction.SetPlayerOwner
-	// void SetPlayerOwner(class ADBDPlayer* Owner);                                                                         // [0x5dbaa50] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerOwner(class ADBDPlayer* Owner);                                                                         // [0x5dc8850] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.DemonModeCooldownInteraction.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5dba8d0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5dc86d0] Final|Native|Private 
 };
 
 /// Class /Script/TheOni.DemonModeMenuComponent
@@ -412,7 +413,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.DemonModeMenuComponent.SetInMenuDemonMode
-	// void SetInMenuDemonMode(bool inMenuDemonMode);                                                                        // [0x5dba930] Final|Native|Public|BlueprintCallable 
+	// void SetInMenuDemonMode(bool inMenuDemonMode);                                                                        // [0x5dc8730] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheOni.IsPlayerAbsorbingBloodOrbsCondition
@@ -420,6 +421,29 @@ public:
 class UIsPlayerAbsorbingBloodOrbsCondition : public UIsPlayerPerformingInteraction
 { 
 public:
+};
+
+/// Class /Script/TheOni.K18AnimInstance
+/// Size: 0x0030 (0x000610 - 0x000640)
+class UK18AnimInstance : public UKillerAnimInstance
+{ 
+public:
+	bool                                               _isAbsorbing;                                               // 0x0610   (0x0001)  
+	bool                                               _isDemonMode;                                               // 0x0611   (0x0001)  
+	bool                                               _isCharging;                                                // 0x0612   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0613   (0x0001)  MISSED
+	float                                              _absorbCharge;                                              // 0x0614   (0x0004)  
+	bool                                               _isDashing;                                                 // 0x0618   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0619   (0x0003)  MISSED
+	float                                              _chargeDuration;                                            // 0x061C   (0x0004)  
+	bool                                               _powerAttackOpen;                                           // 0x0620   (0x0001)  
+	EOniAttackType                                     _attackType;                                                // 0x0621   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x1E];                                      // 0x0622   (0x001E)  MISSED
+
+
+	/// Functions
+	// Function /Script/TheOni.K18AnimInstance.UpdatePowerAttackOpen
+	// void UpdatePowerAttackOpen();                                                                                         // [0x5dc8a00] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheOni.MobileBloodOrbRenderer
@@ -433,7 +457,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0244   (0x0004)  MISSED
 	class UInstancedStaticMeshComponent*               _ismComponent;                                              // 0x0248   (0x0008)  
 	class UInstancedStaticMeshComponent*               _outlineIsmComponent;                                       // 0x0250   (0x0008)  
-	SDK_UNDEFINED(80,4151) /* TMap<ABloodOrb*, FBloodOrbInfo> */ __um(_instanceMap);                               // 0x0258   (0x0050)  
+	SDK_UNDEFINED(80,4244) /* TMap<ABloodOrb*, FBloodOrbInfo> */ __um(_instanceMap);                               // 0x0258   (0x0050)  
 	class UMaterialInstanceDynamic*                    _outlineMaterialInstanceDynamic;                            // 0x02A8   (0x0008)  
 	class UMaterialInstanceDynamic*                    _orbMaterialInstanceDynamic;                                // 0x02B0   (0x0008)  
 	class UBloodOrbVisibilityComponent*                _bloodOrbVisibilityComponent;                               // 0x02B8   (0x0008)  
@@ -473,7 +497,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheOni.OniCustomizationItemAnimInstance.SetIsInDemonMode
-	// void SetIsInDemonMode(bool IsInDemonMode);                                                                            // [0x5dba9c0] Final|Native|Private 
+	// void SetIsInDemonMode(bool IsInDemonMode);                                                                            // [0x5dc87c0] Final|Native|Private 
 };
 
 /// Class /Script/TheOni.OniDashInteraction
@@ -481,27 +505,27 @@ public:
 class UOniDashInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0788   (0x0008)  
-	class UCurveFloat*                                 _dashingSpeedCurve;                                         // 0x0790   (0x0008)  
-	float                                              _yawAdjustTime;                                             // 0x0798   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x079C   (0x0004)  MISSED
-	class UCurveFloat*                                 _cooldownSpeedCurve;                                        // 0x07A0   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x38];                                      // 0x07A8   (0x0038)  MISSED
+	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0790   (0x0008)  
+	class UCurveFloat*                                 _dashingSpeedCurve;                                         // 0x0798   (0x0008)  
+	float                                              _yawAdjustTime;                                             // 0x07A0   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x07A4   (0x0004)  MISSED
+	class UCurveFloat*                                 _cooldownSpeedCurve;                                        // 0x07A8   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x30];                                      // 0x07B0   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheOni.OniDashInteraction.SetPlayerOwner
-	// void SetPlayerOwner(class ADBDPlayer* Player);                                                                        // [0x5dbaae0] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerOwner(class ADBDPlayer* Player);                                                                        // [0x5dc88e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.OniDashInteraction.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5dba8f0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5dc86f0] Final|Native|Private 
 	// Function /Script/TheOni.OniDashInteraction.OnDashEnd
-	// void OnDashEnd(class ADBDPlayer* Player);                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnDashEnd(class ADBDPlayer* Player);                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheOni.OniDashInteraction.OnDashBegin
-	// void OnDashBegin(class ADBDPlayer* Player);                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnDashBegin(class ADBDPlayer* Player);                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheOni.OniDashInteraction.OnChargeEnd
-	// void OnChargeEnd(class ADBDPlayer* Player, bool chargeCompleted);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnChargeEnd(class ADBDPlayer* Player, bool chargeCompleted);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheOni.OniDashInteraction.OnChargeBegin
-	// void OnChargeBegin(class ADBDPlayer* Player);                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnChargeBegin(class ADBDPlayer* Player);                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheOni.OniDemonBasicAttack
@@ -571,31 +595,33 @@ public:
 };
 
 /// Class /Script/TheOni.OniPounceInteraction
-/// Size: 0x0020 (0x000790 - 0x0007B0)
+/// Size: 0x0030 (0x000790 - 0x0007C0)
 class UOniPounceInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0790   (0x0008)  MISSED
-	class UOniDemonModeAttackStateComponent*           _chargedAttackState;                                        // 0x0798   (0x0008)  
-	class UDemonModeComponent*                         _demonModeComponent;                                        // 0x07A0   (0x0008)  
-	class ASlasherPlayer*                              _owningSlasher;                                             // 0x07A8   (0x0008)  
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
+	class UOniDemonModeAttackStateComponent*           _chargedAttackState;                                        // 0x07A0   (0x0008)  
+	class UDemonModeComponent*                         _demonModeComponent;                                        // 0x07A8   (0x0008)  
+	class ASlasherPlayer*                              _owningSlasher;                                             // 0x07B0   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x07B8   (0x0008)  MISSED
 };
 
 /// Class /Script/TheOni.RenjirosBloodyGlove
-/// Size: 0x00B0 (0x0002B8 - 0x000368)
+/// Size: 0x00B8 (0x0002B8 - 0x000370)
 class URenjirosBloodyGlove : public UItemAddon
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x02B8   (0x0008)  MISSED
 	float                                              _revealTime;                                                // 0x02C0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x02C4   (0x0004)  MISSED
-	SDK_UNDEFINED(80,4152) /* TMap<ACamperPlayer*, UBloodOrbOverlapRevealToKiller*> */ __um(_revealEffectPerCamper); // 0x02C8   (0x0050)  
-	unsigned char                                      UnknownData02_6[0x50];                                      // 0x0318   (0x0050)  MISSED
+	class UClass*                                      _bloodOrbRevealToKillerStatusEffectClass;                   // 0x02C8   (0x0008)  
+	SDK_UNDEFINED(80,4245) /* TMap<ACamperPlayer*, UBloodOrbOverlapRevealToKiller*> */ __um(_revealEffectPerCamper); // 0x02D0   (0x0050)  
+	unsigned char                                      UnknownData02_6[0x50];                                      // 0x0320   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheOni.RenjirosBloodyGlove.Authority_OnBloodOrbOverlapBegin
-	// void Authority_OnBloodOrbOverlapBegin(class AActor* overlappingActor, class ABloodOrb* BloodOrb);                     // [0x5dba800] Final|Native|Private 
+	// void Authority_OnBloodOrbOverlapBegin(class AActor* overlappingActor, class ABloodOrb* BloodOrb);                     // [0x5dc8600] Final|Native|Private 
 };
 
 /// Class /Script/TheOni.StartDemonModeInteraction
@@ -603,17 +629,17 @@ public:
 class UStartDemonModeInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	float                                              YawAdjustTime;                                              // 0x0788   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x078C   (0x0004)  MISSED
-	FAnimationMontageDescriptor                        DemonModeActivationMontage;                                 // 0x0790   (0x0020)  
-	unsigned char                                      UnknownData01_6[0x30];                                      // 0x07B0   (0x0030)  MISSED
+	float                                              YawAdjustTime;                                              // 0x0790   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0794   (0x0004)  MISSED
+	FAnimationMontageDescriptor                        DemonModeActivationMontage;                                 // 0x0798   (0x0020)  
+	unsigned char                                      UnknownData01_6[0x28];                                      // 0x07B8   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheOni.StartDemonModeInteraction.SetPlayerOwner
-	// void SetPlayerOwner(class ADBDPlayer* Owner);                                                                         // [0x5dbab70] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerOwner(class ADBDPlayer* Owner);                                                                         // [0x5dc8970] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheOni.StartDemonModeInteraction.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5dba910] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5dc8710] Final|Native|Private 
 };
 
 /// Struct /Script/TheOni.Accumulator

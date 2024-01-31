@@ -55,7 +55,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.FastTrack.Cosmetic_OnTokenCountDecreased
-	// void Cosmetic_OnTokenCountDecreased();                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTokenCountDecreased();                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK23.FlurryComboScoreComponent
@@ -77,63 +77,64 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.FlurryComboScoreComponent.OnRep_ComboScore
-	// void OnRep_ComboScore();                                                                                              // [0x5aec7c0] Final|Native|Private|Const 
+	// void OnRep_ComboScore();                                                                                              // [0x5af93c0] Final|Native|Private|Const 
 };
 
 /// Class /Script/TheK23.FlurryOfKnives
-/// Size: 0x0530 (0x000790 - 0x000CC0)
+/// Size: 0x0540 (0x000790 - 0x000CD0)
 class UFlurryOfKnives : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x40];                                      // 0x0790   (0x0040)  MISSED
-	int32_t                                            _replicatedNumOfStacksReduction;                            // 0x07D0   (0x0004)  
-	bool                                               _isSuperModeThrow;                                          // 0x07D4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7B];                                      // 0x07D5   (0x007B)  MISSED
-	class UStatusEffect*                               _selfSlowEffect;                                            // 0x0850   (0x0008)  
-	FDBDTunableRowHandle                               _flurryOfKnivesEnterDuration;                               // 0x0858   (0x0028)  
-	FDBDTunableRowHandle                               _flurryOfKnivesExitDuration;                                // 0x0880   (0x0028)  
-	FDBDTunableRowHandle                               _chargeTime;                                                // 0x08A8   (0x0028)  
-	FTunableStat                                       _baseTimeBetweenThrows;                                     // 0x08D0   (0x0080)  
-	class UCurveFloat*                                 _throwRateModifierByKnivesThrown;                           // 0x0950   (0x0008)  
-	FDBDTunableRowHandle                               _superModeDeactivationBuffer;                               // 0x0958   (0x0028)  
-	FDBDTunableRowHandle                               _superModeThrowRateModifier;                                // 0x0980   (0x0028)  
-	FDBDTunableRowHandle                               _knivesLaunchSpeed;                                         // 0x09A8   (0x0028)  
-	FDBDTunableRowHandle                               _convergencePointDistance;                                  // 0x09D0   (0x0028)  
-	class UCurveFloat*                                 _coneOfFireAngleCurve;                                      // 0x09F8   (0x0008)  
-	FDBDTunableRowHandle                               _consecutiveKnivesStacksDecayTime;                          // 0x0A00   (0x0028)  
-	FDBDTunableRowHandle                               _maxConsecutiveKnivesStacks;                                // 0x0A28   (0x0028)  
-	class UCurveFloat*                                 _movementSpeedByKnivesThrown;                               // 0x0A50   (0x0008)  
-	FDBDTunableRowHandle                               _superModeBaseMovementSpeed;                                // 0x0A58   (0x0028)  
-	FDBDTunableRowHandle                               _baseWalkSpeed;                                             // 0x0A80   (0x0028)  
-	class UCurveFloat*                                 _recoilIntensityByKnivesThrown;                             // 0x0AA8   (0x0008)  
-	FDBDTunableRowHandle                               _recoilDuration;                                            // 0x0AB0   (0x0028)  
-	FDBDTunableRowHandle                               _recoilAngle;                                               // 0x0AD8   (0x0028)  
-	FDBDTunableRowHandle                               _maximumRecoilAngleVariation;                               // 0x0B00   (0x0028)  
-	FDBDTunableRowHandle                               _rotationSpeedAdjustmentTime;                               // 0x0B28   (0x0028)  
-	FDBDTunableRowHandle                               _aimingStanceRotationYawScaleAdjustment;                    // 0x0B50   (0x0028)  
-	FDBDTunableRowHandle                               _aimingStanceRotationPitchScaleAdjustment;                  // 0x0B78   (0x0028)  
-	FDBDTunableRowHandle                               _throwingRotationYawScaleAdjustment;                        // 0x0BA0   (0x0028)  
-	FDBDTunableRowHandle                               _throwingRotationPitchScaleAdjustment;                      // 0x0BC8   (0x0028)  
-	FDBDTunableRowHandle                               _aimingStanceGamepadRotationYawScaleAdjustment;             // 0x0BF0   (0x0028)  
-	FDBDTunableRowHandle                               _aimingStanceGamepadRotationPitchScaleAdjustment;           // 0x0C18   (0x0028)  
-	FDBDTunableRowHandle                               _throwingGamepadRotationYawScaleAdjustment;                 // 0x0C40   (0x0028)  
-	FDBDTunableRowHandle                               _throwingGamepadRotationPitchScaleAdjustment;               // 0x0C68   (0x0028)  
-	class UCurveFloat*                                 _aimingGamepadPitchCurve;                                   // 0x0C90   (0x0008)  
-	class UCurveFloat*                                 _aimingGamepadYawCurve;                                     // 0x0C98   (0x0008)  
-	class UCurveFloat*                                 _throwingGamepadPitchCurve;                                 // 0x0CA0   (0x0008)  
-	class UCurveFloat*                                 _throwingGamepadYawCurve;                                   // 0x0CA8   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0CB0   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_2[0x48];                                      // 0x0790   (0x0048)  MISSED
+	int32_t                                            _replicatedNumOfStacksReduction;                            // 0x07D8   (0x0004)  
+	bool                                               _isSuperModeThrow;                                          // 0x07DC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7B];                                      // 0x07DD   (0x007B)  MISSED
+	class UStatusEffect*                               _selfSlowEffect;                                            // 0x0858   (0x0008)  
+	class UClass*                                      _selfSlowStatusEffectClass;                                 // 0x0860   (0x0008)  
+	FDBDTunableRowHandle                               _flurryOfKnivesEnterDuration;                               // 0x0868   (0x0028)  
+	FDBDTunableRowHandle                               _flurryOfKnivesExitDuration;                                // 0x0890   (0x0028)  
+	FDBDTunableRowHandle                               _chargeTime;                                                // 0x08B8   (0x0028)  
+	FTunableStat                                       _baseTimeBetweenThrows;                                     // 0x08E0   (0x0080)  
+	class UCurveFloat*                                 _throwRateModifierByKnivesThrown;                           // 0x0960   (0x0008)  
+	FDBDTunableRowHandle                               _superModeDeactivationBuffer;                               // 0x0968   (0x0028)  
+	FDBDTunableRowHandle                               _superModeThrowRateModifier;                                // 0x0990   (0x0028)  
+	FDBDTunableRowHandle                               _knivesLaunchSpeed;                                         // 0x09B8   (0x0028)  
+	FDBDTunableRowHandle                               _convergencePointDistance;                                  // 0x09E0   (0x0028)  
+	class UCurveFloat*                                 _coneOfFireAngleCurve;                                      // 0x0A08   (0x0008)  
+	FDBDTunableRowHandle                               _consecutiveKnivesStacksDecayTime;                          // 0x0A10   (0x0028)  
+	FDBDTunableRowHandle                               _maxConsecutiveKnivesStacks;                                // 0x0A38   (0x0028)  
+	class UCurveFloat*                                 _movementSpeedByKnivesThrown;                               // 0x0A60   (0x0008)  
+	FDBDTunableRowHandle                               _superModeBaseMovementSpeed;                                // 0x0A68   (0x0028)  
+	FDBDTunableRowHandle                               _baseWalkSpeed;                                             // 0x0A90   (0x0028)  
+	class UCurveFloat*                                 _recoilIntensityByKnivesThrown;                             // 0x0AB8   (0x0008)  
+	FDBDTunableRowHandle                               _recoilDuration;                                            // 0x0AC0   (0x0028)  
+	FDBDTunableRowHandle                               _recoilAngle;                                               // 0x0AE8   (0x0028)  
+	FDBDTunableRowHandle                               _maximumRecoilAngleVariation;                               // 0x0B10   (0x0028)  
+	FDBDTunableRowHandle                               _rotationSpeedAdjustmentTime;                               // 0x0B38   (0x0028)  
+	FDBDTunableRowHandle                               _aimingStanceRotationYawScaleAdjustment;                    // 0x0B60   (0x0028)  
+	FDBDTunableRowHandle                               _aimingStanceRotationPitchScaleAdjustment;                  // 0x0B88   (0x0028)  
+	FDBDTunableRowHandle                               _throwingRotationYawScaleAdjustment;                        // 0x0BB0   (0x0028)  
+	FDBDTunableRowHandle                               _throwingRotationPitchScaleAdjustment;                      // 0x0BD8   (0x0028)  
+	FDBDTunableRowHandle                               _aimingStanceGamepadRotationYawScaleAdjustment;             // 0x0C00   (0x0028)  
+	FDBDTunableRowHandle                               _aimingStanceGamepadRotationPitchScaleAdjustment;           // 0x0C28   (0x0028)  
+	FDBDTunableRowHandle                               _throwingGamepadRotationYawScaleAdjustment;                 // 0x0C50   (0x0028)  
+	FDBDTunableRowHandle                               _throwingGamepadRotationPitchScaleAdjustment;               // 0x0C78   (0x0028)  
+	class UCurveFloat*                                 _aimingGamepadPitchCurve;                                   // 0x0CA0   (0x0008)  
+	class UCurveFloat*                                 _aimingGamepadYawCurve;                                     // 0x0CA8   (0x0008)  
+	class UCurveFloat*                                 _throwingGamepadPitchCurve;                                 // 0x0CB0   (0x0008)  
+	class UCurveFloat*                                 _throwingGamepadYawCurve;                                   // 0x0CB8   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0CC0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK23.FlurryOfKnives.Server_StartThrowing
-	// void Server_StartThrowing();                                                                                          // [0x5aeccd0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_StartThrowing();                                                                                          // [0x5af98e0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheK23.FlurryOfKnives.Server_DecreaseConsecutiveKnivesStacks
-	// void Server_DecreaseConsecutiveKnivesStacks();                                                                        // [0x5aecc80] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_DecreaseConsecutiveKnivesStacks();                                                                        // [0x5af9890] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheK23.FlurryOfKnives.OnRep_NumOfStacksReduction
-	// void OnRep_NumOfStacksReduction();                                                                                    // [0x5aecc60] Final|Native|Private 
+	// void OnRep_NumOfStacksReduction();                                                                                    // [0x5af9870] Final|Native|Private 
 	// Function /Script/TheK23.FlurryOfKnives.Multicast_StartThrowing
-	// void Multicast_StartThrowing();                                                                                       // [0x5a3fe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartThrowing();                                                                                       // [0x5af9850] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK23.HexCrowdControl
@@ -181,7 +182,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.K23SurvivorCosmeticHelperActor.Cosmetic_K23CamperHitByKnife
-	// void Cosmetic_K23CamperHitByKnife(float lacerationPercentage);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_K23CamperHitByKnife(float lacerationPercentage);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK23.KnifeProjectile
@@ -192,7 +193,7 @@ public:
 	class UPrimitiveComponent*                         _worldCollider;                                             // 0x0338   (0x0008)  
 	class UPrimitiveComponent*                         _camperDetector;                                            // 0x0340   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x0348   (0x0010)  MISSED
-	SDK_UNDEFINED(80,5091) /* TSet<ADBDPlayer*> */     __um(_playersAffectedThisThrow);                            // 0x0358   (0x0050)  
+	SDK_UNDEFINED(80,5481) /* TSet<ADBDPlayer*> */     __um(_playersAffectedThisThrow);                            // 0x0358   (0x0050)  
 	class UPoolableProjectileComponent*                _poolableActorComponent;                                    // 0x03A8   (0x0008)  
 	FDBDTunableRowHandle                               _knifeMaxRange;                                             // 0x03B0   (0x0028)  
 	FDBDTunableRowHandle                               _addonExplosionRadius;                                      // 0x03D8   (0x0028)  
@@ -201,25 +202,25 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.KnifeProjectile.WasLaunchedDuringSuperMode
-	// bool WasLaunchedDuringSuperMode();                                                                                    // [0x5aedbb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool WasLaunchedDuringSuperMode();                                                                                    // [0x5afa7c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.KnifeProjectile.ShouldPlayRicochetSound
-	// bool ShouldPlayRicochetSound();                                                                                       // [0x5aedb80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldPlayRicochetSound();                                                                                       // [0x5afa790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.KnifeProjectile.SetKnifeAcquired
-	// void SetKnifeAcquired(bool acquired);                                                                                 // [0x5aedaf0] Final|Native|Protected|BlueprintCallable 
+	// void SetKnifeAcquired(bool acquired);                                                                                 // [0x5afa700] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK23.KnifeProjectile.OnWorldColliderHit
-	// void OnWorldColliderHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x5aed910] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnWorldColliderHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x5afa520] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/TheK23.KnifeProjectile.OnProjectileBounce
-	// void OnProjectileBounce(FHitResult& ImpactResult, FVector& ImpactVelocity);                                           // [0x5aed7f0] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnProjectileBounce(FHitResult& ImpactResult, FVector& ImpactVelocity);                                           // [0x5afa400] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/TheK23.KnifeProjectile.KnifeCanPierceCampers
-	// bool KnifeCanPierceCampers();                                                                                         // [0x5aed7c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool KnifeCanPierceCampers();                                                                                         // [0x5afa3d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.KnifeProjectile.GetAddonExplosionRadius
-	// float GetAddonExplosionRadius();                                                                                      // [0x5aed790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAddonExplosionRadius();                                                                                      // [0x5afa3a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.KnifeProjectile.BP_SetKnifeActive
-	// void BP_SetKnifeActive(bool Active);                                                                                  // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_SetKnifeActive(bool Active);                                                                                  // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK23.KnifeProjectile.BP_OnLaunchCosmetic
-	// void BP_OnLaunchCosmetic(FLaunchInfo LaunchInfo, bool hasImpactOnLaunch);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void BP_OnLaunchCosmetic(FLaunchInfo LaunchInfo, bool hasImpactOnLaunch);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK23.KnifeProjectile.BP_CosmeticOnAddonExplosion
-	// void BP_CosmeticOnAddonExplosion(FVector& Location, FVector& Normal);                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void BP_CosmeticOnAddonExplosion(FVector& Location, FVector& Normal);                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/TheK23.KnifeRack
@@ -231,9 +232,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.KnifeRack.OnReloadMontageStarted
-	// void OnReloadMontageStarted(float actionSpeedMultiplier, class ADBDPlayer* Player);                                   // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnReloadMontageStarted(float actionSpeedMultiplier, class ADBDPlayer* Player);                                   // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK23.KnifeRack.OnReloadEnded
-	// void OnReloadEnded(class ADBDPlayer* Player);                                                                         // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnReloadEnded(class ADBDPlayer* Player);                                                                         // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/TheK23.KnivesLauncher
@@ -252,9 +253,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.KnivesLauncher.GetPower
-	// class AThrowingKnives* GetPower();                                                                                    // [0x5aee230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AThrowingKnives* GetPower();                                                                                    // [0x5afae40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.KnivesLauncher.GetLocallyPredictedAmmo
-	// int32_t GetLocallyPredictedAmmo();                                                                                    // [0x5aee200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetLocallyPredictedAmmo();                                                                                    // [0x5afae10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK23.KnivesProvider
@@ -266,7 +267,7 @@ public:
 };
 
 /// Class /Script/TheK23.LacerationComponent
-/// Size: 0x0428 (0x0000B8 - 0x0004E0)
+/// Size: 0x0430 (0x0000B8 - 0x0004E8)
 class ULacerationComponent : public UActorComponent
 { 
 public:
@@ -274,31 +275,32 @@ public:
 	float                                              _laceration;                                                // 0x00F0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0xC];                                       // 0x00F4   (0x000C)  MISSED
 	class UStatusEffect*                               _onHitSpeedBoost;                                           // 0x0100   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x20];                                      // 0x0108   (0x0020)  MISSED
-	FTunableStat                                       _maxLaceration;                                             // 0x0128   (0x0080)  
-	FDBDTunableRowHandle                               _lacerationExplosionDamage;                                 // 0x01A8   (0x0028)  
-	FTunableStat                                       _lacerationRegressionPerSecond;                             // 0x01D0   (0x0080)  
-	FTunableStat                                       _lacerationRegressionPerSecondWhileRunning;                 // 0x0250   (0x0080)  
-	FDBDTunableRowHandle                               _speedBoostIntensity;                                       // 0x02D0   (0x0028)  
-	FDBDTunableRowHandle                               _speedBoostDuration;                                        // 0x02F8   (0x0028)  
-	FDBDTunableRowHandle                               _stopTickingRegressionWhileInjured;                         // 0x0320   (0x0028)  
-	FDBDTunableRowHandle                               _stopTickingRegressionWhileInChase;                         // 0x0348   (0x0028)  
-	FDBDTunableRowHandle                               _stopTickingRegressionWithinTerrorRadius;                   // 0x0370   (0x0028)  
-	FTunableStat                                       _timeBeforeLacerationDecayStarts;                           // 0x0398   (0x0080)  
-	FDBDTunableRowHandle                               _regressionBufferTimerAlwaysTicks;                          // 0x0418   (0x0028)  
-	FDBDTunableRowHandle                               _lacerationToRemoveOnBasicAttack;                           // 0x0440   (0x0028)  
-	FDBDTunableRowHandle                               _thresholdForGraceTimerScoreEvent;                          // 0x0468   (0x0028)  
-	FDBDTunableRowHandle                               _minThresholdForLowLacerationScoreEvent;                    // 0x0490   (0x0028)  
-	FDBDTunableRowHandle                               _maxThresholdForLowLacerationScoreEvent;                    // 0x04B8   (0x0028)  
+	class UClass*                                      _lacerationOnHitSpeedBoostStatusEffectClass;                // 0x0108   (0x0008)  
+	unsigned char                                      UnknownData02_5[0x20];                                      // 0x0110   (0x0020)  MISSED
+	FTunableStat                                       _maxLaceration;                                             // 0x0130   (0x0080)  
+	FDBDTunableRowHandle                               _lacerationExplosionDamage;                                 // 0x01B0   (0x0028)  
+	FTunableStat                                       _lacerationRegressionPerSecond;                             // 0x01D8   (0x0080)  
+	FTunableStat                                       _lacerationRegressionPerSecondWhileRunning;                 // 0x0258   (0x0080)  
+	FDBDTunableRowHandle                               _speedBoostIntensity;                                       // 0x02D8   (0x0028)  
+	FDBDTunableRowHandle                               _speedBoostDuration;                                        // 0x0300   (0x0028)  
+	FDBDTunableRowHandle                               _stopTickingRegressionWhileInjured;                         // 0x0328   (0x0028)  
+	FDBDTunableRowHandle                               _stopTickingRegressionWhileInChase;                         // 0x0350   (0x0028)  
+	FDBDTunableRowHandle                               _stopTickingRegressionWithinTerrorRadius;                   // 0x0378   (0x0028)  
+	FTunableStat                                       _timeBeforeLacerationDecayStarts;                           // 0x03A0   (0x0080)  
+	FDBDTunableRowHandle                               _regressionBufferTimerAlwaysTicks;                          // 0x0420   (0x0028)  
+	FDBDTunableRowHandle                               _lacerationToRemoveOnBasicAttack;                           // 0x0448   (0x0028)  
+	FDBDTunableRowHandle                               _thresholdForGraceTimerScoreEvent;                          // 0x0470   (0x0028)  
+	FDBDTunableRowHandle                               _minThresholdForLowLacerationScoreEvent;                    // 0x0498   (0x0028)  
+	FDBDTunableRowHandle                               _maxThresholdForLowLacerationScoreEvent;                    // 0x04C0   (0x0028)  
 
 
 	/// Functions
 	// Function /Script/TheK23.LacerationComponent.OnRepLaceration
-	// void OnRepLaceration(float oldLaceration);                                                                            // [0x5aee9f0] Final|Native|Private 
+	// void OnRepLaceration(float oldLaceration);                                                                            // [0x5afb600] Final|Native|Private 
 	// Function /Script/TheK23.LacerationComponent.Multicast_KnifeHit
-	// void Multicast_KnifeHit(float newLaceration, bool causedDamage, bool CausedKO, FVector impactLocation, FVector ImpactNormal); // [0x5aee820] Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults 
+	// void Multicast_KnifeHit(float newLaceration, bool causedDamage, bool CausedKO, FVector impactLocation, FVector ImpactNormal); // [0x5afb430] Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults 
 	// Function /Script/TheK23.LacerationComponent.Cosmetic_OnKnifeHit
-	// void Cosmetic_OnKnifeHit(float lacerationPercent, bool isDangerous, bool causedDamage, bool CausedKO, FVector& ImpactNormal); // [0x61c32d0] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_OnKnifeHit(float lacerationPercent, bool isDangerous, bool causedDamage, bool CausedKO, FVector& ImpactNormal); // [0x61d2f50] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/TheK23.BaseLacerationLevelCondition
@@ -339,11 +341,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.NoWayOut.Multicast_TriggerLoudNoise
-	// void Multicast_TriggerLoudNoise(class ADBDPlayer* Instigator, class AEscapeDoor* EscapeDoor);                         // [0x500fa30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerLoudNoise(class ADBDPlayer* Instigator, class AEscapeDoor* EscapeDoor);                         // [0x4fed310] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK23.NoWayOut.GetExitGatePanelBlockDurationPerTokenAtLevel
-	// float GetExitGatePanelBlockDurationPerTokenAtLevel();                                                                 // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExitGatePanelBlockDurationPerTokenAtLevel();                                                                 // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.NoWayOut.GetExitGatePanelBlockBaseDurationAtLevel
-	// float GetExitGatePanelBlockBaseDurationAtLevel();                                                                     // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExitGatePanelBlockBaseDurationAtLevel();                                                                     // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK23.ReloadKnives
@@ -364,9 +366,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.SelfPreservation.GetSelfPreservationEffectDuration
-	// float GetSelfPreservationEffectDuration();                                                                            // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSelfPreservationEffectDuration();                                                                            // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.SelfPreservation.GetHitDistanceToTriggerPerkEffect
-	// float GetHitDistanceToTriggerPerkEffect();                                                                            // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHitDistanceToTriggerPerkEffect();                                                                            // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK23.SmashHit
@@ -384,21 +386,22 @@ public:
 };
 
 /// Class /Script/TheK23.Starstruck
-/// Size: 0x0120 (0x0003C8 - 0x0004E8)
+/// Size: 0x0128 (0x0003C8 - 0x0004F0)
 class UStarstruck : public UPerk
 { 
 public:
 	float                                              _exposedEffectDuration;                                     // 0x03C8   (0x000C)  
 	float                                              _perkCooldownDuration;                                      // 0x03D4   (0x000C)  
-	SDK_UNDEFINED(80,5092) /* TMap<TWeakObjectPtr<ACamperPlayer*>, TWeakObjectPtr<UStatusEffect*>> */ __um(_camperExposedEffects); // 0x03E0   (0x0050)  
-	unsigned char                                      UnknownData00_6[0xB8];                                      // 0x0430   (0x00B8)  MISSED
+	SDK_UNDEFINED(80,5482) /* TMap<TWeakObjectPtr<ACamperPlayer*>, TWeakObjectPtr<UStatusEffect*>> */ __um(_camperExposedEffects); // 0x03E0   (0x0050)  
+	unsigned char                                      UnknownData00_5[0xB8];                                      // 0x0430   (0x00B8)  MISSED
+	class UClass*                                      _exposedEffectClass;                                        // 0x04E8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/TheK23.Starstruck.GetPerkCooldownDurationAtLevel
-	// float GetPerkCooldownDurationAtLevel();                                                                               // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkCooldownDurationAtLevel();                                                                               // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.Starstruck.GetExposedEffectDurationAtLevel
-	// float GetExposedEffectDurationAtLevel();                                                                              // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExposedEffectDurationAtLevel();                                                                              // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK23.SuperModeDeactivation
@@ -410,7 +413,7 @@ public:
 };
 
 /// Class /Script/TheK23.ThrowingKnives
-/// Size: 0x00A8 (0x0004C8 - 0x000570)
+/// Size: 0x00B0 (0x0004C8 - 0x000578)
 class AThrowingKnives : public ACollectable
 { 
 public:
@@ -419,37 +422,38 @@ public:
 	class UTricksterSuperModeComponent*                _superModeComponent;                                        // 0x0510   (0x0008)  
 	class UK23PowerProgressPresentationComponent*      _superModeChargePresentationComponent;                      // 0x0518   (0x0008)  
 	class UPowerChargeComponent*                       _superModeChargeComponent;                                  // 0x0520   (0x0008)  
-	class UKnivesProvider*                             _knivesProvider;                                            // 0x0528   (0x0008)  
-	class UKnivesLauncher*                             _knivesLauncher;                                            // 0x0530   (0x0008)  
-	class UClass*                                      _lacerationComponentClass;                                  // 0x0538   (0x0008)  
-	class UClass*                                      _reloadInteractionClass;                                    // 0x0540   (0x0008)  
-	float                                              _minimumTimeBetweenBroadcast;                               // 0x0548   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x24];                                      // 0x054C   (0x0024)  MISSED
+	class UClass*                                      _tricksterOutOfAmmoStatusEffectClass;                       // 0x0528   (0x0008)  
+	class UKnivesProvider*                             _knivesProvider;                                            // 0x0530   (0x0008)  
+	class UKnivesLauncher*                             _knivesLauncher;                                            // 0x0538   (0x0008)  
+	class UClass*                                      _lacerationComponentClass;                                  // 0x0540   (0x0008)  
+	class UClass*                                      _reloadInteractionClass;                                    // 0x0548   (0x0008)  
+	float                                              _minimumTimeBetweenBroadcast;                               // 0x0550   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x24];                                      // 0x0554   (0x0024)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK23.ThrowingKnives.OnItemUsedStateChanged
-	// void OnItemUsedStateChanged(bool Pressed);                                                                            // [0x5aefe40] Final|Native|Private 
+	// void OnItemUsedStateChanged(bool Pressed);                                                                            // [0x5afca70] Final|Native|Private 
 	// Function /Script/TheK23.ThrowingKnives.Multicast_OnUsePowerWhenOutOfAmmo
-	// void Multicast_OnUsePowerWhenOutOfAmmo();                                                                             // [0x5850cb0] Net|Native|Event|NetMulticast|Public 
+	// void Multicast_OnUsePowerWhenOutOfAmmo();                                                                             // [0x5afca50] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/TheK23.ThrowingKnives.Multicast_OnUsePowerWhenInCooldown
-	// void Multicast_OnUsePowerWhenInCooldown();                                                                            // [0x5ad4c90] Net|Native|Event|NetMulticast|Public 
+	// void Multicast_OnUsePowerWhenInCooldown();                                                                            // [0x58552b0] Net|Native|Event|NetMulticast|Public 
 	// Function /Script/TheK23.ThrowingKnives.GetSlasher
-	// class ASlasherPlayer* GetSlasher();                                                                                   // [0x5aefe10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetSlasher();                                                                                   // [0x5afca20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.ThrowingKnives.GetLauncher
-	// class UKnivesLauncher* GetLauncher();                                                                                 // [0x5aefde0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UKnivesLauncher* GetLauncher();                                                                                 // [0x5afc9f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK23.ThrowingKnives.Cosmetic_OnUsePowerWhenOutOfAmmo
-	// void Cosmetic_OnUsePowerWhenOutOfAmmo();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnUsePowerWhenOutOfAmmo();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK23.ThrowingKnives.Cosmetic_OnUsePowerWhenInCooldown
-	// void Cosmetic_OnUsePowerWhenInCooldown();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnUsePowerWhenInCooldown();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK23.ThrowingKnives.Cosmetic_OnLaunch
-	// void Cosmetic_OnLaunch();                                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnLaunch();                                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK23.ThrowingKnives.Cosmetic_OnComboScoreChanged
-	// void Cosmetic_OnComboScoreChanged(float scoreNormalizedForAudio);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnComboScoreChanged(float scoreNormalizedForAudio);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK23.ThrowingKnives.Cosmetic_OnComboFinished
-	// void Cosmetic_OnComboFinished(bool isSRankCombo);                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnComboFinished(bool isSRankCombo);                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK23.ThrowingKnives.Authority_SpawnReloadInteractionOnLockers
-	// void Authority_SpawnReloadInteractionOnLockers();                                                                     // [0x5aefdc0] Final|Native|Public  
+	// void Authority_SpawnReloadInteractionOnLockers();                                                                     // [0x5afc9d0] Final|Native|Public  
 };
 
 /// Class /Script/TheK23.ThrowingKnivesHitSubAnimInstance
@@ -507,17 +511,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.TricksterCharacterVFXInterface.ShowWeapon
-	// void ShowWeapon();                                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void ShowWeapon();                                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK23.TricksterCharacterVFXInterface.SetSuperModeActive
-	// void SetSuperModeActive(bool Active);                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetSuperModeActive(bool Active);                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK23.TricksterCharacterVFXInterface.SetKnivesVisibility
-	// void SetKnivesVisibility(bool leftKnife, bool rightKnife);                                                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetKnivesVisibility(bool leftKnife, bool rightKnife);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK23.TricksterCharacterVFXInterface.SetIsSuperModeReady
-	// void SetIsSuperModeReady(bool isSuperModeReady);                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetIsSuperModeReady(bool isSuperModeReady);                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK23.TricksterCharacterVFXInterface.SetIsInCooldown
-	// void SetIsInCooldown(bool isInCooldown);                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetIsInCooldown(bool isInCooldown);                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK23.TricksterCharacterVFXInterface.HideWeapon
-	// void HideWeapon();                                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void HideWeapon();                                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/TheK23.TricksterSuperModeComponent
@@ -542,13 +546,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK23.TricksterSuperModeComponent.OnRepIsSuperModeReady
-	// void OnRepIsSuperModeReady();                                                                                         // [0x5af0d40] Final|Native|Private 
+	// void OnRepIsSuperModeReady();                                                                                         // [0x5afd980] Final|Native|Private 
 	// Function /Script/TheK23.TricksterSuperModeComponent.OnRepIsInSuperMode
-	// void OnRepIsInSuperMode();                                                                                            // [0x5af0d20] Final|Native|Private 
+	// void OnRepIsInSuperMode();                                                                                            // [0x5afd960] Final|Native|Private 
 	// Function /Script/TheK23.TricksterSuperModeComponent.OnRepIsInCooldown
-	// void OnRepIsInCooldown();                                                                                             // [0x5af0d00] Final|Native|Private 
+	// void OnRepIsInCooldown();                                                                                             // [0x5afd940] Final|Native|Private 
 	// Function /Script/TheK23.TricksterSuperModeComponent.InitSuperModeMaxCharge
-	// void InitSuperModeMaxCharge();                                                                                        // [0x5af0ce0] Final|Native|Private 
+	// void InitSuperModeMaxCharge();                                                                                        // [0x5afd920] Final|Native|Private 
 };
 
 /// Class /Script/TheK23.TriggerTimerOnLacerationAlmostFullEffect

@@ -34,7 +34,7 @@ enum class EConstraintType : uint8_t
 class UAnimationDataSourceRegistry : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,3440) /* TMap<FName, TWeakObjectPtr<UObject*>> */ __um(DataSources);                          // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,3556) /* TMap<FName, TWeakObjectPtr<UObject*>> */ __um(DataSources);                          // 0x0030   (0x0050)  
 };
 
 /// Struct /Script/AnimationCore.CCDIKChainLink
@@ -194,7 +194,7 @@ struct FNodeHierarchyData
 { 
 	TArray<FNodeObject>                                Nodes;                                                      // 0x0000   (0x0010)  
 	TArray<FTransform>                                 Transforms;                                                 // 0x0010   (0x0010)  
-	SDK_UNDEFINED(80,3441) /* TMap<FName, int32_t> */  __um(NodeNameToIndexMapping);                               // 0x0020   (0x0050)  
+	SDK_UNDEFINED(80,3557) /* TMap<FName, int32_t> */  __um(NodeNameToIndexMapping);                               // 0x0020   (0x0050)  
 };
 
 /// Struct /Script/AnimationCore.NodeHierarchyWithUserData

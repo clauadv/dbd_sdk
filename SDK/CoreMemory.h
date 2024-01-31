@@ -34,16 +34,16 @@ public:
 	TArray<class UCoreMemoryFragmentComponent*>        _fragments;                                                 // 0x0300   (0x0010)  
 	int32_t                                            _numFragmentsToCollect;                                     // 0x0310   (0x0004)  
 	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0314   (0x000C)  MISSED
-	SDK_UNDEFINED(16,4503) /* TArray<TWeakObjectPtr<ACoreMemoryFragment*>> */ __um(_fragmentsSpawnedBeforeBehavioursWereSetup); // 0x0320   (0x0010)  
+	SDK_UNDEFINED(16,4896) /* TArray<TWeakObjectPtr<ACoreMemoryFragment*>> */ __um(_fragmentsSpawnedBeforeBehavioursWereSetup); // 0x0320   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryChallengePlayerSpecificController.StartQuest
-	// void StartQuest();                                                                                                    // [0x4e26b00] Final|Native|Public  
+	// void StartQuest();                                                                                                    // [0x4dfba10] Final|Native|Public  
 	// Function /Script/CoreMemory.CoreMemoryChallengePlayerSpecificController.OnRep_Controller
-	// void OnRep_Controller();                                                                                              // [0x4e26920] Final|Native|Private 
+	// void OnRep_Controller();                                                                                              // [0x4dfb830] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryChallengePlayerSpecificController.OnPortalReplicated
-	// void OnPortalReplicated();                                                                                            // [0x4e26900] Final|Native|Private 
+	// void OnPortalReplicated();                                                                                            // [0x4dfb810] Final|Native|Private 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryController
@@ -62,11 +62,11 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryController.OnRep_CoreMemoryPortal
-	// void OnRep_CoreMemoryPortal();                                                                                        // [0x4e26960] Final|Native|Private 
+	// void OnRep_CoreMemoryPortal();                                                                                        // [0x4dfb870] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryController.Authority_OnCharacterAdded
-	// void Authority_OnCharacterAdded(class ADBDPlayer* Player);                                                            // [0x4e26120] Final|Native|Private 
+	// void Authority_OnCharacterAdded(class ADBDPlayer* Player);                                                            // [0x4dfafa0] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryController.Authority_CreatePlayerSpecificController
-	// void Authority_CreatePlayerSpecificController(class ADBDPlayer* Player);                                              // [0x4e26090] Final|Native|Private 
+	// void Authority_CreatePlayerSpecificController(class ADBDPlayer* Player);                                              // [0x4dfaf10] Final|Native|Private 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryDebugSpawnBehaviour
@@ -90,7 +90,7 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryDefaultCollectBehaviour.OnCollectZoneEntered
-	// void OnCollectZoneEntered(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x4e26650] Final|Native|Private|HasOutParms 
+	// void OnCollectZoneEntered(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x4dfb4d0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryDefaultQuestProgressBehaviour
@@ -118,11 +118,11 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryDefaultTriggerBehaviour.Authority_OnTriggerZoneExited
-	// void Authority_OnTriggerZoneExited(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x4e263d0] Final|Native|Private 
+	// void Authority_OnTriggerZoneExited(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x4dfb250] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryDefaultTriggerBehaviour.Authority_OnTriggerZoneEntered
-	// void Authority_OnTriggerZoneEntered(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x4e261b0] Final|Native|Private|HasOutParms 
+	// void Authority_OnTriggerZoneEntered(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x4dfb030] Final|Native|Private|HasOutParms 
 	// Function /Script/CoreMemory.CoreMemoryDefaultTriggerBehaviour.Authority_CheckLineOfSight
-	// void Authority_CheckLineOfSight(class ACoreMemoryFragment* fragment);                                                 // [0x4e26000] Final|Native|Private 
+	// void Authority_CheckLineOfSight(class ACoreMemoryFragment* fragment);                                                 // [0x4dfae80] Final|Native|Private 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryFragment
@@ -149,9 +149,9 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryFragment.OnRep_SpawnRotation
-	// void OnRep_SpawnRotation(FRotator& Rotation);                                                                         // [0x4e26a30] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnRep_SpawnRotation(FRotator& Rotation);                                                                         // [0x4dfb940] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/CoreMemory.CoreMemoryFragment.OnRep_SpawnLocation
-	// void OnRep_SpawnLocation(FVector& Location);                                                                          // [0x4e269a0] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnRep_SpawnLocation(FVector& Location);                                                                          // [0x4dfb8b0] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryFragmentComponent
@@ -175,29 +175,39 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.Server_OnFragmentCollected
-	// void Server_OnFragmentCollected();                                                                                    // [0x4e01240] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_OnFragmentCollected();                                                                                    // [0x4dd4860] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.OnRep_WasTriggered
-	// void OnRep_WasTriggered();                                                                                            // [0x4e26ae0] Final|Native|Private 
+	// void OnRep_WasTriggered();                                                                                            // [0x4dfb9f0] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.OnRep_WasCollected
-	// void OnRep_WasCollected();                                                                                            // [0x4e26ac0] Final|Native|Private 
+	// void OnRep_WasCollected();                                                                                            // [0x4dfb9d0] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.OnRep_OwningPlayer
-	// void OnRep_OwningPlayer();                                                                                            // [0x4e26940] Final|Native|Private 
+	// void OnRep_OwningPlayer();                                                                                            // [0x4dfb850] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.OnRep_IsDespawned
-	// void OnRep_IsDespawned();                                                                                             // [0x4e26980] Final|Native|Private 
+	// void OnRep_IsDespawned();                                                                                             // [0x4dfb890] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.OnRep_Controller
-	// void OnRep_Controller();                                                                                              // [0x4e26940] Final|Native|Private 
+	// void OnRep_Controller();                                                                                              // [0x4dfb850] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged(bool IsLocallyObserved);                                                                // [0x4e26870] Final|Native|Private 
+	// void OnLocallyObservedChanged(bool IsLocallyObserved);                                                                // [0x4dfb780] Final|Native|Private 
 	// Function /Script/CoreMemory.CoreMemoryFragmentComponent.Multicast_FragmentDespawnCountdown
-	// void Multicast_FragmentDespawnCountdown(float floatVal);                                                              // [0x4e265c0] Net|NetReliableNative|Event|NetMulticast|Public|Const 
+	// void Multicast_FragmentDespawnCountdown(float floatVal);                                                              // [0x4dfb440] Net|NetReliableNative|Event|NetMulticast|Public|Const 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryFragmentDespawnWithTimerBehaviour
-/// Size: 0x0038 (0x000030 - 0x000068)
+/// Size: 0x0010 (0x000030 - 0x000040)
 class UCoreMemoryFragmentDespawnWithTimerBehaviour : public UCoreMemoryBehaviourBase
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x38];                                      // 0x0030   (0x0038)  MISSED
+	float                                              _fragmentPhaseIdleTime;                                     // 0x0030   (0x0004)  
+	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0034   (0x000C)  MISSED
+};
+
+/// Class /Script/CoreMemory.CoreMemoryFragmentDespawnWithTimerOnStateTagModifiedBehaviour
+/// Size: 0x0048 (0x000040 - 0x000088)
+class UCoreMemoryFragmentDespawnWithTimerOnStateTagModifiedBehaviour : public UCoreMemoryFragmentDespawnWithTimerBehaviour
+{ 
+public:
+	FGameplayTagContainer                              _tagsToTrackToStartPhase;                                   // 0x0040   (0x0020)  
+	unsigned char                                      UnknownData00_6[0x28];                                      // 0x0060   (0x0028)  MISSED
 };
 
 /// Class /Script/CoreMemory.CoreMemoryFragmentFXComponent
@@ -205,14 +215,14 @@ public:
 class UCoreMemoryFragmentFXComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4504) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentTriggered);                        // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4505) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentSpawned);                          // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,4506) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentDespawn);                          // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,4507) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentCollected);                        // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,4897) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentTriggered);                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,4898) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentSpawned);                          // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,4899) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentDespawn);                          // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,4900) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentCollected);                        // 0x00E8   (0x0010)  
 	FRotator                                           _tendrilMeshRotationOffset;                                 // 0x00F8   (0x000C)  
 	float                                              _hoverHeight;                                               // 0x0104   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x10];                                      // 0x0108   (0x0010)  MISSED
-	SDK_UNDEFINED(16,4508) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentDespawnCountingDown);              // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,4901) /* FMulticastInlineDelegate */ __um(Cosmetic_FragmentDespawnCountingDown);              // 0x0118   (0x0010)  
 };
 
 /// Class /Script/CoreMemory.CoreMemoryFragmentMoveUncollectibleBehaviour
@@ -257,6 +267,15 @@ class UCoreMemoryFragmentNotCollectedOutlineUpdateStrategy : public UCoreMemoryF
 public:
 };
 
+/// Class /Script/CoreMemory.CoreMemoryFragmentNotCollectedWithinRangeOutlineUpdateStrategy
+/// Size: 0x0008 (0x000100 - 0x000108)
+class UCoreMemoryFragmentNotCollectedWithinRangeOutlineUpdateStrategy : public UCoreMemoryFragmentNotCollectedOutlineUpdateStrategy
+{ 
+public:
+	float                                              _auraDisplayedRange;                                        // 0x0100   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0104   (0x0004)  MISSED
+};
+
 /// Class /Script/CoreMemory.CoreMemoryFragmentNotTriggeredOutlineUpdateStrategy
 /// Size: 0x0000 (0x000100 - 0x000100)
 class UCoreMemoryFragmentNotTriggeredOutlineUpdateStrategy : public UCoreMemoryFragmentOutlineUpdateStrategy
@@ -290,8 +309,8 @@ public:
 struct FCoreMemoryStatusEffectDetails
 { 
 	class UClass*                                      _statusEffect;                                              // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,4509) /* FString */               __um(_effectDurationParamKey);                              // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,4510) /* FString */               __um(_customEffectParamKey);                                // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,4902) /* FString */               __um(_effectDurationParamKey);                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,4903) /* FString */               __um(_customEffectParamKey);                                // 0x0018   (0x0010)  
 	float                                              _effectDuration;                                            // 0x0028   (0x0004)  
 	float                                              _customEffectParam;                                         // 0x002C   (0x0004)  
 };
@@ -355,6 +374,11 @@ public:
 	class UPrimitiveComponent*                         _synchronizeCoreMemoryInteractionZone;                      // 0x03D0   (0x0008)  
 	FDBDTunableRowHandle                               _synchronizeCoreMemoryInteractionSecondsToCharge;           // 0x03D8   (0x0028)  
 	FDBDTunableRowHandle                               _synchronizeCoreMemoryInteractionSecondsToChargeKiller;     // 0x0400   (0x0028)  
+
+
+	/// Functions
+	// Function /Script/CoreMemory.CoreMemoryPortal.OnInteractionStarted
+	// void OnInteractionStarted(class ADBDPlayer* Player);                                                                  // [0x4dfb6f0] Final|Native|Private 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryPortalComponent
@@ -368,7 +392,7 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryPortalComponent.GetPlayersWithActivePortal
-	// TArray<ADBDPlayer*> GetPlayersWithActivePortal();                                                                     // [0x4e26530] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<ADBDPlayer*> GetPlayersWithActivePortal();                                                                     // [0x4dfb3b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/CoreMemory.CoreMemoryPortalDefaultBehaviour
@@ -383,11 +407,11 @@ public:
 class UCoreMemoryPortalFXComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4511) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPortalSpawned);                          // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4512) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerStartedInteractingWithPortal);     // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,4513) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPortalInteractionInterrupted);           // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,4514) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPortalDeactivated);                      // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,4515) /* FMulticastInlineDelegate */ __um(Cosmetic_OnInteractionComplete);                    // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,4904) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPortalSpawned);                          // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,4905) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerStartedInteractingWithPortal);     // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,4906) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPortalInteractionInterrupted);           // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,4907) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPortalDeactivated);                      // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,4908) /* FMulticastInlineDelegate */ __um(Cosmetic_OnInteractionComplete);                    // 0x00F8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0108   (0x0018)  MISSED
 };
 
@@ -423,7 +447,7 @@ public:
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemoryScreamBehaviour.Cosmetic_Scream
-	// void Cosmetic_Scream(class ACamperPlayer* camper);                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent|Const 
+	// void Cosmetic_Scream(class ACamperPlayer* camper);                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent|Const 
 };
 
 /// Class /Script/CoreMemory.CoreMemorySpawnedStatusEffectTrackerComponent
@@ -431,13 +455,13 @@ public:
 class UCoreMemorySpawnedStatusEffectTrackerComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4516) /* TArray<TWeakObjectPtr<UStatusEffect*>> */ __um(_authority_spawnedStatusEffects);     // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(8,4517) /* TWeakObjectPtr<UCoreMemoryImposeStatusEffectBehaviour*> */ __um(_authority_imposeStatusEffectBehaviour); // 0x00C8   (0x0008)  
+	SDK_UNDEFINED(16,4909) /* TArray<TWeakObjectPtr<UStatusEffect*>> */ __um(_authority_spawnedStatusEffects);     // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(8,4910) /* TWeakObjectPtr<UCoreMemoryImposeStatusEffectBehaviour*> */ __um(_authority_imposeStatusEffectBehaviour); // 0x00C8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/CoreMemory.CoreMemorySpawnedStatusEffectTrackerComponent.Authority_AddSpawnedStatusEffect
-	// void Authority_AddSpawnedStatusEffect(class UStatusEffect* StatusEffect, class ACoreMemoryChallengePlayerSpecificController* PlayerController); // [0x4e273e0] Final|Native|Private 
+	// void Authority_AddSpawnedStatusEffect(class UStatusEffect* StatusEffect, class ACoreMemoryChallengePlayerSpecificController* PlayerController); // [0x4dfc990] Final|Native|Private 
 };
 
 /// Struct /Script/CoreMemory.CoreMemoryFragmentSpawnData
@@ -456,10 +480,20 @@ struct FCoreMemoryFragmentSpawnData
 class UCoreMemorySpawnFragmentOnEventBehaviour : public UCoreMemoryBehaviourBase
 { 
 public:
-	TArray<FGameplayTag>                               _spawnFragmentOnGameEvents;                                 // 0x0030   (0x0010)  
-	FCoreMemoryFragmentSpawnData                       _fragmentSpawnData;                                         // 0x0040   (0x0018)  
+	FCoreMemoryFragmentSpawnData                       _fragmentSpawnData;                                         // 0x0030   (0x0018)  
+	TArray<FGameplayTag>                               _spawnFragmentOnGameEvents;                                 // 0x0048   (0x0010)  
 	bool                                               _onlyForKiller;                                             // 0x0058   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x27];                                      // 0x0059   (0x0027)  MISSED
+	bool                                               _onlyForSurvivors;                                          // 0x0059   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x26];                                      // 0x005A   (0x0026)  MISSED
+};
+
+/// Class /Script/CoreMemory.CoreMemorySpawnFragmentOnEventWithinRangeOfTargetBehaviour
+/// Size: 0x0008 (0x000080 - 0x000088)
+class UCoreMemorySpawnFragmentOnEventWithinRangeOfTargetBehaviour : public UCoreMemorySpawnFragmentOnEventBehaviour
+{ 
+public:
+	ETileSpawnPointType                                _tileSpawnPointType;                                        // 0x0080   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0081   (0x0007)  MISSED
 };
 
 /// Class /Script/CoreMemory.CoreMemorySpawnFragmentsOnCollectBehaviour
@@ -471,11 +505,13 @@ public:
 };
 
 /// Class /Script/CoreMemory.CoreMemorySpawnFragmentsOnRandPlayerSpawnBehaviour
-/// Size: 0x0018 (0x000030 - 0x000048)
+/// Size: 0x0020 (0x000030 - 0x000050)
 class UCoreMemorySpawnFragmentsOnRandPlayerSpawnBehaviour : public UCoreMemoryBehaviourBase
 { 
 public:
 	FCoreMemoryFragmentSpawnData                       _fragmentSpawnData;                                         // 0x0030   (0x0018)  
+	ETileSpawnPointType                                _tileSpawnPointType;                                        // 0x0048   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0049   (0x0007)  MISSED
 };
 
 /// Class /Script/CoreMemory.CoreMemoryUtilities
@@ -486,10 +522,9 @@ public:
 };
 
 /// Class /Script/CoreMemory.SynchronizeCoreMemoryInteraction
-/// Size: 0x0050 (0x000790 - 0x0007E0)
+/// Size: 0x0000 (0x000790 - 0x000790)
 class USynchronizeCoreMemoryInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x50];                                      // 0x0790   (0x0050)  MISSED
 };
 

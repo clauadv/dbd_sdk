@@ -30,7 +30,7 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.Anniversary2023EventComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4db0cf0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x4d80c50] Final|Native|Private 
 };
 
 /// Struct /Script/Anniversary2023.MarionetteMeshData
@@ -78,7 +78,7 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.BloodlustExpose.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.BloodlustExposeInteraction
@@ -93,9 +93,9 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.BloodlustExposeInteraction.Multicast_BloodlustExpose
-	// void Multicast_BloodlustExpose(class ADBDPlayer* Player, class ACamperPlayer* Target);                                // [0x4db1420] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_BloodlustExpose(class ADBDPlayer* Player, class ACamperPlayer* Target);                                // [0x4d81380] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Anniversary2023.BloodlustExposeInteraction.Cosmetic_BloodlustExpose
-	// void Cosmetic_BloodlustExpose(class ADBDPlayer* Player, class ACamperPlayer* Target);                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_BloodlustExpose(class ADBDPlayer* Player, class ACamperPlayer* Target);                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.FragilePalletComponent
@@ -103,8 +103,8 @@ public:
 class UFragilePalletComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3536) /* FMulticastInlineDelegate */ __um(Cosmetic_OnFragilePalletSpawnBegin);                // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,3537) /* FMulticastInlineDelegate */ __um(Cosmetic_OnFragilePalletSpawnEnd);                  // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,3627) /* FMulticastInlineDelegate */ __um(Cosmetic_OnFragilePalletSpawnBegin);                // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3628) /* FMulticastInlineDelegate */ __um(Cosmetic_OnFragilePalletSpawnEnd);                  // 0x00C8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x00D8   (0x0008)  MISSED
 	FDBDTunableRowHandle                               _fragilePalletSpawnTime;                                    // 0x00E0   (0x0028)  
 };
@@ -127,7 +127,7 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.FragilePalletTrackerVisibilityComponent.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x4db1a20] Final|Native|Private 
+	// void OnLocallyObservedChanged();                                                                                      // [0x4d81980] Final|Native|Private 
 };
 
 /// Class /Script/Anniversary2023.InvitationPlayerComponent
@@ -155,23 +155,23 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.OnRep_InvitationChargesInt
-	// void OnRep_InvitationChargesInt();                                                                                    // [0x4db2a50] Final|Native|Protected 
+	// void OnRep_InvitationChargesInt();                                                                                    // [0x4d829b0] Final|Native|Protected 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.OnRep_CooldownTimer
-	// void OnRep_CooldownTimer();                                                                                           // [0x4db2a30] Final|Native|Protected 
+	// void OnRep_CooldownTimer();                                                                                           // [0x4d82990] Final|Native|Protected 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4db2a10] Native|Protected     
+	// void OnLevelReadyToPlay();                                                                                            // [0x4d82970] Native|Protected     
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.Multicast_CosmeticOnInvitationInteractionActivate
-	// void Multicast_CosmeticOnInvitationInteractionActivate(class ADBDPlayer* Player, class AActor* Target);               // [0x4db2940] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_CosmeticOnInvitationInteractionActivate(class ADBDPlayer* Player, class AActor* Target);               // [0x4d828a0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.Cosmetic_SetVFXParticlesVisibility
-	// void Cosmetic_SetVFXParticlesVisibility(bool IsVisible);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetVFXParticlesVisibility(bool IsVisible);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.Cosmetic_OnPlayerInChaseStateChanged
-	// void Cosmetic_OnPlayerInChaseStateChanged(bool inChase);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerInChaseStateChanged(bool inChase);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.Cosmetic_OnInvitationInteractionReady
-	// void Cosmetic_OnInvitationInteractionReady(bool IsReady);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInvitationInteractionReady(bool IsReady);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.Cosmetic_OnInvitationInteractionActivate
-	// void Cosmetic_OnInvitationInteractionActivate(class ADBDPlayer* abilityCaster, class AActor* Target);                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInvitationInteractionActivate(class ADBDPlayer* abilityCaster, class AActor* Target);                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary2023.InvitationPlayerComponent.Cosmetic_OnInvitationChargesIntChanged
-	// void Cosmetic_OnInvitationChargesIntChanged(int32_t invitationCharge);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInvitationChargesIntChanged(int32_t invitationCharge);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.InvitationKillerComponent
@@ -191,11 +191,11 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.InvitationKillerComponent.OnRep_NegateStunInteraction
-	// void OnRep_NegateStunInteraction(class UKillerNegateStunInteraction* prevNegateStunInteraction);                      // [0x4db1fc0] Final|Native|Protected 
+	// void OnRep_NegateStunInteraction(class UKillerNegateStunInteraction* prevNegateStunInteraction);                      // [0x4d81f20] Final|Native|Protected 
 	// Function /Script/Anniversary2023.InvitationKillerComponent.Cosmetic_SetVignetteVisibility
-	// void Cosmetic_SetVignetteVisibility(bool IsVisible);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetVignetteVisibility(bool IsVisible);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary2023.InvitationKillerComponent.Cosmetic_ActivateVFXOnKillerStunned
-	// void Cosmetic_ActivateVFXOnKillerStunned();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivateVFXOnKillerStunned();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.InvitationTargetComponent
@@ -211,9 +211,9 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.InvitationTargetComponent.OnRep_TargetGameObject
-	// void OnRep_TargetGameObject(class AActor* previousTarget);                                                            // [0x4db31c0] Final|Native|Private 
+	// void OnRep_TargetGameObject(class AActor* previousTarget);                                                            // [0x4d83120] Final|Native|Private 
 	// Function /Script/Anniversary2023.InvitationTargetComponent.Cosmetic_OnTargetObjectChanged
-	// void Cosmetic_OnTargetObjectChanged(class AActor* Target, class AActor* lastTarget);                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTargetObjectChanged(class AActor* Target, class AActor* lastTarget);                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.InvitationKillerTargetComponent
@@ -265,9 +265,9 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.KillerNegateStunInteraction.OnRep_StatusEffect
-	// void OnRep_StatusEffect(class UStatusEffect* previousStatusEffect);                                                   // [0x4db35e0] Final|Native|Private 
+	// void OnRep_StatusEffect(class UStatusEffect* previousStatusEffect);                                                   // [0x4d83540] Final|Native|Private 
 	// Function /Script/Anniversary2023.KillerNegateStunInteraction.Cosmetic_OnInteractionUpdateStart
-	// void Cosmetic_OnInteractionUpdateStart(class ADBDPlayer* interactingPlayer, class AInteractable* Interactable);       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionUpdateStart(class ADBDPlayer* interactingPlayer, class AInteractable* Interactable);       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.RemoteDestroyInteraction
@@ -282,11 +282,11 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.RemoteDestroyInteraction.Multicast_RemoteDestroy
-	// void Multicast_RemoteDestroy(class ADBDPlayer* Player, class AInteractable* Interactable);                            // [0x4db1420] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RemoteDestroy(class ADBDPlayer* Player, class AInteractable* Interactable);                            // [0x4d81380] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Anniversary2023.RemoteDestroyInteraction.ExplodeInteractable
-	// void ExplodeInteractable(class ADBDPlayer* Player, class AInteractable* Interactable);                                // [0x4db3900] Final|Native|Protected|Const 
+	// void ExplodeInteractable(class ADBDPlayer* Player, class AInteractable* Interactable);                                // [0x4d83860] Final|Native|Protected|Const 
 	// Function /Script/Anniversary2023.RemoteDestroyInteraction.Cosmetic_OnRemoteDestroy
-	// void Cosmetic_OnRemoteDestroy(class ADBDPlayer* interactingPlayer, class AInteractable* Interactable);                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRemoteDestroy(class ADBDPlayer* interactingPlayer, class AInteractable* Interactable);                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.ReverseBamboozleInteractionDefinition
@@ -303,9 +303,9 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.ReverseBamboozleInteractionDefinition.Multicast_OnWindowBlockBegin
-	// void Multicast_OnWindowBlockBegin(class ADBDPlayer* abilityCaster, class AWindow* Window);                            // [0x4db1420] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnWindowBlockBegin(class ADBDPlayer* abilityCaster, class AWindow* Window);                            // [0x4d81380] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Anniversary2023.ReverseBamboozleInteractionDefinition.Cosmetic_OnWindowBlockBegin
-	// void Cosmetic_OnWindowBlockBegin(class ADBDPlayer* abilityCaster, class AWindow* Window, float Duration);             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnWindowBlockBegin(class ADBDPlayer* abilityCaster, class AWindow* Window, float Duration);             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary2023.ShortenStunDurationEffect
@@ -329,8 +329,8 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2023.SpawnedPalletTracker.SetIndicatorOutlineVisibility
-	// void SetIndicatorOutlineVisibility(bool activated);                                                                   // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void SetIndicatorOutlineVisibility(bool activated);                                                                   // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/Anniversary2023.SpawnedPalletTracker.OnRep_TrackedPallet
-	// void OnRep_TrackedPallet();                                                                                           // [0x4db4510] Final|Native|Private 
+	// void OnRep_TrackedPallet();                                                                                           // [0x4d84470] Final|Native|Private 
 };
 

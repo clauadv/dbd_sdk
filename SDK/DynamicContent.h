@@ -16,9 +16,9 @@
 class UAsyncTaskDownloadCacheImage : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,4582) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4583) /* FMulticastInlineDelegate */ __um(OnFail);                                            // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,4584) /* FString */               __um(_url);                                                 // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,4976) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,4977) /* FMulticastInlineDelegate */ __um(OnFail);                                            // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,4978) /* FString */               __um(_url);                                                 // 0x0058   (0x0010)  
 };
 
 /// Class /Script/DynamicContent.DownloadingTextureTask
@@ -27,16 +27,16 @@ class UDownloadingTextureTask : public UObject
 { 
 public:
 	class UAsyncTaskDownloadCacheImage*                _downloadingTask;                                           // 0x0030   (0x0008)  
-	SDK_UNDEFINED(16,4585) /* FString */               __um(_url);                                                 // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,4979) /* FString */               __um(_url);                                                 // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0048   (0x0018)  MISSED
 	class UTexture2DDynamic*                           _downloadedTexture;                                         // 0x0060   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/DynamicContent.DownloadingTextureTask.OnDownloadSucceeded
-	// void OnDownloadSucceeded(class UTexture2DDynamic* textureDownloaded);                                                 // [0x8615720] Final|Native|Private 
+	// void OnDownloadSucceeded(class UTexture2DDynamic* textureDownloaded);                                                 // [0x8628890] Final|Native|Private 
 	// Function /Script/DynamicContent.DownloadingTextureTask.OnDownloadFailed
-	// void OnDownloadFailed(class UTexture2DDynamic* textureDownloaded);                                                    // [0x8615690] Final|Native|Private 
+	// void OnDownloadFailed(class UTexture2DDynamic* textureDownloaded);                                                    // [0x8628800] Final|Native|Private 
 };
 
 /// Class /Script/DynamicContent.DownloadMultiTextureTask
@@ -46,14 +46,14 @@ class UDownloadMultiTextureTask : public UObject
 public:
 	TArray<class UDownloadingTextureTask*>             _downloadingTasks;                                          // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0040   (0x0018)  MISSED
-	SDK_UNDEFINED(80,4586) /* TMap<FName, UTexture2DDynamic*> */ __um(_downloadedTextures);                        // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,4980) /* TMap<FName, UTexture2DDynamic*> */ __um(_downloadedTextures);                        // 0x0058   (0x0050)  
 	int32_t                                            _remainingTasks;                                            // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00AC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/DynamicContent.DownloadMultiTextureTask.OnTextureDownloadComplete
-	// void OnTextureDownloadComplete(class UDownloadingTextureTask* taskCompleted);                                         // [0x8615910] Final|Native|Private 
+	// void OnTextureDownloadComplete(class UDownloadingTextureTask* taskCompleted);                                         // [0x8628a80] Final|Native|Private 
 };
 
 /// Struct /Script/DynamicContent.LRUTextureCache
@@ -61,7 +61,7 @@ public:
 struct FLRUTextureCache
 { 
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0000   (0x0010)  MISSED
-	SDK_UNDEFINED(80,4587) /* TMap<FName, UTexture2DDynamic*> */ __um(_cachedTextures);                            // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,4981) /* TMap<FName, UTexture2DDynamic*> */ __um(_cachedTextures);                            // 0x0010   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0060   (0x0008)  MISSED
 };
 
@@ -88,7 +88,7 @@ public:
 
 	/// Functions
 	// Function /Script/DynamicContent.DynamicContentHolder.OnDownloadingTaskComplete
-	// void OnDownloadingTaskComplete(class UDownloadMultiTextureTask* completeTask);                                        // [0x8615c80] Final|Native|Private 
+	// void OnDownloadingTaskComplete(class UDownloadMultiTextureTask* completeTask);                                        // [0x8628df0] Final|Native|Private 
 };
 
 /// Class /Script/DynamicContent.LoadingImagesDataProvider
@@ -96,7 +96,7 @@ public:
 class ULoadingImagesDataProvider : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,4588) /* TMap<FName, FLoadingImages> */ __um(_cachedLoadingImages);                           // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,4982) /* TMap<FName, FLoadingImages> */ __um(_cachedLoadingImages);                           // 0x0030   (0x0050)  
 	class UDynamicContentHolder*                       _owningDynamicContentHolder;                                // 0x0080   (0x0008)  
 };
 
@@ -117,16 +117,16 @@ struct FBaseBannerData
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
 	int32_t                                            Priority;                                                   // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(24,4589) /* FText */                 __um(TitleId);                                              // 0x0010   (0x0018)  
-	SDK_UNDEFINED(16,4590) /* FString */               __um(BannerContentId);                                      // 0x0028   (0x0010)  
+	SDK_UNDEFINED(24,4983) /* FText */                 __um(TitleId);                                              // 0x0010   (0x0018)  
+	SDK_UNDEFINED(16,4984) /* FString */               __um(BannerContentId);                                      // 0x0028   (0x0010)  
 };
 
 /// Struct /Script/DynamicContent.LoadingImagesHintInfo
 /// Size: 0x00C8 (0x000000 - 0x0000C8)
 struct FLoadingImagesHintInfo
 { 
-	SDK_UNDEFINED(24,4591) /* FText */                 __um(Title);                                                // 0x0000   (0x0018)  
-	SDK_UNDEFINED(24,4592) /* FText */                 __um(Description);                                          // 0x0018   (0x0018)  
+	SDK_UNDEFINED(24,4985) /* FText */                 __um(Title);                                                // 0x0000   (0x0018)  
+	SDK_UNDEFINED(24,4986) /* FText */                 __um(Description);                                          // 0x0018   (0x0018)  
 	FSlateBrush                                        Icon;                                                       // 0x0030   (0x0090)  
 	bool                                               IsAvailableForKiller;                                       // 0x00C0   (0x0001)  
 	bool                                               IsAvailableForSurvivor;                                     // 0x00C1   (0x0001)  
@@ -151,7 +151,7 @@ struct FLoadingImages
 /// Size: 0x0028 (0x000038 - 0x000060)
 struct FMarketingBannerData : FBaseBannerData
 { 
-	SDK_UNDEFINED(24,4593) /* FText */                 __um(SubTitleId);                                           // 0x0038   (0x0018)  
-	SDK_UNDEFINED(16,4594) /* FString */               __um(DeepLink);                                             // 0x0050   (0x0010)  
+	SDK_UNDEFINED(24,4987) /* FText */                 __um(SubTitleId);                                           // 0x0038   (0x0018)  
+	SDK_UNDEFINED(16,4988) /* FString */               __um(DeepLink);                                             // 0x0050   (0x0010)  
 };
 

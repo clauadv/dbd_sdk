@@ -62,13 +62,13 @@ public:
 	class UAnimSequence*                               _huskPortalExit;                                            // 0x02E0   (0x0008)  
 	class UAnimMontage*                                _demogorgonPortalExit;                                      // 0x02E8   (0x0008)  
 	class UAnimMontage*                                _demogorgonPortalEntry;                                     // 0x02F0   (0x0008)  
-	SDK_UNDEFINED(8,3109) /* TWeakObjectPtr<UDemogorgonPortalPlacerStateComponent*> */ __um(_demogorgonPortalPlacerState); // 0x02F8   (0x0008)  
+	SDK_UNDEFINED(8,3181) /* TWeakObjectPtr<UDemogorgonPortalPlacerStateComponent*> */ __um(_demogorgonPortalPlacerState); // 0x02F8   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x40];                                      // 0x0300   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonHuskAnimInstance.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5a3d360] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5a46410] Final|Native|Private 
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPortal
@@ -95,39 +95,39 @@ public:
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonPortal.TriggerDirtExplosion
-	// void TriggerDirtExplosion();                                                                                          // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void TriggerDirtExplosion();                                                                                          // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.ShowPortalTeleportInteractionStartVFX
-	// void ShowPortalTeleportInteractionStartVFX();                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void ShowPortalTeleportInteractionStartVFX();                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.ShowPortalActiveVFX
-	// void ShowPortalActiveVFX();                                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void ShowPortalActiveVFX();                                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.RemovePortalTeleportInteractionStartVFX
-	// void RemovePortalTeleportInteractionStartVFX();                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void RemovePortalTeleportInteractionStartVFX();                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.RemovePortalActiveVFX
-	// void RemovePortalActiveVFX();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void RemovePortalActiveVFX();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.PlaySoundFromPortal
-	// void PlaySoundFromPortal(class UAkAudioEvent* SoundEvent);                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void PlaySoundFromPortal(class UAkAudioEvent* SoundEvent);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.OnTeleportAbilityCooldownChangedVFX
-	// void OnTeleportAbilityCooldownChangedVFX(bool isOnCooldown);                                                          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnTeleportAbilityCooldownChangedVFX(bool isOnCooldown);                                                          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.OnTargetedChanged
-	// void OnTargetedChanged();                                                                                             // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnTargetedChanged();                                                                                             // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.OnPortalStateChanged
-	// void OnPortalStateChanged(EDemogorgonPortalState State);                                                              // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnPortalStateChanged(EDemogorgonPortalState State);                                                              // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.OnPortalDestroyed
-	// void OnPortalDestroyed(class ADBDPlayer* Player);                                                                     // [0x5a3e200] Final|Native|Public|BlueprintCallable 
+	// void OnPortalDestroyed(class ADBDPlayer* Player);                                                                     // [0x5a472b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.OnEndOverlapPortalArea
-	// void OnEndOverlapPortalArea(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5a3e0a0] Final|Native|Protected 
+	// void OnEndOverlapPortalArea(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5a47150] Final|Native|Protected 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.OnBeginOverlapPortalArea
-	// void OnBeginOverlapPortalArea(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a3de80] Final|Native|Protected|HasOutParms 
+	// void OnBeginOverlapPortalArea(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a46f30] Final|Native|Protected|HasOutParms 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.MakePortalDisappearVFX
-	// void MakePortalDisappearVFX();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void MakePortalDisappearVFX();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.IsTargeted
-	// bool IsTargeted();                                                                                                    // [0x5a3de60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTargeted();                                                                                                    // [0x5a46f10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.Authority_StopDestroyingPlayers
-	// void Authority_StopDestroyingPlayers();                                                                               // [0x5a3de40] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_StopDestroyingPlayers();                                                                               // [0x5a46ef0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheDemogorgon.DemogorgonPortal.Authority_OnTeleportChargePercentChanged
-	// void Authority_OnTeleportChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5a3dd30] Final|Native|Public  
+	// void Authority_OnTeleportChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5a46de0] Final|Native|Public  
 	// Function /Script/TheDemogorgon.DemogorgonPortal.Authority_OnDestroyChargePercentChanged
-	// void Authority_OnDestroyChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5a3dc20] Final|Native|Public  
+	// void Authority_OnDestroyChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5a46cd0] Final|Native|Public  
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPortalOutlineUpdateStrategy
@@ -166,7 +166,7 @@ struct FPortalRestrictedLocation
 class UDemogorgonPortalPlacerStateComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3110) /* FMulticastInlineDelegate */ __um(OnTeleportCooldownComplete);                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3182) /* FMulticastInlineDelegate */ __um(OnTeleportCooldownComplete);                        // 0x00B8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0xC];                                       // 0x00C8   (0x000C)  MISSED
 	int32_t                                            _remainingPortals;                                          // 0x00D4   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x48];                                      // 0x00D8   (0x0048)  MISSED
@@ -177,19 +177,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.UpdateRemainingPortalCount
-	// void UpdateRemainingPortalCount();                                                                                    // [0x5a3ebf0] Final|Native|Private 
+	// void UpdateRemainingPortalCount();                                                                                    // [0x5a47c10] Final|Native|Private 
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5a3ebd0] Final|Native|Public  
+	// void OnLevelReadyToPlay();                                                                                            // [0x5a47bf0] Final|Native|Public  
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.OnDemogorgonTeleportCooldownComplete__DelegateSignature
-	// void OnDemogorgonTeleportCooldownComplete__DelegateSignature();                                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnDemogorgonTeleportCooldownComplete__DelegateSignature();                                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.IsUsePortalCooldownDone
-	// bool IsUsePortalCooldownDone();                                                                                       // [0x5a3eba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUsePortalCooldownDone();                                                                                       // [0x5a47bc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.InitializeTunableValues
-	// void InitializeTunableValues(class ASlasherPlayer* killer);                                                           // [0x5a3eb10] Final|Native|Private 
+	// void InitializeTunableValues(class ASlasherPlayer* killer);                                                           // [0x5a47b30] Final|Native|Private 
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.GetTeleportDuration
-	// float GetTeleportDuration();                                                                                          // [0x5a3eaf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTeleportDuration();                                                                                          // [0x5a47b10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDemogorgon.DemogorgonPortalPlacerStateComponent.GetRemainingPortalCount
-	// int32_t GetRemainingPortalCount();                                                                                    // [0x5a3ead0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRemainingPortalCount();                                                                                    // [0x5a47af0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPortalRadiusDetectorComponent
@@ -206,13 +206,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonPortalRadiusDetectorComponent.OnRep_PlayersInsideRadius
-	// void OnRep_PlayersInsideRadius();                                                                                     // [0x5a3ef80] Final|Native|Private 
+	// void OnRep_PlayersInsideRadius();                                                                                     // [0x5a47fa0] Final|Native|Private 
 	// Function /Script/TheDemogorgon.DemogorgonPortalRadiusDetectorComponent.OnPortalEffectsAppliedMultiDelegate__DelegateSignature
-	// void OnPortalEffectsAppliedMultiDelegate__DelegateSignature();                                                        // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnPortalEffectsAppliedMultiDelegate__DelegateSignature();                                                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheDemogorgon.DemogorgonPortalRadiusDetectorComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5a3ef60] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5a47f80] Final|Native|Private 
 	// Function /Script/TheDemogorgon.DemogorgonPortalRadiusDetectorComponent.Authority_CallOnPortalEffectsApplied
-	// void Authority_CallOnPortalEffectsApplied(FDelegateProperty Callback);                                                // [0x5a3eeb0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_CallOnPortalEffectsApplied(FDelegateProperty Callback);                                                // [0x5a47ed0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPortalTargetingComponent
@@ -227,13 +227,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonPortalTargetingComponent.SetIsPorting
-	// void SetIsPorting(bool isPorting);                                                                                    // [0x5a3f400] Final|Native|Public|BlueprintCallable 
+	// void SetIsPorting(bool isPorting);                                                                                    // [0x5a48420] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheDemogorgon.DemogorgonPortalTargetingComponent.Server_SetTargetedPortal
-	// void Server_SetTargetedPortal(class ADemogorgonPortal* targetedPortal);                                               // [0x5a3f340] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_SetTargetedPortal(class ADemogorgonPortal* targetedPortal);                                               // [0x5a48360] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheDemogorgon.DemogorgonPortalTargetingComponent.Multicast_SetTargetedPortal
-	// void Multicast_SetTargetedPortal(class ADemogorgonPortal* targetedPortal);                                            // [0x5a3f280] Final|Net|NetReliableNative|Event|NetMulticast|Private|NetValidate 
+	// void Multicast_SetTargetedPortal(class ADemogorgonPortal* targetedPortal);                                            // [0x5a482a0] Final|Net|NetReliableNative|Event|NetMulticast|Private|NetValidate 
 	// Function /Script/TheDemogorgon.DemogorgonPortalTargetingComponent.GetTargetedPortal
-	// class ADemogorgonPortal* GetTargetedPortal();                                                                         // [0x5a3f260] Final|Native|Public|BlueprintCallable 
+	// class ADemogorgonPortal* GetTargetedPortal();                                                                         // [0x5a48280] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPounceAttack
@@ -273,25 +273,26 @@ public:
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPounceInteraction
-/// Size: 0x00B0 (0x000790 - 0x000840)
+/// Size: 0x00C0 (0x000790 - 0x000850)
 class UDemogorgonPounceInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x68];                                      // 0x0790   (0x0068)  MISSED
-	class UChargedAttackStateComponent*                _chargedAttackState;                                        // 0x07F8   (0x0008)  
-	class ASlasherPlayer*                              _owningSlasher;                                             // 0x0800   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x38];                                      // 0x0808   (0x0038)  MISSED
+	unsigned char                                      UnknownData00_2[0x70];                                      // 0x0790   (0x0070)  MISSED
+	class UClass*                                      _demogorgonPounceFOVStatusEffectClass;                      // 0x0800   (0x0008)  
+	class UChargedAttackStateComponent*                _chargedAttackState;                                        // 0x0808   (0x0008)  
+	class ASlasherPlayer*                              _owningSlasher;                                             // 0x0810   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x38];                                      // 0x0818   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonPounceInteraction.TriggerHuntingAudioEvent
-	// void TriggerHuntingAudioEvent(bool isHunting);                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void TriggerHuntingAudioEvent(bool isHunting);                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPounceInteraction.TriggerChargeCancelAudioEvent
-	// void TriggerChargeCancelAudioEvent();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void TriggerChargeCancelAudioEvent();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPounceInteraction.OnChargedAttackReadyChanged
-	// void OnChargedAttackReadyChanged(bool Ready);                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnChargedAttackReadyChanged(bool Ready);                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.DemogorgonPounceInteraction.OnCancelCooldownComplete
-	// void OnCancelCooldownComplete();                                                                                      // [0x5a3fe00] Native|Event|Protected|BlueprintEvent 
+	// void OnCancelCooldownComplete();                                                                                      // [0x5a48de0] Native|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDemogorgon.DemogorgonPower
@@ -331,19 +332,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DemogorgonStealthComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5a40470] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5a49450] Final|Native|Private 
 };
 
 /// Class /Script/TheDemogorgon.DestroyDemogorgonPortalInteraction
-/// Size: 0x0000 (0x000790 - 0x000790)
+/// Size: 0x0010 (0x000790 - 0x0007A0)
 class UDestroyDemogorgonPortalInteraction : public UChargeableInteractionDefinition
 { 
 public:
+	class ADemogorgonPortal*                           _owningPortal;                                              // 0x0790   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0798   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDemogorgon.DestroyDemogorgonPortalInteraction.Authority_OnChargeApplied
-	// void Authority_OnChargeApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5a40600] Final|Native|Private 
+	// void Authority_OnChargeApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5a495e0] Final|Native|Private 
 };
 
 /// Class /Script/TheDemogorgon.ElevensSodaAddon
@@ -357,9 +360,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheDemogorgon.ElevensSodaAddon.Multicast_UnhighlightGenerator
-	// void Multicast_UnhighlightGenerator(class AGenerator* Generator);                                                     // [0x5a40b50] Final|Net|NetReliableNative|Event|NetMulticast|Private|Const 
+	// void Multicast_UnhighlightGenerator(class AGenerator* Generator);                                                     // [0x5a49b30] Final|Net|NetReliableNative|Event|NetMulticast|Private|Const 
 	// Function /Script/TheDemogorgon.ElevensSodaAddon.Multicast_HighlightGenerator
-	// void Multicast_HighlightGenerator(class AGenerator* Generator);                                                       // [0x5a40ac0] Final|Net|NetReliableNative|Event|NetMulticast|Private|Const 
+	// void Multicast_HighlightGenerator(class AGenerator* Generator);                                                       // [0x5a49aa0] Final|Net|NetReliableNative|Event|NetMulticast|Private|Const 
 };
 
 /// Class /Script/TheDemogorgon.LeproseLichenAddon
@@ -386,13 +389,14 @@ public:
 };
 
 /// Class /Script/TheDemogorgon.SetGroundPortalInteraction
-/// Size: 0x0010 (0x000790 - 0x0007A0)
+/// Size: 0x0020 (0x000790 - 0x0007B0)
 class USetGroundPortalInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	class UDemogorgonPortalPlacerStateComponent*       _portalPlacerState;                                         // 0x0788   (0x0008)  
-	class UObjectPlacerComponent*                      _trapPlacerComponent;                                       // 0x0790   (0x0008)  
-	class UClass*                                      _portalClassToSpawn;                                        // 0x0798   (0x0008)  
+	class UDemogorgonPortalPlacerStateComponent*       _portalPlacerState;                                         // 0x0790   (0x0008)  
+	class UObjectPlacerComponent*                      _trapPlacerComponent;                                       // 0x0798   (0x0008)  
+	class UClass*                                      _portalClassToSpawn;                                        // 0x07A0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x07A8   (0x0008)  MISSED
 };
 
 /// Class /Script/TheDemogorgon.TeleportToDemogorgonPortalInteraction
@@ -400,25 +404,25 @@ public:
 class UTeleportToDemogorgonPortalInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	float                                              _teleportToPortalSoundRange;                                // 0x0788   (0x0004)  
-	float                                              _inputReleaseChargePercentAllowance;                        // 0x078C   (0x0004)  
-	float                                              _enterPortalPhaseDuration;                                  // 0x0790   (0x0004)  
-	float                                              _cancelTeleportingPhaseDuration;                            // 0x0794   (0x0004)  
-	class UClass*                                      _redMossStatusEffectClass;                                  // 0x0798   (0x0008)  
-	class UDemogorgonPortalTargetingComponent*         _portalTargetingComponent;                                  // 0x07A0   (0x0008)  
-	class UDemogorgonPortalPlacerStateComponent*       _portalPlacerState;                                         // 0x07A8   (0x0008)  
-	class ADemogorgonPortal*                           _startingPortal;                                            // 0x07B0   (0x0008)  
-	class ADemogorgonPortal*                           _targetedPortal;                                            // 0x07B8   (0x0008)  
-	class ADBDPlayer*                                  _interactingPlayer;                                         // 0x07C0   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x88];                                      // 0x07C8   (0x0088)  MISSED
+	float                                              _teleportToPortalSoundRange;                                // 0x0790   (0x0004)  
+	float                                              _inputReleaseChargePercentAllowance;                        // 0x0794   (0x0004)  
+	float                                              _enterPortalPhaseDuration;                                  // 0x0798   (0x0004)  
+	float                                              _cancelTeleportingPhaseDuration;                            // 0x079C   (0x0004)  
+	class UClass*                                      _redMossStatusEffectClass;                                  // 0x07A0   (0x0008)  
+	class UDemogorgonPortalTargetingComponent*         _portalTargetingComponent;                                  // 0x07A8   (0x0008)  
+	class UDemogorgonPortalPlacerStateComponent*       _portalPlacerState;                                         // 0x07B0   (0x0008)  
+	class ADemogorgonPortal*                           _startingPortal;                                            // 0x07B8   (0x0008)  
+	class ADemogorgonPortal*                           _targetedPortal;                                            // 0x07C0   (0x0008)  
+	class ADBDPlayer*                                  _interactingPlayer;                                         // 0x07C8   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x80];                                      // 0x07D0   (0x0080)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDemogorgon.TeleportToDemogorgonPortalInteraction.OnTeleportInteractionCanceledVFX
-	// void OnTeleportInteractionCanceledVFX();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnTeleportInteractionCanceledVFX();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDemogorgon.TeleportToDemogorgonPortalInteraction.OnSlasherSet
-	// void OnSlasherSet(class ASlasherPlayer* killer);                                                                      // [0x5a41310] Final|Native|Private 
+	// void OnSlasherSet(class ASlasherPlayer* killer);                                                                      // [0x5a4a290] Final|Native|Private 
 	// Function /Script/TheDemogorgon.TeleportToDemogorgonPortalInteraction.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged(bool isKillerLocallyObserved);                                                          // [0x5a41280] Final|Native|Private 
+	// void OnLocallyObservedChanged(bool isKillerLocallyObserved);                                                          // [0x5a4a200] Final|Native|Private 
 };
 

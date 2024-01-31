@@ -41,7 +41,7 @@ public:
 
 	/// Functions
 	// Function /Script/Activation.ActivatorComponent.SetObjectState
-	// void SetObjectState(class UGameplayTagContainerComponent* objectState);                                               // [0x8482220] Final|Native|Public|BlueprintCallable 
+	// void SetObjectState(class UGameplayTagContainerComponent* objectState);                                               // [0x8493560] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Activation.Activatable

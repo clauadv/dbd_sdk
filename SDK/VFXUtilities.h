@@ -27,8 +27,8 @@ public:
 
 	/// Functions
 	// Function /Script/VFXUtilities.VFXUtilities.SetParticleSystemsActive
-	// void SetParticleSystemsActive(TSet<UFXSystemComponent*> particleSystems, bool Active, bool Reset);                    // [0x860f860] Final|Native|Static|Public|BlueprintCallable 
+	// void SetParticleSystemsActive(TSet<UFXSystemComponent*> particleSystems, bool Active, bool Reset);                    // [0x8622b10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/VFXUtilities.VFXUtilities.SetParticleSystemActive
-	// void SetParticleSystemActive(class UFXSystemComponent* ParticleSystem, bool Active, bool Reset);                      // [0x860f750] Final|Native|Static|Public|BlueprintCallable 
+	// void SetParticleSystemActive(class UFXSystemComponent* ParticleSystem, bool Active, bool Reset);                      // [0x8622a00] Final|Native|Static|Public|BlueprintCallable 
 };
 

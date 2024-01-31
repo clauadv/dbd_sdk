@@ -35,7 +35,7 @@ public:
 	float                                              MaximumDistanceFromCamera;                                  // 0x0238   (0x0004)  
 	float                                              HorizontalAngleFreedom;                                     // 0x023C   (0x0004)  
 	float                                              VerticalAngleFreedom;                                       // 0x0240   (0x0004)  
-	SDK_UNDEFINED(1,4554) /* TEnumAsByte<MotionType> */ __um(CameraMotionType);                                    // 0x0244   (0x0001)  
+	SDK_UNDEFINED(1,4947) /* TEnumAsByte<MotionType> */ __um(CameraMotionType);                                    // 0x0244   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0245   (0x0003)  MISSED
 	int32_t                                            KeyPoseNumber;                                              // 0x0248   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x024C   (0x0004)  MISSED
@@ -68,14 +68,14 @@ public:
 
 	/// Functions
 	// Function /Script/DBDProceduralCamera.ProceduralCameraRaD.SelectTracks
-	// void SelectTracks();                                                                                                  // [0x4c55220] Final|Native|Public  
+	// void SelectTracks();                                                                                                  // [0x4c24fe0] Final|Native|Public  
 	// Function /Script/DBDProceduralCamera.ProceduralCameraRaD.PlayCinematic
-	// void PlayCinematic();                                                                                                 // [0x4c55200] Final|Native|Private 
+	// void PlayCinematic();                                                                                                 // [0x4c24fc0] Final|Native|Private 
 	// Function /Script/DBDProceduralCamera.ProceduralCameraRaD.OnCameraTransition
-	// void OnCameraTransition(float TransitionDuration, float BeginAt);                                                     // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnCameraTransition(float TransitionDuration, float BeginAt);                                                     // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/DBDProceduralCamera.ProceduralCameraRaD.ComputeTrackObstructionScore
-	// void ComputeTrackObstructionScore(FCameraShot& CameraShot);                                                           // [0x4c55150] Final|Native|Private|HasOutParms 
+	// void ComputeTrackObstructionScore(FCameraShot& CameraShot);                                                           // [0x4c24f10] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDProceduralCamera.ProceduralCameraRaD.BeginCinematic
-	// void BeginCinematic();                                                                                                // [0x4c55130] Final|Native|Public  
+	// void BeginCinematic();                                                                                                // [0x4c24ef0] Final|Native|Public  
 };
 

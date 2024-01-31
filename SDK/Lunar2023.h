@@ -26,7 +26,7 @@ public:
 
 	/// Functions
 	// Function /Script/Lunar2023.Lunar2023EventComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x4da3130] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x4d73010] Final|Native|Private 
 };
 
 /// Class /Script/Lunar2023.PaperLantern
@@ -54,18 +54,18 @@ public:
 
 	/// Functions
 	// Function /Script/Lunar2023.PaperLantern.Cosmetic_OnStartedInteracting
-	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2023.PaperLantern.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2023.PaperLantern.Cosmetic_OnInteractionCancelled
-	// void Cosmetic_OnInteractionCancelled(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCancelled(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Lunar2023.PaperLanternInteraction
-/// Size: 0x0020 (0x000790 - 0x0007B0)
+/// Size: 0x0010 (0x000790 - 0x0007A0)
 class UPaperLanternInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x20];                                      // 0x0790   (0x0020)  MISSED
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0790   (0x0010)  MISSED
 };
 

@@ -33,7 +33,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FSubscriptionRewardMap
 { 
-	SDK_UNDEFINED(80,5033) /* TMap<ESubscriptionClaimType, FSubscriptionReward> */ __um(RewardsByClaimType);       // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,5422) /* TMap<ESubscriptionClaimType, FSubscriptionReward> */ __um(RewardsByClaimType);       // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/SubscriptionSubsystem.SubscriptionReward
@@ -42,6 +42,6 @@ struct FSubscriptionReward
 { 
 	TArray<FRewardItem>                                Rewards;                                                    // 0x0000   (0x0010)  
 	FDateTime                                          NextClaimTime;                                              // 0x0010   (0x0008)  
-	SDK_UNDEFINED(16,5034) /* FString */               __um(AnalyticsEventId);                                     // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5423) /* FString */               __um(AnalyticsEventId);                                     // 0x0018   (0x0010)  
 };
 

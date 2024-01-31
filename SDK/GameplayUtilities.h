@@ -43,7 +43,7 @@ class UCharacterPusherComponent : public UActorComponent
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
 	TArray<class ACharacter*>                          _charactersToPush;                                          // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(80,1479) /* TSet<ACharacter*> */     __um(_ignoredCharacters);                                   // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,1504) /* TSet<ACharacter*> */     __um(_ignoredCharacters);                                   // 0x00F8   (0x0050)  
 	class UCapsuleComponent*                           _characterDetector;                                         // 0x0148   (0x0008)  
 	class UCapsuleComponent*                           _characterCollision;                                        // 0x0150   (0x0008)  
 	class UBasePushStrategyComponent*                  _pushStrategy;                                              // 0x0158   (0x0008)  
@@ -52,11 +52,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.CharacterPusherComponent.SetIgnoredCharacter
-	// void SetIgnoredCharacter(class ACharacter* Character, bool ignore);                                                   // [0x8550670] Final|Native|Public|BlueprintCallable 
+	// void SetIgnoredCharacter(class ACharacter* Character, bool ignore);                                                   // [0x8561a50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.CharacterPusherComponent.OnCharacterDetectorOverlapExit
-	// void OnCharacterDetectorOverlapExit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x8550340] Final|Native|Protected 
+	// void OnCharacterDetectorOverlapExit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x8561720] Final|Native|Protected 
 	// Function /Script/GameplayUtilities.CharacterPusherComponent.Construct
-	// void Construct(class UCapsuleComponent* characterDetector, class UCapsuleComponent* characterCollision, class UBasePushStrategyComponent* pushStrategy); // [0x854fcb0] Final|Native|Public|BlueprintCallable 
+	// void Construct(class UCapsuleComponent* characterDetector, class UCapsuleComponent* characterCollision, class UBasePushStrategyComponent* pushStrategy); // [0x8561090] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayUtilities.BasePoolableActorComponent
@@ -65,14 +65,14 @@ class UBasePoolableActorComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,1480) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,1505) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x00C0   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/GameplayUtilities.BasePoolableActorComponent.SetAcquired
-	// void SetAcquired(bool Active);                                                                                        // [0x85505e0] Native|Public|BlueprintCallable 
+	// void SetAcquired(bool Active);                                                                                        // [0x85619c0] Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.BasePoolableActorComponent.IsAcquired
-	// bool IsAcquired();                                                                                                    // [0x5d78d60] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAcquired();                                                                                                    // [0x5d85f60] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GameplayUtilities.AuthoritativePoolableActorComponent
@@ -86,7 +86,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.AuthoritativePoolableActorComponent.OnRep_Acquired
-	// void OnRep_Acquired();                                                                                                // [0x85504a0] Final|Native|Private 
+	// void OnRep_Acquired();                                                                                                // [0x8561880] Final|Native|Private 
 };
 
 /// Class /Script/GameplayUtilities.BaseInputAccelerationConstraintStrategy
@@ -116,9 +116,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.ActorPoolComponent.OnActorsInPoolAcquiredChanged
-	// void OnActorsInPoolAcquiredChanged(bool acquired);                                                                    // [0x85502b0] Final|Native|Protected 
+	// void OnActorsInPoolAcquiredChanged(bool acquired);                                                                    // [0x8561690] Final|Native|Protected 
 	// Function /Script/GameplayUtilities.ActorPoolComponent.OnActorDestroyed
-	// void OnActorDestroyed(class AActor* DestroyedActor);                                                                  // [0x8550220] Final|Native|Private 
+	// void OnActorDestroyed(class AActor* DestroyedActor);                                                                  // [0x8561600] Final|Native|Private 
 };
 
 /// Class /Script/GameplayUtilities.AuthoritativeActorPoolComponent
@@ -132,7 +132,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.AuthoritativeActorPoolComponent.OnRep_ReplicatedPool
-	// void OnRep_ReplicatedPool();                                                                                          // [0x8550500] Final|Native|Private 
+	// void OnRep_ReplicatedPool();                                                                                          // [0x85618e0] Final|Native|Private 
 };
 
 /// Class /Script/GameplayUtilities.BaseCharacterRotationStrategy
@@ -180,11 +180,11 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.BoxOcclusionQueryComponent.GetVisiblePercentOfScreen
-	// float GetVisiblePercentOfScreen();                                                                                    // [0x8550090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVisiblePercentOfScreen();                                                                                    // [0x8561470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayUtilities.BoxOcclusionQueryComponent.GetNumberOfVisiblePixels
-	// float GetNumberOfVisiblePixels();                                                                                     // [0x854ffd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNumberOfVisiblePixels();                                                                                     // [0x85613b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayUtilities.BoxOcclusionQueryComponent.GetEstimatedRenderedPixelCount
-	// float GetEstimatedRenderedPixelCount();                                                                               // [0x854fee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEstimatedRenderedPixelCount();                                                                               // [0x85612c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GameplayUtilities.CameraUtilities
@@ -209,17 +209,17 @@ class UCharacterSightableComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,1481) /* FMulticastInlineDelegate */ __um(OnHighestSightStatusChangedBP);                     // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(80,1482) /* TMap<TWeakObjectPtr<ACharacter*>, FDelegateHandleWrapper> */ __um(_sightDelegateHandles); // 0x00F8   (0x0050)  
-	SDK_UNDEFINED(80,1483) /* TMap<TWeakObjectPtr<ACharacter*>, ESightStatus> */ __um(_sightersStatus);            // 0x0148   (0x0050)  
+	SDK_UNDEFINED(16,1506) /* FMulticastInlineDelegate */ __um(OnHighestSightStatusChangedBP);                     // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(80,1507) /* TMap<TWeakObjectPtr<ACharacter*>, FDelegateHandleWrapper> */ __um(_sightDelegateHandles); // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,1508) /* TMap<TWeakObjectPtr<ACharacter*>, ESightStatus> */ __um(_sightersStatus);            // 0x0148   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0198   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/GameplayUtilities.CharacterSightableComponent.OnHighestSightStatusChangedBP__DelegateSignature
-	// void OnHighestSightStatusChangedBP__DelegateSignature(ESightStatus Status);                                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnHighestSightStatusChangedBP__DelegateSignature(ESightStatus Status);                                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/GameplayUtilities.CharacterSightableComponent.GetHighestSightStatus
-	// ESightStatus GetHighestSightStatus();                                                                                 // [0x854ff10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESightStatus GetHighestSightStatus();                                                                                 // [0x85612f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/GameplayUtilities.AuthorityDiscernedCharacter
@@ -270,21 +270,21 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.CharacterSightComponent.SetScreenVisibilityZoneRadiusPercent
-	// void SetScreenVisibilityZoneRadiusPercent(float ValueX, float ValueY);                                                // [0x8550a30] Final|Native|Public|BlueprintCallable 
+	// void SetScreenVisibilityZoneRadiusPercent(float ValueX, float ValueY);                                                // [0x8561e10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.SetMinimumCharacterVisiblePixelsPercent
-	// void SetMinimumCharacterVisiblePixelsPercent(float Trigger, float untrigger);                                         // [0x8550960] Final|Native|Public|BlueprintCallable 
+	// void SetMinimumCharacterVisiblePixelsPercent(float Trigger, float untrigger);                                         // [0x8561d40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.SetMinimumCharacterScreenPercentNotInZone
-	// void SetMinimumCharacterScreenPercentNotInZone(float Trigger, float untrigger);                                       // [0x8550890] Final|Native|Public|BlueprintCallable 
+	// void SetMinimumCharacterScreenPercentNotInZone(float Trigger, float untrigger);                                       // [0x8561c70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.SetMinimumCharacterScreenPercentInZone
-	// void SetMinimumCharacterScreenPercentInZone(float Trigger, float untrigger);                                          // [0x85507c0] Final|Native|Public|BlueprintCallable 
+	// void SetMinimumCharacterScreenPercentInZone(float Trigger, float untrigger);                                          // [0x8561ba0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.SetMaximumSightDistance
-	// void SetMaximumSightDistance(float value);                                                                            // [0x8550740] Final|Native|Public|BlueprintCallable 
+	// void SetMaximumSightDistance(float value);                                                                            // [0x8561b20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.Server_UpdateDiscernedCharacters
-	// void Server_UpdateDiscernedCharacters(TArray<ACharacter*> Characters);                                                // [0x8550520] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_UpdateDiscernedCharacters(TArray<ACharacter*> Characters);                                                // [0x8561900] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.OnRep_DiscernibleCharacters
-	// void OnRep_DiscernibleCharacters();                                                                                   // [0x85504e0] Final|Native|Private 
+	// void OnRep_DiscernibleCharacters();                                                                                   // [0x85618c0] Final|Native|Private 
 	// Function /Script/GameplayUtilities.CharacterSightComponent.OnRep_CanSee
-	// void OnRep_CanSee();                                                                                                  // [0x85504c0] Final|Native|Private 
+	// void OnRep_CanSee();                                                                                                  // [0x85618a0] Final|Native|Private 
 };
 
 /// Class /Script/GameplayUtilities.ChargeableUtilities
@@ -296,7 +296,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.ChargeableUtilities.ConvertSecondsToAddToRateMultiplier
-	// float ConvertSecondsToAddToRateMultiplier(float secondsToAdd, float baseMaxSeconds, float baseRate);                  // [0x854fdc0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float ConvertSecondsToAddToRateMultiplier(float secondsToAdd, float baseMaxSeconds, float baseRate);                  // [0x85611a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/GameplayUtilities.CollectedObjectCollection
@@ -387,7 +387,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.MovementUtilities.Local_MoveActorTo
-	// void Local_MoveActorTo(class AActor* Actor, FVector& Location, FRotator& Rotation, float Duration);                   // [0x85500c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void Local_MoveActorTo(class AActor* Actor, FVector& Location, FRotator& Rotation, float Duration);                   // [0x85614a0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GameplayUtilities.PawnUtilities
@@ -399,9 +399,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.PawnUtilities.GetOwningPawn
-	// class APawn* GetOwningPawn(class AActor* Origin);                                                                     // [0x8550000] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class APawn* GetOwningPawn(class AActor* Origin);                                                                     // [0x85613e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/GameplayUtilities.PawnUtilities.GetLocallyObservedPawn
-	// class APawn* GetLocallyObservedPawn(class UObject* WorldContext);                                                     // [0x854ff40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class APawn* GetLocallyObservedPawn(class UObject* WorldContext);                                                     // [0x8561320] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/GameplayUtilities.PlayerStateExt
@@ -443,7 +443,7 @@ class UStateController : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,1484) /* FMulticastInlineDelegate */ __um(OnStateChangedBlueprintEvent);                      // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,1509) /* FMulticastInlineDelegate */ __um(OnStateChangedBlueprintEvent);                      // 0x00E8   (0x0010)  
 	TArray<class UClass*>                              _stateClasses;                                              // 0x00F8   (0x0010)  
 	class UClass*                                      _defaultStateClass;                                         // 0x0108   (0x0008)  
 	TArray<class UBaseReplicatedState*>                _states;                                                    // 0x0110   (0x0010)  
@@ -455,13 +455,13 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayUtilities.StateController.OnStateChangedBlueprintEvent__DelegateSignature
-	// void OnStateChangedBlueprintEvent__DelegateSignature(FGameplayTag oldState, FGameplayTag NewState);                   // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnStateChangedBlueprintEvent__DelegateSignature(FGameplayTag oldState, FGameplayTag NewState);                   // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/GameplayUtilities.StateController.OnRep_States
-	// void OnRep_States();                                                                                                  // [0x8550f10] Final|Native|Private 
+	// void OnRep_States();                                                                                                  // [0x85622f0] Final|Native|Private 
 	// Function /Script/GameplayUtilities.StateController.OnRep_AuthorityRepCurrentState
-	// void OnRep_AuthorityRepCurrentState();                                                                                // [0x8550ef0] Final|Native|Private 
+	// void OnRep_AuthorityRepCurrentState();                                                                                // [0x85622d0] Final|Native|Private 
 	// Function /Script/GameplayUtilities.StateController.GetCurrentStateID
-	// FGameplayTag GetCurrentStateID();                                                                                     // [0x8550eb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTag GetCurrentStateID();                                                                                     // [0x8562290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GameplayUtilities.VisualLoggerExt

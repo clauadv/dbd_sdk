@@ -46,7 +46,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.DBDBaseAnimInstance.HasBeenNotified
-	// bool HasBeenNotified(FName AnimNotify);                                                                               // [0x4ec27a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasBeenNotified(FName AnimNotify);                                                                               // [0x4e99750] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.PlayerAnimInstance
@@ -57,12 +57,12 @@ public:
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x02F0   (0x0020)  MISSED
 	class ADBDPlayer*                                  _owningPlayer;                                              // 0x0310   (0x0008)  
 	TArray<FTaggedAnimCollection>                      _taggedAnimCollections;                                     // 0x0318   (0x0010)  
-	SDK_UNDEFINED(80,3097) /* TMap<FGameplayTag, UAnimSequence*> */ __um(_animations);                             // 0x0328   (0x0050)  
-	SDK_UNDEFINED(80,3098) /* TMap<FGameplayTag, UBlendSpace*> */ __um(_blendspaces);                              // 0x0378   (0x0050)  
-	SDK_UNDEFINED(80,3099) /* TMap<FGameplayTag, UAimOffsetBlendSpace*> */ __um(_aimoffsets);                      // 0x03C8   (0x0050)  
-	SDK_UNDEFINED(80,3100) /* TMap<FGameplayTag, UBlendSpace1D*> */ __um(_blendspaces1d);                          // 0x0418   (0x0050)  
-	SDK_UNDEFINED(80,3101) /* TMap<FGameplayTag, UAimOffsetBlendSpace1D*> */ __um(_aimoffsets1d);                  // 0x0468   (0x0050)  
-	SDK_UNDEFINED(80,3102) /* TMap<FGameplayTag, FAnimSequenceSelector> */ __um(_selectors);                       // 0x04B8   (0x0050)  
+	SDK_UNDEFINED(80,3169) /* TMap<FGameplayTag, UAnimSequence*> */ __um(_animations);                             // 0x0328   (0x0050)  
+	SDK_UNDEFINED(80,3170) /* TMap<FGameplayTag, UBlendSpace*> */ __um(_blendspaces);                              // 0x0378   (0x0050)  
+	SDK_UNDEFINED(80,3171) /* TMap<FGameplayTag, UAimOffsetBlendSpace*> */ __um(_aimoffsets);                      // 0x03C8   (0x0050)  
+	SDK_UNDEFINED(80,3172) /* TMap<FGameplayTag, UBlendSpace1D*> */ __um(_blendspaces1d);                          // 0x0418   (0x0050)  
+	SDK_UNDEFINED(80,3173) /* TMap<FGameplayTag, UAimOffsetBlendSpace1D*> */ __um(_aimoffsets1d);                  // 0x0468   (0x0050)  
+	SDK_UNDEFINED(80,3174) /* TMap<FGameplayTag, FAnimSequenceSelector> */ __um(_selectors);                       // 0x04B8   (0x0050)  
 	bool                                               _isInParadise;                                              // 0x0508   (0x0001)  
 	bool                                               _isIntroCompleted;                                          // 0x0509   (0x0001)  
 	bool                                               _isLevelReadyToPlay;                                        // 0x050A   (0x0001)  
@@ -74,11 +74,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.PlayerAnimInstance.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4ec51e0] Final|Native|Protected 
+	// void OnLevelReadyToPlay();                                                                                            // [0x4e9c170] Final|Native|Protected 
 	// Function /Script/DBDAnimation.PlayerAnimInstance.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x4ec51c0] Native|Protected     
+	// void OnIntroCompleted();                                                                                              // [0x4e9c150] Native|Protected     
 	// Function /Script/DBDAnimation.PlayerAnimInstance.GetOwningPlayer
-	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x4ec4e60] Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x4e9bdf0] Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.BaseSurvivorAnimInstance
@@ -92,9 +92,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.BaseSurvivorAnimInstance.IsPlayingMontageByName
-	// bool IsPlayingMontageByName(FName MontageID);                                                                         // [0x4ec2850] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlayingMontageByName(FName MontageID);                                                                         // [0x4e99800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.BaseSurvivorAnimInstance.GetOwningSurvivor
-	// class ACamperPlayer* GetOwningSurvivor();                                                                             // [0x4ec2770] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetOwningSurvivor();                                                                             // [0x4e99720] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.AimOffsetSurvivorSubAnimInstance
@@ -166,7 +166,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.ArmIKSurvivorSubAnimInstance.ChangeMode
-	// void ChangeMode(EArmIkMode newMode);                                                                                  // [0x4ec2660] Final|Native|Public|BlueprintCallable 
+	// void ChangeMode(EArmIkMode newMode);                                                                                  // [0x4e99610] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDAnimation.BaseKillerAnimInstance
@@ -181,9 +181,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.BaseKillerAnimInstance.GetOwningKiller
-	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x4ec2710] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x4e996c0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.BaseKillerAnimInstance.DBD_ForceAnimPOV
-	// void DBD_ForceAnimPOV(int32_t animPOV);                                                                               // [0x4e00fc0] Final|Exec|Native|Private 
+	// void DBD_ForceAnimPOV(int32_t animPOV);                                                                               // [0x4dd9ef0] Final|Exec|Native|Private 
 };
 
 /// Class /Script/DBDAnimation.BasePlayerAttackSubAnimInstance
@@ -228,7 +228,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.BaseKillerAttackSubAnimInstance.GetOwningKiller
-	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x4ec2710] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x4e996c0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.BaseKillerWeaponAnimInstance
@@ -269,11 +269,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.BaseMenuAnimInstance.OnCustomizationChanged
-	// void OnCustomizationChanged(TArray<FName>& customizationArray);                                                       // [0x61c32d0] Event|Public|HasOutParms|BlueprintEvent 
+	// void OnCustomizationChanged(TArray<FName>& customizationArray);                                                       // [0x61d2f50] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/DBDAnimation.BaseMenuAnimInstance.GetOwningMenuPlayer
-	// class ADBDMenuPlayer* GetOwningMenuPlayer();                                                                          // [0x4ec2740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDMenuPlayer* GetOwningMenuPlayer();                                                                          // [0x4e996f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.BaseMenuAnimInstance.GetCurrentMenu
-	// EGameFlowStep GetCurrentMenu();                                                                                       // [0x4ec26e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EGameFlowStep GetCurrentMenu();                                                                                       // [0x4e99690] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.BasePowerSubAnimInstance
@@ -290,7 +290,7 @@ class UBipedIKSubAnimInstance : public UDBDBaseAnimInstance
 public:
 	bool                                               _enableIK;                                                  // 0x02F0   (0x0001)  
 	bool                                               _isIdle;                                                    // 0x02F1   (0x0001)  
-	SDK_UNDEFINED(1,3103) /* TEnumAsByte<ETraceTypeQuery> */ __um(_traceTypeQuery);                                // 0x02F2   (0x0001)  
+	SDK_UNDEFINED(1,3175) /* TEnumAsByte<ETraceTypeQuery> */ __um(_traceTypeQuery);                                // 0x02F2   (0x0001)  
 	bool                                               _traceComplex;                                              // 0x02F3   (0x0001)  
 	bool                                               _ignoreTouches;                                             // 0x02F4   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x02F5   (0x0003)  MISSED
@@ -364,11 +364,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.ChestAnimInstance.OnSearchedChanged
-	// void OnSearchedChanged(bool searched);                                                                                // [0x4ec2a80] Final|Native|Private 
+	// void OnSearchedChanged(bool searched);                                                                                // [0x4e99a30] Final|Native|Private 
 	// Function /Script/DBDAnimation.ChestAnimInstance.OnBeingPriedOpenStopped
-	// void OnBeingPriedOpenStopped();                                                                                       // [0x4ec2990] Final|Native|Private 
+	// void OnBeingPriedOpenStopped();                                                                                       // [0x4e99940] Final|Native|Private 
 	// Function /Script/DBDAnimation.ChestAnimInstance.OnBeingPriedOpenStarted
-	// void OnBeingPriedOpenStarted(class ADBDPlayer* Player);                                                               // [0x4ec2900] Final|Native|Private 
+	// void OnBeingPriedOpenStarted(class ADBDPlayer* Player);                                                               // [0x4e998b0] Final|Native|Private 
 };
 
 /// Class /Script/DBDAnimation.CrowAnimInstance
@@ -402,7 +402,7 @@ public:
 	bool                                               _isInGame;                                                  // 0x02C1   (0x0001)  
 	bool                                               _isPoseableHusk;                                            // 0x02C2   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x02C3   (0x0001)  MISSED
-	SDK_UNDEFINED(8,3104) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(_masterMesh);                         // 0x02C4   (0x0008)  
+	SDK_UNDEFINED(8,3176) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(_masterMesh);                         // 0x02C4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x02CC   (0x0004)  MISSED
 };
 
@@ -438,7 +438,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.GeneratorAnimInstance.SetSkillCheckSuccess
-	// void SetSkillCheckSuccess(bool success);                                                                              // [0x4ec2b30] Final|Native|Public|BlueprintCallable 
+	// void SetSkillCheckSuccess(bool success);                                                                              // [0x4e99ae0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDAnimation.HatchAnimInstance
@@ -473,9 +473,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.HealSurvivorSubAnimInstance.ResetHealerSkillCheckFailed
-	// void ResetHealerSkillCheckFailed();                                                                                   // [0x4ec2b10] Final|Native|Protected|BlueprintCallable 
+	// void ResetHealerSkillCheckFailed();                                                                                   // [0x4e99ac0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDAnimation.HealSurvivorSubAnimInstance.OnHealerSkillCheckResponseAesthetic
-	// void OnHealerSkillCheckResponseAesthetic(bool success, class ADBDPlayer* healer);                                     // [0x4ec29b0] Final|Native|Protected 
+	// void OnHealerSkillCheckResponseAesthetic(bool success, class ADBDPlayer* healer);                                     // [0x4e99960] Final|Native|Protected 
 };
 
 /// Class /Script/DBDAnimation.InteractionSurvivorSubAnimInstance
@@ -544,7 +544,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.KillerAnimInstance.GetWeaponCustomizationId
-	// FName GetWeaponCustomizationId();                                                                                     // [0x4ec4e90] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FName GetWeaponCustomizationId();                                                                                     // [0x4e9be20] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.KillerAttackSubAnimInstance
@@ -661,7 +661,7 @@ public:
 class ULocomotionPredictor : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,3105) /* TMap<UAnimSequence*, FFootBoneData> */ __um(_animFootData);                          // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,3177) /* TMap<UAnimSequence*, FFootBoneData> */ __um(_animFootData);                          // 0x0030   (0x0050)  
 };
 
 /// Class /Script/DBDAnimation.LocomotionSurvivorSubAnimInstance
@@ -741,9 +741,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.LookAtKillerSubAnimInstance.IsLookAtAllowed
-	// bool IsLookAtAllowed();                                                                                               // [0x4ec4ed0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool IsLookAtAllowed();                                                                                               // [0x4e9be60] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.LookAtKillerSubAnimInstance.GetBlendDuration
-	// float GetBlendDuration();                                                                                             // [0x4ec4e20] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// float GetBlendDuration();                                                                                             // [0x4e9bdb0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAnimation.LookAtTargetKillerSubAnimInstance
@@ -766,9 +766,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.LookAtTargetKillerSubAnimInstance.OnChaseStarted
-	// void OnChaseStarted(class ADBDPlayer* Target);                                                                        // [0x4ec5130] Final|Native|Private 
+	// void OnChaseStarted(class ADBDPlayer* Target);                                                                        // [0x4e9c0c0] Final|Native|Private 
 	// Function /Script/DBDAnimation.LookAtTargetKillerSubAnimInstance.OnChaseEnded
-	// void OnChaseEnded(class ADBDPlayer* Target, float chaseTime);                                                         // [0x4ec5060] Final|Native|Private 
+	// void OnChaseEnded(class ADBDPlayer* Target, float chaseTime);                                                         // [0x4e9bff0] Final|Native|Private 
 };
 
 /// Class /Script/DBDAnimation.LookAtThreatSurvivorSubAnimInstance
@@ -829,13 +829,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.PalletAnimInstance.OnBeingPulledUpStopped
-	// void OnBeingPulledUpStopped();                                                                                        // [0x4ec5040] Final|Native|Private 
+	// void OnBeingPulledUpStopped();                                                                                        // [0x4e9bfd0] Final|Native|Private 
 	// Function /Script/DBDAnimation.PalletAnimInstance.OnBeingPulledUpStarted
-	// void OnBeingPulledUpStarted(class ADBDPlayer* Player);                                                                // [0x4ec4fb0] Final|Native|Private 
+	// void OnBeingPulledUpStarted(class ADBDPlayer* Player);                                                                // [0x4e9bf40] Final|Native|Private 
 	// Function /Script/DBDAnimation.PalletAnimInstance.OnBeingDestroyedStopped
-	// void OnBeingDestroyedStopped();                                                                                       // [0x4ec4f90] Final|Native|Private 
+	// void OnBeingDestroyedStopped();                                                                                       // [0x4e9bf20] Final|Native|Private 
 	// Function /Script/DBDAnimation.PalletAnimInstance.OnBeingDestroyedStarted
-	// void OnBeingDestroyedStarted(class ADBDPlayer* Player);                                                               // [0x4ec4f00] Final|Native|Private 
+	// void OnBeingDestroyedStarted(class ADBDPlayer* Player);                                                               // [0x4e9be90] Final|Native|Private 
 };
 
 /// Class /Script/DBDAnimation.QuadrupedIKSubAnimInstance
@@ -844,7 +844,7 @@ class UQuadrupedIKSubAnimInstance : public UDBDBaseAnimInstance
 { 
 public:
 	bool                                               _enableIK;                                                  // 0x02F0   (0x0001)  
-	SDK_UNDEFINED(1,3106) /* TEnumAsByte<ETraceTypeQuery> */ __um(_traceTypeQuery);                                // 0x02F1   (0x0001)  
+	SDK_UNDEFINED(1,3178) /* TEnumAsByte<ETraceTypeQuery> */ __um(_traceTypeQuery);                                // 0x02F1   (0x0001)  
 	bool                                               _traceComplex;                                              // 0x02F2   (0x0001)  
 	bool                                               _ignoreTouches;                                             // 0x02F3   (0x0001)  
 	FName                                              _noGroundTag;                                               // 0x02F4   (0x000C)  
@@ -947,7 +947,7 @@ public:
 	class UAnimSequence*                               _animSequence;                                              // 0x02D8   (0x0008)  
 	FGameplayTag                                       _interactionTag;                                            // 0x02E0   (0x000C)  
 	FGameplayTag                                       _currentAnimId;                                             // 0x02EC   (0x000C)  
-	SDK_UNDEFINED(80,3107) /* TMap<FGameplayTag, UAnimSequence*> */ __um(_taggedAnimSequences);                    // 0x02F8   (0x0050)  
+	SDK_UNDEFINED(80,3179) /* TMap<FGameplayTag, UAnimSequence*> */ __um(_taggedAnimSequences);                    // 0x02F8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0348   (0x0008)  MISSED
 };
 
@@ -991,7 +991,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.ScreamSurvivorSubAnimInstance.ResetScreamTrigger
-	// void ResetScreamTrigger();                                                                                            // [0x4ec7600] Final|Native|Protected|BlueprintCallable 
+	// void ResetScreamTrigger();                                                                                            // [0x4e9e590] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DBDAnimation.SkillCheckFailureTracker
@@ -1003,9 +1003,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.SkillCheckFailureTracker.ResetSkillCheckFailed
-	// void ResetSkillCheckFailed();                                                                                         // [0x49e9490] Native|Public|BlueprintCallable 
+	// void ResetSkillCheckFailed();                                                                                         // [0x499ad80] Native|Public|BlueprintCallable 
 	// Function /Script/DBDAnimation.SkillCheckFailureTracker.OnSkillCheckFailed
-	// void OnSkillCheckFailed(FGameplayTag gameEventType, FGameEventData& GameEventData);                                   // [0x4ec74d0] Native|Protected|HasOutParms 
+	// void OnSkillCheckFailed(FGameplayTag gameEventType, FGameEventData& GameEventData);                                   // [0x4e9e460] Native|Protected|HasOutParms 
 };
 
 /// Class /Script/DBDAnimation.SteamPipeResetSwitchAnimInstance
@@ -1128,11 +1128,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.SurvivorAnimInstance.SetAudioRummageAkEvent
-	// void SetAudioRummageAkEvent(FName distance);                                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetAudioRummageAkEvent(FName distance);                                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDAnimation.SurvivorAnimInstance.OnInfectiousFrightScream
-	// void OnInfectiousFrightScream();                                                                                      // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnInfectiousFrightScream();                                                                                      // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDAnimation.SurvivorAnimInstance.AddAudioRepairRateRadius
-	// void AddAudioRepairRateRadius(int32_t distance);                                                                      // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void AddAudioRepairRateRadius(int32_t distance);                                                                      // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDAnimation.WakerObjectAnimInstance
@@ -1155,17 +1155,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimation.WakerObjectAnimInstance.ResetReappearTimer
-	// void ResetReappearTimer();                                                                                            // [0x4ec75e0] Final|Native|Private|BlueprintCallable 
+	// void ResetReappearTimer();                                                                                            // [0x4e9e570] Final|Native|Private|BlueprintCallable 
 	// Function /Script/DBDAnimation.WakerObjectAnimInstance.OnReappear
-	// void OnReappear();                                                                                                    // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnReappear();                                                                                                    // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDAnimation.WakerObjectAnimInstance.GetWakerObjectStarted
-	// bool GetWakerObjectStarted();                                                                                         // [0x4ec74a0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool GetWakerObjectStarted();                                                                                         // [0x4e9e430] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.WakerObjectAnimInstance.GetWakerObjectChargeComplete
-	// bool GetWakerObjectChargeComplete();                                                                                  // [0x4ec7470] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool GetWakerObjectChargeComplete();                                                                                  // [0x4e9e400] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.WakerObjectAnimInstance.GetWakerObjectCharge
-	// float GetWakerObjectCharge();                                                                                         // [0x4ec7440] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetWakerObjectCharge();                                                                                         // [0x4e9e3d0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDAnimation.WakerObjectAnimInstance.GetWakerObject
-	// class AWakerObject* GetWakerObject();                                                                                 // [0x4ec7410] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// class AWakerObject* GetWakerObject();                                                                                 // [0x4e9e3a0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/DBDAnimation.CustomizationCategoryAnimationMappingInfo
@@ -1193,7 +1193,7 @@ struct FKillerSpecificSurvivorAnimationsRow : FDBDTableRowBase
 { 
 	FGameplayTag                                       KillerPresenceStateTag;                                     // 0x0008   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(48,3108) /* TWeakObjectPtr<UClass*> */ __um(KillerSpecificSurvivorAnimation);                    // 0x0018   (0x0030)  
+	SDK_UNDEFINED(48,3180) /* TWeakObjectPtr<UClass*> */ __um(KillerSpecificSurvivorAnimation);                    // 0x0018   (0x0030)  
 };
 
 /// Struct /Script/DBDAnimation.FootBoneData

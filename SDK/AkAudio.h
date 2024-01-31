@@ -508,21 +508,21 @@ public:
 	AkAcousticPortalState                              InitialState;                                               // 0x0219   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x021A   (0x0002)  MISSED
 	float                                              ObstructionRefreshInterval;                                 // 0x021C   (0x0004)  
-	SDK_UNDEFINED(1,1150) /* TEnumAsByte<ECollisionChannel> */ __um(ObstructionCollisionChannel);                  // 0x0220   (0x0001)  
+	SDK_UNDEFINED(1,1155) /* TEnumAsByte<ECollisionChannel> */ __um(ObstructionCollisionChannel);                  // 0x0220   (0x0001)  
 	unsigned char                                      UnknownData01_6[0xBF];                                      // 0x0221   (0x00BF)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkPortalComponent.PortalPlacementValid
-	// bool PortalPlacementValid();                                                                                          // [0x4ae32c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool PortalPlacementValid();                                                                                          // [0x4a9d4d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkPortalComponent.OpenPortal
-	// void OpenPortal();                                                                                                    // [0x4ae32a0] Final|Native|Public|BlueprintCallable 
+	// void OpenPortal();                                                                                                    // [0x4a9d4b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkPortalComponent.GetPrimitiveParent
-	// class UPrimitiveComponent* GetPrimitiveParent();                                                                      // [0x4ae3160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetPrimitiveParent();                                                                      // [0x4a9d370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkPortalComponent.GetCurrentState
-	// AkAcousticPortalState GetCurrentState();                                                                              // [0x4ae3070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// AkAcousticPortalState GetCurrentState();                                                                              // [0x4a9d280] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkPortalComponent.ClosePortal
-	// void ClosePortal();                                                                                                   // [0x4ae2f30] Final|Native|Public|BlueprintCallable 
+	// void ClosePortal();                                                                                                   // [0x4a9d140] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkAcousticPortal
@@ -538,11 +538,11 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkAcousticPortal.OpenPortal
-	// void OpenPortal();                                                                                                    // [0x4ae3280] Final|Native|Public|BlueprintCallable 
+	// void OpenPortal();                                                                                                    // [0x4a9d490] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkAcousticPortal.GetCurrentState
-	// AkAcousticPortalState GetCurrentState();                                                                              // [0x4ae3040] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// AkAcousticPortalState GetCurrentState();                                                                              // [0x4a9d250] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkAcousticPortal.ClosePortal
-	// void ClosePortal();                                                                                                   // [0x4ae2f10] Final|Native|Public|BlueprintCallable 
+	// void ClosePortal();                                                                                                   // [0x4a9d120] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkAudioType
@@ -584,16 +584,16 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkAmbientSound.StopAmbientSound
-	// void StopAmbientSound();                                                                                              // [0x4ae4390] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StopAmbientSound();                                                                                              // [0x4a9e5a0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkAmbientSound.StartAmbientSound
-	// void StartAmbientSound();                                                                                             // [0x4ae4370] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void StartAmbientSound();                                                                                             // [0x4a9e580] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AkAudio.AkMainOutputSettings
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FAkMainOutputSettings
 { 
-	SDK_UNDEFINED(16,1151) /* FString */               __um(AudioDeviceShareset);                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1156) /* FString */               __um(AudioDeviceShareset);                                  // 0x0000   (0x0010)  
 	uint32_t                                           DeviceID;                                                   // 0x0010   (0x0004)  
 	EAkPanningRule                                     PanningRule;                                                // 0x0014   (0x0004)  
 	EAkChannelConfigType                               ChannelConfigType;                                          // 0x0018   (0x0004)  
@@ -652,7 +652,7 @@ struct FAkCommunicationSettings
 	uint16_t                                           CommandPort;                                                // 0x0006   (0x0002)  
 	uint16_t                                           NotificationPort;                                           // 0x0008   (0x0002)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x000A   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1152) /* FString */               __um(NetworkName);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1157) /* FString */               __um(NetworkName);                                          // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkCommunicationSettingsWithSystemInitialization
@@ -713,7 +713,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkAndroidInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkPlatformInfo
@@ -747,7 +747,7 @@ class UAkAssetData : public UObject
 public:
 	uint32_t                                           CachedHash;                                                 // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1153) /* FString */               __um(BankLanguage);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1158) /* FString */               __um(BankLanguage);                                         // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x38];                                      // 0x0048   (0x0038)  MISSED
 };
 
@@ -772,7 +772,7 @@ public:
 class UAkAssetDataSwitchContainerData : public UObject
 { 
 public:
-	SDK_UNDEFINED(48,1154) /* TWeakObjectPtr<UAkGroupValue*> */ __um(GroupValue);                                  // 0x0030   (0x0030)  
+	SDK_UNDEFINED(48,1159) /* TWeakObjectPtr<UAkGroupValue*> */ __um(GroupValue);                                  // 0x0030   (0x0030)  
 	class UAkGroupValue*                               DefaultGroupValue;                                          // 0x0060   (0x0008)  
 	TArray<class UAkMediaAsset*>                       MediaList;                                                  // 0x0068   (0x0010)  
 	TArray<class UAkAssetDataSwitchContainerData*>     Children;                                                   // 0x0078   (0x0010)  
@@ -798,11 +798,11 @@ public:
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00FD   (0x0003)  MISSED
 	float                                              MinimumDuration;                                            // 0x0100   (0x0004)  
 	float                                              MaximumDuration;                                            // 0x0104   (0x0004)  
-	SDK_UNDEFINED(80,1155) /* TMap<FString, UAkAssetDataSwitchContainer*> */ __um(LocalizedMedia);                 // 0x0108   (0x0050)  
-	SDK_UNDEFINED(80,1156) /* TSet<UAkAudioEvent*> */  __um(PostedEvents);                                         // 0x0158   (0x0050)  
-	SDK_UNDEFINED(80,1157) /* TSet<UAkAuxBus*> */      __um(UserDefinedSends);                                     // 0x01A8   (0x0050)  
-	SDK_UNDEFINED(80,1158) /* TSet<UAkTrigger*> */     __um(PostedTriggers);                                       // 0x01F8   (0x0050)  
-	SDK_UNDEFINED(80,1159) /* TSet<UAkGroupValue*> */  __um(GroupValues);                                          // 0x0248   (0x0050)  
+	SDK_UNDEFINED(80,1160) /* TMap<FString, UAkAssetDataSwitchContainer*> */ __um(LocalizedMedia);                 // 0x0108   (0x0050)  
+	SDK_UNDEFINED(80,1161) /* TSet<UAkAudioEvent*> */  __um(PostedEvents);                                         // 0x0158   (0x0050)  
+	SDK_UNDEFINED(80,1162) /* TSet<UAkAuxBus*> */      __um(UserDefinedSends);                                     // 0x01A8   (0x0050)  
+	SDK_UNDEFINED(80,1163) /* TSet<UAkTrigger*> */     __um(PostedTriggers);                                       // 0x01F8   (0x0050)  
+	SDK_UNDEFINED(80,1164) /* TSet<UAkGroupValue*> */  __um(GroupValues);                                          // 0x0248   (0x0050)  
 };
 
 /// Class /Script/AkAudio.AkAudioBank
@@ -812,8 +812,8 @@ class UAkAudioBank : public UAkAssetBase
 public:
 	bool                                               AutoLoad;                                                   // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0059   (0x0007)  MISSED
-	SDK_UNDEFINED(80,1160) /* TMap<FString, UAkAssetPlatformData*> */ __um(LocalizedPlatformAssetDataMap);         // 0x0060   (0x0050)  
-	SDK_UNDEFINED(80,1161) /* TSet<TWeakObjectPtr<UAkAudioEvent*>> */ __um(LinkedAkEvents);                        // 0x00B0   (0x0050)  
+	SDK_UNDEFINED(80,1165) /* TMap<FString, UAkAssetPlatformData*> */ __um(LocalizedPlatformAssetDataMap);         // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,1166) /* TSet<TWeakObjectPtr<UAkAudioEvent*>> */ __um(LinkedAkEvents);                        // 0x00B0   (0x0050)  
 	class UAkAssetPlatformData*                        CurrentLocalizedPlatformAssetData;                          // 0x0100   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0108   (0x0018)  MISSED
 };
@@ -823,7 +823,7 @@ public:
 class UAkAudioEvent : public UAkAssetBase
 { 
 public:
-	SDK_UNDEFINED(80,1162) /* TMap<FString, UAkAssetPlatformData*> */ __um(LocalizedPlatformAssetDataMap);         // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,1167) /* TMap<FString, UAkAssetPlatformData*> */ __um(LocalizedPlatformAssetDataMap);         // 0x0058   (0x0050)  
 	class UAkAudioBank*                                RequiredBank;                                               // 0x00A8   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x00B0   (0x0008)  MISSED
 	class UAkAssetPlatformData*                        CurrentLocalizedPlatformData;                               // 0x00B8   (0x0008)  
@@ -837,13 +837,13 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkAudioEvent.GetMinimumDuration
-	// float GetMinimumDuration();                                                                                           // [0x4ae3130] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMinimumDuration();                                                                                           // [0x4a9d340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkAudioEvent.GetMaximumDuration
-	// float GetMaximumDuration();                                                                                           // [0x4ae3100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaximumDuration();                                                                                           // [0x4a9d310] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkAudioEvent.GetMaxAttenuationRadius
-	// float GetMaxAttenuationRadius();                                                                                      // [0x4ae30d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxAttenuationRadius();                                                                                      // [0x4a9d2e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkAudioEvent.GetIsInfinite
-	// bool GetIsInfinite();                                                                                                 // [0x4ae30a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsInfinite();                                                                                                 // [0x4a9d2b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkGameObject
@@ -852,25 +852,25 @@ class UAkGameObject : public USceneComponent
 { 
 public:
 	class UAkAudioEvent*                               AkAudioEvent;                                               // 0x0218   (0x0008)  
-	SDK_UNDEFINED(16,1163) /* FString */               __um(EventName);                                            // 0x0220   (0x0010)  
+	SDK_UNDEFINED(16,1168) /* FString */               __um(EventName);                                            // 0x0220   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0230   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkGameObject.Stop
-	// void Stop();                                                                                                          // [0x4aea290] BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void Stop();                                                                                                          // [0x4aa44a0] BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameObject.SetRTPCValue
-	// void SetRTPCValue(class UAkRtpc* RTPCValue, float value, int32_t InterpolationTimeMs, FString RTPC);                  // [0x4ae96b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|Const 
+	// void SetRTPCValue(class UAkRtpc* RTPCValue, float value, int32_t InterpolationTimeMs, FString RTPC);                  // [0x4aa38c0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|Const 
 	// Function /Script/AkAudio.AkGameObject.PostAssociatedAkEventAsync
-	// void PostAssociatedAkEventAsync(class UObject* WorldContextObject, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo, int32_t& PlayingID); // [0x4ae79f0] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// void PostAssociatedAkEventAsync(class UObject* WorldContextObject, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo, int32_t& PlayingID); // [0x4aa1c00] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameObject.PostAssociatedAkEvent
-	// int32_t PostAssociatedAkEvent(int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources); // [0x4ae7840] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// int32_t PostAssociatedAkEvent(int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources); // [0x4aa1a50] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameObject.PostAkEventAsync
-	// void PostAkEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, int32_t& PlayingID, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4ae7070] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// void PostAkEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, int32_t& PlayingID, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4aa1280] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameObject.PostAkEvent
-	// int32_t PostAkEvent(class UAkAudioEvent* AkEvent, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, FString in_EventName); // [0x4ae6e30] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// int32_t PostAkEvent(class UAkAudioEvent* AkEvent, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, FString in_EventName); // [0x4aa1040] BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameObject.GetRTPCValue
-	// void GetRTPCValue(class UAkRtpc* RTPCValue, ERTPCValueType InputValueType, float& value, ERTPCValueType& OutputValueType, FString RTPC, int32_t PlayingID); // [0x4ae6360] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetRTPCValue(class UAkRtpc* RTPCValue, ERTPCValueType InputValueType, float& value, ERTPCValueType& OutputValueType, FString RTPC, int32_t PlayingID); // [0x4aa0570] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkComponent
@@ -880,14 +880,14 @@ class UAkComponent : public UAkGameObject
 public:
 	bool                                               bUseSpatialAudio;                                           // 0x0238   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0239   (0x0007)  MISSED
-	SDK_UNDEFINED(1,1164) /* TEnumAsByte<ECollisionChannel> */ __um(OcclusionCollisionChannel);                    // 0x0240   (0x0001)  
+	SDK_UNDEFINED(1,1169) /* TEnumAsByte<ECollisionChannel> */ __um(OcclusionCollisionChannel);                    // 0x0240   (0x0001)  
 	bool                                               EnableSpotReflectors;                                       // 0x0241   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0242   (0x0002)  MISSED
 	float                                              OuterRadius;                                                // 0x0244   (0x0004)  
 	float                                              InnerRadius;                                                // 0x0248   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x024C   (0x0004)  MISSED
 	class UAkAuxBus*                                   EarlyReflectionAuxBus;                                      // 0x0250   (0x0008)  
-	SDK_UNDEFINED(16,1165) /* FString */               __um(EarlyReflectionAuxBusName);                            // 0x0258   (0x0010)  
+	SDK_UNDEFINED(16,1170) /* FString */               __um(EarlyReflectionAuxBusName);                            // 0x0258   (0x0010)  
 	int32_t                                            EarlyReflectionOrder;                                       // 0x0268   (0x0004)  
 	float                                              EarlyReflectionBusSendGain;                                 // 0x026C   (0x0004)  
 	float                                              EarlyReflectionMaxPathLength;                               // 0x0270   (0x0004)  
@@ -914,45 +914,45 @@ public:
 	float                                              StaticAmbientEmitterFadeDuration;                           // 0x0414   (0x0004)  
 	EAkCurveInterpolation                              StaticAmbientEmitterInterpolationCurve;                     // 0x0418   (0x0001)  
 	unsigned char                                      UnknownData07_5[0xF];                                       // 0x0419   (0x000F)  MISSED
-	SDK_UNDEFINED(80,1166) /* TSet<UAkComponent*> */   __um(ListenersInRange);                                     // 0x0428   (0x0050)  
+	SDK_UNDEFINED(80,1171) /* TSet<UAkComponent*> */   __um(ListenersInRange);                                     // 0x0428   (0x0050)  
 	unsigned char                                      UnknownData08_6[0x8];                                       // 0x0478   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkComponent.UseReverbVolumes
-	// void UseReverbVolumes(bool inUseReverbVolumes);                                                                       // [0x4ae45a0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void UseReverbVolumes(bool inUseReverbVolumes);                                                                       // [0x4a9e7b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.UseEarlyReflections
-	// void UseEarlyReflections(class UAkAuxBus* AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, FString AuxBusName); // [0x4ae43b0] Final|Native|Public|BlueprintCallable 
+	// void UseEarlyReflections(class UAkAuxBus* AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, FString AuxBusName); // [0x4a9e5c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetSwitch
-	// void SetSwitch(class UAkSwitchValue* SwitchValue, FString SwitchGroup, FString switchState);                          // [0x4ae4230] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetSwitch(class UAkSwitchValue* SwitchValue, FString SwitchGroup, FString switchState);                          // [0x4a9e440] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetStopWhenOwnerDestroyed
-	// void SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed);                                                         // [0x4ae41a0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetStopWhenOwnerDestroyed(bool bStopWhenOwnerDestroyed);                                                         // [0x4a9e3b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetOutputBusVolume
-	// void SetOutputBusVolume(float BusVolume);                                                                             // [0x4ae4120] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetOutputBusVolume(float BusVolume);                                                                             // [0x4a9e330] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetListeners
-	// void SetListeners(TArray<UAkComponent*>& Listeners);                                                                  // [0x4ae4070] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetListeners(TArray<UAkComponent*>& Listeners);                                                                  // [0x4a9e280] Final|BlueprintCosmetic|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetGameObjectRadius
-	// void SetGameObjectRadius(float in_outerRadius, float in_innerRadius);                                                 // [0x4ae3f10] Final|Native|Public|BlueprintCallable 
+	// void SetGameObjectRadius(float in_outerRadius, float in_innerRadius);                                                 // [0x4a9e120] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetEarlyReflectionsVolume
-	// void SetEarlyReflectionsVolume(float SendVolume);                                                                     // [0x4ae3e90] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetEarlyReflectionsVolume(float SendVolume);                                                                     // [0x4a9e0a0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetEarlyReflectionsAuxBus
-	// void SetEarlyReflectionsAuxBus(FString AuxBusName);                                                                   // [0x4ae3df0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetEarlyReflectionsAuxBus(FString AuxBusName);                                                                   // [0x4a9e000] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.SetAttenuationScalingFactor
-	// void SetAttenuationScalingFactor(float value);                                                                        // [0x4ae3cf0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetAttenuationScalingFactor(float value);                                                                        // [0x4a9df00] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.PostTrigger
-	// void PostTrigger(class UAkTrigger* TriggerValue, FString Trigger);                                                    // [0x4ae3ad0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void PostTrigger(class UAkTrigger* TriggerValue, FString Trigger);                                                    // [0x4a9dce0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEndAsync
-	// void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4ae3900] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void PostAssociatedAkEventAndWaitForEndAsync(int32_t& PlayingID, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4a9db10] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.PostAssociatedAkEventAndWaitForEnd
-	// int32_t PostAssociatedAkEventAndWaitForEnd(TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4ae3790] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// int32_t PostAssociatedAkEventAndWaitForEnd(TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4a9d9a0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.PostAkEventByName
-	// int32_t PostAkEventByName(FString in_EventName);                                                                      // [0x4ae36e0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// int32_t PostAkEventByName(FString in_EventName);                                                                      // [0x4a9d8f0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.PostAkEventAndWaitForEndAsync
-	// void PostAkEventAndWaitForEndAsync(class UAkAudioEvent* AkEvent, int32_t& PlayingID, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4ae3510] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void PostAkEventAndWaitForEndAsync(class UAkAudioEvent* AkEvent, int32_t& PlayingID, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4a9d720] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.PostAkEventAndWaitForEnd
-	// int32_t PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, FString in_EventName, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4ae3320] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// int32_t PostAkEventAndWaitForEnd(class UAkAudioEvent* AkEvent, FString in_EventName, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4a9d530] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkComponent.GetAttenuationRadius
-	// float GetAttenuationRadius();                                                                                         // [0x4ae2fe0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAttenuationRadius();                                                                                         // [0x4a9d1f0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkAudioInputComponent
@@ -965,7 +965,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkAudioInputComponent.PostAssociatedAudioInputEvent
-	// int32_t PostAssociatedAudioInputEvent();                                                                              // [0x4ae3aa0] BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// int32_t PostAssociatedAudioInputEvent();                                                                              // [0x4a9dcb0] BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkAuxBus
@@ -980,16 +980,16 @@ public:
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FAkBoolPropertyToControl
 { 
-	SDK_UNDEFINED(16,1167) /* FString */               __um(ItemProperty);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1172) /* FString */               __um(ItemProperty);                                         // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkWwiseObjectDetails
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FAkWwiseObjectDetails
 { 
-	SDK_UNDEFINED(16,1168) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1169) /* FString */               __um(ItemPath);                                             // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1170) /* FString */               __um(ItemId);                                               // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1173) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1174) /* FString */               __um(ItemPath);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1175) /* FString */               __um(ItemId);                                               // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkWwiseItemToControl
@@ -997,7 +997,7 @@ struct FAkWwiseObjectDetails
 struct FAkWwiseItemToControl
 { 
 	FAkWwiseObjectDetails                              ItemPicked;                                                 // 0x0000   (0x0030)  
-	SDK_UNDEFINED(16,1171) /* FString */               __um(ItemPath);                                             // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1176) /* FString */               __um(ItemPath);                                             // 0x0030   (0x0010)  
 };
 
 /// Class /Script/AkAudio.AkCheckBox
@@ -1008,38 +1008,38 @@ public:
 	unsigned char                                      UnknownData00_2[0x348];                                     // 0x0148   (0x0348)  MISSED
 	ECheckBoxState                                     CheckedState;                                               // 0x0490   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0491   (0x0003)  MISSED
-	SDK_UNDEFINED(20,1172) /* FDelegateProperty */     __um(CheckedStateDelegate);                                 // 0x0494   (0x0014)  
+	SDK_UNDEFINED(20,1177) /* FDelegateProperty */     __um(CheckedStateDelegate);                                 // 0x0494   (0x0014)  
 	FCheckBoxStyle                                     WidgetStyle;                                                // 0x04A8   (0x05E0)  
-	SDK_UNDEFINED(1,1173) /* TEnumAsByte<EHorizontalAlignment> */ __um(HorizontalAlignment);                       // 0x0A88   (0x0001)  
+	SDK_UNDEFINED(1,1178) /* TEnumAsByte<EHorizontalAlignment> */ __um(HorizontalAlignment);                       // 0x0A88   (0x0001)  
 	bool                                               IsFocusable;                                                // 0x0A89   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x6];                                       // 0x0A8A   (0x0006)  MISSED
 	FAkBoolPropertyToControl                           ThePropertyToControl;                                       // 0x0A90   (0x0010)  
 	FAkWwiseItemToControl                              ItemToControl;                                              // 0x0AA0   (0x0040)  
-	SDK_UNDEFINED(16,1174) /* FMulticastInlineDelegate */ __um(AkOnCheckStateChanged);                             // 0x0AE0   (0x0010)  
-	SDK_UNDEFINED(16,1175) /* FMulticastInlineDelegate */ __um(OnItemDropped);                                     // 0x0AF0   (0x0010)  
-	SDK_UNDEFINED(16,1176) /* FMulticastInlineDelegate */ __um(OnPropertyDropped);                                 // 0x0B00   (0x0010)  
+	SDK_UNDEFINED(16,1179) /* FMulticastInlineDelegate */ __um(AkOnCheckStateChanged);                             // 0x0AE0   (0x0010)  
+	SDK_UNDEFINED(16,1180) /* FMulticastInlineDelegate */ __um(OnItemDropped);                                     // 0x0AF0   (0x0010)  
+	SDK_UNDEFINED(16,1181) /* FMulticastInlineDelegate */ __um(OnPropertyDropped);                                 // 0x0B00   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x50];                                      // 0x0B10   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkCheckBox.SetIsChecked
-	// void SetIsChecked(bool InIsChecked);                                                                                  // [0x4ae3fe0] Final|Native|Public|BlueprintCallable 
+	// void SetIsChecked(bool InIsChecked);                                                                                  // [0x4a9e1f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkCheckBox.SetCheckedState
-	// void SetCheckedState(ECheckBoxState InCheckedState);                                                                  // [0x4ae3d70] Final|Native|Public|BlueprintCallable 
+	// void SetCheckedState(ECheckBoxState InCheckedState);                                                                  // [0x4a9df80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkCheckBox.SetAkItemId
-	// void SetAkItemId(FGuid& ItemId);                                                                                      // [0x4ae3c50] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetAkItemId(FGuid& ItemId);                                                                                      // [0x4a9de60] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkCheckBox.SetAkBoolProperty
-	// void SetAkBoolProperty(FString ItemProperty);                                                                         // [0x4ae3bb0] Final|Native|Public|BlueprintCallable 
+	// void SetAkBoolProperty(FString ItemProperty);                                                                         // [0x4a9ddc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkCheckBox.IsPressed
-	// bool IsPressed();                                                                                                     // [0x4ae31c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPressed();                                                                                                     // [0x4a9d3d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkCheckBox.IsChecked
-	// bool IsChecked();                                                                                                     // [0x4ae3190] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsChecked();                                                                                                     // [0x4a9d3a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkCheckBox.GetCheckedState
-	// ECheckBoxState GetCheckedState();                                                                                     // [0x4ae3010] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ECheckBoxState GetCheckedState();                                                                                     // [0x4a9d220] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkCheckBox.GetAkProperty
-	// FString GetAkProperty();                                                                                              // [0x4ae2f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetAkProperty();                                                                                              // [0x4a9d1a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkCheckBox.GetAkItemId
-	// FGuid GetAkItemId();                                                                                                  // [0x4ae2f50] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetAkItemId();                                                                                                  // [0x4a9d160] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.DrawPortalComponent
@@ -1061,8 +1061,8 @@ public:
 class UAkFolder : public UAkAudioType
 { 
 public:
-	SDK_UNDEFINED(16,1177) /* FString */               __um(UnrealFolderPath);                                     // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,1178) /* FString */               __um(WwiseFolderPath);                                      // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1182) /* FString */               __um(UnrealFolderPath);                                     // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1183) /* FString */               __um(WwiseFolderPath);                                      // 0x0058   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x58];                                      // 0x0068   (0x0058)  MISSED
 };
 
@@ -1075,129 +1075,129 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkGameplayStatics.UseReverbVolumes
-	// void UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor);                                                  // [0x4aea930] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void UseReverbVolumes(bool inUseReverbVolumes, class AActor* Actor);                                                  // [0x4aa4b40] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.UseEarlyReflections
-	// void UseEarlyReflections(class AActor* Actor, class UAkAuxBus* AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, FString AuxBusName); // [0x4aea710] Final|Native|Static|Public|BlueprintCallable 
+	// void UseEarlyReflections(class AActor* Actor, class UAkAuxBus* AuxBus, int32_t Order, float BusSendGain, float MaxPathLength, bool SpotReflectors, FString AuxBusName); // [0x4aa4920] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.UnloadBankByName
-	// void UnloadBankByName(FString BankName);                                                                              // [0x4aea680] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void UnloadBankByName(FString BankName);                                                                              // [0x4aa4890] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.UnloadBankAsync
-	// void UnloadBankAsync(class UAkAudioBank* Bank, FDelegateProperty& BankUnloadedCallback);                              // [0x4aea590] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void UnloadBankAsync(class UAkAudioBank* Bank, FDelegateProperty& BankUnloadedCallback);                              // [0x4aa47a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.UnloadBank
-	// void UnloadBank(class UAkAudioBank* Bank, FString BankName, FLatentActionInfo LatentInfo, class UObject* WorldContextObject); // [0x4aea410] Final|Native|Static|Public|BlueprintCallable 
+	// void UnloadBank(class UAkAudioBank* Bank, FString BankName, FLatentActionInfo LatentInfo, class UObject* WorldContextObject); // [0x4aa4620] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StopProfilerCapture
-	// void StopProfilerCapture();                                                                                           // [0x4aea3f0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StopProfilerCapture();                                                                                           // [0x4aa4600] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StopOutputCapture
-	// void StopOutputCapture();                                                                                             // [0x4aea3d0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StopOutputCapture();                                                                                             // [0x4aa45e0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StopAllAmbientSounds
-	// void StopAllAmbientSounds(class UObject* WorldContextObject);                                                         // [0x4aea350] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StopAllAmbientSounds(class UObject* WorldContextObject);                                                         // [0x4aa4560] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StopAll
-	// void StopAll();                                                                                                       // [0x4aea330] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StopAll();                                                                                                       // [0x4aa4540] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StopActor
-	// void StopActor(class AActor* Actor);                                                                                  // [0x4aea2b0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StopActor(class AActor* Actor);                                                                                  // [0x4aa44c0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StartProfilerCapture
-	// void StartProfilerCapture(FString Filename);                                                                          // [0x4aea200] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StartProfilerCapture(FString Filename);                                                                          // [0x4aa4410] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StartOutputCapture
-	// void StartOutputCapture(FString Filename);                                                                            // [0x4aea170] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StartOutputCapture(FString Filename);                                                                            // [0x4aa4380] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.StartAllAmbientSounds
-	// void StartAllAmbientSounds(class UObject* WorldContextObject);                                                        // [0x4aea0f0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void StartAllAmbientSounds(class UObject* WorldContextObject);                                                        // [0x4aa4300] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SpawnAkComponentAtLocation
-	// class UAkComponent* SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation, bool AutoPost, FString EventName, bool AutoDestroy); // [0x4ae9eb0] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UAkComponent* SpawnAkComponentAtLocation(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation, bool AutoPost, FString EventName, bool AutoDestroy); // [0x4aa40c0] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetSwitch
-	// void SetSwitch(class UAkSwitchValue* SwitchValue, class AActor* Actor, FName SwitchGroup, FName switchState);         // [0x4ae9d40] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void SetSwitch(class UAkSwitchValue* SwitchValue, class AActor* Actor, FName SwitchGroup, FName switchState);         // [0x4aa3f50] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetState
-	// void SetState(class UAkStateValue* StateValue, FName StateGroup, FName State);                                        // [0x4ae9c10] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void SetState(class UAkStateValue* StateValue, FName StateGroup, FName State);                                        // [0x4aa3e20] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetSpeakerAngles
-	// void SetSpeakerAngles(TArray<float>& SpeakerAngles, float HeightAngle, FString DeviceShareset);                       // [0x4ae9ac0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetSpeakerAngles(TArray<float>& SpeakerAngles, float HeightAngle, FString DeviceShareset);                       // [0x4aa3cd0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetRTPCValue
-	// void SetRTPCValue(class UAkRtpc* RTPCValue, float value, int32_t InterpolationTimeMs, class AActor* Actor, FName RTPC); // [0x4ae9860] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void SetRTPCValue(class UAkRtpc* RTPCValue, float value, int32_t InterpolationTimeMs, class AActor* Actor, FName RTPC); // [0x4aa3a70] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetReflectionsOrder
-	// void SetReflectionsOrder(int32_t Order, bool RefreshPaths);                                                           // [0x4ae9a00] Final|Native|Static|Public|BlueprintCallable 
+	// void SetReflectionsOrder(int32_t Order, bool RefreshPaths);                                                           // [0x4aa3c10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetPortalToPortalObstruction
-	// void SetPortalToPortalObstruction(class UAkPortalComponent* PortalComponent0, class UAkPortalComponent* PortalComponent1, float ObstructionValue); // [0x4ae95a0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetPortalToPortalObstruction(class UAkPortalComponent* PortalComponent0, class UAkPortalComponent* PortalComponent1, float ObstructionValue); // [0x4aa37b0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetPortalObstructionAndOcclusion
-	// void SetPortalObstructionAndOcclusion(class UAkPortalComponent* PortalComponent, float ObstructionValue, float OcclusionValue); // [0x4ae94a0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetPortalObstructionAndOcclusion(class UAkPortalComponent* PortalComponent, float ObstructionValue, float OcclusionValue); // [0x4aa36b0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetPanningRule
-	// void SetPanningRule(PanningRule PanRule);                                                                             // [0x4ae9430] Final|Native|Static|Public|BlueprintCallable 
+	// void SetPanningRule(PanningRule PanRule);                                                                             // [0x4aa3640] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetOutputBusVolume
-	// void SetOutputBusVolume(float BusVolume, class AActor* Actor);                                                        // [0x4ae9370] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void SetOutputBusVolume(float BusVolume, class AActor* Actor);                                                        // [0x4aa3580] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetOcclusionScalingFactor
-	// void SetOcclusionScalingFactor(float ScalingFactor);                                                                  // [0x4ae92f0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetOcclusionScalingFactor(float ScalingFactor);                                                                  // [0x4aa3500] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetOcclusionRefreshInterval
-	// void SetOcclusionRefreshInterval(float RefreshInterval, class AActor* Actor);                                         // [0x4ae9230] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void SetOcclusionRefreshInterval(float RefreshInterval, class AActor* Actor);                                         // [0x4aa3440] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetMultiplePositions
-	// void SetMultiplePositions(class UAkComponent* GameObjectAkComponent, TArray<FTransform> Positions, AkMultiPositionType MultiPositionType); // [0x4ae90d0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetMultiplePositions(class UAkComponent* GameObjectAkComponent, TArray<FTransform> Positions, AkMultiPositionType MultiPositionType); // [0x4aa32e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetMultipleChannelMaskEmitterPositions
-	// void SetMultipleChannelMaskEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<FAkChannelMask> ChannelMasks, TArray<FTransform> Positions, AkMultiPositionType MultiPositionType); // [0x4ae8ef0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetMultipleChannelMaskEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<FAkChannelMask> ChannelMasks, TArray<FTransform> Positions, AkMultiPositionType MultiPositionType); // [0x4aa3100] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetMultipleChannelEmitterPositions
-	// void SetMultipleChannelEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<AkChannelConfiguration> ChannelMasks, TArray<FTransform> Positions, AkMultiPositionType MultiPositionType); // [0x4ae8d10] Final|Native|Static|Public|BlueprintCallable 
+	// void SetMultipleChannelEmitterPositions(class UAkComponent* GameObjectAkComponent, TArray<AkChannelConfiguration> ChannelMasks, TArray<FTransform> Positions, AkMultiPositionType MultiPositionType); // [0x4aa2f20] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetGameObjectToPortalObstruction
-	// void SetGameObjectToPortalObstruction(class UAkComponent* GameObjectAkComponent, class UAkPortalComponent* PortalComponent, float ObstructionValue); // [0x4ae8c00] Final|Native|Static|Public|BlueprintCallable 
+	// void SetGameObjectToPortalObstruction(class UAkComponent* GameObjectAkComponent, class UAkPortalComponent* PortalComponent, float ObstructionValue); // [0x4aa2e10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetCurrentAudioCultureAsync
-	// void SetCurrentAudioCultureAsync(FString AudioCulture, FDelegateProperty& COMPLETED);                                 // [0x4ae8b00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetCurrentAudioCultureAsync(FString AudioCulture, FDelegateProperty& COMPLETED);                                 // [0x4aa2d10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetCurrentAudioCulture
-	// void SetCurrentAudioCulture(FString AudioCulture, FLatentActionInfo LatentInfo, class UObject* WorldContextObject);   // [0x4ae89c0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetCurrentAudioCulture(FString AudioCulture, FLatentActionInfo LatentInfo, class UObject* WorldContextObject);   // [0x4aa2bd0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.SetBusConfig
-	// void SetBusConfig(FString BusName, AkChannelConfiguration ChannelConfiguration);                                      // [0x4ae88f0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetBusConfig(FString BusName, AkChannelConfiguration ChannelConfiguration);                                      // [0x4aa2b00] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.ResetRTPCValue
-	// void ResetRTPCValue(class UAkRtpc* RTPCValue, int32_t InterpolationTimeMs, class AActor* Actor, FName RTPC);          // [0x4ae8790] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void ResetRTPCValue(class UAkRtpc* RTPCValue, int32_t InterpolationTimeMs, class AActor* Actor, FName RTPC);          // [0x4aa29a0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.ReplaceMainOutput
-	// void ReplaceMainOutput(FAkOutputSettings& MainOutputSettings);                                                        // [0x4ae86f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ReplaceMainOutput(FAkOutputSettings& MainOutputSettings);                                                        // [0x4aa2900] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostTrigger
-	// void PostTrigger(class UAkTrigger* TriggerValue, class AActor* Actor, FName Trigger);                                 // [0x4ae85d0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void PostTrigger(class UAkTrigger* TriggerValue, class AActor* Actor, FName Trigger);                                 // [0x4aa27e0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostEventByName
-	// void PostEventByName(FString EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed);                      // [0x4ae84b0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void PostEventByName(FString EventName, class AActor* Actor, bool bStopWhenAttachedToDestroyed);                      // [0x4aa26c0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostEventAttached
-	// int32_t PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, FName attachPointName, bool bStopWhenAttachedToDestroyed, FString EventName); // [0x4ae82b0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// int32_t PostEventAttached(class UAkAudioEvent* AkEvent, class AActor* Actor, FName attachPointName, bool bStopWhenAttachedToDestroyed, FString EventName); // [0x4aa24c0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostEventAtLocationByName
-	// void PostEventAtLocationByName(FString EventName, FVector Location, FRotator Orientation, class UObject* WorldContextObject); // [0x4ae8140] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void PostEventAtLocationByName(FString EventName, FVector Location, FRotator Orientation, class UObject* WorldContextObject); // [0x4aa2350] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostEventAtLocation
-	// int32_t PostEventAtLocation(class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation, FString EventName, class UObject* WorldContextObject); // [0x4ae7f80] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t PostEventAtLocation(class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation, FString EventName, class UObject* WorldContextObject); // [0x4aa2190] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostEvent
-	// int32_t PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, bool bStopWhenAttachedToDestroyed, FString EventName); // [0x4ae7c80] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t PostEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, bool bStopWhenAttachedToDestroyed, FString EventName); // [0x4aa1e90] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostAndWaitForEndOfEventAsync
-	// void PostAndWaitForEndOfEventAsync(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t& PlayingID, bool bStopWhenAttachedToDestroyed, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4ae75e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void PostAndWaitForEndOfEventAsync(class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t& PlayingID, bool bStopWhenAttachedToDestroyed, TArray<FAkExternalSourceInfo>& ExternalSources, FLatentActionInfo LatentInfo); // [0x4aa17f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.PostAndWaitForEndOfEvent
-	// int32_t PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, TArray<FAkExternalSourceInfo>& ExternalSources, FString EventName, FLatentActionInfo LatentInfo); // [0x4ae7340] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t PostAndWaitForEndOfEvent(class UAkAudioEvent* AkEvent, class AActor* Actor, bool bStopWhenAttachedToDestroyed, TArray<FAkExternalSourceInfo>& ExternalSources, FString EventName, FLatentActionInfo LatentInfo); // [0x4aa1550] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.LoadInitBank
-	// void LoadInitBank();                                                                                                  // [0x4ae6e10] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void LoadInitBank();                                                                                                  // [0x4aa1020] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.LoadBanks
-	// void LoadBanks(TArray<UAkAudioBank*>& SoundBanks, bool SynchronizeSoundBanks);                                        // [0x4ae6d20] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void LoadBanks(TArray<UAkAudioBank*>& SoundBanks, bool SynchronizeSoundBanks);                                        // [0x4aa0f30] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.LoadBankByName
-	// void LoadBankByName(FString BankName);                                                                                // [0x4ae6c90] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void LoadBankByName(FString BankName);                                                                                // [0x4aa0ea0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.LoadBankAsync
-	// void LoadBankAsync(class UAkAudioBank* Bank, FDelegateProperty& BankLoadedCallback);                                  // [0x4ae6ba0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void LoadBankAsync(class UAkAudioBank* Bank, FDelegateProperty& BankLoadedCallback);                                  // [0x4aa0db0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.LoadBank
-	// void LoadBank(class UAkAudioBank* Bank, FString BankName, FLatentActionInfo LatentInfo, class UObject* WorldContextObject); // [0x4ae6a20] Final|Native|Static|Public|BlueprintCallable 
+	// void LoadBank(class UAkAudioBank* Bank, FString BankName, FLatentActionInfo LatentInfo, class UObject* WorldContextObject); // [0x4aa0c30] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.IsGame
-	// bool IsGame(class UObject* WorldContextObject);                                                                       // [0x4ae6990] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsGame(class UObject* WorldContextObject);                                                                       // [0x4aa0ba0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.IsEditor
-	// bool IsEditor();                                                                                                      // [0x4ae6960] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsEditor();                                                                                                      // [0x4aa0b70] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetSpeakerAngles
-	// void GetSpeakerAngles(TArray<float>& SpeakerAngles, float& HeightAngle, FString DeviceShareset);                      // [0x4ae6800] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetSpeakerAngles(TArray<float>& SpeakerAngles, float& HeightAngle, FString DeviceShareset);                      // [0x4aa0a10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetRTPCValue
-	// void GetRTPCValue(class UAkRtpc* RTPCValue, int32_t PlayingID, ERTPCValueType InputValueType, float& value, ERTPCValueType& OutputValueType, class AActor* Actor, FName RTPC); // [0x4ae65b0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetRTPCValue(class UAkRtpc* RTPCValue, int32_t PlayingID, ERTPCValueType InputValueType, float& value, ERTPCValueType& OutputValueType, class AActor* Actor, FName RTPC); // [0x4aa07c0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetOcclusionScalingFactor
-	// float GetOcclusionScalingFactor();                                                                                    // [0x4ae6330] Final|Native|Static|Public|BlueprintCallable 
+	// float GetOcclusionScalingFactor();                                                                                    // [0x4aa0540] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetCurrentAudioCulture
-	// FString GetCurrentAudioCulture();                                                                                     // [0x4ae62b0] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetCurrentAudioCulture();                                                                                     // [0x4aa04c0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetAvailableAudioCultures
-	// TArray<FString> GetAvailableAudioCultures();                                                                          // [0x4ae61d0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FString> GetAvailableAudioCultures();                                                                          // [0x4aa03e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetAkMediaAssetUserData
-	// class UObject* GetAkMediaAssetUserData(class UAkMediaAsset* Instance, class UClass* Type);                            // [0x4ae6100] Final|Native|Static|Public|BlueprintCallable 
+	// class UObject* GetAkMediaAssetUserData(class UAkMediaAsset* Instance, class UClass* Type);                            // [0x4aa0310] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetAkComponent
-	// class UAkComponent* GetAkComponent(class USceneComponent* AttachToComponent, bool& ComponentCreated, FName attachPointName, FVector Location, TEnumAsByte<EAttachLocation> LocationType); // [0x4ae5f50] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAkComponent* GetAkComponent(class USceneComponent* AttachToComponent, bool& ComponentCreated, FName attachPointName, FVector Location, TEnumAsByte<EAttachLocation> LocationType); // [0x4aa0160] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.GetAkAudioTypeUserData
-	// class UObject* GetAkAudioTypeUserData(class UAkAudioType* Instance, class UClass* Type);                              // [0x4ae5e80] Final|Native|Static|Public|BlueprintCallable 
+	// class UObject* GetAkAudioTypeUserData(class UAkAudioType* Instance, class UClass* Type);                              // [0x4aa0090] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.ExecuteActionOnPlayingID
-	// void ExecuteActionOnPlayingID(AkActionOnEventType ActionType, int32_t PlayingID, int32_t TransitionDuration, EAkCurveInterpolation FadeCurve); // [0x4ae5d40] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void ExecuteActionOnPlayingID(AkActionOnEventType ActionType, int32_t PlayingID, int32_t TransitionDuration, EAkCurveInterpolation FadeCurve); // [0x4a9ff50] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.ExecuteActionOnEvent
-	// void ExecuteActionOnEvent(class UAkAudioEvent* AkEvent, AkActionOnEventType ActionType, class AActor* Actor, int32_t TransitionDuration, EAkCurveInterpolation FadeCurve, int32_t PlayingID); // [0x4ae5b70] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void ExecuteActionOnEvent(class UAkAudioEvent* AkEvent, AkActionOnEventType ActionType, class AActor* Actor, int32_t TransitionDuration, EAkCurveInterpolation FadeCurve, int32_t PlayingID); // [0x4a9fd80] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.ClearBanks
-	// void ClearBanks();                                                                                                    // [0x4ae5b50] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void ClearBanks();                                                                                                    // [0x4a9fd60] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.CancelEventCallback
-	// void CancelEventCallback(FDelegateProperty& PostEventCallback);                                                       // [0x4ae5aa0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void CancelEventCallback(FDelegateProperty& PostEventCallback);                                                       // [0x4a9fcb0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkGameplayStatics.AddOutputCaptureMarker
-	// void AddOutputCaptureMarker(FString MarkerText);                                                                      // [0x4ae5a10] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void AddOutputCaptureMarker(FString MarkerText);                                                                      // [0x4a9fc20] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkCallbackInfo
@@ -1214,7 +1214,7 @@ class UAkEventCallbackInfo : public UAkCallbackInfo
 { 
 public:
 	int32_t                                            PlayingID;                                                  // 0x0038   (0x0004)  
-	int32_t                                            EventId;                                                    // 0x003C   (0x0004)  
+	int32_t                                            eventID;                                                    // 0x003C   (0x0004)  
 };
 
 /// Class /Script/AkAudio.AkMIDIEventCallbackInfo
@@ -1227,25 +1227,25 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetType
-	// EAkMidiEventType GetType();                                                                                           // [0x4aef1b0] Final|Native|Public|BlueprintCallable 
+	// EAkMidiEventType GetType();                                                                                           // [0x4aa93c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetProgramChange
-	// bool GetProgramChange(FAkMidiProgramChange& AsProgramChange);                                                         // [0x4aef100] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetProgramChange(FAkMidiProgramChange& AsProgramChange);                                                         // [0x4aa9310] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetPitchBend
-	// bool GetPitchBend(FAkMidiPitchBend& AsPitchBend);                                                                     // [0x4aef050] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetPitchBend(FAkMidiPitchBend& AsPitchBend);                                                                     // [0x4aa9260] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetNoteOn
-	// bool GetNoteOn(FAkMidiNoteOnOff& AsNoteOn);                                                                           // [0x4aeefa0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetNoteOn(FAkMidiNoteOnOff& AsNoteOn);                                                                           // [0x4aa91b0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetNoteOff
-	// bool GetNoteOff(FAkMidiNoteOnOff& AsNoteOff);                                                                         // [0x4aeeef0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetNoteOff(FAkMidiNoteOnOff& AsNoteOff);                                                                         // [0x4aa9100] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetNoteAftertouch
-	// bool GetNoteAftertouch(FAkMidiNoteAftertouch& AsNoteAftertouch);                                                      // [0x4aeee40] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetNoteAftertouch(FAkMidiNoteAftertouch& AsNoteAftertouch);                                                      // [0x4aa9050] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetGeneric
-	// bool GetGeneric(FAkMidiGeneric& AsGeneric);                                                                           // [0x4aeed90] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetGeneric(FAkMidiGeneric& AsGeneric);                                                                           // [0x4aa8fa0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetChannelAftertouch
-	// bool GetChannelAftertouch(FAkMidiChannelAftertouch& AsChannelAftertouch);                                             // [0x4aeece0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetChannelAftertouch(FAkMidiChannelAftertouch& AsChannelAftertouch);                                             // [0x4aa8ef0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetChannel
-	// char GetChannel();                                                                                                    // [0x4aeecb0] Final|Native|Public|BlueprintCallable 
+	// char GetChannel();                                                                                                    // [0x4aa8ec0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkMIDIEventCallbackInfo.GetCc
-	// bool GetCc(FAkMidiCc& AsCc);                                                                                          // [0x4aeec00] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool GetCc(FAkMidiCc& AsCc);                                                                                          // [0x4aa8e10] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkMarkerCallbackInfo
@@ -1255,7 +1255,7 @@ class UAkMarkerCallbackInfo : public UAkEventCallbackInfo
 public:
 	int32_t                                            Identifier;                                                 // 0x0040   (0x0004)  
 	int32_t                                            position;                                                   // 0x0044   (0x0004)  
-	SDK_UNDEFINED(16,1179) /* FString */               __um(label);                                                // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1184) /* FString */               __um(label);                                                // 0x0048   (0x0010)  
 };
 
 /// Class /Script/AkAudio.AkDurationCallbackInfo
@@ -1295,7 +1295,7 @@ public:
 	FAkSegmentInfo                                     SegmentInfo;                                                // 0x003C   (0x0024)  
 	EAkCallbackType                                    MusicSyncType;                                              // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0061   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1180) /* FString */               __um(UserCueName);                                          // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1185) /* FString */               __um(UserCueName);                                          // 0x0068   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkGeometrySurfaceOverride
@@ -1316,7 +1316,7 @@ struct FAkAcousticSurface
 { 
 	uint32_t                                           Texture;                                                    // 0x0000   (0x0004)  
 	float                                              Occlusion;                                                  // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,1181) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1186) /* FString */               __um(Name);                                                 // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkTriangle
@@ -1350,7 +1350,7 @@ public:
 	int32_t                                            LOD;                                                        // 0x0234   (0x0004)  
 	float                                              WeldingThreshold;                                           // 0x0238   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x023C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,1182) /* TMap<UMaterialInterface*, FAkGeometrySurfaceOverride> */ __um(StaticMeshSurfaceOverride); // 0x0240   (0x0050)  
+	SDK_UNDEFINED(80,1187) /* TMap<UMaterialInterface*, FAkGeometrySurfaceOverride> */ __um(StaticMeshSurfaceOverride); // 0x0240   (0x0050)  
 	FAkGeometrySurfaceOverride                         CollisionMeshSurfaceOverride;                               // 0x0290   (0x0018)  
 	bool                                               bEnableDiffraction;                                         // 0x02A8   (0x0001)  
 	bool                                               bEnableDiffractionOnBoundaryEdges;                          // 0x02A9   (0x0001)  
@@ -1358,19 +1358,19 @@ public:
 	class AActor*                                      AssociatedRoom;                                             // 0x02B0   (0x0008)  
 	unsigned char                                      UnknownData03_5[0x10];                                      // 0x02B8   (0x0010)  MISSED
 	FAkGeometryData                                    GeometryData;                                               // 0x02C8   (0x0050)  
-	SDK_UNDEFINED(80,1183) /* TMap<int32_t, double> */ __um(SurfaceAreas);                                         // 0x0318   (0x0050)  
+	SDK_UNDEFINED(80,1188) /* TMap<int32_t, double> */ __um(SurfaceAreas);                                         // 0x0318   (0x0050)  
 	unsigned char                                      UnknownData04_6[0x58];                                      // 0x0368   (0x0058)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkGeometryComponent.UpdateGeometry
-	// void UpdateGeometry();                                                                                                // [0x4aef220] Final|Native|Public|BlueprintCallable 
+	// void UpdateGeometry();                                                                                                // [0x4aa9430] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGeometryComponent.SendGeometry
-	// void SendGeometry();                                                                                                  // [0x4aef200] Final|Native|Public|BlueprintCallable 
+	// void SendGeometry();                                                                                                  // [0x4aa9410] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGeometryComponent.RemoveGeometry
-	// void RemoveGeometry();                                                                                                // [0x4aef1e0] Final|Native|Public|BlueprintCallable 
+	// void RemoveGeometry();                                                                                                // [0x4aa93f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkGeometryComponent.ConvertMesh
-	// void ConvertMesh();                                                                                                   // [0x4aeebe0] Final|Native|Public|BlueprintCallable 
+	// void ConvertMesh();                                                                                                   // [0x4aa8df0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkGroupValue
@@ -1378,7 +1378,7 @@ public:
 class UAkGroupValue : public UAkAudioType
 { 
 public:
-	SDK_UNDEFINED(16,1184) /* TArray<TWeakObjectPtr<UAkMediaAsset*>> */ __um(MediaDependencies);                   // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1189) /* TArray<TWeakObjectPtr<UAkMediaAsset*>> */ __um(MediaDependencies);                   // 0x0048   (0x0010)  
 	uint32_t                                           GroupShortID;                                               // 0x0058   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x14];                                      // 0x005C   (0x0014)  MISSED
 };
@@ -1405,7 +1405,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkHololensInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkHololensPlatformInfo
@@ -1419,10 +1419,10 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FAkPluginInfo
 { 
-	SDK_UNDEFINED(16,1185) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1190) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	uint32_t                                           PluginID;                                                   // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1186) /* FString */               __um(dll);                                                  // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1191) /* FString */               __um(dll);                                                  // 0x0018   (0x0010)  
 };
 
 /// Class /Script/AkAudio.AkInitBankAssetData
@@ -1438,8 +1438,8 @@ public:
 class UAkInitBank : public UAkAssetBase
 { 
 public:
-	SDK_UNDEFINED(16,1187) /* TArray<FString> */       __um(AvailableAudioCultures);                               // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,1188) /* FString */               __um(DefaultLanguage);                                      // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1192) /* TArray<FString> */       __um(AvailableAudioCultures);                               // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1193) /* FString */               __um(DefaultLanguage);                                      // 0x0068   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkAudioSession
@@ -1481,9 +1481,9 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToText
-	// FText Conv_FAkBoolPropertyToControlToText(FAkBoolPropertyToControl& INAkBoolPropertyToControl);                       // [0x4af34b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText Conv_FAkBoolPropertyToControlToText(FAkBoolPropertyToControl& INAkBoolPropertyToControl);                       // [0x4aad6d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.AkItemBoolPropertiesConv.Conv_FAkBoolPropertyToControlToString
-	// FString Conv_FAkBoolPropertyToControlToString(FAkBoolPropertyToControl& INAkBoolPropertyToControl);                   // [0x4af33c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_FAkBoolPropertyToControlToString(FAkBoolPropertyToControl& INAkBoolPropertyToControl);                   // [0x4aad5e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AkAudio.AkItemBoolProperties
@@ -1491,18 +1491,18 @@ public:
 class UAkItemBoolProperties : public UWidget
 { 
 public:
-	SDK_UNDEFINED(16,1189) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,1190) /* FMulticastInlineDelegate */ __um(OnPropertyDragged);                                 // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,1194) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,1195) /* FMulticastInlineDelegate */ __um(OnPropertyDragged);                                 // 0x0140   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0150   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkItemBoolProperties.SetSearchText
-	// void SetSearchText(FString newText);                                                                                  // [0x4af3ba0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetSearchText(FString newText);                                                                                  // [0x4aaddc0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkItemBoolProperties.GetSelectedProperty
-	// FString GetSelectedProperty();                                                                                        // [0x4af36f0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetSelectedProperty();                                                                                        // [0x4aad910] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkItemBoolProperties.GetSearchText
-	// FString GetSearchText();                                                                                              // [0x4af3670] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetSearchText();                                                                                              // [0x4aad890] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkItemPropertiesConv
@@ -1514,9 +1514,9 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkItemPropertiesConv.Conv_FAkPropertyToControlToText
-	// FText Conv_FAkPropertyToControlToText(FAkPropertyToControl& INAkPropertyToControl);                                   // [0x4af34b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText Conv_FAkPropertyToControlToText(FAkPropertyToControl& INAkPropertyToControl);                                   // [0x4aad6d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.AkItemPropertiesConv.Conv_FAkPropertyToControlToString
-	// FString Conv_FAkPropertyToControlToString(FAkPropertyToControl& INAkPropertyToControl);                               // [0x4af33c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_FAkPropertyToControlToString(FAkPropertyToControl& INAkPropertyToControl);                               // [0x4aad5e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AkAudio.AkItemProperties
@@ -1524,18 +1524,18 @@ public:
 class UAkItemProperties : public UWidget
 { 
 public:
-	SDK_UNDEFINED(16,1191) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,1192) /* FMulticastInlineDelegate */ __um(OnPropertyDragged);                                 // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,1196) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,1197) /* FMulticastInlineDelegate */ __um(OnPropertyDragged);                                 // 0x0140   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0150   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkItemProperties.SetSearchText
-	// void SetSearchText(FString newText);                                                                                  // [0x4af3ba0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetSearchText(FString newText);                                                                                  // [0x4aaddc0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkItemProperties.GetSelectedProperty
-	// FString GetSelectedProperty();                                                                                        // [0x4af3770] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetSelectedProperty();                                                                                        // [0x4aad990] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkItemProperties.GetSearchText
-	// FString GetSearchText();                                                                                              // [0x4af3670] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetSearchText();                                                                                              // [0x4aad890] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkLateReverbComponent
@@ -1551,7 +1551,7 @@ public:
 	bool                                               AutoAssignAuxBus;                                           // 0x0228   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0229   (0x0007)  MISSED
 	class UAkAuxBus*                                   AuxBus;                                                     // 0x0230   (0x0008)  
-	SDK_UNDEFINED(16,1193) /* FString */               __um(AuxBusName);                                           // 0x0238   (0x0010)  
+	SDK_UNDEFINED(16,1198) /* FString */               __um(AuxBusName);                                           // 0x0238   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0248   (0x0008)  MISSED
 	class UAkAuxBus*                                   AuxBusManual;                                               // 0x0250   (0x0008)  
 	unsigned char                                      UnknownData03_6[0x48];                                      // 0x0258   (0x0048)  MISSED
@@ -1559,7 +1559,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkLateReverbComponent.AssociateAkTextureSetComponent
-	// void AssociateAkTextureSetComponent(class UAkAcousticTextureSetComponent* textureSetComponent);                       // [0x4af3330] Final|Native|Public|BlueprintCallable 
+	// void AssociateAkTextureSetComponent(class UAkAcousticTextureSetComponent* textureSetComponent);                       // [0x4aad550] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.AkLinuxInitializationSettings
@@ -1575,7 +1575,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkLinuxInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkLinuxPlatformInfo
@@ -1598,7 +1598,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkMacInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkMacPlatformInfo
@@ -1616,8 +1616,8 @@ public:
 	bool                                               IsStreamed;                                                 // 0x0030   (0x0001)  
 	bool                                               UseDeviceMemory;                                            // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0032   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1194) /* FString */               __um(Language);                                             // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1195) /* FString */               __um(AssetPlatform);                                        // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1199) /* FString */               __um(Language);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1200) /* FString */               __um(AssetPlatform);                                        // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x28];                                      // 0x0058   (0x0028)  MISSED
 };
 
@@ -1628,11 +1628,11 @@ class UAkMediaAsset : public UObject
 public:
 	uint32_t                                           ID;                                                         // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1196) /* FString */               __um(MediaName);                                            // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1201) /* FString */               __um(MediaName);                                            // 0x0038   (0x0010)  
 	bool                                               AutoLoad;                                                   // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0049   (0x0007)  MISSED
 	TArray<class UObject*>                             UserData;                                                   // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,1197) /* FString */               __um(Language);                                             // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,1202) /* FString */               __um(Language);                                             // 0x0060   (0x0010)  
 	class UAkMediaAssetData*                           CurrentMediaAssetData;                                      // 0x0070   (0x0008)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0078   (0x0008)  MISSED
 };
@@ -1681,7 +1681,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkPS4InitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4af3820] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4aada40] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkPS4PlatformInfo
@@ -1734,7 +1734,7 @@ public:
 	bool                                               bEnabled;                                                   // 0x0268   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0269   (0x0007)  MISSED
 	class UAkAuxBus*                                   AuxBus;                                                     // 0x0270   (0x0008)  
-	SDK_UNDEFINED(16,1198) /* FString */               __um(AuxBusName);                                           // 0x0278   (0x0010)  
+	SDK_UNDEFINED(16,1203) /* FString */               __um(AuxBusName);                                           // 0x0278   (0x0010)  
 	float                                              SendLevel;                                                  // 0x0288   (0x0004)  
 	float                                              FadeRate;                                                   // 0x028C   (0x0004)  
 	float                                              Priority;                                                   // 0x0290   (0x0004)  
@@ -1761,9 +1761,9 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkRoomComponent.SetGeometryComponent
-	// void SetGeometryComponent(class UAkAcousticTextureSetComponent* textureSetComponent);                                 // [0x4af39f0] Final|Native|Public|BlueprintCallable 
+	// void SetGeometryComponent(class UAkAcousticTextureSetComponent* textureSetComponent);                                 // [0x4aadc10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkRoomComponent.GetPrimitiveParent
-	// class UPrimitiveComponent* GetPrimitiveParent();                                                                      // [0x4af3640] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UPrimitiveComponent* GetPrimitiveParent();                                                                      // [0x4aad860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkRtpc
@@ -1783,29 +1783,29 @@ public:
 	FFilePath                                          WwiseProjectPath;                                           // 0x0038   (0x0010)  
 	FDirectoryPath                                     WwiseSoundDataFolder;                                       // 0x0048   (0x0010)  
 	bool                                               bAutoConnectToWAAPI;                                        // 0x0058   (0x0001)  
-	SDK_UNDEFINED(1,1199) /* TEnumAsByte<ECollisionChannel> */ __um(DefaultOcclusionCollisionChannel);             // 0x0059   (0x0001)  
-	SDK_UNDEFINED(1,1200) /* TEnumAsByte<ECollisionChannel> */ __um(DefaultFitToGeometryCollisionChannel);         // 0x005A   (0x0001)  
+	SDK_UNDEFINED(1,1204) /* TEnumAsByte<ECollisionChannel> */ __um(DefaultOcclusionCollisionChannel);             // 0x0059   (0x0001)  
+	SDK_UNDEFINED(1,1205) /* TEnumAsByte<ECollisionChannel> */ __um(DefaultFitToGeometryCollisionChannel);         // 0x005A   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x5];                                       // 0x005B   (0x0005)  MISSED
-	SDK_UNDEFINED(80,1201) /* TMap<TWeakObjectPtr<UPhysicalMaterial*>, FAkGeometrySurfacePropertiesToMap> */ __um(AkGeometryMap); // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,1206) /* TMap<TWeakObjectPtr<UPhysicalMaterial*>, FAkGeometrySurfacePropertiesToMap> */ __um(AkGeometryMap); // 0x0060   (0x0050)  
 	float                                              GlobalDecayAbsorption;                                      // 0x00B0   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x00B4   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1202) /* TWeakObjectPtr<UAkAuxBus*> */ __um(DefaultReverbAuxBus);                             // 0x00B8   (0x0030)  
-	SDK_UNDEFINED(80,1203) /* TMap<float, TWeakObjectPtr<UAkAuxBus*>> */ __um(EnvironmentDecayAuxBusMap);          // 0x00E8   (0x0050)  
-	SDK_UNDEFINED(16,1204) /* FString */               __um(HFDampingName);                                        // 0x0138   (0x0010)  
-	SDK_UNDEFINED(16,1205) /* FString */               __um(DecayEstimateName);                                    // 0x0148   (0x0010)  
-	SDK_UNDEFINED(16,1206) /* FString */               __um(TimeToFirstReflectionName);                            // 0x0158   (0x0010)  
-	SDK_UNDEFINED(48,1207) /* TWeakObjectPtr<UAkRtpc*> */ __um(HFDampingRTPC);                                     // 0x0168   (0x0030)  
-	SDK_UNDEFINED(48,1208) /* TWeakObjectPtr<UAkRtpc*> */ __um(DecayEstimateRTPC);                                 // 0x0198   (0x0030)  
-	SDK_UNDEFINED(48,1209) /* TWeakObjectPtr<UAkRtpc*> */ __um(TimeToFirstReflectionRTPC);                         // 0x01C8   (0x0030)  
-	SDK_UNDEFINED(48,1210) /* TWeakObjectPtr<UAkAudioEvent*> */ __um(AudioInputEvent);                             // 0x01F8   (0x0030)  
-	SDK_UNDEFINED(80,1211) /* TMap<FGuid, FAkAcousticTextureParams> */ __um(AcousticTextureParamsMap);             // 0x0228   (0x0050)  
+	SDK_UNDEFINED(48,1207) /* TWeakObjectPtr<UAkAuxBus*> */ __um(DefaultReverbAuxBus);                             // 0x00B8   (0x0030)  
+	SDK_UNDEFINED(80,1208) /* TMap<float, TWeakObjectPtr<UAkAuxBus*>> */ __um(EnvironmentDecayAuxBusMap);          // 0x00E8   (0x0050)  
+	SDK_UNDEFINED(16,1209) /* FString */               __um(HFDampingName);                                        // 0x0138   (0x0010)  
+	SDK_UNDEFINED(16,1210) /* FString */               __um(DecayEstimateName);                                    // 0x0148   (0x0010)  
+	SDK_UNDEFINED(16,1211) /* FString */               __um(TimeToFirstReflectionName);                            // 0x0158   (0x0010)  
+	SDK_UNDEFINED(48,1212) /* TWeakObjectPtr<UAkRtpc*> */ __um(HFDampingRTPC);                                     // 0x0168   (0x0030)  
+	SDK_UNDEFINED(48,1213) /* TWeakObjectPtr<UAkRtpc*> */ __um(DecayEstimateRTPC);                                 // 0x0198   (0x0030)  
+	SDK_UNDEFINED(48,1214) /* TWeakObjectPtr<UAkRtpc*> */ __um(TimeToFirstReflectionRTPC);                         // 0x01C8   (0x0030)  
+	SDK_UNDEFINED(48,1215) /* TWeakObjectPtr<UAkAudioEvent*> */ __um(AudioInputEvent);                             // 0x01F8   (0x0030)  
+	SDK_UNDEFINED(80,1216) /* TMap<FGuid, FAkAcousticTextureParams> */ __um(AcousticTextureParamsMap);             // 0x0228   (0x0050)  
 	bool                                               SplitSwitchContainerMedia;                                  // 0x0278   (0x0001)  
 	bool                                               SplitMediaPerFolder;                                        // 0x0279   (0x0001)  
 	bool                                               UseEventBasedPackaging;                                     // 0x027A   (0x0001)  
 	bool                                               EnableAutomaticAssetSynchronization;                        // 0x027B   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x027C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1212) /* FString */               __um(CommandletCommitMessage);                              // 0x0280   (0x0010)  
-	SDK_UNDEFINED(80,1213) /* TMap<FString, FString> */ __um(UnrealCultureToWwiseCulture);                         // 0x0290   (0x0050)  
+	SDK_UNDEFINED(16,1217) /* FString */               __um(CommandletCommitMessage);                              // 0x0280   (0x0010)  
+	SDK_UNDEFINED(80,1218) /* TMap<FString, FString> */ __um(UnrealCultureToWwiseCulture);                         // 0x0290   (0x0050)  
 	bool                                               AskedToUseNewAssetManagement;                               // 0x02E0   (0x0001)  
 	bool                                               bEnableMultiCoreRendering;                                  // 0x02E1   (0x0001)  
 	bool                                               MigratedEnableMultiCoreRendering;                           // 0x02E2   (0x0001)  
@@ -1825,7 +1825,7 @@ public:
 	FFilePath                                          WwiseMacInstallationPath;                                   // 0x0040   (0x0010)  
 	bool                                               EnableAutomaticAssetSynchronization;                        // 0x0050   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0051   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1214) /* FString */               __um(WaapiIPAddress);                                       // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1219) /* FString */               __um(WaapiIPAddress);                                       // 0x0058   (0x0010)  
 	uint32_t                                           WaapiPort;                                                  // 0x0068   (0x0004)  
 	bool                                               bAutoConnectToWAAPI;                                        // 0x006C   (0x0001)  
 	bool                                               AutoSyncSelection;                                          // 0x006D   (0x0001)  
@@ -1838,7 +1838,7 @@ public:
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FAkPropertyToControl
 { 
-	SDK_UNDEFINED(16,1215) /* FString */               __um(ItemProperty);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1220) /* FString */               __um(ItemProperty);                                         // 0x0000   (0x0010)  
 };
 
 /// Class /Script/AkAudio.AkSlider
@@ -1847,9 +1847,9 @@ class UAkSlider : public UWidget
 { 
 public:
 	float                                              value;                                                      // 0x0130   (0x0004)  
-	SDK_UNDEFINED(20,1216) /* FDelegateProperty */     __um(ValueDelegate);                                        // 0x0134   (0x0014)  
+	SDK_UNDEFINED(20,1221) /* FDelegateProperty */     __um(ValueDelegate);                                        // 0x0134   (0x0014)  
 	FSliderStyle                                       WidgetStyle;                                                // 0x0148   (0x0370)  
-	SDK_UNDEFINED(1,1217) /* TEnumAsByte<EOrientation> */ __um(Orientation);                                       // 0x04B8   (0x0001)  
+	SDK_UNDEFINED(1,1222) /* TEnumAsByte<EOrientation> */ __um(Orientation);                                       // 0x04B8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x04B9   (0x0003)  MISSED
 	FLinearColor                                       SliderBarColor;                                             // 0x04BC   (0x0010)  
 	FLinearColor                                       SliderHandleColor;                                          // 0x04CC   (0x0010)  
@@ -1861,35 +1861,35 @@ public:
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x04E5   (0x0003)  MISSED
 	FAkPropertyToControl                               ThePropertyToControl;                                       // 0x04E8   (0x0010)  
 	FAkWwiseItemToControl                              ItemToControl;                                              // 0x04F8   (0x0040)  
-	SDK_UNDEFINED(16,1218) /* FMulticastInlineDelegate */ __um(OnValueChanged);                                    // 0x0538   (0x0010)  
-	SDK_UNDEFINED(16,1219) /* FMulticastInlineDelegate */ __um(OnItemDropped);                                     // 0x0548   (0x0010)  
-	SDK_UNDEFINED(16,1220) /* FMulticastInlineDelegate */ __um(OnPropertyDropped);                                 // 0x0558   (0x0010)  
+	SDK_UNDEFINED(16,1223) /* FMulticastInlineDelegate */ __um(OnValueChanged);                                    // 0x0538   (0x0010)  
+	SDK_UNDEFINED(16,1224) /* FMulticastInlineDelegate */ __um(OnItemDropped);                                     // 0x0548   (0x0010)  
+	SDK_UNDEFINED(16,1225) /* FMulticastInlineDelegate */ __um(OnPropertyDropped);                                 // 0x0558   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x20];                                      // 0x0568   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkSlider.SetValue
-	// void SetValue(float InValue);                                                                                         // [0x4af3de0] Final|Native|Public|BlueprintCallable 
+	// void SetValue(float InValue);                                                                                         // [0x4aae000] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetStepSize
-	// void SetStepSize(float InValue);                                                                                      // [0x4af3d60] Final|Native|Public|BlueprintCallable 
+	// void SetStepSize(float InValue);                                                                                      // [0x4aadf80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetSliderHandleColor
-	// void SetSliderHandleColor(FLinearColor InValue);                                                                      // [0x4af3cd0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetSliderHandleColor(FLinearColor InValue);                                                                      // [0x4aadef0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetSliderBarColor
-	// void SetSliderBarColor(FLinearColor InValue);                                                                         // [0x4af3c40] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetSliderBarColor(FLinearColor InValue);                                                                         // [0x4aade60] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetLocked
-	// void SetLocked(bool InValue);                                                                                         // [0x4af3b10] Final|Native|Public|BlueprintCallable 
+	// void SetLocked(bool InValue);                                                                                         // [0x4aadd30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetIndentHandle
-	// void SetIndentHandle(bool InValue);                                                                                   // [0x4af3a80] Final|Native|Public|BlueprintCallable 
+	// void SetIndentHandle(bool InValue);                                                                                   // [0x4aadca0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetAkSliderItemProperty
-	// void SetAkSliderItemProperty(FString ItemProperty);                                                                   // [0x4af3950] Final|Native|Public|BlueprintCallable 
+	// void SetAkSliderItemProperty(FString ItemProperty);                                                                   // [0x4aadb70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.SetAkSliderItemId
-	// void SetAkSliderItemId(FGuid& ItemId);                                                                                // [0x4af38b0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetAkSliderItemId(FGuid& ItemId);                                                                                // [0x4aadad0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.AkSlider.GetValue
-	// float GetValue();                                                                                                     // [0x4af37f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetValue();                                                                                                     // [0x4aada10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkSlider.GetAkSliderItemProperty
-	// FString GetAkSliderItemProperty();                                                                                    // [0x4af35f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetAkSliderItemProperty();                                                                                    // [0x4aad810] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkSlider.GetAkSliderItemId
-	// FGuid GetAkSliderItemId();                                                                                            // [0x4af35b0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FGuid GetAkSliderItemId();                                                                                            // [0x4aad7d0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkSpatialAudioVolume
@@ -1908,7 +1908,7 @@ class AAkSpotReflector : public AActor
 { 
 public:
 	class UAkAuxBus*                                   EarlyReflectionAuxBus;                                      // 0x0230   (0x0008)  
-	SDK_UNDEFINED(16,1221) /* FString */               __um(EarlyReflectionAuxBusName);                            // 0x0238   (0x0010)  
+	SDK_UNDEFINED(16,1226) /* FString */               __um(EarlyReflectionAuxBusName);                            // 0x0238   (0x0010)  
 	class UAkAcousticTexture*                          AcousticTexture;                                            // 0x0248   (0x0008)  
 	float                                              DistanceScalingFactor;                                      // 0x0250   (0x0004)  
 	float                                              Level;                                                      // 0x0254   (0x0004)  
@@ -1959,11 +1959,11 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkSurfaceReflectorSetComponent.UpdateSurfaceReflectorSet
-	// void UpdateSurfaceReflectorSet();                                                                                     // [0x4af9ac0] Final|Native|Public|BlueprintCallable 
+	// void UpdateSurfaceReflectorSet();                                                                                     // [0x4ab3ce0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSurfaceReflectorSetComponent.SendSurfaceReflectorSet
-	// void SendSurfaceReflectorSet();                                                                                       // [0x4af8a70] Final|Native|Public|BlueprintCallable 
+	// void SendSurfaceReflectorSet();                                                                                       // [0x4ab2c90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkSurfaceReflectorSetComponent.RemoveSurfaceReflectorSet
-	// void RemoveSurfaceReflectorSet();                                                                                     // [0x4aef1e0] Final|Native|Public|BlueprintCallable 
+	// void RemoveSurfaceReflectorSet();                                                                                     // [0x4aa93f0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/AkAudio.AkCommunicationSettingsWithCommSelection
@@ -1987,7 +1987,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkSwitchInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkSwitchPlatformInfo
@@ -2041,23 +2041,23 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkWaapiCalls.Unsubscribe
-	// FAKWaapiJsonObject Unsubscribe(FAkWaapiSubscriptionId& SubscriptionId, bool& UnsubscriptionDone);                     // [0x4af99a0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject Unsubscribe(FAkWaapiSubscriptionId& SubscriptionId, bool& UnsubscriptionDone);                     // [0x4ab3bc0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiCalls.SubscribeToWaapi
-	// FAKWaapiJsonObject SubscribeToWaapi(FAkWaapiUri& WaapiUri, FAKWaapiJsonObject& WaapiOptions, FDelegateProperty& Callback, FAkWaapiSubscriptionId& SubscriptionId, bool& SubscriptionDone); // [0x4af9720] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SubscribeToWaapi(FAkWaapiUri& WaapiUri, FAKWaapiJsonObject& WaapiOptions, FDelegateProperty& Callback, FAkWaapiSubscriptionId& SubscriptionId, bool& SubscriptionDone); // [0x4ab3940] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiCalls.SetSubscriptionID
-	// void SetSubscriptionID(FAkWaapiSubscriptionId& Subscription, int32_t ID);                                             // [0x4af9650] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetSubscriptionID(FAkWaapiSubscriptionId& Subscription, int32_t ID);                                             // [0x4ab3870] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiCalls.RegisterWaapiProjectLoadedCallback
-	// bool RegisterWaapiProjectLoadedCallback(FDelegateProperty& Callback);                                                 // [0x4af89b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool RegisterWaapiProjectLoadedCallback(FDelegateProperty& Callback);                                                 // [0x4ab2bd0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiCalls.RegisterWaapiConnectionLostCallback
-	// bool RegisterWaapiConnectionLostCallback(FDelegateProperty& Callback);                                                // [0x4af88f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool RegisterWaapiConnectionLostCallback(FDelegateProperty& Callback);                                                // [0x4ab2b10] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiCalls.GetSubscriptionID
-	// int32_t GetSubscriptionID(FAkWaapiSubscriptionId& Subscription);                                                      // [0x4af8860] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t GetSubscriptionID(FAkWaapiSubscriptionId& Subscription);                                                      // [0x4ab2a80] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiCalls.Conv_FAkWaapiSubscriptionIdToText
-	// FText Conv_FAkWaapiSubscriptionIdToText(FAkWaapiSubscriptionId& INAkWaapiSubscriptionId);                             // [0x4af7d00] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText Conv_FAkWaapiSubscriptionIdToText(FAkWaapiSubscriptionId& INAkWaapiSubscriptionId);                             // [0x4ab1f20] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.AkWaapiCalls.Conv_FAkWaapiSubscriptionIdToString
-	// FString Conv_FAkWaapiSubscriptionIdToString(FAkWaapiSubscriptionId& INAkWaapiSubscriptionId);                         // [0x4af7c30] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_FAkWaapiSubscriptionIdToString(FAkWaapiSubscriptionId& INAkWaapiSubscriptionId);                         // [0x4ab1e50] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.AkWaapiCalls.CallWaapi
-	// FAKWaapiJsonObject CallWaapi(FAkWaapiUri& WaapiUri, FAKWaapiJsonObject& WaapiArgs, FAKWaapiJsonObject& WaapiOptions); // [0x4af77f0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject CallWaapi(FAkWaapiUri& WaapiUri, FAKWaapiJsonObject& WaapiArgs, FAKWaapiJsonObject& WaapiOptions); // [0x4ab1a10] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/AkAudio.SAkWaapiFieldNamesConv
@@ -2069,9 +2069,9 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.SAkWaapiFieldNamesConv.Conv_FAkWaapiFieldNamesToText
-	// FText Conv_FAkWaapiFieldNamesToText(FAkWaapiFieldNames& INAkWaapiFieldNames);                                         // [0x4af34b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText Conv_FAkWaapiFieldNamesToText(FAkWaapiFieldNames& INAkWaapiFieldNames);                                         // [0x4aad6d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.SAkWaapiFieldNamesConv.Conv_FAkWaapiFieldNamesToString
-	// FString Conv_FAkWaapiFieldNamesToString(FAkWaapiFieldNames& INAkWaapiFieldNames);                                     // [0x4af33c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_FAkWaapiFieldNamesToString(FAkWaapiFieldNames& INAkWaapiFieldNames);                                     // [0x4aad5e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AkAudio.AkWaapiJsonManager
@@ -2083,33 +2083,33 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkWaapiJsonManager.SetStringField
-	// FAKWaapiJsonObject SetStringField(FAkWaapiFieldNames& FieldName, FString FieldValue, FAKWaapiJsonObject Target);      // [0x4af9470] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SetStringField(FAkWaapiFieldNames& FieldName, FString FieldValue, FAKWaapiJsonObject Target);      // [0x4ab3690] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.SetObjectField
-	// FAKWaapiJsonObject SetObjectField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject FieldValue, FAKWaapiJsonObject Target); // [0x4af9250] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SetObjectField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject FieldValue, FAKWaapiJsonObject Target); // [0x4ab3470] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.SetNumberField
-	// FAKWaapiJsonObject SetNumberField(FAkWaapiFieldNames& FieldName, float FieldValue, FAKWaapiJsonObject Target);        // [0x4af9080] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SetNumberField(FAkWaapiFieldNames& FieldName, float FieldValue, FAKWaapiJsonObject Target);        // [0x4ab32a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.SetBoolField
-	// FAKWaapiJsonObject SetBoolField(FAkWaapiFieldNames& FieldName, bool FieldValue, FAKWaapiJsonObject Target);           // [0x4af8eb0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SetBoolField(FAkWaapiFieldNames& FieldName, bool FieldValue, FAKWaapiJsonObject Target);           // [0x4ab30d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.SetArrayStringFields
-	// FAKWaapiJsonObject SetArrayStringFields(FAkWaapiFieldNames& FieldName, TArray<FString>& FieldStringValues, FAKWaapiJsonObject Target); // [0x4af8cb0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SetArrayStringFields(FAkWaapiFieldNames& FieldName, TArray<FString>& FieldStringValues, FAKWaapiJsonObject Target); // [0x4ab2ed0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.SetArrayObjectFields
-	// FAKWaapiJsonObject SetArrayObjectFields(FAkWaapiFieldNames& FieldName, TArray<FAKWaapiJsonObject>& FieldObjectValues, FAKWaapiJsonObject Target); // [0x4af8a90] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject SetArrayObjectFields(FAkWaapiFieldNames& FieldName, TArray<FAKWaapiJsonObject>& FieldObjectValues, FAKWaapiJsonObject Target); // [0x4ab2cb0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.GetStringField
-	// FString GetStringField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                     // [0x4af86d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FString GetStringField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                     // [0x4ab28f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.GetObjectField
-	// FAKWaapiJsonObject GetObjectField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                          // [0x4af8430] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// FAKWaapiJsonObject GetObjectField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                          // [0x4ab2650] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.GetNumberField
-	// float GetNumberField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                       // [0x4af82e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// float GetNumberField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                       // [0x4ab2500] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.GetIntegerField
-	// int32_t GetIntegerField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                    // [0x4af8190] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// int32_t GetIntegerField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                    // [0x4ab23b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.GetBoolField
-	// bool GetBoolField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                          // [0x4af8040] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool GetBoolField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                                          // [0x4ab2260] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.GetArrayField
-	// TArray<FAKWaapiJsonObject> GetArrayField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                   // [0x4af7df0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<FAKWaapiJsonObject> GetArrayField(FAkWaapiFieldNames& FieldName, FAKWaapiJsonObject Target);                   // [0x4ab2010] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.AkWaapiJsonManager.Conv_FAKWaapiJsonObjectToText
-	// FText Conv_FAKWaapiJsonObjectToText(FAKWaapiJsonObject INAKWaapiJsonObject);                                          // [0x4af7b00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FText Conv_FAKWaapiJsonObjectToText(FAKWaapiJsonObject INAKWaapiJsonObject);                                          // [0x4ab1d20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.AkWaapiJsonManager.Conv_FAKWaapiJsonObjectToString
-	// FString Conv_FAKWaapiJsonObjectToString(FAKWaapiJsonObject INAKWaapiJsonObject);                                      // [0x4af79f0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FString Conv_FAKWaapiJsonObjectToString(FAKWaapiJsonObject INAKWaapiJsonObject);                                      // [0x4ab1c10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AkAudio.AkWaapiUriConv
@@ -2121,9 +2121,9 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkWaapiUriConv.Conv_FAkWaapiUriToText
-	// FText Conv_FAkWaapiUriToText(FAkWaapiUri& INAkWaapiUri);                                                              // [0x4af34b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FText Conv_FAkWaapiUriToText(FAkWaapiUri& INAkWaapiUri);                                                              // [0x4aad6d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/AkAudio.AkWaapiUriConv.Conv_FAkWaapiUriToString
-	// FString Conv_FAkWaapiUriToString(FAkWaapiUri& INAkWaapiUri);                                                          // [0x4af33c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString Conv_FAkWaapiUriToString(FAkWaapiUri& INAkWaapiUri);                                                          // [0x4aad5e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/AkAudio.AkWindowsAdvancedInitializationSettings
@@ -2148,7 +2148,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkWindowsInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkWin32PlatformInfo
@@ -2194,7 +2194,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkWinGDKInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkWinAnvilInitializationSettings
@@ -2223,18 +2223,18 @@ public:
 class UAkWwiseTree : public UWidget
 { 
 public:
-	SDK_UNDEFINED(16,1222) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,1223) /* FMulticastInlineDelegate */ __um(OnItemDragged);                                     // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,1227) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,1228) /* FMulticastInlineDelegate */ __um(OnItemDragged);                                     // 0x0140   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0150   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.AkWwiseTree.SetSearchText
-	// void SetSearchText(FString newText);                                                                                  // [0x4af3ba0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void SetSearchText(FString newText);                                                                                  // [0x4aaddc0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/AkAudio.AkWwiseTree.GetSelectedItem
-	// FAkWwiseObjectDetails GetSelectedItem();                                                                              // [0x4af85b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FAkWwiseObjectDetails GetSelectedItem();                                                                              // [0x4ab27d0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/AkAudio.AkWwiseTree.GetSearchText
-	// FString GetSearchText();                                                                                              // [0x4af3670] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetSearchText();                                                                                              // [0x4aad890] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AkAudio.AkWwiseTreeSelector
@@ -2242,8 +2242,8 @@ public:
 class UAkWwiseTreeSelector : public UWidget
 { 
 public:
-	SDK_UNDEFINED(16,1224) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,1225) /* FMulticastInlineDelegate */ __um(OnItemDragged);                                     // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,1229) /* FMulticastInlineDelegate */ __um(OnSelectionChanged);                                // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,1230) /* FMulticastInlineDelegate */ __um(OnItemDragged);                                     // 0x0140   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x40];                                      // 0x0150   (0x0040)  MISSED
 };
 
@@ -2279,7 +2279,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkXboxOneGDKInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkXboxOneAnvilInitializationSettings
@@ -2349,7 +2349,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkXboxOneInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkXboxOnePlatformInfo
@@ -2394,7 +2394,7 @@ public:
 
 	/// Functions
 	// Function /Script/AkAudio.AkXSXInitializationSettings.MigrateMultiCoreRendering
-	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4ae31f0] Final|Native|Public  
+	// void MigrateMultiCoreRendering(bool NewValue);                                                                        // [0x4a9d400] Final|Native|Public  
 };
 
 /// Class /Script/AkAudio.AkMPXInitializationSettings
@@ -2423,11 +2423,11 @@ public:
 	int32_t                                            ScrubTailLengthMs;                                          // 0x013C   (0x0004)  
 	bool                                               StopAtSectionEnd;                                           // 0x0140   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0141   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1226) /* FString */               __um(EventName);                                            // 0x0148   (0x0010)  
+	SDK_UNDEFINED(16,1231) /* FString */               __um(EventName);                                            // 0x0148   (0x0010)  
 	unsigned char                                      UnknownData03_5[0x20];                                      // 0x0158   (0x0020)  MISSED
 	float                                              MaxSourceDuration;                                          // 0x0178   (0x0004)  
 	unsigned char                                      UnknownData04_5[0x4];                                       // 0x017C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1227) /* FString */               __um(MaxDurationSourceID);                                  // 0x0180   (0x0010)  
+	SDK_UNDEFINED(16,1232) /* FString */               __um(MaxDurationSourceID);                                  // 0x0180   (0x0010)  
 	unsigned char                                      UnknownData05_6[0x48];                                      // 0x0190   (0x0048)  MISSED
 };
 
@@ -2455,7 +2455,7 @@ struct FMovieSceneTangentDataSerializationHelper
 { 
 	float                                              ArriveTangent;                                              // 0x0000   (0x0004)  
 	float                                              LeaveTangent;                                               // 0x0004   (0x0004)  
-	SDK_UNDEFINED(1,1228) /* TEnumAsByte<ERichCurveTangentWeightMode> */ __um(TangentWeightMode);                  // 0x0008   (0x0001)  
+	SDK_UNDEFINED(1,1233) /* TEnumAsByte<ERichCurveTangentWeightMode> */ __um(TangentWeightMode);                  // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0009   (0x0003)  MISSED
 	float                                              ArriveTangentWeight;                                        // 0x000C   (0x0004)  
 	float                                              LeaveTangentWeight;                                         // 0x0010   (0x0004)  
@@ -2466,8 +2466,8 @@ struct FMovieSceneTangentDataSerializationHelper
 struct FMovieSceneFloatValueSerializationHelper
 { 
 	float                                              value;                                                      // 0x0000   (0x0004)  
-	SDK_UNDEFINED(1,1229) /* TEnumAsByte<ERichCurveInterpMode> */ __um(InterpMode);                                // 0x0004   (0x0001)  
-	SDK_UNDEFINED(1,1230) /* TEnumAsByte<ERichCurveTangentMode> */ __um(TangentMode);                              // 0x0005   (0x0001)  
+	SDK_UNDEFINED(1,1234) /* TEnumAsByte<ERichCurveInterpMode> */ __um(InterpMode);                                // 0x0004   (0x0001)  
+	SDK_UNDEFINED(1,1235) /* TEnumAsByte<ERichCurveTangentMode> */ __um(TangentMode);                              // 0x0005   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0006   (0x0002)  MISSED
 	FMovieSceneTangentDataSerializationHelper          Tangent;                                                    // 0x0008   (0x0014)  
 };
@@ -2476,8 +2476,8 @@ struct FMovieSceneFloatValueSerializationHelper
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FMovieSceneFloatChannelSerializationHelper
 { 
-	SDK_UNDEFINED(1,1231) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PreInfinityExtrap);                      // 0x0000   (0x0001)  
-	SDK_UNDEFINED(1,1232) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PostInfinityExtrap);                     // 0x0001   (0x0001)  
+	SDK_UNDEFINED(1,1236) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PreInfinityExtrap);                      // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,1237) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PostInfinityExtrap);                     // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0002   (0x0006)  MISSED
 	TArray<int32_t>                                    Times;                                                      // 0x0008   (0x0010)  
 	TArray<FMovieSceneFloatValueSerializationHelper>   Values;                                                     // 0x0018   (0x0010)  
@@ -2492,7 +2492,7 @@ class UMovieSceneAkAudioRTPCSection : public UMovieSceneSection
 { 
 public:
 	class UAkRtpc*                                     RTPC;                                                       // 0x00F0   (0x0008)  
-	SDK_UNDEFINED(16,1233) /* FString */               __um(Name);                                                 // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,1238) /* FString */               __um(Name);                                                 // 0x00F8   (0x0010)  
 	FRichCurve                                         FloatCurve;                                                 // 0x0108   (0x0080)  
 	FMovieSceneFloatChannelSerializationHelper         FloatChannelSerializationHelper;                            // 0x0188   (0x0030)  
 	FMovieSceneFloatChannel                            RTPCChannel;                                                // 0x01B8   (0x00A0)  
@@ -2511,15 +2511,15 @@ public:
 class UPostEventAsync : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,1234) /* FMulticastInlineDelegate */ __um(COMPLETED);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1239) /* FMulticastInlineDelegate */ __um(COMPLETED);                                         // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x60];                                      // 0x0048   (0x0060)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.PostEventAsync.PostEventAsync
-	// class UPostEventAsync* PostEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, bool bStopWhenAttachedToDestroyed); // [0x4afcfc0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UPostEventAsync* PostEventAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, class AActor* Actor, int32_t CallbackMask, FDelegateProperty& PostEventCallback, TArray<FAkExternalSourceInfo>& ExternalSources, bool bStopWhenAttachedToDestroyed); // [0x4ab71e0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/AkAudio.PostEventAsync.PollPostEventFuture
-	// void PollPostEventFuture();                                                                                           // [0x4afcf80] Final|Native|Private 
+	// void PollPostEventFuture();                                                                                           // [0x4ab71a0] Final|Native|Private 
 };
 
 /// Class /Script/AkAudio.PostEventAtLocationAsync
@@ -2527,15 +2527,15 @@ public:
 class UPostEventAtLocationAsync : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,1235) /* FMulticastInlineDelegate */ __um(COMPLETED);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1240) /* FMulticastInlineDelegate */ __um(COMPLETED);                                         // 0x0038   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x40];                                      // 0x0048   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/AkAudio.PostEventAtLocationAsync.PostEventAtLocationAsync
-	// class UPostEventAtLocationAsync* PostEventAtLocationAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation); // [0x4afd260] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UPostEventAtLocationAsync* PostEventAtLocationAsync(class UObject* WorldContextObject, class UAkAudioEvent* AkEvent, FVector Location, FRotator Orientation); // [0x4ab7480] Final|BlueprintCosmetic|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/AkAudio.PostEventAtLocationAsync.PollPostEventFuture
-	// void PollPostEventFuture();                                                                                           // [0x4afcfa0] Final|Native|Private 
+	// void PollPostEventFuture();                                                                                           // [0x4ab71c0] Final|Native|Private 
 };
 
 /// Struct /Script/AkAudio.AKWaapiJsonObject
@@ -2556,10 +2556,10 @@ struct FAkWaapiSubscriptionId
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FAkExternalSourceInfo
 { 
-	SDK_UNDEFINED(16,1236) /* FString */               __um(ExternalSrcName);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1241) /* FString */               __um(ExternalSrcName);                                      // 0x0000   (0x0010)  
 	AkCodecId                                          CodecID;                                                    // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0011   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1237) /* FString */               __um(Filename);                                             // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1242) /* FString */               __um(Filename);                                             // 0x0018   (0x0010)  
 	class UAkExternalMediaAsset*                       ExternalSourceAsset;                                        // 0x0028   (0x0008)  
 	bool                                               IsStreamed;                                                 // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0031   (0x0007)  MISSED
@@ -2632,7 +2632,7 @@ struct FAkMidiGeneric : FAkMidiEventBase
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FAkOutputSettings
 { 
-	SDK_UNDEFINED(16,1238) /* FString */               __um(AudioDeviceSharesetName);                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1243) /* FString */               __um(AudioDeviceSharesetName);                              // 0x0000   (0x0010)  
 	int32_t                                            IdDevice;                                                   // 0x0010   (0x0004)  
 	PanningRule                                        PanRule;                                                    // 0x0014   (0x0001)  
 	AkChannelConfiguration                             ChannelConfig;                                              // 0x0015   (0x0001)  
@@ -2665,7 +2665,7 @@ struct FAkAcousticTextureParams
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FAkGeometrySurfacePropertiesToMap
 { 
-	SDK_UNDEFINED(48,1239) /* TWeakObjectPtr<UAkAcousticTexture*> */ __um(AcousticTexture);                        // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1244) /* TWeakObjectPtr<UAkAcousticTexture*> */ __um(AcousticTexture);                        // 0x0000   (0x0030)  
 	float                                              OcclusionValue;                                             // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0034   (0x0004)  MISSED
 };
@@ -2688,14 +2688,14 @@ struct FAkSurfaceEdgeVerts
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FAkWaapiFieldNames
 { 
-	SDK_UNDEFINED(16,1240) /* FString */               __um(FieldName);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1245) /* FString */               __um(FieldName);                                            // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.AkWaapiUri
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FAkWaapiUri
 { 
-	SDK_UNDEFINED(16,1241) /* FString */               __um(Uri);                                                  // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1246) /* FString */               __um(Uri);                                                  // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/AkAudio.MovieSceneAkAudioEventTemplate

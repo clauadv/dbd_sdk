@@ -22,7 +22,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FStandinProxyEntry
 { 
-	SDK_UNDEFINED(28,5032) /* TLazyObjectPtr<AStandInMeshActor*> */ __um(StandinActor);                            // 0x0000   (0x001C)  
+	SDK_UNDEFINED(28,5421) /* TLazyObjectPtr<AStandInMeshActor*> */ __um(StandinActor);                            // 0x0000   (0x001C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	class UStaticMesh*                                 StaticMesh;                                                 // 0x0020   (0x0008)  
 	class UMaterialInterface*                          Material;                                                   // 0x0028   (0x0008)  

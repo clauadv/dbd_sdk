@@ -177,8 +177,8 @@ struct FCustomGameBot
 	int32_t                                            _characterIndex;                                            // 0x0004   (0x0004)  
 	int32_t                                            _slotIndex;                                                 // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1716) /* FString */               __um(_botGUID);                                             // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1717) /* FString */               __um(_botName);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1741) /* FString */               __um(_botGUID);                                             // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1742) /* FString */               __um(_botName);                                             // 0x0020   (0x0010)  
 	FLoadout                                           _loadout;                                                   // 0x0030   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x40];                                      // 0x0080   (0x0040)  MISSED
 };
@@ -197,9 +197,9 @@ struct FSocialPartyMember
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
 	FEquippedPlayerCustomization                       _playerCustomization;                                       // 0x0008   (0x0038)  
-	SDK_UNDEFINED(16,1718) /* FString */               __um(_playerName);                                          // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,1719) /* FString */               __um(_platformSessionId);                                   // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,1720) /* FString */               __um(_uniquePlayerId);                                      // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,1743) /* FString */               __um(_playerName);                                          // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1744) /* FString */               __um(_platformSessionId);                                   // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,1745) /* FString */               __um(_uniquePlayerId);                                      // 0x0060   (0x0010)  
 	int32_t                                            _playerRank;                                                // 0x0070   (0x0004)  
 	int32_t                                            _characterLevel;                                            // 0x0074   (0x0004)  
 	int32_t                                            _prestigeLevel;                                             // 0x0078   (0x0004)  
@@ -211,9 +211,9 @@ struct FSocialPartyMember
 	bool                                               _ready;                                                     // 0x0098   (0x0001)  
 	bool                                               _crossplayAllowed;                                          // 0x0099   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x009A   (0x0006)  MISSED
-	SDK_UNDEFINED(16,1721) /* FString */               __um(_playerPlatform);                                      // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,1722) /* FString */               __um(_playerProvider);                                      // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,1723) /* FString */               __um(_matchId);                                             // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,1746) /* FString */               __um(_playerPlatform);                                      // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,1747) /* FString */               __um(_playerProvider);                                      // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,1748) /* FString */               __um(_matchId);                                             // 0x00C0   (0x0010)  
 	EPartyPostMatchmakingRole                          _postMatchmakingRole;                                       // 0x00D0   (0x0001)  
 	EPartyPostMatchmakingState                         _postMatchmakingState;                                      // 0x00D1   (0x0001)  
 	char                                               _roleRequested;                                             // 0x00D2   (0x0001)  
@@ -245,10 +245,10 @@ struct FCustomGamePresetData
 struct FPartySessionSettings
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
-	SDK_UNDEFINED(16,1724) /* FString */               __um(_sessionId);                                           // 0x0008   (0x0010)  
-	SDK_UNDEFINED(80,1725) /* TMap<FString, FString> */ __um(_gameSessionInfos);                                   // 0x0018   (0x0050)  
-	SDK_UNDEFINED(16,1726) /* FString */               __um(_owningUserId);                                        // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,1727) /* FString */               __um(_owningUserName);                                      // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,1749) /* FString */               __um(_sessionId);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(80,1750) /* TMap<FString, FString> */ __um(_gameSessionInfos);                                   // 0x0018   (0x0050)  
+	SDK_UNDEFINED(16,1751) /* FString */               __um(_owningUserId);                                        // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1752) /* FString */               __um(_owningUserName);                                      // 0x0078   (0x0010)  
 	bool                                               _isDedicated;                                               // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0089   (0x0007)  MISSED
 	int64_t                                            _matchmakingTimestamp;                                      // 0x0090   (0x0008)  
@@ -259,7 +259,7 @@ struct FPartySessionSettings
 struct FPartyMatchmakingSettings
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
-	SDK_UNDEFINED(16,1728) /* TArray<FString> */       __um(_playerIds);                                           // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1753) /* TArray<FString> */       __um(_playerIds);                                           // 0x0008   (0x0010)  
 	EMatchmakingState                                  _matchmakingState;                                          // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0019   (0x0007)  MISSED
 	int64_t                                            _startMatchmakingDateTimestamp;                             // 0x0020   (0x0008)  
@@ -279,12 +279,12 @@ struct FSocialPartyState
 	FPartySessionSettings                              _partySessionSettings;                                      // 0x0040   (0x0098)  
 	FPartyMatchmakingSettings                          _partyMatchmakingSettings;                                  // 0x00D8   (0x0038)  
 	TArray<FName>                                      _playerJoinOrder;                                           // 0x0110   (0x0010)  
-	SDK_UNDEFINED(80,1729) /* TMap<FName, char> */     __um(_playerChatIndices);                                   // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,1754) /* TMap<FName, char> */     __um(_playerChatIndices);                                   // 0x0120   (0x0050)  
 	int32_t                                            _gameType;                                                  // 0x0170   (0x0004)  
 	bool                                               _isCrowdPlay;                                               // 0x0174   (0x0001)  
 	bool                                               _isUsingDedicatedServer;                                    // 0x0175   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0176   (0x0002)  MISSED
-	SDK_UNDEFINED(16,1730) /* FString */               __um(_version);                                             // 0x0178   (0x0010)  
+	SDK_UNDEFINED(16,1755) /* FString */               __um(_version);                                             // 0x0178   (0x0010)  
 	int32_t                                            _lastUpdatedTime;                                           // 0x0188   (0x0004)  
 	int32_t                                            _lastSentTime;                                              // 0x018C   (0x0004)  
 };

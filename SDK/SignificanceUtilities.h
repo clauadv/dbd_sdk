@@ -34,9 +34,9 @@ public:
 
 	/// Functions
 	// Function /Script/SignificanceUtilities.DistanceBasedTickDisabler.UnregisterComponent
-	// void UnregisterComponent(class UActorComponent* Component);                                                           // [0x8575b50] Final|Native|Public|BlueprintCallable 
+	// void UnregisterComponent(class UActorComponent* Component);                                                           // [0x8586f30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SignificanceUtilities.DistanceBasedTickDisabler.RegisterComponent
-	// void RegisterComponent(class UActorComponent* Component);                                                             // [0x8575ac0] Final|Native|Public|BlueprintCallable 
+	// void RegisterComponent(class UActorComponent* Component);                                                             // [0x8586ea0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/SignificanceUtilities.SignificanceManagerComponent

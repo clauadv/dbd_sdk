@@ -33,11 +33,11 @@ public:
 
 	/// Functions
 	// Function /Script/Gnome2021.Gnome.Cosmetic_OnStoppedInteracting
-	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Gnome2021.Gnome.Cosmetic_OnStartedInteracting
-	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Gnome2021.Gnome.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Gnome2021.GnomeEventComponent
@@ -52,15 +52,14 @@ public:
 
 	/// Functions
 	// Function /Script/Gnome2021.GnomeEventComponent.Authority_OnEndGameStarted
-	// void Authority_OnEndGameStarted(FGameplayTag gameEventType, FGameEventData& GameEventData);                           // [0x5965d40] Final|Native|Private|HasOutParms 
+	// void Authority_OnEndGameStarted(FGameplayTag gameEventType, FGameEventData& GameEventData);                           // [0x596ce60] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/Gnome2021.GnomeInteraction
-/// Size: 0x0010 (0x000790 - 0x0007A0)
+/// Size: 0x0000 (0x000790 - 0x000790)
 class UGnomeInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0790   (0x0010)  MISSED
 };
 
 /// Class /Script/Gnome2021.GnomePlayerComponent

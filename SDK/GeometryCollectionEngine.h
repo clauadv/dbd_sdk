@@ -134,43 +134,43 @@ public:
 	FChaosBreakingEventRequestSettings                 BreakingEventRequestSettings;                               // 0x0234   (0x0018)  
 	FChaosTrailingEventRequestSettings                 TrailingEventRequestSettings;                               // 0x024C   (0x0018)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0264   (0x0004)  MISSED
-	SDK_UNDEFINED(80,4595) /* TSet<AChaosSolverActor*> */ __um(ChaosSolverActors);                                 // 0x0268   (0x0050)  
-	SDK_UNDEFINED(80,4596) /* TSet<AGeometryCollectionActor*> */ __um(GeometryCollectionActors);                   // 0x02B8   (0x0050)  
-	SDK_UNDEFINED(16,4597) /* FMulticastInlineDelegate */ __um(OnCollisionEvents);                                 // 0x0308   (0x0010)  
-	SDK_UNDEFINED(16,4598) /* FMulticastInlineDelegate */ __um(OnBreakingEvents);                                  // 0x0318   (0x0010)  
-	SDK_UNDEFINED(16,4599) /* FMulticastInlineDelegate */ __um(OnTrailingEvents);                                  // 0x0328   (0x0010)  
+	SDK_UNDEFINED(80,4989) /* TSet<AChaosSolverActor*> */ __um(ChaosSolverActors);                                 // 0x0268   (0x0050)  
+	SDK_UNDEFINED(80,4990) /* TSet<AGeometryCollectionActor*> */ __um(GeometryCollectionActors);                   // 0x02B8   (0x0050)  
+	SDK_UNDEFINED(16,4991) /* FMulticastInlineDelegate */ __um(OnCollisionEvents);                                 // 0x0308   (0x0010)  
+	SDK_UNDEFINED(16,4992) /* FMulticastInlineDelegate */ __um(OnBreakingEvents);                                  // 0x0318   (0x0010)  
+	SDK_UNDEFINED(16,4993) /* FMulticastInlineDelegate */ __um(OnTrailingEvents);                                  // 0x0328   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x108];                                     // 0x0338   (0x0108)  MISSED
 
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortTrailingEvents
-	// void SortTrailingEvents(TArray<FChaosTrailingEventData>& TrailingEvents, EChaosTrailingSortMethod SortMethod);        // [0x8421780] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortTrailingEvents(TArray<FChaosTrailingEventData>& TrailingEvents, EChaosTrailingSortMethod SortMethod);        // [0x8432b50] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortCollisionEvents
-	// void SortCollisionEvents(TArray<FChaosCollisionEventData>& CollisionEvents, EChaosCollisionSortMethod SortMethod);    // [0x8421680] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortCollisionEvents(TArray<FChaosCollisionEventData>& CollisionEvents, EChaosCollisionSortMethod SortMethod);    // [0x8432a50] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SortBreakingEvents
-	// void SortBreakingEvents(TArray<FChaosBreakingEventData>& BreakingEvents, EChaosBreakingSortMethod SortMethod);        // [0x8421580] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SortBreakingEvents(TArray<FChaosBreakingEventData>& BreakingEvents, EChaosBreakingSortMethod SortMethod);        // [0x8432950] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventRequestSettings
-	// void SetTrailingEventRequestSettings(FChaosTrailingEventRequestSettings& InSettings);                                 // [0x84214e0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetTrailingEventRequestSettings(FChaosTrailingEventRequestSettings& InSettings);                                 // [0x84328b0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetTrailingEventEnabled
-	// void SetTrailingEventEnabled(bool bIsEnabled);                                                                        // [0x8421450] Final|Native|Public|BlueprintCallable 
+	// void SetTrailingEventEnabled(bool bIsEnabled);                                                                        // [0x8432820] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventRequestSettings
-	// void SetCollisionEventRequestSettings(FChaosCollisionEventRequestSettings& InSettings);                               // [0x8421320] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetCollisionEventRequestSettings(FChaosCollisionEventRequestSettings& InSettings);                               // [0x84326f0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetCollisionEventEnabled
-	// void SetCollisionEventEnabled(bool bIsEnabled);                                                                       // [0x8421290] Final|Native|Public|BlueprintCallable 
+	// void SetCollisionEventEnabled(bool bIsEnabled);                                                                       // [0x8432660] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventRequestSettings
-	// void SetBreakingEventRequestSettings(FChaosBreakingEventRequestSettings& InSettings);                                 // [0x84211f0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetBreakingEventRequestSettings(FChaosBreakingEventRequestSettings& InSettings);                                 // [0x84325c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.SetBreakingEventEnabled
-	// void SetBreakingEventEnabled(bool bIsEnabled);                                                                        // [0x8421160] Final|Native|Public|BlueprintCallable 
+	// void SetBreakingEventEnabled(bool bIsEnabled);                                                                        // [0x8432530] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.RemoveGeometryCollectionActor
-	// void RemoveGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                          // [0x84210d0] Final|Native|Public|BlueprintCallable 
+	// void RemoveGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                          // [0x84324a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.RemoveChaosSolverActor
-	// void RemoveChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                               // [0x5828940] Final|Native|Public|BlueprintCallable 
+	// void RemoveChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                               // [0x582e0a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.IsEventListening
-	// bool IsEventListening();                                                                                              // [0x8420de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsEventListening();                                                                                              // [0x84321b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.AddGeometryCollectionActor
-	// void AddGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                             // [0x8420b10] Final|Native|Public|BlueprintCallable 
+	// void AddGeometryCollectionActor(class AGeometryCollectionActor* GeometryCollectionActor);                             // [0x8431ee0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.ChaosDestructionListener.AddChaosSolverActor
-	// void AddChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                                  // [0x5828940] Final|Native|Public|BlueprintCallable 
+	// void AddChaosSolverActor(class AChaosSolverActor* ChaosSolverActor);                                                  // [0x582e0a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GeometryCollectionEngine.GeometryCollectionActor
@@ -184,7 +184,7 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionActor.RaycastSingle
-	// bool RaycastSingle(FVector Start, FVector End, FHitResult& OutHit);                                                   // [0x8420f50] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// bool RaycastSingle(FVector Start, FVector End, FHitResult& OutHit);                                                   // [0x8432320] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/GeometryCollectionEngine.GeometryCollectionCache
@@ -271,14 +271,14 @@ public:
 	unsigned char                                      UnknownData08_5[0x4];                                       // 0x063C   (0x0004)  MISSED
 	class UPhysicalMaterial*                           PhysicalMaterialOverride;                                   // 0x0640   (0x0008)  
 	FGeomComponentCacheParameters                      CacheParameters;                                            // 0x0648   (0x0050)  
-	SDK_UNDEFINED(16,4600) /* FMulticastInlineDelegate */ __um(NotifyGeometryCollectionPhysicsStateChange);        // 0x0698   (0x0010)  
-	SDK_UNDEFINED(16,4601) /* FMulticastInlineDelegate */ __um(NotifyGeometryCollectionPhysicsLoadingStateChange); // 0x06A8   (0x0010)  
+	SDK_UNDEFINED(16,4994) /* FMulticastInlineDelegate */ __um(NotifyGeometryCollectionPhysicsStateChange);        // 0x0698   (0x0010)  
+	SDK_UNDEFINED(16,4995) /* FMulticastInlineDelegate */ __um(NotifyGeometryCollectionPhysicsLoadingStateChange); // 0x06A8   (0x0010)  
 	unsigned char                                      UnknownData09_5[0x18];                                      // 0x06B8   (0x0018)  MISSED
-	SDK_UNDEFINED(16,4602) /* FMulticastInlineDelegate */ __um(OnChaosBreakEvent);                                 // 0x06D0   (0x0010)  
+	SDK_UNDEFINED(16,4996) /* FMulticastInlineDelegate */ __um(OnChaosBreakEvent);                                 // 0x06D0   (0x0010)  
 	float                                              DesiredCacheTime;                                           // 0x06E0   (0x0004)  
 	bool                                               CachePlayback;                                              // 0x06E4   (0x0001)  
 	unsigned char                                      UnknownData10_5[0x3];                                       // 0x06E5   (0x0003)  MISSED
-	SDK_UNDEFINED(16,4603) /* FMulticastInlineDelegate */ __um(OnChaosPhysicsCollision);                           // 0x06E8   (0x0010)  
+	SDK_UNDEFINED(16,4997) /* FMulticastInlineDelegate */ __um(OnChaosPhysicsCollision);                           // 0x06E8   (0x0010)  
 	bool                                               bNotifyBreaks;                                              // 0x06F8   (0x0001)  
 	bool                                               bNotifyCollisions;                                          // 0x06F9   (0x0001)  
 	bool                                               bEnableReplication;                                         // 0x06FA   (0x0001)  
@@ -292,21 +292,21 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.SetNotifyBreaks
-	// void SetNotifyBreaks(bool bNewNotifyBreaks);                                                                          // [0x84213c0] Final|Native|Public|BlueprintCallable 
+	// void SetNotifyBreaks(bool bNewNotifyBreaks);                                                                          // [0x8432790] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ReceivePhysicsCollision
-	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x61c32d0] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x61d2f50] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.OnRep_RepData
-	// void OnRep_RepData(FGeometryCollectionRepData& OldData);                                                              // [0x8420ea0] Final|Native|Protected|HasOutParms 
+	// void OnRep_RepData(FGeometryCollectionRepData& OldData);                                                              // [0x8432270] Final|Native|Protected|HasOutParms 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsStateChange__DelegateSignature
-	// void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void NotifyGeometryCollectionPhysicsStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature
-	// void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void NotifyGeometryCollectionPhysicsLoadingStateChange__DelegateSignature(class UGeometryCollectionComponent* FracturedComponent); // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.NetAbandonCluster
-	// void NetAbandonCluster(int32_t TransformIndex);                                                                       // [0x8420e10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void NetAbandonCluster(int32_t TransformIndex);                                                                       // [0x84321e0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyPhysicsField
-	// void ApplyPhysicsField(bool Enabled, EGeometryCollectionPhysicsTypeEnum Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field); // [0x8420c80] Final|Native|Public|BlueprintCallable 
+	// void ApplyPhysicsField(bool Enabled, EGeometryCollectionPhysicsTypeEnum Target, class UFieldSystemMetaData* MetaData, class UFieldNodeBase* Field); // [0x8432050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GeometryCollectionEngine.GeometryCollectionComponent.ApplyKinematicField
-	// void ApplyKinematicField(float Radius, FVector position);                                                             // [0x8420ba0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void ApplyKinematicField(float Radius, FVector position);                                                             // [0x8431f70] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/GeometryCollectionEngine.GeometryCollectionDebugDrawWarningMessage
@@ -517,13 +517,13 @@ public:
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0105   (0x0003)  MISSED
 	FVector                                            InitialLinearVelocity;                                      // 0x0108   (0x000C)  
 	FVector                                            InitialAngularVelocity;                                     // 0x0114   (0x000C)  
-	SDK_UNDEFINED(16,4604) /* FMulticastInlineDelegate */ __um(OnChaosPhysicsCollision);                           // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,4998) /* FMulticastInlineDelegate */ __um(OnChaosPhysicsCollision);                           // 0x0120   (0x0010)  
 	unsigned char                                      UnknownData04_6[0x10];                                      // 0x0130   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.SkeletalMeshSimulationComponent.ReceivePhysicsCollision
-	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x61c32d0] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x61d2f50] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GeometryCollectionEngine.StaticMeshSimulationComponent
@@ -550,7 +550,7 @@ public:
 	unsigned char                                      UnknownData04_5[0x4];                                       // 0x00F4   (0x0004)  MISSED
 	class UChaosPhysicalMaterial*                      PhysicalMaterial;                                           // 0x00F8   (0x0008)  
 	class AChaosSolverActor*                           ChaosSolverActor;                                           // 0x0100   (0x0008)  
-	SDK_UNDEFINED(16,4605) /* FMulticastInlineDelegate */ __um(OnChaosPhysicsCollision);                           // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,4999) /* FMulticastInlineDelegate */ __um(OnChaosPhysicsCollision);                           // 0x0108   (0x0010)  
 	unsigned char                                      UnknownData05_5[0x10];                                      // 0x0118   (0x0010)  MISSED
 	TArray<class UPrimitiveComponent*>                 SimulatedComponents;                                        // 0x0128   (0x0010)  
 	unsigned char                                      UnknownData06_6[0x8];                                       // 0x0138   (0x0008)  MISSED
@@ -558,9 +558,9 @@ public:
 
 	/// Functions
 	// Function /Script/GeometryCollectionEngine.StaticMeshSimulationComponent.ReceivePhysicsCollision
-	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x61c32d0] Event|Public|HasOutParms|BlueprintEvent 
+	// void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo& CollisionInfo);                                              // [0x61d2f50] Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/GeometryCollectionEngine.StaticMeshSimulationComponent.ForceRecreatePhysicsState
-	// void ForceRecreatePhysicsState();                                                                                     // [0x8422540] Final|Native|Public|BlueprintCallable 
+	// void ForceRecreatePhysicsState();                                                                                     // [0x8433910] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/GeometryCollectionEngine.ChaosCollisionEventData

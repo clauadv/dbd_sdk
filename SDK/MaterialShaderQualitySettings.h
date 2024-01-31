@@ -24,7 +24,7 @@ enum class EMobileShadowQuality : uint8_t
 class UMaterialShaderQualitySettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,4879) /* TMap<FName, UShaderPlatformQualitySettings*> */ __um(ForwardSettingMap);             // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,5271) /* TMap<FName, UShaderPlatformQualitySettings*> */ __um(ForwardSettingMap);             // 0x0030   (0x0050)  
 };
 
 /// Struct /Script/MaterialShaderQualitySettings.MaterialQualityOverrides

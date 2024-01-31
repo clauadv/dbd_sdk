@@ -25,7 +25,7 @@ class UAnimNotify_PostInteractionSoundEvent : public UAnimNotify
 { 
 public:
 	class UAkAudioEvent*                               SoundEvent;                                                 // 0x0040   (0x0008)  
-	SDK_UNDEFINED(48,1255) /* TWeakObjectPtr<UClass*> */ __um(InteractionAudioClass);                              // 0x0048   (0x0030)  
+	SDK_UNDEFINED(48,1260) /* TWeakObjectPtr<UClass*> */ __um(InteractionAudioClass);                              // 0x0048   (0x0030)  
 };
 
 /// Class /Script/DBDAudio.AudioCustomMeshComponent
@@ -44,19 +44,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAudio.AudioUtilities.PostEventByNameOnComponent
-	// void PostEventByNameOnComponent(class UAkComponent* Component, FString audioEventName);                               // [0x4ed6e70] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void PostEventByNameOnComponent(class UAkComponent* Component, FString audioEventName);                               // [0x4eada90] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDAudio.AudioUtilities.PostAkAudioEvent
-	// void PostAkAudioEvent(class UAkAudioEvent* AudioEvent);                                                               // [0x4ed6df0] Final|Native|Static|Public|BlueprintCallable 
+	// void PostAkAudioEvent(class UAkAudioEvent* AudioEvent);                                                               // [0x4eada10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDAudio.AudioUtilities.DBD_UnloadAudioBank
-	// void DBD_UnloadAudioBank(class UAkAudioBank* Bank, class UObject* WorldContextObject);                                // [0x4ed6d30] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void DBD_UnloadAudioBank(class UAkAudioBank* Bank, class UObject* WorldContextObject);                                // [0x4ead950] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDAudio.AudioUtilities.DBD_LoadAudioBankWithCallback
-	// void DBD_LoadAudioBankWithCallback(class UAkAudioBank* Bank, FDelegateProperty& BankLoadedCallback, class UObject* WorldContextObject); // [0x4ed6bf0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void DBD_LoadAudioBankWithCallback(class UAkAudioBank* Bank, FDelegateProperty& BankLoadedCallback, class UObject* WorldContextObject); // [0x4ead810] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDAudio.AudioUtilities.DBD_LoadAudioBankPersistentWithCallback
-	// void DBD_LoadAudioBankPersistentWithCallback(class UAkAudioBank* Bank, FDelegateProperty& BankLoadedCallback, class UObject* WorldContextObject); // [0x4ed6ab0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void DBD_LoadAudioBankPersistentWithCallback(class UAkAudioBank* Bank, FDelegateProperty& BankLoadedCallback, class UObject* WorldContextObject); // [0x4ead6d0] Final|BlueprintCosmetic|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDAudio.AudioUtilities.DBD_LoadAudioBankPersistent
-	// void DBD_LoadAudioBankPersistent(class UAkAudioBank* Bank, class UObject* WorldContextObject);                        // [0x4ed69c0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void DBD_LoadAudioBankPersistent(class UAkAudioBank* Bank, class UObject* WorldContextObject);                        // [0x4ead5e0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDAudio.AudioUtilities.DBD_LoadAudioBank
-	// void DBD_LoadAudioBank(class UAkAudioBank* Bank, class UObject* WorldContextObject);                                  // [0x4ed69c0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
+	// void DBD_LoadAudioBank(class UAkAudioBank* Bank, class UObject* WorldContextObject);                                  // [0x4ead5e0] Final|BlueprintCosmetic|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDAudio.InteractionAudioComponent
@@ -70,9 +70,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAudio.InteractionAudioComponent.PostAkEvent
-	// bool PostAkEvent(class UAkAudioEvent* AkEvent);                                                                       // [0x4ed7140] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// bool PostAkEvent(class UAkAudioEvent* AkEvent);                                                                       // [0x4eadd60] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/DBDAudio.InteractionAudioComponent.GetCalculatedAudioRadius
-	// float GetCalculatedAudioRadius();                                                                                     // [0x4ed7110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCalculatedAudioRadius();                                                                                     // [0x4eadd30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAudio.LoadAsyncBankData
@@ -92,7 +92,7 @@ public:
 	unsigned char                                      UnknownData00_2[0x28];                                      // 0x0038   (0x0028)  MISSED
 	TArray<class UAkAudioBank*>                        _audioBanks;                                                // 0x0060   (0x0010)  
 	TArray<class ULoadAsyncBankData*>                  _asyncAudioBanksPendingLoadData;                            // 0x0070   (0x0010)  
-	SDK_UNDEFINED(80,1256) /* TMap<FString, FBankTrackingDataV2> */ __um(_audioBanksV2);                           // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,1261) /* TMap<FString, FBankTrackingDataV2> */ __um(_audioBanksV2);                           // 0x0080   (0x0050)  
 };
 
 /// Struct /Script/DBDAudio.AkSoundLoop
@@ -110,7 +110,7 @@ struct FAkSoundLoop
 struct FBankTrackingDataV2
 { 
 	class UAkAudioBank*                                Bank;                                                       // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,1257) /* TArray<FDelegateProperty> */ __um(OnLoadedCallbacks);                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1262) /* TArray<FDelegateProperty> */ __um(OnLoadedCallbacks);                                // 0x0008   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0018   (0x0020)  MISSED
 };
 

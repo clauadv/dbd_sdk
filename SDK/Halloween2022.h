@@ -78,7 +78,7 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.VoidEnergyChangeQEEvaluator.ListenToOnComponentAddedEvent
-	// void ListenToOnComponentAddedEvent();                                                                                 // [0x59a4ba0] Native|Protected     
+	// void ListenToOnComponentAddedEvent();                                                                                 // [0x59ab610] Native|Protected     
 };
 
 /// Class /Script/Halloween2022.DepositEnergyInMatchQEEvaluator
@@ -98,7 +98,7 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.DepositVoidEnergyTierQEEvaluator.OnVoidEnergyDeposited
-	// void OnVoidEnergyDeposited(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x59a1e10] Final|Native|Public|HasOutParms 
+	// void OnVoidEnergyDeposited(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x59a8810] Final|Native|Public|HasOutParms 
 };
 
 /// Class /Script/Halloween2022.HalloweenCentrifugeAnimInstance
@@ -115,11 +115,11 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.HalloweenCentrifugeAnimInstance.SetDesiredBlendValue
-	// void SetDesiredBlendValue(float blendValue);                                                                          // [0x59a28d0] Final|Native|Public|BlueprintCallable 
+	// void SetDesiredBlendValue(float blendValue);                                                                          // [0x59a92d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Halloween2022.HalloweenCentrifugeAnimInstance.OnEnergySpawned
-	// void OnEnergySpawned(int32_t previousEnergy, int32_t currentEnergy);                                                  // [0x59a2800] Final|Native|Protected 
+	// void OnEnergySpawned(int32_t previousEnergy, int32_t currentEnergy);                                                  // [0x59a9200] Final|Native|Protected 
 	// Function /Script/Halloween2022.HalloweenCentrifugeAnimInstance.OnBlendValueChanged
-	// void OnBlendValueChanged(float blendValue);                                                                           // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnBlendValueChanged(float blendValue);                                                                           // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2022.GeneratorCentrifugeAnimInstance
@@ -132,13 +132,13 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.GeneratorCentrifugeAnimInstance.StopRepairing
-	// void StopRepairing(FGameplayTag gameEventType, FGameEventData& GameEventData);                                        // [0x59a2420] Final|Native|Private|HasOutParms 
+	// void StopRepairing(FGameplayTag gameEventType, FGameEventData& GameEventData);                                        // [0x59a8e20] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.GeneratorCentrifugeAnimInstance.StartRepairing
-	// void StartRepairing(FGameplayTag gameEventType, FGameEventData& GameEventData);                                       // [0x59a2310] Final|Native|Private|HasOutParms 
+	// void StartRepairing(FGameplayTag gameEventType, FGameEventData& GameEventData);                                       // [0x59a8d10] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.GeneratorCentrifugeAnimInstance.OnStopRepair
-	// void OnStopRepair(class AGenerator* Generator);                                                                       // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnStopRepair(class AGenerator* Generator);                                                                       // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.GeneratorCentrifugeAnimInstance.OnStartRepair
-	// void OnStartRepair(class AGenerator* Generator);                                                                      // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnStartRepair(class AGenerator* Generator);                                                                      // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2022.MeatHookCentrifugeAnimInstance
@@ -153,17 +153,17 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.MeatHookCentrifugeAnimInstance.PlayerNoLongerOnHook
-	// void PlayerNoLongerOnHook(FGameplayTag gameEventType, FGameEventData& GameEventData);                                 // [0x59a2e20] Final|Native|Private|HasOutParms 
+	// void PlayerNoLongerOnHook(FGameplayTag gameEventType, FGameEventData& GameEventData);                                 // [0x59a9820] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.MeatHookCentrifugeAnimInstance.PlayerHooked
-	// void PlayerHooked(FGameplayTag gameEventType, FGameEventData& GameEventData);                                         // [0x59a2d10] Final|Native|Private|HasOutParms 
+	// void PlayerHooked(FGameplayTag gameEventType, FGameEventData& GameEventData);                                         // [0x59a9710] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.MeatHookCentrifugeAnimInstance.OnPlayerNoLongerOnHook
-	// void OnPlayerNoLongerOnHook(class AMeatHook* MeatHook);                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnPlayerNoLongerOnHook(class AMeatHook* MeatHook);                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.MeatHookCentrifugeAnimInstance.OnPlayerHooked
-	// void OnPlayerHooked(class AMeatHook* MeatHook);                                                                       // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnPlayerHooked(class AMeatHook* MeatHook);                                                                       // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2022.PlayerVoidEnergy
-/// Size: 0x0210 (0x0000B8 - 0x0002C8)
+/// Size: 0x0220 (0x0000B8 - 0x0002D8)
 class UPlayerVoidEnergy : public UActorComponent
 { 
 public:
@@ -186,32 +186,32 @@ public:
 	unsigned char                                      UnknownData03_5[0x8];                                       // 0x0270   (0x0008)  MISSED
 	TArray<FGameplayTag>                               _scoreEventTiers;                                           // 0x0278   (0x0010)  
 	TArray<FGameplayTag>                               _scoreEventTiersWithoutOffering;                            // 0x0288   (0x0010)  
-	unsigned char                                      UnknownData04_6[0x30];                                      // 0x0298   (0x0030)  MISSED
+	unsigned char                                      UnknownData04_6[0x40];                                      // 0x0298   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/Halloween2022.PlayerVoidEnergy.OnVoidEnergyLost
-	// void OnVoidEnergyLost(EVoidEnergyChangeReason changeReason);                                                          // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnVoidEnergyLost(EVoidEnergyChangeReason changeReason);                                                          // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.OnVoidEnergyGained
-	// void OnVoidEnergyGained();                                                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnVoidEnergyGained();                                                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.OnRep_TotalVoidEnergySpent
-	// void OnRep_TotalVoidEnergySpent(int32_t previousTotalVoidEnergySpent);                                                // [0x59a3810] Final|Native|Private 
+	// void OnRep_TotalVoidEnergySpent(int32_t previousTotalVoidEnergySpent);                                                // [0x59aa280] Final|Native|Private 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.OnRep_CurrentVoidEnergy
-	// void OnRep_CurrentVoidEnergy(int32_t previousEnergyCount);                                                            // [0x59a3780] Final|Native|Private 
+	// void OnRep_CurrentVoidEnergy(int32_t previousEnergyCount);                                                            // [0x59aa1f0] Final|Native|Private 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged(class ADBDPlayer* Player);                                                              // [0x59a36f0] Final|Native|Private 
+	// void OnLocallyObservedChanged(class ADBDPlayer* Player);                                                              // [0x59aa160] Final|Native|Private 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.OnLocallyControlledChanged
-	// void OnLocallyControlledChanged();                                                                                    // [0x59a36d0] Final|Native|Private 
+	// void OnLocallyControlledChanged(bool IsLocallyControlled);                                                            // [0x59aa0d0] Final|Native|Private 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.Multicast_ShowVoidEnergyChanges
-	// void Multicast_ShowVoidEnergyChanges(int32_t previousVoidEnergyCount, int32_t newVoidEnergyCount);                    // [0x59a3600] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ShowVoidEnergyChanges(int32_t previousVoidEnergyCount, int32_t newVoidEnergyCount);                    // [0x59aa000] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.Multicast_AddVoidEnergy
-	// void Multicast_AddVoidEnergy(int32_t amountToAdd, EVoidEnergyType VoidEnergyType);                                    // [0x59a3530] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_AddVoidEnergy(int32_t amountToAdd, EVoidEnergyType VoidEnergyType);                                    // [0x59a9f30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.GetTotalVoidEnergyDeposited
-	// int32_t GetTotalVoidEnergyDeposited();                                                                                // [0x59a3500] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalVoidEnergyDeposited();                                                                                // [0x59a9f00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.GetMaxAmountOfVoidEnergyCanReceive
-	// int32_t GetMaxAmountOfVoidEnergyCanReceive();                                                                         // [0x59a34d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxAmountOfVoidEnergyCanReceive();                                                                         // [0x59a9ed0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Halloween2022.PlayerVoidEnergy.GetCurrentVoidEnergyCount
-	// int32_t GetCurrentVoidEnergyCount();                                                                                  // [0x59a34a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentVoidEnergyCount();                                                                                  // [0x59a9ea0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Halloween2022.UnstableRift
@@ -255,37 +255,38 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.UnstableRift.OnRep_IsInteractionAvailable
-	// void OnRep_IsInteractionAvailable();                                                                                  // [0x59a4000] Final|Native|Private 
+	// void OnRep_IsInteractionAvailable();                                                                                  // [0x59aaa70] Final|Native|Private 
 	// Function /Script/Halloween2022.UnstableRift.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x59a3fe0] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x59aaa50] Final|Native|Private 
 	// Function /Script/Halloween2022.UnstableRift.OnInRangeChanged
-	// void OnInRangeChanged(bool isWithinRange, class AActor* trackedActor);                                                // [0x59a3f10] Final|Native|Private 
+	// void OnInRangeChanged(bool isWithinRange, class AActor* trackedActor);                                                // [0x59aa980] Final|Native|Private 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_OnTeleportStart
-	// void Cosmetic_OnTeleportStart(bool hadPlayerInteraction);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTeleportStart(bool hadPlayerInteraction);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_OnTeleportFinished
-	// void Cosmetic_OnTeleportFinished();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTeleportFinished();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_OnTeleportDelayStarted
-	// void Cosmetic_OnTeleportDelayStarted();                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTeleportDelayStarted();                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_OnStoppedInteracting
-	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_OnStartedInteracting
-	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.UnstableRift.Cosmetic_ChangeUnstableVisibility
-	// void Cosmetic_ChangeUnstableVisibility(bool IsVisible);                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ChangeUnstableVisibility(bool IsVisible);                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2022.UnstableRiftInteraction
-/// Size: 0x0060 (0x000790 - 0x0007F0)
+/// Size: 0x0040 (0x000790 - 0x0007D0)
 class UUnstableRiftInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x2C];                                      // 0x0790   (0x002C)  MISSED
-	float                                              _heightOffsetForOrbsHoverPosition;                          // 0x07BC   (0x0004)  
-	float                                              _heightOffsetForOrbsFinalPosition;                          // 0x07C0   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x07C4   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _maxDepositableVoidEnergy;                                  // 0x07C8   (0x0028)  
+	unsigned char                                      UnknownData00_2[0x4];                                       // 0x0790   (0x0004)  MISSED
+	float                                              _heightOffsetForOrbsHoverPosition;                          // 0x0794   (0x0004)  
+	float                                              _heightOffsetForOrbsFinalPosition;                          // 0x0798   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x079C   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _maxDepositableVoidEnergy;                                  // 0x07A0   (0x0028)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x07C8   (0x0008)  MISSED
 };
 
 /// Class /Script/Halloween2022.UnstableRiftOutlineStrategy
@@ -327,13 +328,13 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.UnstableRiftTeleportationComponent.OnRep_IsAllowedToTeleport
-	// void OnRep_IsAllowedToTeleport();                                                                                     // [0x59a47c0] Final|Native|Private 
+	// void OnRep_IsAllowedToTeleport();                                                                                     // [0x59ab230] Final|Native|Private 
 	// Function /Script/Halloween2022.UnstableRiftTeleportationComponent.Multicast_TeleportUnstableRift
-	// void Multicast_TeleportUnstableRift(FVector Location);                                                                // [0x4e05d00] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_TeleportUnstableRift(FVector Location);                                                                // [0x4dda020] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/Halloween2022.UnstableRiftTeleportationComponent.Multicast_PreTeleportation
-	// void Multicast_PreTeleportation(FVector teleportLocation, bool hadPlayerInteraction);                                 // [0x59a46f0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_PreTeleportation(FVector teleportLocation, bool hadPlayerInteraction);                                 // [0x59ab160] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/Halloween2022.UnstableRiftTeleportationComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x59a46d0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x59ab140] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2022.VoidEnergyAmountInMatchQEEvaluator
@@ -362,13 +363,13 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.VoidEnergyProducer.OnRep_TotalEnergyGiven
-	// void OnRep_TotalEnergyGiven(int32_t lastTotalEnergyGivenValue);                                                       // [0x59a6710] Final|Native|Protected 
+	// void OnRep_TotalEnergyGiven(int32_t lastTotalEnergyGivenValue);                                                       // [0x59ad180] Final|Native|Protected 
 	// Function /Script/Halloween2022.VoidEnergyProducer.HasEnergyLeftToGive
-	// bool HasEnergyLeftToGive();                                                                                           // [0x59a66e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasEnergyLeftToGive();                                                                                           // [0x59ad150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Halloween2022.VoidEnergyProducer.GetRemainingEnergy
-	// int32_t GetRemainingEnergy();                                                                                         // [0x59a66b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRemainingEnergy();                                                                                         // [0x59ad120] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Halloween2022.VoidEnergyProducer.Cosmetic_OnVoidOrbsSpawned
-	// void Cosmetic_OnVoidOrbsSpawned(int32_t orbsSpawned);                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVoidOrbsSpawned(int32_t orbsSpawned);                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2022.VoidEnergyGeneratorComponent
@@ -382,7 +383,7 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.VoidEnergyGeneratorComponent.GetCurrentTimeDoneOnGenerator
-	// float GetCurrentTimeDoneOnGenerator(class ADBDPlayer* Player);                                                        // [0x59a4db0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentTimeDoneOnGenerator(class ADBDPlayer* Player);                                                        // [0x59ab820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Halloween2022.VoidEnergyMeatHookComponent
@@ -412,15 +413,15 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.VoidEnergyOrb.PlaceOrbInQueue
-	// void PlaceOrbInQueue();                                                                                               // [0x59a5380] Final|Native|Private|BlueprintCallable 
+	// void PlaceOrbInQueue();                                                                                               // [0x59abdf0] Final|Native|Private|BlueprintCallable 
 	// Function /Script/Halloween2022.VoidEnergyOrb.Cosmetic_OnOrbSpawned
-	// void Cosmetic_OnOrbSpawned(class ADBDPlayer* playerGivingOrbTo, bool isLargeOrb);                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOrbSpawned(class ADBDPlayer* playerGivingOrbTo, bool isLargeOrb);                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.VoidEnergyOrb.Cosmetic_OnOrbDisappearWithoutCollection
-	// void Cosmetic_OnOrbDisappearWithoutCollection(bool isLargeOrb);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOrbDisappearWithoutCollection(bool isLargeOrb);                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.VoidEnergyOrb.Cosmetic_OnOrbDisappearWithCollection
-	// void Cosmetic_OnOrbDisappearWithCollection(class ADBDPlayer* playerGivingOrbTo);                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOrbDisappearWithCollection(class ADBDPlayer* playerGivingOrbTo);                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2022.VoidEnergyOrb.Cosmetic_DelayBeforeCollection
-	// void Cosmetic_DelayBeforeCollection(class ADBDPlayer* playerGivingOrbTo);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DelayBeforeCollection(class ADBDPlayer* playerGivingOrbTo);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2022.VoidEnergyOrbSpawner
@@ -447,21 +448,21 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Multicast_SpawnVoidEnergyOrb
-	// void Multicast_SpawnVoidEnergyOrb(FOrbProperties OrbProperties, EOrbTravelState startingTravelState);                 // [0x59a62c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SpawnVoidEnergyOrb(FOrbProperties OrbProperties, EOrbTravelState startingTravelState);                 // [0x59acd30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_TimerSpawnVoidEnergyOrb
-	// void Authority_TimerSpawnVoidEnergyOrb(FOrbProperties OrbProperties, EOrbTravelState startingTravelState);            // [0x59a6120] Final|Native|Private 
+	// void Authority_TimerSpawnVoidEnergyOrb(FOrbProperties OrbProperties, EOrbTravelState startingTravelState);            // [0x59acb90] Final|Native|Private 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_SurvivorStunOnKiller
-	// void Authority_SurvivorStunOnKiller(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x59a6010] Final|Native|Private|HasOutParms 
+	// void Authority_SurvivorStunOnKiller(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x59aca80] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_SurvivorStunKillerWithPallet
-	// void Authority_SurvivorStunKillerWithPallet(FGameplayTag gameEventType, FGameEventData& GameEventData);               // [0x59a5f00] Final|Native|Private|HasOutParms 
+	// void Authority_SurvivorStunKillerWithPallet(FGameplayTag gameEventType, FGameEventData& GameEventData);               // [0x59ac970] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_SurvivorStunKillerWithHeadOn
-	// void Authority_SurvivorStunKillerWithHeadOn(FGameplayTag gameEventType, FGameEventData& GameEventData);               // [0x59a5df0] Final|Native|Private|HasOutParms 
+	// void Authority_SurvivorStunKillerWithHeadOn(FGameplayTag gameEventType, FGameEventData& GameEventData);               // [0x59ac860] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_SurvivorStunKillerWithFlashLight
-	// void Authority_SurvivorStunKillerWithFlashLight(FGameplayTag gameEventType, FGameEventData& GameEventData);           // [0x59a5ce0] Final|Native|Private|HasOutParms 
+	// void Authority_SurvivorStunKillerWithFlashLight(FGameplayTag gameEventType, FGameEventData& GameEventData);           // [0x59ac750] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_KillerDownSurvivor
-	// void Authority_KillerDownSurvivor(FGameplayTag gameEventType, FGameEventData& GameEventData);                         // [0x59a5bd0] Final|Native|Private|HasOutParms 
+	// void Authority_KillerDownSurvivor(FGameplayTag gameEventType, FGameEventData& GameEventData);                         // [0x59ac640] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2022.VoidEnergyOrbSpawner.Authority_GiveVoidEnergyToPlayer
-	// void Authority_GiveVoidEnergyToPlayer(EVoidEnergyType VoidEnergyType, int32_t voidEnergyToAdd);                       // [0x59a5b00] Final|Native|Private 
+	// void Authority_GiveVoidEnergyToPlayer(EVoidEnergyType VoidEnergyType, int32_t voidEnergyToAdd);                       // [0x59ac570] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2022.VoidEnergyPumpkinComponent

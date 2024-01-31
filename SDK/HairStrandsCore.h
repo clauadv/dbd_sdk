@@ -276,7 +276,7 @@ struct FHairSolverSettings
 	bool                                               EnableSimulation;                                           // 0x0000   (0x0001)  
 	EGroomNiagaraSolvers                               NiagaraSolver;                                              // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0002   (0x0006)  MISSED
-	SDK_UNDEFINED(48,4660) /* TWeakObjectPtr<UNiagaraSystem*> */ __um(CustomSystem);                               // 0x0008   (0x0030)  
+	SDK_UNDEFINED(48,5054) /* TWeakObjectPtr<UNiagaraSystem*> */ __um(CustomSystem);                               // 0x0008   (0x0030)  
 	int32_t                                            SubSteps;                                                   // 0x0038   (0x0004)  
 	int32_t                                            IterationCount;                                             // 0x003C   (0x0004)  
 };
@@ -489,14 +489,14 @@ struct FHairGroupsCardsSourceDescription
 	EHairCardsSourceType                               SourceType;                                                 // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
 	class UStaticMesh*                                 ProceduralMesh;                                             // 0x0018   (0x0008)  
-	SDK_UNDEFINED(16,4661) /* FString */               __um(ProceduralMeshKey);                                    // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5055) /* FString */               __um(ProceduralMeshKey);                                    // 0x0020   (0x0010)  
 	class UStaticMesh*                                 ImportedMesh;                                               // 0x0030   (0x0008)  
 	FHairGroupsProceduralCards                         ProceduralSettings;                                         // 0x0038   (0x0038)  
 	FHairGroupCardsTextures                            Textures;                                                   // 0x0070   (0x0030)  
 	int32_t                                            GroupIndex;                                                 // 0x00A0   (0x0004)  
 	int32_t                                            LODIndex;                                                   // 0x00A4   (0x0004)  
 	FHairGroupCardsInfo                                CardsInfo;                                                  // 0x00A8   (0x0008)  
-	SDK_UNDEFINED(16,4662) /* FString */               __um(ImportedMeshKey);                                      // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,5056) /* FString */               __um(ImportedMeshKey);                                      // 0x00B0   (0x0010)  
 };
 
 /// Struct /Script/HairStrandsCore.HairGroupsMeshesSourceDescription
@@ -510,7 +510,7 @@ struct FHairGroupsMeshesSourceDescription
 	FHairGroupCardsTextures                            Textures;                                                   // 0x0020   (0x0030)  
 	int32_t                                            GroupIndex;                                                 // 0x0050   (0x0004)  
 	int32_t                                            LODIndex;                                                   // 0x0054   (0x0004)  
-	SDK_UNDEFINED(16,4663) /* FString */               __um(ImportedMeshKey);                                      // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,5057) /* FString */               __um(ImportedMeshKey);                                      // 0x0058   (0x0010)  
 };
 
 /// Struct /Script/HairStrandsCore.HairGroupsMaterial
@@ -594,13 +594,13 @@ public:
 
 	/// Functions
 	// Function /Script/HairStrandsCore.GroomBlueprintLibrary.CreateNewGroomBindingAssetWithPath
-	// class UGroomBindingAsset* CreateNewGroomBindingAssetWithPath(FString InDesiredPackagePath, class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32_t InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32_t InMatchingSection); // [0x46de830] Final|Native|Static|Public|BlueprintCallable 
+	// class UGroomBindingAsset* CreateNewGroomBindingAssetWithPath(FString InDesiredPackagePath, class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32_t InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32_t InMatchingSection); // [0x46735b0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HairStrandsCore.GroomBlueprintLibrary.CreateNewGroomBindingAsset
-	// class UGroomBindingAsset* CreateNewGroomBindingAsset(class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32_t InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32_t InMatchingSection); // [0x46de6a0] Final|Native|Static|Public|BlueprintCallable 
+	// class UGroomBindingAsset* CreateNewGroomBindingAsset(class UGroomAsset* InGroomAsset, class USkeletalMesh* InSkeletalMesh, int32_t InNumInterpolationPoints, class USkeletalMesh* InSourceSkeletalMeshForTransfer, int32_t InMatchingSection); // [0x4673420] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HairStrandsCore.GroomBlueprintLibrary.CreateNewGeometryCacheGroomBindingAssetWithPath
-	// class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAssetWithPath(FString DesiredPackagePath, class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32_t NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32_t MatchingSection); // [0x46de830] Final|Native|Static|Public|BlueprintCallable 
+	// class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAssetWithPath(FString DesiredPackagePath, class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32_t NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32_t MatchingSection); // [0x46735b0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HairStrandsCore.GroomBlueprintLibrary.CreateNewGeometryCacheGroomBindingAsset
-	// class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAsset(class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32_t NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32_t MatchingSection); // [0x46de6a0] Final|Native|Static|Public|BlueprintCallable 
+	// class UGroomBindingAsset* CreateNewGeometryCacheGroomBindingAsset(class UGroomAsset* GroomAsset, class UGeometryCache* GeometryCache, int32_t NumInterpolationPoints, class UGeometryCache* SourceGeometryCacheForTransfer, int32_t MatchingSection); // [0x4673420] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/HairStrandsCore.GroomAnimationInfo
@@ -718,7 +718,7 @@ public:
 	class UMaterialInterface*                          Meshes_DefaultMaterial;                                     // 0x0528   (0x0008)  
 	class UNiagaraSystem*                              AngularSpringsSystem;                                       // 0x0530   (0x0008)  
 	class UNiagaraSystem*                              CosseratRodsSystem;                                         // 0x0538   (0x0008)  
-	SDK_UNDEFINED(16,4664) /* FString */               __um(AttachmentName);                                       // 0x0540   (0x0010)  
+	SDK_UNDEFINED(16,5058) /* FString */               __um(AttachmentName);                                       // 0x0540   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x50];                                      // 0x0550   (0x0050)  MISSED
 	TArray<FHairGroupDesc>                             GroomGroupsDesc;                                            // 0x05A0   (0x0010)  
 	bool                                               bRunning;                                                   // 0x05B0   (0x0001)  
@@ -731,9 +731,9 @@ public:
 
 	/// Functions
 	// Function /Script/HairStrandsCore.GroomComponent.SetGroomAsset
-	// void SetGroomAsset(class UGroomAsset* Asset);                                                                         // [0x46deaa0] Final|Native|Public|BlueprintCallable 
+	// void SetGroomAsset(class UGroomAsset* Asset);                                                                         // [0x4673820] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HairStrandsCore.GroomComponent.SetBindingAsset
-	// void SetBindingAsset(class UGroomBindingAsset* InBinding);                                                            // [0x46dea10] Final|Native|Public|BlueprintCallable 
+	// void SetBindingAsset(class UGroomBindingAsset* InBinding);                                                            // [0x4673790] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/HairStrandsCore.GroomCreateBindingOptions

@@ -59,7 +59,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheGhostface.GhostChargeStalkModeInteraction.GetStealthComponent
-	// class UGhostStealthComponent* GetStealthComponent();                                                                  // [0x5ab9850] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UGhostStealthComponent* GetStealthComponent();                                                                  // [0x5ac38a0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheGhostface.GhostfaceCrouchAttack
@@ -73,7 +73,7 @@ public:
 /// Size: 0x0048 (0x0000B8 - 0x000100)
 struct FGhostKillerAnalytics : FUniquelyIdentifiedAnalytic
 { 
-	SDK_UNDEFINED(16,5070) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5460) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
 	int32_t                                            Stalk;                                                      // 0x00C8   (0x0004)  
 	int32_t                                            StalkStealth;                                               // 0x00CC   (0x0004)  
 	int32_t                                            Stalk25;                                                    // 0x00D0   (0x0004)  
@@ -102,25 +102,25 @@ public:
 
 	/// Functions
 	// Function /Script/TheGhostface.GhostKillerAnalyticsComponent.Local_OnStalkModeChanged
-	// void Local_OnStalkModeChanged(bool IsInStalkMode);                                                                    // [0x5ab9f60] Final|Native|Private 
+	// void Local_OnStalkModeChanged(bool IsInStalkMode);                                                                    // [0x5ac3fb0] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostKillerAnalyticsComponent.Local_OnLeanStateChanged
-	// void Local_OnLeanStateChanged(ELeanState leanState);                                                                  // [0x5ab9ee0] Final|Native|Private 
+	// void Local_OnLeanStateChanged(ELeanState leanState);                                                                  // [0x5ac3f30] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostKillerAnalyticsComponent.Local_OnIsStealthChanged
-	// void Local_OnIsStealthChanged(bool IsStealth);                                                                        // [0x5ab9e50] Final|Native|Private 
+	// void Local_OnIsStealthChanged(bool IsStealth);                                                                        // [0x5ac3ea0] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostKillerAnalyticsComponent.Authority_OnStalkChargePercentChanged
-	// void Authority_OnStalkChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5ab9d40] Final|Native|Private 
+	// void Authority_OnStalkChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5ac3d90] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostKillerAnalyticsComponent.Authority_OnPreAttackSuccess
-	// void Authority_OnPreAttackSuccess(FGameplayTag GameplayTag, FGameEventData& GameEventData);                           // [0x5ab9c30] Final|Native|Private|HasOutParms 
+	// void Authority_OnPreAttackSuccess(FGameplayTag GameplayTag, FGameEventData& GameEventData);                           // [0x5ac3c80] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheGhostface.GhostStalkedComponent
-/// Size: 0x0268 (0x0000B8 - 0x000320)
+/// Size: 0x0270 (0x0000B8 - 0x000328)
 class UGhostStalkedComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5071) /* FMulticastInlineDelegate */ __um(OnIsMarkedChanged);                                 // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,5072) /* FMulticastInlineDelegate */ __um(OnIsSpottingKillerChanged);                         // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,5461) /* FMulticastInlineDelegate */ __um(OnIsMarkedChanged);                                 // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5462) /* FMulticastInlineDelegate */ __um(OnIsSpottingKillerChanged);                         // 0x00D0   (0x0010)  
 	class UClass*                                      _ghostMarkedEffectClass;                                    // 0x00E0   (0x0008)  
 	class UClass*                                      _ghostKillerInstinctClass;                                  // 0x00E8   (0x0008)  
 	FTagStateBool                                      _isMarked;                                                  // 0x00F0   (0x0030)  
@@ -133,125 +133,129 @@ public:
 	FDBDTunableRowHandle                               _stalkPointsDepleteDelay;                                   // 0x0268   (0x0028)  
 	class ASlasherPlayer*                              _killer;                                                    // 0x0290   (0x0008)  
 	class UStalkedComponent*                           _stalkedComponent;                                          // 0x0298   (0x0008)  
-	unsigned char                                      UnknownData03_6[0x80];                                      // 0x02A0   (0x0080)  MISSED
+	unsigned char                                      UnknownData03_6[0x88];                                      // 0x02A0   (0x0088)  MISSED
 
 
 	/// Functions
+	// Function /Script/TheGhostface.GhostStalkedComponent.OnLocallyObservedChanged
+	// void OnLocallyObservedChanged(class ADBDPlayer* Player);                                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheGhostface.GhostStalkedComponent.OnKillerSpottedChanged
-	// void OnKillerSpottedChanged(class ADBDPlayer* spotter, bool spotted);                                                 // [0x5aba630] Final|Native|Private 
+	// void OnKillerSpottedChanged(class ADBDPlayer* spotter, bool spotted);                                                 // [0x5ac4710] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostStalkedComponent.OnIsSpottingKiller__DelegateSignature
-	// void OnIsSpottingKiller__DelegateSignature(bool isSpotting);                                                          // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsSpottingKiller__DelegateSignature(bool isSpotting);                                                          // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStalkedComponent.OnIsMarkedChanged__DelegateSignature
-	// void OnIsMarkedChanged__DelegateSignature(bool IsMarked);                                                             // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsMarkedChanged__DelegateSignature(bool IsMarked);                                                             // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStalkedComponent.Local_OnSpotKiller
-	// void Local_OnSpotKiller();                                                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void Local_OnSpotKiller();                                                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheGhostface.GhostStalkedComponent.IsMarked
-	// bool IsMarked();                                                                                                      // [0x5aba600] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsMarked();                                                                                                      // [0x5ac46e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGhostface.GhostStalkedComponent.Initialize
-	// void Initialize(class ASlasherPlayer* killer);                                                                        // [0x58c5550] Native|Event|Protected|BlueprintEvent 
+	// void Initialize(class ASlasherPlayer* killer);                                                                        // [0x58cbe00] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/TheGhostface.GhostStalkedComponent.GetMeterPercentage
-	// float GetMeterPercentage();                                                                                           // [0x5aba5d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMeterPercentage();                                                                                           // [0x5ac46b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGhostface.GhostStalkedComponent.DBD_DebugGhost
-	// void DBD_DebugGhost(bool debug);                                                                                      // [0x5818260] Final|Exec|Native|Private 
+	// void DBD_DebugGhost(bool debug);                                                                                      // [0x581c030] Final|Exec|Native|Private 
 	// Function /Script/TheGhostface.GhostStalkedComponent.Client_OnSpotKiller
-	// void Client_OnSpotKiller();                                                                                           // [0x4db2a10] Net|Native|Event|Public|NetClient 
+	// void Client_OnSpotKiller();                                                                                           // [0x4d82970] Net|Native|Event|Public|NetClient 
 	// Function /Script/TheGhostface.GhostStalkedComponent.Authority_OnStalkedChargeFull
-	// void Authority_OnStalkedChargeFull(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                        // [0x5aba4d0] Final|Native|Private|HasOutParms 
+	// void Authority_OnStalkedChargeFull(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                        // [0x5ac45b0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheGhostface.GhostStalkPowerComponent
-/// Size: 0x0158 (0x0000B8 - 0x000210)
+/// Size: 0x0160 (0x0000B8 - 0x000218)
 class UGhostStalkPowerComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
 	class UStalkerComponent*                           _stalkerComponent;                                          // 0x00E8   (0x0008)  
-	SDK_UNDEFINED(48,5073) /* TWeakObjectPtr<UClass*> */ __um(_ghostStalkedComponentClassPtr);                     // 0x00F0   (0x0030)  
+	SDK_UNDEFINED(48,5463) /* TWeakObjectPtr<UClass*> */ __um(_ghostStalkedComponentClassPtr);                     // 0x00F0   (0x0030)  
 	float                                              _crouchAttackRequiredTimeSeconds;                           // 0x0120   (0x0004)  
 	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0124   (0x000C)  MISSED
 	bool                                               _debugMode;                                                 // 0x0130   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0131   (0x0007)  MISSED
-	FDBDTunableRowHandle                               _maxStalkPointsPerSurvivor;                                 // 0x0138   (0x0028)  
-	FTunableStat                                       _survivorMaximumSightDistance;                              // 0x0160   (0x0080)  
-	unsigned char                                      UnknownData03_6[0x30];                                      // 0x01E0   (0x0030)  MISSED
+	class UClass*                                      _ghostStalkSpeedStatusEffectClass;                          // 0x0138   (0x0008)  
+	FDBDTunableRowHandle                               _maxStalkPointsPerSurvivor;                                 // 0x0140   (0x0028)  
+	FTunableStat                                       _survivorMaximumSightDistance;                              // 0x0168   (0x0080)  
+	unsigned char                                      UnknownData03_6[0x30];                                      // 0x01E8   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheGhostface.GhostStalkPowerComponent.RefreshSurvivorMaximumSightDistance
-	// void RefreshSurvivorMaximumSightDistance();                                                                           // [0x5abaaa0] Final|Native|Public|BlueprintCallable|Const 
+	// void RefreshSurvivorMaximumSightDistance();                                                                           // [0x5ac4b80] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/TheGhostface.GhostStalkPowerComponent.OnLeanStateChanged
-	// void OnLeanStateChanged(ELeanState leanState);                                                                        // [0x5abaa20] Final|Native|Private 
+	// void OnLeanStateChanged(ELeanState leanState);                                                                        // [0x5ac4b00] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostStalkPowerComponent.OnIsCrouchedChanged
-	// void OnIsCrouchedChanged(bool isCrouched);                                                                            // [0x5aba990] Final|Native|Private 
+	// void OnIsCrouchedChanged(bool isCrouched);                                                                            // [0x5ac4a70] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostStalkPowerComponent.Authority_OnStalkModeChanged
-	// void Authority_OnStalkModeChanged(bool IsInStalkMode);                                                                // [0x5aba900] Final|Native|Private 
+	// void Authority_OnStalkModeChanged(bool IsInStalkMode);                                                                // [0x5ac49e0] Final|Native|Private 
 };
 
 /// Class /Script/TheGhostface.GhostStealthComponent
-/// Size: 0x02B0 (0x0000B8 - 0x000368)
+/// Size: 0x02B8 (0x0000B8 - 0x000370)
 class UGhostStealthComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5074) /* FMulticastInlineDelegate */ __um(OnSuccessfulAttackInStealth);                       // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,5075) /* FMulticastInlineDelegate */ __um(OnStealthStateChanged);                             // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,5076) /* FMulticastInlineDelegate */ __um(OnIsStealthChanged);                                // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,5077) /* FMulticastInlineDelegate */ __um(OnIsBeingSpotChanged);                              // 0x00F0   (0x0010)  
-	SDK_UNDEFINED(16,5078) /* FMulticastInlineDelegate */ __um(Local_OnStealthCancelledByPlayer);                  // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,5464) /* FMulticastInlineDelegate */ __um(OnSuccessfulAttackInStealth);                       // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5465) /* FMulticastInlineDelegate */ __um(OnStealthStateChanged);                             // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,5466) /* FMulticastInlineDelegate */ __um(OnIsStealthChanged);                                // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,5467) /* FMulticastInlineDelegate */ __um(OnIsBeingSpotChanged);                              // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,5468) /* FMulticastInlineDelegate */ __um(Local_OnStealthCancelledByPlayer);                  // 0x0100   (0x0010)  
 	EGhostStealthState                                 _stealthState;                                              // 0x0110   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x4F];                                      // 0x0111   (0x004F)  MISSED
 	class UTimerObject*                                _cooldownTimer;                                             // 0x0160   (0x0008)  
-	SDK_UNDEFINED(80,5079) /* TMap<ACharacter*, TWeakObjectPtr<UScreenIndicatorWorldMarkerComponent*>> */ __um(_markers); // 0x0168   (0x0050)  
-	FTunableStat                                       _cooldownDuration;                                          // 0x01B8   (0x0080)  
-	FNonTunableStat                                    _keepStealthOnAttackMiss;                                   // 0x0238   (0x0060)  
-	FDBDTunableRowHandle                               _markerMinVisibleDistance;                                  // 0x0298   (0x0028)  
-	FDBDTunableRowHandle                               _markerLifetime;                                            // 0x02C0   (0x0028)  
-	FDBDTunableRowHandle                               _stealthTerrorRadius;                                       // 0x02E8   (0x0028)  
-	float                                              _markerMaxAngleOffset;                                      // 0x0310   (0x0004)  
-	bool                                               _useKillerInstinctWhenSpotted;                              // 0x0314   (0x0001)  
-	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0315   (0x0003)  MISSED
-	class USightRevealableComponent*                   _sightRevealableComponent;                                  // 0x0318   (0x0008)  
-	class UStalkerComponent*                           _stalkerComponent;                                          // 0x0320   (0x0008)  
-	unsigned char                                      UnknownData03_6[0x40];                                      // 0x0328   (0x0040)  MISSED
+	SDK_UNDEFINED(80,5469) /* TMap<ACharacter*, TWeakObjectPtr<UScreenIndicatorWorldMarkerComponent*>> */ __um(_markers); // 0x0168   (0x0050)  
+	class UClass*                                      _ghostStealthMovementSpeedStatusEffectClass;                // 0x01B8   (0x0008)  
+	FTunableStat                                       _cooldownDuration;                                          // 0x01C0   (0x0080)  
+	FNonTunableStat                                    _keepStealthOnAttackMiss;                                   // 0x0240   (0x0060)  
+	FDBDTunableRowHandle                               _markerMinVisibleDistance;                                  // 0x02A0   (0x0028)  
+	FDBDTunableRowHandle                               _markerLifetime;                                            // 0x02C8   (0x0028)  
+	FDBDTunableRowHandle                               _stealthTerrorRadius;                                       // 0x02F0   (0x0028)  
+	float                                              _markerMaxAngleOffset;                                      // 0x0318   (0x0004)  
+	bool                                               _useKillerInstinctWhenSpotted;                              // 0x031C   (0x0001)  
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x031D   (0x0003)  MISSED
+	class USightRevealableComponent*                   _sightRevealableComponent;                                  // 0x0320   (0x0008)  
+	class UStalkerComponent*                           _stalkerComponent;                                          // 0x0328   (0x0008)  
+	unsigned char                                      UnknownData03_6[0x40];                                      // 0x0330   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheGhostface.GhostStealthComponent.SetRedStainVisibility
-	// void SetRedStainVisibility(bool visible);                                                                             // [0x5abb430] Final|Native|Private|Const 
+	// void SetRedStainVisibility(bool visible);                                                                             // [0x5ac5520] Final|Native|Private|Const 
 	// Function /Script/TheGhostface.GhostStealthComponent.OnSuccessfulAttackInStealth__DelegateSignature
-	// void OnSuccessfulAttackInStealth__DelegateSignature(class ADBDPlayer* Target);                                        // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnSuccessfulAttackInStealth__DelegateSignature(class ADBDPlayer* Target);                                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStealthComponent.OnStealthStateChanged__DelegateSignature
-	// void OnStealthStateChanged__DelegateSignature(EGhostStealthState stealthState);                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnStealthStateChanged__DelegateSignature(EGhostStealthState stealthState);                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStealthComponent.OnStealthCancelledByPlayer__DelegateSignature
-	// void OnStealthCancelledByPlayer__DelegateSignature(class ADBDPlayer* Player);                                         // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnStealthCancelledByPlayer__DelegateSignature(class ADBDPlayer* Player);                                         // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStealthComponent.OnRep_StealthState
-	// void OnRep_StealthState(EGhostStealthState previousState);                                                            // [0x5abb3b0] Final|Native|Private 
+	// void OnRep_StealthState(EGhostStealthState previousState);                                                            // [0x5ac54a0] Final|Native|Private 
 	// Function /Script/TheGhostface.GhostStealthComponent.OnIsStealthChanged__DelegateSignature
-	// void OnIsStealthChanged__DelegateSignature(bool IsStealth);                                                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsStealthChanged__DelegateSignature(bool IsStealth);                                                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStealthComponent.OnIsBeingSpotChanged__DelegateSignature
-	// void OnIsBeingSpotChanged__DelegateSignature(class ADBDPlayer* spotter, bool isBeingSpot);                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsBeingSpotChanged__DelegateSignature(class ADBDPlayer* spotter, bool isBeingSpot);                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGhostface.GhostStealthComponent.Multicast_OnPlayerSpottedKiller
-	// void Multicast_OnPlayerSpottedKiller(class ADBDPlayer* spotter);                                                      // [0x507e2f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnPlayerSpottedKiller(class ADBDPlayer* spotter);                                                      // [0x505fd60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheGhostface.GhostStealthComponent.Multicast_OnIsBeingSpottedChanged
-	// void Multicast_OnIsBeingSpottedChanged(class ADBDPlayer* spotter, bool isBeingSpotted, bool onlyUpdateSurvivor);      // [0x5abb290] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnIsBeingSpottedChanged(class ADBDPlayer* spotter, bool isBeingSpotted, bool onlyUpdateSurvivor);      // [0x5ac5380] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheGhostface.GhostStealthComponent.Multicast_BroadcastOnSuccessfulAttackInStealth
-	// void Multicast_BroadcastOnSuccessfulAttackInStealth(class ADBDPlayer* Target);                                        // [0x59e2440] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_BroadcastOnSuccessfulAttackInStealth(class ADBDPlayer* Target);                                        // [0x59e8a80] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheGhostface.GhostStealthComponent.IsStealthReadyToActivate
-	// bool IsStealthReadyToActivate();                                                                                      // [0x5abb260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStealthReadyToActivate();                                                                                      // [0x5ac5350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGhostface.GhostStealthComponent.IsStealth
-	// bool IsStealth();                                                                                                     // [0x5abb230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStealth();                                                                                                     // [0x5ac5320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGhostface.GhostStealthComponent.GetStealthState
-	// EGhostStealthState GetStealthState();                                                                                 // [0x5abb210] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EGhostStealthState GetStealthState();                                                                                 // [0x5ac5300] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGhostface.GhostStealthComponent.GetStealthChargePercent
-	// float GetStealthChargePercent();                                                                                      // [0x5abb1e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStealthChargePercent();                                                                                      // [0x5ac52d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGhostface.GhostStealthComponent.DBD_ResetGhostStealth
-	// void DBD_ResetGhostStealth();                                                                                         // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_ResetGhostStealth();                                                                                         // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheGhostface.GhostStealthComponent.Client_SpawnMarkerOnCharacter
-	// void Client_SpawnMarkerOnCharacter(class ACharacter* revealer);                                                       // [0x57e0340] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_SpawnMarkerOnCharacter(class ACharacter* revealer);                                                       // [0x57e83c0] Final|Net|NetReliableNative|Event|Private|NetClient 
 	// Function /Script/TheGhostface.GhostStealthComponent.Authority_TryActivateStealth
-	// void Authority_TryActivateStealth();                                                                                  // [0x5abb1c0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_TryActivateStealth();                                                                                  // [0x5ac52b0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheGhostface.GhostStealthComponent.Authority_ResetGhostStealth
-	// void Authority_ResetGhostStealth();                                                                                   // [0x45fe020] Final|Native|Public|BlueprintCallable 
+	// void Authority_ResetGhostStealth();                                                                                   // [0x4592da0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheGhostface.K16AnimInstance
@@ -279,6 +283,6 @@ public:
 
 	/// Functions
 	// Function /Script/TheGhostface.TheGhostUtilities.IsKillerStealth
-	// bool IsKillerStealth(class AActor* killer);                                                                           // [0x5abb9b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsKillerStealth(class AActor* killer);                                                                           // [0x5ac5aa0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 

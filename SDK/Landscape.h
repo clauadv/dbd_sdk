@@ -240,7 +240,7 @@ public:
 	FIntPoint                                          LandscapeSectionOffset;                                     // 0x0248   (0x0008)  
 	int32_t                                            MaxLODLevel;                                                // 0x0250   (0x0004)  
 	float                                              LODDistanceFactor;                                          // 0x0254   (0x0004)  
-	SDK_UNDEFINED(1,4857) /* TEnumAsByte<ELandscapeLODFalloff> */ __um(LODFalloff);                                // 0x0258   (0x0001)  
+	SDK_UNDEFINED(1,5251) /* TEnumAsByte<ELandscapeLODFalloff> */ __um(LODFalloff);                                // 0x0258   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0259   (0x0003)  MISSED
 	float                                              ComponentScreenSizeToUseSubSections;                        // 0x025C   (0x0004)  
 	float                                              LOD0ScreenSize;                                             // 0x0260   (0x0004)  
@@ -316,32 +316,32 @@ public:
 	ENavDataGatheringMode                              NavigationGeometryGatheringMode;                            // 0x055D   (0x0001)  
 	bool                                               bUseLandscapeForCullingInvisibleHLODVertices;               // 0x055E   (0x0001)  
 	bool                                               bHasLayersContent;                                          // 0x055F   (0x0001)  
-	SDK_UNDEFINED(80,4858) /* TMap<UTexture2D*, ULandscapeWeightmapUsage*> */ __um(WeightmapUsageMap);             // 0x0560   (0x0050)  
+	SDK_UNDEFINED(80,5252) /* TMap<UTexture2D*, ULandscapeWeightmapUsage*> */ __um(WeightmapUsageMap);             // 0x0560   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeProxy.SetLandscapeMaterialVectorParameterValue
-	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor value);                               // [0x703fcd0] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLandscapeMaterialVectorParameterValue(FName ParameterName, FLinearColor value);                               // [0x704fa40] Final|RequiredAPI|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.SetLandscapeMaterialTextureParameterValue
-	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UTexture* value);                           // [0x703fbe0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialTextureParameterValue(FName ParameterName, class UTexture* value);                           // [0x704f950] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.SetLandscapeMaterialScalarParameterValue
-	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float value);                                      // [0x703faf0] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetLandscapeMaterialScalarParameterValue(FName ParameterName, float value);                                      // [0x704f860] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.LandscapeExportHeightmapToRenderTarget
-	// bool LandscapeExportHeightmapToRenderTarget(class UTextureRenderTarget2D* InRenderTarget, bool InExportHeightIntoRGChannel, bool InExportLandscapeProxies); // [0x703f9d0] Final|Native|Public|BlueprintCallable 
+	// bool LandscapeExportHeightmapToRenderTarget(class UTextureRenderTarget2D* InRenderTarget, bool InExportHeightIntoRGChannel, bool InExportLandscapeProxies); // [0x704f740] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.EditorSetLandscapeMaterial
-	// void EditorSetLandscapeMaterial(class UMaterialInterface* NewLandscapeMaterial);                                      // [0x5828940] Final|Native|Public|BlueprintCallable 
+	// void EditorSetLandscapeMaterial(class UMaterialInterface* NewLandscapeMaterial);                                      // [0x582e0a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.EditorApplySpline
-	// void EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer, FName EditLayerName); // [0x703f630] Final|RequiredAPI|Native|Public|BlueprintCallable 
+	// void EditorApplySpline(class USplineComponent* InSplineComponent, float StartWidth, float EndWidth, float StartSideFalloff, float EndSideFalloff, float StartRoll, float EndRoll, int32_t NumSubdivisions, bool bRaiseHeights, bool bLowerHeights, class ULandscapeLayerInfoObject* PaintLayer, FName EditLayerName); // [0x704f3a0] Final|RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeUseTessellationComponentScreenSizeFalloff
-	// void ChangeUseTessellationComponentScreenSizeFalloff(bool InComponentScreenSizeToUseSubSections);                     // [0x703f5a0] Native|Public|BlueprintCallable 
+	// void ChangeUseTessellationComponentScreenSizeFalloff(bool InComponentScreenSizeToUseSubSections);                     // [0x704f310] Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeTessellationComponentScreenSizeFalloff
-	// void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff);                 // [0x703f510] Native|Public|BlueprintCallable 
+	// void ChangeTessellationComponentScreenSizeFalloff(float InUseTessellationComponentScreenSizeFalloff);                 // [0x704f280] Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeTessellationComponentScreenSize
-	// void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize);                                  // [0x5b986d0] Native|Public|BlueprintCallable 
+	// void ChangeTessellationComponentScreenSize(float InTessellationComponentScreenSize);                                  // [0x5ba5cd0] Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeLODDistanceFactor
-	// void ChangeLODDistanceFactor(float InLODDistanceFactor);                                                              // [0x703f480] Native|Public|BlueprintCallable 
+	// void ChangeLODDistanceFactor(float InLODDistanceFactor);                                                              // [0x704f1f0] Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeProxy.ChangeComponentScreenSizeToUseSubSections
-	// void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections);                          // [0x703f3f0] Native|Public|BlueprintCallable 
+	// void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections);                          // [0x704f160] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Landscape.Landscape
@@ -360,13 +360,13 @@ public:
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.RequestLandscapeUpdate
-	// void RequestLandscapeUpdate();                                                                                        // [0x45fe020] Final|Native|Public|BlueprintCallable 
+	// void RequestLandscapeUpdate();                                                                                        // [0x4592da0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.Render
-	// class UTextureRenderTarget2D* Render(bool InIsHeightmap, class UTextureRenderTarget2D* InCombinedResult, FName& InWeightmapLayerName); // [0x703dce0] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// class UTextureRenderTarget2D* Render(bool InIsHeightmap, class UTextureRenderTarget2D* InCombinedResult, FName& InWeightmapLayerName); // [0x704da50] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.Initialize
-	// void Initialize(FTransform& InLandscapeTransform, FIntPoint& InLandscapeSize, FIntPoint& InLandscapeRenderTargetSize); // [0x703db60] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Initialize(FTransform& InLandscapeTransform, FIntPoint& InLandscapeSize, FIntPoint& InLandscapeRenderTargetSize); // [0x704d8d0] Native|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/Landscape.LandscapeBlueprintBrushBase.GetBlueprintRenderDependencies
-	// void GetBlueprintRenderDependencies(TArray<UObject*>& OutStreamableAssets);                                           // [0x61c32d0] Event|Public|HasOutParms|BlueprintEvent 
+	// void GetBlueprintRenderDependencies(TArray<UObject*>& OutStreamableAssets);                                           // [0x61d2f50] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/Landscape.LandscapeLODStreamingProxy
@@ -420,7 +420,7 @@ public:
 	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0514   (0x000C)  MISSED
 	FVector4                                           HeightmapScaleBias;                                         // 0x0520   (0x0010)  
 	FBox                                               CachedLocalBox;                                             // 0x0530   (0x001C)  
-	SDK_UNDEFINED(28,4859) /* TLazyObjectPtr<ULandscapeHeightfieldCollisionComponent*> */ __um(CollisionComponent); // 0x054C   (0x001C)  
+	SDK_UNDEFINED(28,5253) /* TLazyObjectPtr<ULandscapeHeightfieldCollisionComponent*> */ __um(CollisionComponent); // 0x054C   (0x001C)  
 	class UTexture2D*                                  HeightmapTexture;                                           // 0x0568   (0x0008)  
 	TArray<FWeightmapLayerAllocationInfo>              WeightmapLayerAllocations;                                  // 0x0570   (0x0010)  
 	TArray<class UTexture2D*>                          WeightmapTextures;                                          // 0x0580   (0x0010)  
@@ -448,11 +448,11 @@ public:
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeComponent.GetMaterialInstanceDynamic
-	// class UMaterialInstanceDynamic* GetMaterialInstanceDynamic(int32_t InIndex);                                          // [0x703da90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialInstanceDynamic* GetMaterialInstanceDynamic(int32_t InIndex);                                          // [0x704d800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Landscape.LandscapeComponent.EditorGetPaintLayerWeightByNameAtLocation
-	// float EditorGetPaintLayerWeightByNameAtLocation(FVector& InLocation, FName InPaintLayerName);                         // [0x703d980] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float EditorGetPaintLayerWeightByNameAtLocation(FVector& InLocation, FName InPaintLayerName);                         // [0x704d6f0] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/Landscape.LandscapeComponent.EditorGetPaintLayerWeightAtLocation
-	// float EditorGetPaintLayerWeightAtLocation(FVector& InLocation, class ULandscapeLayerInfoObject* PaintLayer);          // [0x703d8a0] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float EditorGetPaintLayerWeightAtLocation(FVector& InLocation, class ULandscapeLayerInfoObject* PaintLayer);          // [0x704d610] Final|RequiredAPI|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/Landscape.LandscapeGizmoActor
@@ -538,7 +538,7 @@ public:
 	TArray<char>                                       CollisionQuadFlags;                                         // 0x04A8   (0x0010)  
 	FGuid                                              HeightfieldGuid;                                            // 0x04B8   (0x0010)  
 	FBox                                               CachedLocalBox;                                             // 0x04C8   (0x001C)  
-	SDK_UNDEFINED(28,4860) /* TLazyObjectPtr<ULandscapeComponent*> */ __um(RenderComponent);                       // 0x04E4   (0x001C)  
+	SDK_UNDEFINED(28,5254) /* TLazyObjectPtr<ULandscapeComponent*> */ __um(RenderComponent);                       // 0x04E4   (0x001C)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0500   (0x0010)  MISSED
 	TArray<class UPhysicalMaterial*>                   CookedPhysicalMaterials;                                    // 0x0510   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x40];                                      // 0x0520   (0x0040)  MISSED
@@ -546,7 +546,7 @@ public:
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeHeightfieldCollisionComponent.GetRenderComponent
-	// class ULandscapeComponent* GetRenderComponent();                                                                      // [0x703db30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ULandscapeComponent* GetRenderComponent();                                                                      // [0x704d8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Landscape.LandscapeInfo
@@ -554,7 +554,7 @@ public:
 class ULandscapeInfo : public UObject
 { 
 public:
-	SDK_UNDEFINED(28,4861) /* TLazyObjectPtr<ALandscape*> */ __um(LandscapeActor);                                 // 0x0030   (0x001C)  
+	SDK_UNDEFINED(28,5255) /* TLazyObjectPtr<ALandscape*> */ __um(LandscapeActor);                                 // 0x0030   (0x001C)  
 	FGuid                                              LandscapeGuid;                                              // 0x004C   (0x0010)  
 	int32_t                                            ComponentSizeQuads;                                         // 0x005C   (0x0004)  
 	int32_t                                            SubsectionSizeQuads;                                        // 0x0060   (0x0004)  
@@ -656,7 +656,7 @@ public:
 
 	/// Functions
 	// Function /Script/Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
-	// TArray<USplineMeshComponent*> GetSplineMeshComponents();                                                              // [0x70418d0] Final|Native|Public|BlueprintCallable 
+	// TArray<USplineMeshComponent*> GetSplineMeshComponents();                                                              // [0x7051640] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Landscape.LandscapeSplineConnection
@@ -733,7 +733,7 @@ public:
 class ALandscapeStreamingProxy : public ALandscapeProxy
 { 
 public:
-	SDK_UNDEFINED(28,4862) /* TLazyObjectPtr<ALandscape*> */ __um(LandscapeActor);                                 // 0x05B0   (0x001C)  
+	SDK_UNDEFINED(28,5256) /* TLazyObjectPtr<ALandscape*> */ __um(LandscapeActor);                                 // 0x05B0   (0x001C)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x05CC   (0x0004)  MISSED
 };
 
@@ -778,7 +778,7 @@ public:
 struct FLayerBlendInput
 { 
 	FName                                              LayerName;                                                  // 0x0000   (0x000C)  
-	SDK_UNDEFINED(1,4863) /* TEnumAsByte<ELandscapeLayerBlendType> */ __um(BlendType);                             // 0x000C   (0x0001)  
+	SDK_UNDEFINED(1,5257) /* TEnumAsByte<ELandscapeLayerBlendType> */ __um(BlendType);                             // 0x000C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x000D   (0x0003)  MISSED
 	FExpressionInput                                   LayerInput;                                                 // 0x0010   (0x001C)  
 	FExpressionInput                                   HeightInput;                                                // 0x002C   (0x001C)  
@@ -801,8 +801,8 @@ public:
 class UMaterialExpressionLandscapeLayerCoords : public UMaterialExpression
 { 
 public:
-	SDK_UNDEFINED(1,4864) /* TEnumAsByte<ETerrainCoordMappingType> */ __um(MappingType);                           // 0x0048   (0x0001)  
-	SDK_UNDEFINED(1,4865) /* TEnumAsByte<ELandscapeCustomizedCoordType> */ __um(CustomUVType);                     // 0x0049   (0x0001)  
+	SDK_UNDEFINED(1,5258) /* TEnumAsByte<ETerrainCoordMappingType> */ __um(MappingType);                           // 0x0048   (0x0001)  
+	SDK_UNDEFINED(1,5259) /* TEnumAsByte<ELandscapeCustomizedCoordType> */ __um(CustomUVType);                     // 0x0049   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x004A   (0x0002)  MISSED
 	float                                              MappingScale;                                               // 0x004C   (0x0004)  
 	float                                              MappingRotation;                                            // 0x0050   (0x0004)  
@@ -891,10 +891,10 @@ struct FLandscapeLayer
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x001E   (0x0002)  MISSED
 	float                                              HeightmapAlpha;                                             // 0x0020   (0x0004)  
 	float                                              WeightmapAlpha;                                             // 0x0024   (0x0004)  
-	SDK_UNDEFINED(1,4866) /* TEnumAsByte<ELandscapeBlendMode> */ __um(BlendMode);                                  // 0x0028   (0x0001)  
+	SDK_UNDEFINED(1,5260) /* TEnumAsByte<ELandscapeBlendMode> */ __um(BlendMode);                                  // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0029   (0x0007)  MISSED
 	TArray<FLandscapeLayerBrush>                       Brushes;                                                    // 0x0030   (0x0010)  
-	SDK_UNDEFINED(80,4867) /* TMap<ULandscapeLayerInfoObject*, bool> */ __um(WeightmapLayerAllocationBlend);       // 0x0040   (0x0050)  
+	SDK_UNDEFINED(80,5261) /* TMap<ULandscapeLayerInfoObject*, bool> */ __um(WeightmapLayerAllocationBlend);       // 0x0040   (0x0050)  
 };
 
 /// Struct /Script/Landscape.HeightmapData
@@ -1006,9 +1006,9 @@ struct FLandscapeSplineMeshEntry
 	bool                                               bScaleToWidth : 1;                                          // 0x0024:0 (0x0001)  
 	unsigned char                                      UnknownData01_4[0x3];                                       // 0x0025   (0x0003)  MISSED
 	FVector                                            Scale;                                                      // 0x0028   (0x000C)  
-	SDK_UNDEFINED(1,4868) /* TEnumAsByte<LandscapeSplineMeshOrientation> */ __um(Orientation);                     // 0x0034   (0x0001)  
-	SDK_UNDEFINED(1,4869) /* TEnumAsByte<ESplineMeshAxis> */ __um(ForwardAxis);                                    // 0x0035   (0x0001)  
-	SDK_UNDEFINED(1,4870) /* TEnumAsByte<ESplineMeshAxis> */ __um(UpAxis);                                         // 0x0036   (0x0001)  
+	SDK_UNDEFINED(1,5262) /* TEnumAsByte<LandscapeSplineMeshOrientation> */ __um(Orientation);                     // 0x0034   (0x0001)  
+	SDK_UNDEFINED(1,5263) /* TEnumAsByte<ESplineMeshAxis> */ __um(ForwardAxis);                                    // 0x0035   (0x0001)  
+	SDK_UNDEFINED(1,5264) /* TEnumAsByte<ESplineMeshAxis> */ __um(UpAxis);                                         // 0x0036   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x1];                                       // 0x0037   (0x0001)  MISSED
 };
 

@@ -34,9 +34,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheCannibal.BBQAndChili.GetMinDistanceToKillerByLevel
-	// float GetMinDistanceToKillerByLevel(int32_t Level);                                                                   // [0x5a1f2f0] Final|Native|Public|BlueprintCallable 
+	// float GetMinDistanceToKillerByLevel(int32_t Level);                                                                   // [0x5a282c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheCannibal.BBQAndChili.GetAuraRevealDuration
-	// float GetAuraRevealDuration();                                                                                        // [0x4bae260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAuraRevealDuration();                                                                                        // [0x4b75200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawHitEventAddon
@@ -62,43 +62,43 @@ public:
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawAttack
-/// Size: 0x00C0 (0x000400 - 0x0004C0)
-class UCannibalChainsawAttack : public UHillbillyChainsawAttack
+/// Size: 0x00C0 (0x000460 - 0x000520)
+class UCannibalChainsawAttack : public UBaseChainsawAttack
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0400   (0x0010)  MISSED
-	FTagStateBool                                      _isInTantrum;                                               // 0x0410   (0x0030)  
-	unsigned char                                      UnknownData01_5[0x24];                                      // 0x0440   (0x0024)  MISSED
-	float                                              _immuneToSuccessiveChainsawHitsDuration;                    // 0x0464   (0x0004)  
-	SDK_UNDEFINED(80,5063) /* TMap<ADBDPlayer*, float> */ __um(_lastChainsawHitTimes);                             // 0x0468   (0x0050)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x04B8   (0x0008)  MISSED
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0460   (0x0010)  MISSED
+	FTagStateBool                                      _isInTantrum;                                               // 0x0470   (0x0030)  
+	unsigned char                                      UnknownData01_5[0x24];                                      // 0x04A0   (0x0024)  MISSED
+	float                                              _immuneToSuccessiveChainsawHitsDuration;                    // 0x04C4   (0x0004)  
+	SDK_UNDEFINED(80,5453) /* TMap<ADBDPlayer*, float> */ __um(_lastChainsawHitTimes);                             // 0x04C8   (0x0050)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0518   (0x0008)  MISSED
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawAttackOpenSubstate
-/// Size: 0x0018 (0x000178 - 0x000190)
-class UCannibalChainsawAttackOpenSubstate : public UHillbillyChainsawAttackOpenSubstate
+/// Size: 0x0018 (0x000168 - 0x000180)
+class UCannibalChainsawAttackOpenSubstate : public UBaseChainsawAttackOpenSubstate
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x18];                                      // 0x0178   (0x0018)  MISSED
+	unsigned char                                      UnknownData00_1[0x18];                                      // 0x0168   (0x0018)  MISSED
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawAttackHittingSubstate
 /// Size: 0x0000 (0x0001A0 - 0x0001A0)
-class UCannibalChainsawAttackHittingSubstate : public UHillbillyChainsawAttackHittingSubstate
+class UCannibalChainsawAttackHittingSubstate : public UPounceAttackHittingSubstate
 { 
 public:
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawAttackSuccessSubstate
 /// Size: 0x0000 (0x000118 - 0x000118)
-class UCannibalChainsawAttackSuccessSubstate : public UHillbillyChainsawAttackSuccessSubstate
+class UCannibalChainsawAttackSuccessSubstate : public UBaseChainsawAttackSuccessSubstate
 { 
 public:
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawAttackMissSubstate
 /// Size: 0x0018 (0x000120 - 0x000138)
-class UCannibalChainsawAttackMissSubstate : public UHillbillyChainsawAttackMissSubstate
+class UCannibalChainsawAttackMissSubstate : public UBaseChainsawAttackMissSubstate
 { 
 public:
 	unsigned char                                      UnknownData00_1[0x18];                                      // 0x0120   (0x0018)  MISSED
@@ -106,7 +106,7 @@ public:
 
 /// Class /Script/TheCannibal.CannibalChainsawAttackObstructSubstate
 /// Size: 0x0060 (0x000128 - 0x000188)
-class UCannibalChainsawAttackObstructSubstate : public UHillbillyChainsawAttackObstructSubstate
+class UCannibalChainsawAttackObstructSubstate : public UBaseChainsawAttackObstructSubstate
 { 
 public:
 	FTagStateBool                                      _isInTantrum;                                               // 0x0128   (0x0030)  
@@ -144,27 +144,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.Server_OnTantrumPowerChargeFull
-	// void Server_OnTantrumPowerChargeFull();                                                                               // [0x5a20ad0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_OnTantrumPowerChargeFull();                                                                               // [0x5a29b40] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.OnRep_NumPowerCharges
-	// void OnRep_NumPowerCharges(int32_t previousNumPowerCharges);                                                          // [0x5a20a40] Final|Native|Private 
+	// void OnRep_NumPowerCharges(int32_t previousNumPowerCharges);                                                          // [0x5a29ab0] Final|Native|Private 
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5a20a20] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5a29a90] Final|Native|Private 
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.Multicast_OnTantrumPowerChargeFull
-	// void Multicast_OnTantrumPowerChargeFull();                                                                            // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnTantrumPowerChargeFull();                                                                            // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.Local_OnTantrumPowerChargeFull
-	// void Local_OnTantrumPowerChargeFull();                                                                                // [0x5a20a00] Final|Native|Private 
+	// void Local_OnTantrumPowerChargeFull();                                                                                // [0x5a29a70] Final|Native|Private 
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.GetNumberOfChainsawPowerCharges
-	// int32_t GetNumberOfChainsawPowerCharges();                                                                            // [0x5a209d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberOfChainsawPowerCharges();                                                                            // [0x5a29a40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheCannibal.CannibalChainsawPowerComponent.Authority_OnChainsawPowerChargeFull
-	// void Authority_OnChainsawPowerChargeFull();                                                                           // [0x5a209b0] Final|Native|Private 
+	// void Authority_OnChainsawPowerChargeFull();                                                                           // [0x5a29a20] Final|Native|Private 
 };
 
 /// Class /Script/TheCannibal.CannibalChainsawRevInteraction
-/// Size: 0x0090 (0x0007F0 - 0x000880)
+/// Size: 0x00A0 (0x0007F0 - 0x000890)
 class UCannibalChainsawRevInteraction : public UChainsawRevInteraction
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x90];                                      // 0x07F0   (0x0090)  MISSED
+	unsigned char                                      UnknownData00_1[0xA0];                                      // 0x07F0   (0x00A0)  MISSED
 };
 
 /// Class /Script/TheCannibal.CannibalPowerPresentationItemProgressComponent
@@ -177,7 +177,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheCannibal.CannibalPowerPresentationItemProgressComponent.SetCannibalChainsawPowerComponent
-	// void SetCannibalChainsawPowerComponent(class UCannibalChainsawPowerComponent* cannibalPowerChainsawComponent);        // [0x57ebc00] Final|Native|Public|BlueprintCallable 
+	// void SetCannibalChainsawPowerComponent(class UCannibalChainsawPowerComponent* cannibalPowerChainsawComponent);        // [0x57eeff0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheCannibal.CarburetorTuningGuideAddon
@@ -199,11 +199,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheCannibal.FranklinsDemise.Multicast_DroppedEvent
-	// void Multicast_DroppedEvent(class ACamperPlayer* hitPlayer, class ACollectable* itemToDrop);                          // [0x500fa30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DroppedEvent(class ACamperPlayer* hitPlayer, class ACollectable* itemToDrop);                          // [0x4fed310] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheCannibal.FranklinsDemise.GetTimeBeforeItemIsConsumedAtLevel
-	// float GetTimeBeforeItemIsConsumedAtLevel();                                                                           // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimeBeforeItemIsConsumedAtLevel();                                                                           // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheCannibal.FranklinsDemise.BP_OnPlayerHitCosmetic
-	// void BP_OnPlayerHitCosmetic(class ACamperPlayer* hitPlayer, class ACollectable* itemToDrop);                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void BP_OnPlayerHitCosmetic(class ACamperPlayer* hitPlayer, class ACollectable* itemToDrop);                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheCannibal.IridescentLeatherAddon
@@ -225,6 +225,19 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03EC   (0x0004)  MISSED
 	FForAllSurvivorsStatusEffectImposer                _slowAndBlindEffectImposer;                                 // 0x03F0   (0x0018)  
 	FForAllSurvivorsStatusEffectImposer                _hideAuraEffectImposer;                                     // 0x0408   (0x0018)  
+};
+
+/// Class /Script/TheCannibal.KnockOutSlowAndBlindEffect
+/// Size: 0x0008 (0x000350 - 0x000358)
+class UKnockOutSlowAndBlindEffect : public UStatusEffect
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0350   (0x0008)  MISSED
+
+
+	/// Functions
+	// Function /Script/TheCannibal.KnockOutSlowAndBlindEffect.OnLocallyObservedChanged
+	// void OnLocallyObservedChanged(class ADBDPlayer* Player);                                                              // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/TheCannibal.ShopLubricantAddon

@@ -38,7 +38,7 @@ enum class EFrenzyEndReason : uint8_t
 class UAddon_Frenzy_ColdDirt : public UItemAddon
 { 
 public:
-	SDK_UNDEFINED(80,5165) /* TMap<int32_t, int32_t> */ __um(_mapTokenPerChainedHit);                              // 0x02B8   (0x0050)  
+	SDK_UNDEFINED(80,5555) /* TMap<int32_t, int32_t> */ __um(_mapTokenPerChainedHit);                              // 0x02B8   (0x0050)  
 	int32_t                                            _tokensToReachForActivation;                                // 0x0308   (0x0004)  
 	float                                              _movementSpeedMultiplierModifier;                           // 0x030C   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0310   (0x0010)  MISSED
@@ -151,12 +151,12 @@ class UFrenzyComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5166) /* FMulticastInlineDelegate */ __um(OnFrenzyStarted);                                   // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,5167) /* FMulticastInlineDelegate */ __um(OnFrenzyEnded);                                     // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,5168) /* FMulticastInlineDelegate */ __um(OnFrenzyEndedNoCooldown);                           // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,5169) /* FMulticastInlineDelegate */ __um(OnInjuredBleedoutStartedDuringFrenzy);              // 0x00F0   (0x0010)  
-	SDK_UNDEFINED(16,5170) /* FMulticastInlineDelegate */ __um(OnFrenzyReadyToStart);                              // 0x0100   (0x0010)  
-	SDK_UNDEFINED(16,5171) /* FMulticastInlineDelegate */ __um(OnFrenzyIncreasedTier);                             // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,5556) /* FMulticastInlineDelegate */ __um(OnFrenzyStarted);                                   // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5557) /* FMulticastInlineDelegate */ __um(OnFrenzyEnded);                                     // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,5558) /* FMulticastInlineDelegate */ __um(OnFrenzyEndedNoCooldown);                           // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,5559) /* FMulticastInlineDelegate */ __um(OnInjuredBleedoutStartedDuringFrenzy);              // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,5560) /* FMulticastInlineDelegate */ __um(OnFrenzyReadyToStart);                              // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,5561) /* FMulticastInlineDelegate */ __um(OnFrenzyIncreasedTier);                             // 0x0110   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x150];                                     // 0x0120   (0x0150)  MISSED
 	FTunableStat                                       _allowManuallyEndFrenzy;                                    // 0x0270   (0x0080)  
 	FTunableStat                                       _chargeToLoseOnRemoveBleedoutTimeAttack;                    // 0x02F0   (0x0080)  
@@ -184,37 +184,37 @@ public:
 
 	/// Functions
 	// Function /Script/TheLegion.FrenzyComponent.StartFrenzy
-	// void StartFrenzy();                                                                                                   // [0x5d78fc0] Final|Native|Public|BlueprintCallable 
+	// void StartFrenzy();                                                                                                   // [0x5d861c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.SetStartingFrenzy
-	// void SetStartingFrenzy(bool startingFrenzy);                                                                          // [0x5d78f30] Final|Native|Public|BlueprintCallable 
+	// void SetStartingFrenzy(bool startingFrenzy);                                                                          // [0x5d86130] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.SetObjectState
-	// void SetObjectState(class UGameplayTagContainerComponent* objectState);                                               // [0x5d78ea0] Final|Native|Public|BlueprintCallable 
+	// void SetObjectState(class UGameplayTagContainerComponent* objectState);                                               // [0x5d860a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.ResumeFrenzyChargeDepletion
-	// void ResumeFrenzyChargeDepletion();                                                                                   // [0x5d78e80] Final|Native|Public|BlueprintCallable 
+	// void ResumeFrenzyChargeDepletion();                                                                                   // [0x5d86080] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.PauseFrenzyChargeDepletion
-	// void PauseFrenzyChargeDepletion();                                                                                    // [0x5d78e60] Final|Native|Public|BlueprintCallable 
+	// void PauseFrenzyChargeDepletion();                                                                                    // [0x5d86060] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.OnMoriStarted
-	// void OnMoriStarted();                                                                                                 // [0x5d78e40] Final|Native|Private 
+	// void OnMoriStarted();                                                                                                 // [0x5d86040] Final|Native|Private 
 	// Function /Script/TheLegion.FrenzyComponent.OnFrenzyCooldownStarted
-	// void OnFrenzyCooldownStarted();                                                                                       // [0x5d78e20] Final|Native|Public|BlueprintCallable 
+	// void OnFrenzyCooldownStarted();                                                                                       // [0x5d86020] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.IsStartingFrenzy
-	// bool IsStartingFrenzy();                                                                                              // [0x5d78de0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsStartingFrenzy();                                                                                              // [0x5d85fe0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheLegion.FrenzyComponent.IsInFrenzyCooldown
-	// bool IsInFrenzyCooldown();                                                                                            // [0x5d78da0] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInFrenzyCooldown();                                                                                            // [0x5d85fa0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheLegion.FrenzyComponent.IsInFrenzy
-	// bool IsInFrenzy();                                                                                                    // [0x5d78d60] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInFrenzy();                                                                                                    // [0x5d85f60] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheLegion.FrenzyComponent.InitializeFrenzy
-	// void InitializeFrenzy();                                                                                              // [0x5d78d40] Final|Native|Private 
+	// void InitializeFrenzy();                                                                                              // [0x5d85f40] Final|Native|Private 
 	// Function /Script/TheLegion.FrenzyComponent.HasStartedInjuredBleedoutDuringThisFrenzy
-	// bool HasStartedInjuredBleedoutDuringThisFrenzy();                                                                     // [0x5d78d10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasStartedInjuredBleedoutDuringThisFrenzy();                                                                     // [0x5d85f10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheLegion.FrenzyComponent.GetFrenzyTier
-	// int32_t GetFrenzyTier();                                                                                              // [0x5d78ce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetFrenzyTier();                                                                                              // [0x5d85ee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheLegion.FrenzyComponent.EndFrenzy
-	// void EndFrenzy(EFrenzyEndReason Reason);                                                                              // [0x5d78c60] Final|Native|Public|BlueprintCallable 
+	// void EndFrenzy(EFrenzyEndReason Reason);                                                                              // [0x5d85e60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.FrenzyComponent.CanStartFrenzy
-	// bool CanStartFrenzy();                                                                                                // [0x5d78c20] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanStartFrenzy();                                                                                                // [0x5d85e20] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheLegion.FrenzyComponent.CanManuallyEndFrenzy
-	// bool CanManuallyEndFrenzy();                                                                                          // [0x5d78bf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanManuallyEndFrenzy();                                                                                          // [0x5d85df0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheLegion.FrenzySlasherVault
@@ -258,7 +258,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheLegion.LegionCheatComponent.DBD_LegionFrenzyForever
-	// void DBD_LegionFrenzyForever();                                                                                       // [0x5d79b30] Final|Exec|Native|Public 
+	// void DBD_LegionFrenzyForever();                                                                                       // [0x5d86d30] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheLegion.LegionKillerAnalyticsComponent
@@ -271,7 +271,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheLegion.LegionKillerAnalyticsComponent.SetGameEventDispatcher
-	// void SetGameEventDispatcher(class UGameEventDispatcher* GameEventDispatcher);                                         // [0x5d79cc0] Final|Native|Public|BlueprintCallable 
+	// void SetGameEventDispatcher(class UGameEventDispatcher* GameEventDispatcher);                                         // [0x5d86ec0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheLegion.LegionSurvivorAnalyticsComponent
@@ -284,9 +284,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheLegion.LegionSurvivorAnalyticsComponent.SetGameEventDispatcher
-	// void SetGameEventDispatcher(class UGameEventDispatcher* GameEventDispatcher);                                         // [0x5d7a000] Final|Native|Public|BlueprintCallable 
+	// void SetGameEventDispatcher(class UGameEventDispatcher* GameEventDispatcher);                                         // [0x5d87200] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheLegion.LegionSurvivorAnalyticsComponent.OnGameEventDispatched
-	// void OnGameEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x5d79ef0] Final|Native|Private|HasOutParms 
+	// void OnGameEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x5d870f0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheLegion.Madgrit
@@ -310,7 +310,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheLegion.ModifyFrenzyFOVEffect.Authority_OnFrenzyTierIncreased
-	// void Authority_OnFrenzyTierIncreased(int32_t tier);                                                                   // [0x5d7a410] Final|Native|Private 
+	// void Authority_OnFrenzyTierIncreased(int32_t tier);                                                                   // [0x5d87610] Final|Native|Private 
 };
 
 /// Class /Script/TheLegion.OnSelfMendImposeEffect
@@ -327,7 +327,7 @@ public:
 /// Size: 0x0020 (0x0000B8 - 0x0000D8)
 struct FLegionSurvivorAnalytics : FUniquelyIdentifiedAnalytic
 { 
-	SDK_UNDEFINED(16,5172) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5562) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
 	int32_t                                            DeepWoundCount;                                             // 0x00C8   (0x0004)  
 	int32_t                                            FrenzyEffectivements;                                       // 0x00CC   (0x0004)  
 	int32_t                                            DeepWoundDying;                                             // 0x00D0   (0x0004)  
@@ -339,7 +339,7 @@ struct FLegionSurvivorAnalytics : FUniquelyIdentifiedAnalytic
 /// Size: 0x0018 (0x0000B8 - 0x0000D0)
 struct FLegionKillerAnalytics : FUniquelyIdentifiedAnalytic
 { 
-	SDK_UNDEFINED(16,5173) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5563) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
 	int32_t                                            Pallet;                                                     // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00CC   (0x0004)  MISSED
 };

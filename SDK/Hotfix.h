@@ -58,15 +58,15 @@ class UOnlineHotfixManager : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x1C0];                                     // 0x0030   (0x01C0)  MISSED
-	SDK_UNDEFINED(16,4699) /* FString */               __um(OSSName);                                              // 0x01F0   (0x0010)  
-	SDK_UNDEFINED(16,4700) /* FString */               __um(HotfixManagerClassName);                               // 0x0200   (0x0010)  
-	SDK_UNDEFINED(16,4701) /* FString */               __um(DebugPrefix);                                          // 0x0210   (0x0010)  
+	SDK_UNDEFINED(16,5093) /* FString */               __um(OSSName);                                              // 0x01F0   (0x0010)  
+	SDK_UNDEFINED(16,5094) /* FString */               __um(HotfixManagerClassName);                               // 0x0200   (0x0010)  
+	SDK_UNDEFINED(16,5095) /* FString */               __um(DebugPrefix);                                          // 0x0210   (0x0010)  
 	TArray<class UObject*>                             AssetsHotfixedFromIniFiles;                                 // 0x0220   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/Hotfix.OnlineHotfixManager.StartHotfixProcess
-	// void StartHotfixProcess();                                                                                            // [0x433b920] Native|Public|BlueprintCallable 
+	// void StartHotfixProcess();                                                                                            // [0x42d9220] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Hotfix.UpdateManager

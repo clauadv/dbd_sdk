@@ -19,9 +19,9 @@ public:
 
 	/// Functions
 	// Function /Script/BeUtil.BeMaterialEditorHelper.ReloadTexture
-	// class UTexture* ReloadTexture(class UTexture* InTexture, FString InSourceName);                                       // [0x4511550] Final|Native|Static|Public|BlueprintCallable 
+	// class UTexture* ReloadTexture(class UTexture* InTexture, FString InSourceName);                                       // [0x44a62d0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/BeUtil.BeMaterialEditorHelper.EditMaterialConstant
-	// void EditMaterialConstant(class UMaterialInstanceConstant* InMaterialInstance, TArray<FBeMaterialScalar> InScalars, TArray<FBeMaterialVector> InVectors, TArray<FBeMaterialTexture> InTextures); // [0x4511320] Final|Native|Static|Public|BlueprintCallable 
+	// void EditMaterialConstant(class UMaterialInstanceConstant* InMaterialInstance, TArray<FBeMaterialScalar> InScalars, TArray<FBeMaterialVector> InVectors, TArray<FBeMaterialTexture> InTextures); // [0x44a60a0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/BeUtil.BeMaterialTexture

@@ -67,9 +67,8 @@ public:
 class UCaptureVoidWorldHauntInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	SDK_UNDEFINED(24,4665) /* FText */                 __um(_standardInteractionString);                           // 0x0788   (0x0018)  
-	SDK_UNDEFINED(24,4666) /* FText */                 __um(_contestedInteractionString);                          // 0x07A0   (0x0018)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x07B8   (0x0008)  MISSED
+	SDK_UNDEFINED(24,5059) /* FText */                 __um(_standardInteractionString);                           // 0x0790   (0x0018)  
+	SDK_UNDEFINED(24,5060) /* FText */                 __um(_contestedInteractionString);                          // 0x07A8   (0x0018)  
 };
 
 /// Class /Script/Halloween2023.FloatingVoidEnergyOrb
@@ -77,8 +76,8 @@ public:
 class UFloatingVoidEnergyOrb : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4667) /* FMulticastInlineDelegate */ __um(Cosmetic_OnOrbStartMoving);                         // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4668) /* FMulticastInlineDelegate */ __um(Cosmetic_OnOrbReachPlayer);                         // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,5061) /* FMulticastInlineDelegate */ __um(Cosmetic_OnOrbStartMoving);                         // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5062) /* FMulticastInlineDelegate */ __um(Cosmetic_OnOrbReachPlayer);                         // 0x00C8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x14];                                      // 0x00D8   (0x0014)  MISSED
 	FName                                              _characterBoneName;                                         // 0x00EC   (0x000C)  
 	FDBDTunableRowHandle                               _travelTimeToPlayer;                                        // 0x00F8   (0x0028)  
@@ -89,21 +88,21 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.OnPlayerInteract__DelegateSignature
-	// void OnPlayerInteract__DelegateSignature(class ADBDPlayer* Player);                                                   // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnPlayerInteract__DelegateSignature(class ADBDPlayer* Player);                                                   // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Multicast_StartTravelToPlayer
-	// void Multicast_StartTravelToPlayer(class ADBDPlayer* playerToTravelTo);                                               // [0x507e2f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartTravelToPlayer(class ADBDPlayer* playerToTravelTo);                                               // [0x505fd60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Multicast_OnReachedPlayer
-	// void Multicast_OnReachedPlayer();                                                                                     // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnReachedPlayer();                                                                                     // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Authority_OnTravelTimeEnd
-	// void Authority_OnTravelTimeEnd();                                                                                     // [0x59ba0c0] Final|Native|Private 
+	// void Authority_OnTravelTimeEnd();                                                                                     // [0x59c0a90] Final|Native|Private 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Authority_OnRespawn
-	// void Authority_OnRespawn();                                                                                           // [0x59ba0a0] Final|Native|Private 
+	// void Authority_OnRespawn();                                                                                           // [0x59c0a70] Final|Native|Private 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Authority_OnPlayerExitZone
-	// void Authority_OnPlayerExitZone(class ADBDPlayer* Player);                                                            // [0x59ba010] Final|Native|Private 
+	// void Authority_OnPlayerExitZone(class ADBDPlayer* Player);                                                            // [0x59c09e0] Final|Native|Private 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Authority_OnPlayerEnterZone
-	// void Authority_OnPlayerEnterZone(class ADBDPlayer* playerToTravelTo);                                                 // [0x59b9f80] Final|Native|Private 
+	// void Authority_OnPlayerEnterZone(class ADBDPlayer* playerToTravelTo);                                                 // [0x59c0950] Final|Native|Private 
 	// Function /Script/Halloween2023.FloatingVoidEnergyOrb.Authority_OnDespawn
-	// void Authority_OnDespawn();                                                                                           // [0x59b9f60] Final|Native|Private 
+	// void Authority_OnDespawn();                                                                                           // [0x59c0930] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2023.Halloween2023EventComponent
@@ -137,53 +136,53 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.Halloween2023EventComponent.PlayerDreamStateChanged
-	// void PlayerDreamStateChanged(bool IsInDreamworld, bool locallyObservedChanged);                                       // [0x59bb060] Final|Native|Private 
+	// void PlayerDreamStateChanged(bool IsInDreamworld, bool locallyObservedChanged);                                       // [0x59c1a30] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.OnVoidZoneAboutToCloseWarning
-	// void OnVoidZoneAboutToCloseWarning();                                                                                 // [0x59bb040] Final|Native|Private 
+	// void OnVoidZoneAboutToCloseWarning();                                                                                 // [0x59c1a10] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.OnRep_PlayersInVoid
-	// void OnRep_PlayersInVoid();                                                                                           // [0x59bb020] Final|Native|Private 
+	// void OnRep_PlayersInVoid();                                                                                           // [0x59c19f0] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.OnPlayerAdded
-	// void OnPlayerAdded(class ADBDPlayer* Player);                                                                         // [0x59baf90] Final|Native|Private 
+	// void OnPlayerAdded(class ADBDPlayer* Player);                                                                         // [0x59c1960] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x59baf70] Final|Native|Protected 
+	// void OnLocallyObservedChanged();                                                                                      // [0x59c1940] Final|Native|Protected 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Multicast_OnVoidZoneOpen
-	// void Multicast_OnVoidZoneOpen();                                                                                      // [0x4db2a10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnVoidZoneOpen();                                                                                      // [0x4d82970] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Multicast_OnVoidZoneClose
-	// void Multicast_OnVoidZoneClose();                                                                                     // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnVoidZoneClose();                                                                                     // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Multicast_OnMoriBegin
-	// void Multicast_OnMoriBegin();                                                                                         // [0x4e01260] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnMoriBegin();                                                                                         // [0x4dd4880] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Cosmetic_OnVoidZoneOpen
-	// void Cosmetic_OnVoidZoneOpen();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVoidZoneOpen();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Cosmetic_OnVoidZoneClose
-	// void Cosmetic_OnVoidZoneClose();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVoidZoneClose();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Cosmetic_OnVoidZoneAboutToClose
-	// void Cosmetic_OnVoidZoneAboutToClose();                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVoidZoneAboutToClose();                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Cosmetic_OnPlayerTeleported
-	// void Cosmetic_OnPlayerTeleported(class ADBDPlayer* playerTeleported, bool teleportIntoVoid);                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerTeleported(class ADBDPlayer* playerTeleported, bool teleportIntoVoid);                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Cosmetic_OnMoriStartedInVoidZone
-	// void Cosmetic_OnMoriStartedInVoidZone();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnMoriStartedInVoidZone();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_TurnAllRiftsIntoTeleporters
-	// void Authority_TurnAllRiftsIntoTeleporters(bool turnOnTeleporters);                                                   // [0x59baee0] Final|Native|Public  
+	// void Authority_TurnAllRiftsIntoTeleporters(bool turnOnTeleporters);                                                   // [0x59c18b0] Final|Native|Public  
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_PlayerTeleportedOutOfVoidZone
-	// void Authority_PlayerTeleportedOutOfVoidZone(class ADBDPlayer* playerTeleported, class ULinkedTeleporterComponent* teleporterUsed); // [0x59bae10] Final|Native|Public  
+	// void Authority_PlayerTeleportedOutOfVoidZone(class ADBDPlayer* playerTeleported, class ULinkedTeleporterComponent* teleporterUsed); // [0x59c17e0] Final|Native|Public  
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_PlayerTeleportedInToVoidZone
-	// void Authority_PlayerTeleportedInToVoidZone(class ADBDPlayer* playerTeleported, class ULinkedTeleporterComponent* teleporterUsed); // [0x59bad40] Final|Native|Private 
+	// void Authority_PlayerTeleportedInToVoidZone(class ADBDPlayer* playerTeleported, class ULinkedTeleporterComponent* teleporterUsed); // [0x59c1710] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_PlayerPreTeleportOutOfVoidZone
-	// void Authority_PlayerPreTeleportOutOfVoidZone(class ADBDPlayer* playerTeleported);                                    // [0x59bacb0] Final|Native|Public  
+	// void Authority_PlayerPreTeleportOutOfVoidZone(class ADBDPlayer* playerTeleported);                                    // [0x59c1680] Final|Native|Public  
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_PlayerPreTeleportInToVoidZone
-	// void Authority_PlayerPreTeleportInToVoidZone(class ADBDPlayer* playerTeleported);                                     // [0x59bac20] Final|Native|Private 
+	// void Authority_PlayerPreTeleportInToVoidZone(class ADBDPlayer* playerTeleported);                                     // [0x59c15f0] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_OpenVoidZone
-	// void Authority_OpenVoidZone(bool closeVoidAfterTimer);                                                                // [0x59bab90] Final|Native|Public  
+	// void Authority_OpenVoidZone(bool closeVoidAfterTimer);                                                                // [0x59c1560] Final|Native|Public  
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_OnVoidEnergyDeposited
-	// void Authority_OnVoidEnergyDeposited(int32_t amountDeposited, EVoidEnergyChangeReason changeReason);                  // [0x59baac0] Final|Native|Private 
+	// void Authority_OnVoidEnergyDeposited(int32_t amountDeposited, EVoidEnergyChangeReason changeReason);                  // [0x59c1490] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x59baaa0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x59c1470] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_OnComponentsAdded
-	// void Authority_OnComponentsAdded();                                                                                   // [0x59baa80] Final|Native|Private 
+	// void Authority_OnComponentsAdded();                                                                                   // [0x59c1450] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_ForceTeleportPlayersOutOfVoidZone
-	// void Authority_ForceTeleportPlayersOutOfVoidZone();                                                                   // [0x59baa60] Final|Native|Private 
+	// void Authority_ForceTeleportPlayersOutOfVoidZone();                                                                   // [0x59c1430] Final|Native|Private 
 	// Function /Script/Halloween2023.Halloween2023EventComponent.Authority_CloseVoidZone
-	// void Authority_CloseVoidZone();                                                                                       // [0x59baa40] Final|Native|Public  
+	// void Authority_CloseVoidZone();                                                                                       // [0x59c1410] Final|Native|Public  
 };
 
 /// Class /Script/Halloween2023.Halloween2023TeleporterInteraction
@@ -194,25 +193,25 @@ public:
 };
 
 /// Class /Script/Halloween2023.Halloween2023VoidHookSurvivorDefinition
-/// Size: 0x0050 (0x0007D0 - 0x000820)
+/// Size: 0x0060 (0x0007D0 - 0x000830)
 class UHalloween2023VoidHookSurvivorDefinition : public UHookSurvivorDefinition
 { 
 public:
-	SDK_UNDEFINED(16,4669) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerHooked);                           // 0x07C8   (0x0010)  
-	SDK_UNDEFINED(16,4670) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTeleported);                       // 0x07D8   (0x0010)  
-	float                                              _animationDuration;                                         // 0x07E8   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x34];                                      // 0x07EC   (0x0034)  MISSED
+	SDK_UNDEFINED(16,5063) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerHooked);                           // 0x07D0   (0x0010)  
+	SDK_UNDEFINED(16,5064) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTeleported);                       // 0x07E0   (0x0010)  
+	float                                              _animationDuration;                                         // 0x07F0   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x3C];                                      // 0x07F4   (0x003C)  MISSED
 
 
 	/// Functions
 	// Function /Script/Halloween2023.Halloween2023VoidHookSurvivorDefinition.OnHookEvent__DelegateSignature
-	// void OnHookEvent__DelegateSignature(class ACamperPlayer* Survivor);                                                   // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnHookEvent__DelegateSignature(class ACamperPlayer* Survivor);                                                   // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.Halloween2023VoidHookSurvivorDefinition.Multicast_PlacePlayerOnHook
-	// void Multicast_PlacePlayerOnHook(class ACamperPlayer* survivorBeingHooked);                                           // [0x59bb8c0] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_PlacePlayerOnHook(class ACamperPlayer* survivorBeingHooked);                                           // [0x59c2250] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/Halloween2023.Halloween2023VoidHookSurvivorDefinition.Multicast_OnPlayerMovedToStandardHook
-	// void Multicast_OnPlayerMovedToStandardHook(class ACamperPlayer* Player, class AMeatHook* closestMeatHook);            // [0x59bb7f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnPlayerMovedToStandardHook(class ACamperPlayer* Player, class AMeatHook* closestMeatHook);            // [0x59c2180] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.Halloween2023VoidHookSurvivorDefinition.Authority_SetPlayerOnStandardHook
-	// void Authority_SetPlayerOnStandardHook(class ACamperPlayer* Player);                                                  // [0x59bb760] Final|Native|Private 
+	// void Authority_SetPlayerOnStandardHook(class ACamperPlayer* Player);                                                  // [0x59c20f0] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2023.Halloween2023VoidTile
@@ -226,7 +225,7 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.Halloween2023VoidTile.Cosmetic_OnVoidZoneAboutToClose
-	// void Cosmetic_OnVoidZoneAboutToClose();                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVoidZoneAboutToClose();                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2023.HalloweenHauntAnimInstance
@@ -244,13 +243,13 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.HalloweenHauntAnimInstance.VoidEnergyChange
-	// void VoidEnergyChange();                                                                                              // [0x59bbe30] Final|Native|Private 
+	// void VoidEnergyChange();                                                                                              // [0x59c27c0] Final|Native|Private 
 	// Function /Script/Halloween2023.HalloweenHauntAnimInstance.TrapAnimationEnd
-	// void TrapAnimationEnd();                                                                                              // [0x59bbe10] Final|Native|Private 
+	// void TrapAnimationEnd();                                                                                              // [0x59c27a0] Final|Native|Private 
 	// Function /Script/Halloween2023.HalloweenHauntAnimInstance.PlayerTriggeredTrap
-	// void PlayerTriggeredTrap();                                                                                           // [0x59bbdf0] Final|Native|Private 
+	// void PlayerTriggeredTrap();                                                                                           // [0x59c2780] Final|Native|Private 
 	// Function /Script/Halloween2023.HalloweenHauntAnimInstance.EndVoidEnergyChange
-	// void EndVoidEnergyChange();                                                                                           // [0x59bbdd0] Final|Native|Private 
+	// void EndVoidEnergyChange();                                                                                           // [0x59c2760] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2023.HalloweenHauntStunInteraction
@@ -266,9 +265,9 @@ public:
 class UHauntComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4671) /* FMulticastInlineDelegate */ __um(Cosmetic_PlayerEnterHauntRadius);                   // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4672) /* FMulticastInlineDelegate */ __um(Cosmetic_PlayerLeavesHauntRadius);                  // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,4673) /* FMulticastInlineDelegate */ __um(Cosmetic_EnableHauntForInteraction);                // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,5065) /* FMulticastInlineDelegate */ __um(Cosmetic_PlayerEnterHauntRadius);                   // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5066) /* FMulticastInlineDelegate */ __um(Cosmetic_PlayerLeavesHauntRadius);                  // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,5067) /* FMulticastInlineDelegate */ __um(Cosmetic_EnableHauntForInteraction);                // 0x00D8   (0x0010)  
 	EPlayerRole                                        _winningPlayerRole;                                         // 0x00E8   (0x0001)  
 	bool                                               _isInteractable;                                            // 0x00E9   (0x0001)  
 	EOfferingEffectType                                _offeringEffectTypeNeeded;                                  // 0x00EA   (0x0001)  
@@ -280,25 +279,25 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.HauntComponent.OnRep_IsInteractable
-	// void OnRep_IsInteractable();                                                                                          // [0x59bc560] Final|Native|Protected 
+	// void OnRep_IsInteractable();                                                                                          // [0x59c2ef0] Final|Native|Protected 
 	// Function /Script/Halloween2023.HauntComponent.OnPlayerRoleEvent__DelegateSignature
-	// void OnPlayerRoleEvent__DelegateSignature(EPlayerRole playerRole);                                                    // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnPlayerRoleEvent__DelegateSignature(EPlayerRole PlayerRole);                                                    // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.HauntComponent.OnPlayerLeftZone
-	// void OnPlayerLeftZone(class ADBDPlayer* Player);                                                                      // [0x59bc4d0] Native|Protected     
+	// void OnPlayerLeftZone(class ADBDPlayer* Player);                                                                      // [0x59c2e60] Native|Protected     
 	// Function /Script/Halloween2023.HauntComponent.OnPlayerInteract__DelegateSignature
-	// void OnPlayerInteract__DelegateSignature(class ADBDPlayer* Player);                                                   // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnPlayerInteract__DelegateSignature(class ADBDPlayer* Player);                                                   // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.HauntComponent.OnPlayerEnterZone
-	// void OnPlayerEnterZone(class ADBDPlayer* Player);                                                                     // [0x59bc440] Native|Protected     
+	// void OnPlayerEnterZone(class ADBDPlayer* Player);                                                                     // [0x59c2dd0] Native|Protected     
 	// Function /Script/Halloween2023.HauntComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4e01220] Native|Protected     
+	// void OnLevelReadyToPlay();                                                                                            // [0x4dd4840] Native|Protected     
 	// Function /Script/Halloween2023.HauntComponent.OnHauntInteractionChange__DelegateSignature
-	// void OnHauntInteractionChange__DelegateSignature(EPlayerRole playerRole, bool IsInteractable);                        // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnHauntInteractionChange__DelegateSignature(EPlayerRole PlayerRole, bool IsInteractable);                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.HauntComponent.OnHauntEvent__DelegateSignature
-	// void OnHauntEvent__DelegateSignature();                                                                               // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnHauntEvent__DelegateSignature();                                                                               // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.HauntComponent.OnEventComponentsCreated
-	// void OnEventComponentsCreated();                                                                                      // [0x584af20] Native|Protected     
+	// void OnEventComponentsCreated();                                                                                      // [0x584f630] Native|Protected     
 	// Function /Script/Halloween2023.HauntComponent.GetHalloweenWorldType
-	// EHalloweenWorldType GetHalloweenWorldType();                                                                          // [0x59bc410] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EHalloweenWorldType GetHalloweenWorldType();                                                                          // [0x59c2da0] Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/Halloween2023.HauntOutlineStrategy
@@ -316,10 +315,10 @@ class ULinkedTeleporterComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,4674) /* FMulticastInlineDelegate */ __um(Cosmetic_OnVoidZoneAboutToClose);                   // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,4675) /* FMulticastInlineDelegate */ __um(Cosmetic_OnTeleporterEnabled);                      // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,4676) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTeleported);                       // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,4677) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerCooldownOver);                     // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,5068) /* FMulticastInlineDelegate */ __um(Cosmetic_OnVoidZoneAboutToClose);                   // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,5069) /* FMulticastInlineDelegate */ __um(Cosmetic_OnTeleporterEnabled);                      // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,5070) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTeleported);                       // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,5071) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerCooldownOver);                     // 0x0118   (0x0010)  
 	class ULinkedTeleporterComponent*                  _linkedTeleporter;                                          // 0x0128   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x60];                                      // 0x0130   (0x0060)  MISSED
 	FDBDTunableRowHandle                               _teleportationCooldownTime;                                 // 0x0190   (0x0028)  
@@ -332,25 +331,25 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnVoidZoneEvent__DelegateSignature
-	// void OnVoidZoneEvent__DelegateSignature();                                                                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnVoidZoneEvent__DelegateSignature();                                                                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnVoidZoneAboutToClose
-	// void OnVoidZoneAboutToClose();                                                                                        // [0x59bcea0] Final|Native|Private 
+	// void OnVoidZoneAboutToClose();                                                                                        // [0x59c3830] Final|Native|Private 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnTimerEnd
-	// void OnTimerEnd(class ADBDPlayer* Player);                                                                            // [0x59bce10] Final|Native|Private 
+	// void OnTimerEnd(class ADBDPlayer* Player);                                                                            // [0x59c37a0] Final|Native|Private 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnTeleportInteractWithPlayer__DelegateSignature
-	// void OnTeleportInteractWithPlayer__DelegateSignature(class ADBDPlayer* Player);                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnTeleportInteractWithPlayer__DelegateSignature(class ADBDPlayer* Player);                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnTeleporterTriggered
-	// void OnTeleporterTriggered(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x59bcd00] Final|Native|Private|HasOutParms 
+	// void OnTeleporterTriggered(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x59c3690] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnTeleportEnabled__DelegateSignature
-	// void OnTeleportEnabled__DelegateSignature(bool IsEnabled);                                                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnTeleportEnabled__DelegateSignature(bool IsEnabled);                                                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnRep_IsAllowedToTeleport
-	// void OnRep_IsAllowedToTeleport();                                                                                     // [0x59bcce0] Final|Native|Private 
+	// void OnRep_IsAllowedToTeleport();                                                                                     // [0x59c3670] Final|Native|Private 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x59bccc0] Final|Native|Protected 
+	// void OnLevelReadyToPlay();                                                                                            // [0x59c3650] Final|Native|Protected 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.OnEventComponentsSpawned
-	// void OnEventComponentsSpawned();                                                                                      // [0x59bcca0] Final|Native|Private 
+	// void OnEventComponentsSpawned();                                                                                      // [0x59c3630] Final|Native|Private 
 	// Function /Script/Halloween2023.LinkedTeleporterComponent.Multicast_TeleportPlayer
-	// void Multicast_TeleportPlayer(class ADBDPlayer* Player, FVector teleportLocation);                                    // [0x59bcbc0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_TeleportPlayer(class ADBDPlayer* Player, FVector teleportLocation);                                    // [0x59c3550] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 };
 
 /// Class /Script/Halloween2023.StandardWorldHauntComponent
@@ -359,10 +358,10 @@ class UStandardWorldHauntComponent : public UHauntComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0110   (0x0010)  MISSED
-	SDK_UNDEFINED(16,4678) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTriggerBoon);                      // 0x0120   (0x0010)  
-	SDK_UNDEFINED(16,4679) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTriggerTrap);                      // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,4680) /* FMulticastInlineDelegate */ __um(Cosmetic_OnAutomaticShutDownReached);               // 0x0140   (0x0010)  
-	SDK_UNDEFINED(16,4681) /* FMulticastInlineDelegate */ __um(ForceMovePlayerTowardsHaunt);                       // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,5072) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTriggerBoon);                      // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,5073) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerTriggerTrap);                      // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,5074) /* FMulticastInlineDelegate */ __um(Cosmetic_OnAutomaticShutDownReached);               // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,5075) /* FMulticastInlineDelegate */ __um(ForceMovePlayerTowardsHaunt);                       // 0x0150   (0x0010)  
 	FDBDTunableRowHandle                               _timeAfterVoidZoneCloseBeforeAutomaticShutdown;             // 0x0160   (0x0028)  
 	class UClass*                                      _hasteStatusEffectClass;                                    // 0x0188   (0x0008)  
 	FDBDTunableRowHandle                               _hasteDuration;                                             // 0x0190   (0x0028)  
@@ -378,15 +377,15 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.StandardWorldHauntComponent.Multicast_OnAutomaticShutDownReached
-	// void Multicast_OnAutomaticShutDownReached();                                                                          // [0x587e9c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnAutomaticShutDownReached();                                                                          // [0x5882360] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.StandardWorldHauntComponent.Multicast_BlessOrTrapCharacterEnteringZone
-	// void Multicast_BlessOrTrapCharacterEnteringZone(class ADBDPlayer* Player, bool isBlessing);                           // [0x59bd200] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_BlessOrTrapCharacterEnteringZone(class ADBDPlayer* Player, bool isBlessing);                           // [0x59c3b90] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.StandardWorldHauntComponent.Authority_OnVoidZoneOpened
-	// void Authority_OnVoidZoneOpened();                                                                                    // [0x59bd1e0] Final|Native|Private 
+	// void Authority_OnVoidZoneOpened();                                                                                    // [0x59c3b70] Final|Native|Private 
 	// Function /Script/Halloween2023.StandardWorldHauntComponent.Authority_OnVoidZoneClosed
-	// void Authority_OnVoidZoneClosed();                                                                                    // [0x59bd1c0] Final|Native|Private 
+	// void Authority_OnVoidZoneClosed();                                                                                    // [0x59c3b50] Final|Native|Private 
 	// Function /Script/Halloween2023.StandardWorldHauntComponent.Authority_OnAutomaticShutDownReached
-	// void Authority_OnAutomaticShutDownReached();                                                                          // [0x59bd1a0] Final|Native|Private 
+	// void Authority_OnAutomaticShutDownReached();                                                                          // [0x59c3b30] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2023.VoidZoneHauntComponent
@@ -395,10 +394,10 @@ class UVoidZoneHauntComponent : public UHauntComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0110   (0x0020)  MISSED
-	SDK_UNDEFINED(16,4682) /* FMulticastInlineDelegate */ __um(Cosmetic_OnHauntContested);                         // 0x0130   (0x0010)  
-	SDK_UNDEFINED(16,4683) /* FMulticastInlineDelegate */ __um(Cosmetic_OnHauntWon);                               // 0x0140   (0x0010)  
-	SDK_UNDEFINED(16,4684) /* FMulticastInlineDelegate */ __um(Cosmetic_OnVoidZoneOpen);                           // 0x0150   (0x0010)  
-	SDK_UNDEFINED(16,4685) /* FMulticastInlineDelegate */ __um(Cosmetic_OnVoidZoneClose);                          // 0x0160   (0x0010)  
+	SDK_UNDEFINED(16,5076) /* FMulticastInlineDelegate */ __um(Cosmetic_OnHauntContested);                         // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,5077) /* FMulticastInlineDelegate */ __um(Cosmetic_OnHauntWon);                               // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,5078) /* FMulticastInlineDelegate */ __um(Cosmetic_OnVoidZoneOpen);                           // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,5079) /* FMulticastInlineDelegate */ __um(Cosmetic_OnVoidZoneClose);                          // 0x0160   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0170   (0x0008)  MISSED
 	FDBDTunableRowHandle                               _voidEnergyToCaptureHaunt;                                  // 0x0178   (0x0028)  
 	FDBDTunableRowHandle                               _survivorVoidEnergyPerSecond;                               // 0x01A0   (0x0028)  
@@ -436,41 +435,41 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.OnVoidZoneEvent__DelegateSignature
-	// void OnVoidZoneEvent__DelegateSignature();                                                                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnVoidZoneEvent__DelegateSignature();                                                                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.OnPlayerProgress__DelegateSignature
-	// void OnPlayerProgress__DelegateSignature(int32_t killerProgress, int32_t survivorProgress);                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnPlayerProgress__DelegateSignature(int32_t killerProgress, int32_t survivorProgress);                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.OnHauntContestChange__DelegateSignature
-	// void OnHauntContestChange__DelegateSignature(bool isContested);                                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnHauntContestChange__DelegateSignature(bool isContested);                                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Multicast_WinHauntForTeam
-	// void Multicast_WinHauntForTeam(class ADBDPlayer* winningPlayer, TArray<TWeakObjectPtr<ADBDPlayer*>> playersInZone);   // [0x59be390] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_WinHauntForTeam(class ADBDPlayer* winningPlayer, TArray<TWeakObjectPtr<ADBDPlayer*>> playersInZone);   // [0x59c4d20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Multicast_UpdateAllPlayerHauntTargets
-	// void Multicast_UpdateAllPlayerHauntTargets(float chargeRemainingInHaunt, TArray<TWeakObjectPtr<ADBDPlayer*>> playersInZone, bool isZoneContested, bool shouldRegressProgress); // [0x59be210] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_UpdateAllPlayerHauntTargets(float chargeRemainingInHaunt, TArray<TWeakObjectPtr<ADBDPlayer*>> playersInZone, bool isZoneContested, bool shouldRegressProgress); // [0x59c4ba0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Multicast_PlayerEnterOrLeftZone
-	// void Multicast_PlayerEnterOrLeftZone(class ADBDPlayer* playerEnteringOrLeavingZone, bool isPlayerLeavingZone, float chargeRemainingInHaunt, TArray<TWeakObjectPtr<ADBDPlayer*>> playersInZone, bool isZoneContested, bool shouldRegressProgress); // [0x59be010] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_PlayerEnterOrLeftZone(class ADBDPlayer* playerEnteringOrLeavingZone, bool isPlayerLeavingZone, float chargeRemainingInHaunt, TArray<TWeakObjectPtr<ADBDPlayer*>> playersInZone, bool isZoneContested, bool shouldRegressProgress); // [0x59c49a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Multicast_OnVoidZoneOpen
-	// void Multicast_OnVoidZoneOpen();                                                                                      // [0x587e980] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnVoidZoneOpen();                                                                                      // [0x5882320] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Multicast_OnVoidZoneClose
-	// void Multicast_OnVoidZoneClose();                                                                                     // [0x59bdff0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnVoidZoneClose();                                                                                     // [0x59c4980] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Multicast_AddCaptureProgress
-	// void Multicast_AddCaptureProgress(int32_t Progress);                                                                  // [0x59bdf60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_AddCaptureProgress(int32_t progress);                                                                  // [0x59c48f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_StartRegression
-	// void Authority_StartRegression();                                                                                     // [0x59bdf40] Final|Native|Private 
+	// void Authority_StartRegression();                                                                                     // [0x59c48d0] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_ResetAllProgress
-	// void Authority_ResetAllProgress();                                                                                    // [0x59bdf20] Final|Native|Private 
+	// void Authority_ResetAllProgress();                                                                                    // [0x59c48b0] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_PlayerInZone
-	// void Authority_PlayerInZone(class ADBDPlayer* Player);                                                                // [0x59bde90] Final|Native|Private 
+	// void Authority_PlayerInZone(class ADBDPlayer* Player);                                                                // [0x59c4820] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_OnVoidZoneOpen
-	// void Authority_OnVoidZoneOpen();                                                                                      // [0x59bde70] Final|Native|Private 
+	// void Authority_OnVoidZoneOpen();                                                                                      // [0x59c4800] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_OnVoidZoneClose
-	// void Authority_OnVoidZoneClose();                                                                                     // [0x59bde50] Final|Native|Private 
+	// void Authority_OnVoidZoneClose();                                                                                     // [0x59c47e0] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_OnInteractionCompleted
-	// void Authority_OnInteractionCompleted(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                     // [0x59bdd50] Final|Native|Private|HasOutParms 
+	// void Authority_OnInteractionCompleted(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                     // [0x59c46e0] Final|Native|Private|HasOutParms 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_GrantCaptureBonusStatusEffects
-	// void Authority_GrantCaptureBonusStatusEffects(class ADBDPlayer* Player);                                              // [0x59bdcc0] Final|Native|Private 
+	// void Authority_GrantCaptureBonusStatusEffects(class ADBDPlayer* Player);                                              // [0x59c4650] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_DecayProgress
-	// void Authority_DecayProgress(float DeltaTime);                                                                        // [0x59bdc40] Final|Native|Private 
+	// void Authority_DecayProgress(float DeltaTime);                                                                        // [0x59c45d0] Final|Native|Private 
 	// Function /Script/Halloween2023.VoidZoneHauntComponent.Authority_AddCaptureProgress
-	// void Authority_AddCaptureProgress(int32_t Progress, class ADBDPlayer* playerGivingEnergy);                            // [0x59bdb70] Final|Native|Private 
+	// void Authority_AddCaptureProgress(int32_t progress, class ADBDPlayer* playerGivingEnergy);                            // [0x59c4500] Final|Native|Private 
 };
 
 /// Class /Script/Halloween2023.VoidZonePlayerComponent
@@ -488,6 +487,6 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2023.VoidZonePlayerComponent.Authority_OnInteractionEnd
-	// void Authority_OnInteractionEnd();                                                                                    // [0x59be5f0] Final|Native|Private 
+	// void Authority_OnInteractionEnd();                                                                                    // [0x59c4f80] Final|Native|Private 
 };
 

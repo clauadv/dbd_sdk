@@ -16,12 +16,10 @@
 /// dependency: Engine
 
 /// Class /Script/TheShape.KillStandingInteractionDefinition
-/// Size: 0x0010 (0x000650 - 0x000660)
+/// Size: 0x0000 (0x000650 - 0x000650)
 class UKillStandingInteractionDefinition : public UInteractionDefinition
 { 
 public:
-	float                                              _slasherFacingTolerance;                                    // 0x064C   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0650   (0x0010)  MISSED
 };
 
 /// Class /Script/TheShape.ObjectOfObsession
@@ -40,7 +38,18 @@ public:
 
 	/// Functions
 	// Function /Script/TheShape.ObjectOfObsession.Authority_OnDamageStateChanged
-	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x5decae0] Final|Native|Private 
+	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x5dfc420] Final|Native|Private 
+};
+
+/// Class /Script/TheShape.SaveTheBestForLast
+/// Size: 0x0018 (0x0003C8 - 0x0003E0)
+class USaveTheBestForLast : public UPerk
+{ 
+public:
+	int32_t                                            TokensLostOnHit;                                            // 0x03C8   (0x0004)  
+	int32_t                                            _maxTokens;                                                 // 0x03CC   (0x000C)  
+	float                                              _cooldownPerToken;                                          // 0x03D8   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x03DC   (0x0004)  MISSED
 };
 
 /// Class /Script/TheShape.ShapeAnimInstance
@@ -59,5 +68,10 @@ class UShapePounceAttackOpenSubstate : public UPounceAttackOpenSubstate
 { 
 public:
 	TArray<FDBDTunableRowHandle>                       _tierDurations;                                             // 0x0130   (0x0010)  
+
+
+	/// Functions
+	// Function /Script/TheShape.ShapePounceAttackOpenSubstate.GetShapePounceAttackOpenDuration
+	// float GetShapePounceAttackOpenDuration();                                                                             // [0x5dfcb90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

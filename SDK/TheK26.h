@@ -20,7 +20,6 @@
 /// dependency: GameplayUtilities
 /// dependency: Niagara
 /// dependency: StatSystem
-/// dependency: SystemUtilities
 
 /// Enum /Script/TheK26.EK26ProjectileState
 /// Size: 0x07
@@ -82,14 +81,14 @@ public:
 };
 
 /// Class /Script/TheK26.HexPentimento
-/// Size: 0x0070 (0x000448 - 0x0004B8)
+/// Size: 0x0030 (0x000448 - 0x000478)
 class UHexPentimento : public UHexPerk
 { 
 public:
-	SDK_UNDEFINED(80,4103) /* TSet<FName> */           __um(_statusEffectNames);                                   // 0x0448   (0x0050)  
-	class UClass*                                      _rekindleInteractionClass;                                  // 0x0498   (0x0008)  
-	TArray<class ATotem*>                              _blockedTotems;                                             // 0x04A0   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x04B0   (0x0008)  MISSED
+	class UClass*                                      _rekindleInteractionClass;                                  // 0x0448   (0x0008)  
+	TArray<class ATotem*>                              _blockedTotems;                                             // 0x0450   (0x0010)  
+	TArray<class UClass*>                              _statusEffectClasses;                                       // 0x0460   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0470   (0x0008)  MISSED
 };
 
 /// Class /Script/TheK26.HinderOnCrowAttachStatusEffect
@@ -105,7 +104,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.HinderOnCrowAttachStatusEffect.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5b98fb0] Final|Native|Public  
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5ba65b0] Final|Native|Public  
 };
 
 /// Class /Script/TheK26.HinderOnIdleAndAttachStatusEffect
@@ -134,13 +133,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26AbilitySubAnimInstance.OnHasProjectileFired
-	// void OnHasProjectileFired();                                                                                          // [0x5b98ea0] Final|Native|Public  
+	// void OnHasProjectileFired();                                                                                          // [0x5ba64a0] Final|Native|Public  
 	// Function /Script/TheK26.K26AbilitySubAnimInstance.OnHasProjectileBeenSummoned
-	// void OnHasProjectileBeenSummoned(int32_t remainingAmmo, int32_t maxAmmo);                                             // [0x5b98dd0] Final|Native|Public  
+	// void OnHasProjectileBeenSummoned(int32_t remainingAmmo, int32_t maxAmmo);                                             // [0x5ba63d0] Final|Native|Public  
 	// Function /Script/TheK26.K26AbilitySubAnimInstance.ConsumeHasProjectileFired
-	// void ConsumeHasProjectileFired();                                                                                     // [0x5b98780] Final|Native|Public|BlueprintCallable 
+	// void ConsumeHasProjectileFired();                                                                                     // [0x5ba5d80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26AbilitySubAnimInstance.ConsumeHasProjectileBeenSummoned
-	// void ConsumeHasProjectileBeenSummoned();                                                                              // [0x5b98760] Final|Native|Public|BlueprintCallable 
+	// void ConsumeHasProjectileBeenSummoned();                                                                              // [0x5ba5d60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK26.K26AimingGuide
@@ -156,9 +155,9 @@ class UK26AmmoHandlerComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x00B8   (0x0010)  MISSED
-	SDK_UNDEFINED(16,4104) /* FMulticastInlineDelegate */ __um(OnCurrentAmmoStateChanged);                         // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,4197) /* FMulticastInlineDelegate */ __um(OnCurrentAmmoStateChanged);                         // 0x00C8   (0x0010)  
 	FTagStateBool                                      _isAmmoOnCooldown;                                          // 0x00D8   (0x0030)  
-	SDK_UNDEFINED(16,4105) /* FMulticastInlineDelegate */ __um(_onMaxAmmoSet);                                     // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,4198) /* FMulticastInlineDelegate */ __um(_onMaxAmmoSet);                                     // 0x0108   (0x0010)  
 	float                                              _rechargeEndTime;                                           // 0x0118   (0x0004)  
 	bool                                               _isTunableInit;                                             // 0x011C   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x011D   (0x0003)  MISSED
@@ -183,45 +182,45 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26AmmoHandlerComponent.SetDependencies
-	// void SetDependencies(class UK26PathHandlerComponent* pathHandler, class UK26PowerStatusHandlerComponent* statusHandler, class UAuthoritativeActorPoolComponent* AuthoritativeActorPoolComponent); // [0x5b99380] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK26PathHandlerComponent* pathHandler, class UK26PowerStatusHandlerComponent* statusHandler, class UAuthoritativeActorPoolComponent* AuthoritativeActorPoolComponent); // [0x5ba6980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.SendHasExpiredDelegate
-	// void SendHasExpiredDelegate();                                                                                        // [0x5b99290] Final|Native|Private 
+	// void SendHasExpiredDelegate();                                                                                        // [0x5ba6890] Final|Native|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.OnMaxAmmoSetDelegate__DelegateSignature
-	// void OnMaxAmmoSetDelegate__DelegateSignature(int32_t maxAmmo);                                                        // [0x61c32d0] Public|Delegate      
+	// void OnMaxAmmoSetDelegate__DelegateSignature(int32_t maxAmmo);                                                        // [0x61d2f50] Public|Delegate      
 	// Function /Script/TheK26.K26AmmoHandlerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5b99180] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5ba6780] Final|Native|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5b99040] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5ba6640] Final|Native|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Multicast_StartRecharging
-	// void Multicast_StartRecharging(EK26AmmoCooldownReason lastCooldownReason);                                            // [0x5819020] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartRecharging(EK26AmmoCooldownReason lastCooldownReason);                                            // [0x581cdf0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Multicast_StartExpiring
-	// void Multicast_StartExpiring();                                                                                       // [0x4e01260] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartExpiring();                                                                                       // [0x4dd4880] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Multicast_OnCurrentAmmoStateChanged
-	// void Multicast_OnCurrentAmmoStateChanged(EK26AmmoState NewState, int32_t currentAmmo, int32_t maxAmmo);               // [0x5b98b10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnCurrentAmmoStateChanged(EK26AmmoState NewState, int32_t currentAmmo, int32_t maxAmmo);               // [0x5ba6110] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Multicast_OnAmmoHasBeenFired
-	// void Multicast_OnAmmoHasBeenFired();                                                                                  // [0x4db2a10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnAmmoHasBeenFired();                                                                                  // [0x4d82970] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Multicast_OnAmmoExpired
-	// void Multicast_OnAmmoExpired();                                                                                       // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnAmmoExpired();                                                                                       // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.GetMaxAmmo
-	// int32_t GetMaxAmmo();                                                                                                 // [0x5b98860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxAmmo();                                                                                                 // [0x5ba5e60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.GetCurrentCooldownReason
-	// EK26AmmoCooldownReason GetCurrentCooldownReason();                                                                    // [0x5b98800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EK26AmmoCooldownReason GetCurrentCooldownReason();                                                                    // [0x5ba5e00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.GetCurrentAmmoState
-	// EK26AmmoState GetCurrentAmmoState();                                                                                  // [0x5b987d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EK26AmmoState GetCurrentAmmoState();                                                                                  // [0x5ba5dd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.GetCurrentAmmo
-	// int32_t GetCurrentAmmo();                                                                                             // [0x5b987a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentAmmo();                                                                                             // [0x5ba5da0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Cosmetic_OnExpiringWarning
-	// void Cosmetic_OnExpiringWarning();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnExpiringWarning();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Cosmetic_OnAmmoHasBeenFired
-	// void Cosmetic_OnAmmoHasBeenFired();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAmmoHasBeenFired();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Cosmetic_OnAmmoExpired
-	// void Cosmetic_OnAmmoExpired();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAmmoExpired();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.CallOnMaxAmmoSet
-	// void CallOnMaxAmmoSet(FDelegateProperty Callback);                                                                    // [0x5b98620] Final|Native|Public|BlueprintCallable 
+	// void CallOnMaxAmmoSet(FDelegateProperty Callback);                                                                    // [0x5ba5c20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Authority_OnAmmoInit
-	// void Authority_OnAmmoInit(class AActor* initAmmo);                                                                    // [0x5b976c0] Final|Native|Private 
+	// void Authority_OnAmmoInit(class AActor* initAmmo);                                                                    // [0x5ba4cc0] Final|Native|Private 
 	// Function /Script/TheK26.K26AmmoHandlerComponent.Authority_InitializePoolComponent
-	// void Authority_InitializePoolComponent(int32_t maxAmmo);                                                              // [0x5b97630] Final|Native|Private 
+	// void Authority_InitializePoolComponent(int32_t maxAmmo);                                                              // [0x5ba4c30] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26AnimInstance
@@ -262,53 +261,53 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26AttachedCrow.OnRep_AttachmentStatus
-	// void OnRep_AttachmentStatus();                                                                                        // [0x5b991a0] Final|Native|Private 
+	// void OnRep_AttachmentStatus();                                                                                        // [0x5ba67a0] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Multicast_OnStopDetaching
-	// void Multicast_OnStopDetaching();                                                                                     // [0x57fbd00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnStopDetaching();                                                                                     // [0x57ff130] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Multicast_OnStartDetaching
-	// void Multicast_OnStartDetaching();                                                                                    // [0x5b98c20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnStartDetaching();                                                                                    // [0x5ba6220] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26AttachedCrow.HideOutline
-	// void HideOutline();                                                                                                   // [0x5b98890] Final|Native|Private 
+	// void HideOutline();                                                                                                   // [0x5ba5e90] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Cosmetic_OnStopDetaching
-	// void Cosmetic_OnStopDetaching();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStopDetaching();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AttachedCrow.Cosmetic_OnStartDetaching
-	// void Cosmetic_OnStartDetaching();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartDetaching();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AttachedCrow.Cosmetic_OnCrowAttached
-	// void Cosmetic_OnCrowAttached();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCrowAttached();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AttachedCrow.Cosmetic_OnAuraShown
-	// void Cosmetic_OnAuraShown();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAuraShown();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AttachedCrow.Cosmetic_OnAuraHidden
-	// void Cosmetic_OnAuraHidden();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAuraHidden();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AttachedCrow.Cosmetic_OnAttachedCrowRemoved
-	// void Cosmetic_OnAttachedCrowRemoved(FK26AttachedCrowRemovalReason removalReason);                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAttachedCrowRemoved(FK26AttachedCrowRemovalReason removalReason);                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnSurvivorWasUnhooked
-	// void Authority_OnSurvivorWasUnhooked(FGameplayTag gameEventType, FGameEventData& GameEventData);                      // [0x5b98440] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorWasUnhooked(FGameplayTag gameEventType, FGameEventData& GameEventData);                      // [0x5ba5a40] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnSurvivorStatusIndicatorSet
-	// void Authority_OnSurvivorStatusIndicatorSet(class ACamperPlayer* Survivor, class AK26AttachedCrow* attachedCrow);     // [0x5b98550] Final|Native|Private 
+	// void Authority_OnSurvivorStatusIndicatorSet(class ACamperPlayer* Survivor, class AK26AttachedCrow* attachedCrow);     // [0x5ba5b50] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnSurvivorExitLocker
-	// void Authority_OnSurvivorExitLocker(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x5b98440] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorExitLocker(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x5ba5a40] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnSurvivorDroppedEnd
-	// void Authority_OnSurvivorDroppedEnd();                                                                                // [0x5b97df0] Final|Native|Private 
+	// void Authority_OnSurvivorDroppedEnd();                                                                                // [0x5ba53f0] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnSurvivorAdded
-	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5b983b0] Final|Native|Private 
+	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5ba59b0] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnPlayerLeftGame
-	// void Authority_OnPlayerLeftGame(FGameplayTag gameEventType, FGameEventData& GameEventData);                           // [0x5b97f00] Final|Native|Private|HasOutParms 
+	// void Authority_OnPlayerLeftGame(FGameplayTag gameEventType, FGameEventData& GameEventData);                           // [0x5ba5500] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnOtherSurvivorPerkFlagsChanged
-	// void Authority_OnOtherSurvivorPerkFlagsChanged(FGameplayTag GameplayTag, bool isAdded);                               // [0x5b97e10] Final|Native|Private 
+	// void Authority_OnOtherSurvivorPerkFlagsChanged(FGameplayTag GameplayTag, bool isAdded);                               // [0x5ba5410] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnOtherSurvivorGuidedActionChanged
-	// void Authority_OnOtherSurvivorGuidedActionChanged();                                                                  // [0x5b97df0] Final|Native|Private 
+	// void Authority_OnOtherSurvivorGuidedActionChanged();                                                                  // [0x5ba53f0] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnOtherSurvivorDamageStateChanged
-	// void Authority_OnOtherSurvivorDamageStateChanged(ECamperDamageState before, ECamperDamageState after);                // [0x5b97d20] Final|Native|Private 
+	// void Authority_OnOtherSurvivorDamageStateChanged(ECamperDamageState before, ECamperDamageState after);                // [0x5ba5320] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnOtherAttachedCrowRemoved
-	// void Authority_OnOtherAttachedCrowRemoved();                                                                          // [0x5b97d00] Final|Native|Private 
+	// void Authority_OnOtherAttachedCrowRemoved();                                                                          // [0x5ba5300] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnKillerSet
-	// void Authority_OnKillerSet(class ASlasherPlayer* killer);                                                             // [0x5b97c70] Final|Native|Private 
+	// void Authority_OnKillerSet(class ASlasherPlayer* killer);                                                             // [0x5ba5270] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_OnIsWithinOtherSurvivorRangeChanged
-	// void Authority_OnIsWithinOtherSurvivorRangeChanged(class AActor* survivorActor, bool IsInRange);                      // [0x5b97ba0] Final|Native|Private 
+	// void Authority_OnIsWithinOtherSurvivorRangeChanged(class AActor* survivorActor, bool IsInRange);                      // [0x5ba51a0] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_DeactivateInfection
-	// void Authority_DeactivateInfection();                                                                                 // [0x5b97610] Final|Native|Private 
+	// void Authority_DeactivateInfection();                                                                                 // [0x5ba4c10] Final|Native|Private 
 	// Function /Script/TheK26.K26AttachedCrow.Authority_ActivateInfection
-	// void Authority_ActivateInfection();                                                                                   // [0x5b975f0] Final|Native|Private 
+	// void Authority_ActivateInfection();                                                                                   // [0x5ba4bf0] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26CooldownInteractionDefinition
@@ -322,7 +321,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26CooldownInteractionDefinition.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5b990d0] Final|Native|Protected 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5ba66d0] Final|Native|Protected 
 };
 
 /// Class /Script/TheK26.K26CrowAttachmentSubAnimInstance
@@ -358,10 +357,10 @@ class AK26CrowProjectile : public AActor
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0230   (0x0010)  MISSED
-	SDK_UNDEFINED(16,4106) /* FMulticastInlineDelegate */ __um(OnCrowProjectileStateChanged);                      // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,4199) /* FMulticastInlineDelegate */ __um(OnCrowProjectileStateChanged);                      // 0x0240   (0x0010)  
 	FVector                                            _originalFireLocation;                                      // 0x0250   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x025C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,4107) /* TMap<EK26ProjectileState, FK26ProjectileStateDetails> */ __um(_projectileStateDetails); // 0x0260   (0x0050)  
+	SDK_UNDEFINED(80,4200) /* TMap<EK26ProjectileState, FK26ProjectileStateDetails> */ __um(_projectileStateDetails); // 0x0260   (0x0050)  
 	FDBDTunableRowHandle                               _summonTime;                                                // 0x02B0   (0x0028)  
 	FTunableStat                                       _detectionRadiusScaleX;                                     // 0x02D8   (0x0080)  
 	FTunableStat                                       _detectionRadiusScaleY;                                     // 0x0358   (0x0080)  
@@ -389,8 +388,8 @@ public:
 	class UDBDSkeletalMeshComponentBudgeted*           _visualSkeletalMeshComponent;                               // 0x05A8   (0x0008)  
 	class USceneComponent*                             _rootComponent;                                             // 0x05B0   (0x0008)  
 	class UDBDNavModifierComponent*                    _dangerNavModifierComponent;                                // 0x05B8   (0x0008)  
-	SDK_UNDEFINED(16,4108) /* FMulticastInlineDelegate */ __um(_k26ProjectileStateChangeDelegate);                 // 0x05C0   (0x0010)  
-	SDK_UNDEFINED(16,4109) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x05D0   (0x0010)  
+	SDK_UNDEFINED(16,4201) /* FMulticastInlineDelegate */ __um(_k26ProjectileStateChangeDelegate);                 // 0x05C0   (0x0010)  
+	SDK_UNDEFINED(16,4202) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x05D0   (0x0010)  
 	unsigned char                                      UnknownData04_5[0x10];                                      // 0x05E0   (0x0010)  MISSED
 	TArray<class ALocker*>                             _lockersWithSurvivorsInitiallyOnKillerInstinctRadius;       // 0x05F0   (0x0010)  
 	FVector                                            _forwardDirection;                                          // 0x0600   (0x000C)  
@@ -405,55 +404,55 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26CrowProjectile.Server_OnSurvivorHit
-	// void Server_OnSurvivorHit(EK26ProjectileState stateOnHit, class ACamperPlayer* hitSurvivor);                          // [0x5b992b0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_OnSurvivorHit(EK26ProjectileState stateOnHit, class ACamperPlayer* hitSurvivor);                          // [0x5ba68b0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK26.K26CrowProjectile.ProjectileWentOutOfBoundsEvent
-	// void ProjectileWentOutOfBoundsEvent();                                                                                // [0x5b99270] Native|Event|Protected|BlueprintEvent 
+	// void ProjectileWentOutOfBoundsEvent();                                                                                // [0x5ba6870] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26CrowProjectile.OnSurvivorAdded
-	// void OnSurvivorAdded(class ACamperPlayer* survivorAdded);                                                             // [0x5b991e0] Final|Native|Protected 
+	// void OnSurvivorAdded(class ACamperPlayer* survivorAdded);                                                             // [0x5ba67e0] Final|Native|Protected 
 	// Function /Script/TheK26.K26CrowProjectile.OnRep_Path
-	// void OnRep_Path();                                                                                                    // [0x5b991c0] Final|Native|Private 
+	// void OnRep_Path();                                                                                                    // [0x5ba67c0] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5b99160] Final|Native|Protected 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5ba6760] Final|Native|Protected 
 	// Function /Script/TheK26.K26CrowProjectile.OnIsWithinSurvivorRangeChanged
-	// void OnIsWithinSurvivorRangeChanged(class AActor* survivorActor, bool IsInRange);                                     // [0x5b98ee0] Final|Native|Protected 
+	// void OnIsWithinSurvivorRangeChanged(class AActor* survivorActor, bool IsInRange);                                     // [0x5ba64e0] Final|Native|Protected 
 	// Function /Script/TheK26.K26CrowProjectile.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5b98ec0] Final|Native|Protected 
+	// void OnIntroCompleted();                                                                                              // [0x5ba64c0] Final|Native|Protected 
 	// Function /Script/TheK26.K26CrowProjectile.Multicast_SetState
-	// void Multicast_SetState(EK26ProjectileState NewState, int32_t pooledPathIndex);                                       // [0x5b98d00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetState(EK26ProjectileState NewState, int32_t pooledPathIndex);                                       // [0x5ba6300] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Multicast_SetStartingPosition
-	// void Multicast_SetStartingPosition(FVector position, FRotator Angle);                                                 // [0x5b98c40] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetStartingPosition(FVector position, FRotator Angle);                                                 // [0x5ba6240] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK26.K26CrowProjectile.Multicast_OnExpiration
-	// void Multicast_OnExpiration();                                                                                        // [0x5920750] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnExpiration();                                                                                        // [0x592b820] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Local_OnSummonComplete
-	// void Local_OnSummonComplete();                                                                                        // [0x5b98af0] Final|Native|Private 
+	// void Local_OnSummonComplete();                                                                                        // [0x5ba60f0] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Local_OnCollisionOverlapBegin
-	// void Local_OnCollisionOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool fromSweep, FHitResult& SweepResult); // [0x5b988d0] Final|Native|Private|HasOutParms 
+	// void Local_OnCollisionOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool fromSweep, FHitResult& SweepResult); // [0x5ba5ed0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK26.K26CrowProjectile.IsHitboxBeingShown
-	// bool IsHitboxBeingShown();                                                                                            // [0x44bd900] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHitboxBeingShown();                                                                                            // [0x44525f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26CrowProjectile.HideOutlineFromSurvivor
-	// void HideOutlineFromSurvivor();                                                                                       // [0x5b988b0] Final|Native|Private 
+	// void HideOutlineFromSurvivor();                                                                                       // [0x5ba5eb0] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.GetDistanceFromFirePosition
-	// float GetDistanceFromFirePosition();                                                                                  // [0x5b98830] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetDistanceFromFirePosition();                                                                                  // [0x5ba5e30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26CrowProjectile.Cosmetic_OnExpiration
-	// void Cosmetic_OnExpiration();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnExpiration();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26CrowProjectile.Cosmetic_OnEnteredNearAudioRangeOfSurvivor
-	// void Cosmetic_OnEnteredNearAudioRangeOfSurvivor(class ACamperPlayer* Survivor);                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnEnteredNearAudioRangeOfSurvivor(class ACamperPlayer* Survivor);                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26CrowProjectile.Client_LocalKillerStartSummonTimer
-	// void Client_LocalKillerStartSummonTimer(float killerLocalSummonTime);                                                 // [0x5b986d0] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_LocalKillerStartSummonTimer(float killerLocalSummonTime);                                                 // [0x5ba5cd0] Final|Net|NetReliableNative|Event|Private|NetClient 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnSummonComplete
-	// void Authority_OnSummonComplete();                                                                                    // [0x5b98390] Final|Native|Private 
+	// void Authority_OnSummonComplete();                                                                                    // [0x5ba5990] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnScoutingOverlapEnd
-	// void Authority_OnScoutingOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5b98230] Final|Native|Private 
+	// void Authority_OnScoutingOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5ba5830] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnScoutingOverlapBegin
-	// void Authority_OnScoutingOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool fromSweep, FHitResult& SweepResult); // [0x5b98010] Final|Native|Private|HasOutParms 
+	// void Authority_OnScoutingOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool fromSweep, FHitResult& SweepResult); // [0x5ba5610] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnDestroyTimerExpired
-	// void Authority_OnDestroyTimerExpired();                                                                               // [0x5b97b80] Final|Native|Private 
+	// void Authority_OnDestroyTimerExpired();                                                                               // [0x5ba5180] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnDestroyAttempt
-	// void Authority_OnDestroyAttempt(TArray<AActor*>& instigatorsForCompletion);                                           // [0x5b97ad0] Final|Native|Private|HasOutParms 
+	// void Authority_OnDestroyAttempt(TArray<AActor*>& instigatorsForCompletion);                                           // [0x5ba50d0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnCollisionOverlapEnd
-	// void Authority_OnCollisionOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5b97970] Final|Native|Private 
+	// void Authority_OnCollisionOverlapEnd(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5ba4f70] Final|Native|Private 
 	// Function /Script/TheK26.K26CrowProjectile.Authority_OnCollisionOverlapBegin
-	// void Authority_OnCollisionOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool fromSweep, FHitResult& SweepResult); // [0x5b97750] Final|Native|Private|HasOutParms 
+	// void Authority_OnCollisionOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool fromSweep, FHitResult& SweepResult); // [0x5ba4d50] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK26.K26CrowProjectileAnimInstance
@@ -485,23 +484,23 @@ public:
 };
 
 /// Class /Script/TheK26.K26DismissCrowChargeableInteractionDefinition
-/// Size: 0x0090 (0x000790 - 0x000820)
+/// Size: 0x00A0 (0x000790 - 0x000830)
 class UK26DismissCrowChargeableInteractionDefinition : public UChargeableInteractionDefinition
 { 
 public:
-	FTunableStat                                       _chargeTime;                                                // 0x0788   (0x0080)  
-	class UK26PowerStatusHandlerComponent*             _k26PowerStatusHandlerComponent;                            // 0x0808   (0x0008)  
-	bool                                               _isLevelReadyToPlay;                                        // 0x0810   (0x0001)  
-	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0811   (0x000F)  MISSED
+	FTunableStat                                       _chargeTime;                                                // 0x0790   (0x0080)  
+	class UK26PowerStatusHandlerComponent*             _k26PowerStatusHandlerComponent;                            // 0x0810   (0x0008)  
+	bool                                               _isLevelReadyToPlay;                                        // 0x0818   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x17];                                      // 0x0819   (0x0017)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK26.K26DismissCrowChargeableInteractionDefinition.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5b9d0d0] Final|Native|Protected 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5baa6d0] Final|Native|Protected 
 	// Function /Script/TheK26.K26DismissCrowChargeableInteractionDefinition.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer, class UChargeableComponent* ChargeableComponent);                      // [0x5b9cf80] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer, class UChargeableComponent* ChargeableComponent);                      // [0x5baa580] Final|Native|Private 
 	// Function /Script/TheK26.K26DismissCrowChargeableInteractionDefinition.OnDamageStateChanged
-	// void OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);                  // [0x5b9ce90] Final|Native|Protected 
+	// void OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);                  // [0x5baa490] Final|Native|Protected 
 };
 
 /// Class /Script/TheK26.K26FireCrowProjectileInteractionDefinition
@@ -509,7 +508,7 @@ public:
 class UK26FireCrowProjectileInteractionDefinition : public UInteractionDefinition
 { 
 public:
-	SDK_UNDEFINED(16,4110) /* FMulticastInlineDelegate */ __um(OnProjectileFired);                                 // 0x0648   (0x0010)  
+	SDK_UNDEFINED(16,4203) /* FMulticastInlineDelegate */ __um(OnProjectileFired);                                 // 0x0648   (0x0010)  
 	class UK26CooldownInteractionDefinition*           _cooldownInteraction;                                       // 0x0658   (0x0008)  
 	class UK26AmmoHandlerComponent*                    _ammoHandler;                                               // 0x0660   (0x0008)  
 	class UK26PathHandlerComponent*                    _pathHandler;                                               // 0x0668   (0x0008)  
@@ -517,11 +516,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26FireCrowProjectileInteractionDefinition.SetDependencies
-	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler, class UK26PathHandlerComponent* pathHandler, class UK26CooldownInteractionDefinition* cooldownInteraction); // [0x5b9d1e0] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler, class UK26PathHandlerComponent* pathHandler, class UK26CooldownInteractionDefinition* cooldownInteraction); // [0x5baa7e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26FireCrowProjectileInteractionDefinition.Server_RequestFireOnAmmo
-	// void Server_RequestFireOnAmmo(class ASlasherPlayer* killer);                                                          // [0x59dba40] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_RequestFireOnAmmo(class ASlasherPlayer* killer);                                                          // [0x59e2080] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK26.K26FireCrowProjectileInteractionDefinition.Multicast_OnProjectileFired
-	// void Multicast_OnProjectileFired(class ASlasherPlayer* killer);                                                       // [0x50ae490] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnProjectileFired(class ASlasherPlayer* killer);                                                       // [0x5092240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK26.K26IsLastCrowRemovalReasonDueToInteraction
@@ -536,15 +535,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26IsLastCrowRemovalReasonDueToInteraction.OnSurvivorStatusIndicatorSet
-	// void OnSurvivorStatusIndicatorSet(class AK26AttachedCrow* attachedCrow);                                              // [0x5b9d150] Final|Native|Private 
+	// void OnSurvivorStatusIndicatorSet(class AK26AttachedCrow* attachedCrow);                                              // [0x5baa750] Final|Native|Private 
 	// Function /Script/TheK26.K26IsLastCrowRemovalReasonDueToInteraction.OnRep_OwningAttachedCrow
-	// void OnRep_OwningAttachedCrow();                                                                                      // [0x5b9d130] Final|Native|Private 
+	// void OnRep_OwningAttachedCrow();                                                                                      // [0x5baa730] Final|Native|Private 
 	// Function /Script/TheK26.K26IsLastCrowRemovalReasonDueToInteraction.OnLastRemovalReasonSet
-	// void OnLastRemovalReasonSet(FK26AttachedCrowRemovalReason lastCrowRemovalReason);                                     // [0x5b9d050] Final|Native|Private 
+	// void OnLastRemovalReasonSet(FK26AttachedCrowRemovalReason lastCrowRemovalReason);                                     // [0x5baa650] Final|Native|Private 
 	// Function /Script/TheK26.K26IsLastCrowRemovalReasonDueToInteraction.Authority_OnSurvivorStatusIndicatorSet
-	// void Authority_OnSurvivorStatusIndicatorSet(class ACamperPlayer* Survivor, class AK26AttachedCrow* attachedCrow);     // [0x5b9cb10] Final|Native|Private 
+	// void Authority_OnSurvivorStatusIndicatorSet(class ACamperPlayer* Survivor, class AK26AttachedCrow* attachedCrow);     // [0x5baa110] Final|Native|Private 
 	// Function /Script/TheK26.K26IsLastCrowRemovalReasonDueToInteraction.Authority_OnKillerSet
-	// void Authority_OnKillerSet(class ASlasherPlayer* killer);                                                             // [0x5b9c820] Final|Native|Private 
+	// void Authority_OnKillerSet(class ASlasherPlayer* killer);                                                             // [0x5ba9e20] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26IsSurvivorInRangeOfAnyIdleCrow
@@ -552,7 +551,7 @@ public:
 class UK26IsSurvivorInRangeOfAnyIdleCrow : public UEventDrivenModifierCondition
 { 
 public:
-	SDK_UNDEFINED(16,4111) /* FMulticastInlineDelegate */ __um(OnIsTrueChanged);                                   // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,4204) /* FMulticastInlineDelegate */ __um(OnIsTrueChanged);                                   // 0x00F0   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0100   (0x0008)  MISSED
 	class ACamperPlayer*                               _trackedSurvivor;                                           // 0x0108   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0110   (0x0010)  MISSED
@@ -560,15 +559,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26IsSurvivorInRangeOfAnyIdleCrow.Multicast_SetIsTrue
-	// void Multicast_SetIsTrue(bool IsTrue);                                                                                // [0x5b9ce00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetIsTrue(bool IsTrue);                                                                                // [0x5baa400] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26IsSurvivorInRangeOfAnyIdleCrow.Authority_SetVariables
-	// void Authority_SetVariables(class ACamperPlayer* trackedSurvivor, class UAuthoritativeActorPoolComponent* AuthoritativeActorPoolComponent, float Range); // [0x5b9cbe0] Final|Native|Public|BlueprintCallable 
+	// void Authority_SetVariables(class ACamperPlayer* trackedSurvivor, class UAuthoritativeActorPoolComponent* AuthoritativeActorPoolComponent, float Range); // [0x5baa1e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26IsSurvivorInRangeOfAnyIdleCrow.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5b9c6e0] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5ba9c50] Final|Native|Private 
 	// Function /Script/TheK26.K26IsSurvivorInRangeOfAnyIdleCrow.Authority_OnCrowProjectileStateChanged
-	// void Authority_OnCrowProjectileStateChanged(class AK26CrowProjectile* crowProjectile);                                // [0x5b9c650] Final|Native|Private 
+	// void Authority_OnCrowProjectileStateChanged(class AK26CrowProjectile* crowProjectile);                                // [0x5ba9bc0] Final|Native|Private 
 	// Function /Script/TheK26.K26IsSurvivorInRangeOfAnyIdleCrow.Authority_OnCrowAddedToPool
-	// void Authority_OnCrowAddedToPool(class AActor* crowProjectileActor);                                                  // [0x5b9c5c0] Final|Native|Private 
+	// void Authority_OnCrowAddedToPool(class AActor* crowProjectileActor);                                                  // [0x5ba9b30] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26KillerInstinctStatusEffect
@@ -595,32 +594,33 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26OnCrowAttachLingeringStatusEffectBase.GetLingerTime
-	// float GetLingerTime();                                                                                                // [0x5b9cd00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetLingerTime();                                                                                                // [0x5baa300] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK26.K26P01
-/// Size: 0x0078 (0x0003C8 - 0x000440)
+/// Size: 0x0098 (0x0003C8 - 0x000460)
 class UK26P01 : public UPerk
 { 
 public:
 	float                                              _generatorBlockDuration;                                    // 0x03C8   (0x000C)  
-	float                                              _auraRevealDuration;                                        // 0x03D4   (0x0004)  
-	FLinearColor                                       _generatorAuraColorForKiller;                               // 0x03D8   (0x0010)  
-	int32_t                                            _survivorsToBeHooked;                                       // 0x03E8   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03EC   (0x0004)  MISSED
-	class UClass*                                      _timedRevealToKillerClass;                                  // 0x03F0   (0x0008)  
-	TArray<class AGenerator*>                          _blockedGenerators;                                         // 0x03F8   (0x0010)  
-	TArray<class AActor*>                              _hookedSurvivors;                                           // 0x0408   (0x0010)  
-	TArray<FFastTimer>                                 _generatorBlockingTimers;                                   // 0x0418   (0x0010)  
+	float                                              _hookedRange;                                               // 0x03D4   (0x000C)  
+	float                                              _auraRevealDuration;                                        // 0x03E0   (0x0004)  
+	float                                              _finalGeneratorBlockDuration;                               // 0x03E4   (0x0004)  
+	FLinearColor                                       _generatorAuraColorForKiller;                               // 0x03E8   (0x0010)  
+	int32_t                                            _survivorsToBeHooked;                                       // 0x03F8   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03FC   (0x0004)  MISSED
+	class UClass*                                      _timedRevealToKillerClass;                                  // 0x0400   (0x0008)  
+	TArray<class AGenerator*>                          _blockedGenerators;                                         // 0x0408   (0x0010)  
+	TArray<class AActor*>                              _hookedSurvivors;                                           // 0x0418   (0x0010)  
 	class UStatusEffect*                               _timedRevealToKillerEffect;                                 // 0x0428   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0430   (0x0010)  MISSED
+	unsigned char                                      UnknownData01_6[0x30];                                      // 0x0430   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK26.K26P01.OnRep_BlockedGenerators
-	// void OnRep_BlockedGenerators();                                                                                       // [0x5b9d110] Final|Native|Private 
-	// Function /Script/TheK26.K26P01.Authority_OnBlockTimerDone
-	// void Authority_OnBlockTimerDone(class AGenerator* Generator);                                                         // [0x5b9c530] Final|Native|Private 
+	// void OnRep_BlockedGenerators();                                                                                       // [0x5baa710] Final|Native|Private 
+	// Function /Script/TheK26.K26P01.Authority_OnInRangeChanged
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5ba9ce0] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26P02
@@ -631,15 +631,15 @@ public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x03C8   (0x0008)  MISSED
 	float                                              _generatorRegressPercentage;                                // 0x03D0   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x03DC   (0x0004)  MISSED
-	SDK_UNDEFINED(80,4112) /* TSet<ACamperPlayer*> */  __um(_hookedPlayers);                                       // 0x03E0   (0x0050)  
+	SDK_UNDEFINED(80,4205) /* TSet<ACamperPlayer*> */  __um(_hookedPlayers);                                       // 0x03E0   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0430   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK26.K26P02.GetGeneratorRegressPercentageAtLevel
-	// float GetGeneratorRegressPercentageAtLevel();                                                                         // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGeneratorRegressPercentageAtLevel();                                                                         // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26P02.Authority_OnSurvivorHookedOnScourgeHook
-	// void Authority_OnSurvivorHookedOnScourgeHook(FGameEventData& GameEventData);                                          // [0x5b9c9d0] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorHookedOnScourgeHook(FGameEventData& GameEventData);                                          // [0x5ba9fd0] Final|Native|Private|HasOutParms 
 };
 
 /// Struct /Script/TheK26.K26PathData
@@ -687,15 +687,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26PathHandlerComponent.SetDependencies
-	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler, class UK26CrowPlacementValidatorComponent* placementValidator); // [0x5b9d2f0] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler, class UK26CrowPlacementValidatorComponent* placementValidator); // [0x5baa8f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26PathHandlerComponent.OnRep_AvailablePathData
-	// void OnRep_AvailablePathData();                                                                                       // [0x5b9d0f0] Final|Native|Private 
+	// void OnRep_AvailablePathData();                                                                                       // [0x5baa6f0] Final|Native|Private 
 	// Function /Script/TheK26.K26PathHandlerComponent.OnIterativeAvailablePathUpdate
-	// void OnIterativeAvailablePathUpdate();                                                                                // [0x5b9cf60] Final|Native|Private 
+	// void OnIterativeAvailablePathUpdate();                                                                                // [0x5baa560] Final|Native|Private 
 	// Function /Script/TheK26.K26PathHandlerComponent.Multicast_FillAvailablePathArray
-	// void Multicast_FillAvailablePathArray(int32_t maxAmmo);                                                               // [0x5888d40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_FillAvailablePathArray(int32_t maxAmmo);                                                               // [0x5891be0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PathHandlerComponent.Authority_OnMaxAmmoSet
-	// void Authority_OnMaxAmmoSet(int32_t maxAmmo);                                                                         // [0x5b9c8b0] Final|Native|Private 
+	// void Authority_OnMaxAmmoSet(int32_t maxAmmo);                                                                         // [0x5ba9eb0] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26PathPart
@@ -724,7 +724,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26PowerChargePresentationItemProgressComponent.SetDependencies
-	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler);                                                    // [0x57ebc00] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler);                                                    // [0x57eeff0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK26.K26PowerChargePresentationPowerFadeComponent
@@ -737,7 +737,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26PowerChargePresentationPowerFadeComponent.SetDependencies
-	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler);                                                    // [0x57d1c00] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler);                                                    // [0x57d4740] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK26.K26PowerOutlineUpdateStrategy
@@ -753,9 +753,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.K26PowerOutlineUpdateStrategy.SetOutlineVisibility
-	// void SetOutlineVisibility(bool IsActive);                                                                             // [0x57acba0] Final|Native|Public|BlueprintCallable 
+	// void SetOutlineVisibility(bool IsActive);                                                                             // [0x57afa20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26PowerOutlineUpdateStrategy.IsOutlineVisible
-	// bool IsOutlineVisible();                                                                                              // [0x4df5bd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOutlineVisible();                                                                                              // [0x4dc87d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TheK26.K26SurvivorStatus
@@ -778,7 +778,7 @@ struct FK26SurvivorStatus
 };
 
 /// Class /Script/TheK26.K26PowerStatusHandlerComponent
-/// Size: 0x00D8 (0x0000B8 - 0x000190)
+/// Size: 0x00D0 (0x0000B8 - 0x000188)
 class UK26PowerStatusHandlerComponent : public UActorComponent
 { 
 public:
@@ -789,97 +789,96 @@ public:
 	FDBDTunableRowHandle                               _killerInstinctDelay;                                       // 0x0118   (0x0028)  
 	FDBDTunableRowHandle                               _killerInstinctGracePeriod;                                 // 0x0140   (0x0028)  
 	class UClass*                                      _statusIndicatorClass;                                      // 0x0168   (0x0008)  
-	FName                                              _k26KillerInstinctStatusEffectName;                         // 0x0170   (0x000C)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x017C   (0x0004)  MISSED
-	TArray<FK26SurvivorStatus>                         _survivorStatusList;                                        // 0x0180   (0x0010)  
+	class UClass*                                      _k26KillerInstinctStatusEffectClass;                        // 0x0170   (0x0008)  
+	TArray<FK26SurvivorStatus>                         _survivorStatusList;                                        // 0x0178   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Multicast_OnStopRemovingCrow
-	// void Multicast_OnStopRemovingCrow(class ACamperPlayer* Survivor);                                                     // [0x57e0340] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnStopRemovingCrow(class ACamperPlayer* Survivor);                                                     // [0x57e83c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Multicast_OnStartRemovingCrow
-	// void Multicast_OnStartRemovingCrow(class ACamperPlayer* Survivor);                                                    // [0x59e2440] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnStartRemovingCrow(class ACamperPlayer* Survivor);                                                    // [0x59e8a80] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Multicast_OnIdleCrowInterrupt
-	// void Multicast_OnIdleCrowInterrupt(class ACamperPlayer* Survivor);                                                    // [0x58c5550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnIdleCrowInterrupt(class ACamperPlayer* Survivor);                                                    // [0x58cbe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Multicast_OnCrowDetached
-	// void Multicast_OnCrowDetached(class ACamperPlayer* Survivor);                                                         // [0x57fd070] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnCrowDetached(class ACamperPlayer* Survivor);                                                         // [0x58004b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Multicast_OnCrowDamagedSurvivor
-	// void Multicast_OnCrowDamagedSurvivor(class ASlasherPlayer* killer, class ACamperPlayer* Survivor);                    // [0x5b9cd30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnCrowDamagedSurvivor(class ASlasherPlayer* killer, class ACamperPlayer* Survivor);                    // [0x5baa330] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Multicast_OnCrowAttached
-	// void Multicast_OnCrowAttached(class ACamperPlayer* Survivor);                                                         // [0x59bc440] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnCrowAttached(class ACamperPlayer* Survivor);                                                         // [0x59c2dd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Cosmetic_OnCrowIdleInterrupt
-	// void Cosmetic_OnCrowIdleInterrupt(class ACamperPlayer* Survivor);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCrowIdleInterrupt(class ACamperPlayer* Survivor);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Cosmetic_OnCrowDamagedSurvivor
-	// void Cosmetic_OnCrowDamagedSurvivor(class ASlasherPlayer* killer, class ACamperPlayer* Survivor);                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCrowDamagedSurvivor(class ASlasherPlayer* killer, class ACamperPlayer* Survivor);                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Authority_OnSurvivorRemoved
-	// void Authority_OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                      // [0x5b9ca80] Final|Native|Private 
+	// void Authority_OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                      // [0x5baa080] Final|Native|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Authority_OnSurvivorAdded
-	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5b9c940] Final|Native|Private 
+	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5ba9f40] Final|Native|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Authority_OnKillerInstinctTimePassed
-	// void Authority_OnKillerInstinctTimePassed(class ACamperPlayer* Survivor);                                             // [0x5b9c790] Final|Native|Private 
+	// void Authority_OnKillerInstinctTimePassed(class ACamperPlayer* Survivor);                                             // [0x5ba9d90] Final|Native|Private 
 	// Function /Script/TheK26.K26PowerStatusHandlerComponent.Authority_OnIntroCompleted
-	// void Authority_OnIntroCompleted();                                                                                    // [0x5b9c770] Final|Native|Private 
+	// void Authority_OnIntroCompleted();                                                                                    // [0x5ba9d70] Final|Native|Private 
 };
 
 /// Class /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition
-/// Size: 0x0210 (0x000790 - 0x0009A0)
+/// Size: 0x0220 (0x000790 - 0x0009B0)
 class UK26SpawnCrowProjectileChargeableInteractionDefinition : public UChargeableInteractionDefinition
 { 
 public:
-	SDK_UNDEFINED(16,4113) /* FMulticastInlineDelegate */ __um(OnChargingStarted);                                 // 0x0788   (0x0010)  
-	SDK_UNDEFINED(16,4114) /* FMulticastInlineDelegate */ __um(OnChargingStopped);                                 // 0x0798   (0x0010)  
-	SDK_UNDEFINED(16,4115) /* FMulticastInlineDelegate */ __um(OnProjectileSummoned);                              // 0x07A8   (0x0010)  
-	FDBDTunableRowHandle                               _chargeCooldownTime;                                        // 0x07B8   (0x0028)  
-	FDBDTunableRowHandle                               _summonCooldownTime;                                        // 0x07E0   (0x0028)  
-	FDBDTunableRowHandle                               _pathLength;                                                // 0x0808   (0x0028)  
-	FDBDTunableRowHandle                               _projectileHeight;                                          // 0x0830   (0x0028)  
-	FDBDTunableRowHandle                               _projectileSummonDistance;                                  // 0x0858   (0x0028)  
-	FDBDTunableRowHandle                               _cooldownGracePeriodPercentage;                             // 0x0880   (0x0028)  
-	FDBDTunableRowHandle                               _globalSpawnCooldownTime;                                   // 0x08A8   (0x0028)  
-	FDBDTunableRowHandle                               _pathDistanceCheckAttempts;                                 // 0x08D0   (0x0028)  
-	class UClass*                                      _aimingGuideClass;                                          // 0x08F8   (0x0008)  
-	class AK26AimingGuide*                             _local_aimingGuide;                                         // 0x0900   (0x0008)  
-	bool                                               _isConfirmButtonPressed;                                    // 0x0908   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0909   (0x0007)  MISSED
-	class UK26AmmoHandlerComponent*                    _ammoHandler;                                               // 0x0910   (0x0008)  
-	class UK26PathHandlerComponent*                    _pathHandler;                                               // 0x0918   (0x0008)  
-	class UK26PowerStatusHandlerComponent*             _statusHandler;                                             // 0x0920   (0x0008)  
-	bool                                               _firedFullyChargedEvent;                                    // 0x0928   (0x0001)  
-	bool                                               _isWaitingForSummonAcknowledgement;                         // 0x0929   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x6];                                       // 0x092A   (0x0006)  MISSED
-	class UCurveFloat*                                 _globalCooldownMovementSpeedCurve;                          // 0x0930   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x68];                                      // 0x0938   (0x0068)  MISSED
+	SDK_UNDEFINED(16,4206) /* FMulticastInlineDelegate */ __um(OnChargingStarted);                                 // 0x0790   (0x0010)  
+	SDK_UNDEFINED(16,4207) /* FMulticastInlineDelegate */ __um(OnChargingStopped);                                 // 0x07A0   (0x0010)  
+	SDK_UNDEFINED(16,4208) /* FMulticastInlineDelegate */ __um(OnProjectileSummoned);                              // 0x07B0   (0x0010)  
+	FDBDTunableRowHandle                               _chargeCooldownTime;                                        // 0x07C0   (0x0028)  
+	FDBDTunableRowHandle                               _summonCooldownTime;                                        // 0x07E8   (0x0028)  
+	FDBDTunableRowHandle                               _pathLength;                                                // 0x0810   (0x0028)  
+	FDBDTunableRowHandle                               _projectileHeight;                                          // 0x0838   (0x0028)  
+	FDBDTunableRowHandle                               _projectileSummonDistance;                                  // 0x0860   (0x0028)  
+	FDBDTunableRowHandle                               _cooldownGracePeriodPercentage;                             // 0x0888   (0x0028)  
+	FDBDTunableRowHandle                               _globalSpawnCooldownTime;                                   // 0x08B0   (0x0028)  
+	FDBDTunableRowHandle                               _pathDistanceCheckAttempts;                                 // 0x08D8   (0x0028)  
+	class UClass*                                      _aimingGuideClass;                                          // 0x0900   (0x0008)  
+	class AK26AimingGuide*                             _local_aimingGuide;                                         // 0x0908   (0x0008)  
+	bool                                               _isConfirmButtonPressed;                                    // 0x0910   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0911   (0x0007)  MISSED
+	class UK26AmmoHandlerComponent*                    _ammoHandler;                                               // 0x0918   (0x0008)  
+	class UK26PathHandlerComponent*                    _pathHandler;                                               // 0x0920   (0x0008)  
+	class UK26PowerStatusHandlerComponent*             _statusHandler;                                             // 0x0928   (0x0008)  
+	bool                                               _firedFullyChargedEvent;                                    // 0x0930   (0x0001)  
+	bool                                               _isWaitingForSummonAcknowledgement;                         // 0x0931   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x6];                                       // 0x0932   (0x0006)  MISSED
+	class UCurveFloat*                                 _globalCooldownMovementSpeedCurve;                          // 0x0938   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x70];                                      // 0x0940   (0x0070)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.SetSummonCooldown
-	// void SetSummonCooldown();                                                                                             // [0x5b9e840] Final|Native|Protected|BlueprintCallable 
+	// void SetSummonCooldown();                                                                                             // [0x5babe20] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.SetDependencies
-	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler, class UK26PathHandlerComponent* pathHandler, class UK26PowerStatusHandlerComponent* statusHandler); // [0x5b9e730] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK26AmmoHandlerComponent* ammoHandler, class UK26PathHandlerComponent* pathHandler, class UK26PowerStatusHandlerComponent* statusHandler); // [0x5babd10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Server_PlaceProjectileWithPath
-	// void Server_PlaceProjectileWithPath(class ASlasherPlayer* killer, FVector projectileSpawnPoint, float killerLocalTime); // [0x5b9e610] Net|NetReliableNative|Event|Protected|NetServer|HasDefaults 
+	// void Server_PlaceProjectileWithPath(class ASlasherPlayer* killer, FVector projectileSpawnPoint, float killerLocalTime); // [0x5babbf0] Net|NetReliableNative|Event|Protected|NetServer|HasDefaults 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.OnSummonCooldownComplete
-	// void OnSummonCooldownComplete();                                                                                      // [0x5b9e5f0] Final|Native|Private 
+	// void OnSummonCooldownComplete();                                                                                      // [0x5babbd0] Final|Native|Private 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.OnConfirmButtonPressed
-	// void OnConfirmButtonPressed(class ASlasherPlayer* killer);                                                            // [0x5b9e490] Final|Native|Private 
+	// void OnConfirmButtonPressed(class ASlasherPlayer* killer);                                                            // [0x5baba70] Final|Native|Private 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Multicast_OnK26CrowSummoned
-	// void Multicast_OnK26CrowSummoned(class ASlasherPlayer* killer, int32_t remainingAmmo, int32_t maxAmmo);               // [0x5b9e390] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_OnK26CrowSummoned(class ASlasherPlayer* killer, int32_t remainingAmmo, int32_t maxAmmo);               // [0x5bab970] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Multicast_OnK26CrowSummonAttemptAcknowledged
-	// void Multicast_OnK26CrowSummonAttemptAcknowledged();                                                                  // [0x5b9e370] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_OnK26CrowSummonAttemptAcknowledged();                                                                  // [0x5bab950] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Local_OnGlobalCooldownDone
-	// void Local_OnGlobalCooldownDone(class ADBDPlayer* Player);                                                            // [0x5b9e2e0] Final|Native|Private 
+	// void Local_OnGlobalCooldownDone(class ADBDPlayer* Player);                                                            // [0x5bab8c0] Final|Native|Private 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.IsSummonOnCooldown
-	// bool IsSummonOnCooldown();                                                                                            // [0x5b9e2b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSummonOnCooldown();                                                                                            // [0x5bab890] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Cosmetic_OnSummonButtonUsedWhenCrowSummonIsNotPossible
-	// void Cosmetic_OnSummonButtonUsedWhenCrowSummonIsNotPossible();                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSummonButtonUsedWhenCrowSummonIsNotPossible();                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Cosmetic_OnFullyCharged
-	// void Cosmetic_OnFullyCharged(class ADBDPlayer* Player);                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnFullyCharged(class ADBDPlayer* Player);                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.Cosmetic_LocalOnSummonCooldownComplete
-	// void Cosmetic_LocalOnSummonCooldownComplete(int32_t amountOfAmmoLeft, bool isInteractionActive);                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_LocalOnSummonCooldownComplete(int32_t amountOfAmmoLeft, bool isInteractionActive);                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.CanSummonCrowOnceFullyCharged
-	// bool CanSummonCrowOnceFullyCharged();                                                                                 // [0x5b9e280] Final|Native|Protected|BlueprintCallable 
+	// bool CanSummonCrowOnceFullyCharged();                                                                                 // [0x5bab860] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK26.K26SpawnCrowProjectileChargeableInteractionDefinition.CanSummonCrow
-	// bool CanSummonCrow();                                                                                                 // [0x5b9e250] Final|Native|Protected|BlueprintCallable 
+	// bool CanSummonCrow();                                                                                                 // [0x5bab830] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheK26.Overcome
@@ -897,7 +896,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.Overcome.GetExhaustionDurationAtLevel
-	// float GetExhaustionDurationAtLevel();                                                                                 // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustionDurationAtLevel();                                                                                 // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK26.RekindledTotem
@@ -913,15 +912,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK26.RekindledTotem.RebuildTotem
-	// void RebuildTotem(class ATotem* Totem);                                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void RebuildTotem(class ATotem* Totem);                                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.RekindledTotem.OnParentTotemEndPlay
-	// void OnParentTotemEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                            // [0x5b9e520] Final|Native|Private 
+	// void OnParentTotemEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                            // [0x5babb00] Final|Native|Private 
 	// Function /Script/TheK26.RekindledTotem.Cosmetic_ShowShadowTotem
-	// void Cosmetic_ShowShadowTotem(bool instant);                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ShowShadowTotem(bool instant);                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.RekindledTotem.Cosmetic_HideShadowTotem
-	// void Cosmetic_HideShadowTotem(bool instant);                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_HideShadowTotem(bool instant);                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK26.RekindledTotem.CleanseTotem
-	// void CleanseTotem(class ATotem* Totem, ETotemState oldTotemState);                                                    // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void CleanseTotem(class ATotem* Totem, ETotemState oldTotemState);                                                    // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK26.RekindleTotemInteraction

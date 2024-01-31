@@ -60,23 +60,24 @@ public:
 };
 
 /// Class /Script/DBDAttack.PounceAttackOpenSubstateCosmetic
-/// Size: 0x0000 (0x000030 - 0x000030)
+/// Size: 0x0008 (0x000030 - 0x000038)
 class UPounceAttackOpenSubstateCosmetic : public UObject
 { 
 public:
+	unsigned char                                      UnknownData00_1[0x8];                                       // 0x0030   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDAttack.PounceAttackOpenSubstateCosmetic.OnLungeAttackStartCosmetic
-	// void OnLungeAttackStartCosmetic(class ADBDPlayer* SlasherPlayer);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnLungeAttackStartCosmetic(class ADBDPlayer* killer);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/DBDAttack.PounceAttackOpenSubstateCosmetic.OnLungeAttackEndCosmetic
-	// void OnLungeAttackEndCosmetic(class ADBDPlayer* SlasherPlayer);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnLungeAttackEndCosmetic(class ADBDPlayer* killer);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/DBDAttack.PounceAttackOpenSubstateCosmetic.OnLocallyObservedChangedCosmetic
-	// void OnLocallyObservedChangedCosmetic(class ADBDPlayer* SlasherPlayer);                                               // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnLocallyObservedChangedCosmetic(class ADBDPlayer* killer);                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/DBDAttack.PounceAttackOpenSubstateCosmetic.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged(class ADBDPlayer* SlasherPlayer);                                                       // [0x4ed2e20] Final|Native|Private 
+	// void OnLocallyObservedChanged(class ADBDPlayer* killer);                                                              // [0x4ea9a10] Final|Native|Private 
 	// Function /Script/DBDAttack.PounceAttackOpenSubstateCosmetic.IsLungeAttackAugmented
-	// bool IsLungeAttackAugmented(class ADBDPlayer* SlasherPlayer);                                                         // [0x4ed2d80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLungeAttackAugmented(class ADBDPlayer* killer);                                                                // [0x4ea9970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDAttack.SlashAttack

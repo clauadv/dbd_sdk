@@ -122,27 +122,27 @@ public:
 
 	/// Functions
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetVelocityScale
-	// void SetVelocityScale(FVector LinearVelocityScale, float AngularVelocityScale, float FictitiousAngularScale);         // [0x4cb4f50] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetVelocityScale(FVector LinearVelocityScale, float AngularVelocityScale, float FictitiousAngularScale);         // [0x4c84f10] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetMaterialLinear
-	// void SetMaterialLinear(float EdgeStiffness, float BendingStiffness, float AreaStiffness);                             // [0x4cb4e30] Final|Native|Public|BlueprintCallable 
+	// void SetMaterialLinear(float EdgeStiffness, float BendingStiffness, float AreaStiffness);                             // [0x4c84df0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetLongRangeAttachmentLinear
-	// void SetLongRangeAttachmentLinear(float TetherStiffness);                                                             // [0x4cb4db0] Final|Native|Public|BlueprintCallable 
+	// void SetLongRangeAttachmentLinear(float TetherStiffness);                                                             // [0x4c84d70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetLongRangeAttachment
-	// void SetLongRangeAttachment(FVector2D TetherStiffness);                                                               // [0x4cb4d30] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLongRangeAttachment(FVector2D TetherStiffness);                                                               // [0x4c84cf0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetGravity
-	// void SetGravity(float GravityScale, bool bIsGravityOverridden, FVector GravityOverride);                              // [0x4cb4c00] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetGravity(float GravityScale, bool bIsGravityOverridden, FVector GravityOverride);                              // [0x4c84bc0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetDamping
-	// void SetDamping(float DampingCoefficient);                                                                            // [0x4cb4b80] Final|Native|Public|BlueprintCallable 
+	// void SetDamping(float DampingCoefficient);                                                                            // [0x4c84b40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetCollision
-	// void SetCollision(float CollisionThickness, float FrictionCoefficient, bool bUseCCD, float SelfCollisionThickness);   // [0x4cb4a10] Final|Native|Public|BlueprintCallable 
+	// void SetCollision(float CollisionThickness, float FrictionCoefficient, bool bUseCCD, float SelfCollisionThickness);   // [0x4c849d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetAnimDriveLinear
-	// void SetAnimDriveLinear(float AnimDriveStiffness);                                                                    // [0x4cb4990] Final|Native|Public|BlueprintCallable 
+	// void SetAnimDriveLinear(float AnimDriveStiffness);                                                                    // [0x4c84950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetAnimDrive
-	// void SetAnimDrive(FVector2D AnimDriveStiffness, FVector2D AnimDriveDamping);                                          // [0x4cb48d0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetAnimDrive(FVector2D AnimDriveStiffness, FVector2D AnimDriveDamping);                                          // [0x4c84890] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.SetAerodynamics
-	// void SetAerodynamics(float DragCoefficient, float LiftCoefficient, FVector WindVelocity);                             // [0x4cb47b0] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetAerodynamics(float DragCoefficient, float LiftCoefficient, FVector WindVelocity);                             // [0x4c84770] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/ChaosCloth.ChaosClothingInteractor.ResetAndTeleport
-	// void ResetAndTeleport(bool bReset, bool bTeleport);                                                                   // [0x4cb46e0] Final|Native|Public|BlueprintCallable 
+	// void ResetAndTeleport(bool bReset, bool bTeleport);                                                                   // [0x4c846a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/ChaosCloth.ChaosClothingSimulationInteractor

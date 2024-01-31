@@ -29,7 +29,7 @@ public:
 
 	/// Functions
 	// Function /Script/ImageWriteQueue.ImageWriteBlueprintLibrary.ExportToDisk
-	// void ExportToDisk(class UTexture* Texture, FString Filename, FImageWriteOptions& Options);                            // [0x658f150] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ExportToDisk(class UTexture* Texture, FString Filename, FImageWriteOptions& Options);                            // [0x659ed10] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/ImageWriteQueue.ImageWriteOptions
@@ -38,7 +38,7 @@ struct FImageWriteOptions
 { 
 	EDesiredImageFormat                                Format;                                                     // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
-	SDK_UNDEFINED(20,4822) /* FDelegateProperty */     __um(OnComplete);                                           // 0x0004   (0x0014)  
+	SDK_UNDEFINED(20,5216) /* FDelegateProperty */     __um(OnComplete);                                           // 0x0004   (0x0014)  
 	int32_t                                            CompressionQuality;                                         // 0x0018   (0x0004)  
 	bool                                               bOverwriteFile;                                             // 0x001C   (0x0001)  
 	bool                                               bAsync;                                                     // 0x001D   (0x0001)  

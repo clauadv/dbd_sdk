@@ -74,11 +74,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.AimableComponent.SetProcessors
-	// void SetProcessors(TArray<UAimPointProcessor*> processors);                                                           // [0x507f300] Final|Native|Public|BlueprintCallable 
+	// void SetProcessors(TArray<UAimPointProcessor*> processors);                                                           // [0x5060d70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimableComponent.SetOcclusionIgnoredActors
-	// void SetOcclusionIgnoredActors(TArray<AActor*>& IgnoredActors);                                                       // [0x507f130] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetOcclusionIgnoredActors(TArray<AActor*>& IgnoredActors);                                                       // [0x5060ba0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimableComponent.SetMaxAimDistance
-	// void SetMaxAimDistance(float maxAimDistance);                                                                         // [0x507efb0] Final|Native|Public|BlueprintCallable 
+	// void SetMaxAimDistance(float maxAimDistance);                                                                         // [0x5060a20] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.AimDirectionProvider
@@ -113,17 +113,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.AimPointPerlinNoise.SetNoiseFrequencyMultiplier
-	// void SetNoiseFrequencyMultiplier(float Multiplier);                                                                   // [0x507f0b0] Final|Native|Public|BlueprintCallable 
+	// void SetNoiseFrequencyMultiplier(float Multiplier);                                                                   // [0x5060b20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimPointPerlinNoise.SetNoiseAmplitudeMultiplier
-	// void SetNoiseAmplitudeMultiplier(float Multiplier);                                                                   // [0x507f030] Final|Native|Public|BlueprintCallable 
+	// void SetNoiseAmplitudeMultiplier(float Multiplier);                                                                   // [0x5060aa0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimPointPerlinNoise.SetBaseInaccuracyNoisePersistence
-	// void SetBaseInaccuracyNoisePersistence(float noisePersistence);                                                       // [0x507ebb0] Final|Native|Public|BlueprintCallable 
+	// void SetBaseInaccuracyNoisePersistence(float noisePersistence);                                                       // [0x5060620] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimPointPerlinNoise.SetBaseInaccuracyNoiseOctaveCount
-	// void SetBaseInaccuracyNoiseOctaveCount(int32_t octaveCount);                                                          // [0x507eb20] Final|Native|Public|BlueprintCallable 
+	// void SetBaseInaccuracyNoiseOctaveCount(int32_t octaveCount);                                                          // [0x5060590] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimPointPerlinNoise.SetBaseInaccuracyNoiseFrequency
-	// void SetBaseInaccuracyNoiseFrequency(float Frequency);                                                                // [0x507eaa0] Final|Native|Public|BlueprintCallable 
+	// void SetBaseInaccuracyNoiseFrequency(float Frequency);                                                                // [0x5060510] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AimPointPerlinNoise.SetBaseInaccuracyNoiseAmplitude
-	// void SetBaseInaccuracyNoiseAmplitude(float Amplitude);                                                                // [0x507ea20] Final|Native|Public|BlueprintCallable 
+	// void SetBaseInaccuracyNoiseAmplitude(float Amplitude);                                                                // [0x5060490] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.AISenseConfig_Terror
@@ -134,7 +134,7 @@ public:
 	class UClass*                                      Implementation;                                             // 0x0050   (0x0008)  
 	float                                              MaxBreathingSoundRange;                                     // 0x0058   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x005C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3054) /* TMap<EAITerrorLevel, float> */ __um(TerrorRanges);                                   // 0x0060   (0x0050)  
+	SDK_UNDEFINED(80,3120) /* TMap<EAITerrorLevel, float> */ __um(TerrorRanges);                                   // 0x0060   (0x0050)  
 	FAISenseAffiliationFilter                          DetectionByAffiliation;                                     // 0x00B0   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00B4   (0x0004)  MISSED
 };
@@ -170,7 +170,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.AISense_Terror.ReportTerrorEvent
-	// void ReportTerrorEvent(class UObject* worldContextObj, FVector Location, class AActor* Instigator, class UTerrorRadiusEmitterComponent* TerrorEmitter); // [0x507e840] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void ReportTerrorEvent(class UObject* worldContextObj, FVector Location, class AActor* Instigator, class UTerrorRadiusEmitterComponent* TerrorEmitter); // [0x50602b0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.BlockFeedbackBase
@@ -201,9 +201,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.AuraOverriderComponent.ResetAura
-	// void ResetAura(class AActor* Actor);                                                                                  // [0x507e990] Final|Native|Public|BlueprintCallable 
+	// void ResetAura(class AActor* Actor);                                                                                  // [0x5060400] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.AuraOverriderComponent.ForceShowAura
-	// void ForceShowAura(class AActor* Actor, FLinearColor& Color, bool IsAlwaysVisible, float MinimumOutlineDistanceVisible, float MinimumOutlineDistance); // [0x507dfd0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ForceShowAura(class AActor* Actor, FLinearColor& Color, bool IsAlwaysVisible, float MinimumOutlineDistanceVisible, float MinimumOutlineDistance); // [0x505fa40] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.BaseActorAttackableComponent
@@ -217,7 +217,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.BaseActorAttackableComponent.HitWithProjectile
-	// void HitWithProjectile(class ABaseProjectile* Projectile);                                                            // [0x507e2f0] Native|Public|BlueprintCallable 
+	// void HitWithProjectile(class ABaseProjectile* Projectile);                                                            // [0x505fd60] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.BaseCamperCollectable
@@ -253,15 +253,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.BaseHusk.SetScalarParameterOnAllChildrenMeshes
-	// void SetScalarParameterOnAllChildrenMeshes(FName ParameterName, float value, class USkeletalMeshComponent* Mesh);     // [0x507f3f0] Final|Native|Protected|BlueprintCallable 
+	// void SetScalarParameterOnAllChildrenMeshes(FName ParameterName, float value, class USkeletalMeshComponent* Mesh);     // [0x5060e60] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDGameplay.BaseHusk.SetHuskVisibility
-	// void SetHuskVisibility(bool visible);                                                                                 // [0x507ef20] Final|Native|Protected|BlueprintCallable 
+	// void SetHuskVisibility(bool visible);                                                                                 // [0x5060990] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDGameplay.BaseHusk.InitializeHusk
-	// void InitializeHusk(class UCustomizedSkeletalMesh* customizedSkeletalMeshToCopy);                                     // [0x507e380] Final|Native|Public|BlueprintCallable 
+	// void InitializeHusk(class UCustomizedSkeletalMesh* customizedSkeletalMeshToCopy);                                     // [0x505fdf0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.BaseHusk.GetCopiedCustomizedSkeletalMesh
-	// class UCustomizedSkeletalMesh* GetCopiedCustomizedSkeletalMesh();                                                     // [0x507e230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCustomizedSkeletalMesh* GetCopiedCustomizedSkeletalMesh();                                                     // [0x505fca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.BaseHusk.Cosmetic_InitializeSkeletalMesh
-	// void Cosmetic_InitializeSkeletalMesh(class USkeletalMeshComponent* Mesh);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_InitializeSkeletalMesh(class USkeletalMeshComponent* Mesh);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.FlashlightableLightingStrategy
@@ -303,7 +303,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.FlashlightTargetFXComponent.OnIsLitChanged
-	// void OnIsLitChanged(bool IsLit);                                                                                      // [0x5082c00] Final|Native|Private 
+	// void OnIsLitChanged(bool IsLit);                                                                                      // [0x5064800] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.BlindFlashlightTargetFXComponent
@@ -340,7 +340,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.BlockFeedbackComponent.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x507e530] Final|Native|Private 
+	// void OnLocallyObservedChanged();                                                                                      // [0x505ffa0] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.FootstepCreatorComponent
@@ -373,7 +373,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.CamperFootstepCreatorComponent.OnLoudNoiseTriggered
-	// void OnLoudNoiseTriggered(class AActor* originator, class AActor* instigatingActor, FVector Location, bool shouldTrack, float& audibleRange, bool isQuickAction, bool isDeceivingNoise); // [0x507e550] Final|Native|Protected|HasOutParms|HasDefaults 
+	// void OnLoudNoiseTriggered(class AActor* originator, class AActor* instigatingActor, FVector Location, bool shouldTrack, float& audibleRange, bool isQuickAction, bool isDeceivingNoise); // [0x505ffc0] Final|Native|Protected|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/DBDGameplay.FootstepPerceptionComponent
@@ -421,23 +421,23 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.ClosetHideInteraction.SetPlayerInCloset
-	// void SetPlayerInCloset(class ADBDPlayer* Player);                                                                     // [0x507f270] Final|Native|Public|BlueprintCallable 
+	// void SetPlayerInCloset(class ADBDPlayer* Player);                                                                     // [0x5060ce0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.SetOtherInteractorsUsable
-	// void SetOtherInteractorsUsable(bool IsEnabled);                                                                       // [0x507f1e0] Final|Native|Public|BlueprintCallable 
+	// void SetOtherInteractorsUsable(bool IsEnabled);                                                                       // [0x5060c50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.SetCollisionWithCloset
-	// void SetCollisionWithCloset(bool IsEnabled, class ADBDPlayer* Player);                                                // [0x507ec30] Final|Native|Public|BlueprintCallable|Const 
+	// void SetCollisionWithCloset(bool IsEnabled, class ADBDPlayer* Player);                                                // [0x50606a0] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.IsRushed
-	// bool IsRushed();                                                                                                      // [0x507e510] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsRushed();                                                                                                      // [0x505ff80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.IsOccupied
-	// bool IsOccupied();                                                                                                    // [0x507e4e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOccupied();                                                                                                    // [0x505ff50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.IsInteractingPlayerInsideCloset
-	// bool IsInteractingPlayerInsideCloset(class ADBDPlayer* Player);                                                       // [0x507e440] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInteractingPlayerInsideCloset(class ADBDPlayer* Player);                                                       // [0x505feb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.GetPlayerInCloset
-	// class ADBDPlayer* GetPlayerInCloset();                                                                                // [0x507e290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetPlayerInCloset();                                                                                // [0x505fd00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.GetInsideInteractor
-	// class UInteractor* GetInsideInteractor();                                                                             // [0x507e260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UInteractor* GetInsideInteractor();                                                                             // [0x505fcd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.ClosetHideInteraction.FireSoundEventFromInteractor
-	// void FireSoundEventFromInteractor(class AActor* Instigator, class ADBDPlayer* instigatingPlayer);                     // [0x507df00] Final|Native|Public|BlueprintCallable 
+	// void FireSoundEventFromInteractor(class AActor* Instigator, class ADBDPlayer* instigatingPlayer);                     // [0x505f970] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.ClosetHideEnterInteraction
@@ -452,11 +452,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.ClosetHideEnterInteraction.NotifyClosetAnalytics
-	// void NotifyClosetAnalytics(class ACamperPlayer* Survivor);                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void NotifyClosetAnalytics(class ACamperPlayer* Survivor);                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.ClosetHideEnterInteraction.EjectSurvivorFromLocker
-	// void EjectSurvivorFromLocker(class ACamperPlayer* Survivor, class ALocker* Locker);                                   // [0x507de30] Final|Native|Protected 
+	// void EjectSurvivorFromLocker(class ACamperPlayer* Survivor, class ALocker* Locker);                                   // [0x505f8a0] Final|Native|Protected 
 	// Function /Script/DBDGameplay.ClosetHideEnterInteraction.AdjustActorLocation
-	// void AdjustActorLocation(class ADBDPlayer* Player);                                                                   // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void AdjustActorLocation(class ADBDPlayer* Player);                                                                   // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.CollectableComponentUtilities
@@ -468,7 +468,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.CollectableComponentUtilities.GetCollector
-	// class ADBDPlayer* GetCollector(class UActorComponent* Component);                                                     // [0x507e1a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ADBDPlayer* GetCollector(class UActorComponent* Component);                                                     // [0x505fc10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DBDGameplay.ConspicuousActionComponent
@@ -499,9 +499,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.DebugIndicator.SetVisible
-	// void SetVisible(bool visible);                                                                                        // [0x507f520] Final|Native|Public|BlueprintCallable 
+	// void SetVisible(bool visible);                                                                                        // [0x5060f90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.DebugIndicator.SetColor
-	// void SetColor(FLinearColor Color);                                                                                    // [0x507ed00] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void SetColor(FLinearColor Color);                                                                                    // [0x5060770] Native|Event|Public|HasDefaults|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.DebugTimerLogComponent
@@ -510,7 +510,7 @@ class UDebugTimerLogComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,3055) /* FString */               __um(_timerDisplayName);                                    // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,3121) /* FString */               __um(_timerDisplayName);                                    // 0x00E8   (0x0010)  
 	FSpeedBasedNetSyncedValue                          _timerCountdown;                                            // 0x00F8   (0x0038)  
 	float                                              _timerRemainingPercent;                                     // 0x0130   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0134   (0x0004)  MISSED
@@ -518,7 +518,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.DebugTimerLogComponent.OnRep_TimerCountdown
-	// void OnRep_TimerCountdown();                                                                                          // [0x507e820] Final|Native|Private 
+	// void OnRep_TimerCountdown();                                                                                          // [0x5060290] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.DecoySlasherComponent
@@ -527,8 +527,8 @@ class UDecoySlasherComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,3056) /* FMulticastInlineDelegate */ __um(OnStunned);                                         // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,3057) /* FMulticastInlineDelegate */ __um(TriggerDecoyVisibilityVFX);                         // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,3122) /* FMulticastInlineDelegate */ __um(OnStunned);                                         // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,3123) /* FMulticastInlineDelegate */ __um(TriggerDecoyVisibilityVFX);                         // 0x00D0   (0x0010)  
 	bool                                               HasTerrorRadius;                                            // 0x00E0   (0x0001)  
 	bool                                               HasRedGlow;                                                 // 0x00E1   (0x0001)  
 	bool                                               _isActive;                                                  // 0x00E2   (0x0001)  
@@ -540,17 +540,38 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.DecoySlasherComponent.SetDecoyIsActive
-	// void SetDecoyIsActive(bool IsActive, FVector& Location, FRotator& Rotation, bool visibleRedGlow);                     // [0x507ed90] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetDecoyIsActive(bool IsActive, FVector& Location, FRotator& Rotation, bool visibleRedGlow);                     // [0x5060800] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/DBDGameplay.DecoySlasherComponent.OnRealSlasherTerrorRadiusChanged
-	// void OnRealSlasherTerrorRadiusChanged(float NewValue);                                                                // [0x507e7a0] Final|Native|Private 
+	// void OnRealSlasherTerrorRadiusChanged(float NewValue);                                                                // [0x5060210] Final|Native|Private 
 	// Function /Script/DBDGameplay.DecoySlasherComponent.IsDecoyActive
-	// bool IsDecoyActive();                                                                                                 // [0x507e410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDecoyActive();                                                                                                 // [0x505fe80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.DecoySlasherComponent.GetRealSlasher
-	// class ASlasherPlayer* GetRealSlasher();                                                                               // [0x507e2c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetRealSlasher();                                                                               // [0x505fd30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.DecoySlasherComponent.DoPostVFXUpdates
-	// void DoPostVFXUpdates(FVector& Location, FRotator& Rotation);                                                         // [0x507dd50] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void DoPostVFXUpdates(FVector& Location, FRotator& Rotation);                                                         // [0x505f7c0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/DBDGameplay.DecoySlasherComponent.CopyCustomizationFromSlasher
-	// void CopyCustomizationFromSlasher();                                                                                  // [0x507dd30] Final|Native|Private 
+	// void CopyCustomizationFromSlasher();                                                                                  // [0x505f7a0] Final|Native|Private 
+};
+
+/// Class /Script/DBDGameplay.EndGameEffectsComponent
+/// Size: 0x0028 (0x0000B8 - 0x0000E0)
+class UEndGameEffectsComponent : public UActorComponent
+{ 
+public:
+	bool                                               _hasEndGameBegun;                                           // 0x00B8   (0x0001)  
+	bool                                               _playCameraShakeOnce;                                       // 0x00B9   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x26];                                      // 0x00BA   (0x0026)  MISSED
+
+
+	/// Functions
+	// Function /Script/DBDGameplay.EndGameEffectsComponent.UnregisterLocallyObservedEvents
+	// void UnregisterLocallyObservedEvents();                                                                               // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDGameplay.EndGameEffectsComponent.StartUpdateTimer
+	// void StartUpdateTimer(FGameplayTag gameEventType, FGameEventData& GameEventData);                                     // [0x61d2f50] Event|Protected|HasOutParms|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDGameplay.EndGameEffectsComponent.RegisterLocallyObservedEvents
+	// void RegisterLocallyObservedEvents();                                                                                 // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// Function /Script/DBDGameplay.EndGameEffectsComponent.OnLocallyObservedChanged
+	// void OnLocallyObservedChanged(class ADBDPlayer* Player);                                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.EtherealComponent
@@ -565,9 +586,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.EtherealComponent.Server_SetIsEthereal
-	// void Server_SetIsEthereal(float Timestamp, bool Ethereal);                                                            // [0x5082f00] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_SetIsEthereal(float Timestamp, bool Ethereal);                                                            // [0x5064ae0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/DBDGameplay.EtherealComponent.OnRep_OnIsEtherealChanged
-	// void OnRep_OnIsEtherealChanged();                                                                                     // [0x5082d10] Final|Native|Private 
+	// void OnRep_OnIsEtherealChanged();                                                                                     // [0x5064910] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.RangeToActorsTrackerStrategy
@@ -581,7 +602,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.RangeToActorsTrackerStrategy.OnInRangeToTrackedActorsChanged
-	// void OnInRangeToTrackedActorsChanged(bool inRange);                                                                   // [0x508ba20] Final|Native|Private 
+	// void OnInRangeToTrackedActorsChanged(bool inRange);                                                                   // [0x506d940] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.ExitGateSwitchesRangeTrackerStrategy
@@ -596,14 +617,14 @@ public:
 class UFadeComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3058) /* FMulticastInlineDelegate */ __um(OnFadePercentChanged);                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3124) /* FMulticastInlineDelegate */ __um(OnFadePercentChanged);                              // 0x00B8   (0x0010)  
 	float                                              _fadeDuration;                                              // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData00_6[0xC];                                       // 0x00CC   (0x000C)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.FadeComponent.GetFadePercent
-	// float GetFadePercent();                                                                                               // [0x5082a60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFadePercent();                                                                                               // [0x5064680] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.FadingBlockFeedback
@@ -617,9 +638,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.FadingBlockFeedback.OnFadeOutStarted
-	// void OnFadeOutStarted(float fadeDuration);                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnFadeOutStarted(float fadeDuration);                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/DBDGameplay.FadingBlockFeedback.OnFadeOutEnded
-	// void OnFadeOutEnded();                                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnFadeOutEnded();                                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.FirecrackerSpawner
@@ -655,7 +676,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.Flashlight.GetSpotlightComponent
-	// class USpotLightComponent* GetSpotlightComponent();                                                                   // [0x5082ac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USpotLightComponent* GetSpotlightComponent();                                                                   // [0x50646e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.FlashlightableComponent
@@ -663,20 +684,20 @@ public:
 class UFlashlightableComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3059) /* FMulticastInlineDelegate */ __um(OnFlashlightAddedEvent);                            // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,3060) /* FMulticastInlineDelegate */ __um(OnFlashlightRemovedEvent);                          // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,3061) /* FMulticastInlineDelegate */ __um(OnFlashlightLitChangedEvent);                       // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,3125) /* FMulticastInlineDelegate */ __um(OnFlashlightAddedEvent);                            // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3126) /* FMulticastInlineDelegate */ __um(OnFlashlightRemovedEvent);                          // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,3127) /* FMulticastInlineDelegate */ __um(OnFlashlightLitChangedEvent);                       // 0x00D8   (0x0010)  
 	class UFlashlightableLightingStrategy*             _lightingStrategy;                                          // 0x00E8   (0x0008)  
-	SDK_UNDEFINED(80,3062) /* TSet<UFlashlightComponent*> */ __um(_flashlights);                                   // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,3128) /* TSet<UFlashlightComponent*> */ __um(_flashlights);                                   // 0x00F0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.FlashlightableComponent.OnFlashlightLitChangedEvent__DelegateSignature
-	// void OnFlashlightLitChangedEvent__DelegateSignature(bool IsLit);                                                      // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnFlashlightLitChangedEvent__DelegateSignature(bool IsLit);                                                      // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.FlashlightableComponent.OnFlashlightAddedRemovedEvent__DelegateSignature
-	// void OnFlashlightAddedRemovedEvent__DelegateSignature(class UFlashlightComponent* Flashlight);                        // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnFlashlightAddedRemovedEvent__DelegateSignature(class UFlashlightComponent* Flashlight);                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.FlashlightableComponent.IsLit
-	// bool IsLit();                                                                                                         // [0x5082af0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLit();                                                                                                         // [0x5064710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.FlashlightComponent
@@ -685,14 +706,14 @@ class UFlashlightComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,3063) /* FMulticastInlineDelegate */ __um(OnFlashlightTurnedOn);                              // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,3064) /* FMulticastInlineDelegate */ __um(OnFlashlightTurnedOff);                             // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,3065) /* FMulticastInlineDelegate */ __um(OnFlashlightablesUpdated);                          // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,3129) /* FMulticastInlineDelegate */ __um(OnFlashlightTurnedOn);                              // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,3130) /* FMulticastInlineDelegate */ __um(OnFlashlightTurnedOff);                             // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,3131) /* FMulticastInlineDelegate */ __um(OnFlashlightablesUpdated);                          // 0x00E0   (0x0010)  
 	FDBDTunableRowHandle                               _baseBlindnessDuration;                                     // 0x00F0   (0x0028)  
 	float                                              _baseAccuracy;                                              // 0x0118   (0x0004)  
 	float                                              _lagDuration;                                               // 0x011C   (0x0004)  
-	SDK_UNDEFINED(80,3066) /* TSet<UFlashlightableComponent*> */ __um(_flashlightables);                           // 0x0120   (0x0050)  
-	SDK_UNDEFINED(80,3067) /* TSet<UFlashlightableComponent*> */ __um(_autonomousLitFlashlightables);              // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,3132) /* TSet<UFlashlightableComponent*> */ __um(_flashlightables);                           // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,3133) /* TSet<UFlashlightableComponent*> */ __um(_autonomousLitFlashlightables);              // 0x0170   (0x0050)  
 	TArray<class UFlashlightableComponent*>            _replicatedLitFlashlightables;                              // 0x01C0   (0x0010)  
 	bool                                               _isOwnerLagging;                                            // 0x01D0   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x37];                                      // 0x01D1   (0x0037)  MISSED
@@ -700,23 +721,23 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.FlashlightComponent.TurnOn
-	// void TurnOn();                                                                                                        // [0x5083100] Final|Native|Public|BlueprintCallable 
+	// void TurnOn();                                                                                                        // [0x5064ce0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.FlashlightComponent.TurnOff
-	// void TurnOff();                                                                                                       // [0x50830e0] Final|Native|Public|BlueprintCallable 
+	// void TurnOff();                                                                                                       // [0x5064cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.FlashlightComponent.Server_SetAndUpdateAutonomousLitFlashlightables
-	// void Server_SetAndUpdateAutonomousLitFlashlightables(TArray<UFlashlightableComponent*> newLitFlashlightables);        // [0x5082e60] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetAndUpdateAutonomousLitFlashlightables(TArray<UFlashlightableComponent*> newLitFlashlightables);        // [0x5064a40] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/DBDGameplay.FlashlightComponent.OnRep_ReplicatedLitFlashlightables
-	// void OnRep_ReplicatedLitFlashlightables();                                                                            // [0x5082d30] Final|Native|Private 
+	// void OnRep_ReplicatedLitFlashlightables();                                                                            // [0x5064930] Final|Native|Private 
 	// Function /Script/DBDGameplay.FlashlightComponent.OnRep_IsOwnerLagging
-	// void OnRep_IsOwnerLagging();                                                                                          // [0x5082cf0] Final|Native|Private 
+	// void OnRep_IsOwnerLagging();                                                                                          // [0x50648f0] Final|Native|Private 
 	// Function /Script/DBDGameplay.FlashlightComponent.OnFlashlightEvent__DelegateSignature
-	// void OnFlashlightEvent__DelegateSignature();                                                                          // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnFlashlightEvent__DelegateSignature();                                                                          // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.FlashlightComponent.IsOn
-	// bool IsOn();                                                                                                          // [0x5082b20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOn();                                                                                                          // [0x5064740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.FlashlightComponent.GetEffectiveTimeToBlindModifier
-	// float GetEffectiveTimeToBlindModifier();                                                                              // [0x5082a30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEffectiveTimeToBlindModifier();                                                                              // [0x5064650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.FlashlightComponent.GetEffectiveBlindnessDuration
-	// float GetEffectiveBlindnessDuration();                                                                                // [0x50829a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEffectiveBlindnessDuration();                                                                                // [0x50645c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.FlashlightConeComponent
@@ -729,18 +750,18 @@ public:
 	class USceneComponent*                             _flashlightBottom;                                          // 0x00D0   (0x0008)  
 	FDBDTunableRowHandle                               _baseBeamAngle;                                             // 0x00D8   (0x0028)  
 	FDBDTunableRowHandle                               _baseBeamLength;                                            // 0x0100   (0x0028)  
-	SDK_UNDEFINED(8,3068) /* TWeakObjectPtr<AActor*> */ __um(_cacheCollidingActor);                                // 0x0128   (0x0008)  
+	SDK_UNDEFINED(8,3134) /* TWeakObjectPtr<AActor*> */ __um(_cacheCollidingActor);                                // 0x0128   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0130   (0x0018)  MISSED
 	TArray<FGameplayTag>                               _tagsPreventingBeamOcclusion;                               // 0x0148   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.FlashlightConeComponent.GetOcclusionDistance
-	// float GetOcclusionDistance();                                                                                         // [0x5082a90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetOcclusionDistance();                                                                                         // [0x50646b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.FlashlightConeComponent.GetEffectiveConeLength
-	// float GetEffectiveConeLength();                                                                                       // [0x5082a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEffectiveConeLength();                                                                                       // [0x5064620] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.FlashlightConeComponent.GetEffectiveConeHalfAngle
-	// float GetEffectiveConeHalfAngle();                                                                                    // [0x50829d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEffectiveConeHalfAngle();                                                                                    // [0x50645f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.FlashlightFXComponent
@@ -748,7 +769,7 @@ public:
 class UFlashlightFXComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3069) /* FMulticastInlineDelegate */ __um(OnFlashEvent);                                      // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3135) /* FMulticastInlineDelegate */ __um(OnFlashEvent);                                      // 0x00B8   (0x0010)  
 	class USceneComponent*                             _tip;                                                       // 0x00C8   (0x0008)  
 	class UStaticMeshComponent*                        _centerGlowMesh;                                            // 0x00D0   (0x0008)  
 	class USplineMeshComponent*                        _beamMesh;                                                  // 0x00D8   (0x0008)  
@@ -772,35 +793,35 @@ public:
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0124   (0x0004)  MISSED
 	FAkObservedPlayerSoundLoop                         _aimedAtSoundLoop;                                          // 0x0128   (0x0040)  
 	class UFlashlightTargetFXComponent*                _currentBeamModifyingTarget;                                // 0x0168   (0x0008)  
-	SDK_UNDEFINED(80,3070) /* TSet<UFlashlightTargetFXComponent*> */ __um(_targets);                               // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,3136) /* TSet<UFlashlightTargetFXComponent*> */ __um(_targets);                               // 0x0170   (0x0050)  
 	unsigned char                                      UnknownData03_6[0xA8];                                      // 0x01C0   (0x00A8)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.FlashlightFXComponent.UpdateFXTargets
-	// void UpdateFXTargets();                                                                                               // [0x5083120] Final|Native|Private 
+	// void UpdateFXTargets();                                                                                               // [0x5064d00] Final|Native|Private 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.UpdateConeEvent
-	// void UpdateConeEvent(float Length, float halfAngle);                                                                  // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void UpdateConeEvent(float Length, float halfAngle);                                                                  // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.PostUpdateEvent
-	// void PostUpdateEvent();                                                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void PostUpdateEvent();                                                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnTurnedOn
-	// void OnTurnedOn();                                                                                                    // [0x5082d90] Final|Native|Private 
+	// void OnTurnedOn();                                                                                                    // [0x5064970] Final|Native|Private 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnTurnedOff
-	// void OnTurnedOff();                                                                                                   // [0x5082d70] Final|Native|Private 
+	// void OnTurnedOff();                                                                                                   // [0x5064950] Final|Native|Private 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnStopEvent
-	// void OnStopEvent();                                                                                                   // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnStopEvent();                                                                                                   // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnStartEvent
-	// void OnStartEvent();                                                                                                  // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnStartEvent();                                                                                                  // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnFlashEvent__DelegateSignature
-	// void OnFlashEvent__DelegateSignature();                                                                               // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnFlashEvent__DelegateSignature();                                                                               // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnDroppedEvent
-	// void OnDroppedEvent();                                                                                                // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnDroppedEvent();                                                                                                // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnCollectorLocallyObservedChangedEvent
-	// void OnCollectorLocallyObservedChangedEvent(bool IsLocallyObserved);                                                  // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnCollectorLocallyObservedChangedEvent(bool IsLocallyObserved);                                                  // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.OnCollectedEvent
-	// void OnCollectedEvent(class ADBDPlayer* collector);                                                                   // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnCollectedEvent(class ADBDPlayer* collector);                                                                   // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.FlashlightFXComponent.GetBlindingSuccessRatio
-	// float GetBlindingSuccessRatio();                                                                                      // [0x5082970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBlindingSuccessRatio();                                                                                      // [0x5064590] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.FlashlightUtilities
@@ -845,11 +866,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.FootstepManagerComponent.TriggerSpawnFootstep
-	// void TriggerSpawnFootstep(class UFootstepCreatorComponent* originatorComponent, FVector Location);                    // [0x5083000] Final|Native|Public|HasDefaults 
+	// void TriggerSpawnFootstep(class UFootstepCreatorComponent* originatorComponent, FVector Location);                    // [0x5064be0] Final|Native|Public|HasDefaults 
 	// Function /Script/DBDGameplay.FootstepManagerComponent.OnUpdateObserverFootsteps
-	// void OnUpdateObserverFootsteps();                                                                                     // [0x5082e40] Final|Native|Public  
+	// void OnUpdateObserverFootsteps();                                                                                     // [0x5064a20] Final|Native|Public  
 	// Function /Script/DBDGameplay.FootstepManagerComponent.OnUpdateCreatorFootsteps
-	// void OnUpdateCreatorFootsteps(class UFootstepCreatorComponent* creator);                                              // [0x5082db0] Final|Native|Public  
+	// void OnUpdateCreatorFootsteps(class UFootstepCreatorComponent* creator);                                              // [0x5064990] Final|Native|Public  
 };
 
 /// Class /Script/DBDGameplay.GeneratorWithMostProgressTracker
@@ -862,9 +883,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.GeneratorWithMostProgressTracker.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5082c90] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5064890] Final|Native|Private 
 	// Function /Script/DBDGameplay.GeneratorWithMostProgressTracker.OnGeneratorCompleted
-	// void OnGeneratorCompleted(bool isAutoCompleted);                                                                      // [0x5082b50] Final|Native|Private 
+	// void OnGeneratorCompleted(bool isAutoCompleted);                                                                      // [0x5064770] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.GlassBeadMapAddon
@@ -880,7 +901,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.GlassBeadMapAddon.Authority_OnSecondaryInputPressed
-	// void Authority_OnSecondaryInputPressed(class ADBDPlayer* Player, class UInteractionDefinition* Interaction, bool fromCancelRequest); // [0x5082860] Final|Native|Private 
+	// void Authority_OnSecondaryInputPressed(class ADBDPlayer* Player, class UInteractionDefinition* Interaction, bool fromCancelRequest); // [0x5064480] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.HooksWithSurvivorRangeTrackerStrategy
@@ -892,7 +913,7 @@ public:
 };
 
 /// Class /Script/DBDGameplay.InteractionAttacherComponent
-/// Size: 0x0098 (0x0000B8 - 0x000150)
+/// Size: 0x00A0 (0x0000B8 - 0x000158)
 class UInteractionAttacherComponent : public UActorComponent
 { 
 public:
@@ -907,14 +928,15 @@ public:
 	FName                                              _chargeableComponentName;                                   // 0x0110   (0x000C)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x011C   (0x0004)  MISSED
 	FDBDTunableRowHandle                               _secondsToCharge;                                           // 0x0120   (0x0028)  
-	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0148   (0x0008)  MISSED
+	bool                                               _clientWaitForOwnerInitialization;                          // 0x0148   (0x0001)  
+	unsigned char                                      UnknownData03_6[0xF];                                       // 0x0149   (0x000F)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.InteractionAttacherComponent.OnRep_InteractionDefinitions
-	// void OnRep_InteractionDefinitions();                                                                                  // [0x5082cd0] Final|Native|Private 
+	// void OnRep_InteractionDefinitions();                                                                                  // [0x50648d0] Final|Native|Private 
 	// Function /Script/DBDGameplay.InteractionAttacherComponent.OnRep_ChargeableComponents
-	// void OnRep_ChargeableComponents();                                                                                    // [0x5082cb0] Final|Native|Private 
+	// void OnRep_ChargeableComponents();                                                                                    // [0x50648b0] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.InteractionStarterComponent
@@ -930,9 +952,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.InteractionStarterComponent.OnRep_ShouldStartInteraction
-	// void OnRep_ShouldStartInteraction();                                                                                  // [0x5082d50] Final|Native|Private 
+	// void OnRep_ShouldStartInteraction();                                                                                  // [0x50697a0] Final|Native|Private 
 	// Function /Script/DBDGameplay.InteractionStarterComponent.OnInteractionStarted
-	// void OnInteractionStarted();                                                                                          // [0x5082be0] Final|Native|Private 
+	// void OnInteractionStarted();                                                                                          // [0x50692a0] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.KillerFlashlightSFXComponent
@@ -979,13 +1001,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.KillerInstinctComponent.SetParticleSystem
-	// void SetParticleSystem(class UNiagaraComponent* ParticleSystemComponent);                                             // [0x5087d10] Final|Native|Protected|BlueprintCallable 
+	// void SetParticleSystem(class UNiagaraComponent* ParticleSystemComponent);                                             // [0x5069850] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDGameplay.KillerInstinctComponent.OnKillerLocallyObservedChanged
-	// void OnKillerLocallyObservedChanged(bool locallyObserved);                                                            // [0x5087a70] Final|Native|Private 
+	// void OnKillerLocallyObservedChanged(bool locallyObserved);                                                            // [0x50692c0] Final|Native|Private 
 	// Function /Script/DBDGameplay.KillerInstinctComponent.IsOwnerInKillerInstinctRadius
-	// bool IsOwnerInKillerInstinctRadius();                                                                                 // [0x5086bf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOwnerInKillerInstinctRadius();                                                                                 // [0x50684a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.KillerInstinctComponent.GetParticleSystem
-	// class UNiagaraComponent* GetParticleSystem();                                                                         // [0x5086b90] Final|Native|Private|BlueprintCallable 
+	// class UNiagaraComponent* GetParticleSystem();                                                                         // [0x5068440] Final|Native|Private|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.KillerScoringComponent
@@ -994,6 +1016,66 @@ class UKillerScoringComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_1[0x18];                                      // 0x00B8   (0x0018)  MISSED
+};
+
+/// Class /Script/DBDGameplay.LimitGeneratorRegressionEventComponent
+/// Size: 0x01A8 (0x0000B8 - 0x000260)
+class ULimitGeneratorRegressionEventComponent : public UActorComponent
+{ 
+public:
+	SDK_UNDEFINED(16,3137) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRegressionEvent);                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3138) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRegressionEventZoneEntered);             // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,3139) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRegressionEventZoneExited);              // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,3140) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRepairStarted);                          // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,3141) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRepairStopped);                          // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,3142) /* FMulticastInlineDelegate */ __um(Cosmetic_OnBlockingStatusChanged);                  // 0x0108   (0x0010)  
+	int32_t                                            _regressionEventsSuffered;                                  // 0x0118   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x011C   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _numberLastRegressionEventsToShow;                          // 0x0120   (0x0028)  
+	FDBDTunableRowHandle                               _maxNumberRegressionEventsAllowed;                          // 0x0148   (0x0028)  
+	FDBDTunableRowHandle                               _thresholdImmediateRegressionToConsiderRegressionEvent;     // 0x0170   (0x0028)  
+	FDBDTunableRowHandle                               _immediateRegressionPercentage;                             // 0x0198   (0x0028)  
+	FDBDTunableRowHandle                               _immediateRegressionPercentageLimitRegressionEvents;        // 0x01C0   (0x0028)  
+	float                                              _killerProximityZoneRadius;                                 // 0x01E8   (0x0004)  
+	FCollisionProfileName                              _killerProximityZoneDefaultCollisionProfile;                // 0x01EC   (0x000C)  
+	FCollisionProfileName                              _killerProximityZoneNoCollisionProfile;                     // 0x01F8   (0x000C)  
+	float                                              _waitTimeAfterGeneratorWasInteractedUponToTriggerVfx;       // 0x0204   (0x0004)  
+	class USphereComponent*                            _killerProximityZoneForRegressionEvents;                    // 0x0208   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x50];                                      // 0x0210   (0x0050)  MISSED
+
+
+	/// Functions
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.OnRep_RegressionEventsSuffered
+	// void OnRep_RegressionEventsSuffered();                                                                                // [0x5069780] Final|Native|Private 
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.OnRegressionEvent__DelegateSignature
+	// void OnRegressionEvent__DelegateSignature(int32_t currentRegressionLevel, bool survivorInteracting);                  // [0x61d2f50] MulticastDelegate|Public|Delegate 
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.OnKillerProximityZoneForRegressionEventsOverlapEnd
+	// void OnKillerProximityZoneForRegressionEventsOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5069570] Final|Native|Private 
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.OnKillerProximityZoneForRegressionEventsOverlapBegin
+	// void OnKillerProximityZoneForRegressionEventsOverlapBegin(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5069350] Final|Native|Private|HasOutParms 
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.OnBlockingStatusChanged__DelegateSignature
+	// void OnBlockingStatusChanged__DelegateSignature(int32_t currentRegressionLevel, bool Blocked);                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.GetMaxNumberRegressionEventsAllowed
+	// int32_t GetMaxNumberRegressionEventsAllowed();                                                                        // [0x5068410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/DBDGameplay.LimitGeneratorRegressionEventComponent.CosmeticEvent__DelegateSignature
+	// void CosmeticEvent__DelegateSignature(int32_t currentRegressionLevel);                                                // [0x61d2f50] MulticastDelegate|Public|Delegate 
+};
+
+/// Class /Script/DBDGameplay.LockerExitInteraction
+/// Size: 0x0010 (0x000680 - 0x000690)
+class ULockerExitInteraction : public UClosetHideInteraction
+{ 
+public:
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0680   (0x0010)  MISSED
+};
+
+/// Class /Script/DBDGameplay.LockerGrabInteraction
+/// Size: 0x0010 (0x000680 - 0x000690)
+class ULockerGrabInteraction : public USearchLockerInteraction
+{ 
+public:
+	class UClass*                                      _lockerGrabBlindImmunity;                                   // 0x0680   (0x0008)  
+	class ACamperPlayer*                               _survivorInLocker;                                          // 0x0688   (0x0008)  
 };
 
 /// Struct /Script/DBDGameplay.LullabyKillerData
@@ -1018,7 +1100,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.LullabyFeedbackComponent.OnSlasherSet
-	// void OnSlasherSet(class ASlasherPlayer* killer);                                                                      // [0x5087bf0] Final|Native|Private 
+	// void OnSlasherSet(class ASlasherPlayer* killer);                                                                      // [0x50697c0] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.MapCollectable
@@ -1030,11 +1112,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.MapCollectable.GetChargerComponent
-	// class UChargerComponent* GetChargerComponent();                                                                       // [0x61c32d0] Event|Public|BlueprintEvent|Const 
+	// class UChargerComponent* GetChargerComponent();                                                                       // [0x61d2f50] Event|Public|BlueprintEvent|Const 
 	// Function /Script/DBDGameplay.MapCollectable.GetChargeableComponent
-	// class UChargeableComponent* GetChargeableComponent();                                                                 // [0x61c32d0] Event|Public|BlueprintEvent|Const 
+	// class UChargeableComponent* GetChargeableComponent();                                                                 // [0x61d2f50] Event|Public|BlueprintEvent|Const 
 	// Function /Script/DBDGameplay.MapCollectable.GetActorKnowledgeCollection
-	// class UActorKnowledgeCollection* GetActorKnowledgeCollection();                                                       // [0x61c32d0] Event|Public|BlueprintEvent|Const 
+	// class UActorKnowledgeCollection* GetActorKnowledgeCollection();                                                       // [0x61d2f50] Event|Public|BlueprintEvent|Const 
 };
 
 /// Class /Script/DBDGameplay.MapMarkerActor
@@ -1046,7 +1128,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.MapMarkerActor.OnDestroy
-	// void OnDestroy();                                                                                                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnDestroy();                                                                                                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.Medkit
@@ -1066,21 +1148,21 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.Medkit.UseCharge
-	// void UseCharge(float Seconds);                                                                                        // [0x5087f60] Final|Native|Public|BlueprintCallable 
+	// void UseCharge(float Seconds);                                                                                        // [0x5069aa0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.Medkit.OnMedkitHealedCamper
-	// void OnMedkitHealedCamper(class ADBDPlayer* healedPlayer);                                                            // [0x5087b00] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnMedkitHealedCamper(class ADBDPlayer* healedPlayer);                                                            // [0x50696d0] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDGameplay.Medkit.HasCharge
-	// bool HasCharge();                                                                                                     // [0x5086bc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasCharge();                                                                                                     // [0x5068470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.Medkit.GetChargeMultiplier
-	// float GetChargeMultiplier();                                                                                          // [0x5086b30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChargeMultiplier();                                                                                          // [0x50683e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.Medkit.GetCharge
-	// float GetCharge();                                                                                                    // [0x5086b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCharge();                                                                                                    // [0x50683b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.Medkit.Authority_OnChargeStateChange
-	// void Authority_OnChargeStateChange(bool Empty);                                                                       // [0x50868d0] Final|Native|Protected 
+	// void Authority_OnChargeStateChange(bool Empty);                                                                       // [0x50681a0] Final|Native|Protected 
 	// Function /Script/DBDGameplay.Medkit.Authority_OnAnyOngoingInteractionChanged
-	// void Authority_OnAnyOngoingInteractionChanged(bool IsInteracting);                                                    // [0x5086620] Final|Native|Protected 
+	// void Authority_OnAnyOngoingInteractionChanged(bool IsInteracting);                                                    // [0x5067ef0] Final|Native|Protected 
 	// Function /Script/DBDGameplay.Medkit.Authority_ConsumeIfNotInteracting
-	// void Authority_ConsumeIfNotInteracting();                                                                             // [0x5086600] Final|Native|Protected 
+	// void Authority_ConsumeIfNotInteracting();                                                                             // [0x5067ed0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDGameplay.PointsProvider
@@ -1110,7 +1192,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.MoveToGroundComponent.MoveOwnerToGround
-	// void MoveOwnerToGround();                                                                                             // [0x50878a0] Final|Native|Private 
+	// void MoveOwnerToGround();                                                                                             // [0x5069150] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.MultiSceneComponentPointProvider
@@ -1136,11 +1218,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.NearestOutsideMapBoundsLocator.OnGameEnd
-	// void OnGameEnd(EEndGameReason endGameReason);                                                                         // [0x50879f0] Final|Native|Private 
+	// void OnGameEnd(EEndGameReason endGameReason);                                                                         // [0x5069220] Final|Native|Private 
 	// Function /Script/DBDGameplay.NearestOutsideMapBoundsLocator.OnGameBegin
-	// void OnGameBegin();                                                                                                   // [0x50879d0] Final|Native|Private 
+	// void OnGameBegin();                                                                                                   // [0x5069200] Final|Native|Private 
 	// Function /Script/DBDGameplay.NearestOutsideMapBoundsLocator.Client_InitializeAkLimitPointEvent
-	// void Client_InitializeAkLimitPointEvent();                                                                            // [0x5086ae0] Final|Native|Private 
+	// void Client_InitializeAkLimitPointEvent();                                                                            // [0x5068390] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.NiagaraBlockFeedback
@@ -1176,19 +1258,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.UnlistenToInteractionStart
-	// void UnlistenToInteractionStart(class ADBDPlayer* Player, FGameplayTag& interactionSemantic);                         // [0x5087e80] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void UnlistenToInteractionStart(class ADBDPlayer* Player, FGameplayTag& interactionSemantic);                         // [0x50699c0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.UnlistenToInteractionEnd
-	// void UnlistenToInteractionEnd(class ADBDPlayer* Player, FGameplayTag& interactionSemantic);                           // [0x5087da0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void UnlistenToInteractionEnd(class ADBDPlayer* Player, FGameplayTag& interactionSemantic);                           // [0x50698e0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.OnActorDestroyed
-	// void OnActorDestroyed(class AActor* DestroyedActor);                                                                  // [0x50878c0] Final|Native|Private 
+	// void OnActorDestroyed(class AActor* DestroyedActor);                                                                  // [0x5069170] Final|Native|Private 
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.ListenToInteractionStart
-	// void ListenToInteractionStart(class ADBDPlayer* Player, FGameplayTag& interactionSemantic, FDelegateProperty& interactionDelegate); // [0x5086d80] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ListenToInteractionStart(class ADBDPlayer* Player, FGameplayTag& interactionSemantic, FDelegateProperty& interactionDelegate); // [0x5068630] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.ListenToInteractionEnd
-	// void ListenToInteractionEnd(class ADBDPlayer* Player, FGameplayTag& interactionSemantic, FDelegateProperty& interactionDelegate); // [0x5086c20] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ListenToInteractionEnd(class ADBDPlayer* Player, FGameplayTag& interactionSemantic, FDelegateProperty& interactionDelegate); // [0x50684d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.InteractionMulticastDelegate__DelegateSignature
-	// void InteractionMulticastDelegate__DelegateSignature(class ADBDPlayer* Player, FGameplayTag interactionSemantic);     // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void InteractionMulticastDelegate__DelegateSignature(class ADBDPlayer* Player, FGameplayTag interactionSemantic);     // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.PlayerInteractionListenerComponent.InteractionDelegate__DelegateSignature
-	// void InteractionDelegate__DelegateSignature(class ADBDPlayer* Player, FGameplayTag interactionSemantic);              // [0x61c32d0] Public|Delegate      
+	// void InteractionDelegate__DelegateSignature(class ADBDPlayer* Player, FGameplayTag interactionSemantic);              // [0x61d2f50] Public|Delegate      
 };
 
 /// Class /Script/DBDGameplay.PlayerMovementUtilities
@@ -1200,27 +1282,27 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_SetGamepadYawCurve
-	// void Local_SetGamepadYawCurve(class ADBDPlayer* Player, class UCurveFloat* Curve);                                    // [0x50877e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_SetGamepadYawCurve(class ADBDPlayer* Player, class UCurveFloat* Curve);                                    // [0x5069090] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_SetGamepadPitchCurve
-	// void Local_SetGamepadPitchCurve(class ADBDPlayer* Player, class UCurveFloat* Curve);                                  // [0x5087720] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_SetGamepadPitchCurve(class ADBDPlayer* Player, class UCurveFloat* Curve);                                  // [0x5068fd0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ResetRotationScale
-	// void Local_ResetRotationScale(class ADBDPlayer* Player, float adjustmentTime);                                        // [0x5087660] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ResetRotationScale(class ADBDPlayer* Player, float adjustmentTime);                                        // [0x5068f10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ResetGamepadLookCurves
-	// void Local_ResetGamepadLookCurves(class ADBDPlayer* Player);                                                          // [0x50875e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ResetGamepadLookCurves(class ADBDPlayer* Player);                                                          // [0x5068e90] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyYawScaleMultiplier
-	// void Local_ApplyYawScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);                 // [0x50874e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyYawScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);                 // [0x5068d90] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyRotationScaleMultiplier
-	// void Local_ApplyRotationScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);            // [0x50873e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyRotationScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);            // [0x5068c90] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyPitchScaleMultiplier
-	// void Local_ApplyPitchScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);               // [0x50872e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyPitchScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);               // [0x5068b90] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyMouseYawScaleMultiplier
-	// void Local_ApplyMouseYawScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);            // [0x50871e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyMouseYawScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);            // [0x5068a90] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyMousePitchScaleMultiplier
-	// void Local_ApplyMousePitchScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);          // [0x50870e0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyMousePitchScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);          // [0x5068990] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyGamepadYawScaleMultiplier
-	// void Local_ApplyGamepadYawScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);          // [0x5086fe0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyGamepadYawScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);          // [0x5068890] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PlayerMovementUtilities.Local_ApplyGamepadPitchScaleMultiplier
-	// void Local_ApplyGamepadPitchScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);        // [0x5086ee0] Final|Native|Static|Public|BlueprintCallable 
+	// void Local_ApplyGamepadPitchScaleMultiplier(class ADBDPlayer* Player, float Multiplier, float adjustmentTime);        // [0x5068790] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.PlayersInZoneTracker
@@ -1229,24 +1311,24 @@ class UPlayersInZoneTracker : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,3071) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerEnterZone);                        // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,3072) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerExitZone);                         // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,3143) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerEnterZone);                        // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,3144) /* FMulticastInlineDelegate */ __um(Cosmetic_OnPlayerExitZone);                         // 0x00F8   (0x0010)  
 	TArray<FGameplayTag>                               _tagsPreventingEnteringRange;                               // 0x0108   (0x0010)  
 	TArray<FGameplayTag>                               _tagsToAddToPlayerInZone;                                   // 0x0118   (0x0010)  
 	class USphereComponent*                            _playerTracker;                                             // 0x0128   (0x0008)  
-	SDK_UNDEFINED(16,3073) /* TArray<TWeakObjectPtr<ADBDPlayer*>> */ __um(_playersInRange);                        // 0x0130   (0x0010)  
+	SDK_UNDEFINED(16,3145) /* TArray<TWeakObjectPtr<ADBDPlayer*>> */ __um(_playersInRange);                        // 0x0130   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0140   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.PlayersInZoneTracker.OnRep_PlayersInRange
-	// void OnRep_PlayersInRange();                                                                                          // [0x5087bd0] Final|Native|Private 
+	// void OnRep_PlayersInRange();                                                                                          // [0x5069760] Final|Native|Private 
 	// Function /Script/DBDGameplay.PlayersInZoneTracker.OnCosmeticNeeded__DelegateSignature
-	// void OnCosmeticNeeded__DelegateSignature(class ADBDPlayer* Player);                                                   // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnCosmeticNeeded__DelegateSignature(class ADBDPlayer* Player);                                                   // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.PlayersInZoneTracker.Authority_OnEndPlayerOverlap
-	// void Authority_OnEndPlayerOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5086960] Final|Native|Private 
+	// void Authority_OnEndPlayerOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5068230] Final|Native|Private 
 	// Function /Script/DBDGameplay.PlayersInZoneTracker.Authority_OnBeginPlayerOverlap
-	// void Authority_OnBeginPlayerOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x50866b0] Final|Native|Private|HasOutParms 
+	// void Authority_OnBeginPlayerOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5067f80] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDGameplay.PoseableHusk
@@ -1259,15 +1341,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.PoseableHusk.SetIsActive
-	// void SetIsActive(bool IsActive);                                                                                      // [0x5087c80] Final|Native|Public|BlueprintCallable 
+	// void SetIsActive(bool IsActive);                                                                                      // [0x506deb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.PoseableHusk.OnActiveStateChanged
-	// void OnActiveStateChanged(bool IsActive);                                                                             // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnActiveStateChanged(bool IsActive);                                                                             // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.PoseableHusk.GetIsActive
-	// bool GetIsActive();                                                                                                   // [0x5086b60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsActive();                                                                                                   // [0x506d740] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.PoseableHusk.Cosmetic_OnAnimationPoseCaptured
-	// void Cosmetic_OnAnimationPoseCaptured();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAnimationPoseCaptured();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.PoseableHusk.CapturePose
-	// void CapturePose();                                                                                                   // [0x5086ac0] Final|Native|Public|BlueprintCallable 
+	// void CapturePose();                                                                                                   // [0x506d6d0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.PositionLagCompensationComponent
@@ -1284,8 +1366,9 @@ public:
 class UPowerChargeComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3074) /* FMulticastInlineDelegate */ __um(OnPowerChargeChanged);                              // 0x00B8   (0x0010)  
-	unsigned char                                      UnknownData00_5[0x58];                                      // 0x00C8   (0x0058)  MISSED
+	SDK_UNDEFINED(16,3146) /* FMulticastInlineDelegate */ __um(OnPowerChargeChanged);                              // 0x00B8   (0x0010)  
+	unsigned char                                      UnknownData00_5[0x54];                                      // 0x00C8   (0x0054)  MISSED
+	float                                              _chargeRate;                                                // 0x011C   (0x0004)  
 	FSpeedBasedNetSyncedValue                          _currentCharge;                                             // 0x0120   (0x0038)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0158   (0x0004)  MISSED
 	bool                                               _forceFullCharge;                                           // 0x015C   (0x0001)  
@@ -1294,9 +1377,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.PowerChargeComponent.OnRep_CurrentCharge
-	// void OnRep_CurrentCharge();                                                                                           // [0x5087b90] Final|Native|Private 
+	// void OnRep_CurrentCharge();                                                                                           // [0x506da10] Final|Native|Private 
 	// Function /Script/DBDGameplay.PowerChargeComponent.OnCurrentChargeChanged
-	// void OnCurrentChargeChanged(float value);                                                                             // [0x5087950] Final|Native|Private 
+	// void OnCurrentChargeChanged(float value);                                                                             // [0x506d8c0] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.PowerChargePresentationItemProgressComponent
@@ -1322,7 +1405,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.PowerToggleComponent.OnRep_IsInPower
-	// void OnRep_IsInPower();                                                                                               // [0x5087bb0] Final|Native|Private|Const 
+	// void OnRep_IsInPower();                                                                                               // [0x506da30] Final|Native|Private|Const 
 };
 
 /// Class /Script/DBDGameplay.RangeToActorsTrackerComponent
@@ -1335,7 +1418,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.RangeToActorsTrackerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x508bab0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x506d9d0] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.RangeToActorsTrackerDefaultStrategy
@@ -1347,10 +1430,12 @@ public:
 };
 
 /// Class /Script/DBDGameplay.ReadMapInteraction
-/// Size: 0x0000 (0x000790 - 0x000790)
+/// Size: 0x0010 (0x000790 - 0x0007A0)
 class UReadMapInteraction : public UChargeableInteractionDefinition
 { 
 public:
+	bool                                               _chargeCompleted;                                           // 0x0790   (0x0001)  
+	unsigned char                                      UnknownData00_6[0xF];                                       // 0x0791   (0x000F)  MISSED
 };
 
 /// Class /Script/DBDGameplay.RespawnableComponent
@@ -1359,9 +1444,9 @@ class URespawnableComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,3075) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRespawn);                                // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,3076) /* FMulticastInlineDelegate */ __um(Cosmetic_OnDespawn);                                // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,3077) /* FMulticastInlineDelegate */ __um(Cosmetic_OnFirstSpawn);                             // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,3147) /* FMulticastInlineDelegate */ __um(Cosmetic_OnRespawn);                                // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,3148) /* FMulticastInlineDelegate */ __um(Cosmetic_OnDespawn);                                // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,3149) /* FMulticastInlineDelegate */ __um(Cosmetic_OnFirstSpawn);                             // 0x0108   (0x0010)  
 	bool                                               _hasStartedRespawning;                                      // 0x0118   (0x0001)  
 	bool                                               _hasExceededMinRespawnTime;                                 // 0x0119   (0x0001)  
 	EGameplayElementType                               _gameplayElementSpawnType;                                  // 0x011A   (0x0001)  
@@ -1388,24 +1473,24 @@ public:
 	unsigned char                                      UnknownData06_5[0x7];                                       // 0x0251   (0x0007)  MISSED
 	FDBDTunableRowHandle                               _minDistanceFromActivatedSpawnElements;                     // 0x0258   (0x0028)  
 	unsigned char                                      UnknownData07_5[0x8];                                       // 0x0280   (0x0008)  MISSED
-	SDK_UNDEFINED(16,3078) /* TArray<TEnumAsByte<ECollisionChannel>> */ __um(_collisionChannelsToCheckOnRespawn);  // 0x0288   (0x0010)  
+	SDK_UNDEFINED(16,3150) /* TArray<TEnumAsByte<ECollisionChannel>> */ __um(_collisionChannelsToCheckOnRespawn);  // 0x0288   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.RespawnableComponent.OnRep_OnLocationChanged
-	// void OnRep_OnLocationChanged();                                                                                       // [0x508bb30] Final|Native|Private 
+	// void OnRep_OnLocationChanged();                                                                                       // [0x506da90] Final|Native|Private 
 	// Function /Script/DBDGameplay.RespawnableComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4db2a10] Native|Protected     
+	// void OnLevelReadyToPlay();                                                                                            // [0x4d82970] Native|Protected     
 	// Function /Script/DBDGameplay.RespawnableComponent.OnDespawnCosmeticsComplete
-	// void OnDespawnCosmeticsComplete();                                                                                    // [0x4e01240] Native|Public|BlueprintCallable 
+	// void OnDespawnCosmeticsComplete();                                                                                    // [0x4dd4860] Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.RespawnableComponent.OnCosmeticNeeded__DelegateSignature
-	// void OnCosmeticNeeded__DelegateSignature();                                                                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnCosmeticNeeded__DelegateSignature();                                                                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.RespawnableComponent.Authority_TryTeleport
-	// bool Authority_TryTeleport();                                                                                         // [0x508b6a0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// bool Authority_TryTeleport();                                                                                         // [0x506d680] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.RespawnableComponent.Authority_OnTimerDone
-	// void Authority_OnTimerDone();                                                                                         // [0x4e01260] Final|Native|Private 
+	// void Authority_OnTimerDone();                                                                                         // [0x4dd4880] Final|Native|Private 
 	// Function /Script/DBDGameplay.RespawnableComponent.Authority_OnMinRespawnTimerDone
-	// void Authority_OnMinRespawnTimerDone();                                                                               // [0x4e01220] Final|Native|Private 
+	// void Authority_OnMinRespawnTimerDone();                                                                               // [0x4dd4840] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.SceneComponentPointProvider
@@ -1432,7 +1517,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.SightRevealableComponent.Authority_IsBeingRevealed
-	// bool Authority_IsBeingRevealed();                                                                                     // [0x508ae30] Final|Native|Public|BlueprintCallable 
+	// bool Authority_IsBeingRevealed();                                                                                     // [0x506ce10] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.TerrorRadiusEmitterComponent
@@ -1448,32 +1533,32 @@ public:
 	unsigned char                                      UnknownData01_5[0x1];                                       // 0x024F   (0x0001)  MISSED
 	float                                              _radius;                                                    // 0x0250   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0254   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3079) /* TMap<TWeakObjectPtr<UTerrorRadiusReceiverComponent*>, bool> */ __um(_receiversInTerrorRadiusMap); // 0x0258   (0x0050)  
-	SDK_UNDEFINED(80,3080) /* TMap<TWeakObjectPtr<UTerrorRadiusReceiverComponent*>, bool> */ __um(_receiversPhysicallyInRadiusRangeMap); // 0x02A8   (0x0050)  
+	SDK_UNDEFINED(80,3151) /* TMap<TWeakObjectPtr<UTerrorRadiusReceiverComponent*>, bool> */ __um(_receiversInTerrorRadiusMap); // 0x0258   (0x0050)  
+	SDK_UNDEFINED(80,3152) /* TMap<TWeakObjectPtr<UTerrorRadiusReceiverComponent*>, bool> */ __um(_receiversPhysicallyInRadiusRangeMap); // 0x02A8   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x18];                                      // 0x02F8   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.SetTerrorRadius
-	// void SetTerrorRadius(float Radius);                                                                                   // [0x508c060] Final|Native|Public|BlueprintCallable 
+	// void SetTerrorRadius(float Radius);                                                                                   // [0x506e050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.SetSimulatedFixedDistance
-	// void SetSimulatedFixedDistance(float distance);                                                                       // [0x508bfe0] Final|Native|Public|BlueprintCallable 
+	// void SetSimulatedFixedDistance(float distance);                                                                       // [0x506dfd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.SetIsFakeTerrorRadius
-	// void SetIsFakeTerrorRadius(bool value);                                                                               // [0x508bf50] Final|Native|Public|BlueprintCallable 
+	// void SetIsFakeTerrorRadius(bool value);                                                                               // [0x506df40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.SetImitatesAudioOnly
-	// void SetImitatesAudioOnly(bool imitatesAudioOnly);                                                                    // [0x508bec0] Final|Native|Public|BlueprintCallable 
+	// void SetImitatesAudioOnly(bool imitatesAudioOnly);                                                                    // [0x506de20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.SetEmitterActive
-	// void SetEmitterActive(bool Active);                                                                                   // [0x508be30] Final|Native|Public|BlueprintCallable 
+	// void SetEmitterActive(bool Active);                                                                                   // [0x506dd90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.IsInTerrorRadius
-	// bool IsInTerrorRadius(class UTerrorRadiusReceiverComponent* receiver);                                                // [0x508b880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInTerrorRadius(class UTerrorRadiusReceiverComponent* receiver);                                                // [0x506d820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.GetSimulatedFixedDistance
-	// float GetSimulatedFixedDistance();                                                                                    // [0x508b820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSimulatedFixedDistance();                                                                                    // [0x506d7c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.GetRadius
-	// float GetRadius();                                                                                                    // [0x508b800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRadius();                                                                                                    // [0x506d7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.GetIsActive
-	// bool GetIsActive();                                                                                                   // [0x508b7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsActive();                                                                                                   // [0x506d770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterComponent.GetImitatesAudioOnly
-	// bool GetImitatesAudioOnly();                                                                                          // [0x508b7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetImitatesAudioOnly();                                                                                          // [0x506d710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDGameplay.SlasherTerrorRadiusEmitterComponent
@@ -1486,7 +1571,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.SlasherTerrorRadiusEmitterComponent.SetBaseTerrorRadius
-	// void SetBaseTerrorRadius(float baseTerrorRadius, bool progressive);                                                   // [0x508bd50] Final|Native|Public|BlueprintCallable 
+	// void SetBaseTerrorRadius(float baseTerrorRadius, bool progressive);                                                   // [0x506dcb0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.StaticMeshBlockFeedback
@@ -1507,7 +1592,7 @@ public:
 	class UBoxComponent*                               _overlapVolume;                                             // 0x0248   (0x0008)  
 	ESteamPipeState                                    _currentSteamPipeState;                                     // 0x0250   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0251   (0x0007)  MISSED
-	SDK_UNDEFINED(16,3081) /* TArray<TWeakObjectPtr<USteamPipeEffectComponent*>> */ __um(_overlappingPlayerComponents); // 0x0258   (0x0010)  
+	SDK_UNDEFINED(16,3153) /* TArray<TWeakObjectPtr<USteamPipeEffectComponent*>> */ __um(_overlappingPlayerComponents); // 0x0258   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x30];                                      // 0x0268   (0x0030)  MISSED
 	float                                              _debugResetTimer;                                           // 0x0298   (0x0004)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x029C   (0x0004)  MISSED
@@ -1518,15 +1603,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.SteamPipe.OnRep_SteamPipeState
-	// void OnRep_SteamPipeState();                                                                                          // [0x508bb70] Final|Native|Private 
+	// void OnRep_SteamPipeState();                                                                                          // [0x506dad0] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipe.GetCurrentSteamPipeState
-	// ESteamPipeState GetCurrentSteamPipeState();                                                                           // [0x508b780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// ESteamPipeState GetCurrentSteamPipeState();                                                                           // [0x506d6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.SteamPipe.Cosmetic_OnSteamPipeStateChanged
-	// void Cosmetic_OnSteamPipeStateChanged(ESteamPipeState NewState);                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSteamPipeStateChanged(ESteamPipeState NewState);                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.SteamPipe.Authority_OnEndOverlap
-	// void Authority_OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x508b110] Final|Native|Private 
+	// void Authority_OnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x506d0f0] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipe.Authority_OnBeginOverlap
-	// void Authority_OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x508ae60] Final|Native|Private|HasOutParms 
+	// void Authority_OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x506ce40] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDGameplay.SteamPipeEffectComponent
@@ -1537,15 +1622,15 @@ public:
 	class UClass*                                      _hinderedEffectClass;                                       // 0x00B8   (0x0008)  
 	TArray<FGameplayTag>                               _stateTagsToIgnore;                                         // 0x00C0   (0x0010)  
 	FTagStateBool                                      _isInActiveSteamPipeZone;                                   // 0x00D0   (0x0030)  
-	SDK_UNDEFINED(8,3082) /* TWeakObjectPtr<ASteamPipe*> */ __um(_overlappingSteamPipe);                           // 0x0100   (0x0008)  
+	SDK_UNDEFINED(8,3154) /* TWeakObjectPtr<ASteamPipe*> */ __um(_overlappingSteamPipe);                           // 0x0100   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0108   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.SteamPipeEffectComponent.Authority_OnStoppedCrouching
-	// void Authority_OnStoppedCrouching(FGameplayTag GameplayTag, FGameEventData& GameEventData);                           // [0x508b550] Final|Native|Private|HasOutParms 
+	// void Authority_OnStoppedCrouching(FGameplayTag GameplayTag, FGameEventData& GameEventData);                           // [0x506d530] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDGameplay.SteamPipeEffectComponent.Authority_OnHealthStateChanged
-	// void Authority_OnHealthStateChanged(FGameplayTag GameplayTag, FGameEventData& GameEventData);                         // [0x508b270] Final|Native|Private|HasOutParms 
+	// void Authority_OnHealthStateChanged(FGameplayTag GameplayTag, FGameEventData& GameEventData);                         // [0x506d250] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDGameplay.SteamPipeManagerComponent
@@ -1557,26 +1642,26 @@ public:
 	class UClass*                                      _chargeableComponentClass;                                  // 0x00C0   (0x0008)  
 	FDBDTunableRowHandle                               _resetSwitchCooldownTime;                                   // 0x00C8   (0x0028)  
 	class UChargeableComponent*                        _sharedChargeableComponent;                                 // 0x00F0   (0x0008)  
-	SDK_UNDEFINED(16,3083) /* TArray<TWeakObjectPtr<ASteamPipe*>> */ __um(_steamPipes);                            // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,3084) /* TArray<TWeakObjectPtr<ASteamPipeResetSwitch*>> */ __um(_steamPipeResetSwitches);     // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,3155) /* TArray<TWeakObjectPtr<ASteamPipe*>> */ __um(_steamPipes);                            // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,3156) /* TArray<TWeakObjectPtr<ASteamPipeResetSwitch*>> */ __um(_steamPipeResetSwitches);     // 0x0108   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x40];                                      // 0x0118   (0x0040)  MISSED
-	SDK_UNDEFINED(16,3085) /* TArray<TWeakObjectPtr<ADBDPlayer*>> */ __um(_interactingPlayersArray);               // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,3157) /* TArray<TWeakObjectPtr<ADBDPlayer*>> */ __um(_interactingPlayersArray);               // 0x0158   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0168   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.SteamPipeManagerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x508bad0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x506d9f0] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeManagerComponent.Authority_UpdateCanUseResetSwitch
-	// void Authority_UpdateCanUseResetSwitch();                                                                             // [0x508b6d0] Final|Native|Private 
+	// void Authority_UpdateCanUseResetSwitch();                                                                             // [0x506d6b0] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeManagerComponent.Authority_OnSwitchCooldownComplete
-	// void Authority_OnSwitchCooldownComplete();                                                                            // [0x508b660] Final|Native|Private 
+	// void Authority_OnSwitchCooldownComplete();                                                                            // [0x506d640] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeManagerComponent.Authority_OnSteamPipeStateChanged
-	// void Authority_OnSteamPipeStateChanged(class ASteamPipe* SteamPipe, ESteamPipeState NewState);                        // [0x508b480] Final|Native|Private 
+	// void Authority_OnSteamPipeStateChanged(class ASteamPipe* SteamPipe, ESteamPipeState NewState);                        // [0x506d460] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeManagerComponent.Authority_OnResetInteractionComplete
-	// void Authority_OnResetInteractionComplete(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                 // [0x508b380] Final|Native|Private|HasOutParms 
+	// void Authority_OnResetInteractionComplete(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                 // [0x506d360] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDGameplay.SteamPipeManagerComponent.Authority_OnCharacterAdded
-	// void Authority_OnCharacterAdded(class ADBDPlayer* Character);                                                         // [0x508b080] Final|Native|Private 
+	// void Authority_OnCharacterAdded(class ADBDPlayer* Character);                                                         // [0x506d060] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.SteamPipeResetSwitch
@@ -1593,7 +1678,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x038D   (0x0003)  MISSED
 	int32_t                                            _numberOfDisabledSteamPipes;                                // 0x0390   (0x0004)  
 	int32_t                                            _totalSteamPipesInLevel;                                    // 0x0394   (0x0004)  
-	SDK_UNDEFINED(8,3086) /* TWeakObjectPtr<USteamPipeManagerComponent*> */ __um(_steamPipeManagerComponent);      // 0x0398   (0x0008)  
+	SDK_UNDEFINED(8,3158) /* TWeakObjectPtr<USteamPipeManagerComponent*> */ __um(_steamPipeManagerComponent);      // 0x0398   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x03A0   (0x0004)  MISSED
 	bool                                               _canUseResetSwitch;                                         // 0x03A4   (0x0001)  
 	unsigned char                                      UnknownData03_6[0x3];                                       // 0x03A5   (0x0003)  MISSED
@@ -1601,29 +1686,29 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.OnRep_SharedChargeableComponent
-	// void OnRep_SharedChargeableComponent();                                                                               // [0x508bb50] Final|Native|Private 
+	// void OnRep_SharedChargeableComponent();                                                                               // [0x506dab0] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.OnRep_NumberOfDisabledSteamPipes
-	// void OnRep_NumberOfDisabledSteamPipes();                                                                              // [0x508bb10] Final|Native|Private 
+	// void OnRep_NumberOfDisabledSteamPipes();                                                                              // [0x506da70] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.OnRep_IsOnCooldown
-	// void OnRep_IsOnCooldown();                                                                                            // [0x508baf0] Final|Native|Private 
+	// void OnRep_IsOnCooldown();                                                                                            // [0x506da50] Final|Native|Private 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.GetTotalSteamPipesInLevel
-	// int32_t GetTotalSteamPipesInLevel();                                                                                  // [0x508b850] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTotalSteamPipesInLevel();                                                                                  // [0x506d7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.Cosmetic_OnTotalSteamPipesInLevelChanged
-	// void Cosmetic_OnTotalSteamPipesInLevelChanged(int32_t totalSteamPipesInLevel);                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTotalSteamPipesInLevelChanged(int32_t totalSteamPipesInLevel);                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.Cosmetic_OnSwitchTriggered
-	// void Cosmetic_OnSwitchTriggered(float cooldownTime);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSwitchTriggered(float cooldownTime);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.Cosmetic_OnCooldownDone
-	// void Cosmetic_OnCooldownDone();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCooldownDone();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDGameplay.SteamPipeResetSwitch.Cosmetic_NumberOfDisabledSteamPipesChanged
-	// void Cosmetic_NumberOfDisabledSteamPipesChanged(int32_t numberOfDisabledSteamPipes);                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_NumberOfDisabledSteamPipesChanged(int32_t numberOfDisabledSteamPipes);                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDGameplay.SteamPipeResetSwitchInteraction
-/// Size: 0x0040 (0x000790 - 0x0007D0)
+/// Size: 0x0050 (0x000790 - 0x0007E0)
 class USteamPipeResetSwitchInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x40];                                      // 0x0790   (0x0040)  MISSED
+	unsigned char                                      UnknownData00_1[0x50];                                      // 0x0790   (0x0050)  MISSED
 };
 
 /// Class /Script/DBDGameplay.StruggleComponent
@@ -1638,9 +1723,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.StruggleComponent.OnSkillCheckEnd
-	// void OnSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player);  // [0x508bb90] Final|Native|Private 
+	// void OnSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player);  // [0x506daf0] Final|Native|Private 
 	// Function /Script/DBDGameplay.StruggleComponent.Authority_TryActivateSkillCheck
-	// void Authority_TryActivateSkillCheck();                                                                               // [0x508b680] Final|Native|Private 
+	// void Authority_TryActivateSkillCheck();                                                                               // [0x506d660] Final|Native|Private 
 };
 
 /// Class /Script/DBDGameplay.SurvivorAimStanceCameraDirectionProvider
@@ -1685,11 +1770,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.TerrorRadiusEmitterFunctionLibrary.GetActiveFakeTerrorRadiusEmittersCount
-	// int32_t GetActiveFakeTerrorRadiusEmittersCount(class UObject* WorldContextObject);                                    // [0x508b6f0] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
+	// int32_t GetActiveFakeTerrorRadiusEmittersCount(class UObject* WorldContextObject);                                    // [0x50700d0] Final|Native|Static|Private|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DBDGameplay.TerrorRadiusReceiverComponent
-/// Size: 0x0118 (0x0000B8 - 0x0001D0)
+/// Size: 0x0148 (0x0000B8 - 0x000200)
 class UTerrorRadiusReceiverComponent : public UActorComponent
 { 
 public:
@@ -1697,17 +1782,17 @@ public:
 	class UCurveFloat*                                 _trVerticalDistanceFactor;                                  // 0x00E8   (0x0008)  
 	float                                              _heartbeatSmoothingInterpolationSpeed;                      // 0x00F0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00F4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,3087) /* FMulticastInlineDelegate */ __um(OnIsInTerrorRadiusChanged);                         // 0x00F8   (0x0010)  
-	unsigned char                                      UnknownData02_6[0xC8];                                      // 0x0108   (0x00C8)  MISSED
+	SDK_UNDEFINED(16,3159) /* FMulticastInlineDelegate */ __um(OnIsInTerrorRadiusChanged);                         // 0x00F8   (0x0010)  
+	unsigned char                                      UnknownData02_6[0xF8];                                      // 0x0108   (0x00F8)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDGameplay.TerrorRadiusReceiverComponent.OnIsInTerrorRadiusChanged__DelegateSignature
-	// void OnIsInTerrorRadiusChanged__DelegateSignature();                                                                  // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsInTerrorRadiusChanged__DelegateSignature();                                                                  // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDGameplay.TerrorRadiusReceiverComponent.IsInTerrorRadiusRange
-	// bool IsInTerrorRadiusRange();                                                                                         // [0x508b950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInTerrorRadiusRange();                                                                                         // [0x50701c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.TerrorRadiusReceiverComponent.IsInTerrorRadius
-	// bool IsInTerrorRadius();                                                                                              // [0x508b920] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInTerrorRadius();                                                                                              // [0x5070190] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/DBDGameplay.HideHeartIndicatorWithDelay
@@ -1729,7 +1814,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.TerrorRadiusScreenIndicatorComponent.OnHeartStateChanged
-	// void OnHeartStateChanged(FGameplayTag heartState);                                                                    // [0x508b980] Final|Native|Private 
+	// void OnHeartStateChanged(FGameplayTag heartState);                                                                    // [0x50701f0] Final|Native|Private 
 };
 
 /// Struct /Script/DBDGameplay.TerrorRadiusVisualIndicatorHeartStateRange
@@ -1745,10 +1830,10 @@ struct FTerrorRadiusVisualIndicatorHeartStateRange
 class UTerrorRadiusVisualFeedbackComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3088) /* FMulticastInlineDelegate */ __um(OnHeartStateChanged);                               // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3160) /* FMulticastInlineDelegate */ __um(OnHeartStateChanged);                               // 0x00B8   (0x0010)  
 	TArray<FTerrorRadiusVisualIndicatorHeartStateRange> _heartStateRanges;                                         // 0x00C8   (0x0010)  
 	TArray<FGameplayTag>                               _hideHeartStateTags;                                        // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,3089) /* FMulticastInlineDelegate */ __um(OnHeartBeat);                                       // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,3161) /* FMulticastInlineDelegate */ __um(OnHeartBeat);                                       // 0x00E8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x78];                                      // 0x00F8   (0x0078)  MISSED
 };
 
@@ -1791,14 +1876,14 @@ class UWiggleComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,3090) /* FMulticastInlineDelegate */ __um(OnFailSkillCheckAudioEvent);                        // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,3091) /* FMulticastInlineDelegate */ __um(OnMissSkillCheckAudioEvent);                        // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,3092) /* FString */               __um(AUDIO_EVENT_SKILL_CHECK_WARNING);                      // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,3093) /* FString */               __um(AUDIO_EVENT_SKILL_CHECK_GOOD);                         // 0x00F0   (0x0010)  
-	SDK_UNDEFINED(16,3094) /* FString */               __um(AUDIO_EVENT_SKILL_CHECK_GREAT);                        // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,3162) /* FMulticastInlineDelegate */ __um(OnFailSkillCheckAudioEvent);                        // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,3163) /* FMulticastInlineDelegate */ __um(OnMissSkillCheckAudioEvent);                        // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,3164) /* FString */               __um(AUDIO_EVENT_SKILL_CHECK_WARNING);                      // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,3165) /* FString */               __um(AUDIO_EVENT_SKILL_CHECK_GOOD);                         // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,3166) /* FString */               __um(AUDIO_EVENT_SKILL_CHECK_GREAT);                        // 0x0100   (0x0010)  
 	class UChargeableComponent*                        _wiggleProgress;                                            // 0x0110   (0x0008)  
-	SDK_UNDEFINED(8,3095) /* TWeakObjectPtr<ASlasherPlayer*> */ __um(_killerWigglingFrom);                         // 0x0118   (0x0008)  
-	SDK_UNDEFINED(8,3096) /* TWeakObjectPtr<UInputComponent*> */ __um(_inputComponent);                            // 0x0120   (0x0008)  
+	SDK_UNDEFINED(8,3167) /* TWeakObjectPtr<ASlasherPlayer*> */ __um(_killerWigglingFrom);                         // 0x0118   (0x0008)  
+	SDK_UNDEFINED(8,3168) /* TWeakObjectPtr<UInputComponent*> */ __um(_inputComponent);                            // 0x0120   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x110];                                     // 0x0128   (0x0110)  MISSED
 	float                                              _wiggleInputLockTime;                                       // 0x0238   (0x0004)  
 	unsigned char                                      UnknownData02_6[0xC];                                       // 0x023C   (0x000C)  MISSED
@@ -1806,33 +1891,33 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.WiggleComponent.Server_OnWiggleEnd
-	// void Server_OnWiggleEnd();                                                                                            // [0x4e01240] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_OnWiggleEnd();                                                                                            // [0x4dd4860] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/DBDGameplay.WiggleComponent.OnWiggleSkillCheckEnd
-	// void OnWiggleSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player); // [0x508e100] Final|Native|Private 
+	// void OnWiggleSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player); // [0x5070810] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnWiggleInput
-	// void OnWiggleInput();                                                                                                 // [0x508e0e0] Final|Native|Private 
+	// void OnWiggleInput();                                                                                                 // [0x50707f0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnWiggleEnd
-	// void OnWiggleEnd();                                                                                                   // [0x508e0c0] Final|Native|Private 
+	// void OnWiggleEnd();                                                                                                   // [0x50707d0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnPlayerPickedUpStart
-	// void OnPlayerPickedUpStart(class ADBDPlayer* picker);                                                                 // [0x508df10] Final|Native|Private 
+	// void OnPlayerPickedUpStart(class ADBDPlayer* picker);                                                                 // [0x5070620] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnPlayerPickedUpEnd
-	// void OnPlayerPickedUpEnd(class ADBDPlayer* picker);                                                                   // [0x508de80] Final|Native|Private 
+	// void OnPlayerPickedUpEnd(class ADBDPlayer* picker);                                                                   // [0x5070590] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnPickedUpSkillCheckEnd
-	// void OnPickedUpSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player); // [0x508dcc0] Final|Native|Private 
+	// void OnPickedUpSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player); // [0x50703d0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x508dca0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x50703b0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnKeyBindingsChanged
-	// void OnKeyBindingsChanged();                                                                                          // [0x508dc80] Final|Native|Private 
+	// void OnKeyBindingsChanged();                                                                                          // [0x5070390] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.OnHideWiggleSkillCheck
-	// void OnHideWiggleSkillCheck(ESkillCheckCustomType Type);                                                              // [0x508db80] Final|Native|Private 
+	// void OnHideWiggleSkillCheck(ESkillCheckCustomType Type);                                                              // [0x5070290] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleComponent.GetWiggleChargeable
-	// class UChargeableComponent* GetWiggleChargeable();                                                                    // [0x508db50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UChargeableComponent* GetWiggleChargeable();                                                                    // [0x5070160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDGameplay.WiggleComponent.DBD_SetWiggleProgress
-	// void DBD_SetWiggleProgress(float ProgressPercent);                                                                    // [0x49bd730] Final|Exec|Native|Public|Const 
+	// void DBD_SetWiggleProgress(float ProgressPercent);                                                                    // [0x496cad0] Final|Exec|Native|Public|Const 
 	// Function /Script/DBDGameplay.WiggleComponent.Authority_TutorialEndWiggle
-	// void Authority_TutorialEndWiggle();                                                                                   // [0x508db30] Final|Native|Public|BlueprintCallable 
+	// void Authority_TutorialEndWiggle();                                                                                   // [0x50700b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.WiggleComponent.Authority_AddWiggleCharge
-	// void Authority_AddWiggleCharge(float ChargeAmount);                                                                   // [0x508d8e0] Final|Native|Public|BlueprintCallable 
+	// void Authority_AddWiggleCharge(float ChargeAmount);                                                                   // [0x506fe60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDGameplay.WiggleFreeComponent
@@ -1846,13 +1931,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.WiggleFreeComponent.Authority_OnWiggleEnd
-	// void Authority_OnWiggleEnd();                                                                                         // [0x508db10] Final|Native|Private 
+	// void Authority_OnWiggleEnd();                                                                                         // [0x5070090] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleFreeComponent.Authority_OnPlayerPickedUpEnd
-	// void Authority_OnPlayerPickedUpEnd(class ADBDPlayer* picker);                                                         // [0x508da80] Final|Native|Private 
+	// void Authority_OnPlayerPickedUpEnd(class ADBDPlayer* picker);                                                         // [0x5070000] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleFreeComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x508da60] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x506ffe0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleFreeComponent.Authority_OnChargeableCompleteEvent
-	// void Authority_OnChargeableCompleteEvent(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                  // [0x508d960] Final|Native|Private|HasOutParms 
+	// void Authority_OnChargeableCompleteEvent(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                  // [0x506fee0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDGameplay.WiggleMotionComponent
@@ -1869,17 +1954,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDGameplay.WiggleMotionComponent.SetIsBeingWiggled
-	// void SetIsBeingWiggled(bool isBeingWiggled);                                                                          // [0x508e510] Final|Native|Public|BlueprintCallable 
+	// void SetIsBeingWiggled(bool isBeingWiggled);                                                                          // [0x5070c20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDGameplay.WiggleMotionComponent.Server_SetIsBeingWiggled
-	// void Server_SetIsBeingWiggled(bool isBeingWiggled);                                                                   // [0x508e480] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetIsBeingWiggled(bool isBeingWiggled);                                                                   // [0x5070b90] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/DBDGameplay.WiggleMotionComponent.OnWiggleSkillCheckEnd
-	// void OnWiggleSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player); // [0x508e2c0] Final|Native|Private 
+	// void OnWiggleSkillCheckEnd(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player); // [0x50709d0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleMotionComponent.OnSurvivorRemoved
-	// void OnSurvivorRemoved(class ADBDPlayer* Target);                                                                     // [0x508e030] Final|Native|Private 
+	// void OnSurvivorRemoved(class ADBDPlayer* Target);                                                                     // [0x5070740] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleMotionComponent.OnSurvivorPickedUp
-	// void OnSurvivorPickedUp(class ADBDPlayer* Target);                                                                    // [0x508dfa0] Final|Native|Private 
+	// void OnSurvivorPickedUp(class ADBDPlayer* Target);                                                                    // [0x50706b0] Final|Native|Private 
 	// Function /Script/DBDGameplay.WiggleMotionComponent.OnHideWiggleSkillCheck
-	// void OnHideWiggleSkillCheck(ESkillCheckCustomType Type);                                                              // [0x508dc00] Final|Native|Private 
+	// void OnHideWiggleSkillCheck(ESkillCheckCustomType Type);                                                              // [0x5070310] Final|Native|Private 
 };
 
 /// Struct /Script/DBDGameplay.AimDirection

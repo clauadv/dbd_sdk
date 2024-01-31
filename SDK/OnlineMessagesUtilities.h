@@ -46,7 +46,7 @@ struct FClaimableInboxMessageData
 	EClaimableInboxMessageType                         Type;                                                       // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	int32_t                                            Amount;                                                     // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,1590) /* FString */               __um(ID);                                                   // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1615) /* FString */               __um(ID);                                                   // 0x0008   (0x0010)  
 };
 
 /// Struct /Script/OnlineMessagesUtilities.InboxMessageData
@@ -54,11 +54,11 @@ struct FClaimableInboxMessageData
 struct FInboxMessageData
 { 
 	int64_t                                            ID;                                                         // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,1591) /* FString */               __um(Origin);                                               // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,1592) /* FString */               __um(RecipientId);                                          // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,1616) /* FString */               __um(Origin);                                               // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,1617) /* FString */               __um(RecipientId);                                          // 0x0018   (0x0010)  
 	int64_t                                            ReceivedTimestamp;                                          // 0x0028   (0x0008)  
-	SDK_UNDEFINED(16,1593) /* FString */               __um(Subject);                                              // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1594) /* FString */               __um(Body);                                                 // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1618) /* FString */               __um(Subject);                                              // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1619) /* FString */               __um(Body);                                                 // 0x0040   (0x0010)  
 	TArray<FClaimableInboxMessageData>                 Claimable;                                                  // 0x0050   (0x0010)  
 	bool                                               AreRewardsClaimed;                                          // 0x0060   (0x0001)  
 	bool                                               IsRead;                                                     // 0x0061   (0x0001)  

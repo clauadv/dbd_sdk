@@ -18,7 +18,7 @@ struct FOpenCurrentCalendarMessage
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FLoginMessage
 { 
-	SDK_UNDEFINED(16,4649) /* FString */               __um(MirrorsId);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5043) /* FString */               __um(MirrorsId);                                            // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/GenericGameMessages.RateAppMessage
@@ -46,7 +46,7 @@ struct FForceLogoutMessage
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FSkuDetailsMessage
 { 
-	SDK_UNDEFINED(80,4650) /* TMap<FString, FString> */ __um(BundlePrices);                                        // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,5044) /* TMap<FString, FString> */ __um(BundlePrices);                                        // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/GenericGameMessages.BuyTipsMessage
@@ -62,15 +62,15 @@ struct FOrderDoneMessage
 { 
 	int32_t                                            Code;                                                       // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4651) /* FString */               __um(OrderId);                                              // 0x0008   (0x0010)  
-	SDK_UNDEFINED(16,4652) /* FString */               __um(OrderChannel);                                         // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5045) /* FString */               __um(OrderId);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5046) /* FString */               __um(OrderChannel);                                         // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/GenericGameMessages.BuyCurrencyMessage
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FBuyCurrencyMessage
 { 
-	SDK_UNDEFINED(16,4653) /* FString */               __um(ItemId);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5047) /* FString */               __um(ItemId);                                               // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/GenericGameMessages.FAQMessage
@@ -84,21 +84,21 @@ struct FFAQMessage
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FLanguageMessage
 { 
-	SDK_UNDEFINED(16,4654) /* FString */               __um(Language);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5048) /* FString */               __um(Language);                                             // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/GenericGameMessages.PlayerNameMessage
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FPlayerNameMessage
 { 
-	SDK_UNDEFINED(16,4655) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5049) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/GenericGameMessages.GameVersionMessage
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FGameVersionMessage
 { 
-	SDK_UNDEFINED(16,4656) /* FString */               __um(Version);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5050) /* FString */               __um(Version);                                              // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/GenericGameMessages.MatchEndMessage
@@ -134,9 +134,9 @@ struct FTutorialEndMessage
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FLoginJsonMessage
 { 
-	SDK_UNDEFINED(16,4657) /* FString */               __um(LoginJson);                                            // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4658) /* FString */               __um(LoginType);                                            // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,4659) /* FString */               __um(RoleID);                                               // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5051) /* FString */               __um(LoginJson);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5052) /* FString */               __um(LoginType);                                            // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5053) /* FString */               __um(RoleID);                                               // 0x0020   (0x0010)  
 	bool                                               IsNewAccount;                                               // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0031   (0x0007)  MISSED
 };

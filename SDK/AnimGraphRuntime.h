@@ -335,25 +335,25 @@ public:
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_TwoBoneIK
-	// void K2_TwoBoneIK(FVector& RootPos, FVector& JointPos, FVector& EndPos, FVector& JointTarget, FVector& effector, FVector& OutJointPos, FVector& OutEndPos, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale); // [0x7160ad0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void K2_TwoBoneIK(FVector& RootPos, FVector& JointPos, FVector& EndPos, FVector& JointTarget, FVector& effector, FVector& OutJointPos, FVector& OutEndPos, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale); // [0x7170870] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_StartProfilingTimer
-	// void K2_StartProfilingTimer();                                                                                        // [0x7160ab0] Final|Native|Static|Public|BlueprintCallable 
+	// void K2_StartProfilingTimer();                                                                                        // [0x7170850] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseVectorAndRemap
-	// FVector K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ); // [0x71607d0] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ); // [0x7170570] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_MakePerlinNoiseAndRemap
-	// float K2_MakePerlinNoiseAndRemap(float value, float RangeOutMin, float RangeOutMax);                                  // [0x71606b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float K2_MakePerlinNoiseAndRemap(float value, float RangeOutMin, float RangeOutMax);                                  // [0x7170450] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_LookAt
-	// FTransform K2_LookAt(FTransform& CurrentTransform, FVector& targetPosition, FVector LookAtVector, bool bUseUpVector, FVector UpVector, float ClampConeInDegree); // [0x7160410] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FTransform K2_LookAt(FTransform& CurrentTransform, FVector& targetPosition, FVector LookAtVector, bool bUseUpVector, FVector UpVector, float ClampConeInDegree); // [0x71701b0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_EndProfilingTimer
-	// float K2_EndProfilingTimer(bool bLog, FString LogPrefix);                                                             // [0x7160320] Final|Native|Static|Public|BlueprintCallable 
+	// float K2_EndProfilingTimer(bool bLog, FString LogPrefix);                                                             // [0x71700c0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_DistanceBetweenTwoSocketsAndMapRange
-	// float K2_DistanceBetweenTwoSocketsAndMapRange(class USkeletalMeshComponent* Component, FName SocketOrBoneNameA, TEnumAsByte<ERelativeTransformSpace> SocketSpaceA, FName SocketOrBoneNameB, TEnumAsByte<ERelativeTransformSpace> SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax); // [0x7160010] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float K2_DistanceBetweenTwoSocketsAndMapRange(class USkeletalMeshComponent* Component, FName SocketOrBoneNameA, TEnumAsByte<ERelativeTransformSpace> SocketSpaceA, FName SocketOrBoneNameB, TEnumAsByte<ERelativeTransformSpace> SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax); // [0x716fdb0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_DirectionBetweenSockets
-	// FVector K2_DirectionBetweenSockets(class USkeletalMeshComponent* Component, FName SocketOrBoneNameFrom, FName SocketOrBoneNameTo); // [0x715fec0] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
+	// FVector K2_DirectionBetweenSockets(class USkeletalMeshComponent* Component, FName SocketOrBoneNameFrom, FName SocketOrBoneNameTo); // [0x716fc60] Final|Native|Static|Public|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_CalculateVelocityFromSockets
-	// float K2_CalculateVelocityFromSockets(float DeltaSeconds, class USkeletalMeshComponent* Component, FName SocketOrBoneName, FName ReferenceSocketOrBone, TEnumAsByte<ERelativeTransformSpace> SocketSpace, FVector OffsetInBoneSpace, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax, EEasingFuncType EasingType, FRuntimeFloatCurve& CustomCurve); // [0x715fa30] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float K2_CalculateVelocityFromSockets(float DeltaSeconds, class USkeletalMeshComponent* Component, FName SocketOrBoneName, FName ReferenceSocketOrBone, TEnumAsByte<ERelativeTransformSpace> SocketSpace, FVector OffsetInBoneSpace, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax, EEasingFuncType EasingType, FRuntimeFloatCurve& CustomCurve); // [0x716f7d0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/AnimGraphRuntime.KismetAnimationLibrary.K2_CalculateVelocityFromPositionHistory
-	// float K2_CalculateVelocityFromPositionHistory(float DeltaSeconds, FVector position, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax); // [0x715f810] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// float K2_CalculateVelocityFromPositionHistory(float DeltaSeconds, FVector position, FPositionHistory& History, int32_t NumberOfSamples, float VelocityMin, float VelocityMax); // [0x716f5b0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.PlayMontageCallbackProxy
@@ -361,25 +361,25 @@ public:
 class UPlayMontageCallbackProxy : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,3447) /* FMulticastInlineDelegate */ __um(OnCompleted);                                       // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,3448) /* FMulticastInlineDelegate */ __um(OnBlendOut);                                        // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,3449) /* FMulticastInlineDelegate */ __um(OnInterrupted);                                     // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,3450) /* FMulticastInlineDelegate */ __um(OnNotifyBegin);                                     // 0x0060   (0x0010)  
-	SDK_UNDEFINED(16,3451) /* FMulticastInlineDelegate */ __um(OnNotifyEnd);                                       // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,3563) /* FMulticastInlineDelegate */ __um(OnCompleted);                                       // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,3564) /* FMulticastInlineDelegate */ __um(OnBlendOut);                                        // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,3565) /* FMulticastInlineDelegate */ __um(OnInterrupted);                                     // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,3566) /* FMulticastInlineDelegate */ __um(OnNotifyBegin);                                     // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,3567) /* FMulticastInlineDelegate */ __um(OnNotifyEnd);                                       // 0x0070   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x30];                                      // 0x0080   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyEndReceived
-	// void OnNotifyEndReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                // [0x7161e70] Final|Native|Protected|HasOutParms 
+	// void OnNotifyEndReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);                // [0x7171c10] Final|Native|Protected|HasOutParms 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnNotifyBeginReceived
-	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x7161d70] Final|Native|Protected|HasOutParms 
+	// void OnNotifyBeginReceived(FName NotifyName, FBranchingPointNotifyPayload& BranchingPointNotifyPayload);              // [0x7171b10] Final|Native|Protected|HasOutParms 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageEnded
-	// void OnMontageEnded(FGuid MontageInstanceId, class UAnimMontage* Montage, bool bInterrupted);                         // [0x7161c50] Final|Native|Protected|HasDefaults 
+	// void OnMontageEnded(FGuid MontageInstanceId, class UAnimMontage* Montage, bool bInterrupted);                         // [0x71719f0] Final|Native|Protected|HasDefaults 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.OnMontageBlendingOut
-	// void OnMontageBlendingOut(FGuid MontageInstanceId, class UAnimMontage* Montage, bool bInterrupted);                   // [0x7161b30] Final|Native|Protected|HasDefaults 
+	// void OnMontageBlendingOut(FGuid MontageInstanceId, class UAnimMontage* Montage, bool bInterrupted);                   // [0x71718d0] Final|Native|Protected|HasDefaults 
 	// Function /Script/AnimGraphRuntime.PlayMontageCallbackProxy.CreateProxyObjectForPlayMontage
-	// class UPlayMontageCallbackProxy* CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, FName StartingSection); // [0x7161990] Final|Native|Static|Public|BlueprintCallable 
+	// class UPlayMontageCallbackProxy* CreateProxyObjectForPlayMontage(class USkeletalMeshComponent* InSkeletalMeshComponent, class UAnimMontage* MontageToPlay, float PlayRate, float StartingPosition, FName StartingSection); // [0x7171730] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/AnimGraphRuntime.SequencerAnimationSupport
@@ -616,7 +616,7 @@ struct FAnimNode_BlendBoneByChannel : FAnimNode_Base
 	float                                              alpha;                                                      // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0054   (0x0004)  MISSED
 	FInputScaleBias                                    AlphaScaleBias;                                             // 0x0058   (0x0008)  
-	SDK_UNDEFINED(1,3452) /* TEnumAsByte<EBoneControlSpace> */ __um(TransformsSpace);                              // 0x0060   (0x0001)  
+	SDK_UNDEFINED(1,3568) /* TEnumAsByte<EBoneControlSpace> */ __um(TransformsSpace);                              // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0061   (0x0007)  MISSED
 };
 
@@ -684,7 +684,7 @@ struct FAnimNode_BoneDrivenController : FAnimNode_SkeletalControlBase
 	FBoneReference                                     TargetBone;                                                 // 0x0110   (0x0014)  
 	EDrivenDestinationMode                             DestinationMode;                                            // 0x0124   (0x0001)  
 	EDrivenBoneModificationMode                        ModificationMode;                                           // 0x0125   (0x0001)  
-	SDK_UNDEFINED(1,3453) /* TEnumAsByte<EComponentType> */ __um(SourceComponent);                                 // 0x0126   (0x0001)  
+	SDK_UNDEFINED(1,3569) /* TEnumAsByte<EComponentType> */ __um(SourceComponent);                                 // 0x0126   (0x0001)  
 	bool                                               bUseRange : 1;                                              // 0x0127:0 (0x0001)  
 	bool                                               bAffectTargetTranslationX : 1;                              // 0x0127:1 (0x0001)  
 	bool                                               bAffectTargetTranslationY : 1;                              // 0x0127:2 (0x0001)  
@@ -723,7 +723,7 @@ struct FBoneSocketTarget
 struct FAnimNode_CCDIK : FAnimNode_SkeletalControlBase
 { 
 	FVector                                            EffectorLocation;                                           // 0x00D0   (0x000C)  
-	SDK_UNDEFINED(1,3454) /* TEnumAsByte<EBoneControlSpace> */ __um(EffectorLocationSpace);                        // 0x00DC   (0x0001)  
+	SDK_UNDEFINED(1,3570) /* TEnumAsByte<EBoneControlSpace> */ __um(EffectorLocationSpace);                        // 0x00DC   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00DD   (0x0003)  MISSED
 	FBoneSocketTarget                                  EffectorTarget;                                             // 0x00E0   (0x0070)  
 	FBoneReference                                     TipBone;                                                    // 0x0150   (0x0014)  
@@ -768,7 +768,7 @@ struct FAnimNode_CopyBone : FAnimNode_SkeletalControlBase
 	bool                                               bCopyTranslation;                                           // 0x00F8   (0x0001)  
 	bool                                               bCopyRotation;                                              // 0x00F9   (0x0001)  
 	bool                                               bCopyScale;                                                 // 0x00FA   (0x0001)  
-	SDK_UNDEFINED(1,3455) /* TEnumAsByte<EBoneControlSpace> */ __um(ControlSpace);                                 // 0x00FB   (0x0001)  
+	SDK_UNDEFINED(1,3571) /* TEnumAsByte<EBoneControlSpace> */ __um(ControlSpace);                                 // 0x00FB   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00FC   (0x0004)  MISSED
 };
 
@@ -791,7 +791,7 @@ struct FAnimNode_CopyBoneDelta : FAnimNode_SkeletalControlBase
 /// Size: 0x01C8 (0x000010 - 0x0001D8)
 struct FAnimNode_CopyPoseFromMesh : FAnimNode_Base
 { 
-	SDK_UNDEFINED(8,3456) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SourceMeshComponent);                 // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,3572) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(SourceMeshComponent);                 // 0x0010   (0x0008)  
 	bool                                               bUseAttachedParent : 1;                                     // 0x0018:0 (0x0001)  
 	bool                                               bCopyCurves : 1;                                            // 0x0018:1 (0x0001)  
 	bool                                               bCopyCustomAttributes;                                      // 0x0019   (0x0001)  
@@ -808,7 +808,7 @@ struct FAnimNode_CurveSource : FAnimNode_Base
 	FPoseLink                                          SourcePose;                                                 // 0x0010   (0x0010)  
 	FName                                              SourceBinding;                                              // 0x0020   (0x000C)  
 	float                                              alpha;                                                      // 0x002C   (0x0004)  
-	SDK_UNDEFINED(16,3457) /* TScriptInterface<Class> */ __um(CurveSource);                                        // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,3573) /* TScriptInterface<Class> */ __um(CurveSource);                                        // 0x0030   (0x0010)  
 };
 
 /// Struct /Script/AnimGraphRuntime.AnimNode_Fabrik
@@ -821,8 +821,8 @@ struct FAnimNode_Fabrik : FAnimNode_SkeletalControlBase
 	FBoneReference                                     RootBone;                                                   // 0x0184   (0x0014)  
 	float                                              Precision;                                                  // 0x0198   (0x0004)  
 	int32_t                                            MaxIterations;                                              // 0x019C   (0x0004)  
-	SDK_UNDEFINED(1,3458) /* TEnumAsByte<EBoneControlSpace> */ __um(EffectorTransformSpace);                       // 0x01A0   (0x0001)  
-	SDK_UNDEFINED(1,3459) /* TEnumAsByte<EBoneRotationSource> */ __um(EffectorRotationSource);                     // 0x01A1   (0x0001)  
+	SDK_UNDEFINED(1,3574) /* TEnumAsByte<EBoneControlSpace> */ __um(EffectorTransformSpace);                       // 0x01A0   (0x0001)  
+	SDK_UNDEFINED(1,3575) /* TEnumAsByte<EBoneRotationSource> */ __um(EffectorRotationSource);                     // 0x01A1   (0x0001)  
 	unsigned char                                      UnknownData00_6[0xE];                                       // 0x01A2   (0x000E)  MISSED
 };
 
@@ -849,7 +849,7 @@ struct FAnimNode_LayeredBoneBlend : FAnimNode_Base
 	TArray<float>                                      BlendWeights;                                               // 0x0040   (0x0010)  
 	bool                                               bMeshSpaceRotationBlend;                                    // 0x0050   (0x0001)  
 	bool                                               bMeshSpaceScaleBlend;                                       // 0x0051   (0x0001)  
-	SDK_UNDEFINED(1,3460) /* TEnumAsByte<ECurveBlendOption> */ __um(CurveBlendOption);                             // 0x0052   (0x0001)  
+	SDK_UNDEFINED(1,3576) /* TEnumAsByte<ECurveBlendOption> */ __um(CurveBlendOption);                             // 0x0052   (0x0001)  
 	bool                                               bBlendRootMotionBasedOnRootBone;                            // 0x0053   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0054   (0x0004)  MISSED
 	int32_t                                            LODThreshold;                                               // 0x0058   (0x0004)  
@@ -868,8 +868,8 @@ struct FAnimLegIKDefinition
 	FBoneReference                                     FKFootBone;                                                 // 0x0014   (0x0014)  
 	int32_t                                            NumBonesInLimb;                                             // 0x0028   (0x0004)  
 	float                                              MinRotationAngle;                                           // 0x002C   (0x0004)  
-	SDK_UNDEFINED(1,3461) /* TEnumAsByte<EAxis> */     __um(FootBoneForwardAxis);                                  // 0x0030   (0x0001)  
-	SDK_UNDEFINED(1,3462) /* TEnumAsByte<EAxis> */     __um(HingeRotationAxis);                                    // 0x0031   (0x0001)  
+	SDK_UNDEFINED(1,3577) /* TEnumAsByte<EAxis> */     __um(FootBoneForwardAxis);                                  // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,3578) /* TEnumAsByte<EAxis> */     __um(HingeRotationAxis);                                    // 0x0031   (0x0001)  
 	bool                                               bEnableRotationLimit;                                       // 0x0032   (0x0001)  
 	bool                                               bEnableKneeTwistCorrection;                                 // 0x0033   (0x0001)  
 };
@@ -915,7 +915,7 @@ struct FAnimNode_LookAt : FAnimNode_SkeletalControlBase
 	FVector                                            LookAtLocation;                                             // 0x0160   (0x000C)  
 	FAxis                                              LookAt_Axis;                                                // 0x016C   (0x0010)  
 	bool                                               bUseLookUpAxis;                                             // 0x017C   (0x0001)  
-	SDK_UNDEFINED(1,3463) /* TEnumAsByte<EInterpolationBlend> */ __um(InterpolationType);                          // 0x017D   (0x0001)  
+	SDK_UNDEFINED(1,3579) /* TEnumAsByte<EInterpolationBlend> */ __um(InterpolationType);                          // 0x017D   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x017E   (0x0002)  MISSED
 	FAxis                                              LookUp_Axis;                                                // 0x0180   (0x0010)  
 	float                                              LookAtClamp;                                                // 0x0190   (0x0004)  
@@ -942,12 +942,12 @@ struct FAnimNode_ModifyBone : FAnimNode_SkeletalControlBase
 	FVector                                            Translation;                                                // 0x00E4   (0x000C)  
 	FRotator                                           Rotation;                                                   // 0x00F0   (0x000C)  
 	FVector                                            Scale;                                                      // 0x00FC   (0x000C)  
-	SDK_UNDEFINED(1,3464) /* TEnumAsByte<EBoneModificationMode> */ __um(TranslationMode);                          // 0x0108   (0x0001)  
-	SDK_UNDEFINED(1,3465) /* TEnumAsByte<EBoneModificationMode> */ __um(RotationMode);                             // 0x0109   (0x0001)  
-	SDK_UNDEFINED(1,3466) /* TEnumAsByte<EBoneModificationMode> */ __um(ScaleMode);                                // 0x010A   (0x0001)  
-	SDK_UNDEFINED(1,3467) /* TEnumAsByte<EBoneControlSpace> */ __um(TranslationSpace);                             // 0x010B   (0x0001)  
-	SDK_UNDEFINED(1,3468) /* TEnumAsByte<EBoneControlSpace> */ __um(RotationSpace);                                // 0x010C   (0x0001)  
-	SDK_UNDEFINED(1,3469) /* TEnumAsByte<EBoneControlSpace> */ __um(ScaleSpace);                                   // 0x010D   (0x0001)  
+	SDK_UNDEFINED(1,3580) /* TEnumAsByte<EBoneModificationMode> */ __um(TranslationMode);                          // 0x0108   (0x0001)  
+	SDK_UNDEFINED(1,3581) /* TEnumAsByte<EBoneModificationMode> */ __um(RotationMode);                             // 0x0109   (0x0001)  
+	SDK_UNDEFINED(1,3582) /* TEnumAsByte<EBoneModificationMode> */ __um(ScaleMode);                                // 0x010A   (0x0001)  
+	SDK_UNDEFINED(1,3583) /* TEnumAsByte<EBoneControlSpace> */ __um(TranslationSpace);                             // 0x010B   (0x0001)  
+	SDK_UNDEFINED(1,3584) /* TEnumAsByte<EBoneControlSpace> */ __um(RotationSpace);                                // 0x010C   (0x0001)  
+	SDK_UNDEFINED(1,3585) /* TEnumAsByte<EBoneControlSpace> */ __um(ScaleSpace);                                   // 0x010D   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x2];                                       // 0x010E   (0x0002)  MISSED
 };
 
@@ -982,7 +982,7 @@ struct FAnimNode_MultiWayBlend : FAnimNode_Base
 struct FAnimNode_ObserveBone : FAnimNode_SkeletalControlBase
 { 
 	FBoneReference                                     BoneToObserve;                                              // 0x00D0   (0x0014)  
-	SDK_UNDEFINED(1,3470) /* TEnumAsByte<EBoneControlSpace> */ __um(DisplaySpace);                                 // 0x00E4   (0x0001)  
+	SDK_UNDEFINED(1,3586) /* TEnumAsByte<EBoneControlSpace> */ __um(DisplaySpace);                                 // 0x00E4   (0x0001)  
 	bool                                               bRelativeToRefPose;                                         // 0x00E5   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x00E6   (0x0002)  MISSED
 	FVector                                            Translation;                                                // 0x00E8   (0x000C)  
@@ -1055,7 +1055,7 @@ struct FRBFParams
 	bool                                               bAutomaticRadius;                                           // 0x000C   (0x0001)  
 	ERBFFunctionType                                   Function;                                                   // 0x000D   (0x0001)  
 	ERBFDistanceMethod                                 DistanceMethod;                                             // 0x000E   (0x0001)  
-	SDK_UNDEFINED(1,3471) /* TEnumAsByte<EBoneAxis> */ __um(TwistAxis);                                            // 0x000F   (0x0001)  
+	SDK_UNDEFINED(1,3587) /* TEnumAsByte<EBoneAxis> */ __um(TwistAxis);                                            // 0x000F   (0x0001)  
 	float                                              WeightThreshold;                                            // 0x0010   (0x0004)  
 	ERBFNormalizeMethod                                NormalizeMethod;                                            // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0015   (0x0003)  MISSED
@@ -1128,7 +1128,7 @@ struct FAnimNode_MeshSpaceRefPose : FAnimNode_Base
 /// Size: 0x0008 (0x000010 - 0x000018)
 struct FAnimNode_RefPose : FAnimNode_Base
 { 
-	SDK_UNDEFINED(1,3472) /* TEnumAsByte<ERefPoseType> */ __um(RefPoseType);                                       // 0x0010   (0x0001)  
+	SDK_UNDEFINED(1,3588) /* TEnumAsByte<ERefPoseType> */ __um(RefPoseType);                                       // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };
 
@@ -1169,7 +1169,7 @@ struct FAnimNode_RigidBody : FAnimNode_SkeletalControlBase
 	FSimSpaceSettings                                  SimSpaceSettings;                                           // 0x01B4   (0x0040)  
 	float                                              CachedBoundsScale;                                          // 0x01F4   (0x0004)  
 	FBoneReference                                     BaseBoneRef;                                                // 0x01F8   (0x0014)  
-	SDK_UNDEFINED(1,3473) /* TEnumAsByte<ECollisionChannel> */ __um(OverlapChannel);                               // 0x020C   (0x0001)  
+	SDK_UNDEFINED(1,3589) /* TEnumAsByte<ECollisionChannel> */ __um(OverlapChannel);                               // 0x020C   (0x0001)  
 	ESimulationSpace                                   SimulationSpace;                                            // 0x020D   (0x0001)  
 	bool                                               bForceDisableCollisionBetweenConstraintBodies;              // 0x020E   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x1];                                       // 0x020F   (0x0001)  MISSED
@@ -1204,7 +1204,7 @@ struct FAnimNode_RotationMultiplier : FAnimNode_SkeletalControlBase
 	FBoneReference                                     TargetBone;                                                 // 0x00D0   (0x0014)  
 	FBoneReference                                     SourceBone;                                                 // 0x00E4   (0x0014)  
 	float                                              Multiplier;                                                 // 0x00F8   (0x0004)  
-	SDK_UNDEFINED(1,3474) /* TEnumAsByte<EBoneAxis> */ __um(RotationAxisToRefer);                                  // 0x00FC   (0x0001)  
+	SDK_UNDEFINED(1,3590) /* TEnumAsByte<EBoneAxis> */ __um(RotationAxisToRefer);                                  // 0x00FC   (0x0001)  
 	bool                                               bIsAdditive;                                                // 0x00FD   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x2];                                       // 0x00FE   (0x0002)  MISSED
 };
@@ -1250,7 +1250,7 @@ struct FAnimNode_SequenceEvaluator : FAnimNode_AssetPlayerBase
 	float                                              ExplicitTime;                                               // 0x0040   (0x0004)  
 	bool                                               bShouldLoop;                                                // 0x0044   (0x0001)  
 	bool                                               bTeleportToExplicitTime;                                    // 0x0045   (0x0001)  
-	SDK_UNDEFINED(1,3475) /* TEnumAsByte<ESequenceEvalReinit> */ __um(ReinitializationBehavior);                   // 0x0046   (0x0001)  
+	SDK_UNDEFINED(1,3591) /* TEnumAsByte<ESequenceEvalReinit> */ __um(ReinitializationBehavior);                   // 0x0046   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0047   (0x0001)  MISSED
 	float                                              StartPosition;                                              // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x004C   (0x0004)  MISSED
@@ -1336,7 +1336,7 @@ struct FAnimNode_Trail : FAnimNode_SkeletalControlBase
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00D0   (0x0030)  MISSED
 	FBoneReference                                     TrailBone;                                                  // 0x0100   (0x0014)  
 	int32_t                                            ChainLength;                                                // 0x0114   (0x0004)  
-	SDK_UNDEFINED(1,3476) /* TEnumAsByte<EAxis> */     __um(ChainBoneAxis);                                        // 0x0118   (0x0001)  
+	SDK_UNDEFINED(1,3592) /* TEnumAsByte<EAxis> */     __um(ChainBoneAxis);                                        // 0x0118   (0x0001)  
 	bool                                               bInvertChainBoneAxis : 1;                                   // 0x0119:0 (0x0001)  
 	bool                                               bLimitStretch : 1;                                          // 0x0119:1 (0x0001)  
 	bool                                               bLimitRotation : 1;                                         // 0x0119:2 (0x0001)  
@@ -1395,8 +1395,8 @@ struct FAnimNode_TwoBoneIK : FAnimNode_SkeletalControlBase
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x017C   (0x0004)  MISSED
 	FBoneSocketTarget                                  JointTarget;                                                // 0x0180   (0x0070)  
 	FAxis                                              TwistAxis;                                                  // 0x01F0   (0x0010)  
-	SDK_UNDEFINED(1,3477) /* TEnumAsByte<EBoneControlSpace> */ __um(EffectorLocationSpace);                        // 0x0200   (0x0001)  
-	SDK_UNDEFINED(1,3478) /* TEnumAsByte<EBoneControlSpace> */ __um(JointTargetLocationSpace);                     // 0x0201   (0x0001)  
+	SDK_UNDEFINED(1,3593) /* TEnumAsByte<EBoneControlSpace> */ __um(EffectorLocationSpace);                        // 0x0200   (0x0001)  
+	SDK_UNDEFINED(1,3594) /* TEnumAsByte<EBoneControlSpace> */ __um(JointTargetLocationSpace);                     // 0x0201   (0x0001)  
 	bool                                               bAllowStretching : 1;                                       // 0x0202:0 (0x0001)  
 	bool                                               bTakeRotationFromEffectorSpace : 1;                         // 0x0202:1 (0x0001)  
 	bool                                               bMaintainEffectorRelRot : 1;                                // 0x0202:2 (0x0001)  

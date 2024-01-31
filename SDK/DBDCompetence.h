@@ -61,6 +61,15 @@ enum class ESecondWindState : uint8_t
 	ESecondWindState__ESecondWindState_MAX                                           = 4
 };
 
+/// Enum /Script/DBDCompetence.ESpawningEffectGameEventSubject
+/// Size: 0x03
+enum class ESpawningEffectGameEventSubject : uint8_t
+{
+	ESpawningEffectGameEventSubject__Instigator                                      = 0,
+	ESpawningEffectGameEventSubject__Target                                          = 1,
+	ESpawningEffectGameEventSubject__ESpawningEffectGameEventSubject_MAX             = 2
+};
+
 /// Enum /Script/DBDCompetence.ETheMettleOfManPhase
 /// Size: 0x06
 enum class ETheMettleOfManPhase : uint8_t
@@ -91,7 +100,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ActivatableEnduranceEffect.Authority_Start
-	// void Authority_Start(float Duration);                                                                                 // [0x500a6e0] Final|Native|Public|BlueprintCallable 
+	// void Authority_Start(float Duration);                                                                                 // [0x4fe7f90] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.AdjustableCooldownStatusEffect
@@ -121,9 +130,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ActivatableExhaustedEffect.Authority_Start
-	// void Authority_Start(float Duration);                                                                                 // [0x500a6e0] Final|Native|Public|BlueprintCallable 
+	// void Authority_Start(float Duration);                                                                                 // [0x4fe7f90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.ActivatableExhaustedEffect.Authority_OnHookCamper
-	// void Authority_OnHookCamper(FGameplayTag GameEvent, FGameEventData& GameEventData);                                   // [0x500a260] Final|Native|Private|HasOutParms 
+	// void Authority_OnHookCamper(FGameplayTag GameEvent, FGameEventData& GameEventData);                                   // [0x4fe7b10] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDCompetence.ExposedEffect
@@ -142,7 +151,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ActivatableExposedEffect.Authority_Start
-	// void Authority_Start(float Duration);                                                                                 // [0x500a6e0] Final|Native|Public|BlueprintCallable 
+	// void Authority_Start(float Duration);                                                                                 // [0x4fe7f90] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.ActivatableStatusEffect
@@ -154,7 +163,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ActivatableStatusEffect.Authority_Start
-	// void Authority_Start(float Duration);                                                                                 // [0x500a760] Final|Native|Public|BlueprintCallable 
+	// void Authority_Start(float Duration);                                                                                 // [0x4fe8010] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.ActivateOnEventTimedStatusEffect
@@ -211,9 +220,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Adrenaline.Multicast_DispatchAdrenalineEvents
-	// void Multicast_DispatchAdrenalineEvents(bool IsHealthy, float HealAmount);                                            // [0x500aad0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DispatchAdrenalineEvents(bool IsHealthy, float HealAmount);                                            // [0x4fe8380] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/DBDCompetence.Adrenaline.GetExhaustionDuration
-	// float GetExhaustionDuration();                                                                                        // [0x500a920] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustionDuration();                                                                                        // [0x4fe81d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.AlertKillerRevealEffect
@@ -241,7 +250,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.AnyActorPairQueryRangeIsTrue.OnInRangeChanged
-	// void OnInRangeChanged(bool inRange);                                                                                  // [0x500abb0] Final|Native|Private 
+	// void OnInRangeChanged(bool inRange);                                                                                  // [0x4fe8480] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.AnyMeansNecessary
@@ -256,7 +265,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.AnyMeansNecessary.Authority_OnPalletPulledUp
-	// void Authority_OnPalletPulledUp(FGameplayTag GameplayTag, FGameEventData& GameEventData);                             // [0x500a420] Final|Native|Private|HasOutParms|Const 
+	// void Authority_OnPalletPulledUp(FGameplayTag GameplayTag, FGameEventData& GameEventData);                             // [0x4fe7cd0] Final|Native|Private|HasOutParms|Const 
 };
 
 /// Class /Script/DBDCompetence.AnySurvivorHasObjectState
@@ -271,9 +280,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.AnySurvivorHasObjectState.OnSurvivorRemoved
-	// void OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                                // [0x500aeb0] Final|Native|Protected 
+	// void OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                                // [0x4fe8780] Final|Native|Protected 
 	// Function /Script/DBDCompetence.AnySurvivorHasObjectState.OnSurvivorAdded
-	// void OnSurvivorAdded(class ACamperPlayer* Survivor);                                                                  // [0x500ae20] Final|Native|Protected 
+	// void OnSurvivorAdded(class ACamperPlayer* Survivor);                                                                  // [0x4fe86f0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDCompetence.Babysitter
@@ -290,13 +299,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Babysitter.GetShowAuraTimeAtLevel
-	// float GetShowAuraTimeAtLevel();                                                                                       // [0x500aa40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetShowAuraTimeAtLevel();                                                                                       // [0x4fe82f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Babysitter.GetScratchMarkHidingTimeAtLevel
-	// float GetScratchMarkHidingTimeAtLevel();                                                                              // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScratchMarkHidingTimeAtLevel();                                                                              // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Babysitter.GetHasteEffectAtLevel
-	// float GetHasteEffectAtLevel();                                                                                        // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectAtLevel();                                                                                        // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Babysitter.GetCooldownTimeAtLevel
-	// float GetCooldownTimeAtLevel();                                                                                       // [0x500a8c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownTimeAtLevel();                                                                                       // [0x4fe8170] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.BabysitterEffect
@@ -325,9 +334,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BaseIsPlayerPerformingInteraction.UpdateIsTrue
-	// void UpdateIsTrue(class UInteractionDefinition* InteractionDefinition);                                               // [0x500b080] Final|Native|Protected 
+	// void UpdateIsTrue(class UInteractionDefinition* InteractionDefinition);                                               // [0x4fe8950] Final|Native|Protected 
 	// Function /Script/DBDCompetence.BaseIsPlayerPerformingInteraction.SetInteractionSemantics
-	// void SetInteractionSemantics(FGameplayTagContainer& interactionSemantics);                                            // [0x500af40] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetInteractionSemantics(FGameplayTagContainer& interactionSemantics);                                            // [0x4fe8810] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.BaseLingeringStatusEffect
@@ -342,11 +351,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BaseLingeringStatusEffect.SetLingerDuration
-	// void SetLingerDuration(float lingerDuration);                                                                         // [0x500b000] Final|Native|Protected|BlueprintCallable 
+	// void SetLingerDuration(float lingerDuration);                                                                         // [0x4fe88d0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDCompetence.BaseLingeringStatusEffect.Authority_DeactivateEffect
-	// void Authority_DeactivateEffect();                                                                                    // [0x500a1b0] Final|Native|Protected|BlueprintCallable 
+	// void Authority_DeactivateEffect();                                                                                    // [0x4fe7a60] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDCompetence.BaseLingeringStatusEffect.Authority_ActivateEffect
-	// void Authority_ActivateEffect();                                                                                      // [0x500a190] Final|Native|Protected|BlueprintCallable 
+	// void Authority_ActivateEffect();                                                                                      // [0x4fe7a40] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.BetterTogether
@@ -369,9 +378,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BetterTogether.OnStartedGeneratorRepair
-	// void OnStartedGeneratorRepair(FGameplayTag GameplayTag, FGameEventData& GameEventData);                               // [0x500ad10] Final|Native|Private|HasOutParms 
+	// void OnStartedGeneratorRepair(FGameplayTag GameplayTag, FGameEventData& GameEventData);                               // [0x4fe85e0] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDCompetence.BetterTogether.GetRevealDistance
-	// float GetRevealDistance();                                                                                            // [0x500aa10] Final|Native|Public|BlueprintCallable 
+	// float GetRevealDistance();                                                                                            // [0x4fe82c0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.BlessedStatusEffect
@@ -385,15 +394,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BlessedStatusEffect.OnExitBoonRange
-	// void OnExitBoonRange();                                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnExitBoonRange();                                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDCompetence.BlessedStatusEffect.OnEnterBoonRange
-	// void OnEnterBoonRange();                                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnEnterBoonRange();                                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDCompetence.BlessedStatusEffect.GetBoundTotem
-	// class ATotem* GetBoundTotem();                                                                                        // [0x500a860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ATotem* GetBoundTotem();                                                                                        // [0x4fe8110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.BlessedStatusEffect.GetBoonTotemBlessingRange
-	// float GetBoonTotemBlessingRange();                                                                                    // [0x500a830] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetBoonTotemBlessingRange();                                                                                    // [0x4fe80e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.BlessedStatusEffect.Authority_OnSurvivorRemovedFromGame
-	// void Authority_OnSurvivorRemovedFromGame(class ACamperPlayer* Survivor);                                              // [0x500a650] Final|Native|Private 
+	// void Authority_OnSurvivorRemovedFromGame(class ACamperPlayer* Survivor);                                              // [0x4fe7f00] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.BloodEcho
@@ -409,7 +418,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BloodEcho.GetCooldownDurationAtLevel
-	// float GetCooldownDurationAtLevel();                                                                                   // [0x500a890] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationAtLevel();                                                                                   // [0x4fe8140] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.BoonDestroyer
@@ -434,7 +443,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BoonPerk.Authority_OnSurvivorRemoved
-	// void Authority_OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                      // [0x500a5c0] Final|Native|Private 
+	// void Authority_OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                      // [0x4fe7e70] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.BoonTotemIsActive
@@ -463,19 +472,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Breakout.OnSlasherSet
-	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x500ac80] Final|Native|Private 
+	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x4fe8550] Final|Native|Private 
 	// Function /Script/DBDCompetence.Breakout.OnRep_IsPerkActive
-	// void OnRep_IsPerkActive();                                                                                            // [0x500ac60] Final|Native|Private 
+	// void OnRep_IsPerkActive();                                                                                            // [0x4fe8530] Final|Native|Private 
 	// Function /Script/DBDCompetence.Breakout.GetWiggleEffect
-	// float GetWiggleEffect();                                                                                              // [0x500aa90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWiggleEffect();                                                                                              // [0x4fe8340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Breakout.GetSurvivorDistanceMax
-	// float GetSurvivorDistanceMax();                                                                                       // [0x500aa70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSurvivorDistanceMax();                                                                                       // [0x4fe8320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Breakout.GetHasteEffectAtLevel
-	// float GetHasteEffectAtLevel();                                                                                        // [0x500a9b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectAtLevel();                                                                                        // [0x4fe8260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Breakout.Authority_OnRangeChanged
-	// void Authority_OnRangeChanged(bool inRange);                                                                          // [0x500a530] Final|Native|Private 
+	// void Authority_OnRangeChanged(bool inRange);                                                                          // [0x4fe7de0] Final|Native|Private 
 	// Function /Script/DBDCompetence.Breakout.Authority_ImposeWiggleStatusEffect
-	// void Authority_ImposeWiggleStatusEffect(class ACamperPlayer* Survivor);                                               // [0x500a1d0] Final|Native|Private 
+	// void Authority_ImposeWiggleStatusEffect(class ACamperPlayer* Survivor);                                               // [0x4fe7a80] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.BuckleUp
@@ -492,7 +501,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.BuckleUp.GetPerkDurationAtLevel
-	// float GetPerkDurationAtLevel();                                                                                       // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkDurationAtLevel();                                                                                       // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.CalmSpirit
@@ -539,15 +548,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.CorruptIntervention.OnRep_BlockedGenerators
-	// void OnRep_BlockedGenerators();                                                                                       // [0x500ac40] Final|Native|Private 
+	// void OnRep_BlockedGenerators();                                                                                       // [0x4fe8510] Final|Native|Private 
+	// Function /Script/DBDCompetence.CorruptIntervention.Multicast_DispatchBlockedEvent
+	// void Multicast_DispatchBlockedEvent();                                                                                // [0x4fe8460] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/DBDCompetence.CorruptIntervention.LevelReadyToBlockedGenerators
-	// void LevelReadyToBlockedGenerators();                                                                                 // [0x500aab0] Final|Native|Private 
+	// void LevelReadyToBlockedGenerators();                                                                                 // [0x4fe8360] Final|Native|Private 
 	// Function /Script/DBDCompetence.CorruptIntervention.GetGeneratorBlockDuration
-	// float GetGeneratorBlockDuration();                                                                                    // [0x500a950] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetGeneratorBlockDuration();                                                                                    // [0x4fe8200] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.CorruptIntervention.Authority_TryActivatePerk
-	// void Authority_TryActivatePerk();                                                                                     // [0x500a7e0] Final|Native|Private 
+	// void Authority_TryActivatePerk();                                                                                     // [0x4fe8090] Final|Native|Private 
 	// Function /Script/DBDCompetence.CorruptIntervention.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x500a400] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x4fe7cb0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.Coulrophobia
@@ -562,7 +573,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Coulrophobia.GetHealPenaltyAtLevel
-	// float GetHealPenaltyAtLevel();                                                                                        // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealPenaltyAtLevel();                                                                                        // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.CruelConfinement
@@ -573,13 +584,13 @@ public:
 	float                                              _blockDuration;                                             // 0x03C8   (0x000C)  
 	FLinearColor                                       _windowAuraColor;                                           // 0x03D4   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03E4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,3595) /* TArray<TWeakObjectPtr<UBlockableComponent*>> */ __um(_blockables);                   // 0x03E8   (0x0010)  
+	SDK_UNDEFINED(16,3686) /* TArray<TWeakObjectPtr<UBlockableComponent*>> */ __um(_blockables);                   // 0x03E8   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x03F8   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.CruelConfinement.GetBlockDurationAtLevel
-	// float GetBlockDurationAtLevel();                                                                                      // [0x500a800] Final|Native|Public|BlueprintCallable 
+	// float GetBlockDurationAtLevel();                                                                                      // [0x4fe80b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.DarkDevotion
@@ -606,11 +617,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DarkSense.GetKillerRevealDurationAtLevel
-	// float GetKillerRevealDurationAtLevel();                                                                               // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKillerRevealDurationAtLevel();                                                                               // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.DarkSense.GetDarkSenseRevealRange
-	// float GetDarkSenseRevealRange();                                                                                      // [0x500a8f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDarkSenseRevealRange();                                                                                      // [0x4fe81a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.DarkSense.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x500a370] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x4fe7c20] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.DBDConditionFactory
@@ -622,11 +633,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DBDConditionFactory.IsPlayerPerformingInteraction
-	// class UIsPlayerPerformingInteraction* IsPlayerPerformingInteraction(TScriptInterface<Class> ConditionReceiver, FGameplayTagContainer& interactionSemantics); // [0x500f8f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UIsPlayerPerformingInteraction* IsPlayerPerformingInteraction(TScriptInterface<Class> ConditionReceiver, FGameplayTagContainer& interactionSemantics); // [0x4fed1d0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDCompetence.DBDConditionFactory.HasTimerElapsedWhileConditionWasTrue
-	// class UTimerElapsedCondition* HasTimerElapsedWhileConditionWasTrue(TScriptInterface<Class> ConditionReceiver, class UTimerObject* Timer); // [0x500f800] Final|Native|Static|Public|BlueprintCallable 
+	// class UTimerElapsedCondition* HasTimerElapsedWhileConditionWasTrue(TScriptInterface<Class> ConditionReceiver, class UTimerObject* Timer); // [0x4fed0e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.DBDConditionFactory.DoesPerkHaveToken
-	// class UDoesPerkHaveToken* DoesPerkHaveToken(TScriptInterface<Class> ConditionReceiver, class UPerk* Perk);            // [0x500f4b0] Final|Native|Static|Public|BlueprintCallable 
+	// class UDoesPerkHaveToken* DoesPerkHaveToken(TScriptInterface<Class> ConditionReceiver, class UPerk* Perk);            // [0x4fecd90] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.DeadMansSwitchEffect
@@ -661,17 +672,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DecisiveStrike.OnUnhookedTimerEnded
-	// void OnUnhookedTimerEnded();                                                                                          // [0x5010490] Final|Native|Private 
+	// void OnUnhookedTimerEnded();                                                                                          // [0x4fedd70] Final|Native|Private 
 	// Function /Script/DBDCompetence.DecisiveStrike.OnSkillCheck
-	// void OnSkillCheck(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player);     // [0x5010200] Final|Native|Private 
+	// void OnSkillCheck(bool hadInput, bool success, bool Bonus, ESkillCheckCustomType Type, class ADBDPlayer* Player);     // [0x4fedae0] Final|Native|Private 
 	// Function /Script/DBDCompetence.DecisiveStrike.OnRep_HasBeenAttempted
-	// void OnRep_HasBeenAttempted();                                                                                        // [0x5010140] Final|Native|Private 
+	// void OnRep_HasBeenAttempted();                                                                                        // [0x4feda20] Final|Native|Private 
 	// Function /Script/DBDCompetence.DecisiveStrike.OnPickUpEnded
-	// void OnPickUpEnded(class ADBDPlayer* picker);                                                                         // [0x5010090] Final|Native|Private 
+	// void OnPickUpEnded(class ADBDPlayer* picker);                                                                         // [0x4fed970] Final|Native|Private 
 	// Function /Script/DBDCompetence.DecisiveStrike.OnOwnerPickedUp
-	// void OnOwnerPickedUp(class ADBDPlayer* picker);                                                                       // [0x500fc80] Final|Native|Private 
+	// void OnOwnerPickedUp(class ADBDPlayer* picker);                                                                       // [0x4fed560] Final|Native|Private 
 	// Function /Script/DBDCompetence.DecisiveStrike.GetDurationAfterUnhook
-	// float GetDurationAfterUnhook();                                                                                       // [0x500a800] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetDurationAfterUnhook();                                                                                       // [0x4fe80b0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.DejaVu
@@ -688,15 +699,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DejaVu.OnRep_RevealedGenerators
-	// void OnRep_RevealedGenerators();                                                                                      // [0x50101c0] Final|Native|Private 
+	// void OnRep_RevealedGenerators();                                                                                      // [0x4fedaa0] Final|Native|Private 
 	// Function /Script/DBDCompetence.DejaVu.LevelReadyToRevealOutlineGenerators
-	// void LevelReadyToRevealOutlineGenerators();                                                                           // [0x500fa10] Final|Native|Private 
+	// void LevelReadyToRevealOutlineGenerators();                                                                           // [0x4fed2f0] Final|Native|Private 
 	// Function /Script/DBDCompetence.DejaVu.GetActionSpeedsAtLevel
-	// float GetActionSpeedsAtLevel();                                                                                       // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActionSpeedsAtLevel();                                                                                       // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.DejaVu.Authority_SetNewGeneratorsToReveal
-	// void Authority_SetNewGeneratorsToReveal();                                                                            // [0x500f460] Final|Native|Private 
+	// void Authority_SetNewGeneratorsToReveal();                                                                            // [0x4fecd40] Final|Native|Private 
 	// Function /Script/DBDCompetence.DejaVu.Authority_OnGeneratorRepaired
-	// void Authority_OnGeneratorRepaired(int32_t activatedGeneratorCount);                                                  // [0x500f020] Final|Native|Private 
+	// void Authority_OnGeneratorRepaired(int32_t activatedGeneratorCount);                                                  // [0x4fec900] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.DelayedHealEffect
@@ -709,11 +720,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DelayedHealEffect.Authority_OnOwningCamperPickedUp
-	// void Authority_OnOwningCamperPickedUp(class ADBDPlayer* picker);                                                      // [0x500f290] Final|Native|Private 
+	// void Authority_OnOwningCamperPickedUp(class ADBDPlayer* picker);                                                      // [0x4fecb70] Final|Native|Private 
 	// Function /Script/DBDCompetence.DelayedHealEffect.Authority_OnOwningCamperHealthChanged
-	// void Authority_OnOwningCamperHealthChanged(ECamperDamageState before, ECamperDamageState after);                      // [0x500f1c0] Final|Native|Private 
+	// void Authority_OnOwningCamperHealthChanged(ECamperDamageState before, ECamperDamageState after);                      // [0x4fecaa0] Final|Native|Private 
 	// Function /Script/DBDCompetence.DelayedHealEffect.Authority_OnActivationTimerComplete
-	// void Authority_OnActivationTimerComplete();                                                                           // [0x500f000] Final|Native|Private 
+	// void Authority_OnActivationTimerComplete();                                                                           // [0x4fec8e0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.DidGameEventOccurred
@@ -739,15 +750,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Distortion.OnRep_AuraBlockIsActive
-	// void OnRep_AuraBlockIsActive();                                                                                       // [0x5010120] Final|Native|Private 
+	// void OnRep_AuraBlockIsActive();                                                                                       // [0x4feda00] Final|Native|Private 
 	// Function /Script/DBDCompetence.Distortion.OnAuraBlockedCosmetic
-	// void OnAuraBlockedCosmetic();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnAuraBlockedCosmetic();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.Distortion.GetRegainTokenDurationTimer
-	// float GetRegainTokenDurationTimer();                                                                                  // [0x500f7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRegainTokenDurationTimer();                                                                                  // [0x4fed080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Distortion.GetActivationDurationAtLevel
-	// float GetActivationDurationAtLevel();                                                                                 // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationDurationAtLevel();                                                                                 // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Distortion.AuraBlockCanBeActive
-	// bool AuraBlockCanBeActive();                                                                                          // [0x500efb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AuraBlockCanBeActive();                                                                                          // [0x4fec890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.DoesPerkHaveToken
@@ -755,15 +766,15 @@ public:
 class UDoesPerkHaveToken : public UEventDrivenModifierCondition
 { 
 public:
-	SDK_UNDEFINED(8,3596) /* TWeakObjectPtr<UPerk*> */ __um(_perk);                                                // 0x00F0   (0x0008)  
+	SDK_UNDEFINED(8,3687) /* TWeakObjectPtr<UPerk*> */ __um(_perk);                                                // 0x00F0   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00F8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.DoesPerkHaveToken.SetPerk
-	// void SetPerk(class UPerk* Perk);                                                                                      // [0x50104d0] Final|Native|Public|BlueprintCallable 
+	// void SetPerk(class UPerk* Perk);                                                                                      // [0x4feddb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.DoesPerkHaveToken.OnRep_Perk
-	// void OnRep_Perk();                                                                                                    // [0x5010180] Final|Native|Private 
+	// void OnRep_Perk();                                                                                                    // [0x4feda60] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.DownedByBasicAttack
@@ -777,7 +788,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DownedByBasicAttack.OnRep_ReplicatedIsTrue
-	// void OnRep_ReplicatedIsTrue();                                                                                        // [0x50101a0] Final|Native|Private 
+	// void OnRep_ReplicatedIsTrue();                                                                                        // [0x4feda80] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.DyingLight
@@ -795,11 +806,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.DyingLight.OnObsessionChanged
-	// void OnObsessionChanged(class ACamperPlayer* newObsession, class ACamperPlayer* previousObsession);                   // [0x500fbb0] Final|Native|Private 
+	// void OnObsessionChanged(class ACamperPlayer* newObsession, class ACamperPlayer* previousObsession);                   // [0x4fed490] Final|Native|Private 
 	// Function /Script/DBDCompetence.DyingLight.GetObsessionActionSpeedBonus
-	// float GetObsessionActionSpeedBonus();                                                                                 // [0x500f6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetObsessionActionSpeedBonus();                                                                                 // [0x4fecfd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.DyingLight.GetActionSpeedPenaltyPerTokenAtLevel
-	// float GetActionSpeedPenaltyPerTokenAtLevel();                                                                         // [0x500f5a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActionSpeedPenaltyPerTokenAtLevel();                                                                         // [0x4fece80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.EnduranceHighlightEffect
@@ -829,11 +840,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.FlipFlop.GetRecoveryProgressionAtLevel
-	// float GetRecoveryProgressionAtLevel();                                                                                // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRecoveryProgressionAtLevel();                                                                                // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.FlipFlop.GetMaxWiggleProgressionAtLevel
-	// float GetMaxWiggleProgressionAtLevel();                                                                               // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxWiggleProgressionAtLevel();                                                                               // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.FlipFlop.Authority_OnPickedUp
-	// void Authority_OnPickedUp(class ADBDPlayer* picker);                                                                  // [0x500f320] Final|Native|Private 
+	// void Authority_OnPickedUp(class ADBDPlayer* picker);                                                                  // [0x4fecc00] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.FurtiveChase
@@ -850,9 +861,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.FurtiveChase.GetUndetectableAndHasteStatusEffectDurationAtLevel
-	// float GetUndetectableAndHasteStatusEffectDurationAtLevel();                                                           // [0x500f7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetUndetectableAndHasteStatusEffectDurationAtLevel();                                                           // [0x4fed0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.FurtiveChase.GetHasteStatusEffectPercent
-	// float GetHasteStatusEffectPercent();                                                                                  // [0x500f630] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteStatusEffectPercent();                                                                                  // [0x4fecf10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.GateBlockerEffect
@@ -866,20 +877,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.GateBlockerEffect.RemoveCantEscapeFlag
-	// void RemoveCantEscapeFlag();                                                                                          // [0x50104b0] Final|Native|Protected 
+	// void RemoveCantEscapeFlag();                                                                                          // [0x4fedd90] Final|Native|Protected 
 };
 
 /// Struct /Script/DBDCompetence.StatusEffectSpawnData
-/// Size: 0x0028 (0x000000 - 0x000028)
+/// Size: 0x0018 (0x000000 - 0x000018)
 struct FStatusEffectSpawnData
 { 
-	SDK_UNDEFINED(16,3597) /* FString */               __um(DEPRECATED_EffectId);                                  // 0x0000   (0x0010)  
-	class UClass*                                      EffectClass;                                                // 0x0010   (0x0008)  
-	float                                              customParam;                                                // 0x0018   (0x0004)  
-	EStatusEffectSpawnerReceiverStrategy               ReceiverStrategy;                                           // 0x001C   (0x0004)  
-	EPawnType                                          PawnType;                                                   // 0x0020   (0x0001)  
-	bool                                               SkipOriginatingPlayer;                                      // 0x0021   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0022   (0x0006)  MISSED
+	class UClass*                                      EffectClass;                                                // 0x0000   (0x0008)  
+	float                                              CustomParam;                                                // 0x0008   (0x0004)  
+	EStatusEffectSpawnerReceiverStrategy               ReceiverStrategy;                                           // 0x000C   (0x0004)  
+	EPawnType                                          PawnType;                                                   // 0x0010   (0x0001)  
+	bool                                               SkipOriginatingPlayer;                                      // 0x0011   (0x0001)  
+	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0012   (0x0006)  MISSED
 };
 
 /// Struct /Script/DBDCompetence.PerkLevelEffectArray
@@ -894,8 +904,8 @@ struct FPerkLevelEffectArray
 struct FPlayerStatusEffectSpawnerHelperInitParams
 { 
 	class UObject*                                     WorldContextObject;                                         // 0x0000   (0x0008)  
-	class ADBDPlayer*                                  originatingPlayer;                                          // 0x0008   (0x0008)  
-	class UGameplayModifierContainer*                  originatingEffect;                                          // 0x0010   (0x0008)  
+	class ADBDPlayer*                                  OriginatingPlayer;                                          // 0x0008   (0x0008)  
+	class UGameplayModifierContainer*                  OriginatingEffect;                                          // 0x0010   (0x0008)  
 	TArray<FStatusEffectSpawnData>                     EffectsToSpawn;                                             // 0x0018   (0x0010)  
 };
 
@@ -904,7 +914,7 @@ struct FPlayerStatusEffectSpawnerHelperInitParams
 struct FPlayerStatusEffectSpawnerHelper
 { 
 	FPlayerStatusEffectSpawnerHelperInitParams         _initParams;                                                // 0x0000   (0x0028)  
-	SDK_UNDEFINED(80,3598) /* TSet<UStatusEffect*> */  __um(_spawnedEffects);                                      // 0x0028   (0x0050)  
+	SDK_UNDEFINED(80,3688) /* TSet<UStatusEffect*> */  __um(_spawnedEffects);                                      // 0x0028   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0078   (0x0010)  MISSED
 };
 
@@ -961,7 +971,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HasItemOfTypeEquippedNoCharge.OnItemChargeStateChanged
-	// void OnItemChargeStateChanged(bool IsEmpty);                                                                          // [0x500fb20] Final|Native|Protected 
+	// void OnItemChargeStateChanged(bool IsEmpty);                                                                          // [0x4fed400] Final|Native|Protected 
 };
 
 /// Class /Script/DBDCompetence.HasItemOfTypeInInventory
@@ -981,7 +991,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HasItemOfTypeInInventoryNoCharge.OnItemChargeStateChanged
-	// void OnItemChargeStateChanged(bool IsEmpty);                                                                          // [0x500fb20] Final|Native|Protected 
+	// void OnItemChargeStateChanged(bool IsEmpty);                                                                          // [0x4fed400] Final|Native|Protected 
 };
 
 /// Class /Script/DBDCompetence.HasLineOfSightQueryComponent
@@ -1004,9 +1014,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HasPlayerReachedWiggleFillPercentCondition.OnRep_IsWigglePercentReached
-	// void OnRep_IsWigglePercentReached();                                                                                  // [0x5010160] Final|Native|Private 
+	// void OnRep_IsWigglePercentReached();                                                                                  // [0x4feda40] Final|Native|Private 
 	// Function /Script/DBDCompetence.HasPlayerReachedWiggleFillPercentCondition.Authority_OnOwnerWiggleChargePercentChanged
-	// void Authority_OnOwnerWiggleChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x500f0b0] Final|Native|Private 
+	// void Authority_OnOwnerWiggleChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x4fec990] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.HasRemainingGenerators
@@ -1036,19 +1046,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HeadOn.OnPawnOverlapExit
-	// void OnPawnOverlapExit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x500ff30] Final|Native|Private 
+	// void OnPawnOverlapExit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x4fed810] Final|Native|Private 
 	// Function /Script/DBDCompetence.HeadOn.OnPawnOverlapEnter
-	// void OnPawnOverlapEnter(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x500fd10] Final|Native|Private|HasOutParms 
+	// void OnPawnOverlapEnter(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x4fed5f0] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDCompetence.HeadOn.OnHeadOnAnimationComplete
-	// void OnHeadOnAnimationComplete();                                                                                     // [0x500fb00] Final|Native|Public|BlueprintCallable 
+	// void OnHeadOnAnimationComplete();                                                                                     // [0x4fed3e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.HeadOn.Multicast_TriggerStunOnActor
-	// void Multicast_TriggerStunOnActor(class UObject* stunnableInterfaceUObject, class ADBDPlayer* stunner);               // [0x500fa30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerStunOnActor(class UObject* stunnableInterfaceUObject, class ADBDPlayer* stunner);               // [0x4fed310] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/DBDCompetence.HeadOn.GetHideDuration
-	// float GetHideDuration();                                                                                              // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHideDuration();                                                                                              // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.HeadOn.CanApplyHeadOnInteraction
-	// bool CanApplyHeadOnInteraction();                                                                                     // [0x500f480] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanApplyHeadOnInteraction();                                                                                     // [0x4fecd60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.HeadOn.Authority_ActivatePerk
-	// void Authority_ActivatePerk();                                                                                        // [0x500efe0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_ActivatePerk();                                                                                        // [0x4fec8c0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.HemorrhageStatusEffect
@@ -1063,9 +1073,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HemorrhageStatusEffect.OnStoppedHealing
-	// void OnStoppedHealing(class ADBDPlayer* Instigator, class ADBDPlayer* Target);                                        // [0x50103c0] Native|Event|Protected|BlueprintEvent 
+	// void OnStoppedHealing(class ADBDPlayer* Instigator, class ADBDPlayer* Target);                                        // [0x4fedca0] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.HemorrhageStatusEffect.Authority_OnSurvivorHealed
-	// void Authority_OnSurvivorHealed(FCamperHealResult& healResult);                                                       // [0x500f3b0] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorHealed(FCamperHealResult& healResult);                                                       // [0x4fecc90] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDCompetence.HexPerk
@@ -1080,15 +1090,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HexPerk.UpdateCursedStatusViewOnLocalPlayer
-	// void UpdateCursedStatusViewOnLocalPlayer();                                                                           // [0x5016790] Final|Native|Protected|BlueprintCallable 
+	// void UpdateCursedStatusViewOnLocalPlayer();                                                                           // [0x4ff40c0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDCompetence.HexPerk.OnRep_PlayersWhoKnowCurse
-	// void OnRep_PlayersWhoKnowCurse();                                                                                     // [0x5016300] Final|Native|Private 
+	// void OnRep_PlayersWhoKnowCurse();                                                                                     // [0x4ff3c30] Final|Native|Private 
 	// Function /Script/DBDCompetence.HexPerk.IsCurseRevealedToPlayer
-	// bool IsCurseRevealedToPlayer(class ADBDPlayer* Player);                                                               // [0x5015e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCurseRevealedToPlayer(class ADBDPlayer* Player);                                                               // [0x4ff3760] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.HexPerk.Authority_SetCurseRevealedToPlayer
-	// void Authority_SetCurseRevealedToPlayer(class ADBDPlayer* Player, bool revealed);                                     // [0x5015940] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_SetCurseRevealedToPlayer(class ADBDPlayer* Player, bool revealed);                                     // [0x4ff3250] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDCompetence.HexPerk.Authority_RevealCurseToAllSurvivors
-	// void Authority_RevealCurseToAllSurvivors(bool revealed);                                                              // [0x50158b0] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_RevealCurseToAllSurvivors(bool revealed);                                                              // [0x4ff31c0] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.HexDevourHope
@@ -1113,9 +1123,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HexDevourHope.GetRangeFromUnhookedSurvivorNeeded
-	// float GetRangeFromUnhookedSurvivorNeeded(int32_t PerkLevel);                                                          // [0x500f710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRangeFromUnhookedSurvivorNeeded(int32_t PerkLevel);                                                          // [0x4fecff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.HexDevourHope.GetMoveSpeedIncrement
-	// float GetMoveSpeedIncrement(int32_t PerkLevel);                                                                       // [0x500f650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMoveSpeedIncrement(int32_t PerkLevel);                                                                       // [0x4fecf30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.HexHauntedGround
@@ -1131,7 +1141,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HexHauntedGround.GetExposedDurationAtLevel
-	// float GetExposedDurationAtLevel();                                                                                    // [0x500f5d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExposedDurationAtLevel();                                                                                    // [0x4feceb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.HexNoOneEscapesDeath
@@ -1154,9 +1164,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HexNoOneEscapesDeath.OnRep_SetShouldActivateTotemOutline
-	// void OnRep_SetShouldActivateTotemOutline();                                                                           // [0x50101e0] Final|Native|Private 
+	// void OnRep_SetShouldActivateTotemOutline();                                                                           // [0x4fedac0] Final|Native|Private 
 	// Function /Script/DBDCompetence.HexNoOneEscapesDeath.GetHasteAtLevel
-	// float GetHasteAtLevel();                                                                                              // [0x500f600] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// float GetHasteAtLevel();                                                                                              // [0x4fecee0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DBDCompetence.HexRuin
@@ -1165,19 +1175,19 @@ class UHexRuin : public UHexPerk
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0448   (0x0018)  MISSED
-	SDK_UNDEFINED(80,3599) /* TMap<AGenerator*, FFastTimer> */ __um(_curseActivationTimers);                       // 0x0460   (0x0050)  
+	SDK_UNDEFINED(80,3689) /* TMap<AGenerator*, FFastTimer> */ __um(_curseActivationTimers);                       // 0x0460   (0x0050)  
 	float                                              _regressionModifier;                                        // 0x04B0   (0x000C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x04BC   (0x0004)  MISSED
 	class UClass*                                      _ruinStatusEffectClass;                                     // 0x04C0   (0x0008)  
-	SDK_UNDEFINED(80,3600) /* TMap<AGenerator*, uint64_t> */ __um(_gameplayModifierHandles);                       // 0x04C8   (0x0050)  
+	SDK_UNDEFINED(80,3690) /* TMap<AGenerator*, uint64_t> */ __um(_gameplayModifierHandles);                       // 0x04C8   (0x0050)  
 	class UStatusEffect*                               _ruinStatusEffect;                                          // 0x0518   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.HexRuin.GetRegressionModifierByLevel
-	// float GetRegressionModifierByLevel(int32_t PerkLevel);                                                                // [0x5015a60] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetRegressionModifierByLevel(int32_t PerkLevel);                                                                // [0x4ff3370] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.HexRuin.Authority_SetupCurseOnAllGenerators
-	// void Authority_SetupCurseOnAllGenerators();                                                                           // [0x5015a10] Final|Native|Private 
+	// void Authority_SetupCurseOnAllGenerators();                                                                           // [0x4ff3320] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.HexThirdSeal
@@ -1213,7 +1223,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HexThrillOfTheHuntStatusEffect.GetSpeedPenaltyPercents
-	// float GetSpeedPenaltyPercents(int32_t tierLevel);                                                                     // [0x5015b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSpeedPenaltyPercents(int32_t tierLevel);                                                                     // [0x4ff3410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.HideSurvivorVFXForKillerEffect
@@ -1225,7 +1235,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HideSurvivorVFXForKillerEffect.HideVFX
-	// void HideVFX(bool Hide);                                                                                              // [0x5015ba0] Final|Native|Private|BlueprintCallable 
+	// void HideVFX(bool Hide);                                                                                              // [0x4ff34b0] Final|Native|Private|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.HighestLevelAndClosestEffectCondition
@@ -1242,9 +1252,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HighestLevelAndClosestEffectCondition.SetCurrentEffectLevel
-	// void SetCurrentEffectLevel(int32_t Level);                                                                            // [0x5016700] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentEffectLevel(int32_t Level);                                                                            // [0x4ff4030] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.HighestLevelAndClosestEffectCondition.InitEffectArrays
-	// void InitEffectArrays(FName effectIDLevel1, FName effectIDLevel2, FName effectIDLevel3);                              // [0x5015d00] Final|Native|Public|BlueprintCallable 
+	// void InitEffectArrays(FName effectIDLevel1, FName effectIDLevel2, FName effectIDLevel3);                              // [0x4ff3610] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.HookedSurvivorRangeBaseCondition
@@ -1267,11 +1277,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.HopePerk.GetHasteEffectAtLevel
-	// float GetHasteEffectAtLevel();                                                                                        // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectAtLevel();                                                                                        // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.ImAllEars
-/// Size: 0x0058 (0x0003C8 - 0x000420)
+/// Size: 0x0060 (0x0003C8 - 0x000428)
 class UImAllEars : public UPerk
 { 
 public:
@@ -1280,16 +1290,17 @@ public:
 	bool                                               _useTerrorRadius;                                           // 0x03E0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x03E1   (0x0003)  MISSED
 	float                                              _triggerOutsideRadius;                                      // 0x03E4   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x38];                                      // 0x03E8   (0x0038)  MISSED
+	class UClass*                                      _timedRevealToKillerEffect;                                 // 0x03E8   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x38];                                      // 0x03F0   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.ImAllEars.Server_OnCamperLoudNoise
-	// void Server_OnCamperLoudNoise(FGameplayTag GameplayTag, FGameEventData GameEventData);                                // [0x50165b0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_OnCamperLoudNoise(FGameplayTag GameplayTag, FGameEventData GameEventData);                                // [0x4ff3ee0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/DBDCompetence.ImAllEars.GetDurationAtLevel
-	// float GetDurationAtLevel();                                                                                           // [0x500a980] Final|Native|Public|BlueprintCallable 
+	// float GetDurationAtLevel();                                                                                           // [0x4fe8230] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.ImAllEars.GetCooldownAtLevel
-	// int32_t GetCooldownAtLevel();                                                                                         // [0x5015a30] Final|Native|Public|BlueprintCallable 
+	// int32_t GetCooldownAtLevel();                                                                                         // [0x4ff3340] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.OnEventBaseAddon
@@ -1303,7 +1314,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.OnEventBaseAddon.OnEventFired
-	// void OnEventFired(FGameEventData& GameEventData);                                                                     // [0x61c32d0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnEventFired(FGameEventData& GameEventData);                                                                     // [0x61d2f50] Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Struct /Script/DBDCompetence.StatusEffectInfo
@@ -1343,9 +1354,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.InfectiousFright.RevealSurvivorLocation
-	// void RevealSurvivorLocation(class ACamperPlayer* Target);                                                             // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void RevealSurvivorLocation(class ACamperPlayer* Target);                                                             // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.InfectiousFright.OnRep_PerkActivationCount
-	// void OnRep_PerkActivationCount();                                                                                     // [0x50162e0] Final|Native|Private 
+	// void OnRep_PerkActivationCount();                                                                                     // [0x4ff3c10] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.InnerStrength
@@ -1360,9 +1371,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.InnerStrength.GetHideDuration
-	// float GetHideDuration();                                                                                              // [0x500a9e0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetHideDuration();                                                                                              // [0x4fe8290] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.InnerStrength.Authority_OnPlayerImmobilizeStateChanged
-	// void Authority_OnPlayerImmobilizeStateChanged(EImmobilizedState oldImmobilizeState, EImmobilizedState newImmobilizeState); // [0x50157e0] Final|Native|Private 
+	// void Authority_OnPlayerImmobilizeStateChanged(EImmobilizedState oldImmobilizeState, EImmobilizedState newImmobilizeState); // [0x4ff30f0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.Insidious
@@ -1377,7 +1388,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Insidious.GetStillnessRequiredAtLevel
-	// float GetStillnessRequiredAtLevel();                                                                                  // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStillnessRequiredAtLevel();                                                                                  // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.InsidiousEffect
@@ -1413,7 +1424,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsBestProveThyselfEffectInRange.OnInRangeChanged
-	// void OnInRangeChanged(bool inRange, class UProveThyselfEffect* ProveThyselfEffect);                                   // [0x5016120] Final|Native|Private 
+	// void OnInRangeChanged(bool inRange, class UProveThyselfEffect* ProveThyselfEffect);                                   // [0x4ff3a50] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsBoonBlessed
@@ -1451,7 +1462,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsHighestLevelAndClosestOriginatingEffect.OnStatusEffectAddedOrRemoved
-	// void OnStatusEffectAddedOrRemoved(class UStatusEffect* effect, bool Valid);                                           // [0x5016340] Final|Native|Private 
+	// void OnStatusEffectAddedOrRemoved(class UStatusEffect* effect, bool Valid);                                           // [0x4ff3c70] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsHighestTierOriginatingPerk
@@ -1465,9 +1476,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsHighestTierOriginatingPerk.OnStatusEffectApplicableChanged
-	// void OnStatusEffectApplicableChanged(class UGameplayModifierContainer* GameplayModifierContainer, bool IsApplicable); // [0x50164e0] Final|Native|Private 
+	// void OnStatusEffectApplicableChanged(class UGameplayModifierContainer* GameplayModifierContainer, bool IsApplicable); // [0x4ff3e10] Final|Native|Private 
 	// Function /Script/DBDCompetence.IsHighestTierOriginatingPerk.OnStatusEffectAddedOrRemoved
-	// void OnStatusEffectAddedOrRemoved(class UStatusEffect* effect, bool Valid);                                           // [0x5016410] Final|Native|Private 
+	// void OnStatusEffectAddedOrRemoved(class UStatusEffect* effect, bool Valid);                                           // [0x4ff3d40] Final|Native|Private 
+	// Function /Script/DBDCompetence.IsHighestTierOriginatingPerk.OnGameplayModifierContainerInitialized
+	// void OnGameplayModifierContainerInitialized();                                                                        // [0x4ff3a30] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsInAnyHookedSurvivorOriginatorAuraReadingRange
@@ -1495,7 +1508,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsInRangeOfOriginatingPlayer.OnInRangeChanged
-	// void OnInRangeChanged(bool inRange);                                                                                  // [0x500fb20] Final|Native|Private 
+	// void OnInRangeChanged(bool inRange);                                                                                  // [0x4fed400] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsLifetimeActive
@@ -1526,9 +1539,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsOriginatingPerkBoundToTotems.OnRep_TotemCount
-	// void OnRep_TotemCount();                                                                                              // [0x5016320] Final|Native|Private 
+	// void OnRep_TotemCount();                                                                                              // [0x4ff3c50] Final|Native|Private 
 	// Function /Script/DBDCompetence.IsOriginatingPerkBoundToTotems.Init
-	// void Init(EComparisonOperation comparisonOperator, int32_t totemCount);                                               // [0x5015c30] Final|Native|Public|BlueprintCallable 
+	// void Init(EComparisonOperation comparisonOperator, int32_t totemCount);                                               // [0x4ff3540] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.IsOriginatingPerkUsableCondition
@@ -1556,7 +1569,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsOwningPlayerInRangeFromHook.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x50161f0] Final|Native|Protected 
+	// void OnLevelReadyToPlay();                                                                                            // [0x4ff3b20] Final|Native|Protected 
 };
 
 /// Class /Script/DBDCompetence.IsOwningPlayerInHookRangeWhenKillerCarry
@@ -1611,9 +1624,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsPlayerLookingAtKillerCondition.OnRep_IsLookingTowards
-	// void OnRep_IsLookingTowards(bool IsLookingTowards);                                                                   // [0x500fb20] Final|Native|Private 
+	// void OnRep_IsLookingTowards(bool IsLookingTowards);                                                                   // [0x4fed400] Final|Native|Private 
 	// Function /Script/DBDCompetence.IsPlayerLookingAtKillerCondition.OnPawnControllerChanged
-	// void OnPawnControllerChanged(class APawn* Pawn, class AController* Controller);                                       // [0x5016210] Final|Native|Private 
+	// void OnPawnControllerChanged(class APawn* Pawn, class AController* Controller);                                       // [0x4ff3b40] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsPlayerPerfInteractionWithNoItem
@@ -1630,7 +1643,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsPlayerPerfInteractionWithNoItem.OnCollectableChargeStateChange
-	// void OnCollectableChargeStateChange(bool Empty);                                                                      // [0x5015ef0] Final|Native|Private 
+	// void OnCollectableChargeStateChange(bool Empty);                                                                      // [0x4ff3800] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsPlayerPerformingItemInteraction
@@ -1643,11 +1656,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsPlayerPerformingItemInteraction.OnCollectablePickedUp
-	// void OnCollectablePickedUp(class ADBDPlayer* Player);                                                                 // [0x5016090] Final|Native|Private 
+	// void OnCollectablePickedUp(class ADBDPlayer* Player);                                                                 // [0x4ff39a0] Final|Native|Private 
 	// Function /Script/DBDCompetence.IsPlayerPerformingItemInteraction.OnCollectableDropped
-	// void OnCollectableDropped(EItemDropType dropType);                                                                    // [0x5016010] Final|Native|Private 
+	// void OnCollectableDropped(EItemDropType dropType);                                                                    // [0x4ff3920] Final|Native|Private 
 	// Function /Script/DBDCompetence.IsPlayerPerformingItemInteraction.OnCollectableChargeStateChange
-	// void OnCollectableChargeStateChange(bool Empty);                                                                      // [0x5015f80] Final|Native|Private 
+	// void OnCollectableChargeStateChange(bool Empty);                                                                      // [0x4ff3890] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.IsPlayerPerformingInteraction
@@ -1661,9 +1674,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.IsPlayerPerformingInteraction.UpdateIsTrue
-	// void UpdateIsTrue(class UInteractionDefinition* InteractionDefinition);                                               // [0x50167b0] Final|Native|Private 
+	// void UpdateIsTrue(class UInteractionDefinition* InteractionDefinition);                                               // [0x4ff40e0] Final|Native|Private 
 	// Function /Script/DBDCompetence.IsPlayerPerformingInteraction.SetInteractionSemantics
-	// void SetInteractionSemantics(FGameplayTagContainer& interactionSemantics);                                            // [0x500af40] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetInteractionSemantics(FGameplayTagContainer& interactionSemantics);                                            // [0x4fe8810] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.IsSubjectInteractingWithOriginatingPlayer
@@ -1701,7 +1714,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.KillerSubjectProvider.RegisterWhenKillerSet
-	// void RegisterWhenKillerSet(class ASlasherPlayer* killer);                                                             // [0x501bb80] Final|Native|Private 
+	// void RegisterWhenKillerSet(class ASlasherPlayer* killer);                                                             // [0x4ff9420] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.KindredPerk
@@ -1718,7 +1731,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.KindredPerk.GetKillerAuraRevealRangeAtLevel
-	// float GetKillerAuraRevealRangeAtLevel();                                                                              // [0x500f5a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKillerAuraRevealRangeAtLevel();                                                                              // [0x4fece80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.Leader
@@ -1750,9 +1763,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.LingeringBlessedStatusEffect.SetLingerDuration
-	// void SetLingerDuration(float lingerDuration);                                                                         // [0x501bc10] Final|Native|Protected|BlueprintCallable 
+	// void SetLingerDuration(float lingerDuration);                                                                         // [0x4ff94b0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDCompetence.LingeringBlessedStatusEffect.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x501b610] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x4ff8ed0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.LingeringBlindnessEffect
@@ -1819,17 +1832,17 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.LuckyBreak.GetMinActivationTime
-	// float GetMinActivationTime();                                                                                         // [0x500a8f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMinActivationTime();                                                                                         // [0x4fe81a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.LuckyBreak.GetMaxActivationTimeAtLevel
-	// float GetMaxActivationTimeAtLevel();                                                                                  // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxActivationTimeAtLevel();                                                                                  // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.LuckyBreak.GetHealingTimeToActivationTimeRatio
-	// float GetHealingTimeToActivationTimeRatio();                                                                          // [0x500f7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealingTimeToActivationTimeRatio();                                                                          // [0x4fed080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.LuckyBreak.Authority_TryActivatePerk
-	// void Authority_TryActivatePerk();                                                                                     // [0x501b820] Final|Native|Private 
+	// void Authority_TryActivatePerk();                                                                                     // [0x4ff90e0] Final|Native|Private 
 	// Function /Script/DBDCompetence.LuckyBreak.Authority_OnDamageStateChanged
-	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x501b470] Final|Native|Private 
+	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x4ff8d30] Final|Native|Private 
 	// Function /Script/DBDCompetence.LuckyBreak.ActivationTimerEnded
-	// void ActivationTimerEnded();                                                                                          // [0x501b380] Final|Native|Private 
+	// void ActivationTimerEnded();                                                                                          // [0x4ff8c40] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.MakeYourChoice
@@ -1845,11 +1858,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.MakeYourChoice.Multicast_TriggerEffectAppliedVFX
-	// void Multicast_TriggerEffectAppliedVFX(class ACamperPlayer* Player);                                                  // [0x501b930] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerEffectAppliedVFX(class ACamperPlayer* Player);                                                  // [0x4ff91d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/DBDCompetence.MakeYourChoice.GetMinimumHookedSurvivorDistance
-	// float GetMinimumHookedSurvivorDistance();                                                                             // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMinimumHookedSurvivorDistance();                                                                             // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.MakeYourChoice.Cosmetic_OnTriggerEffectVFX
-	// void Cosmetic_OnTriggerEffectVFX(class ACamperPlayer* Player);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTriggerEffectVFX(class ACamperPlayer* Player);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDCompetence.MindBreaker
@@ -1866,7 +1879,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.MindBreaker.GetEffectDurationAfterRepairAtLevel
-	// float GetEffectDurationAfterRepairAtLevel();                                                                          // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEffectDurationAfterRepairAtLevel();                                                                          // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.MonstrousShrine
@@ -1882,15 +1895,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.MonstrousShrine.GetFasterDrainPercentageAtLevel
-	// float GetFasterDrainPercentageAtLevel();                                                                              // [0x500aa40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFasterDrainPercentageAtLevel();                                                                              // [0x4fe82f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.MonstrousShrine.Authority_OnSurvivorUnhookedOnScourgeHook
-	// void Authority_OnSurvivorUnhookedOnScourgeHook(FGameEventData& GameEventData);                                        // [0x501b770] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorUnhookedOnScourgeHook(FGameEventData& GameEventData);                                        // [0x4ff9030] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDCompetence.MonstrousShrine.Authority_OnSurvivorHookedOnScourgeHook
-	// void Authority_OnSurvivorHookedOnScourgeHook(FGameEventData& GameEventData);                                          // [0x501b6c0] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorHookedOnScourgeHook(FGameEventData& GameEventData);                                          // [0x4ff8f80] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDCompetence.Nemesis
-/// Size: 0x0030 (0x0003C8 - 0x0003F8)
+/// Size: 0x0038 (0x0003C8 - 0x000400)
 class UNemesis : public UPerk
 { 
 public:
@@ -1898,7 +1911,8 @@ public:
 	float                                              _revealToKillerTime;                                        // 0x03D0   (0x000C)  
 	float                                              _obliviousTime;                                             // 0x03DC   (0x000C)  
 	class UClass*                                      _timedObliviousEffectClass;                                 // 0x03E8   (0x0008)  
-	class UStatusEffect*                               _obliviousStatusEffect;                                     // 0x03F0   (0x0008)  
+	class UClass*                                      _timedRevealStatusEffect;                                   // 0x03F0   (0x0008)  
+	class UStatusEffect*                               _obliviousStatusEffect;                                     // 0x03F8   (0x0008)  
 };
 
 /// Class /Script/DBDCompetence.NoOneLeftBehind
@@ -1918,13 +1932,20 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.NoOneLeftBehind.GetMovementSpeedPercentage
-	// float GetMovementSpeedPercentage();                                                                                   // [0x4bae260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMovementSpeedPercentage();                                                                                   // [0x4b75200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.NoOneLeftBehind.GetMovementSpeedDuration
-	// float GetMovementSpeedDuration();                                                                                     // [0x501b8d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMovementSpeedDuration();                                                                                     // [0x4ff9190] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.NoOneLeftBehind.GetActionSpeedModifierValueAtLevel
-	// float GetActionSpeedModifierValueAtLevel();                                                                           // [0x500a9b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActionSpeedModifierValueAtLevel();                                                                           // [0x4fe8260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.NoOneLeftBehind.Authority_OnExitGatePoweredApplicableChanged
-	// void Authority_OnExitGatePoweredApplicableChanged(class UGameplayModifierContainer* Container, bool Active);          // [0x501b540] Final|Native|Private 
+	// void Authority_OnExitGatePoweredApplicableChanged(class UGameplayModifierContainer* Container, bool Active);          // [0x4ff8e00] Final|Native|Private 
+};
+
+/// Class /Script/DBDCompetence.NurseCallingEffect
+/// Size: 0x0000 (0x000350 - 0x000350)
+class UNurseCallingEffect : public UStatusEffect
+{ 
+public:
 };
 
 /// Class /Script/DBDCompetence.ObliviousEffect
@@ -1977,7 +1998,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.OwningPlayerInTotemRange.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x501ba90] Final|Native|Protected 
+	// void OnLevelReadyToPlay();                                                                                            // [0x4ff9330] Final|Native|Protected 
 };
 
 /// Class /Script/DBDCompetence.OwningPlayerInDullTotemRange
@@ -1999,7 +2020,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.PharmacyPerk.GetSearchSpeedAtLevel
-	// float GetSearchSpeedAtLevel();                                                                                        // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSearchSpeedAtLevel();                                                                                        // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.PlayerIsInExitArea
@@ -2012,9 +2033,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.PlayerIsInExitArea.PlayerExitExitArea
-	// void PlayerExitExitArea();                                                                                            // [0x501bb60] Final|Native|Private 
+	// void PlayerExitExitArea();                                                                                            // [0x4ff9400] Final|Native|Private 
 	// Function /Script/DBDCompetence.PlayerIsInExitArea.PlayerEnterExitArea
-	// void PlayerEnterExitArea();                                                                                           // [0x501bb40] Final|Native|Private 
+	// void PlayerEnterExitArea();                                                                                           // [0x4ff93e0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.PlayWithYourFood
@@ -2031,11 +2052,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.PlayWithYourFood.GetMovementSpeedPercentBuffAtLevel
-	// float GetMovementSpeedPercentBuffAtLevel();                                                                           // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMovementSpeedPercentBuffAtLevel();                                                                           // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.PlayWithYourFood.GetChargeGainedCooldown
-	// float GetChargeGainedCooldown();                                                                                      // [0x501b840] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChargeGainedCooldown();                                                                                      // [0x4ff9100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.PlayWithYourFood.Authority_OnChaseEnded
-	// void Authority_OnChaseEnded(class ADBDPlayer* Player, float chaseTime);                                               // [0x501b3a0] Final|Native|Private 
+	// void Authority_OnChaseEnded(class ADBDPlayer* Player, float chaseTime);                                               // [0x4ff8c60] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.Poised
@@ -2049,7 +2070,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Poised.GetActivationTime
-	// float GetActivationTime();                                                                                            // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationTime();                                                                                            // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.Premonition
@@ -2064,13 +2085,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Premonition.Multicast_OnPerkActivate
-	// void Multicast_OnPerkActivate();                                                                                      // [0x501b910] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnPerkActivate();                                                                                      // [0x4fe8460] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/DBDCompetence.Premonition.GetPerkFrequencyAtLevel
-	// float GetPerkFrequencyAtLevel();                                                                                      // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkFrequencyAtLevel();                                                                                      // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Premonition.GetPerkEffectRange
-	// float GetPerkEffectRange();                                                                                           // [0x501b8f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkEffectRange();                                                                                           // [0x4ff91b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Premonition.Cosmetic_OnPerkActivate
-	// void Cosmetic_OnPerkActivate();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPerkActivate();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDCompetence.ProveThyself
@@ -2087,7 +2108,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ProveThyself.OnSurvivorInOwnerRangeChanged
-	// void OnSurvivorInOwnerRangeChanged(bool inRange);                                                                     // [0x501bab0] Final|Native|Private 
+	// void OnSurvivorInOwnerRangeChanged(bool inRange);                                                                     // [0x4ff9350] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.RemoveOnOriginatingSurvivorGoneStatusEffect
@@ -2100,7 +2121,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.RemoveOnOriginatingSurvivorGoneStatusEffect.Authority_OnSurvivorRemoved
-	// void Authority_OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                      // [0x5020a70] Final|Native|Protected 
+	// void Authority_OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                      // [0x4ffe2d0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDCompetence.ProveThyselfEffect
@@ -2115,7 +2136,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ProveThyselfEffect.OnInRangeOfOriginatorChanged
-	// void OnInRangeOfOriginatorChanged(bool inRange, class ACamperPlayer* Survivor);                                       // [0x501b9c0] Native|Protected     
+	// void OnInRangeOfOriginatorChanged(bool inRange, class ACamperPlayer* Survivor);                                       // [0x4ff9260] Native|Protected     
 };
 
 /// Class /Script/DBDCompetence.QuickAndQuiet
@@ -2131,9 +2152,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.QuickAndQuiet.GetCooldownDurationSecondsAtLevel
-	// float GetCooldownDurationSecondsAtLevel();                                                                            // [0x501b870] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationSecondsAtLevel();                                                                            // [0x4ff9130] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.QuickAndQuiet.Authority_OnPlayerRushedActionFinished
-	// void Authority_OnPlayerRushedActionFinished();                                                                        // [0x501b6a0] Final|Native|Private 
+	// void Authority_OnPlayerRushedActionFinished();                                                                        // [0x4ff8f60] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.RampingBlindEffect
@@ -2146,12 +2167,13 @@ public:
 };
 
 /// Class /Script/DBDCompetence.ResiliencePerk
-/// Size: 0x0010 (0x0003C8 - 0x0003D8)
+/// Size: 0x0018 (0x0003C8 - 0x0003E0)
 class UResiliencePerk : public UPerk
 { 
 public:
 	float                                              _actionSpeed;                                               // 0x03C8   (0x000C)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x03D4   (0x0004)  MISSED
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
+	class UClass*                                      _actionSpeedStatusEffectClass;                              // 0x03D8   (0x0008)  
 };
 
 /// Class /Script/DBDCompetence.Saboteur
@@ -2169,11 +2191,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Saboteur.GetScourgeHooksAuraColour
-	// FLinearColor GetScourgeHooksAuraColour();                                                                             // [0x5020d20] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FLinearColor GetScourgeHooksAuraColour();                                                                             // [0x4ffe5e0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Saboteur.GetRevealHookDistanceAtLevel
-	// float GetRevealHookDistanceAtLevel();                                                                                 // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRevealHookDistanceAtLevel();                                                                                 // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Saboteur.GetCooldownDurationAtLevel
-	// float GetCooldownDurationAtLevel();                                                                                   // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationAtLevel();                                                                                   // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.SecondsToRateModifierBaseAddon
@@ -2207,11 +2229,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.SecondWind.GetNumberOfHealStateToHealToActivateAtLevel
-	// float GetNumberOfHealStateToHealToActivateAtLevel();                                                                  // [0x500aa40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNumberOfHealStateToHealToActivateAtLevel();                                                                  // [0x4fe82f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SecondWind.GetDurationOfHealAtLevel
-	// float GetDurationOfHealAtLevel();                                                                                     // [0x500a8c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDurationOfHealAtLevel();                                                                                     // [0x4fe8170] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SecondWind.Authority_OnHealProgress
-	// void Authority_OnHealProgress(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5020110] Final|Native|Private 
+	// void Authority_OnHealProgress(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x4ffd970] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.SelfCare
@@ -2228,7 +2250,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.SelfCare.OnRep_InteractionAttacherComponent
-	// void OnRep_InteractionAttacherComponent();                                                                            // [0x5021130] Final|Native|Private 
+	// void OnRep_InteractionAttacherComponent();                                                                            // [0x4ffe9d0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.SpawnEffectsOnAllSurvivorsBaseAddon
@@ -2241,14 +2263,12 @@ public:
 };
 
 /// Struct /Script/DBDCompetence.SimpleSpawnEffectsOnAllSurvivorsAddonParams
-/// Size: 0x0020 (0x000000 - 0x000020)
+/// Size: 0x0010 (0x000000 - 0x000010)
 struct FSimpleSpawnEffectsOnAllSurvivorsAddonParams
 { 
-	FName                                              _statusEffectIdDeprecated;                                  // 0x0000   (0x000C)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	class UClass*                                      _effectClass;                                               // 0x0010   (0x0008)  
-	float                                              _customParam;                                               // 0x0018   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x4];                                       // 0x001C   (0x0004)  MISSED
+	class UClass*                                      _effectClass;                                               // 0x0000   (0x0008)  
+	float                                              _customParam;                                               // 0x0008   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x000C   (0x0004)  MISSED
 };
 
 /// Class /Script/DBDCompetence.SimpleSpawnEffectsOnAllSurvivorsAddon
@@ -2284,35 +2304,36 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.SmallGame.VFXTotemFound
-	// void VFXTotemFound();                                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void VFXTotemFound();                                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.SmallGame.SearchForTotems
-	// void SearchForTotems();                                                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void SearchForTotems();                                                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.SmallGame.Multicast_TotemFound
-	// void Multicast_TotemFound();                                                                                          // [0x501b910] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_TotemFound();                                                                                          // [0x4fe8460] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/DBDCompetence.SmallGame.GetDetectionConeAngle
-	// float GetDetectionConeAngle();                                                                                        // [0x5020c30] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetDetectionConeAngle();                                                                                        // [0x4ffe4c0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SmallGame.Authority_SetTotemDetected
-	// void Authority_SetTotemDetected(bool value);                                                                          // [0x5020b00] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_SetTotemDetected(bool value);                                                                          // [0x4ffe360] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DBDCompetence.SoleSurvivor
-/// Size: 0x0060 (0x0003C8 - 0x000428)
+/// Size: 0x0068 (0x0003C8 - 0x000430)
 class USoleSurvivor : public UPerk
 { 
 public:
 	class UClass*                                      _modifyActionSpeedWhenRepairingEffect;                      // 0x03C8   (0x0008)  
 	class UClass*                                      _modifyActionSpeedWhenOpeningGateOrHatchEffect;             // 0x03D0   (0x0008)  
-	float                                              _actionSpeedsRepairing;                                     // 0x03D8   (0x000C)  
-	float                                              _actionSpeedsOpeningGateOrHatch;                            // 0x03E4   (0x000C)  
-	float                                              _auraHideDistancePerDeadOrDisconnectedSurvivor;             // 0x03F0   (0x000C)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03FC   (0x0004)  MISSED
-	TArray<class ACamperPlayer*>                       _otherSurvivors;                                            // 0x0400   (0x0010)  
-	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0410   (0x0018)  MISSED
+	class UClass*                                      _obsessionChanceStatusEffectClass;                          // 0x03D8   (0x0008)  
+	float                                              _actionSpeedsRepairing;                                     // 0x03E0   (0x000C)  
+	float                                              _actionSpeedsOpeningGateOrHatch;                            // 0x03EC   (0x000C)  
+	float                                              _auraHideDistancePerDeadOrDisconnectedSurvivor;             // 0x03F8   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0404   (0x0004)  MISSED
+	TArray<class ACamperPlayer*>                       _otherSurvivors;                                            // 0x0408   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0418   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.SoleSurvivor.Authority_OnSurvivorAdded
-	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x50209e0] Final|Native|Private 
+	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x4ffe240] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.Solidarity
@@ -2330,9 +2351,40 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Solidarity.Authority_OnSkillCheckResponse
-	// void Authority_OnSkillCheckResponse(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, bool hadInput, ESkillCheckCustomType Type, float ChargeChange); // [0x50207a0] Final|Native|Private 
+	// void Authority_OnSkillCheckResponse(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, bool hadInput, ESkillCheckCustomType Type, float ChargeChange); // [0x4ffe000] Final|Native|Private 
 	// Function /Script/DBDCompetence.Solidarity.Authority_OnHealthChargeApplied
-	// void Authority_OnHealthChargeApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x50202c0] Final|Native|Private 
+	// void Authority_OnHealthChargeApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x4ffdb20] Final|Native|Private 
+};
+
+/// Struct /Script/DBDCompetence.SpawningEffectOnGameEventData
+/// Size: 0x0010 (0x000000 - 0x000010)
+struct FSpawningEffectOnGameEventData
+{ 
+	class UClass*                                      StatusEffect;                                               // 0x0000   (0x0008)  
+	float                                              CustomParameter;                                            // 0x0008   (0x0004)  
+	float                                              Lifetime;                                                   // 0x000C   (0x0004)  
+};
+
+/// Class /Script/DBDCompetence.SpawningEffectOnGameEventPerk
+/// Size: 0x0078 (0x0003C8 - 0x000440)
+class USpawningEffectOnGameEventPerk : public UPerk
+{ 
+public:
+	bool                                               _shouldStartActivationTimerOnGameEventWithLifetime;         // 0x03C8   (0x0001)  
+	bool                                               _shouldCheckIfOwnerIsInstigatorOrTarget;                    // 0x03C9   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x6];                                       // 0x03CA   (0x0006)  MISSED
+	FGameplayTagContainer                              _gameEvents;                                                // 0x03D0   (0x0020)  
+	ESpawningEffectGameEventSubject                    _subjectType;                                               // 0x03F0   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x03F1   (0x0007)  MISSED
+	FSpawningEffectOnGameEventData                     _statusEffects;                                             // 0x03F8   (0x0030)  
+	unsigned char                                      UnknownData02_6[0x18];                                      // 0x0428   (0x0018)  MISSED
+
+
+	/// Functions
+	// Function /Script/DBDCompetence.SpawningEffectOnGameEventPerk.GetLifetimeOfStatusEffectAtLevel
+	// float GetLifetimeOfStatusEffectAtLevel();                                                                             // [0x4ffe520] Final|Native|Public|BlueprintCallable 
+	// Function /Script/DBDCompetence.SpawningEffectOnGameEventPerk.GetCustomParameterOfStatusEffectAtLevel
+	// float GetCustomParameterOfStatusEffectAtLevel();                                                                      // [0x4ffe490] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/DBDCompetence.StatusEffectsProperties
@@ -2340,7 +2392,7 @@ public:
 struct FStatusEffectsProperties
 { 
 	class UClass*                                      StatusEffectClass;                                          // 0x0000   (0x0008)  
-	float                                              customParam;                                                // 0x0008   (0x0004)  
+	float                                              CustomParam;                                                // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x000C   (0x0004)  MISSED
 };
 
@@ -2350,7 +2402,7 @@ class USpawnStatusEffectsOnKillerAddon : public UItemAddon
 { 
 public:
 	TArray<FStatusEffectsProperties>                   _statusEffectsToSpawn;                                      // 0x02B8   (0x0010)  
-	SDK_UNDEFINED(16,3601) /* TArray<TWeakObjectPtr<UStatusEffect*>> */ __um(_imposedStatusEffects);               // 0x02C8   (0x0010)  
+	SDK_UNDEFINED(16,3691) /* TArray<TWeakObjectPtr<UStatusEffect*>> */ __um(_imposedStatusEffects);               // 0x02C8   (0x0010)  
 };
 
 /// Class /Script/DBDCompetence.SpiesFromTheShadows
@@ -2364,7 +2416,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.SpiesFromTheShadows.GetCooldownDuration
-	// float GetCooldownDuration();                                                                                          // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDuration();                                                                                          // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.SpineChillPerk
@@ -2383,43 +2435,44 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.SpineChillPerk.IsLookingTowards
-	// bool IsLookingTowards();                                                                                              // [0x50210a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLookingTowards();                                                                                              // [0x4ffe960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SpineChillPerk.IsInRange
-	// bool IsInRange();                                                                                                     // [0x5021070] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInRange();                                                                                                     // [0x4ffe930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SpineChillPerk.HasLineOfSight
-	// bool HasLineOfSight();                                                                                                // [0x5020ed0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasLineOfSight();                                                                                                // [0x4ffe790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SpineChillPerk.GetRange
-	// float GetRange();                                                                                                     // [0x5020cf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRange();                                                                                                     // [0x4ffe5b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SpineChillPerk.GetLingerDuration
-	// float GetLingerDuration();                                                                                            // [0x5020c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLingerDuration();                                                                                            // [0x4ffe550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SpineChillPerk.Authority_OnIsLookingTowardsChanged
-	// void Authority_OnIsLookingTowardsChanged(bool IsLookingTowards);                                                      // [0x5020590] Final|Native|Private 
+	// void Authority_OnIsLookingTowardsChanged(bool IsLookingTowards);                                                      // [0x4ffddf0] Final|Native|Private 
 	// Function /Script/DBDCompetence.SpineChillPerk.Authority_OnIsInLineOfSightChanged
-	// void Authority_OnIsInLineOfSightChanged(bool isInLineOfSight);                                                        // [0x5020500] Final|Native|Private 
+	// void Authority_OnIsInLineOfSightChanged(bool isInLineOfSight);                                                        // [0x4ffdd60] Final|Native|Private 
 	// Function /Script/DBDCompetence.SpineChillPerk.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5020470] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x4ffdcd0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.SprintBurst
-/// Size: 0x0020 (0x0003C8 - 0x0003E8)
+/// Size: 0x0028 (0x0003C8 - 0x0003F0)
 class USprintBurst : public UPerk
 { 
 public:
 	float                                              _exhaustionDuration;                                        // 0x03C8   (0x000C)  
 	float                                              _sprintDuration;                                            // 0x03D4   (0x0004)  
-	class UActivatableExhaustedEffect*                 _exhaustedEffect;                                           // 0x03D8   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x03E0   (0x0008)  MISSED
+	class UClass*                                      _exhaustedEffectClass;                                      // 0x03D8   (0x0008)  
+	class UActivatableExhaustedEffect*                 _exhaustedEffect;                                           // 0x03E0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x03E8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.SprintBurst.GetSprintDuration
-	// float GetSprintDuration();                                                                                            // [0x500a8f0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetSprintDuration();                                                                                            // [0x4fe81a0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SprintBurst.GetExhaustedDuration
-	// float GetExhaustedDuration();                                                                                         // [0x500a800] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustedDuration();                                                                                         // [0x4fe80b0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.SprintBurst.Authority_OnPerkFlagsChanged
-	// void Authority_OnPerkFlagsChanged(FGameplayTag GameplayTag, bool isAdded);                                            // [0x50206b0] Final|Native|Private 
+	// void Authority_OnPerkFlagsChanged(FGameplayTag GameplayTag, bool isAdded);                                            // [0x4ffdf10] Final|Native|Private 
 	// Function /Script/DBDCompetence.SprintBurst.Authority_OnIsRunningAndMovingChanged
-	// void Authority_OnIsRunningAndMovingChanged(bool isRunningAndMoving);                                                  // [0x5020620] Final|Native|Private 
+	// void Authority_OnIsRunningAndMovingChanged(bool isRunningAndMoving);                                                  // [0x4ffde80] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.StakeOutPerk
@@ -2436,13 +2489,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.StakeOutPerk.Server_ConsumeToken
-	// void Server_ConsumeToken();                                                                                           // [0x5021150] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_ConsumeToken();                                                                                           // [0x4ffe9f0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/DBDCompetence.StakeOutPerk.Local_BroadcastConsumeToken
-	// void Local_BroadcastConsumeToken();                                                                                   // [0x50210d0] Final|Native|Public|BlueprintCallable 
+	// void Local_BroadcastConsumeToken();                                                                                   // [0x4ffe990] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDCompetence.StakeOutPerk.GetTokenChargeTime
-	// float GetTokenChargeTime();                                                                                           // [0x5020e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTokenChargeTime();                                                                                           // [0x4ffe730] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.StakeOutPerk.GetMaxTokensAtLevel
-	// float GetMaxTokensAtLevel();                                                                                          // [0x5020cc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxTokensAtLevel();                                                                                          // [0x4ffe580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.StatsSystemUtilities
@@ -2454,9 +2507,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.StatsSystemUtilities.InitStatBP
-	// void InitStatBP(FTunableStat& theStat, TScriptInterface<Class> ModifierProvider);                                     // [0x5020f00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void InitStatBP(FTunableStat& theStat, TScriptInterface<Class> ModifierProvider);                                     // [0x4ffe7c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DBDCompetence.StatsSystemUtilities.GetStatValueBP
-	// float GetStatValueBP(FTunableStat& theStat);                                                                          // [0x5020d60] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// float GetStatValueBP(FTunableStat& theStat);                                                                          // [0x4ffe620] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DBDCompetence.StatusEffectOriginatorSubjectProvider
@@ -2481,15 +2534,15 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Surge.GetZoneRadius
-	// float GetZoneRadius();                                                                                                // [0x5020ea0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetZoneRadius();                                                                                                // [0x4ffe760] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Surge.GetInstantRegressionAtLevel
-	// float GetInstantRegressionAtLevel();                                                                                  // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetInstantRegressionAtLevel();                                                                                  // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Surge.GetHasCooldown
-	// bool GetHasCooldown();                                                                                                // [0x5020c60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetHasCooldown();                                                                                                // [0x4ffe4f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Surge.GetCooldownDurationAtLevel
-	// float GetCooldownDurationAtLevel();                                                                                   // [0x500aa40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationAtLevel();                                                                                   // [0x4fe82f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Surge.Client_TriggerEffects
-	// void Client_TriggerEffects(TArray<AGenerator*> generators);                                                           // [0x5020b90] Final|Net|Native|Event|Private|NetClient 
+	// void Client_TriggerEffects(TArray<AGenerator*> generators);                                                           // [0x4ffe3f0] Final|Net|Native|Event|Private|NetClient 
 };
 
 /// Class /Script/DBDCompetence.SurvivorWasRecentlyUnhookedEffect
@@ -2516,14 +2569,14 @@ public:
 };
 
 /// Class /Script/DBDCompetence.TestDBDGameState
-/// Size: 0x0000 (0x000908 - 0x000908)
+/// Size: 0x0000 (0x000948 - 0x000948)
 class ATestDBDGameState : public ADBDGameState
 { 
 public:
 };
 
 /// Class /Script/DBDCompetence.TheMettleOfMan
-/// Size: 0x0050 (0x0003C8 - 0x000418)
+/// Size: 0x0058 (0x0003C8 - 0x000420)
 class UTheMettleOfMan : public UPerk
 { 
 public:
@@ -2532,20 +2585,21 @@ public:
 	bool                                               _mustBeInjured;                                             // 0x03E0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x03E1   (0x0007)  MISSED
 	class UClass*                                      _enduranceHighlightEffectClass;                             // 0x03E8   (0x0008)  
-	int32_t                                            _numTokenSoFar;                                             // 0x03F0   (0x0004)  
-	ETheMettleOfManPhase                               _currentPhase;                                              // 0x03F4   (0x0001)  
-	unsigned char                                      UnknownData01_5[0xB];                                       // 0x03F5   (0x000B)  MISSED
-	class UStatusEffect*                               _revealToKillerEffect;                                      // 0x0400   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0408   (0x0010)  MISSED
+	class UClass*                                      _revealToKillerEffectClass;                                 // 0x03F0   (0x0008)  
+	int32_t                                            _numTokenSoFar;                                             // 0x03F8   (0x0004)  
+	ETheMettleOfManPhase                               _currentPhase;                                              // 0x03FC   (0x0001)  
+	unsigned char                                      UnknownData01_5[0xB];                                       // 0x03FD   (0x000B)  MISSED
+	class UStatusEffect*                               _revealToKillerEffect;                                      // 0x0408   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0410   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.TheMettleOfMan.OnRep_NumTokenSoFar
-	// void OnRep_NumTokenSoFar();                                                                                           // [0x5021110] Final|Native|Private 
+	// void OnRep_NumTokenSoFar();                                                                                           // [0x4ffe9b0] Final|Native|Private 
 	// Function /Script/DBDCompetence.TheMettleOfMan.OnRep_CurrentPhase
-	// void OnRep_CurrentPhase();                                                                                            // [0x5021110] Final|Native|Private 
+	// void OnRep_CurrentPhase();                                                                                            // [0x4ffe9b0] Final|Native|Private 
 	// Function /Script/DBDCompetence.TheMettleOfMan.GetRevealOutsideRangeAtLevel
-	// float GetRevealOutsideRangeAtLevel();                                                                                 // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRevealOutsideRangeAtLevel();                                                                                 // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.ThrillingTremors
@@ -2566,11 +2620,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.ThrillingTremors.OnRep_BlockedGenerators
-	// void OnRep_BlockedGenerators();                                                                                       // [0x50210f0] Final|Native|Private 
+	// void OnRep_BlockedGenerators();                                                                                       // [0x5000d80] Final|Native|Private 
 	// Function /Script/DBDCompetence.ThrillingTremors.GetDurationAtLevel
-	// float GetDurationAtLevel();                                                                                           // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDurationAtLevel();                                                                                           // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.ThrillingTremors.GetCooldownAtLevel
-	// int32_t GetCooldownAtLevel();                                                                                         // [0x5015a30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCooldownAtLevel();                                                                                         // [0x4ff3340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDCompetence.TimedObliviousEffect
@@ -2606,25 +2660,25 @@ public:
 	float                                              _distanceThreshold;                                         // 0x03D4   (0x0004)  
 	float                                              _activationTime;                                            // 0x03D8   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03E4   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3602) /* TMap<AActor*, float> */  __um(_generatorActivationTimes);                            // 0x03E8   (0x0050)  
+	SDK_UNDEFINED(80,3692) /* TMap<AActor*, float> */  __um(_generatorActivationTimes);                            // 0x03E8   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0438   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDCompetence.Tinkerer.GetTriggerThreshold
-	// float GetTriggerThreshold();                                                                                          // [0x5023110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTriggerThreshold();                                                                                          // [0x5000ca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Tinkerer.GetActivationTimeAtLevel
-	// float GetActivationTimeAtLevel();                                                                                     // [0x500f7d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationTimeAtLevel();                                                                                     // [0x4fed0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.Tinkerer.Authority_OnUndetectableGeneratorInterrupt
-	// void Authority_OnUndetectableGeneratorInterrupt(class ADBDPlayer* Instigator, class ADBDPlayer* Target);              // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Authority_OnUndetectableGeneratorInterrupt(class ADBDPlayer* Instigator, class ADBDPlayer* Target);              // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/DBDCompetence.Tinkerer.Authority_OnUndetectableAttackSuccessNearActiveGenerator
-	// void Authority_OnUndetectableAttackSuccessNearActiveGenerator(class ADBDPlayer* Instigator, class ADBDPlayer* Target); // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Authority_OnUndetectableAttackSuccessNearActiveGenerator(class ADBDPlayer* Instigator, class ADBDPlayer* Target); // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/DBDCompetence.Tinkerer.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5022fb0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5000b40] Final|Native|Private 
 	// Function /Script/DBDCompetence.Tinkerer.Authority_OnGeneratorReachedThreshold
-	// void Authority_OnGeneratorReachedThreshold(class AGenerator* Generator);                                              // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Authority_OnGeneratorReachedThreshold(class AGenerator* Generator);                                              // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/DBDCompetence.Tinkerer.Authority_OnGeneratorChargePercentChanged
-	// void Authority_OnGeneratorChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5022ea0] Final|Native|Private 
+	// void Authority_OnGeneratorChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5000a30] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.UndetectableEffect
@@ -2684,11 +2738,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.WellMakeIt.GetPerkDurationAtLevel
-	// float GetPerkDurationAtLevel();                                                                                       // [0x50230e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkDurationAtLevel();                                                                                       // [0x5000c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.WellMakeIt.GetHealingSpeed
-	// float GetHealingSpeed();                                                                                              // [0x500f7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealingSpeed();                                                                                              // [0x4fed080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCompetence.WellMakeIt.Authority_OnUnHook
-	// void Authority_OnUnHook(FGameplayTag gameEventType, FGameEventData& GameEventData);                                   // [0x5022fd0] Final|Native|Private|HasOutParms 
+	// void Authority_OnUnHook(FGameplayTag gameEventType, FGameEventData& GameEventData);                                   // [0x5000b60] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDCompetence.WereGonnaLiveForever
@@ -2706,7 +2760,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.WereGonnaLiveForever.OnRep_PerkEnabled
-	// void OnRep_PerkEnabled();                                                                                             // [0x50231f0] Final|Native|Private 
+	// void OnRep_PerkEnabled();                                                                                             // [0x5000da0] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.Whispers
@@ -2722,11 +2776,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.Whispers.OnWhispersAudio
-	// void OnWhispersAudio();                                                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnWhispersAudio();                                                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.Whispers.OnRep_SurvivorsInRange
-	// void OnRep_SurvivorsInRange();                                                                                        // [0x5023210] Final|Native|Private 
+	// void OnRep_SurvivorsInRange();                                                                                        // [0x5000dc0] Final|Native|Private 
 	// Function /Script/DBDCompetence.Whispers.Multicast_FireAudioEvent
-	// void Multicast_FireAudioEvent(int32_t survivorsInRange);                                                              // [0x5023140] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_FireAudioEvent(int32_t survivorsInRange);                                                              // [0x5000cd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/DBDCompetence.YamaokaFamilyCrest
@@ -2744,9 +2798,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCompetence.YamaokaFamilyCrest.RevealSurvivor
-	// void RevealSurvivor(class ACamperPlayer* survivorToReveal);                                                           // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void RevealSurvivor(class ACamperPlayer* survivorToReveal);                                                           // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCompetence.YamaokaFamilyCrest.OnRep_AddonActivationCount
-	// void OnRep_AddonActivationCount();                                                                                    // [0x50231d0] Final|Native|Private 
+	// void OnRep_AddonActivationCount();                                                                                    // [0x5000d60] Final|Native|Private 
 };
 
 /// Class /Script/DBDCompetence.ZanshinTactics

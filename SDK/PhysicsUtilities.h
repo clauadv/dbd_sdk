@@ -31,11 +31,11 @@ public:
 
 	/// Functions
 	// Function /Script/PhysicsUtilities.DynamicCapsuleResizerComponent.SetShrinkingEnabled
-	// void SetShrinkingEnabled(bool Enabled);                                                                               // [0x84881c0] Final|Native|Public|BlueprintCallable 
+	// void SetShrinkingEnabled(bool Enabled);                                                                               // [0x8499500] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsUtilities.DynamicCapsuleResizerComponent.OnRep_IsShrinkingAlwaysEnabled
-	// void OnRep_IsShrinkingAlwaysEnabled();                                                                                // [0x84881a0] Final|Native|Private 
+	// void OnRep_IsShrinkingAlwaysEnabled();                                                                                // [0x84994e0] Final|Native|Private 
 	// Function /Script/PhysicsUtilities.DynamicCapsuleResizerComponent.OnHit
-	// void OnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x8487fc0] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x8499300] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/PhysicsUtilities.PrimitiveCollection
@@ -43,14 +43,14 @@ public:
 class UPrimitiveCollection : public UObject
 { 
 public:
-	SDK_UNDEFINED(80,1690) /* TSet<TWeakObjectPtr<UPrimitiveComponent*>> */ __um(_primitives);                     // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,1715) /* TSet<TWeakObjectPtr<UPrimitiveComponent*>> */ __um(_primitives);                     // 0x0030   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/PhysicsUtilities.PrimitiveCollection.Remove
-	// void Remove(class UPrimitiveComponent* Primitive);                                                                    // [0x8488550] Final|Native|Public|BlueprintCallable 
+	// void Remove(class UPrimitiveComponent* Primitive);                                                                    // [0x8499890] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysicsUtilities.PrimitiveCollection.Add
-	// void Add(class UPrimitiveComponent* Primitive);                                                                       // [0x84884c0] Final|Native|Public|BlueprintCallable 
+	// void Add(class UPrimitiveComponent* Primitive);                                                                       // [0x8499800] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PhysicsUtilities.PrimitivesRegistererComponent
@@ -59,11 +59,11 @@ class UPrimitivesRegistererComponent : public UActorComponent
 { 
 public:
 	TArray<class UPrimitiveComponent*>                 _primitives;                                                // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(8,1691) /* TWeakObjectPtr<UPrimitiveCollection*> */ __um(_primitiveCollection);                  // 0x00C8   (0x0008)  
+	SDK_UNDEFINED(8,1716) /* TWeakObjectPtr<UPrimitiveCollection*> */ __um(_primitiveCollection);                  // 0x00C8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/PhysicsUtilities.PrimitivesRegistererComponent.SetPrimitives
-	// void SetPrimitives(TArray<UPrimitiveComponent*>& primitives);                                                         // [0x8488750] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPrimitives(TArray<UPrimitiveComponent*>& primitives);                                                         // [0x8499a90] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 

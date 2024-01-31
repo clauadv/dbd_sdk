@@ -160,11 +160,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28AnimInstance.GetCustomAnimationTags
-	// TArray<FName> GetCustomAnimationTags();                                                                               // [0x5bd7930] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetCustomAnimationTags();                                                                               // [0x5be5060] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28AnimInstance.GetAnimationMappingIndex
-	// int32_t GetAnimationMappingIndex();                                                                                   // [0x5bd7900] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAnimationMappingIndex();                                                                                   // [0x5be5030] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28AnimInstance.BP_OnCustomizationAnimationMappingIDChanged
-	// void BP_OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                      // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                      // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28CheatComponent
@@ -176,19 +176,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28UnlockAllLockbars
-	// void DBD_K28UnlockAllLockbars();                                                                                      // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K28UnlockAllLockbars();                                                                                      // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28TriggerNextNightCycle
-	// void DBD_K28TriggerNextNightCycle();                                                                                  // [0x5bd78e0] Final|Exec|Native|Public 
+	// void DBD_K28TriggerNextNightCycle();                                                                                  // [0x5be5010] Final|Exec|Native|Public 
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28SetPowerNoCooldown
-	// void DBD_K28SetPowerNoCooldown(bool noCooldown);                                                                      // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_K28SetPowerNoCooldown(bool noCooldown);                                                                      // [0x581c030] Final|Exec|Native|Public 
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28LockAllLockbars
-	// void DBD_K28LockAllLockbars();                                                                                        // [0x5bd78c0] Final|Exec|Native|Public 
+	// void DBD_K28LockAllLockbars();                                                                                        // [0x5be4ff0] Final|Exec|Native|Public 
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28DisplayLockerClusters
-	// void DBD_K28DisplayLockerClusters(float secondsToDisplayDebugElements);                                               // [0x49bd730] Final|Exec|Native|Public 
+	// void DBD_K28DisplayLockerClusters(float secondsToDisplayDebugElements);                                               // [0x496cad0] Final|Exec|Native|Public 
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28DebugCosmetics
-	// void DBD_K28DebugCosmetics(bool noCooldown);                                                                          // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_K28DebugCosmetics(bool noCooldown);                                                                          // [0x581c030] Final|Exec|Native|Public 
 	// Function /Script/TheK28.K28CheatComponent.DBD_K28BreakAllLocks
-	// void DBD_K28BreakAllLocks();                                                                                          // [0x5bd78a0] Final|Exec|Native|Public 
+	// void DBD_K28BreakAllLocks();                                                                                          // [0x5be4fd0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheK28.K28DayNightComponent
@@ -227,19 +227,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28DayNightComponent.OnRep_NighttimeNearingActivation
-	// void OnRep_NighttimeNearingActivation();                                                                              // [0x5bd8190] Final|Native|Private 
+	// void OnRep_NighttimeNearingActivation();                                                                              // [0x5be5960] Final|Native|Private 
 	// Function /Script/TheK28.K28DayNightComponent.OnRep_HasReachedNightCycleNearEndThreshold
-	// void OnRep_HasReachedNightCycleNearEndThreshold();                                                                    // [0x5bd8150] Final|Native|Private 
+	// void OnRep_HasReachedNightCycleNearEndThreshold();                                                                    // [0x5be5920] Final|Native|Private 
 	// Function /Script/TheK28.K28DayNightComponent.OnRep_CurrentDayNightCycle
-	// void OnRep_CurrentDayNightCycle();                                                                                    // [0x5bd8130] Final|Native|Private 
+	// void OnRep_CurrentDayNightCycle();                                                                                    // [0x5be5900] Final|Native|Private 
 	// Function /Script/TheK28.K28DayNightComponent.Cosmetic_OnNightCycleChanged
-	// void Cosmetic_OnNightCycleChanged(class UAkComponent* AkComponent, EK28NightCycleState newNightCycleState);           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNightCycleChanged(class UAkComponent* AkComponent, EK28NightCycleState newNightCycleState);           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28DayNightComponent.Cosmetic_OnIsInLastTwentySecondsOfNightCycle
-	// void Cosmetic_OnIsInLastTwentySecondsOfNightCycle(class UAkComponent* AkComponent);                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsInLastTwentySecondsOfNightCycle(class UAkComponent* AkComponent);                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28DayNightComponent.Authority_OnSurvivorDamageStateChanged
-	// void Authority_OnSurvivorDamageStateChanged(ECamperDamageState PreviousDamageState, ECamperDamageState newDamageState); // [0x5bd77d0] Final|Native|Private 
+	// void Authority_OnSurvivorDamageStateChanged(ECamperDamageState PreviousDamageState, ECamperDamageState newDamageState); // [0x5be4f00] Final|Native|Private 
 	// Function /Script/TheK28.K28DayNightComponent.Authority_OnIntroCompleted
-	// void Authority_OnIntroCompleted();                                                                                    // [0x5bd76e0] Final|Native|Private 
+	// void Authority_OnIntroCompleted();                                                                                    // [0x5be4e10] Final|Native|Private 
 };
 
 /// Class /Script/TheK28.K28FXInterface
@@ -251,37 +251,37 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_TriggerFadeOut
-	// void Cosmetic_TriggerFadeOut();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerFadeOut();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_TriggerFadeIn
-	// void Cosmetic_TriggerFadeIn();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerFadeIn();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_SetDebugCosmetics
-	// void Cosmetic_SetDebugCosmetics(bool isDebugCosmeticsActive);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetDebugCosmetics(bool isDebugCosmeticsActive);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_SetBlackMaterialOnKiller
-	// void Cosmetic_SetBlackMaterialOnKiller(bool blackMaterialApplied);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetBlackMaterialOnKiller(bool blackMaterialApplied);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnTeleportCooldownEnded
-	// void Cosmetic_OnTeleportCooldownEnded();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTeleportCooldownEnded();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnTeleportationToLockerStart
-	// void Cosmetic_OnTeleportationToLockerStart(float teleportationDuration, bool isKillerAlreadyHidingInLocker);          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTeleportationToLockerStart(float teleportationDuration, bool isKillerAlreadyHidingInLocker);          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnTeleportationToLockerEnd
-	// void Cosmetic_OnTeleportationToLockerEnd();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTeleportationToLockerEnd();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnShowKiller
-	// void Cosmetic_OnShowKiller(bool isInstantShow);                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnShowKiller(bool isInstantShow);                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnLockerTeleportTargetHighlighted
-	// void Cosmetic_OnLockerTeleportTargetHighlighted();                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnLockerTeleportTargetHighlighted();                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnLocallyObservedChanged
-	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnKillerEnterLocker
-	// void Cosmetic_OnKillerEnterLocker();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerEnterLocker();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnIsKillingSurvivorWithMoriStateChanged
-	// void Cosmetic_OnIsKillingSurvivorWithMoriStateChanged(bool isKillingSurvivorWithMori);                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnIsKillingSurvivorWithMoriStateChanged(bool isKillingSurvivorWithMori);                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnHideKiller
-	// void Cosmetic_OnHideKiller();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnHideKiller();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnChargeTeleportStart
-	// void Cosmetic_OnChargeTeleportStart();                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnChargeTeleportStart();                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnChargeTeleportComplete
-	// void Cosmetic_OnChargeTeleportComplete();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnChargeTeleportComplete();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28FXInterface.Cosmetic_OnChargeTeleportCancelled
-	// void Cosmetic_OnChargeTeleportCancelled();                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnChargeTeleportCancelled();                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28IsNightCycleState
@@ -295,7 +295,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28IsNightCycleState.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5bd7f50] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5be5720] Final|Native|Private 
 };
 
 /// Class /Script/TheK28.K28PlayerComponent
@@ -303,7 +303,7 @@ public:
 class UK28PlayerComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(8,4116) /* TWeakObjectPtr<UK28DayNightComponent*> */ __um(_dayNightComponent);                   // 0x00B8   (0x0008)  
+	SDK_UNDEFINED(8,4209) /* TWeakObjectPtr<UK28DayNightComponent*> */ __um(_dayNightComponent);                   // 0x00B8   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x00C0   (0x0008)  MISSED
 	FDBDTunableRowHandle                               _nightEffectMinimumDistance;                                // 0x00C8   (0x0028)  
 	FDBDTunableRowHandle                               _nightEffectMaximumDistance;                                // 0x00F0   (0x0028)  
@@ -313,9 +313,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28PlayerComponent.OnSurvivorInRangeChanged
-	// void OnSurvivorInRangeChanged(bool inRange, class ACamperPlayer* Player);                                             // [0x5bdc9d0] Final|Native|Private 
+	// void OnSurvivorInRangeChanged(bool inRange, class ACamperPlayer* Player);                                             // [0x5bea1c0] Final|Native|Private 
 	// Function /Script/TheK28.K28PlayerComponent.OnRep_DayNightComponent
-	// void OnRep_DayNightComponent();                                                                                       // [0x4e01260] Native|Protected     
+	// void OnRep_DayNightComponent();                                                                                       // [0x4dd4880] Native|Protected     
 };
 
 /// Class /Script/TheK28.K28KillerComponent
@@ -328,9 +328,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28KillerComponent.Cosmetic_OnNighttimeNearingActivation
-	// void Cosmetic_OnNighttimeNearingActivation(class ASlasherPlayer* killer);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNighttimeNearingActivation(class ASlasherPlayer* killer);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28KillerComponent.Cosmetic_OnNightCycleStateChanged
-	// void Cosmetic_OnNightCycleStateChanged(class ASlasherPlayer* killer, EK28NightCycleState dayNightCycleState, bool instant); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNightCycleStateChanged(class ASlasherPlayer* killer, EK28NightCycleState dayNightCycleState, bool instant); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28KillerEnterLockerInteraction
@@ -344,7 +344,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28KillerEnterLockerInteraction.IsKillerAllowedToEnterLocker
-	// bool IsKillerAllowedToEnterLocker(class ADBDPlayer* Player);                                                          // [0x5bd79b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsKillerAllowedToEnterLocker(class ADBDPlayer* Player);                                                          // [0x5be50e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK28.K28KillerExitLockerInteraction
@@ -399,9 +399,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28KillerInstinctEffect.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5bd77b0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5be4ee0] Final|Native|Private 
 	// Function /Script/TheK28.K28KillerInstinctEffect.Authority_OnKillerInstinctApplicableChanged
-	// void Authority_OnKillerInstinctApplicableChanged(bool Active);                                                        // [0x5bd7700] Final|Native|Private 
+	// void Authority_OnKillerInstinctApplicableChanged(bool Active);                                                        // [0x5be4e30] Final|Native|Private 
 };
 
 /// Struct /Script/TheK28.K28KillerLockerState
@@ -434,9 +434,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28KillerLockerComponent.OnRep_LockerState_Replicated
-	// void OnRep_LockerState_Replicated();                                                                                  // [0x5bd8170] Final|Native|Private 
+	// void OnRep_LockerState_Replicated();                                                                                  // [0x5be5940] Final|Native|Private 
 	// Function /Script/TheK28.K28KillerLockerComponent.OnPlayerInLockerChanged
-	// void OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker);          // [0x5bd8060] Final|Native|Private 
+	// void OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker);          // [0x5be5830] Final|Native|Private 
 };
 
 /// Class /Script/TheK28.K28KillerPlayerViewComponent
@@ -468,17 +468,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28KillerTeleportationComponent.OnPlayerFinishedEnteringLocker
-	// void OnPlayerFinishedEnteringLocker(class ADBDPlayer* playerThatWasInLocker, class ADBDPlayer* playerNowInLocker);    // [0x5bd7f90] Final|Native|Private 
+	// void OnPlayerFinishedEnteringLocker(class ADBDPlayer* playerThatWasInLocker, class ADBDPlayer* playerNowInLocker);    // [0x5be5760] Final|Native|Private 
 	// Function /Script/TheK28.K28KillerTeleportationComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5bd7f70] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5be5740] Final|Native|Private 
 	// Function /Script/TheK28.K28KillerTeleportationComponent.Multicast_TeleportToLockerStart
-	// void Multicast_TeleportToLockerStart(FK28SecondaryCameraMovementData cameraMovementData, class UK28LockerComponent* lockerBeingTeleportedTo, class ACamperPlayer* survivorToGrab); // [0x5bd7dd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TeleportToLockerStart(FK28SecondaryCameraMovementData cameraMovementData, class UK28LockerComponent* lockerBeingTeleportedTo, class ACamperPlayer* survivorToGrab); // [0x5be5500] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28KillerTeleportationComponent.Multicast_TeleportToLockerEnd
-	// void Multicast_TeleportToLockerEnd(class UK28LockerComponent* lockerTeleportedTo, class ACamperPlayer* survivorInLocker); // [0x4db2940] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TeleportToLockerEnd(class UK28LockerComponent* lockerTeleportedTo, class ACamperPlayer* survivorInLocker); // [0x4d828a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28KillerTeleportationComponent.Local_OnTeleportCollisionOverlapEnd
-	// void Local_OnTeleportCollisionOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5bd7c70] Final|Native|Private 
+	// void Local_OnTeleportCollisionOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5be53a0] Final|Native|Private 
 	// Function /Script/TheK28.K28KillerTeleportationComponent.Local_OnTeleportCollisionOverlapBegin
-	// void Local_OnTeleportCollisionOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5bd7a50] Final|Native|Private|HasOutParms 
+	// void Local_OnTeleportCollisionOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5be5180] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK28.K28LockAnimInstance
@@ -510,19 +510,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28Lockbar.OnRep_State
-	// void OnRep_State();                                                                                                   // [0x5bdc990] Final|Native|Private 
+	// void OnRep_State();                                                                                                   // [0x5bea180] Final|Native|Private 
 	// Function /Script/TheK28.K28Lockbar.OnPlayerInLockerChanged
-	// void OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker);          // [0x5bdc880] Final|Native|Private 
+	// void OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker);          // [0x5bea070] Final|Native|Private 
 	// Function /Script/TheK28.K28Lockbar.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x5bdc860] Final|Native|Private 
+	// void OnLocallyObservedChanged();                                                                                      // [0x5bea050] Final|Native|Private 
 	// Function /Script/TheK28.K28Lockbar.GetMontagePlayer
-	// class UMontagePlayer* GetMontagePlayer();                                                                             // [0x5bdc320] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// class UMontagePlayer* GetMontagePlayer();                                                                             // [0x5be9af0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28Lockbar.Cosmetic_TriggerLockbarBreak
-	// void Cosmetic_TriggerLockbarBreak();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Cosmetic_TriggerLockbarBreak();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK28.K28Lockbar.Cosmetic_SetLockbarHighlightActivationState
-	// void Cosmetic_SetLockbarHighlightActivationState(bool isHightlightActive);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetLockbarHighlightActivationState(bool isHightlightActive);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Lockbar.Cosmetic_OnStateChanged
-	// void Cosmetic_OnStateChanged(EK28LockbarState NewState);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStateChanged(EK28LockbarState NewState);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28LockerComponent
@@ -565,27 +565,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.OnAssociatedLockerActorSet
-	// void OnAssociatedLockerActorSet();                                                                                    // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnAssociatedLockerActorSet();                                                                                    // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.GetSkeletalMesh
-	// class USkeletalMeshComponent* GetSkeletalMesh();                                                                      // [0x5bdc350] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetSkeletalMesh();                                                                      // [0x5be9b20] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.GetMaterialHelper
-	// class UMaterialHelper* GetMaterialHelper();                                                                           // [0x5bdc2f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialHelper* GetMaterialHelper();                                                                           // [0x5be9ac0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.GetLocker
-	// class ALocker* GetLocker();                                                                                           // [0x5025420] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ALocker* GetLocker();                                                                                           // [0x50030a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnLockerGrabStateChanged
-	// void Cosmetic_OnLockerGrabStateChanged(bool isLockerGrabOngoing);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnLockerGrabStateChanged(bool isLockerGrabOngoing);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnLockedStateChanged
-	// void Cosmetic_OnLockedStateChanged(bool isLockerLocked);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnLockedStateChanged(bool isLockerLocked);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnKillerTeleportationToLockerStart
-	// void Cosmetic_OnKillerTeleportationToLockerStart();                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerTeleportationToLockerStart();                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnKillerTeleportationToLockerEnd
-	// void Cosmetic_OnKillerTeleportationToLockerEnd();                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerTeleportationToLockerEnd();                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnKillerInsideLockerRevealed
-	// void Cosmetic_OnKillerInsideLockerRevealed();                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerInsideLockerRevealed();                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnKillerExitLocker
-	// void Cosmetic_OnKillerExitLocker();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerExitLocker();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28LockerCosmeticHelperActor.Cosmetic_OnKillerEnteredLocker
-	// void Cosmetic_OnKillerEnteredLocker();                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerEnteredLocker();                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28LockerEntitySpikesUpdateStrategy
@@ -607,13 +607,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28LockerTeleportSwapInteraction.Server_RequestTeleportToTarget
-	// void Server_RequestTeleportToTarget(class ASlasherPlayer* killer, class UActorComponent* teleportTarget);             // [0x5bdcaa0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_RequestTeleportToTarget(class ASlasherPlayer* killer, class UActorComponent* teleportTarget);             // [0x5bea290] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK28.K28LockerTeleportSwapInteraction.Multicast_RefuseTeleportationRequest
-	// void Multicast_RefuseTeleportationRequest();                                                                          // [0x5850cd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RefuseTeleportationRequest();                                                                          // [0x5be9ce0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28LockerTeleportSwapInteraction.Multicast_ConfirmTeleportationRequest
-	// void Multicast_ConfirmTeleportationRequest(class ASlasherPlayer* killer, class UActorComponent* teleportTarget);      // [0x5bdc440] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ConfirmTeleportationRequest(class ASlasherPlayer* killer, class UActorComponent* teleportTarget);      // [0x5be9c10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28LockerTeleportSwapInteraction.Multicast_CompleteTeleportation
-	// void Multicast_CompleteTeleportation();                                                                               // [0x5850cb0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_CompleteTeleportation();                                                                               // [0x5afca50] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK28.K28LockLockbarInteraction
@@ -635,9 +635,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28MenuAnimInstance.GetAnimationMappingIndex
-	// int32_t GetAnimationMappingIndex();                                                                                   // [0x5bdc250] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAnimationMappingIndex();                                                                                   // [0x5be9a20] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28MenuAnimInstance.BP_OnCustomizationAnimationMappingIDChanged
-	// void BP_OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                      // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                      // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28P01
@@ -656,9 +656,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28P01.GetPerkActivationDurationAtLevel
-	// float GetPerkActivationDurationAtLevel();                                                                             // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkActivationDurationAtLevel();                                                                             // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28P01.GetInjuryTimerDuration
-	// float GetInjuryTimerDuration();                                                                                       // [0x5020cf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetInjuryTimerDuration();                                                                                       // [0x4ffe5b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK28.K28P01Effect
@@ -670,20 +670,21 @@ public:
 };
 
 /// Class /Script/TheK28.K28P02
-/// Size: 0x0010 (0x0003C8 - 0x0003D8)
+/// Size: 0x0018 (0x0003C8 - 0x0003E0)
 class UK28P02 : public UPerk
 { 
 public:
 	float                                              PerkActivationTime;                                         // 0x03C8   (0x0004)  
 	float                                              LockerDetectionRadius;                                      // 0x03CC   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x03D0   (0x0008)  MISSED
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x03D0   (0x0008)  MISSED
+	class UClass*                                      _timedRevealToKillerEffectClass;                            // 0x03D8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/TheK28.K28P02.GetPerkActivationTime
-	// float GetPerkActivationTime();                                                                                        // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkActivationTime();                                                                                        // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28P02.GetLockerDetectionRadius
-	// float GetLockerDetectionRadius();                                                                                     // [0x500aa10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLockerDetectionRadius();                                                                                     // [0x4fe82c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TheK28.K28InteractionPreventingTagsModification
@@ -735,9 +736,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28Power.OnRep_TeleportTokens
-	// void OnRep_TeleportTokens();                                                                                          // [0x5bdc9b0] Final|Native|Private 
+	// void OnRep_TeleportTokens();                                                                                          // [0x5bea1a0] Final|Native|Private 
 	// Function /Script/TheK28.K28Power.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5bdc820] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x5bea010] Final|Native|Private 
 };
 
 /// Class /Script/TheK28.K28PowerChargePresentationPowerFadeComponent
@@ -752,7 +753,7 @@ public:
 class UK28PowerPresentationItemProgressComponent : public UPresentationItemProgressComponent
 { 
 public:
-	SDK_UNDEFINED(8,4117) /* TWeakObjectPtr<AK28Power*> */ __um(_k28Power);                                        // 0x00C0   (0x0008)  
+	SDK_UNDEFINED(8,4210) /* TWeakObjectPtr<AK28Power*> */ __um(_k28Power);                                        // 0x00C0   (0x0008)  
 };
 
 /// Class /Script/TheK28.K28Remnant
@@ -783,31 +784,31 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28Remnant.OnRep_RemnantState
-	// void OnRep_RemnantState();                                                                                            // [0x5bdc970] Final|Native|Private 
+	// void OnRep_RemnantState();                                                                                            // [0x5bea160] Final|Native|Private 
 	// Function /Script/TheK28.K28Remnant.Multicast_TriggerTeleportStart
-	// void Multicast_TriggerTeleportStart(class ASlasherPlayer* killer);                                                    // [0x5bdc790] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerTeleportStart(class ASlasherPlayer* killer);                                                    // [0x5be9f80] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28Remnant.Multicast_TeleportToRemnant
-	// void Multicast_TeleportToRemnant(class ASlasherPlayer* killer, FRotator teleportRotation, bool isAnimationSlowed);    // [0x5bdc680] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_TeleportToRemnant(class ASlasherPlayer* killer, FRotator teleportRotation, bool isAnimationSlowed);    // [0x5be9e70] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK28.K28Remnant.Multicast_SurvivorDestroyedRemnant
-	// void Multicast_SurvivorDestroyedRemnant(class ACamperPlayer* Survivor);                                               // [0x5bdc5f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SurvivorDestroyedRemnant(class ACamperPlayer* Survivor);                                               // [0x5be9de0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28Remnant.Multicast_DeactivateRemnant
-	// void Multicast_DeactivateRemnant();                                                                                   // [0x57fbd00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DeactivateRemnant();                                                                                   // [0x57ff130] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28Remnant.Multicast_ActivateRemnant
-	// void Multicast_ActivateRemnant(FVector Location, FRotator Rotation);                                                  // [0x5bdc380] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_ActivateRemnant(FVector Location, FRotator Rotation);                                                  // [0x5be9b50] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK28.K28Remnant.Cosmetic_SurvivorDestroyedRemnant
-	// void Cosmetic_SurvivorDestroyedRemnant(class ACamperPlayer* Survivor);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SurvivorDestroyedRemnant(class ACamperPlayer* Survivor);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Remnant.Cosmetic_OnTeleportationStartVFX
-	// void Cosmetic_OnTeleportationStartVFX(class ASlasherPlayer* killer);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTeleportationStartVFX(class ASlasherPlayer* killer);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Remnant.Cosmetic_OnTeleportationPerformedVFX
-	// void Cosmetic_OnTeleportationPerformedVFX(class ASlasherPlayer* killer, bool isSlowTeleportation);                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTeleportationPerformedVFX(class ASlasherPlayer* killer, bool isSlowTeleportation);                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Remnant.Cosmetic_OnRemnantStateChanged
-	// void Cosmetic_OnRemnantStateChanged(EK28RemnantState remnantState);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRemnantStateChanged(EK28RemnantState remnantState);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Remnant.Cosmetic_OnRemnantDeactivated
-	// void Cosmetic_OnRemnantDeactivated();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRemnantDeactivated();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Remnant.Cosmetic_OnRemnantActivated
-	// void Cosmetic_OnRemnantActivated();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRemnantActivated();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28Remnant.Authority_OnCollisionDetected
-	// void Authority_OnCollisionDetected(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5bdc000] Final|Native|Private|HasOutParms 
+	// void Authority_OnCollisionDetected(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5be97d0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK28.K28RemnantAnimInstance
@@ -822,7 +823,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28RemnantAnimInstance.ConsumeSurvivorWhoDestroyedRemnant
-	// class ACamperPlayer* ConsumeSurvivorWhoDestroyedRemnant();                                                            // [0x5bdc220] Final|Native|Protected|BlueprintCallable 
+	// class ACamperPlayer* ConsumeSurvivorWhoDestroyedRemnant();                                                            // [0x5be99f0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheK28.K28RemnantOutlineUpdateStrategy
@@ -856,39 +857,39 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28SecondaryCamera.Server_SetIsKillerPlayerViewTarget
-	// void Server_SetIsKillerPlayerViewTarget(bool isKillerPlayerViewTarget);                                               // [0x57e1330] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetIsKillerPlayerViewTarget(bool isKillerPlayerViewTarget);                                               // [0x57e9c20] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK28.K28SecondaryCamera.Server_SetCameraOrientation
-	// void Server_SetCameraOrientation(FRotator NewOrientation);                                                            // [0x5b6b4b0] Final|Net|Native|Event|Private|NetServer|HasDefaults 
+	// void Server_SetCameraOrientation(FRotator NewOrientation);                                                            // [0x5b78640] Final|Net|Native|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK28.K28SecondaryCamera.OnRep_IsKillerPlayerViewTarget
-	// void OnRep_IsKillerPlayerViewTarget();                                                                                // [0x5bdc950] Final|Native|Private 
+	// void OnRep_IsKillerPlayerViewTarget();                                                                                // [0x5bea140] Final|Native|Private 
 	// Function /Script/TheK28.K28SecondaryCamera.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5bdc840] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5bea030] Final|Native|Private 
 	// Function /Script/TheK28.K28SecondaryCamera.Multicast_SetCameraOrientation
-	// void Multicast_SetCameraOrientation(FRotator NewOrientation, bool isRelativeRotation);                                // [0x5bdc510] Net|Native|Event|NetMulticast|Public|HasDefaults 
+	// void Multicast_SetCameraOrientation(FRotator NewOrientation, bool isRelativeRotation);                                // [0x5be9d00] Net|Native|Event|NetMulticast|Public|HasDefaults 
 	// Function /Script/TheK28.K28SecondaryCamera.GetIsKillerPlayerViewTarget
-	// bool GetIsKillerPlayerViewTarget();                                                                                   // [0x5bdc2c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsKillerPlayerViewTarget();                                                                                   // [0x5be9a90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28SecondaryCamera.GetCameraWorldRotation
-	// FRotator GetCameraWorldRotation();                                                                                    // [0x5bdc280] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FRotator GetCameraWorldRotation();                                                                                    // [0x5be9a50] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_UpdateDarknessPlaneVisibility
-	// void Cosmetic_UpdateDarknessPlaneVisibility(bool IsVisible);                                                          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UpdateDarknessPlaneVisibility(bool IsVisible);                                                          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_TriggerTeleportStartVisuals
-	// void Cosmetic_TriggerTeleportStartVisuals();                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerTeleportStartVisuals();                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_TriggerTeleportEndVisuals
-	// void Cosmetic_TriggerTeleportEndVisuals();                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerTeleportEndVisuals();                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_TriggerFadeOut
-	// void Cosmetic_TriggerFadeOut();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerFadeOut();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_TriggerFadeIn
-	// void Cosmetic_TriggerFadeIn();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerFadeIn();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_OnNightCycleChanged
-	// void Cosmetic_OnNightCycleChanged(EK28NightCycleState newNightCycleState);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNightCycleChanged(EK28NightCycleState newNightCycleState);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_OnKillerExitLocker
-	// void Cosmetic_OnKillerExitLocker();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerExitLocker();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_OnKillerEnterLocker
-	// void Cosmetic_OnKillerEnterLocker();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerEnterLocker();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_OnIsLocallyObservingKillerChanged
-	// void Cosmetic_OnIsLocallyObservingKillerChanged(bool isLocallyObservingKiller);                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsLocallyObservingKillerChanged(bool isLocallyObservingKiller);                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SecondaryCamera.Cosmetic_DisableAllEffects
-	// void Cosmetic_DisableAllEffects();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_DisableAllEffects();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28SurvivorAbductionCameraBehaviourComponent
@@ -915,7 +916,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28SurvivorComponent.OnKillerInRangeChanged
-	// void OnKillerInRangeChanged(bool inRange);                                                                            // [0x5bdea80] Final|Native|Private 
+	// void OnKillerInRangeChanged(bool inRange);                                                                            // [0x5bec270] Final|Native|Private 
 };
 
 /// Class /Script/TheK28.K28SurvivorCosmeticHelperActor
@@ -929,19 +930,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5bdeb10] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5bec300] Final|Native|Private 
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.GetDarknessPlaneMesh
-	// class UStaticMeshComponent* GetDarknessPlaneMesh();                                                                   // [0x61c32d0] Event|Protected|BlueprintEvent|Const 
+	// class UStaticMeshComponent* GetDarknessPlaneMesh();                                                                   // [0x61d2f50] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.Cosmetic_OnNighttimeNearingActivation
-	// void Cosmetic_OnNighttimeNearingActivation();                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNighttimeNearingActivation();                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.Cosmetic_OnNightCycleChanged
-	// void Cosmetic_OnNightCycleChanged(EK28NightCycleState nightCycleState, bool instant);                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnNightCycleChanged(EK28NightCycleState nightCycleState, bool instant);                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.Cosmetic_OnLocallyObservedChanged
-	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.Cosmetic_DeactivateNightGlowVFX
-	// void Cosmetic_DeactivateNightGlowVFX();                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DeactivateNightGlowVFX();                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK28.K28SurvivorCosmeticHelperActor.Cosmetic_ActivateNightGlowVFX
-	// void Cosmetic_ActivateNightGlowVFX();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivateNightGlowVFX();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK28.K28SurvivorLockerAbductionInteraction
@@ -950,7 +951,7 @@ class UK28SurvivorLockerAbductionInteraction : public UBaseLockerInteraction
 { 
 public:
 	FAnimationMontageDescriptor                        _survivorPanicInLockerAnimationMontageDescriptor;           // 0x0678   (0x0020)  
-	SDK_UNDEFINED(8,4118) /* TWeakObjectPtr<UBaseLockerInteraction*> */ __um(_overriddenInteractionInstance);      // 0x0698   (0x0008)  
+	SDK_UNDEFINED(8,4211) /* TWeakObjectPtr<UBaseLockerInteraction*> */ __um(_overriddenInteractionInstance);      // 0x0698   (0x0008)  
 	TArray<FGameplayTag>                               _overridingTags;                                            // 0x06A0   (0x0010)  
 	float                                              _fadeOutTime;                                               // 0x06B0   (0x0004)  
 	float                                              _minDotProductFadeOutThreshold;                             // 0x06B4   (0x0004)  
@@ -960,7 +961,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28SurvivorLockerAbductionInteraction.OnRep_OverriddenInteractionInstance
-	// void OnRep_OverriddenInteractionInstance();                                                                           // [0x5bdeb30] Final|Native|Private 
+	// void OnRep_OverriddenInteractionInstance();                                                                           // [0x5bec320] Final|Native|Private 
 };
 
 /// Struct /Script/TheK28.K28LockerCluster
@@ -991,39 +992,39 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28TeleportationStrategyComponent.Server_UpdateBestTeleportTarget
-	// void Server_UpdateBestTeleportTarget(int32_t bestTeleportTargetID);                                                   // [0x5bdec20] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_UpdateBestTeleportTarget(int32_t bestTeleportTargetID);                                                   // [0x5bec410] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK28.K28TeleportationStrategyComponent.Multicast_UpdateBestTeleportTarget
-	// void Multicast_UpdateBestTeleportTarget(int32_t bestTeleportTargetID);                                                // [0x5888d40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_UpdateBestTeleportTarget(int32_t bestTeleportTargetID);                                                // [0x5891be0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28TeleportationStrategyComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5bde6e0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5bebed0] Final|Native|Private 
 };
 
 /// Class /Script/TheK28.K28TeleportInteraction
-/// Size: 0x00E0 (0x000790 - 0x000870)
+/// Size: 0x00F0 (0x000790 - 0x000880)
 class UK28TeleportInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	FSecondaryInteractionProperties                    _confirmTeleportationProperties;                            // 0x0788   (0x0038)  
-	FSecondaryInteractionProperties                    _returnToRemnantProperties;                                 // 0x07C0   (0x0038)  
-	EInputInteractionType                              _triggerTeleportInputType;                                  // 0x07F8   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x07F9   (0x0007)  MISSED
-	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0800   (0x0008)  
-	class UCurveFloat*                                 _chargedSpeedCurve;                                         // 0x0808   (0x0008)  
-	class UCurveFloat*                                 _cancelledSpeedCurve;                                       // 0x0810   (0x0008)  
-	float                                              _releaseInputMaxTime;                                       // 0x0818   (0x0004)  
-	float                                              _minimumChargePercentageToConsiderTeleportButtonPress;      // 0x081C   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x50];                                      // 0x0820   (0x0050)  MISSED
+	FSecondaryInteractionProperties                    _confirmTeleportationProperties;                            // 0x0790   (0x0038)  
+	FSecondaryInteractionProperties                    _returnToRemnantProperties;                                 // 0x07C8   (0x0038)  
+	EInputInteractionType                              _triggerTeleportInputType;                                  // 0x0800   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0801   (0x0007)  MISSED
+	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0808   (0x0008)  
+	class UCurveFloat*                                 _chargedSpeedCurve;                                         // 0x0810   (0x0008)  
+	class UCurveFloat*                                 _cancelledSpeedCurve;                                       // 0x0818   (0x0008)  
+	float                                              _releaseInputMaxTime;                                       // 0x0820   (0x0004)  
+	float                                              _minimumChargePercentageToConsiderTeleportButtonPress;      // 0x0824   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x58];                                      // 0x0828   (0x0058)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK28.K28TeleportInteraction.Server_RequestTeleportToTarget
-	// void Server_RequestTeleportToTarget(class ASlasherPlayer* killer, class UObject* teleportTarget);                     // [0x5bdeb50] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_RequestTeleportToTarget(class ASlasherPlayer* killer, class UObject* teleportTarget);                     // [0x5bec340] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK28.K28TeleportInteraction.Multicast_RefuseTeleportationRequest
-	// void Multicast_RefuseTeleportationRequest();                                                                          // [0x5a3fe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RefuseTeleportationRequest();                                                                          // [0x5af9850] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28TeleportInteraction.Multicast_ConfirmTeleportationRequest
-	// void Multicast_ConfirmTeleportationRequest(class ASlasherPlayer* killer, class UObject* teleportTarget);              // [0x59bb7f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ConfirmTeleportationRequest(class ASlasherPlayer* killer, class UObject* teleportTarget);              // [0x59c2180] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK28.K28TeleportInteraction.Multicast_CompleteTeleportation
-	// void Multicast_CompleteTeleportation();                                                                               // [0x5bdea60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_CompleteTeleportation();                                                                               // [0x5bec250] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK28.K28Utilities
@@ -1035,17 +1036,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.K28Utilities.IsLockerUsedByKillerLocked
-	// bool IsLockerUsedByKillerLocked(class UObject* WorldContextObject);                                                   // [0x5bde9d0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsLockerUsedByKillerLocked(class UObject* WorldContextObject);                                                   // [0x5bec1c0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK28.K28Utilities.GetTeleportationStrategyComponent
-	// class UK28TeleportationStrategyComponent* GetTeleportationStrategyComponent(class UObject* WorldContextObject);       // [0x5bde940] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UK28TeleportationStrategyComponent* GetTeleportationStrategyComponent(class UObject* WorldContextObject);       // [0x5bec130] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK28.K28Utilities.GetSecondaryCamera
-	// class AK28SecondaryCamera* GetSecondaryCamera(class UObject* WorldContextObject);                                     // [0x5bde8b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK28SecondaryCamera* GetSecondaryCamera(class UObject* WorldContextObject);                                     // [0x5bec0a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK28.K28Utilities.GetRemnant
-	// class AK28Remnant* GetRemnant(class UObject* WorldContextObject);                                                     // [0x5bde820] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK28Remnant* GetRemnant(class UObject* WorldContextObject);                                                     // [0x5bec010] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK28.K28Utilities.GetK28Power
-	// class AK28Power* GetK28Power(class UObject* WorldContextObject);                                                      // [0x5bde790] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK28Power* GetK28Power(class UObject* WorldContextObject);                                                      // [0x5bebf80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK28.K28Utilities.GetDayNightComponent
-	// class UK28DayNightComponent* GetDayNightComponent(class UObject* WorldContextObject);                                 // [0x5bde700] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UK28DayNightComponent* GetDayNightComponent(class UObject* WorldContextObject);                                 // [0x5bebef0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK28.S31P01
@@ -1062,7 +1063,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK28.S31P01.GetKillerAuraRevealDuration
-	// float GetKillerAuraRevealDuration();                                                                                  // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKillerAuraRevealDuration();                                                                                  // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK28.S31P02

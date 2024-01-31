@@ -71,15 +71,15 @@ public:
 	int32_t                                            ImageQuality;                                               // 0x0044   (0x0004)  
 	int32_t                                            FrameRate;                                                  // 0x0048   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x004C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4952) /* TArray<FString> */       __um(WhitelistedChannels);                                  // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,4953) /* TArray<FString> */       __um(BlacklistedChannels);                                  // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,5338) /* TArray<FString> */       __um(WhitelistedChannels);                                  // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,5339) /* TArray<FString> */       __um(BlacklistedChannels);                                  // 0x0060   (0x0010)  
 };
 
 /// Struct /Script/RemoteSession.RemoteSessionChannelInfo
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FRemoteSessionChannelInfo
 { 
-	SDK_UNDEFINED(16,4954) /* FString */               __um(Type);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5340) /* FString */               __um(Type);                                                 // 0x0000   (0x0010)  
 	ERemoteSessionChannelMode                          Mode;                                                       // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };

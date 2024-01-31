@@ -33,8 +33,8 @@ public:
 
 	/// Functions
 	// Function /DBDUICore/Watermark/WBP_CoreWatermark.WBP_CoreWatermark_C.Construct
-	// void Construct();                                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Construct();                                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /DBDUICore/Watermark/WBP_CoreWatermark.WBP_CoreWatermark_C.ExecuteUbergraph_WBP_CoreWatermark
-	// void ExecuteUbergraph_WBP_CoreWatermark(int32_t EntryPoint);                                                          // [0x61c32d0] Final|HasDefaults    
+	// void ExecuteUbergraph_WBP_CoreWatermark(int32_t EntryPoint);                                                          // [0x61d2f50] Final|HasDefaults    
 };
 

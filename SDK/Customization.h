@@ -21,7 +21,7 @@ public:
 
 	/// Functions
 	// Function /Script/Customization.Accessory.BP_DestroyComponent
-	// void BP_DestroyComponent(class UActorComponent* componentToDestroy);                                                  // [0x4e28590] Final|Native|Public|BlueprintCallable 
+	// void BP_DestroyComponent(class UActorComponent* componentToDestroy);                                                  // [0x4dfdbb0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Customization.AccessoryUtilities
@@ -33,7 +33,7 @@ public:
 
 	/// Functions
 	// Function /Script/Customization.AccessoryUtilities.AddBoneSocketLocalVelocityEvaluatorToAccessory
-	// class UBoneSocketLocalVelocityEvaluator* AddBoneSocketLocalVelocityEvaluatorToAccessory(class UAccessory* Accessory, TArray<FName>& trackedBoneSocketNames); // [0x4e28780] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UBoneSocketLocalVelocityEvaluator* AddBoneSocketLocalVelocityEvaluatorToAccessory(class UAccessory* Accessory, TArray<FName>& trackedBoneSocketNames); // [0x4dfdda0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/Customization.CharacterCustomization

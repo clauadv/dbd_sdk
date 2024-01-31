@@ -52,8 +52,8 @@ enum class ETwoPlayerSplitScreenType : uint8_t
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FAutoCompleteCommand
 { 
-	SDK_UNDEFINED(16,4616) /* FString */               __um(Command);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4617) /* FString */               __um(Desc);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5010) /* FString */               __um(Command);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5011) /* FString */               __um(Desc);                                                 // 0x0010   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0020   (0x0008)  MISSED
 };
 
@@ -65,7 +65,7 @@ public:
 	int32_t                                            MaxScrollbackSize;                                          // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
 	TArray<FAutoCompleteCommand>                       ManualAutoCompleteList;                                     // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4618) /* TArray<FString> */       __um(AutoCompleteMapPaths);                                 // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5012) /* TArray<FString> */       __um(AutoCompleteMapPaths);                                 // 0x0048   (0x0010)  
 	float                                              BackgroundOpacityPercentage;                                // 0x0058   (0x0004)  
 	bool                                               bOrderTopToBottom;                                          // 0x005C   (0x0001)  
 	bool                                               bDisplayHelpInAutoComplete;                                 // 0x005D   (0x0001)  
@@ -82,7 +82,7 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FGameModeName
 { 
-	SDK_UNDEFINED(16,4619) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5013) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	FSoftClassPath                                     GameMode;                                                   // 0x0010   (0x0020)  
 };
 
@@ -91,11 +91,11 @@ struct FGameModeName
 class UGameMapsSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4620) /* FString */               __um(LocalMapOptions);                                      // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5014) /* FString */               __um(LocalMapOptions);                                      // 0x0030   (0x0010)  
 	FSoftObjectPath                                    TransitionMap;                                              // 0x0040   (0x0020)  
 	bool                                               bUseSplitscreen;                                            // 0x0060   (0x0001)  
-	SDK_UNDEFINED(1,4621) /* TEnumAsByte<ETwoPlayerSplitScreenType> */ __um(TwoPlayerSplitscreenLayout);           // 0x0061   (0x0001)  
-	SDK_UNDEFINED(1,4622) /* TEnumAsByte<EThreePlayerSplitScreenType> */ __um(ThreePlayerSplitscreenLayout);       // 0x0062   (0x0001)  
+	SDK_UNDEFINED(1,5015) /* TEnumAsByte<ETwoPlayerSplitScreenType> */ __um(TwoPlayerSplitscreenLayout);           // 0x0061   (0x0001)  
+	SDK_UNDEFINED(1,5016) /* TEnumAsByte<EThreePlayerSplitScreenType> */ __um(ThreePlayerSplitscreenLayout);       // 0x0062   (0x0001)  
 	EFourPlayerSplitScreenType                         FourPlayerSplitscreenLayout;                                // 0x0063   (0x0001)  
 	bool                                               bOffsetPlayerGamepadIds;                                    // 0x0064   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0065   (0x0003)  MISSED
@@ -110,11 +110,11 @@ public:
 
 	/// Functions
 	// Function /Script/EngineSettings.GameMapsSettings.SetSkipAssigningGamepadToPlayer1
-	// void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer);                                                         // [0x6592d10] Final|Native|Public|BlueprintCallable 
+	// void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer);                                                         // [0x65a2740] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EngineSettings.GameMapsSettings.GetSkipAssigningGamepadToPlayer1
-	// bool GetSkipAssigningGamepadToPlayer1();                                                                              // [0x6592ce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetSkipAssigningGamepadToPlayer1();                                                                              // [0x65a2710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EngineSettings.GameMapsSettings.GetGameMapsSettings
-	// class UGameMapsSettings* GetGameMapsSettings();                                                                       // [0x6592cb0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UGameMapsSettings* GetGameMapsSettings();                                                                       // [0x65a26e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/EngineSettings.GameNetworkManagerSettings
@@ -159,8 +159,8 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FPathPak
 { 
-	SDK_UNDEFINED(16,4623) /* FString */               __um(Path);                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4624) /* FString */               __um(PakName);                                              // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5017) /* FString */               __um(Path);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5018) /* FString */               __um(PakName);                                              // 0x0010   (0x0010)  
 	bool                                               BringHardDependencies;                                      // 0x0020   (0x0001)  
 	bool                                               BringSoftDependencies;                                      // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x6];                                       // 0x0022   (0x0006)  MISSED
@@ -170,7 +170,7 @@ struct FPathPak
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FPakDefinition
 { 
-	SDK_UNDEFINED(16,4625) /* FString */               __um(PakName);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5019) /* FString */               __um(PakName);                                              // 0x0000   (0x0010)  
 	int32_t                                            PakId;                                                      // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x0014   (0x0004)  MISSED
 };
@@ -201,19 +201,19 @@ public:
 class UGeneralProjectSettings : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4626) /* FString */               __um(CompanyName);                                          // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4627) /* FString */               __um(CompanyDistinguishedName);                             // 0x0040   (0x0010)  
-	SDK_UNDEFINED(16,4628) /* FString */               __um(CopyrightNotice);                                      // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,4629) /* FString */               __um(Description);                                          // 0x0060   (0x0010)  
-	SDK_UNDEFINED(16,4630) /* FString */               __um(Homepage);                                             // 0x0070   (0x0010)  
-	SDK_UNDEFINED(16,4631) /* FString */               __um(LicensingTerms);                                       // 0x0080   (0x0010)  
-	SDK_UNDEFINED(16,4632) /* FString */               __um(PrivacyPolicy);                                        // 0x0090   (0x0010)  
+	SDK_UNDEFINED(16,5020) /* FString */               __um(CompanyName);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5021) /* FString */               __um(CompanyDistinguishedName);                             // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5022) /* FString */               __um(CopyrightNotice);                                      // 0x0050   (0x0010)  
+	SDK_UNDEFINED(16,5023) /* FString */               __um(Description);                                          // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,5024) /* FString */               __um(Homepage);                                             // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,5025) /* FString */               __um(LicensingTerms);                                       // 0x0080   (0x0010)  
+	SDK_UNDEFINED(16,5026) /* FString */               __um(PrivacyPolicy);                                        // 0x0090   (0x0010)  
 	FGuid                                              ProjectID;                                                  // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,4633) /* FString */               __um(ProjectName);                                          // 0x00B0   (0x0010)  
-	SDK_UNDEFINED(16,4634) /* FString */               __um(ProjectVersion);                                       // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,4635) /* FString */               __um(SupportContact);                                       // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(24,4636) /* FText */                 __um(ProjectDisplayedTitle);                                // 0x00E0   (0x0018)  
-	SDK_UNDEFINED(24,4637) /* FText */                 __um(ProjectDebugTitleInfo);                                // 0x00F8   (0x0018)  
+	SDK_UNDEFINED(16,5027) /* FString */               __um(ProjectName);                                          // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,5028) /* FString */               __um(ProjectVersion);                                       // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5029) /* FString */               __um(SupportContact);                                       // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(24,5030) /* FText */                 __um(ProjectDisplayedTitle);                                // 0x00E0   (0x0018)  
+	SDK_UNDEFINED(24,5031) /* FText */                 __um(ProjectDebugTitleInfo);                                // 0x00F8   (0x0018)  
 	bool                                               bShouldWindowPreserveAspectRatio;                           // 0x0110   (0x0001)  
 	bool                                               bUseBorderlessWindow;                                       // 0x0111   (0x0001)  
 	bool                                               bStartInVR;                                                 // 0x0112   (0x0001)  

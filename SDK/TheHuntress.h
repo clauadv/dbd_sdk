@@ -47,9 +47,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheHuntress.DeadHard.GetExhaustedDuration
-	// float GetExhaustedDuration();                                                                                         // [0x5ad2f20] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustedDuration();                                                                                         // [0x5adf8d0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHuntress.DeadHard.GetDeadHardCooldownDuration
-	// float GetDeadHardCooldownDuration();                                                                                  // [0x500f6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDeadHardCooldownDuration();                                                                                  // [0x4fecfd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheHuntress.DeadHardEffect
@@ -75,7 +75,7 @@ public:
 };
 
 /// Class /Script/TheHuntress.HatchetLauncher
-/// Size: 0x0120 (0x000190 - 0x0002B0)
+/// Size: 0x0130 (0x000190 - 0x0002C0)
 class UHatchetLauncher : public UKillerProjectileLauncher
 { 
 public:
@@ -92,11 +92,13 @@ public:
 	FDBDTunableRowHandle                               _hatchetMaxSpeed;                                           // 0x0238   (0x0028)  
 	FDBDTunableRowHandle                               _hatchetLaunchPitchMin;                                     // 0x0260   (0x0028)  
 	FDBDTunableRowHandle                               _hatchetLaunchPitchMax;                                     // 0x0288   (0x0028)  
+	FVector                                            _hatchetLaunchPositionOffsetFromCamera;                     // 0x02B0   (0x000C)  
+	unsigned char                                      UnknownData02_6[0x4];                                       // 0x02BC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheHuntress.HatchetLauncher.IsLaunchedHatchetFullyCharged
-	// bool IsLaunchedHatchetFullyCharged();                                                                                 // [0x5ad35e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLaunchedHatchetFullyCharged();                                                                                 // [0x5adffa0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheHuntress.HatchetProjectile
@@ -115,7 +117,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheHuntress.HatchetRack.SetMovableHatchetVisibility
-	// void SetMovableHatchetVisibility(bool visible);                                                                       // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetMovableHatchetVisibility(bool visible);                                                                       // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/TheHuntress.HatchetThrow
@@ -123,13 +125,13 @@ public:
 class UHatchetThrow : public UThrowInteraction
 { 
 public:
-	FDBDTunableRowHandle                               _hatchetThrowCancellationCooldown;                          // 0x0798   (0x0028)  
-	unsigned char                                      UnknownData00_6[0x10];                                      // 0x07C0   (0x0010)  MISSED
+	FDBDTunableRowHandle                               _hatchetThrowCancellationCooldown;                          // 0x07A0   (0x0028)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x07C8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheHuntress.HatchetThrow.GetOwningHatchetSpawner
-	// class ATheHuntressPower* GetOwningHatchetSpawner();                                                                   // [0x5ad3c10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ATheHuntressPower* GetOwningHatchetSpawner();                                                                   // [0x5ae0550] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheHuntress.HexHuntressLullabyEffect
@@ -181,7 +183,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheHuntress.ReloadHatchet.IsInteractionPossible_Shared
-	// bool IsInteractionPossible_Shared(class ADBDPlayer* Player);                                                          // [0x5ad4300] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInteractionPossible_Shared(class ADBDPlayer* Player);                                                          // [0x5ae0c40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheHuntress.TerritorialImperative
@@ -198,7 +200,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheHuntress.TerritorialImperative.Multicast_OnPerkTriggered
-	// void Multicast_OnPerkTriggered(class ADBDPlayer* triggerer);                                                          // [0x501b930] Net|Native|Event|NetMulticast|Public 
+	// void Multicast_OnPerkTriggered(class ADBDPlayer* triggerer);                                                          // [0x4ff91d0] Net|NetReliableNative|Event|NetMulticast|Public 
 };
 
 /// Class /Script/TheHuntress.TheHuntressPower
@@ -212,28 +214,28 @@ public:
 
 	/// Functions
 	// Function /Script/TheHuntress.TheHuntressPower.StartHatchetShineCosmetic
-	// void StartHatchetShineCosmetic();                                                                                     // [0x5ad4c90] BlueprintCosmetic|Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void StartHatchetShineCosmetic();                                                                                     // [0x58552b0] BlueprintCosmetic|Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheHuntress.TheHuntressPower.SetPercentThrowStrength
-	// void SetPercentThrowStrength(float percentStrength);                                                                  // [0x5a29c00] Final|Native|Public|BlueprintCallable 
+	// void SetPercentThrowStrength(float percentStrength);                                                                  // [0x5a32e30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheHuntress.TheHuntressPower.SetHatchetVisible
-	// void SetHatchetVisible(bool visible);                                                                                 // [0x5ad4c00] Final|Native|Public|BlueprintCallable 
+	// void SetHatchetVisible(bool visible);                                                                                 // [0x5ae1540] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheHuntress.TheHuntressPower.PrintDebugThrowInfo
-	// void PrintDebugThrowInfo();                                                                                           // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void PrintDebugThrowInfo();                                                                                           // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheHuntress.TheHuntressPower.IsHatchetThrowFullyCharged
-	// bool IsHatchetThrowFullyCharged();                                                                                    // [0x5ad4bd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHatchetThrowFullyCharged();                                                                                    // [0x5ae1510] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHuntress.TheHuntressPower.HasHatchet
-	// bool HasHatchet();                                                                                                    // [0x5ad4ba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasHatchet();                                                                                                    // [0x5ae14e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHuntress.TheHuntressPower.GetOwningKiller
-	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x5ad4b70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x5ae14b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHuntress.TheHuntressPower.GetHatchetProjectileLauncher
-	// class UBaseProjectileLauncher* GetHatchetProjectileLauncher();                                                        // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UBaseProjectileLauncher* GetHatchetProjectileLauncher();                                                        // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/TheHuntress.TheHuntressPower.GetHatchetCooldown
-	// class UHatchetCooldown* GetHatchetCooldown();                                                                         // [0x61c32d0] Event|Public|BlueprintEvent|Const 
+	// class UHatchetCooldown* GetHatchetCooldown();                                                                         // [0x61d2f50] Event|Public|BlueprintEvent|Const 
 	// Function /Script/TheHuntress.TheHuntressPower.GetAkAudioHatchetSpawner
-	// class UAkComponent* GetAkAudioHatchetSpawner();                                                                       // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class UAkComponent* GetAkAudioHatchetSpawner();                                                                       // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/TheHuntress.TheHuntressPower.Cosmetic_OnThrowInteractionStart
-	// void Cosmetic_OnThrowInteractionStart();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnThrowInteractionStart();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheHuntress.TheHuntressPower.Cosmetic_OnThrowInteractionCancelled
-	// void Cosmetic_OnThrowInteractionCancelled();                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnThrowInteractionCancelled();                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 

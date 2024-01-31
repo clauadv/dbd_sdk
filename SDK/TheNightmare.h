@@ -16,12 +16,13 @@
 /// dependency: NetworkUtilities
 
 /// Class /Script/TheNightmare.BlackBox
-/// Size: 0x0040 (0x0002B8 - 0x0002F8)
+/// Size: 0x0048 (0x0002B8 - 0x000300)
 class UBlackBox : public UItemAddon
 { 
 public:
 	FDBDTunableRowHandle                               _blockDuration;                                             // 0x02B8   (0x0028)  
-	unsigned char                                      UnknownData00_6[0x18];                                      // 0x02E0   (0x0018)  MISSED
+	class UClass*                                      _dreamworldSingleGateBlockerStatusEffectClass;              // 0x02E0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x18];                                      // 0x02E8   (0x0018)  MISSED
 };
 
 /// Class /Script/TheNightmare.BloodWarden
@@ -38,7 +39,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.BloodWarden.GetPerkLevelSpikeDurationsAtLevel
-	// float GetPerkLevelSpikeDurationsAtLevel();                                                                            // [0x5d80a70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkLevelSpikeDurationsAtLevel();                                                                            // [0x5c57020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheNightmare.DreamInducerComponent
@@ -51,7 +52,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.DreamInducerComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5d80c10] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5d8de80] Final|Native|Private 
 };
 
 /// Class /Script/TheNightmare.DreamSnare
@@ -72,9 +73,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.DreamSnareEffect.OnActorEndOverlap
-	// void OnActorEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                      // [0x61c32d0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnActorEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                      // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheNightmare.DreamSnareEffect.OnActorBeginOverlap
-	// void OnActorBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                    // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnActorBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                    // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/TheNightmare.FireUp
@@ -88,7 +89,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.FireUp.GetSpeedBonusAtLevel
-	// float GetSpeedBonusAtLevel();                                                                                         // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSpeedBonusAtLevel();                                                                                         // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheNightmare.GeneratorDreamworldComponent
@@ -102,9 +103,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.GeneratorDreamworldComponent.OnRepairSkillCheckFailed
-	// void OnRepairSkillCheckFailed(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, bool hadInput, ESkillCheckCustomType Type, float ChargeChange); // [0x5d81260] Final|Native|Private 
+	// void OnRepairSkillCheckFailed(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, bool hadInput, ESkillCheckCustomType Type, float ChargeChange); // [0x5d8e4d0] Final|Native|Private 
 	// Function /Script/TheNightmare.GeneratorDreamworldComponent.Cosmetic_OnPlayerFailSkillCheck
-	// void Cosmetic_OnPlayerFailSkillCheck(class ADBDPlayer* Player);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerFailSkillCheck(class ADBDPlayer* Player);                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheNightmare.GeneratorTeleportInteraction
@@ -112,18 +113,17 @@ public:
 class UGeneratorTeleportInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	float                                              OnBloodSpurtsAINoiseEventRange;                             // 0x0788   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x078C   (0x0004)  MISSED
-	class UTimerObject*                                _teleportCooldownTimer;                                     // 0x0790   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x40];                                      // 0x0798   (0x0040)  MISSED
-	class AGenerator*                                  _selectedGenerator;                                         // 0x07D8   (0x0008)  
-	class AGenerator*                                  _locallySelectedGenerator;                                  // 0x07E0   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x8];                                       // 0x07E8   (0x0008)  MISSED
+	float                                              OnBloodSpurtsAINoiseEventRange;                             // 0x0790   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0794   (0x0004)  MISSED
+	class UTimerObject*                                _teleportCooldownTimer;                                     // 0x0798   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x40];                                      // 0x07A0   (0x0040)  MISSED
+	class AGenerator*                                  _selectedGenerator;                                         // 0x07E0   (0x0008)  
+	class AGenerator*                                  _locallySelectedGenerator;                                  // 0x07E8   (0x0008)  
 	FTransform                                         _selectedTeleportLocation;                                  // 0x07F0   (0x0030)  
 	bool                                               _isInteractionOngoing;                                      // 0x0820   (0x0001)  
 	bool                                               _teleportFailed;                                            // 0x0821   (0x0001)  
 	bool                                               _noTeleportableGenerators;                                  // 0x0822   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x1];                                       // 0x0823   (0x0001)  MISSED
+	unsigned char                                      UnknownData02_5[0x1];                                       // 0x0823   (0x0001)  MISSED
 	float                                              _bloodSpurtInterval;                                        // 0x0824   (0x0004)  
 	float                                              _collisionCheckCapsuleHalfHeight;                           // 0x0828   (0x0004)  
 	float                                              _collisionCheckCapsuleRadius;                               // 0x082C   (0x0004)  
@@ -131,56 +131,56 @@ public:
 	float                                              _capsuleTraceAngleIncrement;                                // 0x083C   (0x0004)  
 	float                                              _generatorTeleportMaxAngle;                                 // 0x0840   (0x0004)  
 	float                                              _downRaycastLength;                                         // 0x0844   (0x0004)  
-	unsigned char                                      UnknownData04_6[0x8];                                       // 0x0848   (0x0008)  MISSED
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0848   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.StopBloodSpurts
-	// void StopBloodSpurts();                                                                                               // [0x5d82560] Final|Native|Protected|BlueprintCallable 
+	// void StopBloodSpurts();                                                                                               // [0x5d8f850] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.StartBloodSpurts
-	// void StartBloodSpurts();                                                                                              // [0x5d82540] Final|Native|Protected|BlueprintCallable 
+	// void StartBloodSpurts();                                                                                              // [0x5d8f830] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.ShowBloodSpurtsVFX
-	// void ShowBloodSpurtsVFX();                                                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void ShowBloodSpurtsVFX();                                                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.Server_SetSelectedGenerator
-	// void Server_SetSelectedGenerator(class AGenerator* Generator);                                                        // [0x5d82480] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable|NetValidate 
+	// void Server_SetSelectedGenerator(class AGenerator* Generator);                                                        // [0x5d8f770] Net|NetReliableNative|Event|Protected|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnTeleportReady
-	// void OnTeleportReady();                                                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnTeleportReady();                                                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnTeleportLocationChosen
-	// void OnTeleportLocationChosen(class AGenerator* Generator, FTransform Location);                                      // [0x61c32d0] Event|Protected|HasDefaults|BlueprintEvent 
+	// void OnTeleportLocationChosen(class AGenerator* Generator, FTransform Location);                                      // [0x61d2f50] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnTeleported
-	// void OnTeleported(FTransform transformBeforeTeleport);                                                                // [0x61c32d0] Event|Protected|HasDefaults|BlueprintEvent 
+	// void OnTeleported(FTransform transformBeforeTeleport);                                                                // [0x61d2f50] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnSelectedGeneratorSet
-	// void OnSelectedGeneratorSet(class AGenerator* selectedGenerator);                                                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnSelectedGeneratorSet(class AGenerator* selectedGenerator);                                                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnRep_TeleportCooldownTimer
-	// void OnRep_TeleportCooldownTimer();                                                                                   // [0x5d82460] Final|Native|Private 
+	// void OnRep_TeleportCooldownTimer();                                                                                   // [0x5d8f750] Final|Native|Private 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnRep_SelectedGenerator
-	// void OnRep_SelectedGenerator();                                                                                       // [0x5d82440] Final|Native|Private 
+	// void OnRep_SelectedGenerator();                                                                                       // [0x5d8f730] Final|Native|Private 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnLocallySelectedGeneratorSet
-	// void OnLocallySelectedGeneratorSet(class AGenerator* selectedGenerator);                                              // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnLocallySelectedGeneratorSet(class AGenerator* selectedGenerator);                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5d82420] Final|Native|Protected 
+	// void OnIntroCompleted();                                                                                              // [0x5d8f710] Final|Native|Protected 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.OnBloodSpurts
-	// void OnBloodSpurts();                                                                                                 // [0x5d82400] Final|Native|Protected 
+	// void OnBloodSpurts();                                                                                                 // [0x5d8f6f0] Final|Native|Protected 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.Multicast_TeleportPlayer
-	// void Multicast_TeleportPlayer(FVector Location, FRotator Rotation);                                                   // [0x5b6f650] Net|NetReliableNative|Event|NetMulticast|Protected|HasDefaults 
+	// void Multicast_TeleportPlayer(FVector Location, FRotator Rotation);                                                   // [0x5d8f610] Net|NetReliableNative|Event|NetMulticast|Protected|HasDefaults 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.Multicast_OnTeleportLocationChosen
-	// void Multicast_OnTeleportLocationChosen(class AGenerator* Generator, FTransform Location);                            // [0x5d822b0] Net|NetReliableNative|Event|NetMulticast|Protected|HasDefaults 
+	// void Multicast_OnTeleportLocationChosen(class AGenerator* Generator, FTransform Location);                            // [0x5d8f4d0] Net|NetReliableNative|Event|NetMulticast|Protected|HasDefaults 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.IsTeleportAvailable
-	// bool IsTeleportAvailable();                                                                                           // [0x5d82280] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTeleportAvailable();                                                                                           // [0x5d8f4a0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.InitializeTunableValues
-	// void InitializeTunableValues(class ASlasherPlayer* killer);                                                           // [0x5d821f0] Final|Native|Private 
+	// void InitializeTunableValues(class ASlasherPlayer* killer);                                                           // [0x5d8f410] Final|Native|Private 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.HasTeleportFailed
-	// bool HasTeleportFailed();                                                                                             // [0x5d821c0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool HasTeleportFailed();                                                                                             // [0x5d8f3e0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.GetOwningPlayer
-	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x5d82190] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x5d8f3b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.GetInlineGenerator
-	// class AGenerator* GetInlineGenerator(class ADBDPlayer* Player);                                                       // [0x5d820f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AGenerator* GetInlineGenerator(class ADBDPlayer* Player);                                                       // [0x5d8f310] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.CanTeleportAtGenerator
-	// bool CanTeleportAtGenerator(class AGenerator* Generator);                                                             // [0x5d82050] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanTeleportAtGenerator(class AGenerator* Generator);                                                             // [0x5d8f270] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.Authority_TeleportPlayerToGenerator
-	// bool Authority_TeleportPlayerToGenerator(class ADBDPlayer* playerToTeleport, class AGenerator* Generator);            // [0x5d81f80] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// bool Authority_TeleportPlayerToGenerator(class ADBDPlayer* playerToTeleport, class AGenerator* Generator);            // [0x5d8f1a0] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/TheNightmare.GeneratorTeleportInteraction.Authority_StartTeleportCooldown
-	// void Authority_StartTeleportCooldown(bool teleported);                                                                // [0x5d81ef0] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_StartTeleportCooldown(bool teleported);                                                                // [0x5d8f110] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheNightmare.InDreamSurvivorSubAnimInstance
@@ -218,9 +218,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.NightmareCheatComponent.OnRep_AllowWakeUpAnyClock
-	// void OnRep_AllowWakeUpAnyClock();                                                                                     // [0x45fe020] Final|Native|Private 
+	// void OnRep_AllowWakeUpAnyClock();                                                                                     // [0x4592da0] Final|Native|Private 
 	// Function /Script/TheNightmare.NightmareCheatComponent.DBD_AllowWakeUpAtAnyClock
-	// void DBD_AllowWakeUpAtAnyClock(bool allow);                                                                           // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_AllowWakeUpAtAnyClock(bool allow);                                                                           // [0x581c030] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheNightmare.PlaceDreamPalletInteraction
@@ -236,13 +236,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.PlaceDreamPalletInteraction.SpawnDreamPallet
-	// void SpawnDreamPallet(class APalletTracker* trackerAtLocation);                                                       // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void SpawnDreamPallet(class APalletTracker* trackerAtLocation);                                                       // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheNightmare.PlaceDreamPalletInteraction.InitializeTunableValues
-	// void InitializeTunableValues(class ASlasherPlayer* killer);                                                           // [0x5d82d60] Final|Native|Private 
+	// void InitializeTunableValues(class ASlasherPlayer* killer);                                                           // [0x5d90050] Final|Native|Private 
 	// Function /Script/TheNightmare.PlaceDreamPalletInteraction.GetTargetedPallet
-	// class APalletTracker* GetTargetedPallet();                                                                            // [0x5d82d30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class APalletTracker* GetTargetedPallet();                                                                            // [0x5d90020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.PlaceDreamPalletInteraction.CanSpawnDreamPalletAtTracker
-	// bool CanSpawnDreamPalletAtTracker(class APalletTracker* tracker);                                                     // [0x5d82c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanSpawnDreamPalletAtTracker(class APalletTracker* tracker);                                                     // [0x5d8ff80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheNightmare.PresentationGeneratorTeleportProgressComponent
@@ -262,7 +262,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.RememberMe.DidLoseHealthState
-	// bool DidLoseHealthState(class AActor* DamagedActor, int32_t oldHealthStateCount);                                     // [0x5d830a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool DidLoseHealthState(class AActor* DamagedActor, int32_t oldHealthStateCount);                                     // [0x5d90390] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheNightmare.SetDreamSnareInteraction
@@ -270,17 +270,17 @@ public:
 class USetDreamSnareInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	float                                              MinPitch;                                                   // 0x0788   (0x0004)  
-	float                                              MinPlacementDistance;                                       // 0x078C   (0x0004)  
-	float                                              MaxPlacementDistance;                                       // 0x0790   (0x0004)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x0794   (0x000C)  MISSED
+	float                                              MinPitch;                                                   // 0x0790   (0x0004)  
+	float                                              MinPlacementDistance;                                       // 0x0794   (0x0004)  
+	float                                              MaxPlacementDistance;                                       // 0x0798   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x079C   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheNightmare.SetDreamSnareInteraction.HasCancelledDreamSnare
-	// bool HasCancelledDreamSnare();                                                                                        // [0x50ae880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasCancelledDreamSnare();                                                                                        // [0x5092630] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNightmare.SetDreamSnareInteraction.GetTrapDistanceFromControlRotation
-	// float GetTrapDistanceFromControlRotation();                                                                           // [0x5d83370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTrapDistanceFromControlRotation();                                                                           // [0x5d90660] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheNightmare.TheNightmareUtilities
@@ -292,7 +292,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNightmare.TheNightmareUtilities.GetDreamSnareStatusEffect
-	// class UDreamSnareEffect* GetDreamSnareStatusEffect(class ADBDPlayer* Player);                                         // [0x5d83530] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UDreamSnareEffect* GetDreamSnareStatusEffect(class ADBDPlayer* Player);                                         // [0x5d90820] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheNightmare.WakerObjectOutlineStrategy

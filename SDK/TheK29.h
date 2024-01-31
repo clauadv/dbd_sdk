@@ -88,23 +88,23 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29AnimInstance.ResetStartThrowingSurvivor
-	// void ResetStartThrowingSurvivor();                                                                                    // [0x5c0bc60] Final|Native|Public|BlueprintCallable 
+	// void ResetStartThrowingSurvivor();                                                                                    // [0x5c191e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29AnimInstance.ResetHasRushEndedInSurvivorImpact
-	// void ResetHasRushEndedInSurvivorImpact();                                                                             // [0x5c0bc40] Final|Native|Public|BlueprintCallable 
+	// void ResetHasRushEndedInSurvivorImpact();                                                                             // [0x5c191c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29AnimInstance.ResetHasRushEndedInLedgeDrop
-	// void ResetHasRushEndedInLedgeDrop();                                                                                  // [0x5c0bc20] Final|Native|Public|BlueprintCallable 
+	// void ResetHasRushEndedInLedgeDrop();                                                                                  // [0x5c191a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29AnimInstance.ResetHasInstantlyPickedUpSurvivor
-	// void ResetHasInstantlyPickedUpSurvivor();                                                                             // [0x5c0bc00] Final|Native|Public|BlueprintCallable 
+	// void ResetHasInstantlyPickedUpSurvivor();                                                                             // [0x5c19180] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29AnimInstance.OnStartThrowingSurvivor
-	// void OnStartThrowingSurvivor();                                                                                       // [0x5c0bbe0] Final|Native|Private 
+	// void OnStartThrowingSurvivor();                                                                                       // [0x5c19160] Final|Native|Private 
 	// Function /Script/TheK29.K29AnimInstance.OnHasRushEndedInSurvivorImpact
-	// void OnHasRushEndedInSurvivorImpact();                                                                                // [0x5c0b9b0] Final|Native|Private 
+	// void OnHasRushEndedInSurvivorImpact();                                                                                // [0x5c18f30] Final|Native|Private 
 	// Function /Script/TheK29.K29AnimInstance.OnHasRushEndedInLedgeDrop
-	// void OnHasRushEndedInLedgeDrop();                                                                                     // [0x5c0b990] Final|Native|Private 
+	// void OnHasRushEndedInLedgeDrop();                                                                                     // [0x5c18f10] Final|Native|Private 
 	// Function /Script/TheK29.K29AnimInstance.OnHasInstantlyPickedUpSurvivor
-	// void OnHasInstantlyPickedUpSurvivor();                                                                                // [0x5c0b970] Final|Native|Private 
+	// void OnHasInstantlyPickedUpSurvivor();                                                                                // [0x5c18ef0] Final|Native|Private 
 	// Function /Script/TheK29.K29AnimInstance.OnGameEventReceived
-	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5c0b860] Final|Native|Private|HasOutParms 
+	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5c18de0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK29.K29GateBlockerStatusEffect
@@ -134,11 +134,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29KillerVaultInteractionDefinition.IsVaultingToLeftSide
-	// bool IsVaultingToLeftSide(class AActor* killer);                                                                      // [0x5c0b6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVaultingToLeftSide(class AActor* killer);                                                                      // [0x5c18c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29KillerVaultInteractionDefinition.GetOverlappingSurvivorsOnSide
-	// TArray<ACamperPlayer*> GetOverlappingSurvivorsOnSide(bool isUsingLeftSide);                                           // [0x5c0b580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<ACamperPlayer*> GetOverlappingSurvivorsOnSide(bool isUsingLeftSide);                                           // [0x5c18b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29KillerVaultInteractionDefinition.GetClosestSurvivorToPalletFromOverlap
-	// class ACamperPlayer* GetClosestSurvivorToPalletFromOverlap(class ADBDPlayer* Player, TArray<ACamperPlayer*>& survivorsOnSide); // [0x5c0b3b0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetClosestSurvivorToPalletFromOverlap(class ADBDPlayer* Player, TArray<ACamperPlayer*>& survivorsOnSide); // [0x5c18930] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.K29P01
@@ -153,7 +153,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29P01.GetSurvivorVaultRushedEventRange
-	// float GetSurvivorVaultRushedEventRange();                                                                             // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSurvivorVaultRushedEventRange();                                                                             // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.K29P02
@@ -164,15 +164,15 @@ public:
 	float                                              _revealRange;                                               // 0x03C8   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
 	class UClass*                                      _effectClass;                                               // 0x03D8   (0x0008)  
-	SDK_UNDEFINED(80,5117) /* TMap<TWeakObjectPtr<ACamperPlayer*>, TWeakObjectPtr<UStatusEffect*>> */ __um(_survivorRevealedEffects); // 0x03E0   (0x0050)  
+	SDK_UNDEFINED(80,5507) /* TMap<TWeakObjectPtr<ACamperPlayer*>, TWeakObjectPtr<UStatusEffect*>> */ __um(_survivorRevealedEffects); // 0x03E0   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x60];                                      // 0x0430   (0x0060)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK29.K29P02.GetRevealRange
-	// float GetRevealRange();                                                                                               // [0x500a800] Final|Native|Public|BlueprintCallable 
+	// float GetRevealRange();                                                                                               // [0x4fe80b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29P02.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange, class ACamperPlayer* Survivor);                                         // [0x5c0afa0] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange, class ACamperPlayer* Survivor);                                         // [0x5c18520] Final|Native|Private 
 };
 
 /// Class /Script/TheK29.K29P03
@@ -243,37 +243,37 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29Power.GetSlashSurvivorInteraction
-	// class UInteractionDefinition* GetSlashSurvivorInteraction();                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UInteractionDefinition* GetSlashSurvivorInteraction();                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/TheK29.K29Power.GetSlashBreakableInteraction
-	// class UInteractionDefinition* GetSlashBreakableInteraction();                                                         // [0x61c32d0] Event|Public|BlueprintEvent 
+	// class UInteractionDefinition* GetSlashBreakableInteraction();                                                         // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK29.K29Power.GetScorePercent
-	// float GetScorePercent();                                                                                              // [0x5c0b6c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScorePercent();                                                                                              // [0x5c18c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29Power.GetRushVaultCooldownInteraction
-	// class UK29RushCooldownInteraction* GetRushVaultCooldownInteraction();                                                 // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UK29RushCooldownInteraction* GetRushVaultCooldownInteraction();                                                 // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/TheK29.K29Power.GetRushSurvivorDetectionBox
-	// class UStaticMeshComponent* GetRushSurvivorDetectionBox();                                                            // [0x61c32d0] Event|Public|BlueprintEvent 
+	// class UStaticMeshComponent* GetRushSurvivorDetectionBox();                                                            // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK29.K29Power.GetRushCompleteSurvivorThrowCooldownInteraction
-	// class UK29RushCooldownInteraction* GetRushCompleteSurvivorThrowCooldownInteraction();                                 // [0x61c32d0] Event|Public|BlueprintEvent 
+	// class UK29RushCooldownInteraction* GetRushCompleteSurvivorThrowCooldownInteraction();                                 // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK29.K29Power.GetRushCompleteSurvivorHitCooldownInteraction
-	// class UK29RushCooldownInteraction* GetRushCompleteSurvivorHitCooldownInteraction();                                   // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UK29RushCooldownInteraction* GetRushCompleteSurvivorHitCooldownInteraction();                                   // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/TheK29.K29Power.GetRushCompleteNoSurvivorCooldownInteraction
-	// class UK29RushCooldownInteraction* GetRushCompleteNoSurvivorCooldownInteraction();                                    // [0x61c32d0] Event|Public|BlueprintEvent 
+	// class UK29RushCooldownInteraction* GetRushCompleteNoSurvivorCooldownInteraction();                                    // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK29.K29Power.GetRushChargesHandlerComponent
-	// class UK29RushChargesHandlerComponent* GetRushChargesHandlerComponent();                                              // [0x5c0b690] Final|Native|Public|BlueprintCallable 
+	// class UK29RushChargesHandlerComponent* GetRushChargesHandlerComponent();                                              // [0x5c18c10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29Power.GetRushChargeCancelCooldownInteraction
-	// class UK29RushCooldownInteraction* GetRushChargeCancelCooldownInteraction();                                          // [0x61c32d0] Event|Public|BlueprintEvent 
+	// class UK29RushCooldownInteraction* GetRushChargeCancelCooldownInteraction();                                          // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK29.K29Power.GetRushChargeableInteraction
-	// class UK29RushChargeableInteraction* GetRushChargeableInteraction();                                                  // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UK29RushChargeableInteraction* GetRushChargeableInteraction();                                                  // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/TheK29.K29Power.GetRushBreakableCooldownInteraction
-	// class UK29RushCooldownInteraction* GetRushBreakableCooldownInteraction();                                             // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UK29RushCooldownInteraction* GetRushBreakableCooldownInteraction();                                             // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/TheK29.K29Power.GetPushSurvivorOverLedgeInteraction
-	// class UInteractionDefinition* GetPushSurvivorOverLedgeInteraction();                                                  // [0x61c32d0] Event|Public|BlueprintEvent 
+	// class UInteractionDefinition* GetPushSurvivorOverLedgeInteraction();                                                  // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK29.K29Power.GetPowerStatusHandlerComponent
-	// class UK29PowerStatusHandlerComponent* GetPowerStatusHandlerComponent();                                              // [0x5c0b660] Final|Native|Public|BlueprintCallable 
+	// class UK29PowerStatusHandlerComponent* GetPowerStatusHandlerComponent();                                              // [0x5c18be0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29Power.GetDropSurvivorCooldownInteraction
-	// class UK29RushCooldownInteraction* GetDropSurvivorCooldownInteraction();                                              // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UK29RushCooldownInteraction* GetDropSurvivorCooldownInteraction();                                              // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 	// Function /Script/TheK29.K29Power.Authority_OnStun
-	// void Authority_OnStun(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                       // [0x5c0b120] Final|Native|Private|HasOutParms 
+	// void Authority_OnStun(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                       // [0x5c186a0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK29.K29PowerChargePresentationItemProgressComponent
@@ -297,9 +297,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29PowerChargePresentationPowerFadeComponent.SetDependencies
-	// void SetDependencies(class UK29RushChargesHandlerComponent* ammoHandler);                                             // [0x57d1c00] Final|Native|Public|BlueprintCallable 
+	// void SetDependencies(class UK29RushChargesHandlerComponent* ammoHandler);                                             // [0x57d4740] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerChargePresentationPowerFadeComponent.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c0b9d0] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c18f50] Final|Native|Private 
 };
 
 /// Struct /Script/TheK29.K29SurvivorStatus
@@ -352,189 +352,189 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Server_ReleaseSurvivor
-	// void Server_ReleaseSurvivor(class ACamperPlayer* Survivor, bool isForced);                                            // [0x5c0bd50] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_ReleaseSurvivor(class ACamperPlayer* Survivor, bool isForced);                                            // [0x5c192d0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Server_GrabSurvivor
-	// void Server_GrabSurvivor(class ACamperPlayer* Survivor, bool isProcessingInitialInfection);                           // [0x5c0bc80] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_GrabSurvivor(class ACamperPlayer* Survivor, bool isProcessingInitialInfection);                           // [0x5c19200] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.OnRep_SurvivorStatusList
-	// void OnRep_SurvivorStatusList(TArray<FK29SurvivorStatus> oldSurvivorStatus);                                          // [0x5c0baf0] Final|Native|Private 
+	// void OnRep_SurvivorStatusList(TArray<FK29SurvivorStatus> oldSurvivorStatus);                                          // [0x5c19070] Final|Native|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c0ba60] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c18fe0] Final|Native|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Multicast_UseStabilizingSpray
-	// void Multicast_UseStabilizingSpray(class ACamperPlayer* TargetSurvivor);                                              // [0x57e0340] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_UseStabilizingSpray(class ACamperPlayer* TargetSurvivor);                                              // [0x57e83c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Multicast_RemoveSurvivorFromCloset
-	// void Multicast_RemoveSurvivorFromCloset(class ACamperPlayer* Survivor);                                               // [0x507e2f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RemoveSurvivorFromCloset(class ACamperPlayer* Survivor);                                               // [0x505fd60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Multicast_ReleaseSurvivor
-	// void Multicast_ReleaseSurvivor(class ACamperPlayer* Survivor, bool isForced);                                         // [0x5c0b790] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ReleaseSurvivor(class ACamperPlayer* Survivor, bool isForced);                                         // [0x5c18d10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Multicast_GrabSurvivor
-	// void Multicast_GrabSurvivor(class ACamperPlayer* Survivor, bool isProcessingInitialInfection);                        // [0x5813a90] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_GrabSurvivor(class ACamperPlayer* Survivor, bool isProcessingInitialInfection);                        // [0x5817850] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Multicast_DropSurvivor
-	// void Multicast_DropSurvivor(class ACamperPlayer* leftSurvivor);                                                       // [0x58c5550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DropSurvivor(class ACamperPlayer* leftSurvivor);                                                       // [0x58cbe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.GetMaxInfectionLevel
-	// int32_t GetMaxInfectionLevel();                                                                                       // [0x5c0b550] Final|Native|Public|BlueprintCallable 
+	// int32_t GetMaxInfectionLevel();                                                                                       // [0x5c18ad0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.GetInfectionLevel
-	// int32_t GetInfectionLevel(class ACamperPlayer* Survivor);                                                             // [0x5c0b4b0] Final|Native|Public|BlueprintCallable 
+	// int32_t GetInfectionLevel(class ACamperPlayer* Survivor);                                                             // [0x5c18a30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Cosmetic_OnGrabbingNonInfectedSurvivor
-	// void Cosmetic_OnGrabbingNonInfectedSurvivor();                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnGrabbingNonInfectedSurvivor();                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Cosmetic_OnGrabbingInfectedSurvivor
-	// void Cosmetic_OnGrabbingInfectedSurvivor();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnGrabbingInfectedSurvivor();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_UseStabilizingSpray
-	// void Authority_UseStabilizingSpray(class ACamperPlayer* instigatingSurvivor, class ACamperPlayer* TargetSurvivor);    // [0x5c0b2e0] Final|Native|Public|BlueprintCallable 
+	// void Authority_UseStabilizingSpray(class ACamperPlayer* instigatingSurvivor, class ACamperPlayer* TargetSurvivor);    // [0x5c18860] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_SetAllSurvivorsToMaxInfection
-	// void Authority_SetAllSurvivorsToMaxInfection();                                                                       // [0x45fe020] Final|Exec|Native|Public 
+	// void Authority_SetAllSurvivorsToMaxInfection();                                                                       // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_SetAllSurvivorsToInitialInfection
-	// void Authority_SetAllSurvivorsToInitialInfection();                                                                   // [0x45fe020] Final|Exec|Native|Public 
+	// void Authority_SetAllSurvivorsToInitialInfection();                                                                   // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_OnSurvivorImmoblizedChanged
-	// void Authority_OnSurvivorImmoblizedChanged();                                                                         // [0x5c0b2c0] Final|Native|Private 
+	// void Authority_OnSurvivorImmoblizedChanged();                                                                         // [0x5c18840] Final|Native|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_OnSurvivorAdded
-	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5c0b230] Final|Native|Private 
+	// void Authority_OnSurvivorAdded(class ACamperPlayer* Survivor);                                                        // [0x5c187b0] Final|Native|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_OnSlash
-	// void Authority_OnSlash(class ACamperPlayer* TargetSurvivor);                                                          // [0x5c0b090] Final|Native|Public|BlueprintCallable 
+	// void Authority_OnSlash(class ACamperPlayer* TargetSurvivor);                                                          // [0x5c18610] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_OnIntroCompleted
-	// void Authority_OnIntroCompleted();                                                                                    // [0x5c0b070] Final|Native|Private 
+	// void Authority_OnIntroCompleted();                                                                                    // [0x5c185f0] Final|Native|Private 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_HealInfectionLevels
-	// void Authority_HealInfectionLevels(class ACamperPlayer* Survivor, int32_t infectionLevelsToHeal, bool shouldSetInfectionActiveToFalse); // [0x5c0ae90] Final|Native|Public|BlueprintCallable 
+	// void Authority_HealInfectionLevels(class ACamperPlayer* Survivor, int32_t infectionLevelsToHeal, bool shouldSetInfectionActiveToFalse); // [0x5c18410] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_HealAllSurvivorsInfectionWithStabilizingSpray
-	// void Authority_HealAllSurvivorsInfectionWithStabilizingSpray();                                                       // [0x45fe020] Final|Exec|Native|Public 
+	// void Authority_HealAllSurvivorsInfectionWithStabilizingSpray();                                                       // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.Authority_AddInfectionLevels
-	// void Authority_AddInfectionLevels(class ACamperPlayer* Survivor, int32_t infectionToAdd);                             // [0x5c0adc0] Final|Native|Public|BlueprintCallable 
+	// void Authority_AddInfectionLevels(class ACamperPlayer* Survivor, int32_t infectionToAdd);                             // [0x5c18340] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.K29PowerStatusHandlerComponent.AddToTimesCuredByHeal
-	// void AddToTimesCuredByHeal(class ACamperPlayer* Survivor);                                                            // [0x5c0ad30] Final|Native|Public|BlueprintCallable 
+	// void AddToTimesCuredByHeal(class ACamperPlayer* Survivor);                                                            // [0x5c182b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK29.K29RushChargeableInteraction
-/// Size: 0x0800 (0x000790 - 0x000F90)
+/// Size: 0x0810 (0x000790 - 0x000FA0)
 class UK29RushChargeableInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0790   (0x0008)  MISSED
-	class UK29RushChargesHandlerComponent*             _rushChargesHandlerComponent;                               // 0x0798   (0x0008)  
-	class UK29PowerStatusHandlerComponent*             _powerStatusHandlerComponent;                               // 0x07A0   (0x0008)  
-	class UK29PathingCalculatorComponent*              _pathingCalculatorComponent;                                // 0x07A8   (0x0008)  
-	class AK29Power*                                   _powerCollectable;                                          // 0x07B0   (0x0008)  
-	SDK_UNDEFINED(80,5118) /* TMap<EK29RushPhase, FK29RushMovementSpeedSetting> */ __um(_movementSpeedSettingsByState); // 0x07B8   (0x0050)  
-	class UCurveFloat*                                 _subsequentRushTimerTimeoutMovementSpeedMultiplierCurve;    // 0x0808   (0x0008)  
-	FTunableStat                                       _subsequentRushTimerTimeoutMovementSpeedReductionDuration;  // 0x0810   (0x0080)  
-	FTunableStat                                       _subsequentRushOpportunityTimerDuration;                    // 0x0890   (0x0080)  
-	FTunableStat                                       _rushDuration;                                              // 0x0910   (0x0080)  
-	FTunableStat                                       _rushDurationAfterFirst;                                    // 0x0990   (0x0080)  
-	FDBDTunableRowHandle                               _capsuleRadius;                                             // 0x0A10   (0x0028)  
-	FDBDTunableRowHandle                               _survivorRevealTimeOnInstantPickup;                         // 0x0A38   (0x0028)  
-	FDBDTunableRowHandle                               _capsuleHeight;                                             // 0x0A60   (0x0028)  
-	FDBDTunableRowHandle                               _capsuleHeightOffset;                                       // 0x0A88   (0x0028)  
-	FDBDTunableRowHandle                               _bounceDuration;                                            // 0x0AB0   (0x0028)  
-	FDBDTunableRowHandle                               _rushAccelerationMultiplier;                                // 0x0AD8   (0x0028)  
-	FDBDTunableRowHandle                               _instantCarryAnimationDuration;                             // 0x0B00   (0x0028)  
-	float                                              _percentageForRushChargeEndAvailability;                    // 0x0B28   (0x0004)  
-	float                                              _distanceInCmForNearMiss;                                   // 0x0B2C   (0x0004)  
-	float                                              _rushDetectionBackwardsOffset;                              // 0x0B30   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0B34   (0x0004)  MISSED
-	class UClass*                                      _revealToSurvivorsStatusEffect;                             // 0x0B38   (0x0008)  
-	FDBDTunableRowHandle                               _rushMovementSpeedInCmPerSecond;                            // 0x0B40   (0x0028)  
-	FDBDTunableRowHandle                               _rushGrabMovementSpeedInCmPerSecond;                        // 0x0B68   (0x0028)  
-	FTunableStat                                       _grabRushDuration;                                          // 0x0B90   (0x0080)  
-	float                                              _rotationStrengthTransitionTime;                            // 0x0C10   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0C14   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _minimumRushDistance;                                       // 0x0C18   (0x0028)  
-	FDBDTunableRowHandle                               _intoGrabbingTime;                                          // 0x0C40   (0x0028)  
-	FDBDTunableRowHandle                               _smashOutTimerDuration;                                     // 0x0C68   (0x0028)  
-	FDBDTunableRowHandle                               _isStoppingMomentumAtIntoGrabbing;                          // 0x0C90   (0x0028)  
-	class UCurveFloat*                                 _movementSpeedCurveBetweenRushesIncreased;                  // 0x0CB8   (0x0008)  
-	class UCurveFloat*                                 _movementSpeedCurveChargingIncreased;                       // 0x0CC0   (0x0008)  
-	class UCurveFloat*                                 _rushMovementSpeedCurve;                                    // 0x0CC8   (0x0008)  
-	class UCurveFloat*                                 _rushMovementSpeedCurveWithSurvivor;                        // 0x0CD0   (0x0008)  
-	FName                                              _killerRushSmashAnimationName;                              // 0x0CD8   (0x000C)  
-	FName                                              _survivorRushSmashAnimationName;                            // 0x0CE4   (0x000C)  
-	FName                                              _killerRushToCarryAnimationName;                            // 0x0CF0   (0x000C)  
-	FName                                              _survivorRushToCarryAnimationName;                          // 0x0CFC   (0x000C)  
-	FName                                              _survivorRushDropAnimationName;                             // 0x0D08   (0x000C)  
-	FName                                              _killerRushCooldownAnimationName;                           // 0x0D14   (0x000C)  
-	FName                                              _animTagFPV;                                                // 0x0D20   (0x000C)  
-	float                                              _lagInSecondsUntilRushIsInvalid;                            // 0x0D2C   (0x0004)  
-	float                                              _rushDropForwardDistance;                                   // 0x0D30   (0x0004)  
-	float                                              _decisiveStrikeSkillCheckDelay;                             // 0x0D34   (0x0004)  
-	bool                                               _isLagChecked;                                              // 0x0D38   (0x0001)  
-	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0D39   (0x0007)  MISSED
-	TArray<class UClass*>                              _survivorInteractionPreventingGrab;                         // 0x0D40   (0x0010)  
-	unsigned char                                      UnknownData04_6[0x240];                                     // 0x0D50   (0x0240)  MISSED
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
+	class UK29RushChargesHandlerComponent*             _rushChargesHandlerComponent;                               // 0x07A0   (0x0008)  
+	class UK29PowerStatusHandlerComponent*             _powerStatusHandlerComponent;                               // 0x07A8   (0x0008)  
+	class UK29PathingCalculatorComponent*              _pathingCalculatorComponent;                                // 0x07B0   (0x0008)  
+	class AK29Power*                                   _powerCollectable;                                          // 0x07B8   (0x0008)  
+	SDK_UNDEFINED(80,5508) /* TMap<EK29RushPhase, FK29RushMovementSpeedSetting> */ __um(_movementSpeedSettingsByState); // 0x07C0   (0x0050)  
+	class UCurveFloat*                                 _subsequentRushTimerTimeoutMovementSpeedMultiplierCurve;    // 0x0810   (0x0008)  
+	FTunableStat                                       _subsequentRushTimerTimeoutMovementSpeedReductionDuration;  // 0x0818   (0x0080)  
+	FTunableStat                                       _subsequentRushOpportunityTimerDuration;                    // 0x0898   (0x0080)  
+	FTunableStat                                       _rushDuration;                                              // 0x0918   (0x0080)  
+	FTunableStat                                       _rushDurationAfterFirst;                                    // 0x0998   (0x0080)  
+	FDBDTunableRowHandle                               _capsuleRadius;                                             // 0x0A18   (0x0028)  
+	FDBDTunableRowHandle                               _survivorRevealTimeOnInstantPickup;                         // 0x0A40   (0x0028)  
+	FDBDTunableRowHandle                               _capsuleHeight;                                             // 0x0A68   (0x0028)  
+	FDBDTunableRowHandle                               _capsuleHeightOffset;                                       // 0x0A90   (0x0028)  
+	FDBDTunableRowHandle                               _bounceDuration;                                            // 0x0AB8   (0x0028)  
+	FDBDTunableRowHandle                               _rushAccelerationMultiplier;                                // 0x0AE0   (0x0028)  
+	FDBDTunableRowHandle                               _instantCarryAnimationDuration;                             // 0x0B08   (0x0028)  
+	float                                              _percentageForRushChargeEndAvailability;                    // 0x0B30   (0x0004)  
+	float                                              _distanceInCmForNearMiss;                                   // 0x0B34   (0x0004)  
+	float                                              _rushDetectionBackwardsOffset;                              // 0x0B38   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0B3C   (0x0004)  MISSED
+	class UClass*                                      _revealToSurvivorsStatusEffect;                             // 0x0B40   (0x0008)  
+	FDBDTunableRowHandle                               _rushMovementSpeedInCmPerSecond;                            // 0x0B48   (0x0028)  
+	FDBDTunableRowHandle                               _rushGrabMovementSpeedInCmPerSecond;                        // 0x0B70   (0x0028)  
+	FTunableStat                                       _grabRushDuration;                                          // 0x0B98   (0x0080)  
+	float                                              _rotationStrengthTransitionTime;                            // 0x0C18   (0x0004)  
+	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0C1C   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _minimumRushDistance;                                       // 0x0C20   (0x0028)  
+	FDBDTunableRowHandle                               _intoGrabbingTime;                                          // 0x0C48   (0x0028)  
+	FDBDTunableRowHandle                               _smashOutTimerDuration;                                     // 0x0C70   (0x0028)  
+	FDBDTunableRowHandle                               _isStoppingMomentumAtIntoGrabbing;                          // 0x0C98   (0x0028)  
+	class UCurveFloat*                                 _movementSpeedCurveBetweenRushesIncreased;                  // 0x0CC0   (0x0008)  
+	class UCurveFloat*                                 _movementSpeedCurveChargingIncreased;                       // 0x0CC8   (0x0008)  
+	class UCurveFloat*                                 _rushMovementSpeedCurve;                                    // 0x0CD0   (0x0008)  
+	class UCurveFloat*                                 _rushMovementSpeedCurveWithSurvivor;                        // 0x0CD8   (0x0008)  
+	FName                                              _killerRushSmashAnimationName;                              // 0x0CE0   (0x000C)  
+	FName                                              _survivorRushSmashAnimationName;                            // 0x0CEC   (0x000C)  
+	FName                                              _killerRushToCarryAnimationName;                            // 0x0CF8   (0x000C)  
+	FName                                              _survivorRushToCarryAnimationName;                          // 0x0D04   (0x000C)  
+	FName                                              _survivorRushDropAnimationName;                             // 0x0D10   (0x000C)  
+	FName                                              _killerRushCooldownAnimationName;                           // 0x0D1C   (0x000C)  
+	FName                                              _animTagFPV;                                                // 0x0D28   (0x000C)  
+	float                                              _lagInSecondsUntilRushIsInvalid;                            // 0x0D34   (0x0004)  
+	float                                              _rushDropForwardDistance;                                   // 0x0D38   (0x0004)  
+	float                                              _decisiveStrikeSkillCheckDelay;                             // 0x0D3C   (0x0004)  
+	bool                                               _isLagChecked;                                              // 0x0D40   (0x0001)  
+	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0D41   (0x0007)  MISSED
+	TArray<class UClass*>                              _survivorInteractionPreventingGrab;                         // 0x0D48   (0x0010)  
+	unsigned char                                      UnknownData04_6[0x248];                                     // 0x0D58   (0x0248)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_SlashAtSurvivor
-	// void Server_SlashAtSurvivor(class ACamperPlayer* Survivor, FVector currentKillerPosition);                            // [0x5c10310] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void Server_SlashAtSurvivor(class ACamperPlayer* Survivor, FVector currentKillerPosition);                            // [0x5c1d890] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_SetCurrentRushAsEndingInCollision
-	// void Server_SetCurrentRushAsEndingInCollision(bool hitOtherSurvivor);                                                 // [0x5c10280] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetCurrentRushAsEndingInCollision(bool hitOtherSurvivor);                                                 // [0x5c1d800] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_SetCurrentRushAsEndingAtLedge
-	// void Server_SetCurrentRushAsEndingAtLedge();                                                                          // [0x5c10260] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetCurrentRushAsEndingAtLedge();                                                                          // [0x5c1d7e0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_SetCurrentRush
-	// void Server_SetCurrentRush(FK29GuidedMovementInstance newRushInstance, EK29RushPhase targetPhase);                    // [0x5c10130] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetCurrentRush(FK29GuidedMovementInstance newRushInstance, EK29RushPhase targetPhase);                    // [0x5c1d6b0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_DestroyPalletOrBreakable
-	// void Server_DestroyPalletOrBreakable(class AActor* destroyable);                                                      // [0x5c100a0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_DestroyPalletOrBreakable(class AActor* destroyable);                                                      // [0x5c1d620] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_DamageSurvivorAsCollision
-	// void Server_DamageSurvivorAsCollision(class ACamperPlayer* Survivor, FVector currentKillerPosition);                  // [0x5c0ffd0] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void Server_DamageSurvivorAsCollision(class ACamperPlayer* Survivor, FVector currentKillerPosition);                  // [0x5c1d550] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_ChangeRushPhase
-	// void Server_ChangeRushPhase(EK29RushPhase newRushPhase, float clientTimeStamp, bool forceLocallyControlled);          // [0x5c0fec0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_ChangeRushPhase(EK29RushPhase newRushPhase, float clientTimeStamp, bool forceLocallyControlled);          // [0x5c1d440] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Server_CancelInteraction
-	// void Server_CancelInteraction();                                                                                      // [0x5b9e370] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_CancelInteraction();                                                                                      // [0x5bab950] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29RushChargeableInteraction.RushComplete
-	// void RushComplete(bool rushEndedNaturally);                                                                           // [0x5c0fe30] Final|Native|Private 
+	// void RushComplete(bool rushEndedNaturally);                                                                           // [0x5c1d3b0] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.OnWindowOfOpportunityTimeoutCooldownEnd
-	// void OnWindowOfOpportunityTimeoutCooldownEnd();                                                                       // [0x5c0fdd0] Final|Native|Private 
+	// void OnWindowOfOpportunityTimeoutCooldownEnd();                                                                       // [0x5c1d350] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.OnSubsequentRushOpportunityTimeout
-	// void OnSubsequentRushOpportunityTimeout();                                                                            // [0x5c0fd20] Final|Native|Private 
+	// void OnSubsequentRushOpportunityTimeout();                                                                            // [0x5c1d2a0] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.OnSmashOutTimerCompleted
-	// void OnSmashOutTimerCompleted();                                                                                      // [0x5c0fd00] Final|Native|Private 
+	// void OnSmashOutTimerCompleted();                                                                                      // [0x5c1d280] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.OnInstantCarryTimerComplete
-	// void OnInstantCarryTimerComplete(class ACamperPlayer* survivorToCarry);                                               // [0x5c0fa00] Final|Native|Private 
+	// void OnInstantCarryTimerComplete(class ACamperPlayer* survivorToCarry);                                               // [0x5c1cf80] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.OnGrabbingTransitionComplete
-	// void OnGrabbingTransitionComplete();                                                                                  // [0x5c0f860] Final|Native|Private 
+	// void OnGrabbingTransitionComplete();                                                                                  // [0x5c1cde0] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.OnCollisionEnableTimerComplete
-	// void OnCollisionEnableTimerComplete();                                                                                // [0x5c0f730] Final|Native|Private 
+	// void OnCollisionEnableTimerComplete();                                                                                // [0x5c1ccb0] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_SmashSurvivor
-	// void Multicast_SmashSurvivor(class ACamperPlayer* survivorToCarry);                                                   // [0x5c0f6a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SmashSurvivor(class ACamperPlayer* survivorToCarry);                                                   // [0x5c1cc20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_SlashAtSurvivor
-	// void Multicast_SlashAtSurvivor(class ACamperPlayer* Survivor, FVector currentKillerPosition, ECamperDamageState survivorTargetDamageState); // [0x5c0f590] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SlashAtSurvivor(class ACamperPlayer* Survivor, FVector currentKillerPosition, ECamperDamageState survivorTargetDamageState); // [0x5c1cb10] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_SetCurrentRushAsEndingInCollision
-	// void Multicast_SetCurrentRushAsEndingInCollision();                                                                   // [0x5c0f570] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetCurrentRushAsEndingInCollision();                                                                   // [0x5c1caf0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_SetCurrentRushAsEndingAtLedge
-	// void Multicast_SetCurrentRushAsEndingAtLedge();                                                                       // [0x5c0f550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetCurrentRushAsEndingAtLedge();                                                                       // [0x5c1cad0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_SetCurrentRush
-	// void Multicast_SetCurrentRush(FK29GuidedMovementInstance newRushInstance);                                            // [0x5c0f450] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetCurrentRush(FK29GuidedMovementInstance newRushInstance);                                            // [0x5c1c9d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_RushValid
-	// void Multicast_RushValid();                                                                                           // [0x5c0f430] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RushValid();                                                                                           // [0x5c1c9b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_RushInvalid
-	// void Multicast_RushInvalid();                                                                                         // [0x5bdea60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RushInvalid();                                                                                         // [0x5bec250] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_DestroyPalletOrBreakable
-	// void Multicast_DestroyPalletOrBreakable(class AActor* destroyable);                                                   // [0x5c0f3a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DestroyPalletOrBreakable(class AActor* destroyable);                                                   // [0x5c1c920] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_DamageSurvivorAsCollision
-	// void Multicast_DamageSurvivorAsCollision(FVector currentKillerPosition, class ACamperPlayer* collidedSurvivor, ECamperDamageState survivorTargetDamageState); // [0x5c0f290] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_DamageSurvivorAsCollision(FVector currentKillerPosition, class ACamperPlayer* collidedSurvivor, ECamperDamageState survivorTargetDamageState); // [0x5c1c810] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_ChangeRushPhase
-	// void Multicast_ChangeRushPhase(EK29RushPhase newRushPhase, bool forceLocallyControlled);                              // [0x5c0f1b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ChangeRushPhase(EK29RushPhase newRushPhase, bool forceLocallyControlled);                              // [0x5c1c730] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_CarrySurvivor
-	// void Multicast_CarrySurvivor(class ACamperPlayer* survivorToCarry);                                                   // [0x5c0f120] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_CarrySurvivor(class ACamperPlayer* survivorToCarry);                                                   // [0x5c1c6a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Multicast_CancelInteraction
-	// void Multicast_CancelInteraction();                                                                                   // [0x5a3fe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_CancelInteraction();                                                                                   // [0x5af9850] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29RushChargeableInteraction.GetRushTimeLeft
-	// float GetRushTimeLeft();                                                                                              // [0x5c0f000] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRushTimeLeft();                                                                                              // [0x5c1c580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_ShowEndIndicator
-	// void Cosmetic_ShowEndIndicator(FVector& endIndicatorLocation, FRotator& forwardRotation);                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_ShowEndIndicator(FVector& endIndicatorLocation, FRotator& forwardRotation);                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_OnSlashAtSurvivor
-	// void Cosmetic_OnSlashAtSurvivor(class ACamperPlayer* Survivor, ECamperDamageState survivorTargetDamageState);         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSlashAtSurvivor(class ACamperPlayer* Survivor, ECamperDamageState survivorTargetDamageState);         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_OnRushStart
-	// void Cosmetic_OnRushStart();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRushStart();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_OnRushPhaseChanged
-	// void Cosmetic_OnRushPhaseChanged(EK29RushPhase previousPhase, EK29RushPhase newPhase);                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRushPhaseChanged(EK29RushPhase previousPhase, EK29RushPhase newPhase);                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_OnRushEnd
-	// void Cosmetic_OnRushEnd();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRushEnd();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_OnChargeStart
-	// void Cosmetic_OnChargeStart();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChargeStart();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_OnChargeEnd
-	// void Cosmetic_OnChargeEnd();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChargeEnd();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_HideEndIndicator
-	// void Cosmetic_HideEndIndicator();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_HideEndIndicator();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.Cosmetic_DamageSurvivorAsCollision
-	// void Cosmetic_DamageSurvivorAsCollision(class ACamperPlayer* Survivor, ECamperDamageState survivorTargetDamageState); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DamageSurvivorAsCollision(class ACamperPlayer* Survivor, ECamperDamageState survivorTargetDamageState); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargeableInteraction.BounceComplete
-	// void BounceComplete();                                                                                                // [0x5c0eec0] Final|Native|Private 
+	// void BounceComplete();                                                                                                // [0x5c1c440] Final|Native|Private 
 };
 
 /// Class /Script/TheK29.K29RushChargesHandlerComponent
@@ -551,23 +551,23 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.SetToFullCharge
-	// void SetToFullCharge();                                                                                               // [0x5c103e0] Final|Native|Private 
+	// void SetToFullCharge();                                                                                               // [0x5c1d960] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.OnMaximumChargesChanged
-	// void OnMaximumChargesChanged(float NewValue);                                                                         // [0x5c0fbd0] Final|Native|Private 
+	// void OnMaximumChargesChanged(float NewValue);                                                                         // [0x5c1d150] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c0fa90] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c1d010] Final|Native|Private 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.GetPercentageRemainingUntilNextCharge
-	// float GetPercentageRemainingUntilNextCharge();                                                                        // [0x5c0efd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPercentageRemainingUntilNextCharge();                                                                        // [0x5c1c550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.GetMaximumCharges
-	// int32_t GetMaximumCharges();                                                                                          // [0x5c0ef70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaximumCharges();                                                                                          // [0x5c1c4f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.GetAvailableCharges
-	// int32_t GetAvailableCharges();                                                                                        // [0x5c0eee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetAvailableCharges();                                                                                        // [0x5c1c460] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.Cosmetic_OnRushChargeAdded
-	// void Cosmetic_OnRushChargeAdded();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnRushChargeAdded();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.Cosmetic_OnOutOfRushCharges
-	// void Cosmetic_OnOutOfRushCharges();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOutOfRushCharges();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29RushChargesHandlerComponent.AddSingleCharge
-	// void AddSingleCharge();                                                                                               // [0x5c0eea0] Final|Native|Private 
+	// void AddSingleCharge();                                                                                               // [0x5c1c420] Final|Native|Private 
 };
 
 /// Class /Script/TheK29.K29RushCooldownInteraction
@@ -584,7 +584,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29RushCooldownInteraction.ResetCameraInputLimit
-	// void ResetCameraInputLimit();                                                                                         // [0x5c0fdf0] Final|Native|Protected 
+	// void ResetCameraInputLimit();                                                                                         // [0x5c1d370] Final|Native|Protected 
 };
 
 /// Class /Script/TheK29.K29SupplyCrateOutlineUpdateStrategy
@@ -631,11 +631,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29SurvivorAnimInstance.ResetHasBeenThrown
-	// void ResetHasBeenThrown();                                                                                            // [0x5c0fe10] Final|Native|Protected|BlueprintCallable 
+	// void ResetHasBeenThrown();                                                                                            // [0x5c1d390] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK29.K29SurvivorAnimInstance.OnHasBeenThrown
-	// void OnHasBeenThrown();                                                                                               // [0x5c0f880] Final|Native|Private 
+	// void OnHasBeenThrown();                                                                                               // [0x5c1ce00] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorAnimInstance.OnGameEventReceived
-	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5c0f750] Final|Native|Private|HasOutParms 
+	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5c1ccd0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK29.K29SurvivorCarriableComponent
@@ -649,17 +649,17 @@ public:
 	bool                                               _isCarriedByK29Rush;                                        // 0x00DC   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00DD   (0x0003)  MISSED
 	float                                              _killerIngoreTime;                                          // 0x00E0   (0x0004)  
-	SDK_UNDEFINED(8,5119) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_owningSurvivor);                              // 0x00E4   (0x0008)  
+	SDK_UNDEFINED(8,5509) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_owningSurvivor);                              // 0x00E4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x44];                                      // 0x00EC   (0x0044)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK29.K29SurvivorCarriableComponent.OnRep_OwningSurvivor
-	// void OnRep_OwningSurvivor();                                                                                          // [0x5c0fce0] Final|Native|Private 
+	// void OnRep_OwningSurvivor();                                                                                          // [0x5c1d260] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCarriableComponent.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c0fb20] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5c1d0a0] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCarriableComponent.IsBeingCarriedByK29RushOrMarkedForThrow
-	// bool IsBeingCarriedByK29RushOrMarkedForThrow();                                                                       // [0x5c0f030] Final|Native|Protected|BlueprintCallable 
+	// bool IsBeingCarriedByK29RushOrMarkedForThrow();                                                                       // [0x5c1c5b0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheK29.K29SurvivorCosmeticHelperActor
@@ -672,51 +672,51 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.OnSurvivorGrabbed
-	// void OnSurvivorGrabbed(class ACamperPlayer* Survivor);                                                                // [0x5c0fd40] Final|Native|Private 
+	// void OnSurvivorGrabbed(class ACamperPlayer* Survivor);                                                                // [0x5c1d2c0] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.OnSurvivorDisguisedOrUndisguised
-	// void OnSurvivorDisguisedOrUndisguised(bool isDisguised);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnSurvivorDisguisedOrUndisguised(bool isDisguised);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.OnOwnerLocallyObserved
-	// void OnOwnerLocallyObserved(bool locallyObserved);                                                                    // [0x5c0fc50] Final|Native|Private 
+	// void OnOwnerLocallyObserved(bool locallyObserved);                                                                    // [0x5c1d1d0] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5c0fbb0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5c1d130] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.OnInfectionRemovalCollectableUsed
-	// void OnInfectionRemovalCollectableUsed(class ACamperPlayer* Survivor);                                                // [0x5c0f970] Final|Native|Private 
+	// void OnInfectionRemovalCollectableUsed(class ACamperPlayer* Survivor);                                                // [0x5c1cef0] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.OnInfectionLevelsChanged
-	// void OnInfectionLevelsChanged(class ACamperPlayer* TargetSurvivor, bool IsActive);                                    // [0x5c0f8a0] Final|Native|Private 
+	// void OnInfectionLevelsChanged(class ACamperPlayer* TargetSurvivor, bool IsActive);                                    // [0x5c1ce20] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.IsInfectionIncubated
-	// bool IsInfectionIncubated();                                                                                          // [0x5c0f0f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInfectionIncubated();                                                                                          // [0x5c1c670] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.IsInfectionCritical
-	// bool IsInfectionCritical();                                                                                           // [0x5c0f0c0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInfectionCritical();                                                                                           // [0x5c1c640] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.IsInfectionActive
-	// bool IsInfectionActive();                                                                                             // [0x5c0f090] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInfectionActive();                                                                                             // [0x5c1c610] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.IsInfected
-	// bool IsInfected();                                                                                                    // [0x5c0f060] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInfected();                                                                                                    // [0x5c1c5e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.GetMaximumInfectionLevels
-	// int32_t GetMaximumInfectionLevels();                                                                                  // [0x5c0efa0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaximumInfectionLevels();                                                                                  // [0x5c1c520] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.GetCurrentInfectionPercentage
-	// float GetCurrentInfectionPercentage();                                                                                // [0x5c0ef40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentInfectionPercentage();                                                                                // [0x5c1c4c0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.GetCurrentInfectionLevels
-	// int32_t GetCurrentInfectionLevels();                                                                                  // [0x5c0ef10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentInfectionLevels();                                                                                  // [0x5c1c490] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_OnOwningSurvivorHitCollisionWithRush
-	// void Cosmetic_OnOwningSurvivorHitCollisionWithRush();                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOwningSurvivorHitCollisionWithRush();                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_OnOwningSurvivorDied
-	// void Cosmetic_OnOwningSurvivorDied();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOwningSurvivorDied();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_OnLocallyObservedChanged
-	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_OnInfectionRemovalCollectableUsed
-	// void Cosmetic_OnInfectionRemovalCollectableUsed();                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInfectionRemovalCollectableUsed();                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_OnInfectionLevelsChanged
-	// void Cosmetic_OnInfectionLevelsChanged(bool IsActive);                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInfectionLevelsChanged(bool IsActive);                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_IsInfectionIncubatedChanged
-	// void Cosmetic_IsInfectionIncubatedChanged(bool IsInfectionIncubated);                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_IsInfectionIncubatedChanged(bool IsInfectionIncubated);                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_IsInfectionCriticalChanged
-	// void Cosmetic_IsInfectionCriticalChanged(bool IsInfectionCritical);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_IsInfectionCriticalChanged(bool IsInfectionCritical);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_IsInfectedChanged
-	// void Cosmetic_IsInfectedChanged(bool IsInfected);                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_IsInfectedChanged(bool IsInfected);                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_IsInfectedActiveChanged
-	// void Cosmetic_IsInfectedActiveChanged(bool IsInfectionActive);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_IsInfectedActiveChanged(bool IsInfectionActive);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29SurvivorCosmeticHelperActor.Cosmetic_GrabbedByKiller
-	// void Cosmetic_GrabbedByKiller();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_GrabbedByKiller();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK29.K29SurvivorStatusComponent
@@ -725,8 +725,8 @@ class UK29SurvivorStatusComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(8,5120) /* TWeakObjectPtr<UK29PowerStatusHandlerComponent*> */ __um(_powerStatusHandlerComponent); // 0x00C0   (0x0008)  
-	SDK_UNDEFINED(8,5121) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_owningSurvivor);                              // 0x00C8   (0x0008)  
+	SDK_UNDEFINED(8,5510) /* TWeakObjectPtr<UK29PowerStatusHandlerComponent*> */ __um(_powerStatusHandlerComponent); // 0x00C0   (0x0008)  
+	SDK_UNDEFINED(8,5511) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_owningSurvivor);                              // 0x00C8   (0x0008)  
 };
 
 /// Class /Script/TheK29.K29SurvivorThrowableComponent
@@ -751,57 +751,56 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Server_EndThrow
-	// void Server_EndThrow();                                                                                               // [0x4db2a10] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_EndThrow();                                                                                               // [0x4d82970] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Server_CancelThrowOnOtherSurvivorCollision
-	// void Server_CancelThrowOnOtherSurvivorCollision(FVector collisionPosition, class ACamperPlayer* survivorUsedAsCollision); // [0x5c12b90] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void Server_CancelThrowOnOtherSurvivorCollision(FVector collisionPosition, class ACamperPlayer* survivorUsedAsCollision); // [0x5c20110] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.OnWalkingAllowedAfterFall
-	// void OnWalkingAllowedAfterFall();                                                                                     // [0x5c12b70] Final|Native|Private 
+	// void OnWalkingAllowedAfterFall();                                                                                     // [0x5c200f0] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.OnThrowTimeout
-	// void OnThrowTimeout();                                                                                                // [0x5c12b50] Final|Native|Private 
+	// void OnThrowTimeout();                                                                                                // [0x5c200d0] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Multicast_SetCurrentThrow
-	// void Multicast_SetCurrentThrow(FK29GuidedMovementInstance throwInstance, class ACamperPlayer* thrownSurvivor);        // [0x5c12930] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetCurrentThrow(FK29GuidedMovementInstance throwInstance, class ACamperPlayer* thrownSurvivor);        // [0x5c1feb0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Multicast_InstantlyLetGoSurvivor
-	// void Multicast_InstantlyLetGoSurvivor(bool hasDealtDamage);                                                           // [0x5c128a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_InstantlyLetGoSurvivor(bool hasDealtDamage);                                                           // [0x5c1fe20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Multicast_EndThrow
-	// void Multicast_EndThrow();                                                                                            // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_EndThrow();                                                                                            // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Multicast_CancelThrowOnOtherSurvivorCollision
-	// void Multicast_CancelThrowOnOtherSurvivorCollision(FVector collisionPosition, class ACamperPlayer* survivorUsedAsCollision); // [0x5c127c0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_CancelThrowOnOtherSurvivorCollision(FVector collisionPosition, class ACamperPlayer* survivorUsedAsCollision); // [0x5c1fd40] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.EndThrow
-	// void EndThrow();                                                                                                      // [0x5c12610] Final|Native|Private 
+	// void EndThrow();                                                                                                      // [0x5c1fb90] Final|Native|Private 
 	// Function /Script/TheK29.K29SurvivorThrowableComponent.Cosmetic_OnSurvivorUsedAsCollision
-	// void Cosmetic_OnSurvivorUsedAsCollision(class ACamperPlayer* Survivor);                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSurvivorUsedAsCollision(class ACamperPlayer* Survivor);                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK29.K29UseInfectionRemoverInteraction
-/// Size: 0x0030 (0x000790 - 0x0007C0)
+/// Size: 0x0040 (0x000790 - 0x0007D0)
 class UK29UseInfectionRemoverInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	class UClass*                                      _killerInstinctClass;                                       // 0x0788   (0x0008)  
-	FDBDTunableRowHandle                               _killerInstinctDuration;                                    // 0x0790   (0x0028)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x07B8   (0x0008)  MISSED
+	class UClass*                                      _killerInstinctClass;                                       // 0x0790   (0x0008)  
+	FDBDTunableRowHandle                               _killerInstinctDuration;                                    // 0x0798   (0x0028)  
+	unsigned char                                      UnknownData00_6[0x10];                                      // 0x07C0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK29.K29UseInfectionRemoverInteraction.OnSurvivorCured_Cosmetic
-	// void OnSurvivorCured_Cosmetic();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnSurvivorCured_Cosmetic();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK29.K29UseInfectionRemoverInteraction.GetInteractionTarget
-	// class ACamperPlayer* GetInteractionTarget();                                                                          // [0x5b1cd40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetInteractionTarget();                                                                          // [0x5b299d0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.K29UseInfectionRemoverInteractionOther
-/// Size: 0x0020 (0x0007C0 - 0x0007E0)
+/// Size: 0x0010 (0x0007D0 - 0x0007E0)
 class UK29UseInfectionRemoverInteractionOther : public UK29UseInfectionRemoverInteraction
 { 
 public:
-	class UClass*                                      _crouchBlockStatusEffectClass;                              // 0x07C0   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x07C8   (0x0008)  MISSED
-	class UStatusEffect*                               _crouchBlockStatusEffect;                                   // 0x07D0   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x07D8   (0x0008)  MISSED
+	class UClass*                                      _crouchBlockStatusEffectClass;                              // 0x07C8   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x07D0   (0x0008)  MISSED
+	class UStatusEffect*                               _crouchBlockStatusEffect;                                   // 0x07D8   (0x0008)  
 };
 
 /// Class /Script/TheK29.K29UseInfectionRemoverInteractionSelf
-/// Size: 0x0000 (0x0007C0 - 0x0007C0)
+/// Size: 0x0000 (0x0007D0 - 0x0007D0)
 class UK29UseInfectionRemoverInteractionSelf : public UK29UseInfectionRemoverInteraction
 { 
 public:
@@ -816,9 +815,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.K29Utilities.IsSurvivorAbleToBeAffectedByPower
-	// bool IsSurvivorAbleToBeAffectedByPower(class AActor* survivorAsActor, class ASlasherPlayer* killer);                  // [0x5c126f0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSurvivorAbleToBeAffectedByPower(class AActor* survivorAsActor, class ASlasherPlayer* killer);                  // [0x5c1fc70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK29.K29Utilities.GetK29Power
-	// class AK29Power* GetK29Power(class UObject* WorldContextObject);                                                      // [0x5c12660] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK29Power* GetK29Power(class UObject* WorldContextObject);                                                      // [0x5c1fbe0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK29.ReassuranceCondition
@@ -844,9 +843,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.S32P01.OnRep_IsKillerInRange
-	// void OnRep_IsKillerInRange();                                                                                         // [0x5c12b10] Final|Native|Private 
+	// void OnRep_IsKillerInRange();                                                                                         // [0x5c20090] Final|Native|Private 
 	// Function /Script/TheK29.S32P01.GetGeneratorRevealRange
-	// float GetGeneratorRevealRange();                                                                                      // [0x5c12630] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGeneratorRevealRange();                                                                                      // [0x5c1fbb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.S32P02
@@ -862,9 +861,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.S32P02.GetHitDistanceAtLevel
-	// float GetHitDistanceAtLevel();                                                                                        // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHitDistanceAtLevel();                                                                                        // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK29.S32P02.GetHealingProgressionIncreaseAtLevel
-	// float GetHealingProgressionIncreaseAtLevel();                                                                         // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealingProgressionIncreaseAtLevel();                                                                         // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.S32P03
@@ -878,7 +877,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.S32P03.GetActivationTimeForLevel
-	// float GetActivationTimeForLevel();                                                                                    // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationTimeForLevel();                                                                                    // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.S33P01
@@ -915,11 +914,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.S33P02.OnRep_ReassuredSurvivors
-	// void OnRep_ReassuredSurvivors();                                                                                      // [0x5c12b30] Final|Native|Private 
+	// void OnRep_ReassuredSurvivors();                                                                                      // [0x5c200b0] Final|Native|Private 
 	// Function /Script/TheK29.S33P02.Local_EffectTriggered
-	// void Local_EffectTriggered(FTransform Location);                                                                      // [0x61c32d0] Event|Protected|HasDefaults|BlueprintEvent 
+	// void Local_EffectTriggered(FTransform Location);                                                                      // [0x61d2f50] Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK29.S33P02.GetStruggleProgressionAtLevel
-	// float GetStruggleProgressionAtLevel();                                                                                // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetStruggleProgressionAtLevel();                                                                                // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK29.S33P02Interaction
@@ -950,11 +949,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK29.S33P03.GetSkillCheckTriggerPercentPerToken
-	// float GetSkillCheckTriggerPercentPerToken();                                                                          // [0x501b8a0] Final|Native|Public|BlueprintCallable 
+	// float GetSkillCheckTriggerPercentPerToken();                                                                          // [0x4ff9160] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.S33P03.GetSkillCheckCursorSpeedPerToken
-	// float GetSkillCheckCursorSpeedPerToken();                                                                             // [0x500aa10] Final|Native|Public|BlueprintCallable 
+	// float GetSkillCheckCursorSpeedPerToken();                                                                             // [0x4fe82c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK29.S33P03.GetSkillCheckBonusPercentPerTokenAtLevel
-	// float GetSkillCheckBonusPercentPerTokenAtLevel();                                                                     // [0x500a9e0] Final|Native|Public|BlueprintCallable 
+	// float GetSkillCheckBonusPercentPerTokenAtLevel();                                                                     // [0x4fe8290] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/TheK29.K29FloorDetectionResult

@@ -32,9 +32,9 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkUtilities.NetSynchedClock.Server_RequestServerTime
-	// void Server_RequestServerTime();                                                                                      // [0x8558130] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_RequestServerTime();                                                                                      // [0x8569510] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/NetworkUtilities.NetSynchedClock.Client_ReportServerTime
-	// void Client_ReportServerTime(float serverTime);                                                                       // [0x57d1210] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_ReportServerTime(float serverTime);                                                                       // [0x57d3f50] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/NetworkUtilities.NetUtils
@@ -46,7 +46,7 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkUtilities.NetUtils.IsDedicatedServerInstance
-	// bool IsDedicatedServerInstance(class UObject* WorldContextObject);                                                    // [0x85582e0] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsDedicatedServerInstance(class UObject* WorldContextObject);                                                    // [0x85696c0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/NetworkUtilities.NetworkFenceActor
@@ -59,9 +59,9 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkUtilities.NetworkFenceActor.Server_ClientPassedFence
-	// void Server_ClientPassedFence(TArray<FGuid> Fences);                                                                  // [0x8558760] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_ClientPassedFence(TArray<FGuid> Fences);                                                                  // [0x8569b40] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/NetworkUtilities.NetworkFenceActor.Client_AllPassedFence
-	// void Client_AllPassedFence(TArray<FGuid> Fences);                                                                     // [0x85586a0] Final|Net|NetReliableNative|Event|Private|NetClient|NetValidate 
+	// void Client_AllPassedFence(TArray<FGuid> Fences);                                                                     // [0x8569a80] Final|Net|NetReliableNative|Event|Private|NetClient|NetValidate 
 };
 
 /// Class /Script/NetworkUtilities.ServerCorrectionDisablerComponent
@@ -74,11 +74,11 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkUtilities.ServerCorrectionDisablerComponent.SetServerCorrectionEnabled
-	// void SetServerCorrectionEnabled(bool Enabled, FGameplayTag Channel);                                                  // [0x855bdb0] Final|Native|Public|BlueprintCallable 
+	// void SetServerCorrectionEnabled(bool Enabled, FGameplayTag Channel);                                                  // [0x856d190] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NetworkUtilities.ServerCorrectionDisablerComponent.Multicast_SetServerCorrectionEnabled
-	// void Multicast_SetServerCorrectionEnabled(bool Enabled, FGameplayTag Channel);                                        // [0x855bcb0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_SetServerCorrectionEnabled(bool Enabled, FGameplayTag Channel);                                        // [0x856d090] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/NetworkUtilities.ServerCorrectionDisablerComponent.GetServerCorrectionEnabled
-	// bool GetServerCorrectionEnabled();                                                                                    // [0x855bc80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetServerCorrectionEnabled();                                                                                    // [0x856d060] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/NetworkUtilities.ServerTimeProviderComponent
@@ -120,35 +120,35 @@ public:
 
 	/// Functions
 	// Function /Script/NetworkUtilities.TimerObject.OnRep_TimerDataUpdated
-	// void OnRep_TimerDataUpdated(FReplicationTimerData OldData);                                                           // [0x855cd00] Final|Native|Private 
+	// void OnRep_TimerDataUpdated(FReplicationTimerData OldData);                                                           // [0x856e0e0] Final|Native|Private 
 	// Function /Script/NetworkUtilities.TimerObject.IsTimerActive
-	// bool IsTimerActive();                                                                                                 // [0x855ccd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTimerActive();                                                                                                 // [0x856e0b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.IsPaused
-	// bool IsPaused();                                                                                                      // [0x855cca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPaused();                                                                                                      // [0x856e080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.IsDone
-	// bool IsDone();                                                                                                        // [0x855cc70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDone();                                                                                                        // [0x856e050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.GetRemainingTimePercent
-	// float GetRemainingTimePercent();                                                                                      // [0x855cc40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingTimePercent();                                                                                      // [0x856e020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.GetRemainingTime
-	// float GetRemainingTime();                                                                                             // [0x855cc10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingTime();                                                                                             // [0x856dff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.GetElapsedTimePercent
-	// float GetElapsedTimePercent();                                                                                        // [0x855cbe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetElapsedTimePercent();                                                                                        // [0x856dfc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.GetElapsedTime
-	// float GetElapsedTime();                                                                                               // [0x855cbb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetElapsedTime();                                                                                               // [0x856df90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.GetDuration
-	// float GetDuration();                                                                                                  // [0x855cb80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDuration();                                                                                                  // [0x856df60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/NetworkUtilities.TimerObject.CreateTimer
-	// class UTimerObject* CreateTimer(class AActor* Owner);                                                                 // [0x855caf0] Final|Native|Static|Public|BlueprintCallable 
+	// class UTimerObject* CreateTimer(class AActor* Owner);                                                                 // [0x856ded0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/NetworkUtilities.TimerObject.Authority_Unpause
-	// void Authority_Unpause();                                                                                             // [0x855cad0] Final|Native|Public|BlueprintCallable 
+	// void Authority_Unpause();                                                                                             // [0x856deb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NetworkUtilities.TimerObject.Authority_Start
-	// void Authority_Start(float Duration);                                                                                 // [0x855ca50] Final|Native|Public|BlueprintCallable 
+	// void Authority_Start(float Duration);                                                                                 // [0x856de30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NetworkUtilities.TimerObject.Authority_SetPaused
-	// void Authority_SetPaused(bool paused);                                                                                // [0x855c9c0] Final|Native|Public|BlueprintCallable 
+	// void Authority_SetPaused(bool paused);                                                                                // [0x856dda0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NetworkUtilities.TimerObject.Authority_Pause
-	// void Authority_Pause();                                                                                               // [0x855c9a0] Final|Native|Public|BlueprintCallable 
+	// void Authority_Pause();                                                                                               // [0x856dd80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/NetworkUtilities.TimerObject.Authority_Clear
-	// void Authority_Clear();                                                                                               // [0x855c980] Final|Native|Public|BlueprintCallable 
+	// void Authority_Clear();                                                                                               // [0x856dd60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/NetworkUtilities.YawAndPitchRotator_NetQuantize16

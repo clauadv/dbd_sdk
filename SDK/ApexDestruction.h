@@ -26,7 +26,7 @@ class ADestructibleActor : public AActor
 { 
 public:
 	class UDestructibleComponent*                      DestructibleComponent;                                      // 0x0230   (0x0008)  
-	SDK_UNDEFINED(16,3538) /* FMulticastInlineDelegate */ __um(OnActorFracture);                                   // 0x0238   (0x0010)  
+	SDK_UNDEFINED(16,3629) /* FMulticastInlineDelegate */ __um(OnActorFracture);                                   // 0x0238   (0x0010)  
 };
 
 /// Class /Script/ApexDestruction.DestructibleComponent
@@ -41,19 +41,19 @@ public:
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0759   (0x0003)  MISSED
 	float                                              LargeChunkThreshold;                                        // 0x075C   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x10];                                      // 0x0760   (0x0010)  MISSED
-	SDK_UNDEFINED(16,3539) /* FMulticastInlineDelegate */ __um(OnComponentFracture);                               // 0x0770   (0x0010)  
+	SDK_UNDEFINED(16,3630) /* FMulticastInlineDelegate */ __um(OnComponentFracture);                               // 0x0770   (0x0010)  
 	unsigned char                                      UnknownData03_6[0xA0];                                      // 0x0780   (0x00A0)  MISSED
 
 
 	/// Functions
 	// Function /Script/ApexDestruction.DestructibleComponent.SetDestructibleMesh
-	// void SetDestructibleMesh(class UDestructibleMesh* NewMesh);                                                           // [0x451e280] Final|Native|Public|BlueprintCallable 
+	// void SetDestructibleMesh(class UDestructibleMesh* NewMesh);                                                           // [0x44b3000] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ApexDestruction.DestructibleComponent.GetDestructibleMesh
-	// class UDestructibleMesh* GetDestructibleMesh();                                                                       // [0x451e250] Final|Native|Public|BlueprintCallable 
+	// class UDestructibleMesh* GetDestructibleMesh();                                                                       // [0x44b2fd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/ApexDestruction.DestructibleComponent.ApplyRadiusDamage
-	// void ApplyRadiusDamage(float BaseDamage, FVector& HurtOrigin, float DamageRadius, float ImpulseStrength, bool bFullDamage); // [0x451e090] Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyRadiusDamage(float BaseDamage, FVector& HurtOrigin, float DamageRadius, float ImpulseStrength, bool bFullDamage); // [0x44b2e10] Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/ApexDestruction.DestructibleComponent.ApplyDamage
-	// void ApplyDamage(float DamageAmount, FVector& HitLocation, FVector& ImpulseDir, float ImpulseStrength);               // [0x451df10] Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ApplyDamage(float DamageAmount, FVector& HitLocation, FVector& ImpulseDir, float ImpulseStrength);               // [0x44b2c90] Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/ApexDestruction.FractureMaterial
@@ -146,7 +146,7 @@ struct FDestructibleSpecialHierarchyDepths
 /// Size: 0x0001 (0x000000 - 0x000001)
 struct FDestructibleDepthParameters
 { 
-	SDK_UNDEFINED(1,3540) /* TEnumAsByte<EImpactDamageOverride> */ __um(ImpactDamageOverride);                     // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,3631) /* TEnumAsByte<EImpactDamageOverride> */ __um(ImpactDamageOverride);                     // 0x0000   (0x0001)  
 };
 
 /// Struct /Script/ApexDestruction.DestructibleParametersFlag

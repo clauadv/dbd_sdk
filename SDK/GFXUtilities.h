@@ -23,7 +23,7 @@ struct FMaterialMap
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FMaterialNamedGroup
 { 
-	SDK_UNDEFINED(16,1550) /* FString */               __um(GroupName);                                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1575) /* FString */               __um(GroupName);                                            // 0x0000   (0x0010)  
 	TArray<FMaterialMap>                               Maps;                                                       // 0x0010   (0x0010)  
 };
 
@@ -45,53 +45,53 @@ public:
 	unsigned char                                      UnknownData00_2[0x58];                                      // 0x0220   (0x0058)  MISSED
 	TArray<FMaterialNamedGroup>                        Groups;                                                     // 0x0278   (0x0010)  
 	TArray<FMaterialHelperOriginalMeshState>           TargetMeshes;                                               // 0x0288   (0x0010)  
-	SDK_UNDEFINED(16,1551) /* FString */               __um(_materialGroupName);                                   // 0x0298   (0x0010)  
+	SDK_UNDEFINED(16,1576) /* FString */               __um(_materialGroupName);                                   // 0x0298   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x02A8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/GFXUtilities.BatchMeshCommands.UpdateMaterials
-	// void UpdateMaterials();                                                                                               // [0x85ae6e0] Final|Native|Public|BlueprintCallable 
+	// void UpdateMaterials();                                                                                               // [0x85bfe20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetVectorParameter
-	// void SetVectorParameter(FName ParameterName, FVector& NewValue);                                                      // [0x85ae5f0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SetVectorParameter(FName ParameterName, FVector& NewValue);                                                      // [0x85bfd30] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetTextureParameter
-	// void SetTextureParameter(FName ParameterName, class UTexture* newTexture);                                            // [0x85ae500] Final|Native|Public|BlueprintCallable 
+	// void SetTextureParameter(FName ParameterName, class UTexture* newTexture);                                            // [0x85bfc40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetStencilIntegerScalarParameter
-	// void SetStencilIntegerScalarParameter(FName ParameterName, int32_t& NewValue);                                        // [0x85ae410] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetStencilIntegerScalarParameter(FName ParameterName, int32_t& NewValue);                                        // [0x85bfb50] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetScalarParameter
-	// void SetScalarParameter(FName ParameterName, float NewValue);                                                         // [0x85ae320] Final|Native|Public|BlueprintCallable 
+	// void SetScalarParameter(FName ParameterName, float NewValue);                                                         // [0x85bfa60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetRenderInMainPass
-	// void SetRenderInMainPass(bool inRenderInMainPass);                                                                    // [0x85ae290] Native|Public|BlueprintCallable 
+	// void SetRenderInMainPass(bool inRenderInMainPass);                                                                    // [0x85bf9d0] Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetRenderInCustomDepth
-	// void SetRenderInCustomDepth(bool renderInCustomDepth);                                                                // [0x85ae200] Final|Native|Public|BlueprintCallable 
+	// void SetRenderInCustomDepth(bool renderInCustomDepth);                                                                // [0x85bf940] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetRenderInCustomColourNoDepth
-	// void SetRenderInCustomColourNoDepth(bool renderInCustomColour);                                                       // [0x85ae170] Final|Native|Public|BlueprintCallable 
+	// void SetRenderInCustomColourNoDepth(bool renderInCustomColour);                                                       // [0x85bf8b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetReceivesDecals
-	// void SetReceivesDecals(bool receivesDecals);                                                                          // [0x85ae0e0] Final|Native|Public|BlueprintCallable 
+	// void SetReceivesDecals(bool receivesDecals);                                                                          // [0x85bf820] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetMaterial
-	// void SetMaterial(FString GroupName);                                                                                  // [0x85ae040] Final|Native|Public|BlueprintCallable 
+	// void SetMaterial(FString GroupName);                                                                                  // [0x85bf780] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetLightingChannelForAllMeshes
-	// void SetLightingChannelForAllMeshes(FLightingChannels LightingChannels);                                              // [0x85adfc0] Final|Native|Public|BlueprintCallable 
+	// void SetLightingChannelForAllMeshes(FLightingChannels LightingChannels);                                              // [0x85bf700] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetCustomDepthStencilValue
-	// void SetCustomDepthStencilValue(int32_t stencilValue);                                                                // [0x85adf30] Final|Native|Public|BlueprintCallable 
+	// void SetCustomDepthStencilValue(int32_t stencilValue);                                                                // [0x85bf670] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetColourParameter
-	// void SetColourParameter(FName ParameterName, FLinearColor NewValue);                                                  // [0x85ade40] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetColourParameter(FName ParameterName, FLinearColor NewValue);                                                  // [0x85bf580] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetCastCinematicShadows
-	// void SetCastCinematicShadows(bool castCinematicShadows);                                                              // [0x85addb0] Final|Native|Public|BlueprintCallable 
+	// void SetCastCinematicShadows(bool castCinematicShadows);                                                              // [0x85bf4f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.SetAllToSameMaterial
-	// void SetAllToSameMaterial(class UMaterialInterface* MaterialInterface);                                               // [0x85add20] Final|Native|Public|BlueprintCallable 
+	// void SetAllToSameMaterial(class UMaterialInterface* MaterialInterface);                                               // [0x85bf460] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.ResetMaterials
-	// void ResetMaterials();                                                                                                // [0x85add00] Final|Native|Public|BlueprintCallable 
+	// void ResetMaterials();                                                                                                // [0x85bf440] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.CopyFirstScalarParameter
-	// bool CopyFirstScalarParameter(FName ParameterName, float& OutValue);                                                  // [0x85adc00] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// bool CopyFirstScalarParameter(FName ParameterName, float& OutValue);                                                  // [0x85bf340] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.BatchSetVisibility
-	// void BatchSetVisibility(bool bNewVisibility, bool bPropagateToChildren);                                              // [0x85adb30] Final|Native|Public|BlueprintCallable 
+	// void BatchSetVisibility(bool bNewVisibility, bool bPropagateToChildren);                                              // [0x85bf270] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.BatchSetSkipComponentAndChildrenTransformUpdate
-	// void BatchSetSkipComponentAndChildrenTransformUpdate(bool Skip);                                                      // [0x85adaa0] Final|Native|Public|BlueprintCallable 
+	// void BatchSetSkipComponentAndChildrenTransformUpdate(bool Skip);                                                      // [0x85bf1e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.BatchSetComponentTickEnabled
-	// void BatchSetComponentTickEnabled(bool Enabled);                                                                      // [0x85ada10] Final|Native|Public|BlueprintCallable 
+	// void BatchSetComponentTickEnabled(bool Enabled);                                                                      // [0x85bf150] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.BatchMeshCommands.AddGroup
-	// void AddGroup(FMaterialNamedGroup Group);                                                                             // [0x85ad8d0] Final|Native|Public|BlueprintCallable 
+	// void AddGroup(FMaterialNamedGroup Group);                                                                             // [0x85bf010] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.AlternatingColor
@@ -120,14 +120,14 @@ class UClippableProviderComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x00B8   (0x0018)  MISSED
-	SDK_UNDEFINED(80,1552) /* TSet<UPrimitiveComponent*> */ __um(_ignoredPrimitives);                              // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,1577) /* TSet<UPrimitiveComponent*> */ __um(_ignoredPrimitives);                              // 0x00D0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/GFXUtilities.ClippableProviderComponent.SetIgnoredPrimitives
-	// void SetIgnoredPrimitives(TArray<UPrimitiveComponent*> ignoredPrimitives);                                            // [0x85ae950] Final|Native|Public|BlueprintCallable 
+	// void SetIgnoredPrimitives(TArray<UPrimitiveComponent*> ignoredPrimitives);                                            // [0x85c0090] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.ClippableProviderComponent.AddIgnoredPrimitives
-	// void AddIgnoredPrimitives(TArray<UPrimitiveComponent*>& ignoredPrimitives);                                           // [0x85ae8a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AddIgnoredPrimitives(TArray<UPrimitiveComponent*>& ignoredPrimitives);                                           // [0x85bffe0] Final|Native|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.ClonedMeshComponent
@@ -135,8 +135,8 @@ public:
 class UClonedMeshComponent : public UBatchMeshCommands
 { 
 public:
-	SDK_UNDEFINED(80,1553) /* TMap<USceneComponent*, UMeshComponent*> */ __um(_originalToClone);                   // 0x02A8   (0x0050)  
-	SDK_UNDEFINED(80,1554) /* TMap<UMeshComponent*, USceneComponent*> */ __um(_cloneToOriginal);                   // 0x02F8   (0x0050)  
+	SDK_UNDEFINED(80,1578) /* TMap<USceneComponent*, UMeshComponent*> */ __um(_originalToClone);                   // 0x02A8   (0x0050)  
+	SDK_UNDEFINED(80,1579) /* TMap<UMeshComponent*, USceneComponent*> */ __um(_cloneToOriginal);                   // 0x02F8   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0348   (0x0008)  MISSED
 };
 
@@ -200,11 +200,11 @@ public:
 
 	/// Functions
 	// Function /Script/GFXUtilities.DBDReflectionCaptureSpawnerComponent.SetIBLMultiplicator
-	// void SetIBLMultiplicator(float IBLMultiplicator);                                                                     // [0x85af920] Final|Native|Public|BlueprintCallable 
+	// void SetIBLMultiplicator(float IBLMultiplicator);                                                                     // [0x85c1060] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.DBDReflectionCaptureSpawnerComponent.SetContributionFactor
-	// void SetContributionFactor(float ContributionFactor);                                                                 // [0x85af8a0] Final|Native|Public|BlueprintCallable 
+	// void SetContributionFactor(float ContributionFactor);                                                                 // [0x85c0fe0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.DBDReflectionCaptureSpawnerComponent.SetBrightness
-	// void SetBrightness(float Brightness);                                                                                 // [0x85af820] Final|Native|Public|BlueprintCallable 
+	// void SetBrightness(float Brightness);                                                                                 // [0x85c0f60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.DBDBoxReflectionCaptureSpawnerComponent
@@ -261,7 +261,7 @@ public:
 
 	/// Functions
 	// Function /Script/GFXUtilities.GFXUtilities.ActivateVFX
-	// void ActivateVFX(class USkeletalMeshComponent* SkeletalMeshComponent, bool Active);                                   // [0x85afc20] Final|Native|Static|Public|BlueprintCallable 
+	// void ActivateVFX(class USkeletalMeshComponent* SkeletalMeshComponent, bool Active);                                   // [0x85c1360] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.InFrustumComponent
@@ -307,31 +307,31 @@ public:
 	bool                                               startTicking;                                               // 0x00ED   (0x0001)  
 	ELightUnits                                        inputLightUnit;                                             // 0x00EE   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x1];                                       // 0x00EF   (0x0001)  MISSED
-	SDK_UNDEFINED(16,1555) /* FMulticastInlineDelegate */ __um(OnTimelineFinished);                                // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,1580) /* FMulticastInlineDelegate */ __um(OnTimelineFinished);                                // 0x00F0   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0100   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.SetRandomizeLength
-	// void SetRandomizeLength(bool isRandom);                                                                               // [0x85b08c0] Final|Native|Public|BlueprintCallable 
+	// void SetRandomizeLength(bool isRandom);                                                                               // [0x85c2000] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.SetMinLength
-	// void SetMinLength(float newMinValue);                                                                                 // [0x85b0840] Final|Native|Public|BlueprintCallable 
+	// void SetMinLength(float newMinValue);                                                                                 // [0x85c1f80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.SetMaxLength
-	// void SetMaxLength(float newMaxValue);                                                                                 // [0x85b07c0] Final|Native|Public|BlueprintCallable 
+	// void SetMaxLength(float newMaxValue);                                                                                 // [0x85c1f00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.SetLightToMaxValue
-	// void SetLightToMaxValue();                                                                                            // [0x85b07a0] Final|Native|Public|BlueprintCallable 
+	// void SetLightToMaxValue();                                                                                            // [0x85c1ee0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.SetLightCurve
-	// void SetLightCurve(class UCurveFloat* lightcurve);                                                                    // [0x85b0710] Final|Native|Public|BlueprintCallable 
+	// void SetLightCurve(class UCurveFloat* lightcurve);                                                                    // [0x85c1e50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.Reset
-	// void Reset();                                                                                                         // [0x85b06f0] Final|Native|Public|BlueprintCallable 
+	// void Reset();                                                                                                         // [0x85c1e30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.RegisterForTick
-	// void RegisterForTick();                                                                                               // [0x85b06d0] Final|Native|Public|BlueprintCallable 
+	// void RegisterForTick();                                                                                               // [0x85c1e10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.DeactivateTick
-	// void DeactivateTick();                                                                                                // [0x85b06b0] Final|Native|Public|BlueprintCallable 
+	// void DeactivateTick();                                                                                                // [0x85c1df0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.AddMaterialHelper
-	// void AddMaterialHelper(class UMaterialHelper* matHelper, FName propName, float Multiplier);                           // [0x85b0580] Final|Native|Public|BlueprintCallable 
+	// void AddMaterialHelper(class UMaterialHelper* matHelper, FName propName, float Multiplier);                           // [0x85c1cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.LightIntensityTimelineComponent.AddLight
-	// void AddLight(class ULightComponent* Light, float Multiplier);                                                        // [0x85b04b0] Final|Native|Public|BlueprintCallable 
+	// void AddLight(class ULightComponent* Light, float Multiplier);                                                        // [0x85c1bf0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.MaterialExpressionBHVRCustomColorOutput
@@ -359,9 +359,9 @@ public:
 
 	/// Functions
 	// Function /Script/GFXUtilities.MaterialHelper.RefreshMeshes
-	// void RefreshMeshes();                                                                                                 // [0x85b0dd0] Final|Native|Public|BlueprintCallable 
+	// void RefreshMeshes();                                                                                                 // [0x85c2510] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GFXUtilities.MaterialHelper.RefreshMesh
-	// void RefreshMesh(class UMeshComponent* mc);                                                                           // [0x85b0d40] Final|Native|Public|BlueprintCallable 
+	// void RefreshMesh(class UMeshComponent* mc);                                                                           // [0x85c2480] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.MaterialHelperUnaffectedComponentInterface
@@ -408,7 +408,7 @@ public:
 
 	/// Functions
 	// Function /Script/GFXUtilities.OuterlineComponent.SetIntensity
-	// void SetIntensity(float Intensity);                                                                                   // [0x85b1720] Final|Native|Public|BlueprintCallable 
+	// void SetIntensity(float Intensity);                                                                                   // [0x85c2e60] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.StencilOutlineRenderStrategy
@@ -423,7 +423,7 @@ public:
 
 	/// Functions
 	// Function /Script/GFXUtilities.StencilOutlineRenderStrategy.EnableCopyStencilToCustomStencil
-	// void EnableCopyStencilToCustomStencil(bool Enabled);                                                                  // [0x85b1a20] Final|Native|Static|Public|BlueprintCallable 
+	// void EnableCopyStencilToCustomStencil(bool Enabled);                                                                  // [0x85c3160] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GFXUtilities.TranslucentOutlineRenderStrategy

@@ -107,9 +107,9 @@ public:
 class UFatherTerminalHackingInteraction : public UInteractionDefinition
 { 
 public:
-	SDK_UNDEFINED(16,5145) /* FMulticastInlineDelegate */ __um(Cosmetic_OnCooldownTimerStartOrDoneEvent);          // 0x0648   (0x0010)  
-	SDK_UNDEFINED(16,5146) /* FMulticastInlineDelegate */ __um(Cosmetic_OnInteractionStarted);                     // 0x0658   (0x0010)  
-	SDK_UNDEFINED(16,5147) /* FMulticastInlineDelegate */ __um(Cosmetic_OnSuccessfullyEndMiniGameAnimationStarted); // 0x0668   (0x0010)  
+	SDK_UNDEFINED(16,5535) /* FMulticastInlineDelegate */ __um(Cosmetic_OnCooldownTimerStartOrDoneEvent);          // 0x0648   (0x0010)  
+	SDK_UNDEFINED(16,5536) /* FMulticastInlineDelegate */ __um(Cosmetic_OnInteractionStarted);                     // 0x0658   (0x0010)  
+	SDK_UNDEFINED(16,5537) /* FMulticastInlineDelegate */ __um(Cosmetic_OnSuccessfullyEndMiniGameAnimationStarted); // 0x0668   (0x0010)  
 	FDirectionalMiniGameDefinition                     _miniGameDefinition;                                        // 0x0678   (0x0020)  
 	float                                              _cooldownDurationSeconds;                                   // 0x0698   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x14];                                      // 0x069C   (0x0014)  MISSED
@@ -123,17 +123,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.FatherTerminalHackingInteraction.OnWormholeTerminalSuccessfullyEndMiniGameAnimationStarted__DelegateSignature
-	// void OnWormholeTerminalSuccessfullyEndMiniGameAnimationStarted__DelegateSignature();                                  // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnWormholeTerminalSuccessfullyEndMiniGameAnimationStarted__DelegateSignature();                                  // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK33.FatherTerminalHackingInteraction.OnWormholeTerminalHackingInteractionStarted__DelegateSignature
-	// void OnWormholeTerminalHackingInteractionStarted__DelegateSignature();                                                // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnWormholeTerminalHackingInteractionStarted__DelegateSignature();                                                // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK33.FatherTerminalHackingInteraction.OnWormholeTerminalHackingCooldownTimerStartOrDone__DelegateSignature
-	// void OnWormholeTerminalHackingCooldownTimerStartOrDone__DelegateSignature(bool IsRunning);                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnWormholeTerminalHackingCooldownTimerStartOrDone__DelegateSignature(bool IsRunning);                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK33.FatherTerminalHackingInteraction.OnRep_IsCooldownTimerRunning
-	// void OnRep_IsCooldownTimerRunning();                                                                                  // [0x5d414e0] Final|Native|Private 
+	// void OnRep_IsCooldownTimerRunning();                                                                                  // [0x5d4e430] Final|Native|Private 
 	// Function /Script/TheK33.FatherTerminalHackingInteraction.Authority_OnMinigameEnd
-	// void Authority_OnMinigameEnd(class ACamperPlayer* Survivor, EDirectionalMinigameResult Result);                       // [0x5d41070] Final|Native|Private 
+	// void Authority_OnMinigameEnd(class ACamperPlayer* Survivor, EDirectionalMinigameResult Result);                       // [0x5d4dfc0] Final|Native|Private 
 	// Function /Script/TheK33.FatherTerminalHackingInteraction.Authority_OnCooldownTimerDone
-	// void Authority_OnCooldownTimerDone();                                                                                 // [0x5d41050] Final|Native|Private 
+	// void Authority_OnCooldownTimerDone();                                                                                 // [0x5d4dfa0] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.IsInRangeOfK33ControlStation
@@ -172,18 +172,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33CheatComponent.DBD_K33ForceSpecialMode
-	// void DBD_K33ForceSpecialMode(char force);                                                                             // [0x5d41140] Final|Exec|Native|Public 
+	// void DBD_K33ForceSpecialMode(char force);                                                                             // [0x5d4e090] Final|Exec|Native|Public 
 	// Function /Script/TheK33.K33CheatComponent.DBD_K33DrawTunnelBlockConnections
-	// void DBD_K33DrawTunnelBlockConnections(float secondsToDisplay);                                                       // [0x49bd730] Final|Exec|Native|Public 
+	// void DBD_K33DrawTunnelBlockConnections(float secondsToDisplay);                                                       // [0x496cad0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheK33.K33CollectTurretFromControlStationInteraction
-/// Size: 0x0050 (0x0007C0 - 0x000810)
+/// Size: 0x0050 (0x0007D0 - 0x000820)
 class UK33CollectTurretFromControlStationInteraction : public UBasicChargeableInteraction
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x30];                                      // 0x07C0   (0x0030)  MISSED
-	FAnimationMontageDescriptor                        _cancelMontage;                                             // 0x07F0   (0x0020)  
+	unsigned char                                      UnknownData00_2[0x28];                                      // 0x07D0   (0x0028)  MISSED
+	FAnimationMontageDescriptor                        _cancelMontage;                                             // 0x07F8   (0x0020)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0818   (0x0008)  MISSED
 };
 
 /// Class /Script/TheK33.K33ControlStation
@@ -200,13 +201,13 @@ public:
 	class UBoxComponent*                               _interactionCollisionZone;                                  // 0x0368   (0x0008)  
 	class UInteractor*                                 _interactor;                                                // 0x0370   (0x0008)  
 	class AK33TunnelBlock*                             _linkedTunnelBlock;                                         // 0x0378   (0x0008)  
-	SDK_UNDEFINED(48,5148) /* TWeakObjectPtr<UClass*> */ __um(_exitTunnelInteractableClass);                       // 0x0380   (0x0030)  
+	SDK_UNDEFINED(48,5538) /* TWeakObjectPtr<UClass*> */ __um(_exitTunnelInteractableClass);                       // 0x0380   (0x0030)  
 	class AK33ExitTunnelInteractable*                  _exitTunnelInteractable;                                    // 0x03B0   (0x0008)  
 	class UMontagePlayer*                              _montagePlayer_turretSpawnerSection;                        // 0x03B8   (0x0008)  
 	class UMontagePlayer*                              _montagePlayer_tunnelEntranceSection;                       // 0x03C0   (0x0008)  
 	class UAnimationMontageSlave*                      _animationSlave_turretSpawnerSection;                       // 0x03C8   (0x0008)  
 	class UAnimationMontageSlave*                      _animationSlave_tunnelEntranceSection;                      // 0x03D0   (0x0008)  
-	SDK_UNDEFINED(8,5149) /* TWeakObjectPtr<AK33Turret*> */ __um(_linkedTurret);                                   // 0x03D8   (0x0008)  
+	SDK_UNDEFINED(8,5539) /* TWeakObjectPtr<AK33Turret*> */ __um(_linkedTurret);                                   // 0x03D8   (0x0008)  
 	EControlStationState                               _currentState;                                              // 0x03E0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x03E1   (0x0003)  MISSED
 	FName                                              _turretSocketName;                                          // 0x03E4   (0x000C)  
@@ -225,27 +226,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33ControlStation.OnRep_IsMalfunctioning
-	// void OnRep_IsMalfunctioning();                                                                                        // [0x5d41500] Final|Native|Private 
+	// void OnRep_IsMalfunctioning();                                                                                        // [0x5d4e450] Final|Native|Private 
 	// Function /Script/TheK33.K33ControlStation.OnRep_ExitTunnelInteractable
-	// void OnRep_ExitTunnelInteractable();                                                                                  // [0x5d414c0] Final|Native|Private 
+	// void OnRep_ExitTunnelInteractable();                                                                                  // [0x5d4e410] Final|Native|Private 
 	// Function /Script/TheK33.K33ControlStation.OnRep_CurrentState
-	// void OnRep_CurrentState(EControlStationState oldState);                                                               // [0x5d41440] Final|Native|Private 
+	// void OnRep_CurrentState(EControlStationState oldState);                                                               // [0x5d4e390] Final|Native|Private 
 	// Function /Script/TheK33.K33ControlStation.GetKillerExitTunnelEndLocation
-	// FVector GetKillerExitTunnelEndLocation();                                                                             // [0x586ebd0] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetKillerExitTunnelEndLocation();                                                                             // [0x5872290] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_UpdateControlStationCooldown
-	// void Cosmetic_UpdateControlStationCooldown(float cooldownElapsedTimePercent);                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateControlStationCooldown(float cooldownElapsedTimePercent);                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_StopControlStationMalfunctionReaction
-	// void Cosmetic_StopControlStationMalfunctionReaction();                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_StopControlStationMalfunctionReaction();                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_StartControlStationMalfunctionReaction
-	// void Cosmetic_StartControlStationMalfunctionReaction();                                                               // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_StartControlStationMalfunctionReaction();                                                               // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_SetTunnelCapVisibility
-	// void Cosmetic_SetTunnelCapVisibility(bool IsVisible);                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetTunnelCapVisibility(bool IsVisible);                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_OnTurretInPoolCountChanged
-	// void Cosmetic_OnTurretInPoolCountChanged(int32_t turretCount);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void Cosmetic_OnTurretInPoolCountChanged(int32_t turretCount);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_OnControlStationExitingState
-	// void Cosmetic_OnControlStationExitingState(EControlStationState exitingState);                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnControlStationExitingState(EControlStationState exitingState);                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33ControlStation.Cosmetic_OnControlStationEnteringState
-	// void Cosmetic_OnControlStationEnteringState(EControlStationState enteringState);                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnControlStationEnteringState(EControlStationState enteringState);                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.K33ControlStationAttackableComponent
@@ -296,11 +297,11 @@ public:
 };
 
 /// Class /Script/TheK33.K33DeployTurretInteraction
-/// Size: 0x00B0 (0x0007C0 - 0x000870)
+/// Size: 0x00A0 (0x0007D0 - 0x000870)
 class UK33DeployTurretInteraction : public UBasicChargeableInteraction
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x78];                                      // 0x07C0   (0x0078)  MISSED
+	unsigned char                                      UnknownData00_2[0x68];                                      // 0x07D0   (0x0068)  MISSED
 	FAnimationMontageDescriptor                        _cancelMontage;                                             // 0x0838   (0x0020)  
 	float                                              _cancelDeployDuration;                                      // 0x0858   (0x0004)  
 	FVector                                            _dropOffLocation;                                           // 0x085C   (0x000C)  
@@ -308,24 +309,24 @@ public:
 };
 
 /// Class /Script/TheK33.K33EnterTunnelInteraction
-/// Size: 0x0100 (0x000790 - 0x000890)
+/// Size: 0x0110 (0x000790 - 0x0008A0)
 class UK33EnterTunnelInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	FAnimationMontageDescriptor                        _confirmEnterControlStationMontage;                         // 0x0788   (0x0020)  
-	FAnimationMontageDescriptor                        _cancelMontage;                                             // 0x07A8   (0x0020)  
-	FAnimationMontageDescriptor                        _afterTeleportationMontage;                                 // 0x07C8   (0x0020)  
-	FVector                                            _cameraTransitionOffset;                                    // 0x07E8   (0x000C)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x07F4   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _chargeInteractionTime;                                     // 0x07F8   (0x0028)  
-	float                                              _hideWorldElementsMontagePercentageTime;                    // 0x0820   (0x0004)  
-	float                                              _fadeOutDuration;                                           // 0x0824   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x68];                                      // 0x0828   (0x0068)  MISSED
+	FAnimationMontageDescriptor                        _confirmEnterControlStationMontage;                         // 0x0790   (0x0020)  
+	FAnimationMontageDescriptor                        _cancelMontage;                                             // 0x07B0   (0x0020)  
+	FAnimationMontageDescriptor                        _afterTeleportationMontage;                                 // 0x07D0   (0x0020)  
+	FVector                                            _cameraTransitionOffset;                                    // 0x07F0   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x07FC   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _chargeInteractionTime;                                     // 0x0800   (0x0028)  
+	float                                              _hideWorldElementsMontagePercentageTime;                    // 0x0828   (0x0004)  
+	float                                              _fadeOutDuration;                                           // 0x082C   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x70];                                      // 0x0830   (0x0070)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK33.K33EnterTunnelInteraction.Multicast_TeleportPlayerToTunnel
-	// void Multicast_TeleportPlayerToTunnel(class ADBDPlayer* Player, FVector Location, FRotator Rotation);                 // [0x5d41330] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_TeleportPlayerToTunnel(class ADBDPlayer* Player, FVector Location, FRotator Rotation);                 // [0x5d4e280] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 };
 
 /// Class /Script/TheK33.K33ExitTunnelInteractable
@@ -343,9 +344,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33ExitTunnelInteractable.OnRep_TargetLocation
-	// void OnRep_TargetLocation();                                                                                          // [0x5d415d0] Final|Native|Private 
+	// void OnRep_TargetLocation();                                                                                          // [0x5d4e520] Final|Native|Private 
 	// Function /Script/TheK33.K33ExitTunnelInteractable.OnRep_LinkedControlStation
-	// void OnRep_LinkedControlStation();                                                                                    // [0x5d41520] Final|Native|Private 
+	// void OnRep_LinkedControlStation();                                                                                    // [0x5d4e470] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33ExitTunnelInteraction
@@ -372,7 +373,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33ExitTunnelInteraction.Multicast_OnSnapTransitionCompleted
-	// void Multicast_OnSnapTransitionCompleted(class ADBDPlayer* Player, FVector Location, FRotator Rotation);              // [0x5d41220] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_OnSnapTransitionCompleted(class ADBDPlayer* Player, FVector Location, FRotator Rotation);              // [0x5d4e170] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 };
 
 /// Class /Script/TheK33.K33FallOutOfWorldPositionFinderComponent
@@ -392,15 +393,15 @@ public:
 	EK33Foot                                           _currentFootType;                                           // 0x0238   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0239   (0x0003)  MISSED
 	float                                              _footstepEffectDuration;                                    // 0x023C   (0x0004)  
-	SDK_UNDEFINED(16,5150) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,5540) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0240   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x50];                                      // 0x0250   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK33.K33FeetVFX.Cosmetic_TriggerFootstepVisibility
-	// void Cosmetic_TriggerFootstepVisibility(EK33Foot footType, bool IsVisible);                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerFootstepVisibility(EK33Foot footType, bool IsVisible);                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33FeetVFX.Cosmetic_TriggerFootstepTimeline
-	// void Cosmetic_TriggerFootstepTimeline(EK33Foot footType, float effectLifetime, FVector& KillerLocation);              // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_TriggerFootstepTimeline(EK33Foot footType, float effectLifetime, FVector& KillerLocation);              // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.K33FXInterface
@@ -412,33 +413,33 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_UpdateTailAttackVFX
-	// void Cosmetic_UpdateTailAttackVFX(FVector& Location, FRotator& Rotation);                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_UpdateTailAttackVFX(FVector& Location, FRotator& Rotation);                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_TriggerTunnelTransitionFadeOut
-	// void Cosmetic_TriggerTunnelTransitionFadeOut(float timeBeforeFadeOut);                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerTunnelTransitionFadeOut(float timeBeforeFadeOut);                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_TriggerTunnelTransitionFadeIn
-	// void Cosmetic_TriggerTunnelTransitionFadeIn(float timeBeforeFadeIn);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerTunnelTransitionFadeIn(float timeBeforeFadeIn);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_TailAttackObstructedVFX
-	// void Cosmetic_TailAttackObstructedVFX(FVector& obstructionLocation);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_TailAttackObstructedVFX(FVector& obstructionLocation);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_StopTailAttackVFX
-	// void Cosmetic_StopTailAttackVFX();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_StopTailAttackVFX();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_SetVisibility
-	// void Cosmetic_SetVisibility(bool IsVisible);                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetVisibility(bool IsVisible);                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_SetKillerInvisibleUnderCurrentFloor
-	// void Cosmetic_SetKillerInvisibleUnderCurrentFloor(bool shouldKillerBeInvisibleUnderFloor);                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetKillerInvisibleUnderCurrentFloor(bool shouldKillerBeInvisibleUnderFloor);                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_SetKillerFPVAudioAmbiance
-	// void Cosmetic_SetKillerFPVAudioAmbiance(bool isTunnelAmbianceActive);                                                 // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Cosmetic_SetKillerFPVAudioAmbiance(bool isTunnelAmbianceActive);                                                 // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_OnTurretMaxDamageReceived
-	// void Cosmetic_OnTurretMaxDamageReceived();                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTurretMaxDamageReceived();                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_OnTurretHitByTailAttack
-	// void Cosmetic_OnTurretHitByTailAttack(class AK33Turret* turret);                                                      // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTurretHitByTailAttack(class AK33Turret* turret);                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_OnTurretDamageChanged
-	// void Cosmetic_OnTurretDamageChanged(float damagePercent);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTurretDamageChanged(float damagePercent);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_OnSurvivorHitByTailAttack
-	// void Cosmetic_OnSurvivorHitByTailAttack(class ACamperPlayer* Player);                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnSurvivorHitByTailAttack(class ACamperPlayer* Player);                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_OnSpecialModeChanged
-	// void Cosmetic_OnSpecialModeChanged(bool isInSpecialMode);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnSpecialModeChanged(bool isInSpecialMode);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33FXInterface.Cosmetic_OnKillerShotByTurret
-	// void Cosmetic_OnKillerShotByTurret();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerShotByTurret();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.K33Husk
@@ -466,9 +467,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33HuskAnimInstance.GetCopiedSkeletalMesh
-	// class USkeletalMeshComponent* GetCopiedSkeletalMesh();                                                                // [0x5d411f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetCopiedSkeletalMesh();                                                                // [0x5d4e140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.K33HuskAnimInstance.GetCopiedCustomizedSkeletalMesh
-	// class UCustomizedSkeletalMesh* GetCopiedCustomizedSkeletalMesh();                                                     // [0x5d411c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCustomizedSkeletalMesh* GetCopiedCustomizedSkeletalMesh();                                                     // [0x5d4e110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.K33KillerControlStationSelectorComponent
@@ -482,8 +483,8 @@ public:
 	float                                              _minDotProductForEligibleControlStationTarget;              // 0x00D8   (0x0004)  
 	float                                              _minDistanceForEligibleControlStationTargetOutsideTunnel;   // 0x00DC   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x00E0   (0x0008)  MISSED
-	SDK_UNDEFINED(48,5151) /* TWeakObjectPtr<UClass*> */ __um(_actorIndicatorClass);                               // 0x00E8   (0x0030)  
-	SDK_UNDEFINED(48,5152) /* TWeakObjectPtr<UClass*> */ __um(_tunnelNavigationComponentClass);                    // 0x0118   (0x0030)  
+	SDK_UNDEFINED(48,5541) /* TWeakObjectPtr<UClass*> */ __um(_actorIndicatorClass);                               // 0x00E8   (0x0030)  
+	SDK_UNDEFINED(48,5542) /* TWeakObjectPtr<UClass*> */ __um(_tunnelNavigationComponentClass);                    // 0x0118   (0x0030)  
 	class ADBDActorIndicator*                          _indicatorInstance;                                         // 0x0148   (0x0008)  
 	class UK33TunnelNavigationComponent*               _tunnelNavigationComponentInstance;                         // 0x0150   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x18];                                      // 0x0158   (0x0018)  MISSED
@@ -494,9 +495,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33KillerControlStationSelectorComponent.Server_SetSelectedControlStation
-	// void Server_SetSelectedControlStation(class AK33ControlStation* ControlStation);                                      // [0x5d415f0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_SetSelectedControlStation(class AK33ControlStation* ControlStation);                                      // [0x5d4e540] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheK33.K33KillerControlStationSelectorComponent.OnRep_Replicated_SelectedControlStation
-	// void OnRep_Replicated_SelectedControlStation(class AK33ControlStation* previousSelectedControlStation);               // [0x5d41540] Final|Native|Private 
+	// void OnRep_Replicated_SelectedControlStation(class AK33ControlStation* previousSelectedControlStation);               // [0x5d4e490] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33KillerStunnedByTurretStatusEffect
@@ -520,7 +521,7 @@ public:
 	class UK33TunnelMovementInputAccelerationConstraintStrategyComponent* _movementInputConstraintStrategy;        // 0x0100   (0x0008)  
 	TArray<class UClass*>                              _inTunnelUntouchedClasses;                                  // 0x0108   (0x0010)  
 	unsigned char                                      UnknownData02_5[0x50];                                      // 0x0118   (0x0050)  MISSED
-	SDK_UNDEFINED(48,5153) /* TWeakObjectPtr<UClass*> */ __um(_controlStationTunnelConnectionClass);               // 0x0168   (0x0030)  
+	SDK_UNDEFINED(48,5543) /* TWeakObjectPtr<UClass*> */ __um(_controlStationTunnelConnectionClass);               // 0x0168   (0x0030)  
 	class AK33ControlStationTunnelConnection*          _controlStationTunnelConnectionInstance;                    // 0x0198   (0x0008)  
 	FName                                              _killerCameraSocketName;                                    // 0x01A0   (0x000C)  
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x01AC   (0x0004)  MISSED
@@ -537,15 +538,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33KillerTunnelStateComponent.OnRep_WorldElementsVisibility
-	// void OnRep_WorldElementsVisibility();                                                                                 // [0x5d45980] Final|Native|Private 
+	// void OnRep_WorldElementsVisibility();                                                                                 // [0x5d52730] Final|Native|Private 
 	// Function /Script/TheK33.K33KillerTunnelStateComponent.OnRep_TunnelElementsVisibility
-	// void OnRep_TunnelElementsVisibility();                                                                                // [0x5d45940] Final|Native|Private 
+	// void OnRep_TunnelElementsVisibility();                                                                                // [0x5d526f0] Final|Native|Private 
 	// Function /Script/TheK33.K33KillerTunnelStateComponent.OnRep_KillerCollisionBlockType
-	// void OnRep_KillerCollisionBlockType();                                                                                // [0x5d45900] Final|Native|Private 
+	// void OnRep_KillerCollisionBlockType();                                                                                // [0x5d526b0] Final|Native|Private 
 	// Function /Script/TheK33.K33KillerTunnelStateComponent.OnRep_IsInTunnel
-	// void OnRep_IsInTunnel();                                                                                              // [0x5d458e0] Final|Native|Private 
+	// void OnRep_IsInTunnel();                                                                                              // [0x5d52690] Final|Native|Private 
 	// Function /Script/TheK33.K33KillerTunnelStateComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5d45800] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5d525b0] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33P01
@@ -564,11 +565,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33P01.Multicast_RevealAndMakeSurvivorScream
-	// void Multicast_RevealAndMakeSurvivorScream(class ACamperPlayer* Survivor);                                            // [0x501b930] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_RevealAndMakeSurvivorScream(class ACamperPlayer* Survivor);                                            // [0x4ff91d0] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// Function /Script/TheK33.K33P01.GetPerkCooldownTimeAtLevel
+	// float GetPerkCooldownTimeAtLevel();                                                                                   // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.K33P01.GetPerkActivationTime
+	// float GetPerkActivationTime();                                                                                        // [0x4b75200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.K33P01.GetBlindedEffectDurationAtLevel
+	// float GetBlindedEffectDurationAtLevel();                                                                              // [0x4fe82f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.K33P01.BP_RevealAndMakeSurvivorScream
-	// void BP_RevealAndMakeSurvivorScream(class ACamperPlayer* survivorPlayer);                                             // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_RevealAndMakeSurvivorScream(class ACamperPlayer* survivorPlayer);                                             // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33P01.Authority_OnHealthStateChanged
-	// void Authority_OnHealthStateChanged(FGameplayTag GameplayTag, FGameEventData& GameEventData);                         // [0x5d45550] Final|Native|Private|HasOutParms 
+	// void Authority_OnHealthStateChanged(FGameplayTag GameplayTag, FGameEventData& GameEventData);                         // [0x5d52380] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK33.K33P02
@@ -580,6 +587,13 @@ public:
 	float                                              _hasteDuration;                                             // 0x03D0   (0x000C)  
 	float                                              _hasteAmount;                                               // 0x03DC   (0x0004)  
 	class UStatusEffect*                               _hasteEffect;                                               // 0x03E0   (0x0008)  
+
+
+	/// Functions
+	// Function /Script/TheK33.K33P02.GetHasteDurationAtLevel
+	// float GetHasteDurationAtLevel();                                                                                      // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.K33P02.GetHasteAmount
+	// float GetHasteAmount();                                                                                               // [0x5a626b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.K33P03
@@ -591,6 +605,13 @@ public:
 	float                                              _obliviousDuration;                                         // 0x03D4   (0x000C)  
 	class UClass*                                      _revealedStatusEffect;                                      // 0x03E0   (0x0008)  
 	class UClass*                                      _obliviousStatusEffect;                                     // 0x03E8   (0x0008)  
+
+
+	/// Functions
+	// Function /Script/TheK33.K33P03.GetPerkAuraRevealDurationAtLevel
+	// float GetPerkAuraRevealDurationAtLevel();                                                                             // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.K33P03.GetObliviousDurationAtLevel
+	// float GetObliviousDurationAtLevel();                                                                                  // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.K33Power
@@ -628,9 +649,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33Power.OnRep_TurretPlacers
-	// void OnRep_TurretPlacers();                                                                                           // [0x5d45960] Final|Native|Private 
+	// void OnRep_TurretPlacers();                                                                                           // [0x5d52710] Final|Native|Private 
 	// Function /Script/TheK33.K33Power.GetTailAttackInteraction
-	// class UK33TailAttackInteraction* GetTailAttackInteraction();                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
+	// class UK33TailAttackInteraction* GetTailAttackInteraction();                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure 
 };
 
 /// Class /Script/TheK33.K33Power_Addon
@@ -674,7 +695,7 @@ class UK33PushbackAnimInstance : public UAnimInstance
 public:
 	bool                                               IsActive;                                                   // 0x02C0   (0x0001)  
 	bool                                               IsFPV;                                                      // 0x02C1   (0x0001)  
-	SDK_UNDEFINED(1,5154) /* TEnumAsByte<ETraceTypeQuery> */ __um(_traceTypeQuery);                                // 0x02C2   (0x0001)  
+	SDK_UNDEFINED(1,5544) /* TEnumAsByte<ETraceTypeQuery> */ __um(_traceTypeQuery);                                // 0x02C2   (0x0001)  
 	bool                                               _traceComplex;                                              // 0x02C3   (0x0001)  
 	bool                                               _ignoreTouches;                                             // 0x02C4   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x02C5   (0x0003)  MISSED
@@ -748,13 +769,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33SpecialModeComponent.OnRep_IsInSpecialMode
-	// void OnRep_IsInSpecialMode();                                                                                         // [0x5d458c0] Final|Native|Private 
+	// void OnRep_IsInSpecialMode();                                                                                         // [0x5d52670] Final|Native|Private 
 	// Function /Script/TheK33.K33SpecialModeComponent.OnRep_ChargeState
-	// void OnRep_ChargeState();                                                                                             // [0x5d458a0] Final|Native|Private 
+	// void OnRep_ChargeState();                                                                                             // [0x5d52650] Final|Native|Private 
 	// Function /Script/TheK33.K33SpecialModeComponent.OnPowerChargeChanged
-	// void OnPowerChargeChanged(float currentChargePercent);                                                                // [0x5d45820] Final|Native|Private 
+	// void OnPowerChargeChanged(float currentChargePercent);                                                                // [0x5d525d0] Final|Native|Private 
 	// Function /Script/TheK33.K33SpecialModeComponent.Authority_OnIntroCompleted
-	// void Authority_OnIntroCompleted();                                                                                    // [0x5d45660] Final|Native|Private 
+	// void Authority_OnIntroCompleted();                                                                                    // [0x5d52490] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33SurvivorCosmeticHelperActor
@@ -767,15 +788,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33SurvivorCosmeticHelperActor.GetCarriedTurret
-	// class AK33Turret* GetCarriedTurret();                                                                                 // [0x5d45750] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AK33Turret* GetCarriedTurret();                                                                                 // [0x5d52580] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.K33SurvivorCosmeticHelperActor.Cosmetic_UpdateTurretLaserPlacement
-	// void Cosmetic_UpdateTurretLaserPlacement(FVector& placementLocation, FRotator& placementRotation);                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_UpdateTurretLaserPlacement(FVector& placementLocation, FRotator& placementRotation);                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK33.K33SurvivorCosmeticHelperActor.Cosmetic_OnTurretPlacementVisualFeedbackActivationChanged
-	// void Cosmetic_OnTurretPlacementVisualFeedbackActivationChanged(bool activated, bool IsPlacementValid);                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTurretPlacementVisualFeedbackActivationChanged(bool activated, bool IsPlacementValid);                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33SurvivorCosmeticHelperActor.Cosmetic_OnTurretPlacementValidityChanged
-	// void Cosmetic_OnTurretPlacementValidityChanged(bool IsPlacementValid);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTurretPlacementValidityChanged(bool IsPlacementValid);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33SurvivorCosmeticHelperActor.Cosmetic_InitializeTurretPlacementVisualFeedback
-	// void Cosmetic_InitializeTurretPlacementVisualFeedback(FName& SocketName);                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
+	// void Cosmetic_InitializeTurretPlacementVisualFeedback(FName& SocketName);                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.K33SurvivorDetectedFromTunnelStatusEffect
@@ -802,16 +823,16 @@ public:
 	FTunableStat                                       _detectionDistance;                                         // 0x00B8   (0x0080)  
 	class UClass*                                      _survivorStatusEffect;                                      // 0x0138   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x58];                                      // 0x0140   (0x0058)  MISSED
-	SDK_UNDEFINED(16,5155) /* TArray<TWeakObjectPtr<ACamperPlayer*>> */ __um(_survivorsInRange);                   // 0x0198   (0x0010)  
+	SDK_UNDEFINED(16,5545) /* TArray<TWeakObjectPtr<ACamperPlayer*>> */ __um(_survivorsInRange);                   // 0x0198   (0x0010)  
 	FDBDTunableRowHandle                               _bufferTimeBeforeActivatingSurvivorDetection;               // 0x01A8   (0x0028)  
 	unsigned char                                      UnknownData01_6[0x38];                                      // 0x01D0   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK33.K33SurvivorDetectionComponent.OnRep_SurvivorsInRange
-	// void OnRep_SurvivorsInRange();                                                                                        // [0x5d45920] Final|Native|Private 
+	// void OnRep_SurvivorsInRange();                                                                                        // [0x5d526d0] Final|Native|Private 
 	// Function /Script/TheK33.K33SurvivorDetectionComponent.Authority_OnSurvivorInRangeChanged
-	// void Authority_OnSurvivorInRangeChanged(bool inRange, class ACamperPlayer* Player);                                   // [0x5d45680] Final|Native|Private 
+	// void Authority_OnSurvivorInRangeChanged(bool inRange, class ACamperPlayer* Player);                                   // [0x5d524b0] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33SurvivorTurretDestructionComponent
@@ -890,13 +911,11 @@ public:
 class UK33TailAttackInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	bool                                               _isChargeCompleted;                                         // 0x0788   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0789   (0x0007)  MISSED
 	FDBDTunableRowHandle                               _interactionViewPitchMax;                                   // 0x0790   (0x0028)  
 	FDBDTunableRowHandle                               _interactionViewPitchMin;                                   // 0x07B8   (0x0028)  
 	FDBDTunableRowHandle                               _cancelAttackMovementSlowdownDuration;                      // 0x07E0   (0x0028)  
 	class UCurveFloat*                                 _cancelAttackMovementSlowdownCurve;                         // 0x0808   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x30];                                      // 0x0810   (0x0030)  MISSED
+	unsigned char                                      UnknownData00_6[0x30];                                      // 0x0810   (0x0030)  MISSED
 };
 
 /// Class /Script/TheK33.K33TunnelBlock
@@ -912,11 +931,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TunnelBlock.GetExitTunnelInteractableSpawnRotation
-	// FRotator GetExitTunnelInteractableSpawnRotation();                                                                    // [0x5b6f1a0] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FRotator GetExitTunnelInteractableSpawnRotation();                                                                    // [0x5b7c560] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TheK33.K33TunnelBlock.GetExitTunnelInteractableSpawnLocation
-	// FVector GetExitTunnelInteractableSpawnLocation();                                                                     // [0x5d457c0] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetExitTunnelInteractableSpawnLocation();                                                                     // [0x5d56050] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TheK33.K33TunnelBlock.GetEnterTunnelTeleportLocation
-	// FVector GetEnterTunnelTeleportLocation();                                                                             // [0x5d45780] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetEnterTunnelTeleportLocation();                                                                             // [0x5d56010] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 };
 
 /// Class /Script/TheK33.K33TunnelBlockCosmetic
@@ -939,23 +958,23 @@ public:
 	float                                              _secondSplinePointOffsetValue;                              // 0x0270   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0274   (0x0004)  MISSED
 	TArray<class AK33TunnelProceduralConnection*>      _tunnelProceduralConnections;                               // 0x0278   (0x0010)  
-	SDK_UNDEFINED(16,5156) /* TArray<TWeakObjectPtr<USceneComponent*>> */ __um(_vfxPathLightsTransforms);          // 0x0288   (0x0010)  
+	SDK_UNDEFINED(16,5546) /* TArray<TWeakObjectPtr<USceneComponent*>> */ __um(_vfxPathLightsTransforms);          // 0x0288   (0x0010)  
 	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0298   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK33.K33TunnelBlockCosmetic.GetExitTunnelLocation
-	// FVector GetExitTunnelLocation();                                                                                      // [0x5b6f1a0] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetExitTunnelLocation();                                                                                      // [0x5b7c560] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TheK33.K33TunnelBlockCosmetic.Cosmetic_ShowTunnelBlockExit
-	// void Cosmetic_ShowTunnelBlockExit();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ShowTunnelBlockExit();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33TunnelBlockCosmetic.Cosmetic_SetTunnelExitAsBlocked
-	// void Cosmetic_SetTunnelExitAsBlocked(bool IsBlocked);                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetTunnelExitAsBlocked(bool IsBlocked);                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33TunnelBlockCosmetic.Cosmetic_OnTunnelBlockExitSelected
-	// void Cosmetic_OnTunnelBlockExitSelected(bool IsSelected);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTunnelBlockExitSelected(bool IsSelected);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33TunnelBlockCosmetic.Cosmetic_EnableTunnelVFXPathLight
-	// void Cosmetic_EnableTunnelVFXPathLight(FVector& Location, FRotator& Rotation);                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_EnableTunnelVFXPathLight(FVector& Location, FRotator& Rotation);                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK33.K33TunnelBlockCosmetic.Cosmetic_DisableTunnelVFXPathLight
-	// void Cosmetic_DisableTunnelVFXPathLight();                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DisableTunnelVFXPathLight();                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/TheK33.K33CosmeticTunnelBlockVariationInfo
@@ -964,14 +983,14 @@ struct FK33CosmeticTunnelBlockVariationInfo
 { 
 	float                                              PercentageChance;                                           // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(48,5157) /* TWeakObjectPtr<UClass*> */ __um(TunnelBlockCosmeticClass);                           // 0x0008   (0x0030)  
+	SDK_UNDEFINED(48,5547) /* TWeakObjectPtr<UClass*> */ __um(TunnelBlockCosmeticClass);                           // 0x0008   (0x0030)  
 };
 
 /// Struct /Script/TheK33.K33CosmeticTunnelBlockSpawnInfo
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FK33CosmeticTunnelBlockSpawnInfo
 { 
-	SDK_UNDEFINED(48,5158) /* TWeakObjectPtr<UClass*> */ __um(DefaultClassType);                                   // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,5548) /* TWeakObjectPtr<UClass*> */ __um(DefaultClassType);                                   // 0x0000   (0x0030)  
 	TArray<FK33CosmeticTunnelBlockVariationInfo>       Variations;                                                 // 0x0030   (0x0010)  
 };
 
@@ -982,7 +1001,7 @@ class UK33TunnelBlockCosmeticActorSpawner : public USceneComponent
 public:
 	unsigned char                                      UnknownData00_2[0xE0];                                      // 0x0220   (0x00E0)  MISSED
 	FK33CosmeticTunnelBlockSpawnInfo                   _cosmeticBlockSpawnInfo;                                    // 0x0300   (0x0040)  
-	SDK_UNDEFINED(48,5159) /* TWeakObjectPtr<UClass*> */ __um(_selectedTunnelBlockCosmeticClass);                  // 0x0340   (0x0030)  
+	SDK_UNDEFINED(48,5549) /* TWeakObjectPtr<UClass*> */ __um(_selectedTunnelBlockCosmeticClass);                  // 0x0340   (0x0030)  
 	int32_t                                            _editorVariationIndex;                                      // 0x0370   (0x0004)  
 	unsigned char                                      UnknownData01_6[0xC];                                       // 0x0374   (0x000C)  MISSED
 };
@@ -1020,7 +1039,7 @@ public:
 	class UDBDOutlineComponent*                        _outlineComponent;                                          // 0x0250   (0x0008)  
 	class UStaticMesh*                                 _staticMeshComponent;                                       // 0x0258   (0x0008)  
 	class UMaterial*                                   _staticMeshMaterial;                                        // 0x0260   (0x0008)  
-	SDK_UNDEFINED(1,5160) /* TEnumAsByte<ESplineMeshAxis> */ __um(_splineMeshAxis);                                // 0x0268   (0x0001)  
+	SDK_UNDEFINED(1,5550) /* TEnumAsByte<ESplineMeshAxis> */ __um(_splineMeshAxis);                                // 0x0268   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0269   (0x0003)  MISSED
 	FVector2D                                          _meshScaling;                                               // 0x026C   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0274   (0x0004)  MISSED
@@ -1042,7 +1061,7 @@ struct FK33GridCellLocation
 struct FK33TunnelGridCellData
 { 
 	FVector                                            GridWorldLocation;                                          // 0x0000   (0x000C)  
-	SDK_UNDEFINED(8,5161) /* TWeakObjectPtr<AK33ControlStation*> */ __um(ControlStation);                          // 0x000C   (0x0008)  
+	SDK_UNDEFINED(8,5551) /* TWeakObjectPtr<AK33ControlStation*> */ __um(ControlStation);                          // 0x000C   (0x0008)  
 	FK33GridCellLocation                               _gridLocation;                                              // 0x0014   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x001C   (0x0004)  MISSED
 };
@@ -1072,8 +1091,8 @@ class UK33TunnelProceduralGenerationComponent : public UKillerSpecificGameStateC
 { 
 public:
 	FK33TunnelBlockSpawnData                           _blocksSpawnData;                                           // 0x00B8   (0x0018)  
-	SDK_UNDEFINED(80,5162) /* TMap<EK33TunnelBlockType, TWeakObjectPtr<UClass*>> */ __um(_tunnelBlockAssetsReferences); // 0x00D0   (0x0050)  
-	SDK_UNDEFINED(80,5163) /* TMap<EK33TunnelBlockType, UClass*> */ __um(_tunnelBlockAssetClasses);                // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,5552) /* TMap<EK33TunnelBlockType, TWeakObjectPtr<UClass*>> */ __um(_tunnelBlockAssetsReferences); // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,5553) /* TMap<EK33TunnelBlockType, UClass*> */ __um(_tunnelBlockAssetClasses);                // 0x0120   (0x0050)  
 	TArray<class AK33TunnelBlock*>                     _tunnelBlocks;                                              // 0x0170   (0x0010)  
 	float                                              _blockSize;                                                 // 0x0180   (0x0004)  
 	float                                              _basementHeightOffset;                                      // 0x0184   (0x0004)  
@@ -1081,7 +1100,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TunnelProceduralGenerationComponent.OnRep_BlockSpawnData
-	// void OnRep_BlockSpawnData();                                                                                          // [0x5d49440] Final|Native|Private 
+	// void OnRep_BlockSpawnData();                                                                                          // [0x5d560c0] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33TunnelPulsationComponent
@@ -1119,11 +1138,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TunnelPulse.Cosmetic_GetFadeOutPercentage
-	// float Cosmetic_GetFadeOutPercentage();                                                                                // [0x5d493e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float Cosmetic_GetFadeOutPercentage();                                                                                // [0x5d55fe0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.K33TunnelPulse.Cosmetic_DeactivatePulse
-	// void Cosmetic_DeactivatePulse();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DeactivatePulse();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33TunnelPulse.Cosmetic_ActivatePulse
-	// void Cosmetic_ActivatePulse(int32_t idInPulseWave);                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivatePulse(int32_t idInPulseWave);                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.K33Turret
@@ -1155,19 +1174,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33Turret.Cosmetic_UpdateTurretVolumeRTPC
-	// void Cosmetic_UpdateTurretVolumeRTPC(int32_t turretsInRangeCount);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UpdateTurretVolumeRTPC(int32_t turretsInRangeCount);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33Turret.Cosmetic_UpdateMotionTrackerSoundVolume
-	// void Cosmetic_UpdateMotionTrackerSoundVolume(float distanceToKiller);                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UpdateMotionTrackerSoundVolume(float distanceToKiller);                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33Turret.Cosmetic_UpdateLaserLength
-	// void Cosmetic_UpdateLaserLength(float laserLength);                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UpdateLaserLength(float laserLength);                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33Turret.Cosmetic_OnTurretHeatChanged
-	// void Cosmetic_OnTurretHeatChanged(float heatAmount);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTurretHeatChanged(float heatAmount);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33Turret.Cosmetic_OnTurretDetectionRangeChanged
-	// void Cosmetic_OnTurretDetectionRangeChanged(float newRange);                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTurretDetectionRangeChanged(float newRange);                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.K33Turret.Cosmetic_OnKillerEnteredSpecialModeFXReaction
-	// void Cosmetic_OnKillerEnteredSpecialModeFXReaction();                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKillerEnteredSpecialModeFXReaction();                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.K33Turret.Cosmetic_BipMotionTrackerFX
-	// void Cosmetic_BipMotionTrackerFX(float distanceToKiller);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_BipMotionTrackerFX(float distanceToKiller);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.K33TurretAnimInstance
@@ -1283,11 +1302,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TurretDamageComponent.OnRep_IsAttackedByTurret
-	// void OnRep_IsAttackedByTurret();                                                                                      // [0x5d49480] Final|Native|Private 
+	// void OnRep_IsAttackedByTurret();                                                                                      // [0x5d56100] Final|Native|Private 
 	// Function /Script/TheK33.K33TurretDamageComponent.OnRep_CurrentDamageAmount
-	// void OnRep_CurrentDamageAmount();                                                                                     // [0x5d49460] Final|Native|Private 
+	// void OnRep_CurrentDamageAmount();                                                                                     // [0x5d560e0] Final|Native|Private 
 	// Function /Script/TheK33.K33TurretDamageComponent.Multicast_ReceivedMaxDamage
-	// void Multicast_ReceivedMaxDamage();                                                                                   // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ReceivedMaxDamage();                                                                                   // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK33.K33TurretDangerPredictionComponent
@@ -1331,7 +1350,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TurretDestructionComponent.GetTurretDestructionDisappearanceDelay
-	// float GetTurretDestructionDisappearanceDelay();                                                                       // [0x5d49410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTurretDestructionDisappearanceDelay();                                                                       // [0x5d56090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.K33TurretFiringState
@@ -1386,7 +1405,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TurretLaserComponent.OnLocallyObservedPlayerChanged
-	// void OnLocallyObservedPlayerChanged();                                                                                // [0x5d4d610] Final|Native|Private 
+	// void OnLocallyObservedPlayerChanged();                                                                                // [0x5d5a3e0] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33TurretMalfunctionComponent
@@ -1441,7 +1460,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TurretOverheatComponent.OnRep_CurrentHeatAmount
-	// void OnRep_CurrentHeatAmount();                                                                                       // [0x5d4d9b0] Final|Native|Private 
+	// void OnRep_CurrentHeatAmount();                                                                                       // [0x5d5a400] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33TurretOverheatState
@@ -1481,20 +1500,20 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33TurretPlacer.OnRep_ReplicatedIsPlacementValid
-	// void OnRep_ReplicatedIsPlacementValid();                                                                              // [0x5d4dac0] Final|Native|Private 
+	// void OnRep_ReplicatedIsPlacementValid();                                                                              // [0x5d5a510] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33TurretRepairInteraction
-/// Size: 0x0030 (0x0007C0 - 0x0007F0)
+/// Size: 0x0030 (0x0007D0 - 0x000800)
 class UK33TurretRepairInteraction : public UBasicChargeableInteraction
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x30];                                      // 0x07C0   (0x0030)  MISSED
+	unsigned char                                      UnknownData00_1[0x30];                                      // 0x07D0   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK33.K33TurretRepairInteraction.Authority_OnChargeApplied
-	// void Authority_OnChargeApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5d4cbd0] Final|Native|Private 
+	// void Authority_OnChargeApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5d599d0] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.K33TurretSpawnedOnControlStationState
@@ -1514,11 +1533,11 @@ public:
 };
 
 /// Class /Script/TheK33.K33UndeployTurretInteraction
-/// Size: 0x00B0 (0x0007C0 - 0x000870)
+/// Size: 0x00A0 (0x0007D0 - 0x000870)
 class UK33UndeployTurretInteraction : public UBasicChargeableInteraction
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x48];                                      // 0x07C0   (0x0048)  MISSED
+	unsigned char                                      UnknownData00_2[0x38];                                      // 0x07D0   (0x0038)  MISSED
 	FAnimationMontageDescriptor                        _cancelMontage;                                             // 0x0808   (0x0020)  
 	FAnimationMontageDescriptor                        _interruptedMontage;                                        // 0x0828   (0x0020)  
 	float                                              _cancelUndeployDuration;                                    // 0x0848   (0x0004)  
@@ -1534,17 +1553,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.K33Utilities.GetTurretsPool
-	// class UAuthoritativeActorPoolComponent* GetTurretsPool(class UObject* WorldContextObject);                            // [0x5d4d1b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UAuthoritativeActorPoolComponent* GetTurretsPool(class UObject* WorldContextObject);                            // [0x5d59f80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK33.K33Utilities.GetSpecialModeComponent
-	// class UK33SpecialModeComponent* GetSpecialModeComponent(class UObject* WorldContextObject);                           // [0x5d4d120] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UK33SpecialModeComponent* GetSpecialModeComponent(class UObject* WorldContextObject);                           // [0x5d59ef0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK33.K33Utilities.GetK33VFXFeetPool
-	// class ULocalActorPoolComponent* GetK33VFXFeetPool(class UObject* WorldContextObject);                                 // [0x5d4d030] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ULocalActorPoolComponent* GetK33VFXFeetPool(class UObject* WorldContextObject);                                 // [0x5d59e30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK33.K33Utilities.GetK33Power
-	// class AK33Power* GetK33Power(class UObject* WorldContextObject);                                                      // [0x5d4cfa0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK33Power* GetK33Power(class UObject* WorldContextObject);                                                      // [0x5d59da0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK33.K33Utilities.GetK33Husk
-	// class AK33Husk* GetK33Husk(class UObject* WorldContextObject);                                                        // [0x5d4cf10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK33Husk* GetK33Husk(class UObject* WorldContextObject);                                                        // [0x5d59d10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK33.K33Utilities.GetAvailableTurretsCountInPool
-	// int32_t GetAvailableTurretsCountInPool(class UObject* WorldContextObject);                                            // [0x5d4ce50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetAvailableTurretsCountInPool(class UObject* WorldContextObject);                                            // [0x5d59c50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK33.MapObjectsCheatComponent
@@ -1557,9 +1576,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.MapObjectsCheatComponent.DBD_ShowQuesita
-	// void DBD_ShowQuesita(bool enable);                                                                                    // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_ShowQuesita(bool enable);                                                                                    // [0x581c030] Final|Exec|Native|Public 
 	// Function /Script/TheK33.MapObjectsCheatComponent.DBD_ShowFatherKey
-	// void DBD_ShowFatherKey(bool enable);                                                                                  // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_ShowFatherKey(bool enable);                                                                                  // [0x581c030] Final|Exec|Native|Public 
 };
 
 /// Struct /Script/TheK33.QuesitaPropStruct
@@ -1597,15 +1616,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.QuesitaManagerComponent.OnRep_QuesitaLocker
-	// void OnRep_QuesitaLocker(class ALocker* lastLocker);                                                                  // [0x5d4da30] Final|Native|Private 
+	// void OnRep_QuesitaLocker(class ALocker* lastLocker);                                                                  // [0x5d5a480] Final|Native|Private 
 	// Function /Script/TheK33.QuesitaManagerComponent.OnRep_QuesitaInteraction
-	// void OnRep_QuesitaInteraction();                                                                                      // [0x5d4da10] Final|Native|Private 
+	// void OnRep_QuesitaInteraction();                                                                                      // [0x5d5a460] Final|Native|Private 
 	// Function /Script/TheK33.QuesitaManagerComponent.Authority_OnQuesitaInteractionDone
-	// void Authority_OnQuesitaInteractionDone();                                                                            // [0x5d4ce30] Final|Native|Private 
+	// void Authority_OnQuesitaInteractionDone();                                                                            // [0x5d59c30] Final|Native|Private 
 	// Function /Script/TheK33.QuesitaManagerComponent.Authority_OnLockerInteractorChanged
-	// void Authority_OnLockerInteractorChanged(bool IsLocked);                                                              // [0x5d4cda0] Final|Native|Private 
+	// void Authority_OnLockerInteractorChanged(bool IsLocked);                                                              // [0x5d59ba0] Final|Native|Private 
 	// Function /Script/TheK33.QuesitaManagerComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5d4cd80] Final|Native|Protected 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5d59b80] Final|Native|Protected 
 };
 
 /// Class /Script/TheK33.S39P01
@@ -1619,6 +1638,17 @@ public:
 	float                                              _perkCooldownTime;                                          // 0x03DC   (0x000C)  
 	class UClass*                                      _suppressBloodAndGruntsEffectClass;                         // 0x03E8   (0x0008)  
 	class UClass*                                      _revealSurvivorAurasEffectClass;                            // 0x03F0   (0x0008)  
+
+
+	/// Functions
+	// Function /Script/TheK33.S39P01.GetSurvivorAuraRevealTime
+	// float GetSurvivorAuraRevealTime();                                                                                    // [0x4ff91b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.S39P01.GetPerkCooldownTimeAtLevel
+	// float GetPerkCooldownTimeAtLevel();                                                                                   // [0x5000c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.S39P01.GetGeneratorAuraRevealTime
+	// float GetGeneratorAuraRevealTime();                                                                                   // [0x4fecfd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK33.S39P01.GetBloodAndGruntSuppressionTimeAtLevel
+	// float GetBloodAndGruntSuppressionTimeAtLevel();                                                                       // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.S39P02
@@ -1637,25 +1667,25 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.S39P02.Multicast_Cosmetic_OnTrapTriggered
-	// void Multicast_Cosmetic_OnTrapTriggered(class AInteractable* Pallet, class ADBDPlayer* triggerer);                    // [0x5d4d430] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_Cosmetic_OnTrapTriggered(class AInteractable* Pallet, class ADBDPlayer* triggerer);                    // [0x5d5a200] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK33.S39P02.Multicast_Cosmetic_OnTrapRemoved
-	// void Multicast_Cosmetic_OnTrapRemoved(class AInteractable* Interactable, ETrapRemovedReason removedReason);           // [0x5d4d360] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_Cosmetic_OnTrapRemoved(class AInteractable* Interactable, ETrapRemovedReason removedReason);           // [0x5d5a130] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK33.S39P02.Multicast_Cosmetic_OnTrapActivated
-	// void Multicast_Cosmetic_OnTrapActivated(class APallet* Generator);                                                    // [0x5d4d2d0] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_Cosmetic_OnTrapActivated(class APallet* Generator);                                                    // [0x5d5a0a0] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK33.S39P02.Multicast_Cosmetic_OnSlowEffectEnded
-	// void Multicast_Cosmetic_OnSlowEffectEnded(class ADBDPlayer* Player);                                                  // [0x5d4d240] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_Cosmetic_OnSlowEffectEnded(class ADBDPlayer* Player);                                                  // [0x5d5a010] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK33.S39P02.GetSlowTime
-	// float GetSlowTime();                                                                                                  // [0x5d4d0f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetSlowTime();                                                                                                  // [0x5d59ec0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.S39P02.GetChemicalBombTrap
-	// class ATrapChemicalBomb* GetChemicalBombTrap();                                                                       // [0x5d4cee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ATrapChemicalBomb* GetChemicalBombTrap();                                                                       // [0x5d59ce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.S39P02.Cosmetic_TrapTriggered
-	// void Cosmetic_TrapTriggered(class AInteractable* Pallet, class ADBDPlayer* triggerer);                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TrapTriggered(class AInteractable* Pallet, class ADBDPlayer* triggerer);                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.S39P02.Cosmetic_TrapRemoved
-	// void Cosmetic_TrapRemoved(class AInteractable* Interactable, ETrapRemovedReason removedReason);                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TrapRemoved(class AInteractable* Interactable, ETrapRemovedReason removedReason);                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.S39P02.Cosmetic_TrapActivated
-	// void Cosmetic_TrapActivated(class APallet* Pallet);                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TrapActivated(class APallet* Pallet);                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK33.S39P02.Cosmetic_OnSlowEffectEnded
-	// void Cosmetic_OnSlowEffectEnded(class ADBDPlayer* Player);                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSlowEffectEnded(class ADBDPlayer* Player);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.S39p02TrapInteraction
@@ -1679,7 +1709,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.S39P03.GetCooldownTimeAtLevel
-	// float GetCooldownTimeAtLevel();                                                                                       // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownTimeAtLevel();                                                                                       // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.TurretNavMesh
@@ -1714,7 +1744,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.WormholeFatherDoorAnimInstance.OnStateChanged
-	// void OnStateChanged(bool HasBeenHacked);                                                                              // [0x5d4dae0] Final|Native|Private 
+	// void OnStateChanged(bool HasBeenHacked);                                                                              // [0x5d5a530] Final|Native|Private 
 };
 
 /// Class /Script/TheK33.WormholeFatherHackableActor
@@ -1729,7 +1759,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.WormholeFatherHackableActor.OnHackedEvent
-	// void OnHackedEvent(FGameplayTag GameEvent, FGameEventData& GameEventData);                                            // [0x5d4d500] Native|Event|Protected|HasOutParms|BlueprintEvent 
+	// void OnHackedEvent(FGameplayTag GameEvent, FGameEventData& GameEventData);                                            // [0x5d5a2d0] Native|Event|Protected|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/TheK33.WormholeFatherHackingComponent
@@ -1738,20 +1768,20 @@ class UWormholeFatherHackingComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x00B8   (0x0018)  MISSED
-	SDK_UNDEFINED(16,5164) /* FMulticastInlineDelegate */ __um(Cosmetic_OnHasBeenHackedChanged);                   // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,5554) /* FMulticastInlineDelegate */ __um(Cosmetic_OnHasBeenHackedChanged);                   // 0x00D0   (0x0010)  
 	bool                                               _hasBeenHacked;                                             // 0x00E0   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00E1   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK33.WormholeFatherHackingComponent.SetHasBeenHacked
-	// void SetHasBeenHacked(bool HasBeenHacked);                                                                            // [0x5d4dc00] Final|Native|Public|BlueprintCallable 
+	// void SetHasBeenHacked(bool HasBeenHacked);                                                                            // [0x5d5a650] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK33.WormholeFatherHackingComponent.OnWrmFatherHackedStateChangedDelegate__DelegateSignature
-	// void OnWrmFatherHackedStateChangedDelegate__DelegateSignature(bool HasBeenHacked);                                    // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnWrmFatherHackedStateChangedDelegate__DelegateSignature(bool HasBeenHacked);                                    // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK33.WormholeFatherHackingComponent.OnRep_HasBeenHacked
-	// void OnRep_HasBeenHacked();                                                                                           // [0x5d4d9d0] Final|Native|Protected|Const 
+	// void OnRep_HasBeenHacked();                                                                                           // [0x5d5a420] Final|Native|Protected|Const 
 	// Function /Script/TheK33.WormholeFatherHackingComponent.HasBeenHacked
-	// bool HasBeenHacked();                                                                                                 // [0x49bd800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasBeenHacked();                                                                                                 // [0x5c57110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK33.WormholeFatherKeyCard
@@ -1765,17 +1795,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.WormholeFatherKeyCard.RemoveInitialTag
-	// void RemoveInitialTag(class ADBDPlayer* Character);                                                                   // [0x5d4db70] Final|Native|Private|Const 
+	// void RemoveInitialTag(class ADBDPlayer* Character);                                                                   // [0x5d5a5c0] Final|Native|Private|Const 
 	// Function /Script/TheK33.WormholeFatherKeyCard.OnRep_KeyCardState
-	// void OnRep_KeyCardState();                                                                                            // [0x5d4d9f0] Final|Native|Private 
+	// void OnRep_KeyCardState();                                                                                            // [0x5d5a440] Final|Native|Private 
 	// Function /Script/TheK33.WormholeFatherKeyCard.GetKeyCardState
-	// EFatherKeyCardState GetKeyCardState();                                                                                // [0x5d4d0c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EFatherKeyCardState GetKeyCardState();                                                                                // [0x58863c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK33.WormholeFatherKeyCard.Cosmetic_OnKeyCardDropped
-	// void Cosmetic_OnKeyCardDropped();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKeyCardDropped();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.WormholeFatherKeyCard.Cosmetic_OnKeyCardCollected
-	// void Cosmetic_OnKeyCardCollected();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnKeyCardCollected();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK33.WormholeFatherKeyCard.ApplyInitialTag
-	// void ApplyInitialTag(class ADBDPlayer* Character);                                                                    // [0x5d4cb40] Final|Native|Private|Const 
+	// void ApplyInitialTag(class ADBDPlayer* Character);                                                                    // [0x5d59940] Final|Native|Private|Const 
 };
 
 /// Class /Script/TheK33.WormholeFatherKeyCardOutlineUpdateStrategy
@@ -1796,9 +1826,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK33.WormholeFatherRoomZoneOverlap.OnOverlapExit
-	// void OnOverlapExit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5d4d850] Final|Native|Protected 
+	// void OnOverlapExit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5d5ad20] Final|Native|Protected 
 	// Function /Script/TheK33.WormholeFatherRoomZoneOverlap.OnOverlapEnter
-	// void OnOverlapEnter(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5d4d630] Final|Native|Protected|HasOutParms 
+	// void OnOverlapEnter(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5d5ab00] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/TheK33.WormholeFatherTerminal

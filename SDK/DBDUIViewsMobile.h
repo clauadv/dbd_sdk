@@ -114,7 +114,7 @@ public:
 class UMatchConfigDifficultyDataAsset : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,1448) /* TMap<ECustomMatchDifficulty, FMatchConfigDifficultyData> */ __um(DifficultiesData);  // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,1473) /* TMap<ECustomMatchDifficulty, FMatchConfigDifficultyData> */ __um(DifficultiesData);  // 0x0038   (0x0050)  
 };
 
 /// Class /Script/DBDUIViewsMobile.MatchConfigOptionsDataAsset
@@ -122,7 +122,7 @@ public:
 class UMatchConfigOptionsDataAsset : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,1449) /* TMap<ECustomMatchOptions, FMatchOptionAssetData> */ __um(OptionsData);               // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,1474) /* TMap<ECustomMatchOptions, FMatchOptionAssetData> */ __um(OptionsData);               // 0x0038   (0x0050)  
 };
 
 /// Class /Script/DBDUIViewsMobile.MatchConfigTabsDataAsset
@@ -130,7 +130,7 @@ public:
 class UMatchConfigTabsDataAsset : public UPrimaryDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,1450) /* TMap<ECustomMatchTab, FMatchConfigTabData> */ __um(Data);                            // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,1475) /* TMap<ECustomMatchTab, FMatchConfigTabData> */ __um(Data);                            // 0x0038   (0x0050)  
 };
 
 /// Class /Script/DBDUIViewsMobile.MobileBaseUserWidget
@@ -147,19 +147,19 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.TutorialAnimationFinished
-	// void TutorialAnimationFinished();                                                                                     // [0x4be2d20] Final|Native|Private 
+	// void TutorialAnimationFinished();                                                                                     // [0x4bb2980] Final|Native|Private 
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.TryBroadcastOnHighlightWidgetClicked
-	// void TryBroadcastOnHighlightWidgetClicked();                                                                          // [0x4be2d00] Final|Native|Protected|BlueprintCallable 
+	// void TryBroadcastOnHighlightWidgetClicked();                                                                          // [0x4bb2960] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.TriggerTutorialVisuals
-	// void TriggerTutorialVisuals();                                                                                        // [0x4be2ce0] Native|Public|BlueprintCallable 
+	// void TriggerTutorialVisuals();                                                                                        // [0x4bb2940] Native|Public|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.PropagateOnHighlightWidgetClicked
-	// void PropagateOnHighlightWidgetClicked(FName onBoardingID);                                                           // [0x4be2b10] Final|Native|Public  
+	// void PropagateOnHighlightWidgetClicked(FName onBoardingID);                                                           // [0x4bb2770] Final|Native|Public  
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.OnSynchronizeProperties
-	// void OnSynchronizeProperties();                                                                                       // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnSynchronizeProperties();                                                                                       // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.IsInTutorialState
-	// bool IsInTutorialState();                                                                                             // [0x4be2ae0] Final|Native|Public|BlueprintCallable 
+	// bool IsInTutorialState();                                                                                             // [0x4bb2740] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.MobileBaseUserWidget.FinishTutorialVisuals
-	// void FinishTutorialVisuals();                                                                                         // [0x4b97160] Native|Public|BlueprintCallable 
+	// void FinishTutorialVisuals();                                                                                         // [0x4b5ea00] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGAtlantaCustomMatchLobbyRule
@@ -186,7 +186,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGAtlantaCustomMatchLobbyScreen.HandleEditConfigButtonClicked
-	// void HandleEditConfigButtonClicked();                                                                                 // [0x4be2a80] Final|Native|Protected 
+	// void HandleEditConfigButtonClicked();                                                                                 // [0x4bb26e0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGPageScrollWidget
@@ -205,7 +205,7 @@ public:
 	class UAkAudioEvent*                               OnPageChangeSound;                                          // 0x0358   (0x0008)  
 	class UCanvasPanel*                                ContainerPanel;                                             // 0x0360   (0x0008)  
 	class UHorizontalBox*                              ButtonsPanel;                                               // 0x0368   (0x0008)  
-	SDK_UNDEFINED(48,1451) /* TWeakObjectPtr<UClass*> */ __um(_pageButtonWidgetClass);                             // 0x0370   (0x0030)  
+	SDK_UNDEFINED(48,1476) /* TWeakObjectPtr<UClass*> */ __um(_pageButtonWidgetClass);                             // 0x0370   (0x0030)  
 	TArray<class UCanvasPanel*>                        _itemArray;                                                 // 0x03A0   (0x0010)  
 	int32_t                                            _currentPageIndex;                                          // 0x03B0   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x03B4   (0x0004)  MISSED
@@ -215,7 +215,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGPageScrollWidget.HandlePageButtonClicked
-	// void HandlePageButtonClicked(int32_t pageIndex);                                                                      // [0x4be3e10] Final|Native|Public  
+	// void HandlePageButtonClicked(int32_t pageIndex);                                                                      // [0x4bb3a70] Final|Native|Public  
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGGridPageScrollWidget
@@ -234,7 +234,7 @@ struct FCustomMatchTabConfig
 	int32_t                                            ItemHeight;                                                 // 0x0004   (0x0004)  
 	int32_t                                            row;                                                        // 0x0008   (0x0004)  
 	int32_t                                            Column;                                                     // 0x000C   (0x0004)  
-	SDK_UNDEFINED(48,1452) /* TWeakObjectPtr<UClass*> */ __um(OptionButtonClass);                                  // 0x0010   (0x0030)  
+	SDK_UNDEFINED(48,1477) /* TWeakObjectPtr<UClass*> */ __um(OptionButtonClass);                                  // 0x0010   (0x0030)  
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGAtlantaMatchConfigPageScroll
@@ -253,15 +253,15 @@ public:
 class UUMGBaseButtonWidget : public UMobileBaseUserWidget
 { 
 public:
-	SDK_UNDEFINED(16,1453) /* FMulticastInlineDelegate */ __um(OnBaseButtonClickedEvent);                          // 0x0338   (0x0010)  
-	SDK_UNDEFINED(16,1454) /* FMulticastInlineDelegate */ __um(OnBaseButtonPressedEvent);                          // 0x0348   (0x0010)  
-	SDK_UNDEFINED(16,1455) /* FMulticastInlineDelegate */ __um(OnBaseButtonReleasedEvent);                         // 0x0358   (0x0010)  
-	SDK_UNDEFINED(16,1456) /* FMulticastInlineDelegate */ __um(OnBaseButtonLongPressEvent);                        // 0x0368   (0x0010)  
+	SDK_UNDEFINED(16,1478) /* FMulticastInlineDelegate */ __um(OnBaseButtonClickedEvent);                          // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,1479) /* FMulticastInlineDelegate */ __um(OnBaseButtonPressedEvent);                          // 0x0348   (0x0010)  
+	SDK_UNDEFINED(16,1480) /* FMulticastInlineDelegate */ __um(OnBaseButtonReleasedEvent);                         // 0x0358   (0x0010)  
+	SDK_UNDEFINED(16,1481) /* FMulticastInlineDelegate */ __um(OnBaseButtonLongPressEvent);                        // 0x0368   (0x0010)  
 	class UButton*                                     Button;                                                     // 0x0378   (0x0008)  
 	class UImage*                                      IconPicture;                                                // 0x0380   (0x0008)  
 	class UTextBlock*                                  ButtonLabel;                                                // 0x0388   (0x0008)  
 	FSlateBrush                                        ButtonPictureBrush;                                         // 0x0390   (0x0090)  
-	SDK_UNDEFINED(24,1457) /* FText */                 __um(ButtonText);                                           // 0x0420   (0x0018)  
+	SDK_UNDEFINED(24,1482) /* FText */                 __um(ButtonText);                                           // 0x0420   (0x0018)  
 	class UAkAudioEvent*                               OnPressSound;                                               // 0x0438   (0x0008)  
 	class UAkAudioEvent*                               OnClickSound;                                               // 0x0440   (0x0008)  
 	class UAkAudioEvent*                               OnLongPressSound;                                           // 0x0448   (0x0008)  
@@ -272,23 +272,23 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.OnBaseButtonReleased__DelegateSignature
-	// void OnBaseButtonReleased__DelegateSignature();                                                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnBaseButtonReleased__DelegateSignature();                                                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.OnBaseButtonPressed__DelegateSignature
-	// void OnBaseButtonPressed__DelegateSignature();                                                                        // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnBaseButtonPressed__DelegateSignature();                                                                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.OnBaseButtonLongPress__DelegateSignature
-	// void OnBaseButtonLongPress__DelegateSignature();                                                                      // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnBaseButtonLongPress__DelegateSignature();                                                                      // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.OnBaseButtonClicked__DelegateSignature
-	// void OnBaseButtonClicked__DelegateSignature();                                                                        // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnBaseButtonClicked__DelegateSignature();                                                                        // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.HandleButtonReleasedEvent
-	// void HandleButtonReleasedEvent();                                                                                     // [0x4b971c0] Native|Protected|BlueprintCallable 
+	// void HandleButtonReleasedEvent();                                                                                     // [0x4b5ea60] Native|Protected|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.HandleButtonPressedEvent
-	// void HandleButtonPressedEvent();                                                                                      // [0x4b971a0] Native|Protected|BlueprintCallable 
+	// void HandleButtonPressedEvent();                                                                                      // [0x4b5ea40] Native|Protected|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.HandleButtonLongPressEvent
-	// void HandleButtonLongPressEvent();                                                                                    // [0x4b97140] Native|Protected|BlueprintCallable 
+	// void HandleButtonLongPressEvent();                                                                                    // [0x4b5e9e0] Native|Protected|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.HandleButtonHoveredEvent
-	// void HandleButtonHoveredEvent();                                                                                      // [0x4b97180] Native|Protected|BlueprintCallable 
+	// void HandleButtonHoveredEvent();                                                                                      // [0x4b5ea20] Native|Protected|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.UMGBaseButtonWidget.HandleButtonClickedEvent
-	// void HandleButtonClickedEvent();                                                                                      // [0x4b971e0] Native|Protected|BlueprintCallable 
+	// void HandleButtonClickedEvent();                                                                                      // [0x4b5ea80] Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGAtlantaMatchConfigPageScrollItem
@@ -326,7 +326,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGAtlantaMatchConfigScreen.HandleBackButtonClicked
-	// void HandleBackButtonClicked();                                                                                       // [0x4be2a40] Final|Native|Protected 
+	// void HandleBackButtonClicked();                                                                                       // [0x4bb26a0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGAtlantaMatchConfigTab
@@ -351,11 +351,11 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGAtlantaRequestRoleButton.SetIsActive
-	// void SetIsActive(bool IsActive);                                                                                      // [0x4be2bb0] Final|Native|Protected|BlueprintCallable 
+	// void SetIsActive(bool IsActive);                                                                                      // [0x4bb2810] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.UMGAtlantaRequestRoleButton.OnToggleActiveState
-	// void OnToggleActiveState(bool IsActive);                                                                              // [0x61c32d0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void OnToggleActiveState(bool IsActive);                                                                              // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/DBDUIViewsMobile.UMGAtlantaRequestRoleButton.GetIsActive
-	// bool GetIsActive();                                                                                                   // [0x4be29a0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool GetIsActive();                                                                                                   // [0x4bb2600] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGBaseFriendListContextualMenuWidget
@@ -375,7 +375,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGBaseFriendListContextualMenuWidget.HandleActionTriggered
-	// void HandleActionTriggered(EActionOnFriendType ActionType);                                                           // [0x4be29c0] Final|Native|Protected|BlueprintCallable 
+	// void HandleActionTriggered(EActionOnFriendType ActionType);                                                           // [0x4bb2620] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Struct /Script/DBDUIViewsMobile.AtlantaFriendUIData
@@ -403,7 +403,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGBaseFriendListElement.TriggerActionOnThisFriend
-	// void TriggerActionOnThisFriend(EActionOnFriendType ActionType);                                                       // [0x4be2c60] Final|Native|Public|BlueprintCallable 
+	// void TriggerActionOnThisFriend(EActionOnFriendType ActionType);                                                       // [0x4bb28c0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGBaseTabButtonWidget
@@ -418,9 +418,9 @@ public:
 	class UImage*                                      TabButtonSelected;                                          // 0x0498   (0x0008)  
 	char                                               tabIndex;                                                   // 0x04A0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x04A1   (0x0007)  MISSED
-	SDK_UNDEFINED(24,1458) /* FText */                 __um(TitleOfTab);                                           // 0x04A8   (0x0018)  
+	SDK_UNDEFINED(24,1483) /* FText */                 __um(TitleOfTab);                                           // 0x04A8   (0x0018)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x04C0   (0x0008)  MISSED
-	SDK_UNDEFINED(16,1459) /* FString */               __um(_tabTextParameter);                                    // 0x04C8   (0x0010)  
+	SDK_UNDEFINED(16,1484) /* FString */               __um(_tabTextParameter);                                    // 0x04C8   (0x0010)  
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGBaseTabListWidget
@@ -443,7 +443,7 @@ public:
 	class UTextBlock*                                  CategorieName;                                              // 0x0350   (0x0008)  
 	class UTextBlock*                                  itemCount;                                                  // 0x0358   (0x0008)  
 	class UExpandableArea*                             ExpandableArea;                                             // 0x0360   (0x0008)  
-	SDK_UNDEFINED(24,1460) /* FText */                 __um(HeaderTitle);                                          // 0x0368   (0x0018)  
+	SDK_UNDEFINED(24,1485) /* FText */                 __um(HeaderTitle);                                          // 0x0368   (0x0018)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0380   (0x0008)  MISSED
 	TArray<class UUserWidget*>                         _childWidgets;                                              // 0x0388   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x48];                                      // 0x0398   (0x0048)  MISSED
@@ -451,7 +451,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGExpandableListWidget.ToggleExpansion
-	// void ToggleExpansion();                                                                                               // [0x4be2c40] Final|Native|Protected 
+	// void ToggleExpansion();                                                                                               // [0x4bb28a0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGFriendBaseTabListWidget
@@ -473,7 +473,7 @@ public:
 	bool                                               _isInteractable;                                            // 0x0488   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0489   (0x0007)  MISSED
 	class UImage*                                      NonInteractableImage;                                       // 0x0490   (0x0008)  
-	SDK_UNDEFINED(80,1461) /* TMap<EFriendTypeButton, FSlateBrush> */ __um(_nonInteractableImages);                // 0x0498   (0x0050)  
+	SDK_UNDEFINED(80,1486) /* TMap<EFriendTypeButton, FSlateBrush> */ __um(_nonInteractableImages);                // 0x0498   (0x0050)  
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGFriendContextualMenuWidget
@@ -500,9 +500,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGFriendElementWidget.HandleSelectionButton
-	// void HandleSelectionButton();                                                                                         // [0x4be2ac0] Final|Native|Protected 
+	// void HandleSelectionButton();                                                                                         // [0x4bb2720] Final|Native|Protected 
 	// Function /Script/DBDUIViewsMobile.UMGFriendElementWidget.HandleFavoriteButtonClicked
-	// void HandleFavoriteButtonClicked();                                                                                   // [0x4be2aa0] Final|Native|Protected|BlueprintCallable 
+	// void HandleFavoriteButtonClicked();                                                                                   // [0x4bb2700] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGFriendListTabWidget
@@ -529,7 +529,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGFriendPartyListElementWidget.HandleCancelInviteButtonClicked
-	// void HandleCancelInviteButtonClicked();                                                                               // [0x4be2a60] Final|Native|Protected 
+	// void HandleCancelInviteButtonClicked();                                                                               // [0x4bb26c0] Final|Native|Protected 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGFriendSearchBarWidget
@@ -544,9 +544,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGFriendSearchBarWidget.HandleTextInputChanged
-	// void HandleTextInputChanged(FText& textInput);                                                                        // [0x4be3ec0] Final|Native|Private|HasOutParms 
+	// void HandleTextInputChanged(FText& textInput);                                                                        // [0x4bb3b20] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDUIViewsMobile.UMGFriendSearchBarWidget.HandleSearchButtonClicked
-	// void HandleSearchButtonClicked();                                                                                     // [0x4be3ea0] Final|Native|Private 
+	// void HandleSearchButtonClicked();                                                                                     // [0x4bb3b00] Final|Native|Private 
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGFriendTabButtonWidget
@@ -571,7 +571,7 @@ public:
 class UUMGScrollListPageButton : public UMobileBaseUserWidget
 { 
 public:
-	SDK_UNDEFINED(16,1462) /* FMulticastInlineDelegate */ __um(OnClicked);                                         // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,1487) /* FMulticastInlineDelegate */ __um(OnClicked);                                         // 0x0338   (0x0010)  
 	int32_t                                            pageIndex;                                                  // 0x0348   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x034C   (0x0004)  MISSED
 	class UButton*                                     ActionButton;                                               // 0x0350   (0x0008)  
@@ -580,9 +580,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDUIViewsMobile.UMGScrollListPageButton.SetIsSelected
-	// void SetIsSelected(bool Selected);                                                                                    // [0x4be3f90] Final|Native|Public|BlueprintCallable 
+	// void SetIsSelected(bool Selected);                                                                                    // [0x4bb3bf0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDUIViewsMobile.UMGScrollListPageButton.HandleActionButtonClick
-	// void HandleActionButtonClick();                                                                                       // [0x4be3df0] Final|Native|Public  
+	// void HandleActionButtonClick();                                                                                       // [0x4bb3a50] Final|Native|Public  
 };
 
 /// Class /Script/DBDUIViewsMobile.UMGSuggestionsListTabWidget
@@ -610,23 +610,23 @@ struct FFriendStatusUIData : FDBDTableRowBase
 { 
 	EAtlantaFriendUIStatus                             FriendStatus;                                               // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
-	SDK_UNDEFINED(48,1463) /* TWeakObjectPtr<UTexture2D*> */ __um(StatusIcon);                                     // 0x0010   (0x0030)  
-	SDK_UNDEFINED(24,1464) /* FText */                 __um(StatusText);                                           // 0x0040   (0x0018)  
+	SDK_UNDEFINED(48,1488) /* TWeakObjectPtr<UTexture2D*> */ __um(StatusIcon);                                     // 0x0010   (0x0030)  
+	SDK_UNDEFINED(24,1489) /* FText */                 __um(StatusText);                                           // 0x0040   (0x0018)  
 };
 
 /// Struct /Script/DBDUIViewsMobile.MatchConfigDifficultyData
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FMatchConfigDifficultyData
 { 
-	SDK_UNDEFINED(48,1465) /* TWeakObjectPtr<UPaperSprite*> */ __um(DifficultyIcon);                               // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1490) /* TWeakObjectPtr<UPaperSprite*> */ __um(DifficultyIcon);                               // 0x0000   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewsMobile.MatchOptionAssetData
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FMatchOptionAssetData
 { 
-	SDK_UNDEFINED(24,1466) /* FText */                 __um(TextName);                                             // 0x0000   (0x0018)  
-	SDK_UNDEFINED(48,1467) /* TWeakObjectPtr<UPaperSprite*> */ __um(Icon);                                         // 0x0018   (0x0030)  
+	SDK_UNDEFINED(24,1491) /* FText */                 __um(TextName);                                             // 0x0000   (0x0018)  
+	SDK_UNDEFINED(48,1492) /* TWeakObjectPtr<UPaperSprite*> */ __um(Icon);                                         // 0x0018   (0x0030)  
 };
 
 /// Struct /Script/DBDUIViewsMobile.MatchConfigOptionUIData
@@ -635,9 +635,9 @@ struct FMatchConfigOptionUIData
 { 
 	int32_t                                            ID;                                                         // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1468) /* FString */               __um(StringId);                                             // 0x0008   (0x0010)  
-	SDK_UNDEFINED(24,1469) /* FText */                 __um(OptionName);                                           // 0x0018   (0x0018)  
-	SDK_UNDEFINED(48,1470) /* TWeakObjectPtr<UPaperSprite*> */ __um(OptionIcon);                                   // 0x0030   (0x0030)  
+	SDK_UNDEFINED(16,1493) /* FString */               __um(StringId);                                             // 0x0008   (0x0010)  
+	SDK_UNDEFINED(24,1494) /* FText */                 __um(OptionName);                                           // 0x0018   (0x0018)  
+	SDK_UNDEFINED(48,1495) /* TWeakObjectPtr<UPaperSprite*> */ __um(OptionIcon);                                   // 0x0030   (0x0030)  
 	ECustomMatchOptions                                OptionType;                                                 // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0061   (0x0007)  MISSED
 };
@@ -646,8 +646,8 @@ struct FMatchConfigOptionUIData
 /// Size: 0x00B0 (0x000000 - 0x0000B0)
 struct FMatchConfigTabData
 { 
-	SDK_UNDEFINED(48,1471) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0030)  
-	SDK_UNDEFINED(48,1472) /* TWeakObjectPtr<UPaperSprite*> */ __um(TabIcon);                                      // 0x0030   (0x0030)  
-	SDK_UNDEFINED(80,1473) /* TMap<ECustomMatchOptions, int32_t> */ __um(DefaultOptionsID);                        // 0x0060   (0x0050)  
+	SDK_UNDEFINED(48,1496) /* TWeakObjectPtr<UClass*> */ __um(Widget);                                             // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1497) /* TWeakObjectPtr<UPaperSprite*> */ __um(TabIcon);                                      // 0x0030   (0x0030)  
+	SDK_UNDEFINED(80,1498) /* TMap<ECustomMatchOptions, int32_t> */ __um(DefaultOptionsID);                        // 0x0060   (0x0050)  
 };
 

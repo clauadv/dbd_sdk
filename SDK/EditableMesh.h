@@ -111,263 +111,263 @@ public:
 
 	/// Functions
 	// Function /Script/EditableMesh.EditableMesh.WeldVertices
-	// void WeldVertices(TArray<FVertexID>& VertexIDs, FVertexID& OutNewVertexID);                                           // [0x45ffa00] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void WeldVertices(TArray<FVertexID>& VertexIDs, FVertexID& OutNewVertexID);                                           // [0x4594780] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.TryToRemoveVertex
-	// void TryToRemoveVertex(FVertexID VertexID, bool& bOutWasVertexRemoved, FEdgeID& OutNewEdgeID);                        // [0x45ff8d0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TryToRemoveVertex(FVertexID VertexID, bool& bOutWasVertexRemoved, FEdgeID& OutNewEdgeID);                        // [0x4594650] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.TryToRemovePolygonEdge
-	// void TryToRemovePolygonEdge(FEdgeID EdgeID, bool& bOutWasEdgeRemoved, FPolygonID& OutNewPolygonID);                   // [0x45ff7a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TryToRemovePolygonEdge(FEdgeID EdgeID, bool& bOutWasEdgeRemoved, FPolygonID& OutNewPolygonID);                   // [0x4594520] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.TriangulatePolygons
-	// void TriangulatePolygons(TArray<FPolygonID>& PolygonIDs, TArray<FPolygonID>& OutNewTrianglePolygons);                 // [0x45ff680] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TriangulatePolygons(TArray<FPolygonID>& PolygonIDs, TArray<FPolygonID>& OutNewTrianglePolygons);                 // [0x4594400] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.TessellatePolygons
-	// void TessellatePolygons(TArray<FPolygonID>& PolygonIDs, ETriangleTessellationMode TriangleTessellationMode, TArray<FPolygonID>& OutNewPolygonIDs); // [0x45ff520] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void TessellatePolygons(TArray<FPolygonID>& PolygonIDs, ETriangleTessellationMode TriangleTessellationMode, TArray<FPolygonID>& OutNewPolygonIDs); // [0x45942a0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.StartModification
-	// void StartModification(EMeshModificationType MeshModificationType, EMeshTopologyChange MeshTopologyChange);           // [0x45ff450] Final|Native|Public|BlueprintCallable 
+	// void StartModification(EMeshModificationType MeshModificationType, EMeshTopologyChange MeshTopologyChange);           // [0x45941d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SplitPolygons
-	// void SplitPolygons(TArray<FPolygonToSplit>& PolygonsToSplit, TArray<FEdgeID>& OutNewEdgeIDs);                         // [0x45ff310] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SplitPolygons(TArray<FPolygonToSplit>& PolygonsToSplit, TArray<FEdgeID>& OutNewEdgeIDs);                         // [0x4594090] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SplitPolygonalMesh
-	// void SplitPolygonalMesh(FPlane& InPlane, TArray<FPolygonID>& PolygonIDs1, TArray<FPolygonID>& PolygonIDs2, TArray<FEdgeID>& BoundaryIDs); // [0x45ff140] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void SplitPolygonalMesh(FPlane& InPlane, TArray<FPolygonID>& PolygonIDs1, TArray<FPolygonID>& PolygonIDs2, TArray<FEdgeID>& BoundaryIDs); // [0x4593ec0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SplitEdge
-	// void SplitEdge(FEdgeID EdgeID, TArray<float>& Splits, TArray<FVertexID>& OutNewVertexIDs);                            // [0x45fefe0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SplitEdge(FEdgeID EdgeID, TArray<float>& Splits, TArray<FVertexID>& OutNewVertexIDs);                            // [0x4593d60] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetVerticesCornerSharpness
-	// void SetVerticesCornerSharpness(TArray<FVertexID>& VertexIDs, TArray<float>& VerticesNewCornerSharpness);             // [0x45feec0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetVerticesCornerSharpness(TArray<FVertexID>& VertexIDs, TArray<float>& VerticesNewCornerSharpness);             // [0x4593c40] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetVerticesAttributes
-	// void SetVerticesAttributes(TArray<FAttributesForVertex>& AttributesForVertices);                                      // [0x45fedf0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetVerticesAttributes(TArray<FAttributesForVertex>& AttributesForVertices);                                      // [0x4593b70] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetVertexInstancesAttributes
-	// void SetVertexInstancesAttributes(TArray<FAttributesForVertexInstance>& AttributesForVertexInstances);                // [0x45fed20] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetVertexInstancesAttributes(TArray<FAttributesForVertexInstance>& AttributesForVertexInstances);                // [0x4593aa0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetTextureCoordinateCount
-	// void SetTextureCoordinateCount(int32_t NumTexCoords);                                                                 // [0x45fec90] Final|Native|Public|BlueprintCallable 
+	// void SetTextureCoordinateCount(int32_t NumTexCoords);                                                                 // [0x4593a10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetSubdivisionCount
-	// void SetSubdivisionCount(int32_t NewSubdivisionCount);                                                                // [0x45fec00] Final|Native|Public|BlueprintCallable 
+	// void SetSubdivisionCount(int32_t NewSubdivisionCount);                                                                // [0x4593980] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetPolygonsVertexAttributes
-	// void SetPolygonsVertexAttributes(TArray<FVertexAttributesForPolygon>& VertexAttributesForPolygons);                   // [0x45fea70] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetPolygonsVertexAttributes(TArray<FVertexAttributesForPolygon>& VertexAttributesForPolygons);                   // [0x45937f0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetEdgesHardnessAutomatically
-	// void SetEdgesHardnessAutomatically(TArray<FEdgeID>& EdgeIDs, float MaxDotProductForSoftEdge);                         // [0x45fe970] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetEdgesHardnessAutomatically(TArray<FEdgeID>& EdgeIDs, float MaxDotProductForSoftEdge);                         // [0x45936f0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetEdgesHardness
-	// void SetEdgesHardness(TArray<FEdgeID>& EdgeIDs, TArray<bool>& EdgesNewIsHard);                                        // [0x45fe850] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetEdgesHardness(TArray<FEdgeID>& EdgeIDs, TArray<bool>& EdgesNewIsHard);                                        // [0x45935d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetEdgesCreaseSharpness
-	// void SetEdgesCreaseSharpness(TArray<FEdgeID>& EdgeIDs, TArray<float>& EdgesNewCreaseSharpness);                       // [0x45fe730] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetEdgesCreaseSharpness(TArray<FEdgeID>& EdgeIDs, TArray<float>& EdgesNewCreaseSharpness);                       // [0x45934b0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetEdgesAttributes
-	// void SetEdgesAttributes(TArray<FAttributesForEdge>& AttributesForEdges);                                              // [0x45fe660] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetEdgesAttributes(TArray<FAttributesForEdge>& AttributesForEdges);                                              // [0x45933e0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetAllowUndo
-	// void SetAllowUndo(bool bInAllowUndo);                                                                                 // [0x45fe5d0] Final|Native|Public|BlueprintCallable 
+	// void SetAllowUndo(bool bInAllowUndo);                                                                                 // [0x4593350] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetAllowSpatialDatabase
-	// void SetAllowSpatialDatabase(bool bInAllowSpatialDatabase);                                                           // [0x45fe540] Final|Native|Public|BlueprintCallable 
+	// void SetAllowSpatialDatabase(bool bInAllowSpatialDatabase);                                                           // [0x45932c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SetAllowCompact
-	// void SetAllowCompact(bool bInAllowCompact);                                                                           // [0x45fe4b0] Final|Native|Public|BlueprintCallable 
+	// void SetAllowCompact(bool bInAllowCompact);                                                                           // [0x4593230] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane
-	// void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(FPlane& InPlane, TArray<FPolygonID>& OutPolygons);  // [0x45fe3b0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingPlane(FPlane& InPlane, TArray<FPolygonID>& OutPolygons);  // [0x4593130] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment
-	// void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(FVector LineSegmentStart, FVector LineSegmentEnd, TArray<FPolygonID>& OutPolygons); // [0x45fe260] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// void SearchSpatialDatabaseForPolygonsPotentiallyIntersectingLineSegment(FVector LineSegmentStart, FVector LineSegmentEnd, TArray<FPolygonID>& OutPolygons); // [0x4592fe0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.SearchSpatialDatabaseForPolygonsInVolume
-	// void SearchSpatialDatabaseForPolygonsInVolume(TArray<FPlane>& Planes, TArray<FPolygonID>& OutPolygons);               // [0x45fe140] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void SearchSpatialDatabaseForPolygonsInVolume(TArray<FPlane>& Planes, TArray<FPolygonID>& OutPolygons);               // [0x4592ec0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.RevertInstance
-	// class UEditableMesh* RevertInstance();                                                                                // [0x45fe110] Final|Native|Public|BlueprintCallable 
+	// class UEditableMesh* RevertInstance();                                                                                // [0x4592e90] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.Revert
-	// void Revert();                                                                                                        // [0x45fe020] Final|Native|Public|BlueprintCallable 
+	// void Revert();                                                                                                        // [0x4592da0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.RebuildRenderMesh
-	// void RebuildRenderMesh();                                                                                             // [0x45fe0f0] Final|Native|Public|BlueprintCallable 
+	// void RebuildRenderMesh();                                                                                             // [0x4592e70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.QuadrangulateMesh
-	// void QuadrangulateMesh(TArray<FPolygonID>& OutNewPolygonIDs);                                                         // [0x45fe040] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void QuadrangulateMesh(TArray<FPolygonID>& OutNewPolygonIDs);                                                         // [0x4592dc0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.PropagateInstanceChanges
-	// void PropagateInstanceChanges();                                                                                      // [0x45fe020] Final|Native|Public|BlueprintCallable 
+	// void PropagateInstanceChanges();                                                                                      // [0x4592da0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.MoveVertices
-	// void MoveVertices(TArray<FVertexToMove>& VerticesToMove);                                                             // [0x45fdf70] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void MoveVertices(TArray<FVertexToMove>& VerticesToMove);                                                             // [0x4592cf0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.MakeVertexID
-	// FVertexID MakeVertexID(int32_t VertexIndex);                                                                          // [0x45fdef0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FVertexID MakeVertexID(int32_t VertexIndex);                                                                          // [0x4592c70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.MakePolygonID
-	// FPolygonID MakePolygonID(int32_t PolygonIndex);                                                                       // [0x45fdef0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FPolygonID MakePolygonID(int32_t PolygonIndex);                                                                       // [0x4592c70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.MakePolygonGroupID
-	// FPolygonGroupID MakePolygonGroupID(int32_t PolygonGroupIndex);                                                        // [0x45fdef0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FPolygonGroupID MakePolygonGroupID(int32_t PolygonGroupIndex);                                                        // [0x4592c70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.MakeEdgeID
-	// FEdgeID MakeEdgeID(int32_t EdgeIndex);                                                                                // [0x45fdef0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FEdgeID MakeEdgeID(int32_t EdgeIndex);                                                                                // [0x4592c70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.IsValidVertex
-	// bool IsValidVertex(FVertexID VertexID);                                                                               // [0x45fde60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidVertex(FVertexID VertexID);                                                                               // [0x4592be0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsValidPolygonGroup
-	// bool IsValidPolygonGroup(FPolygonGroupID PolygonGroupID);                                                             // [0x45fddd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidPolygonGroup(FPolygonGroupID PolygonGroupID);                                                             // [0x4592b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsValidPolygon
-	// bool IsValidPolygon(FPolygonID PolygonID);                                                                            // [0x45fdd40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidPolygon(FPolygonID PolygonID);                                                                            // [0x4592ac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsValidEdge
-	// bool IsValidEdge(FEdgeID EdgeID);                                                                                     // [0x45fdcb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsValidEdge(FEdgeID EdgeID);                                                                                     // [0x4592a30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsUndoAllowed
-	// bool IsUndoAllowed();                                                                                                 // [0x45fdc90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsUndoAllowed();                                                                                                 // [0x4592a10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsSpatialDatabaseAllowed
-	// bool IsSpatialDatabaseAllowed();                                                                                      // [0x45fdc70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSpatialDatabaseAllowed();                                                                                      // [0x45929f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsPreviewingSubdivisions
-	// bool IsPreviewingSubdivisions();                                                                                      // [0x45fdc40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPreviewingSubdivisions();                                                                                      // [0x45929c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsOrphanedVertex
-	// bool IsOrphanedVertex(FVertexID VertexID);                                                                            // [0x45fdbb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOrphanedVertex(FVertexID VertexID);                                                                            // [0x4592930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsCompactAllowed
-	// bool IsCompactAllowed();                                                                                              // [0x45fdb90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCompactAllowed();                                                                                              // [0x4592910] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsCommittedAsInstance
-	// bool IsCommittedAsInstance();                                                                                         // [0x45fdb60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCommittedAsInstance();                                                                                         // [0x45928e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsCommitted
-	// bool IsCommitted();                                                                                                   // [0x45fdb30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCommitted();                                                                                                   // [0x45928b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.IsBeingModified
-	// bool IsBeingModified();                                                                                               // [0x454cb10] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBeingModified();                                                                                               // [0x44e1890] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.InvalidVertexID
-	// FVertexID InvalidVertexID();                                                                                          // [0x45fdb10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FVertexID InvalidVertexID();                                                                                          // [0x4592890] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.InvalidPolygonID
-	// FPolygonID InvalidPolygonID();                                                                                        // [0x45fdaf0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FPolygonID InvalidPolygonID();                                                                                        // [0x4592870] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.InvalidPolygonGroupID
-	// FPolygonGroupID InvalidPolygonGroupID();                                                                              // [0x45fdad0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FPolygonGroupID InvalidPolygonGroupID();                                                                              // [0x4592850] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.InvalidEdgeID
-	// FEdgeID InvalidEdgeID();                                                                                              // [0x45fdab0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FEdgeID InvalidEdgeID();                                                                                              // [0x4592830] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/EditableMesh.EditableMesh.InsetPolygons
-	// void InsetPolygons(TArray<FPolygonID>& PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, EInsetPolygonsMode Mode, TArray<FPolygonID>& OutNewCenterPolygonIDs, TArray<FPolygonID>& OutNewSidePolygonIDs); // [0x45fd870] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InsetPolygons(TArray<FPolygonID>& PolygonIDs, float InsetFixedDistance, float InsetProgressTowardCenter, EInsetPolygonsMode Mode, TArray<FPolygonID>& OutNewCenterPolygonIDs, TArray<FPolygonID>& OutNewSidePolygonIDs); // [0x45925f0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.InsertEdgeLoop
-	// void InsertEdgeLoop(FEdgeID EdgeID, TArray<float>& Splits, TArray<FEdgeID>& OutNewEdgeIDs);                           // [0x45fd710] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void InsertEdgeLoop(FEdgeID EdgeID, TArray<float>& Splits, TArray<FEdgeID>& OutNewEdgeIDs);                           // [0x4592490] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.InitializeAdapters
-	// void InitializeAdapters();                                                                                            // [0x45fd6f0] Final|Native|Public|BlueprintCallable 
+	// void InitializeAdapters();                                                                                            // [0x4592470] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexPairEdge
-	// FEdgeID GetVertexPairEdge(FVertexID VertexID, FVertexID NextVertexID, bool& bOutEdgeWindingIsReversed);               // [0x45fd5c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FEdgeID GetVertexPairEdge(FVertexID VertexID, FVertexID NextVertexID, bool& bOutEdgeWindingIsReversed);               // [0x4592340] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexInstanceVertex
-	// FVertexID GetVertexInstanceVertex(FVertexInstanceID VertexInstanceID);                                                // [0x45fd520] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexID GetVertexInstanceVertex(FVertexInstanceID VertexInstanceID);                                                // [0x45922a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexInstanceCount
-	// int32_t GetVertexInstanceCount();                                                                                     // [0x45fd4f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVertexInstanceCount();                                                                                     // [0x4592270] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygons
-	// void GetVertexInstanceConnectedPolygons(FVertexInstanceID VertexInstanceID, TArray<FPolygonID>& OutConnectedPolygonIDs); // [0x45fd400] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexInstanceConnectedPolygons(FVertexInstanceID VertexInstanceID, TArray<FPolygonID>& OutConnectedPolygonIDs); // [0x4592180] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygonCount
-	// int32_t GetVertexInstanceConnectedPolygonCount(FVertexInstanceID VertexInstanceID);                                   // [0x45fd370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVertexInstanceConnectedPolygonCount(FVertexInstanceID VertexInstanceID);                                   // [0x45920f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexInstanceConnectedPolygon
-	// FPolygonID GetVertexInstanceConnectedPolygon(FVertexInstanceID VertexInstanceID, int32_t ConnectedPolygonNumber);     // [0x45fd290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonID GetVertexInstanceConnectedPolygon(FVertexInstanceID VertexInstanceID, int32_t ConnectedPolygonNumber);     // [0x4592010] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexCount
-	// int32_t GetVertexCount();                                                                                             // [0x45fd260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVertexCount();                                                                                             // [0x4591fe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexConnectedPolygons
-	// void GetVertexConnectedPolygons(FVertexID VertexID, TArray<FPolygonID>& OutConnectedPolygonIDs);                      // [0x45fd170] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexConnectedPolygons(FVertexID VertexID, TArray<FPolygonID>& OutConnectedPolygonIDs);                      // [0x4591ef0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexConnectedEdges
-	// void GetVertexConnectedEdges(FVertexID VertexID, TArray<FEdgeID>& OutConnectedEdgeIDs);                               // [0x45fd080] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexConnectedEdges(FVertexID VertexID, TArray<FEdgeID>& OutConnectedEdgeIDs);                               // [0x4591e00] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexConnectedEdgeCount
-	// int32_t GetVertexConnectedEdgeCount(FVertexID VertexID);                                                              // [0x45fcff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetVertexConnectedEdgeCount(FVertexID VertexID);                                                              // [0x4591d70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexConnectedEdge
-	// FEdgeID GetVertexConnectedEdge(FVertexID VertexID, int32_t ConnectedEdgeNumber);                                      // [0x45fcf10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FEdgeID GetVertexConnectedEdge(FVertexID VertexID, int32_t ConnectedEdgeNumber);                                      // [0x4591c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetVertexAdjacentVertices
-	// void GetVertexAdjacentVertices(FVertexID VertexID, TArray<FVertexID>& OutAdjacentVertexIDs);                          // [0x45fce20] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetVertexAdjacentVertices(FVertexID VertexID, TArray<FVertexID>& OutAdjacentVertexIDs);                          // [0x4591ba0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetTextureCoordinateCount
-	// int32_t GetTextureCoordinateCount();                                                                                  // [0x45fcdf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTextureCoordinateCount();                                                                                  // [0x4591b70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetSubdivisionLimitData
-	// FSubdivisionLimitData GetSubdivisionLimitData();                                                                      // [0x45fcdb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FSubdivisionLimitData GetSubdivisionLimitData();                                                                      // [0x4591b30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetSubdivisionCount
-	// int32_t GetSubdivisionCount();                                                                                        // [0x45fcd80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSubdivisionCount();                                                                                        // [0x4591b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonTriangulatedTriangleCount
-	// int32_t GetPolygonTriangulatedTriangleCount(FPolygonID PolygonID);                                                    // [0x45fccf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonTriangulatedTriangleCount(FPolygonID PolygonID);                                                    // [0x4591a70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonTriangulatedTriangle
-	// FTriangleID GetPolygonTriangulatedTriangle(FPolygonID PolygonID, int32_t PolygonTriangleNumber);                      // [0x45fcc10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FTriangleID GetPolygonTriangulatedTriangle(FPolygonID PolygonID, int32_t PolygonTriangleNumber);                      // [0x4591990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterVertices
-	// void GetPolygonPerimeterVertices(FPolygonID PolygonID, TArray<FVertexID>& OutPolygonPerimeterVertexIDs);              // [0x45fcb20] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonPerimeterVertices(FPolygonID PolygonID, TArray<FVertexID>& OutPolygonPerimeterVertexIDs);              // [0x45918a0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstances
-	// void GetPolygonPerimeterVertexInstances(FPolygonID PolygonID, TArray<FVertexInstanceID>& OutPolygonPerimeterVertexInstanceIDs); // [0x45fca30] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonPerimeterVertexInstances(FPolygonID PolygonID, TArray<FVertexInstanceID>& OutPolygonPerimeterVertexInstanceIDs); // [0x45917b0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterVertexInstance
-	// FVertexInstanceID GetPolygonPerimeterVertexInstance(FPolygonID PolygonID, int32_t PolygonVertexNumber);               // [0x45fc950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexInstanceID GetPolygonPerimeterVertexInstance(FPolygonID PolygonID, int32_t PolygonVertexNumber);               // [0x45916d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterVertexCount
-	// int32_t GetPolygonPerimeterVertexCount(FPolygonID PolygonID);                                                         // [0x45fc6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonPerimeterVertexCount(FPolygonID PolygonID);                                                         // [0x4591470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterVertex
-	// FVertexID GetPolygonPerimeterVertex(FPolygonID PolygonID, int32_t PolygonVertexNumber);                               // [0x45fc870] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexID GetPolygonPerimeterVertex(FPolygonID PolygonID, int32_t PolygonVertexNumber);                               // [0x45915f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterEdges
-	// void GetPolygonPerimeterEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutPolygonPerimeterEdgeIDs);                     // [0x45fc780] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonPerimeterEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutPolygonPerimeterEdgeIDs);                     // [0x4591500] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterEdgeCount
-	// int32_t GetPolygonPerimeterEdgeCount(FPolygonID PolygonID);                                                           // [0x45fc6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonPerimeterEdgeCount(FPolygonID PolygonID);                                                           // [0x4591470] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonPerimeterEdge
-	// FEdgeID GetPolygonPerimeterEdge(FPolygonID PolygonID, int32_t PerimeterEdgeNumber, bool& bOutEdgeWindingIsReversedForPolygon); // [0x45fc5c0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// FEdgeID GetPolygonPerimeterEdge(FPolygonID PolygonID, int32_t PerimeterEdgeNumber, bool& bOutEdgeWindingIsReversedForPolygon); // [0x4591340] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonInGroup
-	// FPolygonID GetPolygonInGroup(FPolygonGroupID PolygonGroupID, int32_t PolygonNumber);                                  // [0x45fc4e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonID GetPolygonInGroup(FPolygonGroupID PolygonGroupID, int32_t PolygonNumber);                                  // [0x4591260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonGroupCount
-	// int32_t GetPolygonGroupCount();                                                                                       // [0x45fc4b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonGroupCount();                                                                                       // [0x4591230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonCountInGroup
-	// int32_t GetPolygonCountInGroup(FPolygonGroupID PolygonGroupID);                                                       // [0x45fc420] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonCountInGroup(FPolygonGroupID PolygonGroupID);                                                       // [0x45911a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonCount
-	// int32_t GetPolygonCount();                                                                                            // [0x45fc3f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPolygonCount();                                                                                            // [0x4591170] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetPolygonAdjacentPolygons
-	// void GetPolygonAdjacentPolygons(FPolygonID PolygonID, TArray<FPolygonID>& OutAdjacentPolygons);                       // [0x45fc300] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetPolygonAdjacentPolygons(FPolygonID PolygonID, TArray<FPolygonID>& OutAdjacentPolygons);                       // [0x4591080] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetGroupForPolygon
-	// FPolygonGroupID GetGroupForPolygon(FPolygonID PolygonID);                                                             // [0x45fc260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonGroupID GetGroupForPolygon(FPolygonID PolygonID);                                                             // [0x4590fe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetFirstValidPolygonGroup
-	// FPolygonGroupID GetFirstValidPolygonGroup();                                                                          // [0x45fc220] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonGroupID GetFirstValidPolygonGroup();                                                                          // [0x4590fa0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeVertices
-	// void GetEdgeVertices(FEdgeID EdgeID, FVertexID& OutEdgeVertexID0, FVertexID& OutEdgeVertexID1);                       // [0x45fc0f0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetEdgeVertices(FEdgeID EdgeID, FVertexID& OutEdgeVertexID0, FVertexID& OutEdgeVertexID1);                       // [0x4590e70] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeVertex
-	// FVertexID GetEdgeVertex(FEdgeID EdgeID, int32_t EdgeVertexNumber);                                                    // [0x45fc010] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FVertexID GetEdgeVertex(FEdgeID EdgeID, int32_t EdgeVertexNumber);                                                    // [0x4590d90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeThatConnectsVertices
-	// FEdgeID GetEdgeThatConnectsVertices(FVertexID VertexID0, FVertexID VertexID1);                                        // [0x45fbf30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FEdgeID GetEdgeThatConnectsVertices(FVertexID VertexID0, FVertexID VertexID1);                                        // [0x4590cb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeLoopElements
-	// void GetEdgeLoopElements(FEdgeID EdgeID, TArray<FEdgeID>& EdgeLoopIDs);                                               // [0x45fbe40] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetEdgeLoopElements(FEdgeID EdgeID, TArray<FEdgeID>& EdgeLoopIDs);                                               // [0x4590bc0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeCount
-	// int32_t GetEdgeCount();                                                                                               // [0x45fbe10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetEdgeCount();                                                                                               // [0x4590b90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeConnectedPolygons
-	// void GetEdgeConnectedPolygons(FEdgeID EdgeID, TArray<FPolygonID>& OutConnectedPolygonIDs);                            // [0x45fbd20] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void GetEdgeConnectedPolygons(FEdgeID EdgeID, TArray<FPolygonID>& OutConnectedPolygonIDs);                            // [0x4590aa0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeConnectedPolygonCount
-	// int32_t GetEdgeConnectedPolygonCount(FEdgeID EdgeID);                                                                 // [0x45fbc90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetEdgeConnectedPolygonCount(FEdgeID EdgeID);                                                                 // [0x4590a10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GetEdgeConnectedPolygon
-	// FPolygonID GetEdgeConnectedPolygon(FEdgeID EdgeID, int32_t ConnectedPolygonNumber);                                   // [0x45fbbb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FPolygonID GetEdgeConnectedPolygon(FEdgeID EdgeID, int32_t ConnectedPolygonNumber);                                   // [0x4590930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.GeneratePolygonTangentsAndNormals
-	// void GeneratePolygonTangentsAndNormals(TArray<FPolygonID>& PolygonIDs);                                               // [0x45fbb00] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void GeneratePolygonTangentsAndNormals(TArray<FPolygonID>& PolygonIDs);                                               // [0x4590880] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.FlipPolygons
-	// void FlipPolygons(TArray<FPolygonID>& PolygonIDs);                                                                    // [0x45fba50] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void FlipPolygons(TArray<FPolygonID>& PolygonIDs);                                                                    // [0x45907d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.FindPolygonPerimeterVertexNumberForVertex
-	// int32_t FindPolygonPerimeterVertexNumberForVertex(FPolygonID PolygonID, FVertexID VertexID);                          // [0x45fb970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindPolygonPerimeterVertexNumberForVertex(FPolygonID PolygonID, FVertexID VertexID);                          // [0x45906f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.FindPolygonPerimeterEdgeNumberForVertices
-	// int32_t FindPolygonPerimeterEdgeNumberForVertices(FPolygonID PolygonID, FVertexID EdgeVertexID0, FVertexID EdgeVertexID1); // [0x45fb850] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t FindPolygonPerimeterEdgeNumberForVertices(FPolygonID PolygonID, FVertexID EdgeVertexID0, FVertexID EdgeVertexID1); // [0x45905d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.FindPolygonLoop
-	// void FindPolygonLoop(FEdgeID EdgeID, TArray<FEdgeID>& OutEdgeLoopEdgeIDs, TArray<FEdgeID>& OutFlippedEdgeIDs, TArray<FEdgeID>& OutReversedEdgeIDPathToTake, TArray<FPolygonID>& OutPolygonIDsToSplit); // [0x45fb630] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void FindPolygonLoop(FEdgeID EdgeID, TArray<FEdgeID>& OutEdgeLoopEdgeIDs, TArray<FEdgeID>& OutFlippedEdgeIDs, TArray<FEdgeID>& OutReversedEdgeIDPathToTake, TArray<FPolygonID>& OutPolygonIDsToSplit); // [0x45903b0] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.ExtrudePolygons
-	// void ExtrudePolygons(TArray<FPolygonID>& Polygons, float ExtrudeDistance, bool bKeepNeighborsTogether, TArray<FPolygonID>& OutNewExtrudedFrontPolygons); // [0x45fb470] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ExtrudePolygons(TArray<FPolygonID>& Polygons, float ExtrudeDistance, bool bKeepNeighborsTogether, TArray<FPolygonID>& OutNewExtrudedFrontPolygons); // [0x45901f0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.ExtendVertices
-	// void ExtendVertices(TArray<FVertexID>& VertexIDs, bool bOnlyExtendClosestEdge, FVector ReferencePosition, TArray<FVertexID>& OutNewExtendedVertexIDs); // [0x45fb2c0] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ExtendVertices(TArray<FVertexID>& VertexIDs, bool bOnlyExtendClosestEdge, FVector ReferencePosition, TArray<FVertexID>& OutNewExtendedVertexIDs); // [0x4590040] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.ExtendEdges
-	// void ExtendEdges(TArray<FEdgeID>& EdgeIDs, bool bWeldNeighbors, TArray<FEdgeID>& OutNewExtendedEdgeIDs);              // [0x45fb160] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ExtendEdges(TArray<FEdgeID>& EdgeIDs, bool bWeldNeighbors, TArray<FEdgeID>& OutNewExtendedEdgeIDs);              // [0x458fee0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.EndModification
-	// void EndModification(bool bFromUndo);                                                                                 // [0x45fb0d0] Final|Native|Public|BlueprintCallable 
+	// void EndModification(bool bFromUndo);                                                                                 // [0x458fe50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeleteVertexInstances
-	// void DeleteVertexInstances(TArray<FVertexInstanceID>& VertexInstanceIDsToDelete, bool bDeleteOrphanedVertices);       // [0x45fafd0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteVertexInstances(TArray<FVertexInstanceID>& VertexInstanceIDsToDelete, bool bDeleteOrphanedVertices);       // [0x458fd50] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeleteVertexAndConnectedEdgesAndPolygons
-	// void DeleteVertexAndConnectedEdgesAndPolygons(FVertexID VertexID, bool bDeleteOrphanedEdges, bool bDeleteOrphanedVertices, bool bDeleteOrphanedVertexInstances, bool bDeleteEmptyPolygonGroups); // [0x45fae00] Final|Native|Public|BlueprintCallable 
+	// void DeleteVertexAndConnectedEdgesAndPolygons(FVertexID VertexID, bool bDeleteOrphanedEdges, bool bDeleteOrphanedVertices, bool bDeleteOrphanedVertexInstances, bool bDeleteEmptyPolygonGroups); // [0x458fb80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeletePolygons
-	// void DeletePolygons(TArray<FPolygonID>& PolygonIDsToDelete, bool bDeleteOrphanedEdges, bool bDeleteOrphanedVertices, bool bDeleteOrphanedVertexInstances, bool bDeleteEmptyPolygonGroups); // [0x45fac00] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeletePolygons(TArray<FPolygonID>& PolygonIDsToDelete, bool bDeleteOrphanedEdges, bool bDeleteOrphanedVertices, bool bDeleteOrphanedVertexInstances, bool bDeleteEmptyPolygonGroups); // [0x458f980] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeletePolygonGroups
-	// void DeletePolygonGroups(TArray<FPolygonGroupID>& PolygonGroupIDs);                                                   // [0x45fab50] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeletePolygonGroups(TArray<FPolygonGroupID>& PolygonGroupIDs);                                                   // [0x458f8d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeleteOrphanVertices
-	// void DeleteOrphanVertices(TArray<FVertexID>& VertexIDsToDelete);                                                      // [0x45faaa0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteOrphanVertices(TArray<FVertexID>& VertexIDsToDelete);                                                      // [0x458f820] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeleteEdges
-	// void DeleteEdges(TArray<FEdgeID>& EdgeIDsToDelete, bool bDeleteOrphanedVertices);                                     // [0x45fa9a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void DeleteEdges(TArray<FEdgeID>& EdgeIDsToDelete, bool bDeleteOrphanedVertices);                                     // [0x458f720] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.DeleteEdgeAndConnectedPolygons
-	// void DeleteEdgeAndConnectedPolygons(FEdgeID EdgeID, bool bDeleteOrphanedEdges, bool bDeleteOrphanedVertices, bool bDeleteOrphanedVertexInstances, bool bDeleteEmptyPolygonGroups); // [0x45fa7d0] Final|Native|Public|BlueprintCallable 
+	// void DeleteEdgeAndConnectedPolygons(FEdgeID EdgeID, bool bDeleteOrphanedEdges, bool bDeleteOrphanedVertices, bool bDeleteOrphanedVertexInstances, bool bDeleteEmptyPolygonGroups); // [0x458f550] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreateVertices
-	// void CreateVertices(TArray<FVertexToCreate>& VerticesToCreate, TArray<FVertexID>& OutNewVertexIDs);                   // [0x45fa690] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateVertices(TArray<FVertexToCreate>& VerticesToCreate, TArray<FVertexID>& OutNewVertexIDs);                   // [0x458f410] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreateVertexInstances
-	// void CreateVertexInstances(TArray<FVertexInstanceToCreate>& VertexInstancesToCreate, TArray<FVertexInstanceID>& OutNewVertexInstanceIDs); // [0x45fa550] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateVertexInstances(TArray<FVertexInstanceToCreate>& VertexInstancesToCreate, TArray<FVertexInstanceID>& OutNewVertexInstanceIDs); // [0x458f2d0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreatePolygons
-	// void CreatePolygons(TArray<FPolygonToCreate>& PolygonsToCreate, TArray<FPolygonID>& OutNewPolygonIDs, TArray<FEdgeID>& OutNewEdgeIDs); // [0x45fa380] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreatePolygons(TArray<FPolygonToCreate>& PolygonsToCreate, TArray<FPolygonID>& OutNewPolygonIDs, TArray<FEdgeID>& OutNewEdgeIDs); // [0x458f100] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreatePolygonGroups
-	// void CreatePolygonGroups(TArray<FPolygonGroupToCreate>& PolygonGroupsToCreate, TArray<FPolygonGroupID>& OutNewPolygonGroupIDs); // [0x45fa240] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreatePolygonGroups(TArray<FPolygonGroupToCreate>& PolygonGroupsToCreate, TArray<FPolygonGroupID>& OutNewPolygonGroupIDs); // [0x458efc0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreateMissingPolygonPerimeterEdges
-	// void CreateMissingPolygonPerimeterEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutNewEdgeIDs);                        // [0x45fa150] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateMissingPolygonPerimeterEdges(FPolygonID PolygonID, TArray<FEdgeID>& OutNewEdgeIDs);                        // [0x458eed0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreateEmptyVertexRange
-	// void CreateEmptyVertexRange(int32_t NumVerticesToCreate, TArray<FVertexID>& OutNewVertexIDs);                         // [0x45fa060] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateEmptyVertexRange(int32_t NumVerticesToCreate, TArray<FVertexID>& OutNewVertexIDs);                         // [0x458ede0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.CreateEdges
-	// void CreateEdges(TArray<FEdgeToCreate>& EdgesToCreate, TArray<FEdgeID>& OutNewEdgeIDs);                               // [0x45f9f20] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void CreateEdges(TArray<FEdgeToCreate>& EdgesToCreate, TArray<FEdgeID>& OutNewEdgeIDs);                               // [0x458eca0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.ComputePolygonsSharedEdges
-	// void ComputePolygonsSharedEdges(TArray<FPolygonID>& PolygonIDs, TArray<FEdgeID>& OutSharedEdgeIDs);                   // [0x45f9e00] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// void ComputePolygonsSharedEdges(TArray<FPolygonID>& PolygonIDs, TArray<FEdgeID>& OutSharedEdgeIDs);                   // [0x458eb80] Final|Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.ComputePolygonPlane
-	// FPlane ComputePolygonPlane(FPolygonID PolygonID);                                                                     // [0x45f9d60] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FPlane ComputePolygonPlane(FPolygonID PolygonID);                                                                     // [0x458eae0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.ComputePolygonNormal
-	// FVector ComputePolygonNormal(FPolygonID PolygonID);                                                                   // [0x45f9cc0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector ComputePolygonNormal(FPolygonID PolygonID);                                                                   // [0x458ea40] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.ComputePolygonCenter
-	// FVector ComputePolygonCenter(FPolygonID PolygonID);                                                                   // [0x45f9c20] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector ComputePolygonCenter(FPolygonID PolygonID);                                                                   // [0x458e9a0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.ComputeBoundingBoxAndSphere
-	// FBoxSphereBounds ComputeBoundingBoxAndSphere();                                                                       // [0x45f9bd0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBoxSphereBounds ComputeBoundingBoxAndSphere();                                                                       // [0x458e950] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.ComputeBoundingBox
-	// FBox ComputeBoundingBox();                                                                                            // [0x45f9b80] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FBox ComputeBoundingBox();                                                                                            // [0x458e900] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/EditableMesh.EditableMesh.CommitInstance
-	// class UEditableMesh* CommitInstance(class UPrimitiveComponent* ComponentToInstanceTo);                                // [0x45f9ae0] Final|Native|Public|BlueprintCallable 
+	// class UEditableMesh* CommitInstance(class UPrimitiveComponent* ComponentToInstanceTo);                                // [0x458e860] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.Commit
-	// void Commit();                                                                                                        // [0x45f9ac0] Final|Native|Public|BlueprintCallable 
+	// void Commit();                                                                                                        // [0x458e840] Final|Native|Public|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.ChangePolygonsVertexInstances
-	// void ChangePolygonsVertexInstances(TArray<FChangeVertexInstancesForPolygon>& VertexInstancesForPolygons);             // [0x45f99a0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void ChangePolygonsVertexInstances(TArray<FChangeVertexInstancesForPolygon>& VertexInstancesForPolygons);             // [0x458e720] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.BevelPolygons
-	// void BevelPolygons(TArray<FPolygonID>& PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, TArray<FPolygonID>& OutNewCenterPolygonIDs, TArray<FPolygonID>& OutNewSidePolygonIDs); // [0x45f97b0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void BevelPolygons(TArray<FPolygonID>& PolygonIDs, float BevelFixedDistance, float BevelProgressTowardCenter, TArray<FPolygonID>& OutNewCenterPolygonIDs, TArray<FPolygonID>& OutNewSidePolygonIDs); // [0x458e530] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.AssignPolygonsToPolygonGroups
-	// void AssignPolygonsToPolygonGroups(TArray<FPolygonGroupForPolygon>& PolygonGroupForPolygons, bool bDeleteOrphanedPolygonGroups); // [0x45f96b0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void AssignPolygonsToPolygonGroups(TArray<FPolygonGroupForPolygon>& PolygonGroupForPolygons, bool bDeleteOrphanedPolygonGroups); // [0x458e430] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/EditableMesh.EditableMesh.AnyChangesToUndo
-	// bool AnyChangesToUndo();                                                                                              // [0x45f9680] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool AnyChangesToUndo();                                                                                              // [0x458e400] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/EditableMesh.EditableMeshFactory
@@ -379,7 +379,7 @@ public:
 
 	/// Functions
 	// Function /Script/EditableMesh.EditableMeshFactory.MakeEditableMesh
-	// class UEditableMesh* MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, int32_t LODIndex);               // [0x4603210] Final|Native|Static|Public|BlueprintCallable 
+	// class UEditableMesh* MakeEditableMesh(class UPrimitiveComponent* PrimitiveComponent, int32_t LODIndex);               // [0x4597f90] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/EditableMesh.EditableStaticMeshAdapter

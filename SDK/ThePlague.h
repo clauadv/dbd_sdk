@@ -23,7 +23,26 @@ public:
 
 	/// Functions
 	// Function /Script/ThePlague.CleanseSickness.OnCleanseComplete
-	// void OnCleanseComplete(class ADBDPlayer* Player);                                                                     // [0x5de9630] Final|Native|Private|BlueprintCallable 
+	// void OnCleanseComplete(class ADBDPlayer* Player);                                                                     // [0x5df88e0] Final|Native|Private|BlueprintCallable 
+};
+
+/// Class /Script/ThePlague.K15AnimInstance
+/// Size: 0x0010 (0x000610 - 0x000620)
+class UK15AnimInstance : public UKillerAnimInstance
+{ 
+public:
+	bool                                               _isChargingVomit;                                           // 0x0610   (0x0001)  
+	bool                                               _isSpewingVomit;                                            // 0x0611   (0x0001)  
+	bool                                               _isVomitCoolDownEnd;                                        // 0x0612   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0613   (0x0001)  MISSED
+	float                                              _pukeCharge;                                                // 0x0614   (0x0004)  
+	bool                                               _carryFPV;                                                  // 0x0618   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0619   (0x0007)  MISSED
+
+
+	/// Functions
+	// Function /Script/ThePlague.K15AnimInstance.VomitCoolDownEnd
+	// void VomitCoolDownEnd();                                                                                              // [0x5df8cd0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/ThePlague.PlagueSurvivorAnalyticsComponent
@@ -40,7 +59,7 @@ public:
 class USicknessSurvivorSubAnimInstance : public UBaseSurvivorAnimInstance
 { 
 public:
-	SDK_UNDEFINED(16,5196) /* FString */               __um(_vomitingEnteredStatEvent);                            // 0x0550   (0x0010)  
+	SDK_UNDEFINED(16,5586) /* FString */               __um(_vomitingEnteredStatEvent);                            // 0x0550   (0x0010)  
 	float                                              _hitByVomitTime;                                            // 0x0560   (0x0004)  
 	bool                                               _isSick;                                                    // 0x0564   (0x0001)  
 	bool                                               _isVomiting;                                                // 0x0565   (0x0001)  
@@ -68,7 +87,7 @@ public:
 /// Size: 0x0030 (0x0000B8 - 0x0000E8)
 struct FPlagueSurvivorAnalytics : FUniquelyIdentifiedAnalytic
 { 
-	SDK_UNDEFINED(16,5197) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5587) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
 	int32_t                                            BecomeInfectCount;                                          // 0x00C8   (0x0004)  
 	int32_t                                            RegularVomitHits;                                           // 0x00CC   (0x0004)  
 	int32_t                                            SuperVomitHits;                                             // 0x00D0   (0x0004)  

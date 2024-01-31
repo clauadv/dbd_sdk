@@ -21,6 +21,6 @@ public:
 struct FBaseSingleStructIndexAnalytics
 { 
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0000   (0x0008)  MISSED
-	SDK_UNDEFINED(16,3593) /* FString */               __um(SessionGuid);                                          // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,3684) /* FString */               __um(SessionGuid);                                          // 0x0008   (0x0010)  
 };
 

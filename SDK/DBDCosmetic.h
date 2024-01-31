@@ -23,7 +23,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCosmetic.DBDActorIndicator.Cosmetic_UpdateIndicatorActivationStatus
-	// void Cosmetic_UpdateIndicatorActivationStatus(bool IsActivated);                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateIndicatorActivationStatus(bool IsActivated);                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDCosmetic.DBDCosmeticModuleUtilities
@@ -35,9 +35,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCosmetic.DBDCosmeticModuleUtilities.GetCosmeticHelperActorsOfSurvivorByClass
-	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActorsOfSurvivorByClass(class ACamperPlayer* Survivor, class UClass* cosmeticHelperActorClassType); // [0x5024ea0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActorsOfSurvivorByClass(class ACamperPlayer* Survivor, class UClass* cosmeticHelperActorClassType); // [0x5002b20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DBDCosmetic.DBDCosmeticModuleUtilities.GetCosmeticHelperActorsOfSurvivor
-	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActorsOfSurvivor(class ACamperPlayer* Survivor);               // [0x5024dd0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActorsOfSurvivor(class ACamperPlayer* Survivor);               // [0x5002a50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/DBDCosmetic.SurvivorCosmeticHelperActor
@@ -50,21 +50,21 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.IsLocallyObserved
-	// bool IsLocallyObserved();                                                                                             // [0x5025450] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocallyObserved();                                                                                             // [0x50030d0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.GetSurvivor
-	// class ACamperPlayer* GetSurvivor();                                                                                   // [0x5025420] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetSurvivor();                                                                                   // [0x50030a0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.GetMaterialHelper
-	// class UMaterialHelper* GetMaterialHelper();                                                                           // [0x50253f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UMaterialHelper* GetMaterialHelper();                                                                           // [0x5003070] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.GetCustomizedSkeletalMesh
-	// class UCustomizedSkeletalMesh* GetCustomizedSkeletalMesh();                                                           // [0x50253c0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UCustomizedSkeletalMesh* GetCustomizedSkeletalMesh();                                                           // [0x5003040] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.GetAudioComponent
-	// class UAkComponent* GetAudioComponent();                                                                              // [0x5025390] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UAkComponent* GetAudioComponent();                                                                              // [0x5003010] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.Cosmetic_OnSurvivorLinked
-	// void Cosmetic_OnSurvivorLinked(class ACamperPlayer* survivorLinked);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSurvivorLinked(class ACamperPlayer* survivorLinked);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.Cosmetic_OnIsLocallyObservingSurvivorChanged
-	// void Cosmetic_OnIsLocallyObservingSurvivorChanged(bool isLocallyObservingSurvivor);                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsLocallyObservingSurvivorChanged(bool isLocallyObservingSurvivor);                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperActor.Cosmetic_OnIsGettingMoriedStatusChanged
-	// void Cosmetic_OnIsGettingMoriedStatusChanged(bool isGettingMoried);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsGettingMoriedStatusChanged(bool isGettingMoried);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/DBDCosmetic.SurvivorCosmeticHelperSpawnerComponent
@@ -79,9 +79,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperSpawnerComponent.GetCosmeticHelperActors
-	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActors();                                                      // [0x5025880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActors();                                                      // [0x5003500] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/DBDCosmetic.SurvivorCosmeticHelperSpawnerComponent.GetCosmeticHelperActorByClass
-	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActorByClass(class UClass* cosmeticHelperActorClassType);      // [0x50257a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<ASurvivorCosmeticHelperActor*> GetCosmeticHelperActorByClass(class UClass* cosmeticHelperActorClassType);      // [0x5003420] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/DBDCosmetic.SurvivorCosmeticHelperActorSpawnInfo
@@ -90,6 +90,6 @@ struct FSurvivorCosmeticHelperActorSpawnInfo : FDBDTableRowBase
 { 
 	FGameplayTag                                       KillerPresenceTag;                                          // 0x0008   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(48,3603) /* TWeakObjectPtr<UClass*> */ __um(SurvivorCosmeticActorClass);                         // 0x0018   (0x0030)  
+	SDK_UNDEFINED(48,3693) /* TWeakObjectPtr<UClass*> */ __um(SurvivorCosmeticActorClass);                         // 0x0018   (0x0030)  
 };
 

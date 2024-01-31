@@ -53,7 +53,7 @@ public:
 
 	/// Functions
 	// Function /Script/CinematicCamera.CameraRig_Rail.GetRailSplineComponent
-	// class USplineComponent* GetRailSplineComponent();                                                                     // [0x5c43a40] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// class USplineComponent* GetRailSplineComponent();                                                                     // [0x5c4fda0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/CinematicCamera.CameraLookatTrackingSettings
@@ -65,7 +65,7 @@ struct FCameraLookatTrackingSettings
 	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              LookAtTrackingInterpSpeed;                                  // 0x0004   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0008   (0x0010)  MISSED
-	SDK_UNDEFINED(48,4087) /* TWeakObjectPtr<AActor*> */ __um(ActorToTrack);                                       // 0x0018   (0x0030)  
+	SDK_UNDEFINED(48,4181) /* TWeakObjectPtr<AActor*> */ __um(ActorToTrack);                                       // 0x0018   (0x0030)  
 	FVector                                            RelativeOffset;                                             // 0x0048   (0x000C)  
 	bool                                               bAllowRoll : 1;                                             // 0x0054:0 (0x0001)  
 	unsigned char                                      UnknownData02_6[0x3];                                       // 0x0055   (0x0003)  MISSED
@@ -82,7 +82,7 @@ public:
 
 	/// Functions
 	// Function /Script/CinematicCamera.CineCameraActor.GetCineCameraComponent
-	// class UCineCameraComponent* GetCineCameraComponent();                                                                 // [0x76ad5b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCineCameraComponent* GetCineCameraComponent();                                                                 // [0x76bd330] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/CinematicCamera.CameraFilmbackSettings
@@ -110,7 +110,7 @@ struct FCameraLensSettings
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FCameraTrackingFocusSettings
 { 
-	SDK_UNDEFINED(48,4088) /* TWeakObjectPtr<AActor*> */ __um(ActorToTrack);                                       // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,4182) /* TWeakObjectPtr<AActor*> */ __um(ActorToTrack);                                       // 0x0000   (0x0030)  
 	FVector                                            RelativeOffset;                                             // 0x0030   (0x000C)  
 	bool                                               bDrawDebugTrackingFocusPoint : 1;                           // 0x003C:0 (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x003D   (0x0003)  MISSED
@@ -138,7 +138,7 @@ struct FCameraFocusSettings
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FNamedFilmbackPreset
 { 
-	SDK_UNDEFINED(16,4089) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,4183) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	FCameraFilmbackSettings                            FilmbackSettings;                                           // 0x0010   (0x000C)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x001C   (0x0004)  MISSED
 };
@@ -147,7 +147,7 @@ struct FNamedFilmbackPreset
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FNamedLensPreset
 { 
-	SDK_UNDEFINED(16,4090) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,4184) /* FString */               __um(Name);                                                 // 0x0000   (0x0010)  
 	FCameraLensSettings                                LensSettings;                                               // 0x0010   (0x0018)  
 };
 
@@ -166,33 +166,33 @@ public:
 	unsigned char                                      UnknownData00_5[0xC];                                       // 0x088C   (0x000C)  MISSED
 	TArray<FNamedFilmbackPreset>                       FilmbackPresets;                                            // 0x0898   (0x0010)  
 	TArray<FNamedLensPreset>                           LensPresets;                                                // 0x08A8   (0x0010)  
-	SDK_UNDEFINED(16,4091) /* FString */               __um(DefaultFilmbackPresetName);                            // 0x08B8   (0x0010)  
-	SDK_UNDEFINED(16,4092) /* FString */               __um(DefaultFilmbackPreset);                                // 0x08C8   (0x0010)  
-	SDK_UNDEFINED(16,4093) /* FString */               __um(DefaultLensPresetName);                                // 0x08D8   (0x0010)  
+	SDK_UNDEFINED(16,4185) /* FString */               __um(DefaultFilmbackPresetName);                            // 0x08B8   (0x0010)  
+	SDK_UNDEFINED(16,4186) /* FString */               __um(DefaultFilmbackPreset);                                // 0x08C8   (0x0010)  
+	SDK_UNDEFINED(16,4187) /* FString */               __um(DefaultLensPresetName);                                // 0x08D8   (0x0010)  
 	float                                              DefaultLensFocalLength;                                     // 0x08E8   (0x0004)  
 	float                                              DefaultLensFStop;                                           // 0x08EC   (0x0004)  
 
 
 	/// Functions
 	// Function /Script/CinematicCamera.CineCameraComponent.SetLensPresetByName
-	// void SetLensPresetByName(FString InPresetName);                                                                       // [0x76adad0] Final|Native|Public|BlueprintCallable 
+	// void SetLensPresetByName(FString InPresetName);                                                                       // [0x76bd850] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CinematicCamera.CineCameraComponent.SetFilmbackPresetByName
-	// void SetFilmbackPresetByName(FString InPresetName);                                                                   // [0x76ada30] Final|Native|Public|BlueprintCallable 
+	// void SetFilmbackPresetByName(FString InPresetName);                                                                   // [0x76bd7b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CinematicCamera.CineCameraComponent.SetCurrentFocalLength
-	// void SetCurrentFocalLength(float InFocalLength);                                                                      // [0x76ad9b0] Final|Native|Public|BlueprintCallable 
+	// void SetCurrentFocalLength(float InFocalLength);                                                                      // [0x76bd730] Final|Native|Public|BlueprintCallable 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetVerticalFieldOfView
-	// float GetVerticalFieldOfView();                                                                                       // [0x76ad980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetVerticalFieldOfView();                                                                                       // [0x76bd700] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetLensPresetsCopy
-	// TArray<FNamedLensPreset> GetLensPresetsCopy();                                                                        // [0x76ad8a0] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FNamedLensPreset> GetLensPresetsCopy();                                                                        // [0x76bd620] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetLensPresetName
-	// FString GetLensPresetName();                                                                                          // [0x76ad820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetLensPresetName();                                                                                          // [0x76bd5a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetHorizontalFieldOfView
-	// float GetHorizontalFieldOfView();                                                                                     // [0x76ad7f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHorizontalFieldOfView();                                                                                     // [0x76bd570] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetFilmbackPresetsCopy
-	// TArray<FNamedFilmbackPreset> GetFilmbackPresetsCopy();                                                                // [0x76ad710] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FNamedFilmbackPreset> GetFilmbackPresetsCopy();                                                                // [0x76bd490] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetFilmbackPresetName
-	// FString GetFilmbackPresetName();                                                                                      // [0x76ad690] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetFilmbackPresetName();                                                                                      // [0x76bd410] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/CinematicCamera.CineCameraComponent.GetDefaultFilmbackPresetName
-	// FString GetDefaultFilmbackPresetName();                                                                               // [0x76ad5d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FString GetDefaultFilmbackPresetName();                                                                               // [0x76bd350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

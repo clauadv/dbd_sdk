@@ -32,7 +32,7 @@ public:
 
 	/// Functions
 	// Function /Script/SystemUtilities.BoolExt.ToString
-	// FString ToString(bool boolToConvert);                                                                                 // [0x848bec0] Final|Native|Static|Public|BlueprintCallable 
+	// FString ToString(bool boolToConvert);                                                                                 // [0x849d200] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/SystemUtilities.TimeProviderMock
@@ -49,8 +49,8 @@ class UDateTimerUpdater : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0030   (0x0008)  MISSED
-	SDK_UNDEFINED(80,1731) /* TMap<UClass*, FDateTimerArray> */ __um(_timers);                                     // 0x0038   (0x0050)  
-	SDK_UNDEFINED(80,1732) /* TMap<UClass*, UDateTimeProvider*> */ __um(_dateTimeProvider);                        // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,1756) /* TMap<UClass*, FDateTimerArray> */ __um(_timers);                                     // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,1757) /* TMap<UClass*, UDateTimeProvider*> */ __um(_dateTimeProvider);                        // 0x0088   (0x0050)  
 };
 
 /// Class /Script/SystemUtilities.DebugUtilities
@@ -90,7 +90,7 @@ public:
 
 	/// Functions
 	// Function /Script/SystemUtilities.PlatformUtilities.GetPlatform
-	// FString GetPlatform();                                                                                                // [0x848d350] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetPlatform();                                                                                                // [0x849e690] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SystemUtilities.DateTimer

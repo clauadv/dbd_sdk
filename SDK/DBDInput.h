@@ -42,7 +42,7 @@ enum class EDBDInputMode : uint8_t
 };
 
 /// Enum /Script/DBDInput.EUIActionType
-/// Size: 0x15
+/// Size: 0x20
 enum class EUIActionType : uint8_t
 {
 	EUIActionType__None                                                              = 0,
@@ -59,7 +59,12 @@ enum class EUIActionType : uint8_t
 	EUIActionType__FaceButtonTop                                                     = 11,
 	EUIActionType__Scroll                                                            = 12,
 	EUIActionType__Options                                                           = 13,
-	EUIActionType__EUIActionType_MAX                                                 = 14
+	EUIActionType__Extra1                                                            = 14,
+	EUIActionType__Extra2                                                            = 15,
+	EUIActionType__Extra3                                                            = 16,
+	EUIActionType__Extra4                                                            = 17,
+	EUIActionType__Select                                                            = 18,
+	EUIActionType__EUIActionType_MAX                                                 = 19
 };
 
 /// Class /Script/DBDInput.ControlModeManager
@@ -86,9 +91,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDInput.DBDInputManager.RemovePresenterRootWidget
-	// void RemovePresenterRootWidget(class UUserWidget* presenterRootWidget);                                               // [0x85810d0] Final|Native|Public|BlueprintCallable 
+	// void RemovePresenterRootWidget(class UUserWidget* presenterRootWidget);                                               // [0x8592800] Final|Native|Public|BlueprintCallable 
 	// Function /Script/DBDInput.DBDInputManager.AddPresenterRootWidget
-	// void AddPresenterRootWidget(class UUserWidget* presenterRootWidget);                                                  // [0x8581040] Final|Native|Public|BlueprintCallable 
+	// void AddPresenterRootWidget(class UUserWidget* presenterRootWidget);                                                  // [0x8592770] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDInput.InteractiveWidgetInterface
@@ -100,13 +105,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDInput.InteractiveWidgetInterface.HandleKeyUpEvent
-	// void HandleKeyUpEvent(FKeyEvent& InKeyEvent);                                                                         // [0x8581bb0] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleKeyUpEvent(FKeyEvent& InKeyEvent);                                                                         // [0x85932e0] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/DBDInput.InteractiveWidgetInterface.HandleKeyHoldEvent
-	// void HandleKeyHoldEvent(FKeyEvent& InKeyEvent);                                                                       // [0x8581ab0] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleKeyHoldEvent(FKeyEvent& InKeyEvent);                                                                       // [0x85931e0] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/DBDInput.InteractiveWidgetInterface.HandleKeyDownEvent
-	// void HandleKeyDownEvent(FKeyEvent& InKeyEvent);                                                                       // [0x85819b0] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleKeyDownEvent(FKeyEvent& InKeyEvent);                                                                       // [0x85930e0] Native|Event|Public|HasOutParms|BlueprintEvent 
 	// Function /Script/DBDInput.InteractiveWidgetInterface.HandleAnalogInputEvent
-	// void HandleAnalogInputEvent(FAnalogInputEvent& InAnalogInputEvent);                                                   // [0x8581890] Native|Event|Public|HasOutParms|BlueprintEvent 
+	// void HandleAnalogInputEvent(FAnalogInputEvent& InAnalogInputEvent);                                                   // [0x8592fc0] Native|Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/DBDInput.MultipleGamepadsControlModeInfo
@@ -134,13 +139,13 @@ public:
 
 	/// Functions
 	// Function /Script/DBDInput.UIInputUtilities.ShouldUseAtlantaControls
-	// bool ShouldUseAtlantaControls(class UObject* WorldContextObject);                                                     // [0x8582450] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool ShouldUseAtlantaControls(class UObject* WorldContextObject);                                                     // [0x8593b80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/DBDInput.UIInputUtilities.IsInputKeyControlModePairValid
-	// bool IsInputKeyControlModePairValid(FKey InputKey, EControlMode controlMode);                                         // [0x8582310] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsInputKeyControlModePairValid(FKey InputKey, EControlMode controlMode);                                         // [0x8593a40] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDInput.UIInputUtilities.GetKeyFromUIAction
-	// FKey GetKeyFromUIAction(EUIActionType ActionType, bool isUsingGamepad);                                               // [0x85821b0] Final|Native|Static|Public|BlueprintCallable 
+	// FKey GetKeyFromUIAction(EUIActionType ActionType, bool isUsingGamepad);                                               // [0x85938e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DBDInput.UIInputUtilities.AreGamepadButtonsXOSwitched
-	// bool AreGamepadButtonsXOSwitched();                                                                                   // [0x8582180] Final|Native|Static|Public|BlueprintCallable 
+	// bool AreGamepadButtonsXOSwitched();                                                                                   // [0x85938b0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDInput.VirtualKeyboardManager

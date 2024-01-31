@@ -72,7 +72,7 @@ struct FClothPhysicalMeshData
 	TArray<FVector>                                    Vertices;                                                   // 0x0000   (0x0010)  
 	TArray<FVector>                                    Normals;                                                    // 0x0010   (0x0010)  
 	TArray<uint32_t>                                   Indices;                                                    // 0x0020   (0x0010)  
-	SDK_UNDEFINED(80,3638) /* TMap<uint32_t, FPointWeightMap> */ __um(WeightMaps);                                 // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,3726) /* TMap<uint32_t, FPointWeightMap> */ __um(WeightMaps);                                 // 0x0030   (0x0050)  
 	TArray<float>                                      InverseMasses;                                              // 0x0080   (0x0010)  
 	TArray<FClothVertBoneData>                         BoneData;                                                   // 0x0090   (0x0010)  
 	int32_t                                            MaxBoneWeights;                                             // 0x00A0   (0x0004)  
@@ -102,7 +102,7 @@ class UClothingAssetCommon : public UClothingAssetBase
 { 
 public:
 	class UPhysicsAsset*                               PhysicsAsset;                                               // 0x0050   (0x0008)  
-	SDK_UNDEFINED(80,3639) /* TMap<FName, UClothConfigBase*> */ __um(ClothConfigs);                                // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,3727) /* TMap<FName, UClothConfigBase*> */ __um(ClothConfigs);                                // 0x0058   (0x0050)  
 	TArray<FClothLODDataCommon>                        LODData;                                                    // 0x00A8   (0x0010)  
 	TArray<int32_t>                                    LodMap;                                                     // 0x00B8   (0x0010)  
 	TArray<FName>                                      UsedBoneNames;                                              // 0x00C8   (0x0010)  

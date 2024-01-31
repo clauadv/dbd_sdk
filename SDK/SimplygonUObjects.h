@@ -326,10 +326,10 @@ struct FChartAggregatorSettings
 	ESurfaceAreaScale                                  SurfaceAreaScale;                                           // 0x0001   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0002   (0x0002)  MISSED
 	int32_t                                            OriginalTexCoordLevel;                                      // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,4995) /* FString */               __um(OriginalTexCoordName);                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5384) /* FString */               __um(OriginalTexCoordName);                                 // 0x0008   (0x0010)  
 	bool                                               SeparateOverlappingCharts : 1;                              // 0x0018:0 (0x0001)  
 	unsigned char                                      UnknownData01_4[0x7];                                       // 0x0019   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4996) /* FString */               __um(OriginalChartProportionsChannel);                      // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5385) /* FString */               __um(OriginalChartProportionsChannel);                      // 0x0020   (0x0010)  
 	bool                                               LockUVRotation : 1;                                         // 0x0030:0 (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0031   (0x0007)  MISSED
 };
@@ -362,7 +362,7 @@ struct FAggregationSettings
 	int32_t                                            SubdivisionTileSize;                                        // 0x000C   (0x0004)  
 	int32_t                                            ProcessSelectionSetID;                                      // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4997) /* FString */               __um(ProcessSelectionSetName);                              // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5386) /* FString */               __um(ProcessSelectionSetName);                              // 0x0018   (0x0010)  
 	bool                                               KeepUnprocessedSceneMeshes : 1;                             // 0x0028:0 (0x0001)  
 	unsigned char                                      UnknownData03_6[0x7];                                       // 0x0029   (0x0007)  MISSED
 };
@@ -380,10 +380,10 @@ struct FVisibilitySettings
 	bool                                               UseBackfaceCulling : 1;                                     // 0x0008:2 (0x0001)  
 	unsigned char                                      UnknownData01_4[0x3];                                       // 0x0009   (0x0003)  MISSED
 	int32_t                                            CameraSelectionSetID;                                       // 0x000C   (0x0004)  
-	SDK_UNDEFINED(16,4998) /* FString */               __um(CameraSelectionSetName);                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5387) /* FString */               __um(CameraSelectionSetName);                               // 0x0010   (0x0010)  
 	int32_t                                            OccluderSelectionSetID;                                     // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4999) /* FString */               __um(OccluderSelectionSetName);                             // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,5388) /* FString */               __um(OccluderSelectionSetName);                             // 0x0028   (0x0010)  
 	float                                              FillNonVisibleAreaThreshold;                                // 0x0038   (0x0004)  
 	bool                                               RemoveTrianglesNotOccludingOtherTriangles : 1;              // 0x003C:0 (0x0001)  
 	bool                                               ConservativeMode : 1;                                       // 0x003C:1 (0x0001)  
@@ -398,11 +398,11 @@ struct FGeometryCullingSettings
 	bool                                               UseClippingPlanes : 1;                                      // 0x0000:0 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0001   (0x0003)  MISSED
 	int32_t                                            ClippingPlaneSelectionSetID;                                // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,5000) /* FString */               __um(ClippingPlaneSelectionSetName);                        // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5389) /* FString */               __um(ClippingPlaneSelectionSetName);                        // 0x0008   (0x0010)  
 	bool                                               UseClippingGeometry : 1;                                    // 0x0018:0 (0x0001)  
 	unsigned char                                      UnknownData01_4[0x3];                                       // 0x0019   (0x0003)  MISSED
 	int32_t                                            ClippingGeometrySelectionSetID;                             // 0x001C   (0x0004)  
-	SDK_UNDEFINED(16,5001) /* FString */               __um(ClippingGeometrySelectionSetName);                     // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5390) /* FString */               __um(ClippingGeometrySelectionSetName);                     // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/SimplygonUObjects.VertexWeightSettings
@@ -413,7 +413,7 @@ struct FVertexWeightSettings
 	bool                                               UseVertexWeightsInTexcoordGenerator : 1;                    // 0x0000:1 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0001   (0x0003)  MISSED
 	int32_t                                            WeightsFromColorLevel;                                      // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,5002) /* FString */               __um(WeightsFromColorName);                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5391) /* FString */               __um(WeightsFromColorName);                                 // 0x0008   (0x0010)  
 	EWeightsFromColorComponent                         WeightsFromColorComponent;                                  // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0019   (0x0003)  MISSED
 	float                                              WeightsFromColorMultiplier;                                 // 0x001C   (0x0004)  
@@ -484,7 +484,7 @@ struct FMappingImageSettings
 	int32_t                                            MaximumLayers;                                              // 0x000C   (0x0004)  
 	int32_t                                            TexCoordLevel;                                              // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,5003) /* FString */               __um(TexCoordName);                                         // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5392) /* FString */               __um(TexCoordName);                                         // 0x0018   (0x0010)  
 	ETexCoordGeneratorType                             TexCoordGeneratorType;                                      // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	int32_t                                            OutputMaterialCount;                                        // 0x002C   (0x0004)  
@@ -503,7 +503,7 @@ struct FGenerateLightmapTexCoordSettings
 	bool                                               GenerateLightmapTexCoord : 1;                               // 0x0000:0 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x3];                                       // 0x0001   (0x0003)  MISSED
 	int32_t                                            LightmapTexCoordLevel;                                      // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,5004) /* FString */               __um(LightmapTexCoordName);                                 // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5393) /* FString */               __um(LightmapTexCoordName);                                 // 0x0008   (0x0010)  
 	EChartAggregatorMode                               ChartAggregatorMode;                                        // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0019   (0x0003)  MISSED
 	int32_t                                            TextureWidth;                                               // 0x001C   (0x0004)  
@@ -553,7 +553,7 @@ struct FRemeshingSettings
 	float                                              RemeshingModeManualPositionY;                               // 0x001C   (0x0004)  
 	float                                              RemeshingModeManualPositionZ;                               // 0x0020   (0x0004)  
 	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0024   (0x0004)  MISSED
-	SDK_UNDEFINED(16,5005) /* FString */               __um(ProcessSelectionSetName);                              // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,5394) /* FString */               __um(ProcessSelectionSetName);                              // 0x0028   (0x0010)  
 	int32_t                                            ProcessSelectionSetID;                                      // 0x0038   (0x0004)  
 	bool                                               KeepUnprocessedSceneMeshes : 1;                             // 0x003C:0 (0x0001)  
 	bool                                               ForceSoftEdgesWithinTextureCharts : 1;                      // 0x003C:1 (0x0001)  
@@ -584,10 +584,10 @@ struct FBoneSettings
 	EBoneReductionTargetStopCondition                  BoneReductionTargetStopCondition;                           // 0x0028   (0x0001)  
 	unsigned char                                      UnknownData05_5[0x3];                                       // 0x0029   (0x0003)  MISSED
 	int32_t                                            LockBoneSelectionSetID;                                     // 0x002C   (0x0004)  
-	SDK_UNDEFINED(16,5006) /* FString */               __um(LockBoneSelectionSetName);                             // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5395) /* FString */               __um(LockBoneSelectionSetName);                             // 0x0030   (0x0010)  
 	int32_t                                            RemoveBoneSelectionSetID;                                   // 0x0040   (0x0004)  
 	unsigned char                                      UnknownData06_5[0x4];                                       // 0x0044   (0x0004)  MISSED
-	SDK_UNDEFINED(16,5007) /* FString */               __um(RemoveBoneSelectionSetName);                           // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5396) /* FString */               __um(RemoveBoneSelectionSetName);                           // 0x0048   (0x0010)  
 };
 
 /// Struct /Script/SimplygonUObjects.RemeshingPipelineSettings
@@ -740,7 +740,7 @@ struct FHighDensityMeshReductionSettings
 	float                                              MaxDeviation;                                               // 0x000C   (0x0004)  
 	EStopCondition                                     StopCondition;                                              // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0011   (0x0007)  MISSED
-	SDK_UNDEFINED(16,5008) /* FString */               __um(ProcessSelectionSetName);                              // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5397) /* FString */               __um(ProcessSelectionSetName);                              // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/SimplygonUObjects.HighDensityMeshReductionPipelineSettings
@@ -769,8 +769,8 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FColorCasterSettings
 { 
-	SDK_UNDEFINED(16,5009) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5010) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5398) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5399) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -827,8 +827,8 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FNormalCasterSettings
 { 
-	SDK_UNDEFINED(16,5011) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5012) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5400) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5401) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -866,8 +866,8 @@ public:
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FOpacityCasterSettings
 { 
-	SDK_UNDEFINED(16,5013) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5014) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5402) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5403) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -967,7 +967,7 @@ struct FReductionSettings
 	bool                                               AllowDegenerateTexCoords : 1;                               // 0x0062:3 (0x0001)  
 	unsigned char                                      UnknownData07_4[0x1];                                       // 0x0063   (0x0001)  MISSED
 	int32_t                                            ProcessSelectionSetID;                                      // 0x0064   (0x0004)  
-	SDK_UNDEFINED(16,5015) /* FString */               __um(ProcessSelectionSetName);                              // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,5404) /* FString */               __um(ProcessSelectionSetName);                              // 0x0068   (0x0010)  
 	bool                                               KeepUnprocessedSceneMeshes : 1;                             // 0x0078:0 (0x0001)  
 	bool                                               PreserveQuadFlags : 1;                                      // 0x0078:1 (0x0001)  
 	unsigned char                                      UnknownData08_6[0x7];                                       // 0x0079   (0x0007)  MISSED
@@ -1041,8 +1041,8 @@ public:
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FDisplacementCasterSettings
 { 
-	SDK_UNDEFINED(16,5016) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5017) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5405) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5406) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -1072,8 +1072,8 @@ public:
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FAmbientOcclusionCasterSettings
 { 
-	SDK_UNDEFINED(16,5018) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5019) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5407) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5408) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -1102,8 +1102,8 @@ public:
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FGeometryDataCasterSettings
 { 
-	SDK_UNDEFINED(16,5020) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5021) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5409) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5410) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -1134,8 +1134,8 @@ public:
 /// Size: 0x0048 (0x000000 - 0x000048)
 struct FVertexColorCasterSettings
 { 
-	SDK_UNDEFINED(16,5022) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5023) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5411) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5412) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  
@@ -1146,7 +1146,7 @@ struct FVertexColorCasterSettings
 	EOutputImageFileFormat                             OutputImageFileFormat;                                      // 0x002A   (0x0001)  
 	EOutputDDSCompressionType                          OutputDDSCompressionType;                                   // 0x002B   (0x0001)  
 	int32_t                                            OutputColorLevel;                                           // 0x002C   (0x0004)  
-	SDK_UNDEFINED(16,5024) /* FString */               __um(OutputColorName);                                      // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5413) /* FString */               __um(OutputColorName);                                      // 0x0030   (0x0010)  
 	float                                              ColorSpaceEdgeThreshold;                                    // 0x0040   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x0044   (0x0004)  MISSED
 };
@@ -1163,8 +1163,8 @@ public:
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FComputeCasterSettings
 { 
-	SDK_UNDEFINED(16,5025) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,5026) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5414) /* FString */               __um(MaterialChannel);                                      // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5415) /* FString */               __um(OpacityChannel);                                       // 0x0010   (0x0010)  
 	EOpacityChannelComponent                           OpacityChannelComponent;                                    // 0x0020   (0x0001)  
 	EDitherType                                        DitherType;                                                 // 0x0021   (0x0001)  
 	EFillMode                                          FillMode;                                                   // 0x0022   (0x0001)  

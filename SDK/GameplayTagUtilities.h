@@ -20,9 +20,9 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayTagUtilities.DBDGameplayTagUtilities.GetScoreModifierName
-	// FName GetScoreModifierName(FName scoreEventID);                                                                       // [0x847f770] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetScoreModifierName(FName scoreEventID);                                                                       // [0x8490ab0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/GameplayTagUtilities.DBDGameplayTagUtilities.GameplayTagExists
-	// bool GameplayTagExists(FName TagName);                                                                                // [0x847f6d0] Final|Native|Static|Public|BlueprintCallable 
+	// bool GameplayTagExists(FName TagName);                                                                                // [0x8490a10] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayTagUtilities.TagContainerQueryInstance
@@ -41,17 +41,17 @@ class UGameplayTagContainerComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x78];                                      // 0x00B8   (0x0078)  MISSED
-	SDK_UNDEFINED(80,1253) /* TMap<FGameplayTag, FQueryInstanceCollection> */ __um(_tagToQueries);                 // 0x0130   (0x0050)  
-	SDK_UNDEFINED(80,1254) /* TMap<UObject*, FQueryInstanceCollection> */ __um(_ownerToQueries);                   // 0x0180   (0x0050)  
+	SDK_UNDEFINED(80,1258) /* TMap<FGameplayTag, FQueryInstanceCollection> */ __um(_tagToQueries);                 // 0x0130   (0x0050)  
+	SDK_UNDEFINED(80,1259) /* TMap<UObject*, FQueryInstanceCollection> */ __um(_ownerToQueries);                   // 0x0180   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/GameplayTagUtilities.GameplayTagContainerComponent.Remove
-	// void Remove(FGameplayTag State);                                                                                      // [0x8480690] Final|Native|Public|BlueprintCallable 
+	// void Remove(FGameplayTag State);                                                                                      // [0x84919d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/GameplayTagUtilities.GameplayTagContainerComponent.GetTags
-	// FGameplayTagContainer GetTags();                                                                                      // [0x8480650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FGameplayTagContainer GetTags();                                                                                      // [0x8491990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/GameplayTagUtilities.GameplayTagContainerComponent.Add
-	// void Add(FGameplayTag State);                                                                                         // [0x84805b0] Final|Native|Public|BlueprintCallable 
+	// void Add(FGameplayTag State);                                                                                         // [0x84918f0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GameplayTagUtilities.ObjectStateProvider

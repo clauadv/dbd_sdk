@@ -84,7 +84,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.ChainPlayerMovementStatusEffect.OnIsChainCollidingChanged
-	// void OnIsChainCollidingChanged(bool IsColliding);                                                                     // [0x5aac480] Final|Native|Private 
+	// void OnIsChainCollidingChanged(bool IsColliding);                                                                     // [0x5ab5da0] Final|Native|Private 
 };
 
 /// Class /Script/TheGunslinger.ChainKillerMovementStatusEffect
@@ -98,22 +98,22 @@ public:
 };
 
 /// Class /Script/TheGunslinger.ChainLinkableComponent
-/// Size: 0x00E0 (0x0000B8 - 0x000198)
+/// Size: 0x00D8 (0x0000B8 - 0x000190)
 class UChainLinkableComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x00B8   (0x0020)  MISSED
 	class UClass*                                      _cameraTargetingStrategyClass;                              // 0x00D8   (0x0008)  
-	FName                                              _movementStatusEffectName;                                  // 0x00E0   (0x000C)  
-	FName                                              _linkedStatusEffectName;                                    // 0x00EC   (0x000C)  
-	class UPlayerReelInputAccelerationConstraintStrategy* _inputAccelerationStrategy;                              // 0x00F8   (0x0008)  
-	class URiflePlayerLinker*                          _chainLink;                                                 // 0x0100   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0108   (0x0030)  MISSED
-	FTagStateBool                                      _isLinkedLingering;                                         // 0x0138   (0x0030)  
-	class UChainPlayerMovementStatusEffect*            _movementStatusEffect;                                      // 0x0168   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0170   (0x0008)  MISSED
-	class UBaseCameraTargetingStrategy*                _cameraStrategy;                                            // 0x0178   (0x0008)  
-	unsigned char                                      UnknownData03_6[0x18];                                      // 0x0180   (0x0018)  MISSED
+	class UPlayerReelInputAccelerationConstraintStrategy* _inputAccelerationStrategy;                              // 0x00E0   (0x0008)  
+	class URiflePlayerLinker*                          _chainLink;                                                 // 0x00E8   (0x0008)  
+	class UClass*                                      _movementStatusEffectClass;                                 // 0x00F0   (0x0008)  
+	class UClass*                                      _linkedStatusEffectClass;                                   // 0x00F8   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0100   (0x0030)  MISSED
+	FTagStateBool                                      _isLinkedLingering;                                         // 0x0130   (0x0030)  
+	class UChainPlayerMovementStatusEffect*            _movementStatusEffect;                                      // 0x0160   (0x0008)  
+	unsigned char                                      UnknownData02_5[0x8];                                       // 0x0168   (0x0008)  MISSED
+	class UBaseCameraTargetingStrategy*                _cameraStrategy;                                            // 0x0170   (0x0008)  
+	unsigned char                                      UnknownData03_6[0x18];                                      // 0x0178   (0x0018)  MISSED
 };
 
 /// Class /Script/TheGunslinger.DeadMansSwitch
@@ -131,9 +131,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.DeadMansSwitch.OnRep_BlockedGenerators
-	// void OnRep_BlockedGenerators();                                                                                       // [0x5aac630] Final|Native|Private 
+	// void OnRep_BlockedGenerators();                                                                                       // [0x5ab5f50] Final|Native|Private 
 	// Function /Script/TheGunslinger.DeadMansSwitch.GetActivationDurationAtLevel
-	// float GetActivationDurationAtLevel();                                                                                 // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationDurationAtLevel();                                                                                 // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheGunslinger.FireHarpoonRifleInteraction
@@ -141,8 +141,8 @@ public:
 class UFireHarpoonRifleInteraction : public UInteractionDefinition
 { 
 public:
-	SDK_UNDEFINED(16,5080) /* FMulticastInlineDelegate */ __um(OnFireHarpoon);                                     // 0x0648   (0x0010)  
-	SDK_UNDEFINED(16,5081) /* FMulticastInlineDelegate */ __um(OnHitPlayer);                                       // 0x0658   (0x0010)  
+	SDK_UNDEFINED(16,5470) /* FMulticastInlineDelegate */ __um(OnFireHarpoon);                                     // 0x0648   (0x0010)  
+	SDK_UNDEFINED(16,5471) /* FMulticastInlineDelegate */ __um(OnHitPlayer);                                       // 0x0658   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0668   (0x0001)  MISSED
 	EFireHarpoonRifleAimingInteractionSubState         _aimingSubState;                                            // 0x0669   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x066A   (0x0006)  MISSED
@@ -174,13 +174,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.FireHarpoonRifleInteraction.Server_SetAimingSubstate
-	// void Server_SetAimingSubstate(EFireHarpoonRifleAimingInteractionSubState NewState);                                   // [0x5aac750] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetAimingSubstate(EFireHarpoonRifleAimingInteractionSubState NewState);                                   // [0x5ab6070] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheGunslinger.FireHarpoonRifleInteraction.Server_HandleMissShotScores
-	// void Server_HandleMissShotScores(TArray<ADBDPlayer*> nearMissedPlayers);                                              // [0x5aac670] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_HandleMissShotScores(TArray<ADBDPlayer*> nearMissedPlayers);                                              // [0x5ab5f90] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheGunslinger.FireHarpoonRifleInteraction.OnHitPlayer__DelegateSignature
-	// void OnHitPlayer__DelegateSignature();                                                                                // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnHitPlayer__DelegateSignature();                                                                                // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGunslinger.FireHarpoonRifleInteraction.OnFireHarpoon__DelegateSignature
-	// void OnFireHarpoon__DelegateSignature();                                                                              // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnFireHarpoon__DelegateSignature();                                                                              // [0x61d2f50] MulticastDelegate|Public|Delegate 
 };
 
 /// Class /Script/TheGunslinger.ForThePeople
@@ -200,17 +200,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.ForThePeople.Server_OnActionInputPressed
-	// void Server_OnActionInputPressed();                                                                                   // [0x5aac730] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_OnActionInputPressed();                                                                                   // [0x5ab6050] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheGunslinger.ForThePeople.OnRep_SetIsHealStartedOnServer
-	// void OnRep_SetIsHealStartedOnServer();                                                                                // [0x5aac650] Final|Native|Private|Const 
+	// void OnRep_SetIsHealStartedOnServer();                                                                                // [0x5ab5f70] Final|Native|Private|Const 
 	// Function /Script/TheGunslinger.ForThePeople.OnHealingAbilityUsed
-	// void OnHealingAbilityUsed(class ACamperPlayer* healingSurvivor, class ACamperPlayer* healedSurvivor);                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnHealingAbilityUsed(class ACamperPlayer* healingSurvivor, class ACamperPlayer* healedSurvivor);                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheGunslinger.ForThePeople.Multicast_OnHealAbilityUsed
-	// void Multicast_OnHealAbilityUsed(class ACamperPlayer* healer, class ACamperPlayer* healTarget, float amountHealed);   // [0x5aac2a0] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_OnHealAbilityUsed(class ACamperPlayer* healer, class ACamperPlayer* healTarget, float amountHealed);   // [0x5ab5bc0] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheGunslinger.ForThePeople.GetBrokenEffectDurationAtLevel
-	// float GetBrokenEffectDurationAtLevel();                                                                               // [0x500a890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBrokenEffectDurationAtLevel();                                                                               // [0x4fe8140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.ForThePeople.Client_OnActionInputPressedEnded
-	// void Client_OnActionInputPressedEnded();                                                                              // [0x5905d40] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_OnActionInputPressedEnded();                                                                              // [0x590b5d0] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/TheGunslinger.Gearhead
@@ -228,9 +228,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.Gearhead.Authority_OnCamperRemoved
-	// void Authority_OnCamperRemoved(class ACamperPlayer* removedPlayer);                                                   // [0x5aac130] Final|Native|Private 
+	// void Authority_OnCamperRemoved(class ACamperPlayer* removedPlayer);                                                   // [0x5ab5a50] Final|Native|Private 
 	// Function /Script/TheGunslinger.Gearhead.Authority_OnCamperHealthStateChange
-	// void Authority_OnCamperHealthStateChange(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);       // [0x5aac060] Final|Native|Private 
+	// void Authority_OnCamperHealthStateChange(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);       // [0x5ab5980] Final|Native|Private 
 };
 
 /// Class /Script/TheGunslinger.GunslingerAnimInstance
@@ -281,8 +281,8 @@ public:
 class UGunslingerEffectsComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,5082) /* FMulticastInlineDelegate */ __um(OnIsAimingChanged);                                 // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,5083) /* FMulticastInlineDelegate */ __um(PlayOutOfAmmoSound);                                // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,5472) /* FMulticastInlineDelegate */ __um(OnIsAimingChanged);                                 // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5473) /* FMulticastInlineDelegate */ __um(PlayOutOfAmmoSound);                                // 0x00C8   (0x0010)  
 	float                                              _minimumTimeBetweenBroadcast;                               // 0x00D8   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00DC   (0x0004)  MISSED
 	class AHarpoonRifle*                               _rifle;                                                     // 0x00E0   (0x0008)  
@@ -291,13 +291,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.GunslingerEffectsComponent.PlayOutOfAmmoSound__DelegateSignature
-	// void PlayOutOfAmmoSound__DelegateSignature();                                                                         // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void PlayOutOfAmmoSound__DelegateSignature();                                                                         // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGunslinger.GunslingerEffectsComponent.OnItemUsedStateChanged
-	// void OnItemUsedStateChanged(bool IsPressed);                                                                          // [0x5aac510] Final|Native|Private 
+	// void OnItemUsedStateChanged(bool IsPressed);                                                                          // [0x5ab5e30] Final|Native|Private 
 	// Function /Script/TheGunslinger.GunslingerEffectsComponent.OnIsAimingChanged__DelegateSignature
-	// void OnIsAimingChanged__DelegateSignature(bool isAiming);                                                             // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsAimingChanged__DelegateSignature(bool isAiming);                                                             // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGunslinger.GunslingerEffectsComponent.Multicast_PlayOutOfAmmoSound
-	// void Multicast_PlayOutOfAmmoSound();                                                                                  // [0x4e01240] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_PlayOutOfAmmoSound();                                                                                  // [0x4dd4860] Final|Net|Native|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheGunslinger.GunslingerUtilities
@@ -309,7 +309,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.GunslingerUtilities.GetHarpoonRifle
-	// class AHarpoonRifle* GetHarpoonRifle(class ADBDPlayer* Player);                                                       // [0x5aac210] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AHarpoonRifle* GetHarpoonRifle(class ADBDPlayer* Player);                                                       // [0x5ab5b30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheGunslinger.HarpoonChainPositioner
@@ -334,17 +334,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.HarpoonChainPositioner.OnOwnerCollected
-	// void OnOwnerCollected(class ADBDPlayer* collector);                                                                   // [0x5aac5a0] Final|Native|Private 
+	// void OnOwnerCollected(class ADBDPlayer* collector);                                                                   // [0x5ab5ec0] Final|Native|Private 
 	// Function /Script/TheGunslinger.HarpoonChainPositioner.OnHarpoonTravelingChanged
-	// void OnHarpoonTravelingChanged(bool isTravelling);                                                                    // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnHarpoonTravelingChanged(bool isTravelling);                                                                    // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheGunslinger.HarpoonChainPositioner.OnHarpoonLoadedOnRifle
-	// void OnHarpoonLoadedOnRifle();                                                                                        // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnHarpoonLoadedOnRifle();                                                                                        // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheGunslinger.HarpoonChainPositioner.OnCurrentHarpoonChanged
-	// void OnCurrentHarpoonChanged(class AActor* currentHarpoon);                                                           // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnCurrentHarpoonChanged(class AActor* currentHarpoon);                                                           // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheGunslinger.HarpoonChainPositioner.AttachToRifle
-	// void AttachToRifle();                                                                                                 // [0x5aac040] Final|Native|Public|BlueprintCallable 
+	// void AttachToRifle();                                                                                                 // [0x5ab5960] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheGunslinger.HarpoonChainPositioner.AttachToAnimSocket
-	// void AttachToAnimSocket();                                                                                            // [0x5aac020] Final|Native|Public|BlueprintCallable 
+	// void AttachToAnimSocket();                                                                                            // [0x5ab5940] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheGunslinger.HarpoonedSurvivorSubAnimInstance
@@ -404,7 +404,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.HarpoonProjectile.OnHarpoonStop
-	// void OnHarpoonStop(FHitResult& Result);                                                                               // [0x5aac3b0] Final|Native|Private|HasOutParms 
+	// void OnHarpoonStop(FHitResult& Result);                                                                               // [0x5ab5cd0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheGunslinger.HarpoonProjectileMovementComponent
@@ -458,9 +458,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.HarpoonRifle.GetChain
-	// class ARifleChain* GetChain();                                                                                        // [0x5aac1e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ARifleChain* GetChain();                                                                                        // [0x5ab5b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.HarpoonRifle.Authority_OnFireHarpoon
-	// void Authority_OnFireHarpoon();                                                                                       // [0x5aac1c0] Final|Native|Private 
+	// void Authority_OnFireHarpoon();                                                                                       // [0x5ab5ae0] Final|Native|Private 
 };
 
 /// Class /Script/TheGunslinger.HarpoonRifleAnimInstance
@@ -485,20 +485,22 @@ public:
 };
 
 /// Class /Script/TheGunslinger.HexRetribution
-/// Size: 0x0018 (0x000448 - 0x000460)
+/// Size: 0x0020 (0x000448 - 0x000468)
 class UHexRetribution : public UHexPerk
 { 
 public:
 	float                                              _obliviousDurationByLevels;                                 // 0x0448   (0x000C)  
 	float                                              _auraRevealDuration;                                        // 0x0454   (0x0004)  
 	class UClass*                                      _revealEffectClass;                                         // 0x0458   (0x0008)  
+	class UClass*                                      _obliviousEffectClass;                                      // 0x0460   (0x0008)  
 };
 
 /// Class /Script/TheGunslinger.HoneyLocustThornsAddon
-/// Size: 0x0000 (0x0002B8 - 0x0002B8)
+/// Size: 0x0008 (0x0002B8 - 0x0002C0)
 class UHoneyLocustThornsAddon : public UItemAddon
 { 
 public:
+	class UClass*                                      _mangledStatusEffectClass;                                  // 0x02B8   (0x0008)  
 };
 
 /// Class /Script/TheGunslinger.GunslingerHarpoon
@@ -509,12 +511,13 @@ public:
 };
 
 /// Class /Script/TheGunslinger.IridescentCoinAddon
-/// Size: 0x0030 (0x0002B8 - 0x0002E8)
+/// Size: 0x0038 (0x0002B8 - 0x0002F0)
 class UIridescentCoinAddon : public UItemAddon
 { 
 public:
-	class UStatusEffect*                               _exposedStatusEffect;                                       // 0x02B8   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x28];                                      // 0x02C0   (0x0028)  MISSED
+	class UClass*                                      _exposedStatusEffectClass;                                  // 0x02B8   (0x0008)  
+	class UStatusEffect*                               _exposedStatusEffect;                                       // 0x02C0   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x28];                                      // 0x02C8   (0x0028)  MISSED
 };
 
 /// Class /Script/TheGunslinger.K19GameStateComponent
@@ -534,17 +537,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.K19Utilities.K19ReleaseDecalSpawner
-	// void K19ReleaseDecalSpawner(class UObject* WorldContextObject, FName decalSpawnerName);                               // [0x5aaf300] Final|Native|Static|Public|BlueprintCallable 
+	// void K19ReleaseDecalSpawner(class UObject* WorldContextObject, FName decalSpawnerName);                               // [0x5ab8fa0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/TheGunslinger.K19Utilities.K19CreateDecalSpawner
-	// void K19CreateDecalSpawner(class UObject* WorldContextObject, FName decalSpawnerName, class UMaterialInterface* DecalMaterial, int32_t PoolSize, ESpawnerStrategyType spawnerStrategyType); // [0x5aaf160] Final|Native|Static|Public|BlueprintCallable 
+	// void K19CreateDecalSpawner(class UObject* WorldContextObject, FName decalSpawnerName, class UMaterialInterface* DecalMaterial, int32_t PoolSize, ESpawnerStrategyType spawnerStrategyType); // [0x5ab8e00] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheGunslinger.KillerChainLinkableComponent
-/// Size: 0x0018 (0x000198 - 0x0001B0)
+/// Size: 0x0018 (0x000190 - 0x0001A8)
 class UKillerChainLinkableComponent : public UChainLinkableComponent
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x18];                                      // 0x0198   (0x0018)  MISSED
+	unsigned char                                      UnknownData00_1[0x18];                                      // 0x0190   (0x0018)  MISSED
 };
 
 /// Class /Script/TheGunslinger.OffTheRecord
@@ -560,7 +563,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.OffTheRecord.GetActivationDurationAtLevel
-	// float GetActivationDurationAtLevel();                                                                                 // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationDurationAtLevel();                                                                                 // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheGunslinger.PlayerReelInputAccelerationConstraintStrategy
@@ -597,9 +600,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.RedHerring.OnRep_MarkedGenerator
-	// void OnRep_MarkedGenerator(class AGenerator* oldMarkedGenerator);                                                     // [0x5aaf490] Final|Native|Private 
+	// void OnRep_MarkedGenerator(class AGenerator* oldMarkedGenerator);                                                     // [0x5ab9130] Final|Native|Private 
 	// Function /Script/TheGunslinger.RedHerring.OnLoudNoiseTriggered
-	// void OnLoudNoiseTriggered();                                                                                          // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnLoudNoiseTriggered();                                                                                          // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheGunslinger.ReelChainInteraction
@@ -616,65 +619,72 @@ public:
 };
 
 /// Class /Script/TheGunslinger.ReloadHarpoonRifleInteraction
-/// Size: 0x00B0 (0x000790 - 0x000840)
+/// Size: 0x00C0 (0x000790 - 0x000850)
 class UReloadHarpoonRifleInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	FDBDTunableRowHandle                               _reloadTime;                                                // 0x0788   (0x0028)  
-	FDBDTunableRowHandle                               _movementSpeedMultiplier;                                   // 0x07B0   (0x0028)  
-	FDBDTunableRowHandle                               _rotationScaleMultiplier;                                   // 0x07D8   (0x0028)  
-	FDBDTunableRowHandle                               _rotationScaleAdjustmentTime;                               // 0x0800   (0x0028)  
-	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0828   (0x0018)  MISSED
+	FDBDTunableRowHandle                               _reloadTime;                                                // 0x0790   (0x0028)  
+	FDBDTunableRowHandle                               _movementSpeedMultiplier;                                   // 0x07B8   (0x0028)  
+	FDBDTunableRowHandle                               _rotationScaleMultiplier;                                   // 0x07E0   (0x0028)  
+	FDBDTunableRowHandle                               _rotationScaleAdjustmentTime;                               // 0x0808   (0x0028)  
+	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0830   (0x0020)  MISSED
 };
 
 /// Class /Script/TheGunslinger.RifleChain
-/// Size: 0x01F0 (0x000230 - 0x000420)
+/// Size: 0x0200 (0x000230 - 0x000430)
 class ARifleChain : public AActor
 { 
 public:
-	SDK_UNDEFINED(16,5084) /* FMulticastInlineDelegate */ __um(OnProjectileSet);                                   // 0x0230   (0x0010)  
-	SDK_UNDEFINED(16,5085) /* FMulticastInlineDelegate */ __um(OnIsCollidingChanged);                              // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,5474) /* FMulticastInlineDelegate */ __um(OnProjectileSet);                                   // 0x0230   (0x0010)  
+	SDK_UNDEFINED(16,5475) /* FMulticastInlineDelegate */ __um(OnIsCollidingChanged);                              // 0x0240   (0x0010)  
 	class UAkComponent*                                _chainCenterAkComponent;                                    // 0x0250   (0x0008)  
 	class UAkAudioEvent*                               _collisionLoopStartEvent;                                   // 0x0258   (0x0008)  
 	class UAkAudioEvent*                               _collisionLoopEndEvent;                                     // 0x0260   (0x0008)  
 	TArray<FAkSoundLoop>                               _collisionSoundLoops;                                       // 0x0268   (0x0010)  
 	float                                              _sphereTraceRadius;                                         // 0x0278   (0x0004)  
 	float                                              _timeBetweenTrace;                                          // 0x027C   (0x0004)  
-	SDK_UNDEFINED(16,5086) /* TScriptInterface<Class> */ __um(_harpoon);                                           // 0x0280   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x190];                                     // 0x0290   (0x0190)  MISSED
+	SDK_UNDEFINED(16,5476) /* TScriptInterface<Class> */ __um(_harpoon);                                           // 0x0280   (0x0010)  
+	class ADBDPlayer*                                  _linkedPlayer;                                              // 0x0290   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x198];                                     // 0x0298   (0x0198)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheGunslinger.RifleChain.UpdateChainMesh
-	// void UpdateChainMesh(class UInstancedStaticMeshComponent* Mesh, class USplineComponent* spline, float alpha);         // [0x5aaf950] Final|Native|Public|BlueprintCallable 
+	// void UpdateChainMesh(class UInstancedStaticMeshComponent* Mesh, class USplineComponent* spline, float alpha);         // [0x5ab9610] Final|Native|Public|BlueprintCallable 
+	// Function /Script/TheGunslinger.RifleChain.UnbindFromLinkedPlayer
+	// void UnbindFromLinkedPlayer();                                                                                        // [0x5ab95f0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheGunslinger.RifleChain.SpawnChainPoints
-	// int32_t SpawnChainPoints(FVector Start, FVector Stop, class UCurveFloat* influenceCurve, float pointYPosition, float pointZPosition, bool useOffset, class USplineComponent* spline); // [0x5aaf700] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// int32_t SpawnChainPoints(FVector Start, FVector Stop, class UCurveFloat* influenceCurve, float pointYPosition, float pointZPosition, bool useOffset, class USplineComponent* spline); // [0x5ab93a0] Final|Native|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/TheGunslinger.RifleChain.OnUnattachFromPlayer
-	// void OnUnattachFromPlayer(class ADBDPlayer* Player);                                                                  // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnUnattachFromPlayer(class ADBDPlayer* Player);                                                                  // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheGunslinger.RifleChain.OnReelBackToRifle
-	// void OnReelBackToRifle();                                                                                             // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnReelBackToRifle();                                                                                             // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheGunslinger.RifleChain.OnProjectileSet__DelegateSignature
-	// void OnProjectileSet__DelegateSignature(class AActor* Projectile);                                                    // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnProjectileSet__DelegateSignature(class AActor* Projectile);                                                    // [0x61d2f50] MulticastDelegate|Public|Delegate 
+	// Function /Script/TheGunslinger.RifleChain.OnLinkedPlayerPerspectiveChanged
+	// void OnLinkedPlayerPerspectiveChanged(class ADBDPlayer* Player);                                                      // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheGunslinger.RifleChain.OnLaunch
-	// void OnLaunch();                                                                                                      // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnLaunch();                                                                                                      // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheGunslinger.RifleChain.OnIsCollidingChanged__DelegateSignature
-	// void OnIsCollidingChanged__DelegateSignature(bool IsColliding);                                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsCollidingChanged__DelegateSignature(bool IsColliding);                                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGunslinger.RifleChain.OnAttachToPlayer
-	// void OnAttachToPlayer(class ADBDPlayer* Player);                                                                      // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnAttachToPlayer(class ADBDPlayer* Player);                                                                      // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheGunslinger.RifleChain.IsColliding
-	// bool IsColliding();                                                                                                   // [0x5aaf130] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsColliding();                                                                                                   // [0x5ab8dd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChain.GetUnwindingSpeed
-	// float GetUnwindingSpeed();                                                                                            // [0x5aaf100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetUnwindingSpeed();                                                                                            // [0x592a820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChain.GetRiflePlayerLinker
-	// class URiflePlayerLinker* GetRiflePlayerLinker();                                                                     // [0x5aaf0d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class URiflePlayerLinker* GetRiflePlayerLinker();                                                                     // [0x5ab8da0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChain.GetFirstAndLastCollisionHits
-	// TArray<FHitResult> GetFirstAndLastCollisionHits();                                                                    // [0x5aaefb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FHitResult> GetFirstAndLastCollisionHits();                                                                    // [0x5ab8c80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChain.GetChainTensionComponent
-	// class URifleChainTensionComponent* GetChainTensionComponent();                                                        // [0x5aaef80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class URifleChainTensionComponent* GetChainTensionComponent();                                                        // [0x5ab8c50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChain.GetChainStart
-	// FVector GetChainStart();                                                                                              // [0x5aaef40] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetChainStart();                                                                                              // [0x5ab8c10] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChain.GetChainEnd
-	// FVector GetChainEnd();                                                                                                // [0x5aaef00] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetChainEnd();                                                                                                // [0x5ab8bd0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheGunslinger.RifleChain.BindToLinkedPlayer
+	// void BindToLinkedPlayer(class ADBDPlayer* linkedPlayer);                                                              // [0x5ab8b40] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheGunslinger.RifleChainTensionComponent
@@ -683,7 +693,7 @@ class URifleChainTensionComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5087) /* FMulticastInlineDelegate */ __um(OnIsBuildingTensionChanged);                        // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,5477) /* FMulticastInlineDelegate */ __um(OnIsBuildingTensionChanged);                        // 0x00C0   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x00D0   (0x0018)  MISSED
 	bool                                               _isBuildingTension;                                         // 0x00E8   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00E9   (0x0007)  MISSED
@@ -696,7 +706,7 @@ public:
 	FNonTunableStat                                    _currentTensionRate;                                        // 0x0200   (0x0060)  
 	EProgressModifier                                  _progressModifierForSurvivors;                              // 0x0260   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x7];                                       // 0x0261   (0x0007)  MISSED
-	SDK_UNDEFINED(24,5088) /* FText */                 __um(_chargeProgressDescriptionText);                       // 0x0268   (0x0018)  
+	SDK_UNDEFINED(24,5478) /* FText */                 __um(_chargeProgressDescriptionText);                       // 0x0268   (0x0018)  
 	unsigned char                                      UnknownData05_5[0x18];                                      // 0x0280   (0x0018)  MISSED
 	class ARifleChain*                                 _chain;                                                     // 0x0298   (0x0008)  
 	unsigned char                                      UnknownData06_6[0x8];                                       // 0x02A0   (0x0008)  MISSED
@@ -704,15 +714,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.RifleChainTensionComponent.OnTensionChargeableCompletionChanged
-	// void OnTensionChargeableCompletionChanged(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                 // [0x5aaf540] Final|Native|Private|HasOutParms 
+	// void OnTensionChargeableCompletionChanged(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                 // [0x5ab91e0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheGunslinger.RifleChainTensionComponent.OnRep_IsBuildingTension
-	// void OnRep_IsBuildingTension();                                                                                       // [0x5aaf470] Final|Native|Private 
+	// void OnRep_IsBuildingTension();                                                                                       // [0x5ab9110] Final|Native|Private 
 	// Function /Script/TheGunslinger.RifleChainTensionComponent.OnIsBuildingTensionChanged__DelegateSignature
-	// void OnIsBuildingTensionChanged__DelegateSignature(bool IsBuildingTension);                                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnIsBuildingTensionChanged__DelegateSignature(bool IsBuildingTension);                                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGunslinger.RifleChainTensionComponent.IsBuildingTension
-	// bool IsBuildingTension();                                                                                             // [0x57dfcf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBuildingTension();                                                                                             // [0x57e0d60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RifleChainTensionComponent.GetProgress
-	// float GetProgress();                                                                                                  // [0x5aaf090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetProgress();                                                                                                  // [0x5ab8d60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheGunslinger.RiflePlayerLinker
@@ -720,7 +730,7 @@ public:
 class URiflePlayerLinker : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,5089) /* FMulticastInlineDelegate */ __um(OnLinkedPlayerSet);                                 // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5479) /* FMulticastInlineDelegate */ __um(OnLinkedPlayerSet);                                 // 0x00B8   (0x0010)  
 	class ADBDPlayer*                                  _linkedPlayer;                                              // 0x00C8   (0x0008)  
 	class ADBDPlayer*                                  _linkedPlayerDuringAttack;                                  // 0x00D0   (0x0008)  
 	class ADBDPlayer*                                  _linkOwner;                                                 // 0x00D8   (0x0008)  
@@ -737,51 +747,59 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.RiflePlayerLinker.Server_OnClientConfirmTensionBreakChain
-	// void Server_OnClientConfirmTensionBreakChain(class ADBDPlayer* Player);                                               // [0x5aaf640] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_OnClientConfirmTensionBreakChain(class ADBDPlayer* Player);                                               // [0x5ab92e0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheGunslinger.RiflePlayerLinker.OnLinkedPlayerSet__DelegateSignature
-	// void OnLinkedPlayerSet__DelegateSignature(class ADBDPlayer* linkedPlayer);                                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnLinkedPlayerSet__DelegateSignature(class ADBDPlayer* linkedPlayer);                                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheGunslinger.RiflePlayerLinker.Multicast_Unlink
-	// void Multicast_Unlink();                                                                                              // [0x4e01220] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_Unlink();                                                                                              // [0x4dd4840] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheGunslinger.RiflePlayerLinker.Multicast_Link
-	// void Multicast_Link(class ADBDPlayer* linkedPlayer);                                                                  // [0x57fd070] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_Link(class ADBDPlayer* linkedPlayer);                                                                  // [0x58004b0] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheGunslinger.RiflePlayerLinker.GetLinkOwner
-	// class ADBDPlayer* GetLinkOwner();                                                                                     // [0x5aaf030] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetLinkOwner();                                                                                     // [0x5ab8d00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RiflePlayerLinker.GetLinkedPlayer
-	// class ADBDPlayer* GetLinkedPlayer();                                                                                  // [0x5aaf060] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetLinkedPlayer();                                                                                  // [0x5ab8d30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheGunslinger.RiflePlayerLinker.Client_OnAuthorityTensionBreakChain
-	// void Client_OnAuthorityTensionBreakChain(class ADBDPlayer* Player);                                                   // [0x57e0340] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_OnAuthorityTensionBreakChain(class ADBDPlayer* Player);                                                   // [0x57e83c0] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/TheGunslinger.RustedSpikeAddon
-/// Size: 0x0000 (0x0002B8 - 0x0002B8)
+/// Size: 0x0008 (0x0002B8 - 0x0002C0)
 class URustedSpikeAddon : public UItemAddon
 { 
 public:
+	class UClass*                                      _mangledStatusEffectClass;                                  // 0x02B8   (0x0008)  
 };
 
 /// Class /Script/TheGunslinger.SurvivorChainLinkableComponent
-/// Size: 0x00E8 (0x000198 - 0x000280)
+/// Size: 0x0118 (0x000190 - 0x0002A8)
 class USurvivorChainLinkableComponent : public UChainLinkableComponent
 { 
 public:
-	FDBDTunableRowHandle                               _pullbackAngle;                                             // 0x0198   (0x0028)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01C0   (0x0008)  MISSED
-	FDBDTunableRowHandle                               _immobilizationDuration;                                    // 0x01C8   (0x0028)  
-	FGameplayTagContainer                              _linkableInteractionTags;                                   // 0x01F0   (0x0020)  
-	FGameplayTagContainer                              _cancelableInteractionTags;                                 // 0x0210   (0x0020)  
-	class UClass*                                      _velocityAdditiveStrategyClass;                             // 0x0230   (0x0008)  
-	FName                                              _immobilizationEffectName;                                  // 0x0238   (0x000C)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0244   (0x0004)  MISSED
-	FVector_NetQuantize10                              _linkedMoveInput;                                           // 0x0248   (0x000C)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x0254   (0x0004)  MISSED
-	class UStatusEffect*                               _immobilizationEffect;                                      // 0x0258   (0x0008)  
-	class USurvivorReelVelocityAdditiveStrategy*       _velocityAdditiveStrategy;                                  // 0x0260   (0x0008)  
-	unsigned char                                      UnknownData03_6[0x18];                                      // 0x0268   (0x0018)  MISSED
+	FDBDTunableRowHandle                               _pullbackAngle;                                             // 0x0190   (0x0028)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x01B8   (0x0008)  MISSED
+	FDBDTunableRowHandle                               _immobilizationDuration;                                    // 0x01C0   (0x0028)  
+	FGameplayTagContainer                              _linkableInteractionTags;                                   // 0x01E8   (0x0020)  
+	FGameplayTagContainer                              _cancelableInteractionTags;                                 // 0x0208   (0x0020)  
+	class UClass*                                      _velocityAdditiveStrategyClass;                             // 0x0228   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0230   (0x0004)  MISSED
+	FVector_NetQuantize10                              _linkedMoveInput;                                           // 0x0234   (0x000C)  
+	class UStatusEffect*                               _immobilizationEffect;                                      // 0x0240   (0x0008)  
+	class UClass*                                      _immobilizationStatusEffectClass;                           // 0x0248   (0x0008)  
+	class USurvivorReelVelocityAdditiveStrategy*       _velocityAdditiveStrategy;                                  // 0x0250   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x50];                                      // 0x0258   (0x0050)  MISSED
 
 
 	/// Functions
+	// Function /Script/TheGunslinger.SurvivorChainLinkableComponent.OnSurvivorBreakFreeFromHarpoon
+	// void OnSurvivorBreakFreeFromHarpoon(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x61d2f50] Event|Protected|HasOutParms|BlueprintEvent 
+	// Function /Script/TheGunslinger.SurvivorChainLinkableComponent.OnSightStatusChanged
+	// void OnSightStatusChanged(ESightStatus Status);                                                                       // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheGunslinger.SurvivorChainLinkableComponent.OnRep_VelocityAdditiveStrategy
-	// void OnRep_VelocityAdditiveStrategy();                                                                                // [0x5aaf520] Final|Native|Private 
+	// void OnRep_VelocityAdditiveStrategy();                                                                                // [0x5ab91c0] Final|Native|Private 
+	// Function /Script/TheGunslinger.SurvivorChainLinkableComponent.OnLocallyObservedChanged
+	// void OnLocallyObservedChanged(class ADBDPlayer* Player);                                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
+	// Function /Script/TheGunslinger.SurvivorChainLinkableComponent.OnKillerSet
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheGunslinger.SurvivorReelVelocityAdditiveStrategy
@@ -799,7 +817,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheGunslinger.SurvivorReelVelocityAdditiveStrategy.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5aaf3e0] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5ab9080] Final|Native|Private 
 };
 
 /// Class /Script/TheGunslinger.TestOffTheRecord

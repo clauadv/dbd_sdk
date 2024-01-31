@@ -212,7 +212,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.ChainAttachedGateBlockerEffect.OnSurvivorDamageStateChanged
-	// void OnSurvivorDamageStateChanged(ECamperDamageState oldState, ECamperDamageState NewState);                          // [0x5b67790] Final|Native|Private 
+	// void OnSurvivorDamageStateChanged(ECamperDamageState oldState, ECamperDamageState NewState);                          // [0x5b74920] Final|Native|Private 
 };
 
 /// Class /Script/TheK25.IsChainHuntActive
@@ -245,7 +245,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25AttackSubAnimInstance.OnAttackStart
-	// void OnAttackStart(EAttackType attackType);                                                                           // [0x5b674f0] Final|Native|Protected 
+	// void OnAttackStart(EAttackType attackType);                                                                           // [0x5b74680] Final|Native|Protected 
 };
 
 /// Class /Script/TheK25.K25Chain
@@ -254,7 +254,7 @@ class AK25Chain : public AActor
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0230   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5102) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0238   (0x0010)  
+	SDK_UNDEFINED(16,5492) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0238   (0x0010)  
 	class UCurveFloat*                                 _attachedToProjectileInfluenceCurve;                        // 0x0248   (0x0008)  
 	class UCurveFloat*                                 _reelbackInfluenceCurve;                                    // 0x0250   (0x0008)  
 	class UCurveFloat*                                 _offsetMultiplierInfluenceCurve;                            // 0x0258   (0x0008)  
@@ -279,8 +279,8 @@ public:
 	FVector                                            _reelbackStartPosition;                                     // 0x0338   (0x000C)  
 	unsigned char                                      UnknownData04_5[0x4];                                       // 0x0344   (0x0004)  MISSED
 	class AK25Projectile*                              _projectileAttachedTo;                                      // 0x0348   (0x0008)  
-	SDK_UNDEFINED(8,5103) /* TWeakObjectPtr<AK25SurvivorChainAttachmentAnchor*> */ __um(_survivorAnchorAttachedTo); // 0x0350   (0x0008)  
-	SDK_UNDEFINED(8,5104) /* TWeakObjectPtr<AK25SurvivorChainAttachmentAnchor*> */ __um(_targetAnchorToReach);     // 0x0358   (0x0008)  
+	SDK_UNDEFINED(8,5493) /* TWeakObjectPtr<AK25SurvivorChainAttachmentAnchor*> */ __um(_survivorAnchorAttachedTo); // 0x0350   (0x0008)  
+	SDK_UNDEFINED(8,5494) /* TWeakObjectPtr<AK25SurvivorChainAttachmentAnchor*> */ __um(_targetAnchorToReach);     // 0x0358   (0x0008)  
 	class USplineComponent*                            _chainSplineComponent;                                      // 0x0360   (0x0008)  
 	class UInstancedStaticMeshComponent*               _chainInstancedMesh;                                        // 0x0368   (0x0008)  
 	class UCurveFloat*                                 _currentInfluenceCurve;                                     // 0x0370   (0x0008)  
@@ -297,35 +297,35 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25Chain.SetSplineComponent
-	// void SetSplineComponent(class USplineComponent* Component);                                                           // [0x5b67c60] Final|Native|Public|BlueprintCallable 
+	// void SetSplineComponent(class USplineComponent* Component);                                                           // [0x5b74df0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK25.K25Chain.SetInstancedMeshComponent
-	// void SetInstancedMeshComponent(class UInstancedStaticMeshComponent* InstancedMesh);                                   // [0x5b67bd0] Final|Native|Public|BlueprintCallable 
+	// void SetInstancedMeshComponent(class UInstancedStaticMeshComponent* InstancedMesh);                                   // [0x5b74d60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK25.K25Chain.IsAttachedToControlledProjectile
-	// bool IsAttachedToControlledProjectile();                                                                              // [0x5b66f30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAttachedToControlledProjectile();                                                                              // [0x5b740c0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25Chain.GetSurvivorChainAttachmentAnchor
-	// class AK25SurvivorChainAttachmentAnchor* GetSurvivorChainAttachmentAnchor();                                          // [0x5b66f00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AK25SurvivorChainAttachmentAnchor* GetSurvivorChainAttachmentAnchor();                                          // [0x5b74090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25Chain.GetChainStartLocation
-	// FVector GetChainStartLocation();                                                                                      // [0x5b66e00] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetChainStartLocation();                                                                                      // [0x5b73f90] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25Chain.GetChainEndLocation
-	// FVector GetChainEndLocation();                                                                                        // [0x5b66dc0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetChainEndLocation();                                                                                        // [0x5b73f50] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnSurvivorStoppedRemovingChainSFX
-	// void Cosmetic_OnSurvivorStoppedRemovingChainSFX(bool hasRemovedChainDueToInteraction);                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnSurvivorStoppedRemovingChainSFX(bool hasRemovedChainDueToInteraction);                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnSurvivorStartedRemovingChainSFX
-	// void Cosmetic_OnSurvivorStartedRemovingChainSFX();                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnSurvivorStartedRemovingChainSFX();                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnInstantChainUnleashedTowardsAttachmentPointFX
-	// void Cosmetic_OnInstantChainUnleashedTowardsAttachmentPointFX();                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInstantChainUnleashedTowardsAttachmentPointFX();                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnChainUnleashedWithProjectile
-	// void Cosmetic_OnChainUnleashedWithProjectile();                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnChainUnleashedWithProjectile();                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnChainStartedToReelback
-	// void Cosmetic_OnChainStartedToReelback();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainStartedToReelback();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnChainDisappears
-	// void Cosmetic_OnChainDisappears();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainDisappears();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnChainDetachedFromSurvivor
-	// void Cosmetic_OnChainDetachedFromSurvivor(EK25ChainDetachmentReason detachmentReason);                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnChainDetachedFromSurvivor(EK25ChainDetachmentReason detachmentReason);                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnChainAttachedToSurvivor
-	// void Cosmetic_OnChainAttachedToSurvivor(bool wasReachingSurvivorAnchorPoint);                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainAttachedToSurvivor(bool wasReachingSurvivorAnchorPoint);                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Chain.Cosmetic_OnChainAppears
-	// void Cosmetic_OnChainAppears();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainAppears();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25ChainAttachedStatusEffect
@@ -341,7 +341,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainAttachedStatusEffect.OnRep_ChainAttachementComponent
-	// void OnRep_ChainAttachementComponent();                                                                               // [0x5b67750] Final|Native|Private 
+	// void OnRep_ChainAttachementComponent();                                                                               // [0x5b748e0] Final|Native|Private 
 };
 
 /// Class /Script/TheK25.K25ChainAttachmentReplicationComponent
@@ -353,13 +353,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainAttachmentReplicationComponent.Multicast_StartChainReelback
-	// void Multicast_StartChainReelback(class AK25Chain* chainToAttach);                                                    // [0x58c5550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartChainReelback(class AK25Chain* chainToAttach);                                                    // [0x58cbe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25ChainAttachmentReplicationComponent.Multicast_LaunchInstantHitChainTowardsSurvivor
-	// void Multicast_LaunchInstantHitChainTowardsSurvivor(class AK25Chain* newChainToAttach, class AK25SurvivorChainAttachmentAnchor* targetAnchor, FVector StartPosition); // [0x5b672b0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_LaunchInstantHitChainTowardsSurvivor(class AK25Chain* newChainToAttach, class AK25SurvivorChainAttachmentAnchor* targetAnchor, FVector StartPosition); // [0x5b74440] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.K25ChainAttachmentReplicationComponent.Multicast_DetachChains
-	// void Multicast_DetachChains(class UK25SurvivorChainAttachmentComponent* chainAttachementComponent, TArray<AK25Chain*> chainsToDetach, EK25ChainDetachmentReason detachmentReason, TArray<AK25Chain*> chainsAttached); // [0x5b67120] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DetachChains(class UK25SurvivorChainAttachmentComponent* chainAttachementComponent, TArray<AK25Chain*> chainsToDetach, EK25ChainDetachmentReason detachmentReason, TArray<AK25Chain*> chainsAttached); // [0x5b742b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25ChainAttachmentReplicationComponent.Multicast_AttachChainToAnchor
-	// void Multicast_AttachChainToAnchor(class UK25SurvivorChainAttachmentComponent* chainAttachementComponent, class AK25Chain* chainToAttach, class AK25SurvivorChainAttachmentAnchor* anchorPoint); // [0x5b67010] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_AttachChainToAnchor(class UK25SurvivorChainAttachmentComponent* chainAttachementComponent, class AK25Chain* chainToAttach, class AK25SurvivorChainAttachmentAnchor* anchorPoint); // [0x5b741a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK25.K25ChainHuntEffectsComponent
@@ -372,13 +372,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainHuntEffectsComponent.GetOwningPlayer
-	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x5b66ea0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x5b74030] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25ChainHuntEffectsComponent.Cosmetic_TriggerChainHuntActivationSFX
-	// void Cosmetic_TriggerChainHuntActivationSFX();                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerChainHuntActivationSFX();                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25ChainHuntEffectsComponent.Cosmetic_DeactivateChainHuntEffects
-	// void Cosmetic_DeactivateChainHuntEffects();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_DeactivateChainHuntEffects();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25ChainHuntEffectsComponent.Cosmetic_ActivateChainHuntEffects
-	// void Cosmetic_ActivateChainHuntEffects(bool hasChainHuntStarted);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivateChainHuntEffects(bool hasChainHuntStarted);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/TheK25.K25ChainAnchorAnimationData
@@ -391,7 +391,7 @@ struct FK25ChainAnchorAnimationData
 	bool                                               HasChainAttached;                                           // 0x000C   (0x0001)  
 	bool                                               IsChainBeingRemoved;                                        // 0x000D   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x000E   (0x0002)  MISSED
-	SDK_UNDEFINED(8,5105) /* TWeakObjectPtr<AK25Chain*> */ __um(AttachedChain);                                    // 0x0010   (0x0008)  
+	SDK_UNDEFINED(8,5495) /* TWeakObjectPtr<AK25Chain*> */ __um(AttachedChain);                                    // 0x0010   (0x0008)  
 };
 
 /// Class /Script/TheK25.K25ChainLocomotionSurvivorAnimInstance
@@ -430,9 +430,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainLocomotionSurvivorAnimInstance.OnChainDetached
-	// void OnChainDetached(class AK25Chain* chain, class AK25SurvivorChainAttachmentAnchor* chainAttachmentAnchor, EK25ChainDetachmentReason detachmentReason); // [0x5b67640] Final|Native|Protected 
+	// void OnChainDetached(class AK25Chain* chain, class AK25SurvivorChainAttachmentAnchor* chainAttachmentAnchor, EK25ChainDetachmentReason detachmentReason); // [0x5b747d0] Final|Native|Protected 
 	// Function /Script/TheK25.K25ChainLocomotionSurvivorAnimInstance.OnChainAttached
-	// void OnChainAttached(class AK25Chain* chain, class AK25SurvivorChainAttachmentAnchor* chainAttachmentAnchor);         // [0x5b67570] Final|Native|Protected 
+	// void OnChainAttached(class AK25Chain* chain, class AK25SurvivorChainAttachmentAnchor* chainAttachmentAnchor);         // [0x5b74700] Final|Native|Protected 
 };
 
 /// Class /Script/TheK25.K25ChainPool
@@ -470,16 +470,16 @@ public:
 class UK25ChainStrikeBaseState : public UFSM_State
 { 
 public:
-	SDK_UNDEFINED(80,5106) /* TSet<FName> */           __um(_secondaryInteractionIDs);                             // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,5496) /* TSet<FName> */           __um(_secondaryInteractionIDs);                             // 0x0078   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainStrikeBaseState.GetPlayerOwner
-	// class ADBDPlayer* GetPlayerOwner();                                                                                   // [0x5b66ed0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetPlayerOwner();                                                                                   // [0x5b74060] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25ChainStrikeBaseState.GetK25Power
-	// class AK25Power* GetK25Power();                                                                                       // [0x5b66e70] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AK25Power* GetK25Power();                                                                                       // [0x5b74000] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25ChainStrikeBaseState.GetK25Gateway
-	// class AK25Gateway* GetK25Gateway();                                                                                   // [0x5b66e40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AK25Gateway* GetK25Gateway();                                                                                   // [0x5b73fd0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK25.K25ChainStrikeImmunityEffect
@@ -495,54 +495,54 @@ public:
 class UK25ChainStrikeInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	class UClass*                                      _chainStrikeStateMachineclass;                              // 0x0788   (0x0008)  
-	float                                              _repossessFadeOutTime;                                      // 0x0790   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0794   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _repossessFadeInTime;                                       // 0x0798   (0x0028)  
-	class UCurveFloat*                                 _gatewayPossessionFovModifierCurve;                         // 0x07C0   (0x0008)  
-	class UCurveFloat*                                 _controlledProjectilePossessionFovModifierCurve;            // 0x07C8   (0x0008)  
-	FDBDTunableRowHandle                               _chargeTimeAfterGatewayPlacementCancelled;                  // 0x07D0   (0x0028)  
-	FDBDTunableRowHandle                               _chargeTimeAfterGatewayPossessionCancelled;                 // 0x07F8   (0x0028)  
-	FDBDTunableRowHandle                               _chargeTimeAfterControlledChainShot;                        // 0x0820   (0x0028)  
-	FDBDTunableRowHandle                               _gatewayPossessionFovChangeDuration;                        // 0x0848   (0x0028)  
-	FDBDTunableRowHandle                               _gatewayPossessionCameraPanTime;                            // 0x0870   (0x0028)  
-	FDBDTunableRowHandle                               _controlledProjectilePossessionCameraPanTime;               // 0x0898   (0x0028)  
-	FDBDTunableRowHandle                               _controlledProjectilePossessionFovTimeChangeDuration;       // 0x08C0   (0x0028)  
-	class UFiniteStateMachine*                         _stateMachine;                                              // 0x08E8   (0x0008)  
-	bool                                               _authority_shouldIncrementChargeableComponent;              // 0x08F0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x68];                                      // 0x08F1   (0x0068)  MISSED
-	EChainStrikeCameraViewTarget                       _chainStrikeCameraViewTarget;                               // 0x0959   (0x0001)  
-	bool                                               _hasHitSurvivor;                                            // 0x095A   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x65];                                      // 0x095B   (0x0065)  MISSED
+	class UClass*                                      _chainStrikeStateMachineclass;                              // 0x0790   (0x0008)  
+	float                                              _repossessFadeOutTime;                                      // 0x0798   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x079C   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _repossessFadeInTime;                                       // 0x07A0   (0x0028)  
+	class UCurveFloat*                                 _gatewayPossessionFovModifierCurve;                         // 0x07C8   (0x0008)  
+	class UCurveFloat*                                 _controlledProjectilePossessionFovModifierCurve;            // 0x07D0   (0x0008)  
+	FDBDTunableRowHandle                               _chargeTimeAfterGatewayPlacementCancelled;                  // 0x07D8   (0x0028)  
+	FDBDTunableRowHandle                               _chargeTimeAfterGatewayPossessionCancelled;                 // 0x0800   (0x0028)  
+	FDBDTunableRowHandle                               _chargeTimeAfterControlledChainShot;                        // 0x0828   (0x0028)  
+	FDBDTunableRowHandle                               _gatewayPossessionFovChangeDuration;                        // 0x0850   (0x0028)  
+	FDBDTunableRowHandle                               _gatewayPossessionCameraPanTime;                            // 0x0878   (0x0028)  
+	FDBDTunableRowHandle                               _controlledProjectilePossessionCameraPanTime;               // 0x08A0   (0x0028)  
+	FDBDTunableRowHandle                               _controlledProjectilePossessionFovTimeChangeDuration;       // 0x08C8   (0x0028)  
+	class UFiniteStateMachine*                         _stateMachine;                                              // 0x08F0   (0x0008)  
+	bool                                               _authority_shouldIncrementChargeableComponent;              // 0x08F8   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x68];                                      // 0x08F9   (0x0068)  MISSED
+	EChainStrikeCameraViewTarget                       _chainStrikeCameraViewTarget;                               // 0x0961   (0x0001)  
+	bool                                               _hasHitSurvivor;                                            // 0x0962   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x5D];                                      // 0x0963   (0x005D)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Server_UpdateCameraViewTargetForObservers
-	// void Server_UpdateCameraViewTargetForObservers(EChainStrikeCameraViewTarget NewViewTarget);                           // [0x5b67b50] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_UpdateCameraViewTargetForObservers(EChainStrikeCameraViewTarget NewViewTarget);                           // [0x5b74ce0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Server_SetShouldIncrementChargeableComponent
-	// void Server_SetShouldIncrementChargeableComponent(bool shouldIncrement);                                              // [0x5b67ac0] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_SetShouldIncrementChargeableComponent(bool shouldIncrement);                                              // [0x5b74c50] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Server_SetFallbackEndReason
-	// void Server_SetFallbackEndReason(EChainStrikeEndReason chainStrikeEndReason);                                         // [0x5b67a40] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_SetFallbackEndReason(EChainStrikeEndReason chainStrikeEndReason);                                         // [0x5b74bd0] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Server_RemoveStateTagFromPlayer
-	// void Server_RemoveStateTagFromPlayer(FGameplayTag Tag);                                                               // [0x5b67950] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_RemoveStateTagFromPlayer(FGameplayTag Tag);                                                               // [0x5b74ae0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Server_AddStateTagToPlayer
-	// void Server_AddStateTagToPlayer(FGameplayTag Tag);                                                                    // [0x5b67860] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_AddStateTagToPlayer(FGameplayTag Tag);                                                                    // [0x5b749f0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.OnRep_ChainStrikeCameraViewTarget
-	// void OnRep_ChainStrikeCameraViewTarget();                                                                             // [0x5b67770] Final|Native|Private 
+	// void OnRep_ChainStrikeCameraViewTarget();                                                                             // [0x5b74900] Final|Native|Private 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Multicast_SetFallbackEndReason
-	// void Multicast_SetFallbackEndReason(EChainStrikeEndReason chainStrikeEndReason);                                      // [0x5b67470] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_SetFallbackEndReason(EChainStrikeEndReason chainStrikeEndReason);                                      // [0x5b74600] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Multicast_RemoveStateTagFromPlayer
-	// void Multicast_RemoveStateTagFromPlayer(FGameplayTag Tag);                                                            // [0x5b673c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_RemoveStateTagFromPlayer(FGameplayTag Tag);                                                            // [0x5b74550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Multicast_AddStateTagToPlayer
-	// void Multicast_AddStateTagToPlayer(FGameplayTag Tag);                                                                 // [0x5b66f60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_AddStateTagToPlayer(FGameplayTag Tag);                                                                 // [0x5b740f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Cosmetic_TriggerKillerRepossessionFadeOutEffects
-	// void Cosmetic_TriggerKillerRepossessionFadeOutEffects(class ASlasherPlayer* killer, bool preventAudioTriggers);       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerKillerRepossessionFadeOutEffects(class ASlasherPlayer* killer, bool preventAudioTriggers);       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Cosmetic_TriggerKillerRepossessionFadeInEffects
-	// void Cosmetic_TriggerKillerRepossessionFadeInEffects(class ASlasherPlayer* killer, bool hasHitSurvivor, bool preventAudioTriggers); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerKillerRepossessionFadeInEffects(class ASlasherPlayer* killer, bool hasHitSurvivor, bool preventAudioTriggers); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Cosmetic_TriggerGatewayPossessionEffects
-	// void Cosmetic_TriggerGatewayPossessionEffects(float TransitionTime);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayPossessionEffects(float TransitionTime);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25ChainStrikeInteraction.Cosmetic_ResetAllVignetteValues
-	// void Cosmetic_ResetAllVignetteValues(class ASlasherPlayer* killer);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ResetAllVignetteValues(class ASlasherPlayer* killer);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25ChainStrikeReplicationComponent
@@ -554,9 +554,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ChainStrikeReplicationComponent.Server_EndChainStrike
-	// void Server_EndChainStrike(class UK25ChainStrikeInteraction* Interaction, EChainStrikeEndReason endReason);           // [0x57f1220] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_EndChainStrike(class UK25ChainStrikeInteraction* Interaction, EChainStrikeEndReason endReason);           // [0x57f4490] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK25.K25ChainStrikeReplicationComponent.Multicast_EndChainStrike
-	// void Multicast_EndChainStrike(class UK25ChainStrikeInteraction* Interaction, EChainStrikeEndReason endReason);        // [0x5869b40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_EndChainStrike(class UK25ChainStrikeInteraction* Interaction, EChainStrikeEndReason endReason);        // [0x586e020] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK25.K25ChainStrikeState_EndChainStrike
@@ -618,29 +618,29 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25TriggerUncontrolledChainsOnLocalSurvivor
-	// void DBD_K25TriggerUncontrolledChainsOnLocalSurvivor(int32_t numbChains);                                             // [0x4e00fc0] Final|Exec|Native|Public 
+	// void DBD_K25TriggerUncontrolledChainsOnLocalSurvivor(int32_t numbChains);                                             // [0x4dd9ef0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25TriggerUncontrolledChainsOnClosestsSurvivorToPosition
-	// void DBD_K25TriggerUncontrolledChainsOnClosestsSurvivorToPosition(float X, float Y, float Z, int32_t numbChains);     // [0x5b6b2e0] Final|Exec|Native|Public 
+	// void DBD_K25TriggerUncontrolledChainsOnClosestsSurvivorToPosition(float X, float Y, float Z, int32_t numbChains);     // [0x5b78470] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25TriggerUncontrolledChainsOnAllSurvivors
-	// void DBD_K25TriggerUncontrolledChainsOnAllSurvivors(int32_t numbChains);                                              // [0x4e00fc0] Final|Exec|Native|Public 
+	// void DBD_K25TriggerUncontrolledChainsOnAllSurvivors(int32_t numbChains);                                              // [0x4dd9ef0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ShowAllLamentConfigurationSpawnPoints
-	// void DBD_K25ShowAllLamentConfigurationSpawnPoints(float timeDisplayed);                                               // [0x49bd730] Final|Exec|Native|Public 
+	// void DBD_K25ShowAllLamentConfigurationSpawnPoints(float timeDisplayed);                                               // [0x496cad0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25SetPowerNoCooldown
-	// void DBD_K25SetPowerNoCooldown(bool noCooldown);                                                                      // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_K25SetPowerNoCooldown(bool noCooldown);                                                                      // [0x581c030] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25RevealLamentConfigurationLocation
-	// void DBD_K25RevealLamentConfigurationLocation(float timeDisplayed);                                                   // [0x49bd730] Final|Exec|Native|Public 
+	// void DBD_K25RevealLamentConfigurationLocation(float timeDisplayed);                                                   // [0x496cad0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ForceRespawnLamentConfiguration
-	// void DBD_K25ForceRespawnLamentConfiguration();                                                                        // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K25ForceRespawnLamentConfiguration();                                                                        // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ForceRemoveAllChainsOnLocalSurvivor
-	// void DBD_K25ForceRemoveAllChainsOnLocalSurvivor();                                                                    // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K25ForceRemoveAllChainsOnLocalSurvivor();                                                                    // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ForceRemoveAllChainsOnClosestsSurvivorToPosition
-	// void DBD_K25ForceRemoveAllChainsOnClosestsSurvivorToPosition(float X, float Y, float Z);                              // [0x5b20730] Final|Exec|Native|Public 
+	// void DBD_K25ForceRemoveAllChainsOnClosestsSurvivorToPosition(float X, float Y, float Z);                              // [0x5b2d4c0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ForceRemoveAllChainsOnAllSurvivors
-	// void DBD_K25ForceRemoveAllChainsOnAllSurvivors();                                                                     // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K25ForceRemoveAllChainsOnAllSurvivors();                                                                     // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ComeToPositionLamentConfiguration
-	// void DBD_K25ComeToPositionLamentConfiguration(float X, float Y, float Z);                                             // [0x5b20730] Final|Exec|Native|Public 
+	// void DBD_K25ComeToPositionLamentConfiguration(float X, float Y, float Z);                                             // [0x5b2d4c0] Final|Exec|Native|Public 
 	// Function /Script/TheK25.K25CheatComponent.DBD_K25ComeToMeLamentConfiguration
-	// void DBD_K25ComeToMeLamentConfiguration();                                                                            // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K25ComeToMeLamentConfiguration();                                                                            // [0x4592da0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheK25.K25CollectLamentConfigurationInteraction
@@ -686,17 +686,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25Projectile.Server_RequestDisableProjectile
-	// void Server_RequestDisableProjectile(EK25ProjectileDeactivateReason deactivateReason);                                // [0x5b6fcb0] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_RequestDisableProjectile(EK25ProjectileDeactivateReason deactivateReason);                                // [0x5b7d070] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK25.K25Projectile.OnProjectileStopped
-	// void OnProjectileStopped(FHitResult& Result);                                                                         // [0x5b6fa70] Final|Native|Protected|HasOutParms 
+	// void OnProjectileStopped(FHitResult& Result);                                                                         // [0x5b7ce30] Final|Native|Protected|HasOutParms 
 	// Function /Script/TheK25.K25Projectile.GetMovementComponent
-	// class UDBDProjectileMovementComponent* GetMovementComponent();                                                        // [0x5b6f2c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDBDProjectileMovementComponent* GetMovementComponent();                                                        // [0x5b7c680] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25Projectile.GetChainAttachmentLocation
-	// FVector GetChainAttachmentLocation();                                                                                 // [0x5b6f160] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetChainAttachmentLocation();                                                                                 // [0x5b7c520] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TheK25.K25Projectile.Cosmetic_OnProjectileDeactivated
-	// void Cosmetic_OnProjectileDeactivated(FK25ProjectileDeactivationData& deactivationData);                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
+	// void Cosmetic_OnProjectileDeactivated(FK25ProjectileDeactivationData& deactivationData);                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/TheK25.K25Projectile.Cosmetic_OnProjectileActivated
-	// void Cosmetic_OnProjectileActivated();                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnProjectileActivated();                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25ControlledProjectile
@@ -726,13 +726,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ControlledProjectile.Server_ProcessYawInput
-	// void Server_ProcessYawInput(float DeltaTime, float scaledInput);                                                      // [0x5b6ba70] Net|Native|Event|Public|NetServer 
+	// void Server_ProcessYawInput(float DeltaTime, float scaledInput);                                                      // [0x5b78c00] Net|Native|Event|Public|NetServer 
 	// Function /Script/TheK25.K25ControlledProjectile.Server_ProcessPitchInput
-	// void Server_ProcessPitchInput(float DeltaTime, float scaledInput);                                                    // [0x5b6b9a0] Net|Native|Event|Public|NetServer 
+	// void Server_ProcessPitchInput(float DeltaTime, float scaledInput);                                                    // [0x5b78b30] Net|Native|Event|Public|NetServer 
 	// Function /Script/TheK25.K25ControlledProjectile.OnRep_AngularVelocity
-	// void OnRep_AngularVelocity();                                                                                         // [0x45fe020] Final|Native|Private 
+	// void OnRep_AngularVelocity();                                                                                         // [0x4592da0] Final|Native|Private 
 	// Function /Script/TheK25.K25ControlledProjectile.Cosmetic_OnKillerPossessProjectileEffects
-	// void Cosmetic_OnKillerPossessProjectileEffects();                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerPossessProjectileEffects();                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25ControlledProjectileMovementComponent
@@ -795,47 +795,47 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25Gateway.Server_StartGatewayPossession
-	// void Server_StartGatewayPossession(FVector possessionLocation, FRotator gatewayRotation);                             // [0x5b6bcb0] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
+	// void Server_StartGatewayPossession(FVector possessionLocation, FRotator gatewayRotation);                             // [0x5b78e40] Final|Net|NetReliableNative|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK25.K25Gateway.Server_SetIsGatewayBeingPositionned
-	// void Server_SetIsGatewayBeingPositionned(bool isBeingPositionned);                                                    // [0x5a894a0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetIsGatewayBeingPositionned(bool isBeingPositionned);                                                    // [0x5a91d40] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK25.K25Gateway.Server_SetGatewayTargetLocation
-	// void Server_SetGatewayTargetLocation(FVector targetLocation, bool isValidLocation);                                   // [0x5b6bbd0] Final|Net|Native|Event|Private|NetServer|HasDefaults 
+	// void Server_SetGatewayTargetLocation(FVector targetLocation, bool isValidLocation);                                   // [0x5b78d60] Final|Net|Native|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK25.K25Gateway.Server_SetGatewayOrientation
-	// void Server_SetGatewayOrientation(FRotator Rotation);                                                                 // [0x5b6bb40] Final|Net|Native|Event|Private|NetServer|HasDefaults 
+	// void Server_SetGatewayOrientation(FRotator Rotation);                                                                 // [0x5b78cd0] Final|Net|Native|Event|Private|NetServer|HasDefaults 
 	// Function /Script/TheK25.K25Gateway.Server_EndGatewayPossession
-	// void Server_EndGatewayPossession();                                                                                   // [0x5b6b980] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_EndGatewayPossession();                                                                                   // [0x5b78b10] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK25.K25Gateway.OnRep_IsGatewayPossessed
-	// void OnRep_IsGatewayPossessed();                                                                                      // [0x5b6b8d0] Final|Native|Private 
+	// void OnRep_IsGatewayPossessed();                                                                                      // [0x5b78a60] Final|Native|Private 
 	// Function /Script/TheK25.K25Gateway.OnRep_IsBeingPositionned
-	// void OnRep_IsBeingPositionned();                                                                                      // [0x5b6b8b0] Final|Native|Private 
+	// void OnRep_IsBeingPositionned();                                                                                      // [0x5b78a40] Final|Native|Private 
 	// Function /Script/TheK25.K25Gateway.Multicast_SetGatewayTargetLocation
-	// void Multicast_SetGatewayTargetLocation(FVector targetLocation, bool isValidLocation);                                // [0x5b6b5d0] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetGatewayTargetLocation(FVector targetLocation, bool isValidLocation);                                // [0x5b78760] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.K25Gateway.Multicast_SetGatewayOrientation
-	// void Multicast_SetGatewayOrientation(FRotator Rotation);                                                              // [0x5b6b540] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetGatewayOrientation(FRotator Rotation);                                                              // [0x5b786d0] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.K25Gateway.Multicast_SetGatewayLocation
-	// void Multicast_SetGatewayLocation(FVector possessionLocation);                                                        // [0x5b6b4b0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_SetGatewayLocation(FVector possessionLocation);                                                        // [0x5b78640] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.K25Gateway.IsGatewayPossessed
-	// bool IsGatewayPossessed();                                                                                            // [0x58828f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsGatewayPossessed();                                                                                            // [0x58c65f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25Gateway.GetCameraComponent
-	// class UCameraComponent* GetCameraComponent();                                                                         // [0x61c32d0] Event|Protected|BlueprintEvent|Const 
+	// class UCameraComponent* GetCameraComponent();                                                                         // [0x61d2f50] Event|Protected|BlueprintEvent|Const 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerInvalidGatewayPlacementSFX
-	// void Cosmetic_TriggerInvalidGatewayPlacementSFX();                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerInvalidGatewayPlacementSFX();                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerGatewayUnpossessedEffects
-	// void Cosmetic_TriggerGatewayUnpossessedEffects();                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayUnpossessedEffects();                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerGatewayPossessionCancel
-	// void Cosmetic_TriggerGatewayPossessionCancel();                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayPossessionCancel();                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerGatewayPossessedEffects
-	// void Cosmetic_TriggerGatewayPossessedEffects(float TransitionTime);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayPossessedEffects(float TransitionTime);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerGatewayPlacementStop
-	// void Cosmetic_TriggerGatewayPlacementStop();                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayPlacementStop();                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerGatewayPlacementStart
-	// void Cosmetic_TriggerGatewayPlacementStart();                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayPlacementStart();                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_TriggerGatewayPlacementCancel
-	// void Cosmetic_TriggerGatewayPlacementCancel();                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerGatewayPlacementCancel();                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_SetKillerVisualVisibility
-	// void Cosmetic_SetKillerVisualVisibility(bool IsVisible);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SetKillerVisualVisibility(bool IsVisible);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Gateway.Cosmetic_SetIsGatewayPositionValid
-	// void Cosmetic_SetIsGatewayPositionValid(bool isGatewayPlacementValid);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetIsGatewayPositionValid(bool isGatewayPlacementValid);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25Husk
@@ -851,11 +851,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25Husk.Cosmetic_StartDisappearing
-	// void Cosmetic_StartDisappearing();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_StartDisappearing();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Husk.Cosmetic_StartAppearing
-	// void Cosmetic_StartAppearing();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_StartAppearing();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.K25Husk.Cosmetic_HideHusk
-	// void Cosmetic_HideHusk();                                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_HideHusk();                                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25KillerChainHuntEffectsComponent
@@ -908,7 +908,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25LamentConfigurationTeleportIndicator.Cosmetic_UpdateIndicatorVisibility
-	// void Cosmetic_UpdateIndicatorVisibility(bool IsVisible);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateIndicatorVisibility(bool IsVisible);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25P01
@@ -929,13 +929,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25P01.OnRep_GeneratorsBlocked
-	// void OnRep_GeneratorsBlocked();                                                                                       // [0x5b6b890] Final|Native|Private 
+	// void OnRep_GeneratorsBlocked();                                                                                       // [0x5b78a20] Final|Native|Private 
 	// Function /Script/TheK25.K25P01.GetGeneratorBlockDuration
-	// float GetGeneratorBlockDuration();                                                                                    // [0x500a800] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetGeneratorBlockDuration();                                                                                    // [0x4fe80b0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25P01.GetAuraRevealDuration
-	// float GetAuraRevealDuration();                                                                                        // [0x500a980] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetAuraRevealDuration();                                                                                        // [0x4fe8230] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25P01.Authority_OnBlockTimerDone
-	// void Authority_OnBlockTimerDone(class AGenerator* Generator);                                                         // [0x5b6b250] Final|Native|Private 
+	// void Authority_OnBlockTimerDone(class AGenerator* Generator);                                                         // [0x5b783e0] Final|Native|Private 
 };
 
 /// Struct /Script/TheK25.DBDPlayerTotemPair
@@ -968,13 +968,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25P02.OnRep_CursedSurvivors
-	// void OnRep_CursedSurvivors();                                                                                         // [0x5b6b870] Final|Native|Private 
+	// void OnRep_CursedSurvivors();                                                                                         // [0x5b78a00] Final|Native|Private 
 	// Function /Script/TheK25.K25P02.GetTotemBlockerHasLifetime
-	// bool GetTotemBlockerHasLifetime();                                                                                    // [0x5b6b480] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetTotemBlockerHasLifetime();                                                                                    // [0x5b78610] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25P02.GetTotemBlockerDuration
-	// float GetTotemBlockerDuration();                                                                                      // [0x5b6b450] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTotemBlockerDuration();                                                                                      // [0x5b785e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25P02.GetTotemAuraRevealRadius
-	// float GetTotemAuraRevealRadius();                                                                                     // [0x500f5d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTotemAuraRevealRadius();                                                                                     // [0x4feceb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK25.K25P03
@@ -993,13 +993,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25P03.OnSurvivorRemoved
-	// void OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                                // [0x5b6b8f0] Final|Native|Private 
+	// void OnSurvivorRemoved(class ACamperPlayer* Survivor);                                                                // [0x5b78a80] Final|Native|Private 
 	// Function /Script/TheK25.K25P03.OnDamageStateChanged
-	// void OnDamageStateChanged(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                   // [0x5b6b760] Final|Native|Private|HasOutParms 
+	// void OnDamageStateChanged(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                   // [0x5b788f0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK25.K25P03.OnCamperUnhookedFromScourgeHook
-	// void OnCamperUnhookedFromScourgeHook(FGameEventData& GameEventData);                                                  // [0x5b6b6b0] Final|Native|Private|HasOutParms 
+	// void OnCamperUnhookedFromScourgeHook(FGameEventData& GameEventData);                                                  // [0x5b78840] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK25.K25P03.GetActionSpeedDebuffPercentageAtLevel
-	// float GetActionSpeedDebuffPercentageAtLevel();                                                                        // [0x500a8c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActionSpeedDebuffPercentageAtLevel();                                                                        // [0x4fe8170] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK25.K25PounceAttack
@@ -1012,9 +1012,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25PounceAttack.Multicast_DownedTargetHoldingLamentConfiguration
-	// void Multicast_DownedTargetHoldingLamentConfiguration();                                                              // [0x5b20d20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DownedTargetHoldingLamentConfiguration();                                                              // [0x5b2dab0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25PounceAttack.Client_InvalidateDownedTargetHoldingLamentConfiguration
-	// void Client_InvalidateDownedTargetHoldingLamentConfiguration();                                                       // [0x5916d10] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_InvalidateDownedTargetHoldingLamentConfiguration();                                                       // [0x591c830] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/TheK25.K25PounceAttackHittingSubstate
@@ -1025,7 +1025,7 @@ public:
 };
 
 /// Class /Script/TheK25.K25Power
-/// Size: 0x0160 (0x0004C8 - 0x000628)
+/// Size: 0x0168 (0x0004C8 - 0x000630)
 class AK25Power : public ACollectable
 { 
 public:
@@ -1045,38 +1045,39 @@ public:
 	class UClass*                                      _chainAnimationActorClass;                                  // 0x0558   (0x0008)  
 	TArray<class UDataTable*>                          _chainAnimationMappingsTables;                              // 0x0560   (0x0010)  
 	class UClass*                                      _pillarAnimationActorClass;                                 // 0x0570   (0x0008)  
-	class UK25ProjectileLauncher*                      _k25ProjectileLauncher;                                     // 0x0578   (0x0008)  
-	class UAuthoritativeActorPoolComponent*            _k25ProjectilePool;                                         // 0x0580   (0x0008)  
-	class UAuthoritativeActorPoolComponent*            _k25ChainPool;                                              // 0x0588   (0x0008)  
-	class UPowerChargeComponent*                       _k25PowerChargeComponent;                                   // 0x0590   (0x0008)  
-	class UAuthoritativePoolProjectileProviderAdapter* _k25ProjectileProvider;                                     // 0x0598   (0x0008)  
-	class UK25PowerChargePresentationItemProgressComponent* _k25PowerPresentationItemProgressComponent;            // 0x05A0   (0x0008)  
-	class AK25Gateway*                                 _gateway;                                                   // 0x05A8   (0x0008)  
-	class AK25ControlledProjectile*                    _controlledProjectileInstance;                              // 0x05B0   (0x0008)  
-	class ALamentConfiguration*                        _lamentConfiguration;                                       // 0x05B8   (0x0008)  
-	class AK25Husk*                                    _k25Husk;                                                   // 0x05C0   (0x0008)  
-	class UK25ChainAttachmentReplicationComponent*     _chainAttachmentReplicationComponent;                       // 0x05C8   (0x0008)  
-	class UInteractionAttacherComponent*               _interactionAttacherComponent;                              // 0x05D0   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x48];                                      // 0x05D8   (0x0048)  MISSED
-	bool                                               _isPowerCharged;                                            // 0x0620   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0621   (0x0007)  MISSED
+	class UClass*                                      _chainsAttachedStatusEffectClass;                           // 0x0578   (0x0008)  
+	class UK25ProjectileLauncher*                      _k25ProjectileLauncher;                                     // 0x0580   (0x0008)  
+	class UAuthoritativeActorPoolComponent*            _k25ProjectilePool;                                         // 0x0588   (0x0008)  
+	class UAuthoritativeActorPoolComponent*            _k25ChainPool;                                              // 0x0590   (0x0008)  
+	class UPowerChargeComponent*                       _k25PowerChargeComponent;                                   // 0x0598   (0x0008)  
+	class UAuthoritativePoolProjectileProviderAdapter* _k25ProjectileProvider;                                     // 0x05A0   (0x0008)  
+	class UK25PowerChargePresentationItemProgressComponent* _k25PowerPresentationItemProgressComponent;            // 0x05A8   (0x0008)  
+	class AK25Gateway*                                 _gateway;                                                   // 0x05B0   (0x0008)  
+	class AK25ControlledProjectile*                    _controlledProjectileInstance;                              // 0x05B8   (0x0008)  
+	class ALamentConfiguration*                        _lamentConfiguration;                                       // 0x05C0   (0x0008)  
+	class AK25Husk*                                    _k25Husk;                                                   // 0x05C8   (0x0008)  
+	class UK25ChainAttachmentReplicationComponent*     _chainAttachmentReplicationComponent;                       // 0x05D0   (0x0008)  
+	class UInteractionAttacherComponent*               _interactionAttacherComponent;                              // 0x05D8   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x48];                                      // 0x05E0   (0x0048)  MISSED
+	bool                                               _isPowerCharged;                                            // 0x0628   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0629   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK25.K25Power.OnSurvivorAdded
-	// void OnSurvivorAdded(class ACamperPlayer* Survivor, class ASlasherPlayer* killer);                                    // [0x5b6fbe0] Final|Native|Private 
+	// void OnSurvivorAdded(class ACamperPlayer* Survivor, class ASlasherPlayer* killer);                                    // [0x5b7cfa0] Final|Native|Private 
 	// Function /Script/TheK25.K25Power.OnRep_LamentConfiguration
-	// void OnRep_LamentConfiguration();                                                                                     // [0x5b6fba0] Final|Native|Private 
+	// void OnRep_LamentConfiguration();                                                                                     // [0x5b7cf60] Final|Native|Private 
 	// Function /Script/TheK25.K25Power.OnRep_K25Gateway
-	// void OnRep_K25Gateway();                                                                                              // [0x5b6fb80] Final|Native|Private 
+	// void OnRep_K25Gateway();                                                                                              // [0x5b7cf40] Final|Native|Private 
 	// Function /Script/TheK25.K25Power.OnRep_K25ControlledProjectile
-	// void OnRep_K25ControlledProjectile();                                                                                 // [0x5b6fb60] Final|Native|Private 
+	// void OnRep_K25ControlledProjectile();                                                                                 // [0x5b7cf20] Final|Native|Private 
 	// Function /Script/TheK25.K25Power.OnKillerAdded
-	// void OnKillerAdded(class ASlasherPlayer* killer);                                                                     // [0x5b6f9e0] Final|Native|Private 
+	// void OnKillerAdded(class ASlasherPlayer* killer);                                                                     // [0x5b7cda0] Final|Native|Private 
 	// Function /Script/TheK25.K25Power.Cosmetic_OnKillerInterruptSFX
-	// void Cosmetic_OnKillerInterruptSFX(class ASlasherPlayer* killer);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerInterruptSFX(class ASlasherPlayer* killer);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25Power.Cosmetic_OnKillerInterruptOpenHatchSFX
-	// void Cosmetic_OnKillerInterruptOpenHatchSFX(class ASlasherPlayer* killer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerInterruptOpenHatchSFX(class ASlasherPlayer* killer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25PowerChargePresentationItemProgressComponent
@@ -1115,21 +1116,22 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25ProjectileReplicationComponent.Multicast_SetAttachedChain
-	// void Multicast_SetAttachedChain(class AK25Projectile* Projectile, class AK25Chain* chainToAttach, FLaunchInfo LaunchInfo); // [0x5b6f740] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetAttachedChain(class AK25Projectile* Projectile, class AK25Chain* chainToAttach, FLaunchInfo LaunchInfo); // [0x5b7cb00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25ProjectileReplicationComponent.Multicast_DeactivateProjectile
-	// void Multicast_DeactivateProjectile(class AK25Projectile* Projectile, FK25ProjectileDeactivationData deactivationData); // [0x5b6f350] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DeactivateProjectile(class AK25Projectile* Projectile, FK25ProjectileDeactivationData deactivationData); // [0x5b7c710] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK25.K25RemoveChainInteraction
-/// Size: 0x0050 (0x000790 - 0x0007E0)
+/// Size: 0x0060 (0x000790 - 0x0007F0)
 class UK25RemoveChainInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
-	FDBDTunableRowHandle                               _interactionTimePerChainsAttached;                          // 0x07A0   (0x0028)  
-	class UK25SurvivorChainAttachmentComponent*        _cachedSurvivorChainAttachmentComponent;                    // 0x07C8   (0x0008)  
-	SDK_UNDEFINED(8,5107) /* TWeakObjectPtr<AK25Chain*> */ __um(_chainBeingRemoved);                               // 0x07D0   (0x0008)  
-	SDK_UNDEFINED(8,5108) /* TWeakObjectPtr<UK25SurvivorChainAttachmentComponent*> */ __um(_chainAttachmentComponent); // 0x07D8   (0x0008)  
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0790   (0x0018)  MISSED
+	FDBDTunableRowHandle                               _interactionTimePerChainsAttached;                          // 0x07A8   (0x0028)  
+	class UK25SurvivorChainAttachmentComponent*        _cachedSurvivorChainAttachmentComponent;                    // 0x07D0   (0x0008)  
+	SDK_UNDEFINED(8,5497) /* TWeakObjectPtr<AK25Chain*> */ __um(_chainBeingRemoved);                               // 0x07D8   (0x0008)  
+	SDK_UNDEFINED(8,5498) /* TWeakObjectPtr<UK25SurvivorChainAttachmentComponent*> */ __um(_chainAttachmentComponent); // 0x07E0   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x07E8   (0x0008)  MISSED
 };
 
 /// Class /Script/TheK25.K25SolveLamentConfigurationInteraction
@@ -1137,20 +1139,20 @@ public:
 class UK25SolveLamentConfigurationInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	float                                              _timeBufferBeforeAllowedToUseInteractionAgain;              // 0x0788   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x078C   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _failSkillCheckTimePenalty;                                 // 0x0790   (0x0028)  
-	FAnimationMontageDescriptor                        _failMontage;                                               // 0x07B8   (0x0020)  
-	unsigned char                                      UnknownData01_6[0x98];                                      // 0x07D8   (0x0098)  MISSED
+	float                                              _timeBufferBeforeAllowedToUseInteractionAgain;              // 0x0790   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0794   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _failSkillCheckTimePenalty;                                 // 0x0798   (0x0028)  
+	FAnimationMontageDescriptor                        _failMontage;                                               // 0x07C0   (0x0020)  
+	unsigned char                                      UnknownData01_6[0x90];                                      // 0x07E0   (0x0090)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK25.K25SolveLamentConfigurationInteraction.Multicast_TriggerKillerStoppedInteractionViaAttackSFX
-	// void Multicast_TriggerKillerStoppedInteractionViaAttackSFX(class ASlasherPlayer* killer);                             // [0x50aead0] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_TriggerKillerStoppedInteractionViaAttackSFX(class ASlasherPlayer* killer);                             // [0x50928b0] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25SolveLamentConfigurationInteraction.Cosmetic_TriggerKillerStoppedInteractionViaAttackSFX
-	// void Cosmetic_TriggerKillerStoppedInteractionViaAttackSFX(class ASlasherPlayer* killer);                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerKillerStoppedInteractionViaAttackSFX(class ASlasherPlayer* killer);                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25SolveLamentConfigurationInteraction.Authority_OnSkillCheckResponseAuthority
-	// void Authority_OnSkillCheckResponseAuthority(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, ESkillCheckCustomType Type); // [0x5b6ee80] Final|Native|Private 
+	// void Authority_OnSkillCheckResponseAuthority(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, ESkillCheckCustomType Type); // [0x5b7c240] Final|Native|Private 
 };
 
 /// Struct /Script/TheK25.K25SurvivorChainAttachmentData
@@ -1177,8 +1179,8 @@ public:
 	float                                              _timeBetweenTrace;                                          // 0x0270   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0274   (0x0004)  MISSED
 	FK25SurvivorChainAttachmentData                    _attachmentData;                                            // 0x0278   (0x0028)  
-	SDK_UNDEFINED(8,5109) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_owningSurvivor);                              // 0x02A0   (0x0008)  
-	SDK_UNDEFINED(8,5110) /* TWeakObjectPtr<AK25Chain*> */ __um(_attachedChain);                                   // 0x02A8   (0x0008)  
+	SDK_UNDEFINED(8,5499) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_owningSurvivor);                              // 0x02A0   (0x0008)  
+	SDK_UNDEFINED(8,5500) /* TWeakObjectPtr<AK25Chain*> */ __um(_attachedChain);                                   // 0x02A8   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x30];                                      // 0x02B0   (0x0030)  MISSED
 	FVector                                            _cachedPullDirection;                                       // 0x02E0   (0x000C)  
 	unsigned char                                      UnknownData03_6[0xC];                                       // 0x02EC   (0x000C)  MISSED
@@ -1186,23 +1188,23 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.OnRep_AttachmentData
-	// void OnRep_AttachmentData();                                                                                          // [0x5b6fb40] Final|Native|Private 
+	// void OnRep_AttachmentData();                                                                                          // [0x5b7cf00] Final|Native|Private 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.GetNumberOfChainsAttached
-	// int32_t GetNumberOfChainsAttached();                                                                                  // [0x5b6f2f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumberOfChainsAttached();                                                                                  // [0x5b7c6b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.GetChainsPullLocation
-	// FVector GetChainsPullLocation();                                                                                      // [0x5b6f250] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetChainsPullLocation();                                                                                      // [0x5b7c610] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.GetChainsPullDirection
-	// FVector GetChainsPullDirection();                                                                                     // [0x5b6f210] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetChainsPullDirection();                                                                                     // [0x5b7c5d0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.GetChainPullDirectionAngle
-	// float GetChainPullDirectionAngle();                                                                                   // [0x5b6f1e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChainPullDirectionAngle();                                                                                   // [0x5b7c5a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.GetChainAttachmentLocation
-	// FVector GetChainAttachmentLocation();                                                                                 // [0x5b6f1a0] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
+	// FVector GetChainAttachmentLocation();                                                                                 // [0x5b7c560] Native|Event|Public|HasDefaults|BlueprintEvent|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.GetChainAttachmentData
-	// FK25SurvivorChainAttachmentData GetChainAttachmentData();                                                             // [0x5b6f110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FK25SurvivorChainAttachmentData GetChainAttachmentData();                                                             // [0x5b7c4d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.Cosmetic_OnChainDetached
-	// void Cosmetic_OnChainDetached(class AK25Chain* chainToDetach);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainDetached(class AK25Chain* chainToDetach);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentAnchor.Cosmetic_OnChainAttached
-	// void Cosmetic_OnChainAttached(class AK25Chain* chainToAttach);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainAttached(class AK25Chain* chainToAttach);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25SurvivorChainAttachmentComponent
@@ -1217,7 +1219,7 @@ public:
 	TArray<class UClass*>                              _interruptableInteractionClasses;                           // 0x0108   (0x0010)  
 	FDBDTunableRowHandle                               _maximumNumberOfChainsAttached;                             // 0x0118   (0x0028)  
 	TArray<class AK25SurvivorChainAttachmentAnchor*>   _chainAttachmentAnchors;                                    // 0x0140   (0x0010)  
-	SDK_UNDEFINED(16,5111) /* TArray<TWeakObjectPtr<AK25Chain*>> */ __um(_chainsAttached);                         // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,5501) /* TArray<TWeakObjectPtr<AK25Chain*>> */ __um(_chainsAttached);                         // 0x0150   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0160   (0x0008)  MISSED
 	class UK25SurvivorChainRotationStrategy*           _survivorChainRotationStrategy;                             // 0x0168   (0x0008)  
 	class UK25ChainAttachmentReplicationComponent*     _chainAttachmentReplicationComponent;                       // 0x0170   (0x0008)  
@@ -1226,11 +1228,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25SurvivorChainAttachmentComponent.Multicast_TriggerHitSurvivorInExitAreaSFX
-	// void Multicast_TriggerHitSurvivorInExitAreaSFX(class ASlasherPlayer* killer);                                         // [0x58c5550] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_TriggerHitSurvivorInExitAreaSFX(class ASlasherPlayer* killer);                                         // [0x58cbe00] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentComponent.GetFirstChainToRelease
-	// class AK25Chain* GetFirstChainToRelease();                                                                            // [0x5b6f290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AK25Chain* GetFirstChainToRelease();                                                                            // [0x5b7c650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.K25SurvivorChainAttachmentComponent.Cosmetic_TriggerHitSurvivorInExitAreaSFX
-	// void Cosmetic_TriggerHitSurvivorInExitAreaSFX(class ASlasherPlayer* killer);                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerHitSurvivorInExitAreaSFX(class ASlasherPlayer* killer);                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25SurvivorChainHuntEffectsComponent
@@ -1243,7 +1245,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25SurvivorChainHuntEffectsComponent.GetOwningSurvivor
-	// class ACamperPlayer* GetOwningSurvivor();                                                                             // [0x5b6f320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetOwningSurvivor();                                                                             // [0x5b7c6e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK25.K25SurvivorChainRotationStrategy
@@ -1251,7 +1253,7 @@ public:
 class UK25SurvivorChainRotationStrategy : public UBaseCharacterRotationStrategy
 { 
 public:
-	SDK_UNDEFINED(8,5112) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_cachedSurvivor);                              // 0x00B8   (0x0008)  
+	SDK_UNDEFINED(8,5502) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_cachedSurvivor);                              // 0x00B8   (0x0008)  
 	class UK25SurvivorChainAttachmentComponent*        _cachedChainAttachmentComponent;                            // 0x00C0   (0x0008)  
 };
 
@@ -1274,9 +1276,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25SurvivorChainTargetterComponent.Multicast_DebugPositionFind
-	// void Multicast_DebugPositionFind(FVector startSweepPosition, FVector endSweepPosition, bool hasFoundPosition, FVector foundPosition, bool hasFoundCollision, FVector collisionPosition); // [0x5b6f440] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults|Const 
+	// void Multicast_DebugPositionFind(FVector startSweepPosition, FVector endSweepPosition, bool hasFoundPosition, FVector foundPosition, bool hasFoundCollision, FVector collisionPosition); // [0x5b7c800] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults|Const 
 	// Function /Script/TheK25.K25SurvivorChainTargetterComponent.Authority_OnSurvivorHealthStateChanged
-	// void Authority_OnSurvivorHealthStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState); // [0x5b6f040] Final|Native|Private 
+	// void Authority_OnSurvivorHealthStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState); // [0x5b7c400] Final|Native|Private 
 };
 
 /// Class /Script/TheK25.K25TeleportInteraction
@@ -1284,49 +1286,54 @@ public:
 class UK25TeleportInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	int32_t                                            _maxNumberLocationQueriesPerTick;                           // 0x0788   (0x0004)  
-	float                                              _timeSensingLamentConfigurationAfterInteractionEnded;       // 0x078C   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x20];                                      // 0x0790   (0x0020)  MISSED
-	FDBDTunableRowHandle                               _slowdownAfterTeleportDuration;                             // 0x07B0   (0x0028)  
-	class UClass*                                      _slowdownAfterTeleportStatusEffectClass;                    // 0x07D8   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x60];                                      // 0x07E0   (0x0060)  MISSED
+	int32_t                                            _maxNumberLocationQueriesPerTick;                           // 0x0790   (0x0004)  
+	float                                              _timeSensingLamentConfigurationAfterInteractionEnded;       // 0x0794   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x20];                                      // 0x0798   (0x0020)  MISSED
+	FDBDTunableRowHandle                               _slowdownAfterTeleportDuration;                             // 0x07B8   (0x0028)  
+	class UClass*                                      _slowdownAfterTeleportStatusEffectClass;                    // 0x07E0   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x58];                                      // 0x07E8   (0x0058)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK25.K25TeleportInteraction.Multicast_TeleportKillerToTargetPosition
-	// void Multicast_TeleportKillerToTargetPosition(class ASlasherPlayer* killer, FVector Location, FRotator Rotation);     // [0x5b6f8a0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_TeleportKillerToTargetPosition(class ASlasherPlayer* killer, FVector Location, FRotator Rotation);     // [0x5b7cc60] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.K25TeleportInteraction.Multicast_InitializeHusk
-	// void Multicast_InitializeHusk(FVector Location, FRotator Rotation);                                                   // [0x5b6f650] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_InitializeHusk(FVector Location, FRotator Rotation);                                                   // [0x5b7ca10] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.K25TeleportInteraction.Cosmetic_TeleportStartEffects
-	// void Cosmetic_TeleportStartEffects(class ASlasherPlayer* killer);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TeleportStartEffects(class ASlasherPlayer* killer);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25TeleportInteraction.Cosmetic_TeleportEndEffects
-	// void Cosmetic_TeleportEndEffects(class ASlasherPlayer* killer);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TeleportEndEffects(class ASlasherPlayer* killer);                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.K25TeleportInteraction.Cosmetic_TeleportAbortedEffects
-	// void Cosmetic_TeleportAbortedEffects(class ASlasherPlayer* killer);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TeleportAbortedEffects(class ASlasherPlayer* killer);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK25.K25UncontrolledProjectile
-/// Size: 0x0120 (0x000430 - 0x000550)
+/// Size: 0x0190 (0x000430 - 0x0005C0)
 class AK25UncontrolledProjectile : public AK25Projectile
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0430   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5113) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0438   (0x0010)  
+	SDK_UNDEFINED(16,5503) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0438   (0x0010)  
 	FDBDTunableRowHandle                               _minimumTimeBeforeProjectileLaunch;                         // 0x0448   (0x0028)  
 	FDBDTunableRowHandle                               _maximumTimeBeforeProjectileLaunch;                         // 0x0470   (0x0028)  
 	FDBDTunableRowHandle                               _projectileSpeed;                                           // 0x0498   (0x0028)  
 	FDBDTunableRowHandle                               _projectileMaximumTravelDistance;                           // 0x04C0   (0x0028)  
-	bool                                               _isAcquiredFromPool;                                        // 0x04E8   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x37];                                      // 0x04E9   (0x0037)  MISSED
-	class ACamperPlayer*                               _targetSurvivor;                                            // 0x0520   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x28];                                      // 0x0528   (0x0028)  MISSED
+	FDBDTunableRowHandle                               _maximumInactiveProjectileTime;                             // 0x04E8   (0x0028)  
+	bool                                               _isAcquiredFromPool;                                        // 0x0510   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x67];                                      // 0x0511   (0x0067)  MISSED
+	class ACamperPlayer*                               _targetSurvivor;                                            // 0x0578   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x40];                                      // 0x0580   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK25.K25UncontrolledProjectile.OnRep_TargetSurvivor
-	// void OnRep_TargetSurvivor();                                                                                          // [0x5b6fbc0] Final|Native|Private 
+	// void OnRep_TargetSurvivor();                                                                                          // [0x5b7cf80] Final|Native|Private 
 	// Function /Script/TheK25.K25UncontrolledProjectile.Cosmetic_TriggerUncontrolledProjectileSpawnSFX
-	// void Cosmetic_TriggerUncontrolledProjectileSpawnSFX();                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerUncontrolledProjectileSpawnSFX();                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// Function /Script/TheK25.K25UncontrolledProjectile.Authority_OnDownedSurvivorPickedUp
+	// void Authority_OnDownedSurvivorPickedUp(FGameplayTag GameplayTag, FGameEventData& GameEventData);                     // [0x5b7c130] Final|Native|Private|HasOutParms 
+	// Function /Script/TheK25.K25UncontrolledProjectile.Authority_OnDamageStateChanged
+	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x5b7c060] Final|Native|Private 
 };
 
 /// Class /Script/TheK25.K25UncontrolledProjectileReplicationComponent
@@ -1338,7 +1345,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25UncontrolledProjectileReplicationComponent.Multicast_LaunchProjectile
-	// void Multicast_LaunchProjectile(class AK25UncontrolledProjectile* Projectile, FLaunchInfo LaunchInfo);                // [0x5b738c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_LaunchProjectile(class AK25UncontrolledProjectile* Projectile, FLaunchInfo LaunchInfo);                // [0x5b80d40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK25.K25Utilities
@@ -1350,15 +1357,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25Utilities.GetLamentConfiguration
-	// class ALamentConfiguration* GetLamentConfiguration(class UObject* WorldContextObject);                                // [0x5b737b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ALamentConfiguration* GetLamentConfiguration(class UObject* WorldContextObject);                                // [0x5b80c30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK25.K25Utilities.GetK25Power
-	// class AK25Power* GetK25Power(class UObject* WorldContextObject);                                                      // [0x5b73720] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK25Power* GetK25Power(class UObject* WorldContextObject);                                                      // [0x5b80ba0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK25.K25Utilities.GetK25Husk
-	// class AK25Husk* GetK25Husk(class UObject* WorldContextObject);                                                        // [0x5b73690] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK25Husk* GetK25Husk(class UObject* WorldContextObject);                                                        // [0x5b80b10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK25.K25Utilities.GetK25Gateway
-	// class AK25Gateway* GetK25Gateway(class UObject* WorldContextObject);                                                  // [0x5b73600] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK25Gateway* GetK25Gateway(class UObject* WorldContextObject);                                                  // [0x5b80a80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK25.K25Utilities.GetK25ControlledProjectile
-	// class AK25ControlledProjectile* GetK25ControlledProjectile(class UObject* WorldContextObject);                        // [0x5b73570] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK25ControlledProjectile* GetK25ControlledProjectile(class UObject* WorldContextObject);                        // [0x5b809f0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK25.K25WeaponAnimInstance
@@ -1370,7 +1377,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.K25WeaponAnimInstance.OnAttackStart
-	// void OnAttackStart(EAttackType attackType);                                                                           // [0x5b73aa0] Final|Native|Protected 
+	// void OnAttackStart(EAttackType attackType);                                                                           // [0x5b80f20] Final|Native|Protected 
 };
 
 /// Class /Script/TheK25.LamentConfiguration
@@ -1424,67 +1431,67 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.LamentConfiguration.TriggerKillerPickUpSFX
-	// void TriggerKillerPickUpSFX(TArray<ACamperPlayer*>& affectedSurvivors);                                               // [0x61c32d0] Event|Protected|HasOutParms|BlueprintEvent 
+	// void TriggerKillerPickUpSFX(TArray<ACamperPlayer*>& affectedSurvivors);                                               // [0x61d2f50] Event|Protected|HasOutParms|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.OnRep_SurvivorHeldHostage
-	// void OnRep_SurvivorHeldHostage(class ACamperPlayer* oldSurvivorHeldHostage);                                          // [0x5b73da0] Final|Native|Private 
+	// void OnRep_SurvivorHeldHostage(class ACamperPlayer* oldSurvivorHeldHostage);                                          // [0x5b81220] Final|Native|Private 
 	// Function /Script/TheK25.LamentConfiguration.OnRep_LamentConfigurationState
-	// void OnRep_LamentConfigurationState();                                                                                // [0x5b73d80] Final|Native|Private 
+	// void OnRep_LamentConfigurationState();                                                                                // [0x5b81200] Final|Native|Private 
 	// Function /Script/TheK25.LamentConfiguration.OnCamperEscaped
-	// void OnCamperEscaped(FGameplayTag gameEventType, FGameEventData& GameEventData);                                      // [0x5b73b20] Final|Native|Private|HasOutParms 
+	// void OnCamperEscaped(FGameplayTag gameEventType, FGameEventData& GameEventData);                                      // [0x5b80fa0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK25.LamentConfiguration.Multicast_TriggerSolvedSFX
-	// void Multicast_TriggerSolvedSFX();                                                                                    // [0x5b73a80] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerSolvedSFX();                                                                                    // [0x5b80f00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.LamentConfiguration.Multicast_TriggerKillerPickUpSFX
-	// void Multicast_TriggerKillerPickUpSFX(TArray<ACamperPlayer*> affectedSurvivors);                                      // [0x5b739e0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerKillerPickUpSFX(TArray<ACamperPlayer*> affectedSurvivors);                                      // [0x5b80e60] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.LamentConfiguration.Multicast_DownedSurvivorHoldingLamentConfiguration
-	// void Multicast_DownedSurvivorHoldingLamentConfiguration(class ACamperPlayer* Survivor);                               // [0x5b209d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DownedSurvivorHoldingLamentConfiguration(class ACamperPlayer* Survivor);                               // [0x5b2d760] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK25.LamentConfiguration.Multicast_CorrectLamentConfigurationPosition
-	// void Multicast_CorrectLamentConfigurationPosition(FVector NewPosition);                                               // [0x5b73840] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_CorrectLamentConfigurationPosition(FVector NewPosition);                                               // [0x5b80cc0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheK25.LamentConfiguration.GetChainHuntProgressPercentage
-	// float GetChainHuntProgressPercentage();                                                                               // [0x5b734e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChainHuntProgressPercentage();                                                                               // [0x5b80960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_TriggerSurvivorPickUpSFX
-	// void Cosmetic_TriggerSurvivorPickUpSFX();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerSurvivorPickUpSFX();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_TriggerSpawnedSFX
-	// void Cosmetic_TriggerSpawnedSFX();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerSpawnedSFX();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_TriggerSolvedSFX
-	// void Cosmetic_TriggerSolvedSFX();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerSolvedSFX();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_TriggerRespawnDuringChainHuntSFX
-	// void Cosmetic_TriggerRespawnDuringChainHuntSFX();                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerRespawnDuringChainHuntSFX();                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_TriggerOnSurvivorEscapedWithLamentConfigurationSFX
-	// void Cosmetic_TriggerOnSurvivorEscapedWithLamentConfigurationSFX();                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerOnSurvivorEscapedWithLamentConfigurationSFX();                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_TriggerDisappearsSFX
-	// void Cosmetic_TriggerDisappearsSFX();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerDisappearsSFX();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnKillerDownedSurvivorHoldingLamentConfiguration
-	// void Cosmetic_OnKillerDownedSurvivorHoldingLamentConfiguration(class ASlasherPlayer* killer, class ACamperPlayer* survivorDowned); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerDownedSurvivorHoldingLamentConfiguration(class ASlasherPlayer* killer, class ACamperPlayer* survivorDowned); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnHoldingSurvivorHostageStart
-	// void Cosmetic_OnHoldingSurvivorHostageStart(float hostageDuration);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnHoldingSurvivorHostageStart(float hostageDuration);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnHoldingSurvivorHostageEnd
-	// void Cosmetic_OnHoldingSurvivorHostageEnd(bool hasEndedThroughKillerAttack);                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnHoldingSurvivorHostageEnd(bool hasEndedThroughKillerAttack);                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnChainHuntStartedEffects
-	// void Cosmetic_OnChainHuntStartedEffects();                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainHuntStartedEffects();                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnChainHuntEndedEffects
-	// void Cosmetic_OnChainHuntEndedEffects();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainHuntEndedEffects();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnChainHuntChargeStart
-	// void Cosmetic_OnChainHuntChargeStart(float chargeTime);                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainHuntChargeStart(float chargeTime);                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_OnChainHuntChargeEnd
-	// void Cosmetic_OnChainHuntChargeEnd();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnChainHuntChargeEnd();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_EndSolvingCube
-	// void Cosmetic_EndSolvingCube(bool hasBeenSolved);                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_EndSolvingCube(bool hasBeenSolved);                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Cosmetic_BeginSolvingCube
-	// void Cosmetic_BeginSolvingCube();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_BeginSolvingCube();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK25.LamentConfiguration.Authority_RespawnLamentConfiguration
-	// void Authority_RespawnLamentConfiguration(bool triggerChainHuntUponSpawning);                                         // [0x5b73450] Final|Native|Public  
+	// void Authority_RespawnLamentConfiguration(bool triggerChainHuntUponSpawning);                                         // [0x5b808d0] Final|Native|Public  
 	// Function /Script/TheK25.LamentConfiguration.Authority_OnSurvivorHitByControlledProjectile
-	// void Authority_OnSurvivorHitByControlledProjectile(FGameplayTag gameEventType, FGameEventData& GameEventData);        // [0x5b73340] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorHitByControlledProjectile(FGameplayTag gameEventType, FGameEventData& GameEventData);        // [0x5b807c0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK25.LamentConfiguration.Authority_OnOverlapEnd
-	// void Authority_OnOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5b731e0] Final|Native|Private 
+	// void Authority_OnOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5b805d0] Final|Native|Private 
 	// Function /Script/TheK25.LamentConfiguration.Authority_OnOverlapBegin
-	// void Authority_OnOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5b72fc0] Final|Native|Private|HasOutParms 
+	// void Authority_OnOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5b803b0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK25.LamentConfiguration.Authority_OnIntroCompletedOrLevelReadyToPlay
-	// void Authority_OnIntroCompletedOrLevelReadyToPlay();                                                                  // [0x5b72fa0] Final|Native|Private 
+	// void Authority_OnIntroCompletedOrLevelReadyToPlay();                                                                  // [0x5b80390] Final|Native|Private 
 	// Function /Script/TheK25.LamentConfiguration.Authority_OnGameEnded
-	// void Authority_OnGameEnded(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x5b72e90] Final|Native|Private|HasOutParms 
+	// void Authority_OnGameEnded(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x5b80280] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK25.LamentConfiguration.Authority_OnEndGameOver
-	// void Authority_OnEndGameOver(FGameplayTag gameEventType, FGameEventData& GameEventData);                              // [0x5b72d80] Final|Native|Private|HasOutParms 
+	// void Authority_OnEndGameOver(FGameplayTag gameEventType, FGameEventData& GameEventData);                              // [0x5b80170] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK25.LamentConfigurationAnalyticsComponent
@@ -1529,9 +1536,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.LamentConfigurationChainHuntComponent.OnRep_ChainHuntStateData
-	// void OnRep_ChainHuntStateData();                                                                                      // [0x5b73d20] Final|Native|Private 
+	// void OnRep_ChainHuntStateData();                                                                                      // [0x5b811a0] Final|Native|Private 
 	// Function /Script/TheK25.LamentConfigurationChainHuntComponent.GetChainHuntProgressPercentage
-	// float GetChainHuntProgressPercentage();                                                                               // [0x5b73510] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChainHuntProgressPercentage();                                                                               // [0x5b80990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK25.LamentConfigurationOutlineStrategy
@@ -1551,7 +1558,7 @@ struct FLamentConfigurationPlayerPossessionData
 { 
 	float                                              PickUpElapsedMatchTime;                                     // 0x0000   (0x0004)  
 	float                                              DropElapsedMatchTime;                                       // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,5114) /* FString */               __um(Outcome);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,5504) /* FString */               __um(Outcome);                                              // 0x0008   (0x0010)  
 };
 
 /// Class /Script/TheK25.LamentConfigurationPlayerAnalyticsComponent
@@ -1566,7 +1573,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.LamentConfigurationPlayerAnalyticsComponent.OnRep_AnalyticsCount
-	// void OnRep_AnalyticsCount();                                                                                          // [0x5b73d00] Final|Native|Private 
+	// void OnRep_AnalyticsCount();                                                                                          // [0x5b81180] Final|Native|Private 
 };
 
 /// Struct /Script/TheK25.LamentConfigurationSpawnInfo
@@ -1634,23 +1641,25 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.S28P01.OnRep_IsPerkActive
-	// void OnRep_IsPerkActive();                                                                                            // [0x5b73d60] Final|Native|Private|Const 
+	// void OnRep_IsPerkActive();                                                                                            // [0x5b811e0] Final|Native|Private|Const 
 	// Function /Script/TheK25.S28P01.OnRep_InteractionAttacherComponent
-	// void OnRep_InteractionAttacherComponent();                                                                            // [0x5b73d40] Final|Native|Private 
+	// void OnRep_InteractionAttacherComponent();                                                                            // [0x5b811c0] Final|Native|Private 
 	// Function /Script/TheK25.S28P01.OnInteractionChargeChanged
-	// void OnInteractionChargeChanged(class UChargeableComponent* ChargeableComponent, float TotalPercentComplete);         // [0x5b73c30] Final|Native|Private 
+	// void OnInteractionChargeChanged(class UChargeableComponent* ChargeableComponent, float TotalPercentComplete);         // [0x5b810b0] Final|Native|Private 
 	// Function /Script/TheK25.S28P01.GetAuraRevealRange
-	// float GetAuraRevealRange();                                                                                           // [0x500a980] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetAuraRevealRange();                                                                                           // [0x4fe8230] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK25.S28P01.GetAuraRevealDuration
-	// float GetAuraRevealDuration();                                                                                        // [0x500a800] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// float GetAuraRevealDuration();                                                                                        // [0x4fe80b0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// Function /Script/TheK25.S28P01.Authority_OnS28P01InteractionStart
+	// void Authority_OnS28P01InteractionStart(class ADBDPlayer* Player);                                                    // [0x5b80730] Final|Native|Private 
 };
 
 /// Class /Script/TheK25.S28P01AuraReveal
-/// Size: 0x0060 (0x000790 - 0x0007F0)
+/// Size: 0x0020 (0x000790 - 0x0007B0)
 class US28P01AuraReveal : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0790   (0x0060)  MISSED
+	unsigned char                                      UnknownData00_1[0x20];                                      // 0x0790   (0x0020)  MISSED
 };
 
 /// Class /Script/TheK25.S28P02
@@ -1666,7 +1675,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.S28P02.GetHealingSpeedGainPercentageAtLevel
-	// float GetHealingSpeedGainPercentageAtLevel();                                                                         // [0x5b73540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealingSpeedGainPercentageAtLevel();                                                                         // [0x5b809c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK25.S28P03
@@ -1680,7 +1689,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK25.S28P03.GetLingerDurationAtLevel
-	// float GetLingerDurationAtLevel();                                                                                     // [0x5b73540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetLingerDurationAtLevel();                                                                                     // [0x5b809c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TheK25.K25SurvivorTeleportationData
@@ -1701,9 +1710,9 @@ struct FK25ChainTraceData
 /// Size: 0x0028 (0x0000B8 - 0x0000E0)
 struct FLamentConfigurationPlayerPossessionAnalytics : FUniquelyIdentifiedAnalytic
 { 
-	SDK_UNDEFINED(16,5115) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5505) /* FString */               __um(MatchID);                                              // 0x00B8   (0x0010)  
 	float                                              PickUpElapsedMatchTime;                                     // 0x00C8   (0x0004)  
 	float                                              DropElapsedMatchTime;                                       // 0x00CC   (0x0004)  
-	SDK_UNDEFINED(16,5116) /* FString */               __um(Outcome);                                              // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,5506) /* FString */               __um(Outcome);                                              // 0x00D0   (0x0010)  
 };
 

@@ -31,11 +31,11 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationUtilities.SleepingAnimInstance.Wakeup
-	// void Wakeup();                                                                                                        // [0x8573b60] Final|Native|Public|BlueprintCallable 
+	// void Wakeup();                                                                                                        // [0x8584f40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AnimationUtilities.SleepingAnimInstance.SetNeverIdle
-	// void SetNeverIdle(bool neverIdle);                                                                                    // [0x8573ad0] Final|Native|Public|BlueprintCallable 
+	// void SetNeverIdle(bool neverIdle);                                                                                    // [0x8584eb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AnimationUtilities.SleepingAnimInstance.OnMontageStart
-	// void OnMontageStart(class UAnimMontage* Montage);                                                                     // [0x8573a40] Final|Native|Public  
+	// void OnMontageStart(class UAnimMontage* Montage);                                                                     // [0x8584e20] Final|Native|Public  
 };
 
 /// Class /Script/AnimationUtilities.BaseGroundDetectorComponent
@@ -45,7 +45,7 @@ class UBaseGroundDetectorComponent : public UActorComponent
 public:
 	unsigned char                                      UnknownData00_2[0xB0];                                      // 0x00B8   (0x00B0)  MISSED
 	FName                                              _startTransformName;                                        // 0x0168   (0x000C)  
-	SDK_UNDEFINED(1,1242) /* TEnumAsByte<ECollisionChannel> */ __um(_walkableCollisionChannel);                    // 0x0174   (0x0001)  
+	SDK_UNDEFINED(1,1247) /* TEnumAsByte<ECollisionChannel> */ __um(_walkableCollisionChannel);                    // 0x0174   (0x0001)  
 	bool                                               _traceComplex;                                              // 0x0175   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0176   (0x0002)  MISSED
 	float                                              _extraTraceDistance;                                        // 0x0178   (0x0004)  
@@ -58,9 +58,9 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationUtilities.BaseGroundDetectorComponent.InitSkinnedMeshComponent
-	// void InitSkinnedMeshComponent(class USkinnedMeshComponent* Mesh);                                                     // [0x8572420] Final|Native|Public|BlueprintCallable 
+	// void InitSkinnedMeshComponent(class USkinnedMeshComponent* Mesh);                                                     // [0x8583800] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AnimationUtilities.BaseGroundDetectorComponent.GetGroundPosition
-	// FVector GetGroundPosition(FVector targetPos, FVector extraOffset);                                                    // [0x8572320] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// FVector GetGroundPosition(FVector targetPos, FVector extraOffset);                                                    // [0x8583700] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/AnimationUtilities.AnimCollection
@@ -68,9 +68,9 @@ public:
 class UAnimCollection : public UDataAsset
 { 
 public:
-	SDK_UNDEFINED(80,1243) /* TMap<FGameplayTag, UAnimSequence*> */ __um(_taggedAnimSequences);                    // 0x0038   (0x0050)  
-	SDK_UNDEFINED(80,1244) /* TMap<FGameplayTag, UBlendSpaceBase*> */ __um(_taggedAnimBlendspaces);                // 0x0088   (0x0050)  
-	SDK_UNDEFINED(80,1245) /* TMap<FGameplayTag, FAnimSequenceSelector> */ __um(_taggedAnimSelectors);             // 0x00D8   (0x0050)  
+	SDK_UNDEFINED(80,1248) /* TMap<FGameplayTag, UAnimSequence*> */ __um(_taggedAnimSequences);                    // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,1249) /* TMap<FGameplayTag, UBlendSpaceBase*> */ __um(_taggedAnimBlendspaces);                // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,1250) /* TMap<FGameplayTag, FAnimSequenceSelector> */ __um(_taggedAnimSelectors);             // 0x00D8   (0x0050)  
 	class UAnimCollection*                             _parent;                                                    // 0x0128   (0x0008)  
 	TArray<class UAnimCollection*>                     _children;                                                  // 0x0130   (0x0010)  
 };
@@ -92,7 +92,7 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationUtilities.AnimEffectHandler.HandleAnimNotify
-	// bool HandleAnimNotify(class AActor* Player, FName& NotifyName);                                                       // [0x8571660] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
+	// bool HandleAnimNotify(class AActor* Player, FName& NotifyName);                                                       // [0x8582a40] Native|Event|Public|HasOutParms|BlueprintEvent|Const 
 };
 
 /// Class /Script/AnimationUtilities.AnimInstanceExt
@@ -104,15 +104,15 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationUtilities.AnimInstanceExt.GetSubAnimInstance
-	// class UAnimInstance* GetSubAnimInstance(class UAnimInstance* Root, class UClass* Type);                               // [0x8571bb0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UAnimInstance* GetSubAnimInstance(class UAnimInstance* Root, class UClass* Type);                               // [0x8582f90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimationUtilities.AnimInstanceExt.GetRootSkeletalMeshComponent
-	// class USkeletalMeshComponent* GetRootSkeletalMeshComponent(class UAnimInstance* AnimInstance);                        // [0x8571b20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class USkeletalMeshComponent* GetRootSkeletalMeshComponent(class UAnimInstance* AnimInstance);                        // [0x8582f00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimationUtilities.AnimInstanceExt.GetOwningCharacterSkeletalMeshComponent
-	// class USkeletalMeshComponent* GetOwningCharacterSkeletalMeshComponent(class UAnimInstance* AnimInstance);             // [0x8571a90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class USkeletalMeshComponent* GetOwningCharacterSkeletalMeshComponent(class UAnimInstance* AnimInstance);             // [0x8582e70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimationUtilities.AnimInstanceExt.GetOwningCharacter
-	// class ACharacter* GetOwningCharacter(class UAnimInstance* AnimInstance);                                              // [0x8571a00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ACharacter* GetOwningCharacter(class UAnimInstance* AnimInstance);                                              // [0x8582de0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/AnimationUtilities.AnimInstanceExt.GetOwningActor
-	// class AActor* GetOwningActor(class UAnimInstance* AnimInstance);                                                      // [0x8571970] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AActor* GetOwningActor(class UAnimInstance* AnimInstance);                                                      // [0x8582d50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/AnimationUtilities.AnimLayerUpdateInterface
@@ -131,7 +131,7 @@ public:
 	FVector                                            _originWorldOffset;                                         // 0x0228   (0x000C)  
 	int32_t                                            _numberOfSpots;                                             // 0x0234   (0x0004)  
 	float                                              _defaultRingRadius;                                         // 0x0238   (0x0004)  
-	SDK_UNDEFINED(1,1246) /* TEnumAsByte<ECollisionChannel> */ __um(_collisionChannel);                            // 0x023C   (0x0001)  
+	SDK_UNDEFINED(1,1251) /* TEnumAsByte<ECollisionChannel> */ __um(_collisionChannel);                            // 0x023C   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x023D   (0x0003)  MISSED
 	class USkeletalMeshComponent*                      _meshComponent;                                             // 0x0240   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x38];                                      // 0x0248   (0x0038)  MISSED
@@ -162,7 +162,7 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationUtilities.BoneSocketLocalVelocityEvaluator.GetLocalVelocity
-	// FVector GetLocalVelocity(FName BoneSocketName);                                                                       // [0x8572620] Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetLocalVelocity(FName BoneSocketName);                                                                       // [0x8583a00] Final|BlueprintCosmetic|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AnimationUtilities.FootGroundDetectorComponent
@@ -219,9 +219,9 @@ public:
 
 	/// Functions
 	// Function /Script/AnimationUtilities.MoveComponentToComponent.Stop
-	// void Stop();                                                                                                          // [0x8573450] Final|Native|Public|BlueprintCallable 
+	// void Stop();                                                                                                          // [0x8584830] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AnimationUtilities.MoveComponentToComponent.Start
-	// void Start(class USceneComponent* componentToMove, class USceneComponent* Target, float Duration);                    // [0x8573330] Final|Native|Public|BlueprintCallable 
+	// void Start(class USceneComponent* componentToMove, class USceneComponent* Target, float Duration);                    // [0x8584710] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/AnimationUtilities.ResetControlPitchAnimNotify
@@ -236,15 +236,15 @@ public:
 class USlaveAnimInstance : public UAnimInstance
 { 
 public:
-	SDK_UNDEFINED(8,1247) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(_masterMesh);                         // 0x02C0   (0x0008)  
+	SDK_UNDEFINED(8,1252) /* TWeakObjectPtr<USkeletalMeshComponent*> */ __um(_masterMesh);                         // 0x02C0   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x02C8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/AnimationUtilities.SlaveAnimInstance.SetMasterMesh
-	// void SetMasterMesh(class USkeletalMeshComponent* masterMesh);                                                         // [0x85737a0] Final|Native|Public|BlueprintCallable 
+	// void SetMasterMesh(class USkeletalMeshComponent* masterMesh);                                                         // [0x8584b80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/AnimationUtilities.SlaveAnimInstance.GetMasterMesh
-	// class USkeletalMeshComponent* GetMasterMesh();                                                                        // [0x8573770] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetMasterMesh();                                                                        // [0x8584b50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/AnimationUtilities.SleepingSkinnedMeshRegisterer
@@ -277,7 +277,7 @@ struct FMontagePlaybackDefinition
 /// Size: 0x0060 (0x000000 - 0x000060)
 struct FSocketOrBoneCache
 { 
-	SDK_UNDEFINED(48,1248) /* TWeakObjectPtr<UAnimSequence*> */ __um(_sourceAnimation);                            // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,1253) /* TWeakObjectPtr<UAnimSequence*> */ __um(_sourceAnimation);                            // 0x0000   (0x0030)  
 	FName                                              _socketName;                                                // 0x0030   (0x000C)  
 	FName                                              _notifyName;                                                // 0x003C   (0x000C)  
 	FVector                                            _location;                                                  // 0x0048   (0x000C)  
@@ -297,9 +297,9 @@ struct FMontageStopDefinition
 /// Size: 0x00F0 (0x000000 - 0x0000F0)
 struct FEditorAnimCollectionDisplay
 { 
-	SDK_UNDEFINED(80,1249) /* TMap<FGameplayTag, FEditorCollectionMetadata> */ __um(_taggedAnimSequencesMetadata); // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,1250) /* TMap<FGameplayTag, FEditorCollectionMetadata> */ __um(_taggedAnimBlendspacesMetadata); // 0x0050   (0x0050)  
-	SDK_UNDEFINED(80,1251) /* TMap<FGameplayTag, FEditorCollectionMetadata> */ __um(_taggedAnimSelectorsMetadata); // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,1254) /* TMap<FGameplayTag, FEditorCollectionMetadata> */ __um(_taggedAnimSequencesMetadata); // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,1255) /* TMap<FGameplayTag, FEditorCollectionMetadata> */ __um(_taggedAnimBlendspacesMetadata); // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,1256) /* TMap<FGameplayTag, FEditorCollectionMetadata> */ __um(_taggedAnimSelectorsMetadata); // 0x00A0   (0x0050)  
 };
 
 /// Struct /Script/AnimationUtilities.EditorCollectionMetadata
@@ -331,6 +331,6 @@ struct FTaggedAnimCollection
 { 
 	FGameplayTag                                       Tag;                                                        // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(48,1252) /* TWeakObjectPtr<UAnimCollection*> */ __um(AnimCollection);                            // 0x0010   (0x0030)  
+	SDK_UNDEFINED(48,1257) /* TWeakObjectPtr<UAnimCollection*> */ __um(AnimCollection);                            // 0x0010   (0x0030)  
 };
 

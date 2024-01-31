@@ -44,7 +44,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.Alert.OnPerkActivate_Cosmetic
-	// void OnPerkActivate_Cosmetic();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnPerkActivate_Cosmetic();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.CalmBaseAddon
@@ -85,11 +85,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.CartersSpark.Cosmetic_OnShockTherapyZoneDetonated
-	// void Cosmetic_OnShockTherapyZoneDetonated(class ADBDPlayer* killer, int32_t survivorsHitCount);                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnShockTherapyZoneDetonated(class ADBDPlayer* killer, int32_t survivorsHitCount);                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheDoctor.CartersSpark.CancelSurvivorInteraction
-	// void CancelSurvivorInteraction(class ACamperPlayer* Survivor);                                                        // [0x5a56640] Final|Native|Public|BlueprintCallable 
+	// void CancelSurvivorInteraction(class ACamperPlayer* Survivor);                                                        // [0x5a5f440] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheDoctor.CartersSpark.Authority_StartShockAttackComboTimer
-	// void Authority_StartShockAttackComboTimer(class ACamperPlayer* shockedSurvivor);                                      // [0x5a565b0] Final|Native|Public|BlueprintCallable 
+	// void Authority_StartShockAttackComboTimer(class ACamperPlayer* shockedSurvivor);                                      // [0x5a5f3b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheDoctor.DisciplineEffect
@@ -105,17 +105,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.DisciplineEffect.SetRedStainInterpolating
-	// void SetRedStainInterpolating(bool isInterpolating);                                                                  // [0x5a56b00] Final|Native|Protected|BlueprintCallable 
+	// void SetRedStainInterpolating(bool isInterpolating);                                                                  // [0x5a5f900] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheDoctor.DisciplineEffect.Cosmetic_UpdateSurvivorRedStain
-	// void Cosmetic_UpdateSurvivorRedStain(bool visible, float DeltaTime);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateSurvivorRedStain(bool visible, float DeltaTime);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DisciplineEffect.Cosmetic_UpdateKillerRedStain
-	// void Cosmetic_UpdateKillerRedStain(bool visible, float DeltaTime);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateKillerRedStain(bool visible, float DeltaTime);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DisciplineEffect.Cosmetic_SpawnRedStains
-	// void Cosmetic_SpawnRedStains();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SpawnRedStains();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DisciplineEffect.Cosmetic_ActivateSurvivorRedStain
-	// void Cosmetic_ActivateSurvivorRedStain(bool Activate);                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivateSurvivorRedStain(bool Activate);                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DisciplineEffect.Cosmetic_ActivateKillerRedStain
-	// void Cosmetic_ActivateKillerRedStain(bool Activate);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivateKillerRedStain(bool Activate);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.DoctorAnimInstance
@@ -134,7 +134,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.DoctorCheatComponent.DBD_AddMadness
-	// void DBD_AddMadness(float madnessToAdd, FString localPlayerId);                                                       // [0x5a56fe0] Final|Exec|Native|Public 
+	// void DBD_AddMadness(float madnessToAdd, FString localPlayerId);                                                       // [0x5a5fde0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheDoctor.DoctorPowerSubAnimInstance
@@ -146,15 +146,15 @@ public:
 	EDoctorAbilityPhase                                _abilityPhase;                                              // 0x02C1   (0x0001)  
 	bool                                               _isShockTherapyInCooldown;                                  // 0x02C2   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x02C3   (0x0001)  MISSED
-	SDK_UNDEFINED(8,5066) /* TWeakObjectPtr<UDoctorPowerAnimStateComponent*> */ __um(_powerStateComponent);        // 0x02C4   (0x0008)  
+	SDK_UNDEFINED(8,5456) /* TWeakObjectPtr<UDoctorPowerAnimStateComponent*> */ __um(_powerStateComponent);        // 0x02C4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x02CC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDoctor.DoctorPowerSubAnimInstance.OnShockTherapyAnimationAttackStop
-	// void OnShockTherapyAnimationAttackStop();                                                                             // [0x5a572d0] Final|Native|Protected|BlueprintCallable 
+	// void OnShockTherapyAnimationAttackStop();                                                                             // [0x5a600d0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheDoctor.DoctorPowerSubAnimInstance.OnShockTherapyAnimationAttackStart
-	// void OnShockTherapyAnimationAttackStart();                                                                            // [0x5a572b0] Final|Native|Protected|BlueprintCallable 
+	// void OnShockTherapyAnimationAttackStart();                                                                            // [0x5a600b0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor
@@ -167,33 +167,33 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.IsSurvivorOperatingLocker
-	// bool IsSurvivorOperatingLocker();                                                                                     // [0x5a57c60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSurvivorOperatingLocker();                                                                                     // [0x5a60a60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.GetSurvivorMadnessEffect
-	// class USurvivorMadnessEffect* GetSurvivorMadnessEffect();                                                             // [0x5a57c30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class USurvivorMadnessEffect* GetSurvivorMadnessEffect();                                                             // [0x5a60a30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.GetIllusionaryDoctor
-	// class AIllusionaryDoctor* GetIllusionaryDoctor();                                                                     // [0x5a57c00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AIllusionaryDoctor* GetIllusionaryDoctor();                                                                     // [0x5a60a00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnOwningSurvivorShocked
-	// void Cosmetic_OnOwningSurvivorShocked();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOwningSurvivorShocked();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnMadnessIntermittentScream
-	// void Cosmetic_OnMadnessIntermittentScream();                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnMadnessIntermittentScream();                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnMadnessChanged
-	// void Cosmetic_OnMadnessChanged(int32_t newTier, bool increased);                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnMadnessChanged(int32_t newTier, bool increased);                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnInsaneSkillCheck
-	// void Cosmetic_OnInsaneSkillCheck();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInsaneSkillCheck();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnIllusionaryPalletDeactivated
-	// void Cosmetic_OnIllusionaryPalletDeactivated(class APallet* Pallet);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIllusionaryPalletDeactivated(class APallet* Pallet);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnIllusionaryPalletActivated
-	// void Cosmetic_OnIllusionaryPalletActivated(class APallet* Pallet);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIllusionaryPalletActivated(class APallet* Pallet);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.Cosmetic_OnIllusionaryDoctorApparitionSequenceStart
-	// void Cosmetic_OnIllusionaryDoctorApparitionSequenceStart(FTransform& illusionaryDoctorTransform, float apparitionDuration); // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_OnIllusionaryDoctorApparitionSequenceStart(FTransform& illusionaryDoctorTransform, float apparitionDuration); // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.CanPlayShockedAnimation
-	// bool CanPlayShockedAnimation();                                                                                       // [0x5a57b30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayShockedAnimation();                                                                                       // [0x5a60930] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.CanPlayOverwhelmingMadnessAudio
-	// bool CanPlayOverwhelmingMadnessAudio();                                                                               // [0x5a57b00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayOverwhelmingMadnessAudio();                                                                               // [0x5a60900] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.CanPlayOverwhelmingMadnessAnimation
-	// bool CanPlayOverwhelmingMadnessAnimation();                                                                           // [0x5a57ad0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayOverwhelmingMadnessAnimation();                                                                           // [0x5a608d0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.DoctorSurvivorCosmeticHelperActor.CanPlayerSeeIllusionaryPalletGlitch
-	// bool CanPlayerSeeIllusionaryPalletGlitch(class APallet* Pallet);                                                      // [0x5a57b60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool CanPlayerSeeIllusionaryPalletGlitch(class APallet* Pallet);                                                      // [0x5a60960] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheDoctor.IllusionaryDoctor
@@ -207,9 +207,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.IllusionaryDoctor.DeactivateIllusion
-	// void DeactivateIllusion();                                                                                            // [0x5a57f10] Final|Native|Public|BlueprintCallable 
+	// void DeactivateIllusion();                                                                                            // [0x5a60d10] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheDoctor.IllusionaryDoctor.ActivateIllusion
-	// void ActivateIllusion(FTransform& Transform);                                                                         // [0x5a57e30] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void ActivateIllusion(FTransform& Transform);                                                                         // [0x5a60c30] Final|Native|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/TheDoctor.IllusionaryDoctorEffect
@@ -237,9 +237,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.IllusionaryDoctorEffect.OnRep_IllusionaryDoctorTransform
-	// void OnRep_IllusionaryDoctorTransform();                                                                              // [0x5a58210] Final|Native|Private 
+	// void OnRep_IllusionaryDoctorTransform();                                                                              // [0x5a61010] Final|Native|Private 
 	// Function /Script/TheDoctor.IllusionaryDoctorEffect.Multicast_DebugDisplayInfo
-	// void Multicast_DebugDisplayInfo(float timeRemainingBeforeActivation, FColor messageColor);                            // [0x5a58140] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_DebugDisplayInfo(float timeRemainingBeforeActivation, FColor messageColor);                            // [0x5a60f40] Final|Net|Native|Event|NetMulticast|Private|HasDefaults 
 };
 
 /// Class /Script/TheDoctor.IllusionaryDoctorOutlineStrategy
@@ -262,11 +262,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.IllusionaryPalletBaseAddon.Multicast_DeactivateIllusionaryPallet
-	// void Multicast_DeactivateIllusionaryPallet(class APallet* Pallet, class ADBDPlayer* triggeringPlayer);                // [0x5a588c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DeactivateIllusionaryPallet(class APallet* Pallet, class ADBDPlayer* triggeringPlayer);                // [0x5a616c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheDoctor.IllusionaryPalletBaseAddon.Multicast_ActivateIllusionaryPallet
-	// void Multicast_ActivateIllusionaryPallet(class APallet* Pallet, bool isPalletDown);                                   // [0x5a587f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ActivateIllusionaryPallet(class APallet* Pallet, bool isPalletDown);                                   // [0x5a615f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheDoctor.IllusionaryPalletBaseAddon.Authority_OnIllusionaryPalletActorOverlapped
-	// void Authority_OnIllusionaryPalletActorOverlapped(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a585d0] Final|Native|Private|HasOutParms 
+	// void Authority_OnIllusionaryPalletActorOverlapped(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a613d0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheDoctor.IllusionaryPalletComponent
@@ -287,17 +287,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.IllusionaryPalletComponent.OnStartIllusionaryPalletDeactivation
-	// void OnStartIllusionaryPalletDeactivation(class ADBDPlayer* triggeringPlayer);                                        // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnStartIllusionaryPalletDeactivation(class ADBDPlayer* triggeringPlayer);                                        // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IllusionaryPalletComponent.OnStartIllusionaryPalletActivation
-	// void OnStartIllusionaryPalletActivation(bool isPalletDown);                                                           // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnStartIllusionaryPalletActivation(bool isPalletDown);                                                           // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IllusionaryPalletComponent.GetGlitchEffectRange
-	// float GetGlitchEffectRange();                                                                                         // [0x5a58d90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGlitchEffectRange();                                                                                         // [0x5a61b90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.IllusionaryPalletComponent.DeactivateIllusionaryPallet
-	// void DeactivateIllusionaryPallet();                                                                                   // [0x5a58d70] Final|Native|Protected|BlueprintCallable 
+	// void DeactivateIllusionaryPallet();                                                                                   // [0x5a61b70] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheDoctor.IllusionaryPalletComponent.CanLocallyObservedPlayerSeeIllusionaryPallet
-	// bool CanLocallyObservedPlayerSeeIllusionaryPallet();                                                                  // [0x5a58d40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanLocallyObservedPlayerSeeIllusionaryPallet();                                                                  // [0x5a61b40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.IllusionaryPalletComponent.ActivateIllusionaryPallet
-	// void ActivateIllusionaryPallet(bool isPalletDown);                                                                    // [0x5a58cb0] Final|Native|Protected|BlueprintCallable 
+	// void ActivateIllusionaryPallet(bool isPalletDown);                                                                    // [0x5a61ab0] Final|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheDoctor.IridescentQueenEffect
@@ -317,23 +317,23 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.IridescentQueenEffect.OnRep_ChargeActive
-	// void OnRep_ChargeActive();                                                                                            // [0x5a59690] Final|Native|Private 
+	// void OnRep_ChargeActive();                                                                                            // [0x5a62490] Final|Native|Private 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Multicast_DischargeOnSurvivor
-	// void Multicast_DischargeOnSurvivor(class ACamperPlayer* Survivor);                                                    // [0x5a59600] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DischargeOnSurvivor(class ACamperPlayer* Survivor);                                                    // [0x5a62400] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheDoctor.IridescentQueenEffect.GetStaticFieldMovementSpeed
-	// EStaticFieldMovementSpeed GetStaticFieldMovementSpeed();                                                              // [0x58e1020] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// EStaticFieldMovementSpeed GetStaticFieldMovementSpeed();                                                              // [0x58e7800] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Cosmetic_UpdateStaticFieldFX
-	// void Cosmetic_UpdateStaticFieldFX();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateStaticFieldFX();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Cosmetic_SpawnStaticFieldFX
-	// void Cosmetic_SpawnStaticFieldFX();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SpawnStaticFieldFX();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Cosmetic_OnDischargeZoneDeactivated
-	// void Cosmetic_OnDischargeZoneDeactivated();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDischargeZoneDeactivated();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Cosmetic_OnDischargeZoneActivated
-	// void Cosmetic_OnDischargeZoneActivated();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDischargeZoneActivated();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Cosmetic_OnDischargeOnSurvivor
-	// void Cosmetic_OnDischargeOnSurvivor(class ADBDPlayer* survivorToShock);                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDischargeOnSurvivor(class ADBDPlayer* survivorToShock);                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.IridescentQueenEffect.Authority_OnSurvivorOverlappedDischargeZone
-	// void Authority_OnSurvivorOverlappedDischargeZone(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a593e0] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorOverlappedDischargeZone(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a621e0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheDoctor.Lithe
@@ -349,9 +349,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.Lithe.GetMovementSpeedPercentage
-	// float GetMovementSpeedPercentage();                                                                                   // [0x500f6f0] Final|Native|Public|BlueprintCallable 
+	// float GetMovementSpeedPercentage();                                                                                   // [0x4fecfd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheDoctor.Lithe.GetMovementSpeedDuration
-	// float GetMovementSpeedDuration();                                                                                     // [0x5a598b0] Final|Native|Public|BlueprintCallable 
+	// float GetMovementSpeedDuration();                                                                                     // [0x5a626b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheDoctor.MadnessSurvivorSubAnimInstance
@@ -380,16 +380,16 @@ public:
 	float                                              _skillCheckFailurePenalty;                                  // 0x03C8   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
 	class UCurveFloat*                                 _regressionRateMultiplierCurve;                             // 0x03D8   (0x0008)  
-	SDK_UNDEFINED(80,5067) /* TMap<AGenerator*, FFastTimer> */ __um(_overchargedGeneratorTimers);                  // 0x03E0   (0x0050)  
+	SDK_UNDEFINED(80,5457) /* TMap<AGenerator*, FFastTimer> */ __um(_overchargedGeneratorTimers);                  // 0x03E0   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0430   (0x0030)  MISSED
-	SDK_UNDEFINED(80,5068) /* TMap<AGenerator*, uint64_t> */ __um(_gameplayModifierHandles);                       // 0x0460   (0x0050)  
+	SDK_UNDEFINED(80,5458) /* TMap<AGenerator*, uint64_t> */ __um(_gameplayModifierHandles);                       // 0x0460   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/TheDoctor.Overcharge.GetSkillCheckFailurePenaltyAtLevel
-	// float GetSkillCheckFailurePenaltyAtLevel();                                                                           // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSkillCheckFailurePenaltyAtLevel();                                                                           // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.Overcharge.GetRegressionRateMultiplierCurve
-	// class UCurveFloat* GetRegressionRateMultiplierCurve();                                                                // [0x5a59bf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UCurveFloat* GetRegressionRateMultiplierCurve();                                                                // [0x5a62a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheDoctor.RestraintRevealToKillerEffect
@@ -404,30 +404,30 @@ public:
 class UShockTherapy : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x38];                                      // 0x0790   (0x0038)  MISSED
-	class UClass*                                      _shockTherapyConeAOEClass;                                  // 0x07C8   (0x0008)  
-	class UClass*                                      _shockTherapyLineAOEClass;                                  // 0x07D0   (0x0008)  
-	class UClass*                                      _shockTherapyCircleAOEClass;                                // 0x07D8   (0x0008)  
-	TArray<class AShockTherapyAOE*>                    _shockTherapyZones;                                         // 0x07E0   (0x0010)  
-	unsigned char                                      UnknownData01_5[0x30];                                      // 0x07F0   (0x0030)  MISSED
-	FTunableStat                                       _shockTherapyDetonationDelay;                               // 0x0820   (0x0080)  
-	FDBDTunableRowHandle                               _shockTherapyBlockActionDuration;                           // 0x08A0   (0x0028)  
-	FDBDTunableRowHandle                               _shockTherapySecondsToCharge;                               // 0x08C8   (0x0028)  
-	class UClass*                                      _shockTherapyBlockAllInteractionsEffectClass;               // 0x08F0   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x10];                                      // 0x08F8   (0x0010)  MISSED
-	FDBDTunableRowHandle                               _shockTherapyMadnessGain;                                   // 0x0908   (0x0028)  
-	unsigned char                                      UnknownData03_6[0x10];                                      // 0x0930   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_2[0x40];                                      // 0x0790   (0x0040)  MISSED
+	class UClass*                                      _shockTherapyConeAOEClass;                                  // 0x07D0   (0x0008)  
+	class UClass*                                      _shockTherapyLineAOEClass;                                  // 0x07D8   (0x0008)  
+	class UClass*                                      _shockTherapyCircleAOEClass;                                // 0x07E0   (0x0008)  
+	TArray<class AShockTherapyAOE*>                    _shockTherapyZones;                                         // 0x07E8   (0x0010)  
+	unsigned char                                      UnknownData01_5[0x30];                                      // 0x07F8   (0x0030)  MISSED
+	FTunableStat                                       _shockTherapyDetonationDelay;                               // 0x0828   (0x0080)  
+	FDBDTunableRowHandle                               _shockTherapyBlockActionDuration;                           // 0x08A8   (0x0028)  
+	FDBDTunableRowHandle                               _shockTherapySecondsToCharge;                               // 0x08D0   (0x0028)  
+	class UClass*                                      _shockTherapyBlockAllInteractionsEffectClass;               // 0x08F8   (0x0008)  
+	unsigned char                                      UnknownData02_5[0x10];                                      // 0x0900   (0x0010)  MISSED
+	FDBDTunableRowHandle                               _shockTherapyMadnessGain;                                   // 0x0910   (0x0028)  
+	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0938   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDoctor.ShockTherapy.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5a5a2b0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5a630c0] Final|Native|Private 
 	// Function /Script/TheDoctor.ShockTherapy.Multicast_DetonateShockTherapy
-	// void Multicast_DetonateShockTherapy(TArray<ACamperPlayer*> shockedSurvivors, float madnessToAdd);                     // [0x5a5a1c0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DetonateShockTherapy(TArray<ACamperPlayer*> shockedSurvivors, float madnessToAdd);                     // [0x5a62fd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheDoctor.ShockTherapy.Multicast_ActivateShockTherapyAOE
-	// void Multicast_ActivateShockTherapyAOE(FTransform shockTherapyZoneTransform);                                         // [0x5a5a0f0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_ActivateShockTherapyAOE(FTransform shockTherapyZoneTransform);                                         // [0x5a62f00] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/TheDoctor.ShockTherapy.Cosmetic_OnShockTherapyChargeEnd
-	// void Cosmetic_OnShockTherapyChargeEnd(class ADBDPlayer* Player, bool charged);                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnShockTherapyChargeEnd(class ADBDPlayer* Player, bool charged);                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.ShockTherapyAOE
@@ -449,9 +449,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.ShockTherapyAOE.OnScaleInitialized
-	// void OnScaleInitialized();                                                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnScaleInitialized();                                                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.ShockTherapyAOE.Cosmetic_ActivateShockTherapyAOE
-	// void Cosmetic_ActivateShockTherapyAOE();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ActivateShockTherapyAOE();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.ShockTherapyAOEPreview
@@ -467,7 +467,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.ShockTherapyAOEPreview.SetAttackZonePreviewScale
-	// void SetAttackZonePreviewScale(FVector& Scale);                                                                       // [0x61c32d0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void SetAttackZonePreviewScale(FVector& Scale);                                                                       // [0x61d2f50] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.SnapOutOfIt
@@ -484,27 +484,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.SnapOutOfIt.Authority_OnSkillCheckResponseAuthority
-	// void Authority_OnSkillCheckResponseAuthority(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, ESkillCheckCustomType Type); // [0x5a5a870] Final|Native|Private 
+	// void Authority_OnSkillCheckResponseAuthority(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, ESkillCheckCustomType Type); // [0x5a63680] Final|Native|Private 
 };
 
 /// Class /Script/TheDoctor.StaticBlast
-/// Size: 0x0100 (0x000790 - 0x000890)
+/// Size: 0x0110 (0x000790 - 0x0008A0)
 class UStaticBlast : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x90];                                      // 0x0790   (0x0090)  MISSED
-	float                                              _staticBlastActivationDelay;                                // 0x0820   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0824   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _staticBlastMadnessGain;                                    // 0x0828   (0x0028)  
-	FDBDTunableRowHandle                               _staticBlastSecondsToCharge;                                // 0x0850   (0x0028)  
-	unsigned char                                      UnknownData02_6[0x18];                                      // 0x0878   (0x0018)  MISSED
+	unsigned char                                      UnknownData00_2[0x98];                                      // 0x0790   (0x0098)  MISSED
+	float                                              _staticBlastActivationDelay;                                // 0x0828   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x082C   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _staticBlastMadnessGain;                                    // 0x0830   (0x0028)  
+	FDBDTunableRowHandle                               _staticBlastSecondsToCharge;                                // 0x0858   (0x0028)  
+	unsigned char                                      UnknownData02_6[0x20];                                      // 0x0880   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheDoctor.StaticBlast.Multicast_StaticBlastShockSurvivors
-	// void Multicast_StaticBlastShockSurvivors(TArray<ACamperPlayer*> survivorsToShock);                                    // [0x5a5acf0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StaticBlastShockSurvivors(TArray<ACamperPlayer*> survivorsToShock);                                    // [0x5a63b00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheDoctor.StaticBlast.Cosmetic_OnStaticBlastChargeEnd
-	// void Cosmetic_OnStaticBlastChargeEnd(class ADBDPlayer* Player, bool charged);                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStaticBlastChargeEnd(class ADBDPlayer* Player, bool charged);                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.SurvivorCartersSparkComponent
@@ -536,19 +536,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.SpawnMadnessBubbleIndicator
-	// void SpawnMadnessBubbleIndicator();                                                                                   // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void SpawnMadnessBubbleIndicator();                                                                                   // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.OnRep_MadnessAmount
-	// void OnRep_MadnessAmount();                                                                                           // [0x5a5b470] Final|Native|Private 
+	// void OnRep_MadnessAmount();                                                                                           // [0x5a64280] Final|Native|Private 
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.Multicast_OnMadnessTierChanged
-	// void Multicast_OnMadnessTierChanged(int32_t newMadnessTier, int32_t oldMadnessTier);                                  // [0x5a5b3a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnMadnessTierChanged(int32_t newMadnessTier, int32_t oldMadnessTier);                                  // [0x5a641b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.Multicast_MadnessIntermittentScream
-	// void Multicast_MadnessIntermittentScream();                                                                           // [0x5916d10] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
+	// void Multicast_MadnessIntermittentScream();                                                                           // [0x591c830] Net|NetReliableNative|Event|NetMulticast|Public|BlueprintCallable 
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.GetMadnessTier
-	// int32_t GetMadnessTier();                                                                                             // [0x5a5b370] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMadnessTier();                                                                                             // [0x5a64180] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.Authority_AddMadness
-	// void Authority_AddMadness(float amountToAdd);                                                                         // [0x5a5b2f0] Final|Native|Public|BlueprintCallable 
+	// void Authority_AddMadness(float amountToAdd);                                                                         // [0x5a64100] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheDoctor.SurvivorMadnessEffect.ActivateMadnessBubbleIndicator
-	// void ActivateMadnessBubbleIndicator();                                                                                // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void ActivateMadnessBubbleIndicator();                                                                                // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheDoctor.TheDoctorUtilities
@@ -560,12 +560,12 @@ public:
 
 	/// Functions
 	// Function /Script/TheDoctor.TheDoctorUtilities.IsTotallyInsane
-	// bool IsTotallyInsane(class ADBDPlayer* Player);                                                                       // [0x5a5b860] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsTotallyInsane(class ADBDPlayer* Player);                                                                       // [0x5a64670] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheDoctor.TheDoctorUtilities.GetSurvivorMadnessEffect
-	// class USurvivorMadnessEffect* GetSurvivorMadnessEffect(class ADBDPlayer* Player);                                     // [0x5a5b7d0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class USurvivorMadnessEffect* GetSurvivorMadnessEffect(class ADBDPlayer* Player);                                     // [0x5a645e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheDoctor.TheDoctorUtilities.GetMadnessTier
-	// int32_t GetMadnessTier(class ADBDPlayer* Player);                                                                     // [0x5a5b740] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetMadnessTier(class ADBDPlayer* Player);                                                                     // [0x5a64550] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheDoctor.TheDoctorUtilities.CanGainInsanity
-	// bool CanGainInsanity(class ADBDPlayer* Player);                                                                       // [0x5a5b6b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool CanGainInsanity(class ADBDPlayer* Player);                                                                       // [0x5a644c0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 

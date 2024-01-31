@@ -41,8 +41,8 @@ public:
 	int32_t                                            PopupZOrder;                                                // 0x0030   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0034   (0x0004)  MISSED
 	class UClass*                                      AuthenticationProviderSelectionWidget;                      // 0x0038   (0x0008)  
-	SDK_UNDEFINED(48,4990) /* TWeakObjectPtr<UClass*> */ __um(AuthenticationProviderSelectionWidgetToLoad);        // 0x0040   (0x0030)  
-	SDK_UNDEFINED(80,4991) /* TMap<ESharedAuthenticationProvider, TWeakObjectPtr<UClass*>> */ __um(LoginBackgroundToLoadWidgetToLoadMap); // 0x0070   (0x0050)  
+	SDK_UNDEFINED(48,5379) /* TWeakObjectPtr<UClass*> */ __um(AuthenticationProviderSelectionWidgetToLoad);        // 0x0040   (0x0030)  
+	SDK_UNDEFINED(80,5380) /* TMap<ESharedAuthenticationProvider, TWeakObjectPtr<UClass*>> */ __um(LoginBackgroundToLoadWidgetToLoadMap); // 0x0070   (0x0050)  
 	class UObject*                                     _worldContextObject;                                        // 0x00C0   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x28];                                      // 0x00C8   (0x0028)  MISSED
 	class UUserWidget*                                 _loginBackgroundWidget;                                     // 0x00F0   (0x0008)  
@@ -72,13 +72,13 @@ public:
 
 	/// Functions
 	// Function /Script/SharedAuthenticationUtilities.UMGAuthenticationProviderSelection.UpdateWidgetsVisibility
-	// void UpdateWidgetsVisibility();                                                                                       // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void UpdateWidgetsVisibility();                                                                                       // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/SharedAuthenticationUtilities.UMGAuthenticationProviderSelection.ShowMigrationFailedPopup
-	// void ShowMigrationFailedPopup();                                                                                      // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void ShowMigrationFailedPopup();                                                                                      // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/SharedAuthenticationUtilities.UMGAuthenticationProviderSelection.SetSelectedAuthenticationProvider
-	// void SetSelectedAuthenticationProvider(ESharedAuthenticationProvider Provider);                                       // [0x85f5270] Final|Native|Public|BlueprintCallable 
+	// void SetSelectedAuthenticationProvider(ESharedAuthenticationProvider Provider);                                       // [0x8608720] Final|Native|Public|BlueprintCallable 
 	// Function /Script/SharedAuthenticationUtilities.UMGAuthenticationProviderSelection.SetMigrateWarningMessageAndShowPopup
-	// void SetMigrateWarningMessageAndShowPopup(FString playerName);                                                        // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void SetMigrateWarningMessageAndShowPopup(FString playerName);                                                        // [0x61d2f50] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/SharedAuthenticationUtilities.UMGAutheticationProviderSelection
@@ -91,7 +91,7 @@ public:
 
 	/// Functions
 	// Function /Script/SharedAuthenticationUtilities.UMGAutheticationProviderSelection.SetSelectedAuthenticationProvider
-	// void SetSelectedAuthenticationProvider(ESharedAuthenticationProvider Provider);                                       // [0x85f5500] Final|Native|Public|BlueprintCallable 
+	// void SetSelectedAuthenticationProvider(ESharedAuthenticationProvider Provider);                                       // [0x86089b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/SharedAuthenticationUtilities.AuthenticationRequestState

@@ -29,7 +29,7 @@ public:
 
 	/// Functions
 	// Function /Script/NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect.GetSpawnedEffect
-	// class UFXSystemComponent* GetSpawnedEffect();                                                                         // [0x4900490] Final|Native|Public|BlueprintCallable|Const 
+	// class UFXSystemComponent* GetSpawnedEffect();                                                                         // [0x4895270] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect
@@ -47,7 +47,7 @@ public:
 
 	/// Functions
 	// Function /Script/NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect.GetSpawnedEffect
-	// class UFXSystemComponent* GetSpawnedEffect(class UMeshComponent* MeshComp);                                           // [0x49003f0] Final|Native|Public|BlueprintCallable|Const 
+	// class UFXSystemComponent* GetSpawnedEffect(class UMeshComponent* MeshComp);                                           // [0x48951d0] Final|Native|Public|BlueprintCallable|Const 
 };
 
 /// Class /Script/NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced
@@ -60,6 +60,6 @@ public:
 
 	/// Functions
 	// Function /Script/NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffectAdvanced.GetNotifyProgress
-	// float GetNotifyProgress(class UMeshComponent* MeshComp);                                                              // [0x4900350] Final|Native|Public|BlueprintCallable|Const 
+	// float GetNotifyProgress(class UMeshComponent* MeshComp);                                                              // [0x4895130] Final|Native|Public|BlueprintCallable|Const 
 };
 

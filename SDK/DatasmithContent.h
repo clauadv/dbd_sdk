@@ -142,8 +142,8 @@ public:
 class UDatasmithActorTemplate : public UDatasmithObjectTemplate
 { 
 public:
-	SDK_UNDEFINED(80,4518) /* TSet<FName> */           __um(Layers);                                               // 0x0038   (0x0050)  
-	SDK_UNDEFINED(80,4519) /* TSet<FName> */           __um(Tags);                                                 // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,4911) /* TSet<FName> */           __um(Layers);                                               // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,4912) /* TSet<FName> */           __um(Tags);                                                 // 0x0088   (0x0050)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithAdditionalData
@@ -158,7 +158,7 @@ public:
 class ADatasmithAreaLightActor : public AActor
 { 
 public:
-	SDK_UNDEFINED(1,4520) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0230   (0x0001)  
+	SDK_UNDEFINED(1,4913) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0230   (0x0001)  
 	EDatasmithAreaLightActorType                       LightType;                                                  // 0x0231   (0x0001)  
 	EDatasmithAreaLightActorShape                      LightShape;                                                 // 0x0232   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0233   (0x0001)  MISSED
@@ -194,7 +194,7 @@ public:
 	ELightUnits                                        IntensityUnits;                                             // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0059   (0x0003)  MISSED
 	float                                              Temperature;                                                // 0x005C   (0x0004)  
-	SDK_UNDEFINED(48,4521) /* TWeakObjectPtr<UTextureLightProfile*> */ __um(IESTexture);                           // 0x0060   (0x0030)  
+	SDK_UNDEFINED(48,4914) /* TWeakObjectPtr<UTextureLightProfile*> */ __um(IESTexture);                           // 0x0060   (0x0030)  
 	bool                                               bUseIESBrightness;                                          // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0091   (0x0003)  MISSED
 	float                                              IESBrightnessScale;                                         // 0x0094   (0x0004)  
@@ -258,12 +258,12 @@ public:
 class UDatasmithGLTFSceneImportData : public UDatasmithSceneImportData
 { 
 public:
-	SDK_UNDEFINED(16,4522) /* FString */               __um(Generator);                                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,4915) /* FString */               __um(Generator);                                            // 0x0030   (0x0010)  
 	float                                              Version;                                                    // 0x0040   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0044   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4523) /* FString */               __um(Author);                                               // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,4524) /* FString */               __um(License);                                              // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,4525) /* FString */               __um(Source);                                               // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,4916) /* FString */               __um(Author);                                               // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,4917) /* FString */               __um(License);                                              // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,4918) /* FString */               __um(Source);                                               // 0x0068   (0x0010)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithStaticMeshGLTFImportData
@@ -271,7 +271,7 @@ public:
 class UDatasmithStaticMeshGLTFImportData : public UDatasmithStaticMeshImportData
 { 
 public:
-	SDK_UNDEFINED(16,4526) /* FString */               __um(SourceMeshName);                                       // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,4919) /* FString */               __um(SourceMeshName);                                       // 0x0030   (0x0010)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithFBXSceneImportData
@@ -281,7 +281,7 @@ class UDatasmithFBXSceneImportData : public UDatasmithSceneImportData
 public:
 	bool                                               bGenerateLightmapUVs;                                       // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0031   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4527) /* FString */               __um(TexturesDir);                                          // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,4920) /* FString */               __um(TexturesDir);                                          // 0x0038   (0x0010)  
 	char                                               IntermediateSerialization;                                  // 0x0048   (0x0001)  
 	bool                                               bColorizeMaterials;                                         // 0x0049   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x6];                                       // 0x004A   (0x0006)  MISSED
@@ -305,13 +305,13 @@ public:
 	bool                                               bSimplifyNodeHierarchy;                                     // 0x0053   (0x0001)  
 	bool                                               bImportVar;                                                 // 0x0054   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0055   (0x0003)  MISSED
-	SDK_UNDEFINED(16,4528) /* FString */               __um(VarPath);                                              // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,4921) /* FString */               __um(VarPath);                                              // 0x0058   (0x0010)  
 	bool                                               bImportPos;                                                 // 0x0068   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0069   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4529) /* FString */               __um(PosPath);                                              // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,4922) /* FString */               __um(PosPath);                                              // 0x0070   (0x0010)  
 	bool                                               bImportTml;                                                 // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0081   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4530) /* FString */               __um(TmlPath);                                              // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,4923) /* FString */               __um(TmlPath);                                              // 0x0088   (0x0010)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithVREDAssetImportData
@@ -330,17 +330,17 @@ public:
 	bool                                               bOptimizeDuplicatedNodes;                                   // 0x0051   (0x0001)  
 	bool                                               bImportMats;                                                // 0x0052   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x5];                                       // 0x0053   (0x0005)  MISSED
-	SDK_UNDEFINED(16,4531) /* FString */               __um(MatsPath);                                             // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,4924) /* FString */               __um(MatsPath);                                             // 0x0058   (0x0010)  
 	bool                                               bImportVar;                                                 // 0x0068   (0x0001)  
 	bool                                               bCleanVar;                                                  // 0x0069   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x6];                                       // 0x006A   (0x0006)  MISSED
-	SDK_UNDEFINED(16,4532) /* FString */               __um(VarPath);                                              // 0x0070   (0x0010)  
+	SDK_UNDEFINED(16,4925) /* FString */               __um(VarPath);                                              // 0x0070   (0x0010)  
 	bool                                               bImportLightInfo;                                           // 0x0080   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x0081   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4533) /* FString */               __um(LightInfoPath);                                        // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,4926) /* FString */               __um(LightInfoPath);                                        // 0x0088   (0x0010)  
 	bool                                               bImportClipInfo;                                            // 0x0098   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0099   (0x0007)  MISSED
-	SDK_UNDEFINED(16,4534) /* FString */               __um(ClipInfoPath);                                         // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,4927) /* FString */               __um(ClipInfoPath);                                         // 0x00A0   (0x0010)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithIFCSceneImportData
@@ -355,7 +355,7 @@ public:
 class UDatasmithStaticMeshIFCImportData : public UDatasmithStaticMeshImportData
 { 
 public:
-	SDK_UNDEFINED(16,4535) /* FString */               __um(SourceGlobalId);                                       // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,4928) /* FString */               __um(SourceGlobalId);                                       // 0x0030   (0x0010)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithAssetUserData
@@ -363,7 +363,7 @@ public:
 class UDatasmithAssetUserData : public UAssetUserData
 { 
 public:
-	SDK_UNDEFINED(80,4536) /* TMap<FName, FString> */  __um(MetaData);                                             // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,4929) /* TMap<FName, FString> */  __um(MetaData);                                             // 0x0030   (0x0050)  
 };
 
 /// Struct /Script/DatasmithContent.DatasmithCameraLookatTrackingSettingsTemplate
@@ -373,7 +373,7 @@ struct FDatasmithCameraLookatTrackingSettingsTemplate
 	bool                                               bEnableLookAtTracking : 1;                                  // 0x0000:0 (0x0001)  
 	bool                                               bAllowRoll : 1;                                             // 0x0000:1 (0x0001)  
 	unsigned char                                      UnknownData00_4[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(48,4537) /* TWeakObjectPtr<AActor*> */ __um(ActorToTrack);                                       // 0x0008   (0x0030)  
+	SDK_UNDEFINED(48,4930) /* TWeakObjectPtr<AActor*> */ __um(ActorToTrack);                                       // 0x0008   (0x0030)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithCineCameraActorTemplate
@@ -426,7 +426,7 @@ struct FDatasmithPostProcessSettingsTemplate
 	float                                              VignetteIntensity;                                          // 0x000C   (0x0004)  
 	FLinearColor                                       FilmWhitePoint;                                             // 0x0010   (0x0010)  
 	FVector4                                           ColorSaturation;                                            // 0x0020   (0x0010)  
-	SDK_UNDEFINED(1,4538) /* TEnumAsByte<EAutoExposureMethod> */ __um(AutoExposureMethod);                         // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,4931) /* TEnumAsByte<EAutoExposureMethod> */ __um(AutoExposureMethod);                         // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0031   (0x0003)  MISSED
 	float                                              CameraISO;                                                  // 0x0034   (0x0004)  
 	float                                              CameraShutterSpeed;                                         // 0x0038   (0x0004)  
@@ -456,11 +456,11 @@ public:
 
 	/// Functions
 	// Function /Script/DatasmithContent.DatasmithContentBlueprintLibrary.GetDatasmithUserDataValueForKey
-	// FString GetDatasmithUserDataValueForKey(class UObject* Object, FName Key);                                            // [0x46231f0] Final|Native|Static|Public|BlueprintCallable 
+	// FString GetDatasmithUserDataValueForKey(class UObject* Object, FName Key);                                            // [0x45b7f70] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/DatasmithContent.DatasmithContentBlueprintLibrary.GetDatasmithUserDataKeysAndValuesForValue
-	// void GetDatasmithUserDataKeysAndValuesForValue(class UObject* Object, FString StringToMatch, TArray<FName>& OutKeys, TArray<FString>& OutValues); // [0x4623030] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetDatasmithUserDataKeysAndValuesForValue(class UObject* Object, FString StringToMatch, TArray<FName>& OutKeys, TArray<FString>& OutValues); // [0x45b7db0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/DatasmithContent.DatasmithContentBlueprintLibrary.GetDatasmithUserData
-	// class UDatasmithAssetUserData* GetDatasmithUserData(class UObject* Object);                                           // [0x4622fa0] Final|Native|Static|Public|BlueprintCallable 
+	// class UDatasmithAssetUserData* GetDatasmithUserData(class UObject* Object);                                           // [0x45b7d20] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/DatasmithContent.DatasmithCustomActionBase
@@ -491,7 +491,7 @@ public:
 
 	/// Functions
 	// Function /Script/DatasmithContent.DatasmithImportedSequencesActor.PlayLevelSequence
-	// void PlayLevelSequence(class ULevelSequence* SequenceToPlay);                                                         // [0x4623320] Final|Native|Public|BlueprintCallable 
+	// void PlayLevelSequence(class ULevelSequence* SequenceToPlay);                                                         // [0x45b80a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DatasmithContent.DatasmithOptionsBase
@@ -576,8 +576,8 @@ public:
 	FDatasmithImportBaseOptions                        BaseOptions;                                                // 0x0038   (0x0018)  
 	FDatasmithReimportOptions                          ReimportOptions;                                            // 0x0050   (0x0002)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0052   (0x0006)  MISSED
-	SDK_UNDEFINED(16,4539) /* FString */               __um(Filename);                                             // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,4540) /* FString */               __um(FilePath);                                             // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,4932) /* FString */               __um(Filename);                                             // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,4933) /* FString */               __um(FilePath);                                             // 0x0068   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0078   (0x0008)  MISSED
 };
 
@@ -615,7 +615,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FDatasmithStaticParameterSetTemplate
 { 
-	SDK_UNDEFINED(80,4541) /* TMap<FName, bool> */     __um(StaticSwitchParameters);                               // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,4934) /* TMap<FName, bool> */     __um(StaticSwitchParameters);                               // 0x0000   (0x0050)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithMaterialInstanceTemplate
@@ -623,10 +623,10 @@ struct FDatasmithStaticParameterSetTemplate
 class UDatasmithMaterialInstanceTemplate : public UDatasmithObjectTemplate
 { 
 public:
-	SDK_UNDEFINED(48,4542) /* TWeakObjectPtr<UMaterialInterface*> */ __um(ParentMaterial);                         // 0x0038   (0x0030)  
-	SDK_UNDEFINED(80,4543) /* TMap<FName, float> */    __um(ScalarParameterValues);                                // 0x0068   (0x0050)  
-	SDK_UNDEFINED(80,4544) /* TMap<FName, FLinearColor> */ __um(VectorParameterValues);                            // 0x00B8   (0x0050)  
-	SDK_UNDEFINED(80,4545) /* TMap<FName, TWeakObjectPtr<UTexture*>> */ __um(TextureParameterValues);              // 0x0108   (0x0050)  
+	SDK_UNDEFINED(48,4935) /* TWeakObjectPtr<UMaterialInterface*> */ __um(ParentMaterial);                         // 0x0038   (0x0030)  
+	SDK_UNDEFINED(80,4936) /* TMap<FName, float> */    __um(ScalarParameterValues);                                // 0x0068   (0x0050)  
+	SDK_UNDEFINED(80,4937) /* TMap<FName, FLinearColor> */ __um(VectorParameterValues);                            // 0x00B8   (0x0050)  
+	SDK_UNDEFINED(80,4938) /* TMap<FName, TWeakObjectPtr<UTexture*>> */ __um(TextureParameterValues);              // 0x0108   (0x0050)  
 	FDatasmithStaticParameterSetTemplate               StaticParameters;                                           // 0x0158   (0x0050)  
 };
 
@@ -668,7 +668,7 @@ class ADatasmithSceneActor : public AActor
 { 
 public:
 	class UDatasmithScene*                             Scene;                                                      // 0x0230   (0x0008)  
-	SDK_UNDEFINED(80,4546) /* TMap<FName, TWeakObjectPtr<AActor*>> */ __um(RelatedActors);                         // 0x0238   (0x0050)  
+	SDK_UNDEFINED(80,4939) /* TMap<FName, TWeakObjectPtr<AActor*>> */ __um(RelatedActors);                         // 0x0238   (0x0050)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithSceneComponentTemplate
@@ -678,12 +678,12 @@ class UDatasmithSceneComponentTemplate : public UDatasmithObjectTemplate
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0038   (0x0008)  MISSED
 	FTransform                                         RelativeTransform;                                          // 0x0040   (0x0030)  
-	SDK_UNDEFINED(1,4547) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,4940) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0071   (0x0007)  MISSED
-	SDK_UNDEFINED(48,4548) /* TWeakObjectPtr<USceneComponent*> */ __um(AttachParent);                              // 0x0078   (0x0030)  
+	SDK_UNDEFINED(48,4941) /* TWeakObjectPtr<USceneComponent*> */ __um(AttachParent);                              // 0x0078   (0x0030)  
 	bool                                               bVisible;                                                   // 0x00A8   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00A9   (0x0007)  MISSED
-	SDK_UNDEFINED(80,4549) /* TSet<FName> */           __um(Tags);                                                 // 0x00B0   (0x0050)  
+	SDK_UNDEFINED(80,4942) /* TSet<FName> */           __um(Tags);                                                 // 0x00B0   (0x0050)  
 };
 
 /// Class /Script/DatasmithContent.DatasmithSkyLightComponentTemplate
@@ -691,7 +691,7 @@ public:
 class UDatasmithSkyLightComponentTemplate : public UDatasmithObjectTemplate
 { 
 public:
-	SDK_UNDEFINED(1,4550) /* TEnumAsByte<ESkyLightSourceType> */ __um(SourceType);                                 // 0x0038   (0x0001)  
+	SDK_UNDEFINED(1,4943) /* TEnumAsByte<ESkyLightSourceType> */ __um(SourceType);                                 // 0x0038   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0039   (0x0003)  MISSED
 	int32_t                                            CubemapResolution;                                          // 0x003C   (0x0004)  
 	class UTextureCube*                                Cubemap;                                                    // 0x0040   (0x0008)  
@@ -719,7 +719,7 @@ public:
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FDatasmithMeshSectionInfoMapTemplate
 { 
-	SDK_UNDEFINED(80,4551) /* TMap<uint32_t, FDatasmithMeshSectionInfoTemplate> */ __um(Map);                      // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,4944) /* TMap<uint32_t, FDatasmithMeshSectionInfoTemplate> */ __um(Map);                      // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/DatasmithContent.DatasmithMeshBuildSettingsTemplate

@@ -22,8 +22,8 @@ public:
 class UReversibleActionSystemComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(80,1695) /* TMap<FActionPredictionKey, FPendingInstantActionList> */ __um(_pendingInstantActionHandlers); // 0x00B8   (0x0050)  
-	SDK_UNDEFINED(80,1696) /* TMap<FActionPredictionKey, FInstantActionList> */ __um(_predictedInstantActionHandlers); // 0x0108   (0x0050)  
+	SDK_UNDEFINED(80,1720) /* TMap<FActionPredictionKey, FPendingInstantActionList> */ __um(_pendingInstantActionHandlers); // 0x00B8   (0x0050)  
+	SDK_UNDEFINED(80,1721) /* TMap<FActionPredictionKey, FInstantActionList> */ __um(_predictedInstantActionHandlers); // 0x0108   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0158   (0x0050)  MISSED
 };
 

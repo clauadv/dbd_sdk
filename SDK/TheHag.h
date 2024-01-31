@@ -41,7 +41,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheHag.HagScoreComponent.Authority_OnActorEndPlay
-	// void Authority_OnActorEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                        // [0x5ac0f70] Final|Native|Private 
+	// void Authority_OnActorEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                        // [0x5acb0f0] Final|Native|Private 
 };
 
 /// Class /Script/TheHag.HasActivePhantomTrap
@@ -95,43 +95,43 @@ public:
 
 	/// Functions
 	// Function /Script/TheHag.PhantomTrap.SetIsInUse
-	// void SetIsInUse(bool InUse);                                                                                          // [0x5ac23a0] Final|Native|Private|BlueprintCallable 
+	// void SetIsInUse(bool InUse);                                                                                          // [0x5acc520] Final|Native|Private|BlueprintCallable 
 	// Function /Script/TheHag.PhantomTrap.RetrievePerkFlags
-	// void RetrievePerkFlags(FGameplayTag silentTrapTag, FGameplayTag phantomCollisionTag);                                 // [0x5ac22a0] Final|Native|Protected|BlueprintCallable 
+	// void RetrievePerkFlags(FGameplayTag silentTrapTag, FGameplayTag phantomCollisionTag);                                 // [0x5acc420] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheHag.PhantomTrap.OnTrapReset
-	// void OnTrapReset();                                                                                                   // [0x5ac2280] Final|Native|Protected|BlueprintCallable 
+	// void OnTrapReset();                                                                                                   // [0x5acc400] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheHag.PhantomTrap.OnTrapActivated
-	// void OnTrapActivated();                                                                                               // [0x5ac2260] Final|Native|Protected|BlueprintCallable 
+	// void OnTrapActivated();                                                                                               // [0x5acc3e0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheHag.PhantomTrap.Multicast_DestroyTrap
-	// void Multicast_DestroyTrap(class ACamperPlayer* playerDestroyingTrap);                                                // [0x57fd1b0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_DestroyTrap(class ACamperPlayer* playerDestroyingTrap);                                                // [0x58005f0] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheHag.PhantomTrap.IsTrapSet
-	// bool IsTrapSet();                                                                                                     // [0x58adbb0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// bool IsTrapSet();                                                                                                     // [0x58b2ff0] Native|Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.IsTrapDeactivating
-	// bool IsTrapDeactivating();                                                                                            // [0x5ac2240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTrapDeactivating();                                                                                            // [0x5acc3c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.IsTrapActive
-	// bool IsTrapActive();                                                                                                  // [0x5ac2210] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTrapActive();                                                                                                  // [0x5acc390] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.IsSilentTrigger
-	// bool IsSilentTrigger();                                                                                               // [0x5ac21e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSilentTrigger();                                                                                               // [0x5acc360] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.InitializeTerrorRadiusEmitter
-	// void InitializeTerrorRadiusEmitter(class ASlasherPlayer* owningSlasher);                                              // [0x5ac2150] Final|Native|Protected|BlueprintCallable 
+	// void InitializeTerrorRadiusEmitter(class ASlasherPlayer* owningSlasher);                                              // [0x5acc2d0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheHag.PhantomTrap.HasKillerTeleported
-	// bool HasKillerTeleported();                                                                                           // [0x5ac2130] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasKillerTeleported();                                                                                           // [0x5acc2b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.GetPhantomTransform
-	// class USceneComponent* GetPhantomTransform();                                                                         // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class USceneComponent* GetPhantomTransform();                                                                         // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.GetMesh
-	// class USkeletalMeshComponent* GetMesh();                                                                              // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// class USkeletalMeshComponent* GetMesh();                                                                              // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 	// Function /Script/TheHag.PhantomTrap.CanActivateTrap
-	// bool CanActivateTrap(class ACamperPlayer* camper, bool IsInUse);                                                      // [0x5ac2060] Final|Native|Protected|BlueprintCallable 
+	// bool CanActivateTrap(class ACamperPlayer* camper, bool IsInUse);                                                      // [0x5acc1e0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheHag.PhantomTrap.BP_OnTrapDestroyed
-	// void BP_OnTrapDestroyed(class ACamperPlayer* playerDestroyingTrap);                                                   // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void BP_OnTrapDestroyed(class ACamperPlayer* playerDestroyingTrap);                                                   // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheHag.PhantomTrap.BP_OnTrapActivate
-	// void BP_OnTrapActivate(class ACamperPlayer* triggerer);                                                               // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void BP_OnTrapActivate(class ACamperPlayer* triggerer);                                                               // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheHag.PhantomTrap.Authority_OnTriggerZoneEndOverlap
-	// void Authority_OnTriggerZoneEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5ac1f00] Final|Native|Private 
+	// void Authority_OnTriggerZoneEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5acc080] Final|Native|Private 
 	// Function /Script/TheHag.PhantomTrap.Authority_OnTriggerZoneBeginOverlap
-	// void Authority_OnTriggerZoneBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5ac1ce0] Final|Native|Private|HasOutParms 
+	// void Authority_OnTriggerZoneBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5acbe60] Final|Native|Private|HasOutParms 
 	// Function /Script/TheHag.PhantomTrap.ActivateSlasher
-	// void ActivateSlasher(class ASlasherPlayer* Slasher);                                                                  // [0x5ac1c50] Final|Native|Public|BlueprintCallable 
+	// void ActivateSlasher(class ASlasherPlayer* Slasher);                                                                  // [0x5acbdd0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheHag.PhantomTrapOutlineStrategy
@@ -139,7 +139,7 @@ public:
 class UPhantomTrapOutlineStrategy : public USourceBasedOutlineUpdateStrategy
 { 
 public:
-	SDK_UNDEFINED(8,5090) /* TWeakObjectPtr<APhantomTrap*> */ __um(_cachedOwningPhantomTrap);                      // 0x0158   (0x0008)  
+	SDK_UNDEFINED(8,5480) /* TWeakObjectPtr<APhantomTrap*> */ __um(_cachedOwningPhantomTrap);                      // 0x0158   (0x0008)  
 	FLinearColor                                       _colorWhenTeleportationIsAvailable;                         // 0x0160   (0x0010)  
 	class UCurveFloat*                                 _colorAlphaBasedOnDistance;                                 // 0x0170   (0x0008)  
 };
@@ -156,21 +156,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheHag.TeleportToPhantomTrap.IsTeleportationPossible
-	// bool IsTeleportationPossible(class ADBDPlayer* Player);                                                               // [0x61c32d0] Event|Public|BlueprintEvent|Const 
+	// bool IsTeleportationPossible(class ADBDPlayer* Player);                                                               // [0x61d2f50] Event|Public|BlueprintEvent|Const 
 	// Function /Script/TheHag.TeleportToPhantomTrap.GetTeleportMaxDistance
-	// float GetTeleportMaxDistance(class ASlasherPlayer* Slasher);                                                          // [0x5ac2a60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetTeleportMaxDistance(class ASlasherPlayer* Slasher);                                                          // [0x5accbe0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHag.TeleportToPhantomTrap.GetPhantomTrap
-	// class APhantomTrap* GetPhantomTrap();                                                                                 // [0x5ac2a30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class APhantomTrap* GetPhantomTrap();                                                                                 // [0x5accbb0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheHag.TeleportToPhantomTrap.Cosmetic_OnTeleport
-	// void Cosmetic_OnTeleport(class ASlasherPlayer* Slasher, class APhantomTrap* trap);                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTeleport(class ASlasherPlayer* Slasher, class APhantomTrap* trap);                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheHag.TeleportToPhantomTrap.Cosmetic_OnInteractionFinished
-	// void Cosmetic_OnInteractionFinished(class ADBDPlayer* Slasher, bool hasInteractionStarted);                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionFinished(class ADBDPlayer* Slasher, bool hasInteractionStarted);                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheHag.TeleportToPhantomTrap.BP_OnTeleport
-	// void BP_OnTeleport(class ASlasherPlayer* Slasher, class APhantomTrap* trap);                                          // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_OnTeleport(class ASlasherPlayer* Slasher, class APhantomTrap* trap);                                          // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheHag.WipeAwayPhantomTrapInteraction
-/// Size: 0x0000 (0x0007C0 - 0x0007C0)
+/// Size: 0x0000 (0x0007D0 - 0x0007D0)
 class UWipeAwayPhantomTrapInteraction : public UBasicChargeableInteraction
 { 
 public:
@@ -178,6 +178,6 @@ public:
 
 	/// Functions
 	// Function /Script/TheHag.WipeAwayPhantomTrapInteraction.CancelInteraction
-	// void CancelInteraction(class ADBDPlayer* Player);                                                                     // [0x5ac2e50] Final|Native|Private 
+	// void CancelInteraction(class ADBDPlayer* Player);                                                                     // [0x5acce20] Final|Native|Private 
 };
 

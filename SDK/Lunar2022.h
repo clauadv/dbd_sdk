@@ -31,7 +31,7 @@ class ULunar2022EventComponent : public URespawningEventComponent
 public:
 	FName                                              _eventTag;                                                  // 0x00C8   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x00D4   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4874) /* TArray<TWeakObjectPtr<ARedEnvelope*>> */ __um(_redEnvelopes);                        // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,5268) /* TArray<TWeakObjectPtr<ARedEnvelope*>> */ __um(_redEnvelopes);                        // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData01_5[0xB4];                                      // 0x00E8   (0x00B4)  MISSED
 	FGameplayTag                                       _scoreNormal;                                               // 0x019C   (0x000C)  
 	FGameplayTag                                       _scoreJackpot;                                              // 0x01A8   (0x000C)  
@@ -40,7 +40,7 @@ public:
 
 	/// Functions
 	// Function /Script/Lunar2022.Lunar2022EventComponent.Authority_OnPlayerFinishPlaying
-	// void Authority_OnPlayerFinishPlaying(class ADBDPlayerState* PlayerState);                                             // [0x59c6780] Final|Native|Private 
+	// void Authority_OnPlayerFinishPlaying(class ADBDPlayerState* PlayerState);                                             // [0x59cd020] Final|Native|Private 
 };
 
 /// Struct /Script/Lunar2022.RedEnvelopeData
@@ -73,37 +73,37 @@ public:
 	class UStaticMeshComponent*                        _redEnvelopeMesh;                                           // 0x03A0   (0x0008)  
 	FDBDTunableRowHandle                               _redEnvelopeInteractionSecondsToCharge;                     // 0x03A8   (0x0028)  
 	FDBDTunableRowHandle                               _redEnvelopeInteractionSecondsToChargeKiller;               // 0x03D0   (0x0028)  
-	SDK_UNDEFINED(8,4875) /* TWeakObjectPtr<ULunar2022EventComponent*> */ __um(_eventComponent);                   // 0x03F8   (0x0008)  
+	SDK_UNDEFINED(8,5269) /* TWeakObjectPtr<ULunar2022EventComponent*> */ __um(_eventComponent);                   // 0x03F8   (0x0008)  
 	class URedEnvelopeOutlineUpdateStrategy*           _redEnvelopeOutlineUpdateStrategy;                          // 0x0400   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/Lunar2022.RedEnvelope.OnRep_RedEnvelopeData
-	// void OnRep_RedEnvelopeData();                                                                                         // [0x59c6fa0] Final|Native|Private 
+	// void OnRep_RedEnvelopeData();                                                                                         // [0x59cd7e0] Final|Native|Private 
 	// Function /Script/Lunar2022.RedEnvelope.OnRep_OwnerPlayerState
-	// void OnRep_OwnerPlayerState();                                                                                        // [0x59c6f80] Final|Native|Private 
+	// void OnRep_OwnerPlayerState();                                                                                        // [0x59cd7c0] Final|Native|Private 
 	// Function /Script/Lunar2022.RedEnvelope.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x59c6f60] Final|Native|Public  
+	// void OnLocallyObservedChanged();                                                                                      // [0x59cd7a0] Final|Native|Public  
 	// Function /Script/Lunar2022.RedEnvelope.Cosmetic_SetBackgroundVFX
-	// void Cosmetic_SetBackgroundVFX(bool isOwner);                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetBackgroundVFX(bool isOwner);                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2022.RedEnvelope.Cosmetic_OnTriggerDisappearingVFX
-	// void Cosmetic_OnTriggerDisappearingVFX(class ADBDPlayer* interactingPlayer, bool isOwner, bool IsJackpot);            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTriggerDisappearingVFX(class ADBDPlayer* interactingPlayer, bool isOwner, bool IsJackpot);            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2022.RedEnvelope.Cosmetic_OnInteractionUpdate
-	// void Cosmetic_OnInteractionUpdate(class ADBDPlayer* interactingPlayer, float ChargePercent, bool isOwner);            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionUpdate(class ADBDPlayer* interactingPlayer, float ChargePercent, bool isOwner);            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2022.RedEnvelope.Cosmetic_OnInteractionStopped
-	// void Cosmetic_OnInteractionStopped(class ADBDPlayer* interactingPlayer, bool isOwner);                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionStopped(class ADBDPlayer* interactingPlayer, bool isOwner);                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2022.RedEnvelope.Cosmetic_OnInteractionStart
-	// void Cosmetic_OnInteractionStart(class ADBDPlayer* interactingPlayer, bool isOwner);                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionStart(class ADBDPlayer* interactingPlayer, bool isOwner);                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Lunar2022.RedEnvelope.Cosmetic_OnAddEmberEffect
-	// void Cosmetic_OnAddEmberEffect(class ADBDPlayer* OwningPlayer);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAddEmberEffect(class ADBDPlayer* OwningPlayer);                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Lunar2022.RedEnvelopeInteraction
-/// Size: 0x0060 (0x000790 - 0x0007F0)
+/// Size: 0x0020 (0x000790 - 0x0007B0)
 class URedEnvelopeInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0790   (0x0060)  MISSED
+	unsigned char                                      UnknownData00_1[0x20];                                      // 0x0790   (0x0020)  MISSED
 };
 
 /// Class /Script/Lunar2022.RedEnvelopeOutlineUpdateStrategy

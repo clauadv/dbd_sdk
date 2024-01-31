@@ -23,7 +23,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x004D   (0x0003)  MISSED
 	uint32_t                                           ExrDecoderThreads;                                          // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0054   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4824) /* FString */               __um(DefaultProxy);                                         // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,5218) /* FString */               __um(DefaultProxy);                                         // 0x0058   (0x0010)  
 	bool                                               UseDefaultProxy;                                            // 0x0068   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x7];                                       // 0x0069   (0x0007)  MISSED
 };

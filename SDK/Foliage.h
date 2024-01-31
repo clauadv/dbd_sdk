@@ -72,8 +72,8 @@ enum class ESimulationOverlap : uint8_t
 class UFoliageInstancedStaticMeshComponent : public UHierarchicalInstancedStaticMeshComponent
 { 
 public:
-	SDK_UNDEFINED(16,1474) /* FMulticastInlineDelegate */ __um(OnInstanceTakePointDamage);                         // 0x06E8   (0x0010)  
-	SDK_UNDEFINED(16,1475) /* FMulticastInlineDelegate */ __um(OnInstanceTakeRadialDamage);                        // 0x06F8   (0x0010)  
+	SDK_UNDEFINED(16,1499) /* FMulticastInlineDelegate */ __um(OnInstanceTakePointDamage);                         // 0x06E8   (0x0010)  
+	SDK_UNDEFINED(16,1500) /* FMulticastInlineDelegate */ __um(OnInstanceTakeRadialDamage);                        // 0x06F8   (0x0010)  
 	FGuid                                              GenerationGuid;                                             // 0x0708   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0718   (0x0008)  MISSED
 };
@@ -87,9 +87,9 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingSphereCount
-	// int32_t FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FVector CenterPosition, float Radius); // [0x7006b40] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t FoliageOverlappingSphereCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FVector CenterPosition, float Radius); // [0x70168a0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/Foliage.FoliageStatistics.FoliageOverlappingBoxCount
-	// int32_t FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box);       // [0x7006a00] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// int32_t FoliageOverlappingBoxCount(class UObject* WorldContextObject, class UStaticMesh* StaticMesh, FBox Box);       // [0x7016760] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/Foliage.FoliageVertexColorChannelMask
@@ -121,7 +121,7 @@ public:
 	FFloatInterval                                     ScaleY;                                                     // 0x0060   (0x0008)  
 	FFloatInterval                                     ScaleZ;                                                     // 0x0068   (0x0008)  
 	FFoliageVertexColorChannelMask                     VertexColorMaskByChannel;                                   // 0x0070   (0x0030)  
-	SDK_UNDEFINED(1,1476) /* TEnumAsByte<FoliageVertexColorMask> */ __um(VertexColorMask);                         // 0x00A0   (0x0001)  
+	SDK_UNDEFINED(1,1501) /* TEnumAsByte<FoliageVertexColorMask> */ __um(VertexColorMask);                         // 0x00A0   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x00A1   (0x0003)  MISSED
 	float                                              VertexColorMaskThreshold;                                   // 0x00A4   (0x0004)  
 	bool                                               VertexColorMaskInvert : 1;                                  // 0x00A8:0 (0x0001)  
@@ -147,7 +147,7 @@ public:
 	FVector                                            CollisionScale;                                             // 0x0114   (0x000C)  
 	FBoxSphereBounds                                   MeshBounds;                                                 // 0x0120   (0x001C)  
 	FVector                                            LowBoundOriginRadius;                                       // 0x013C   (0x000C)  
-	SDK_UNDEFINED(1,1477) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0148   (0x0001)  
+	SDK_UNDEFINED(1,1502) /* TEnumAsByte<EComponentMobility> */ __um(Mobility);                                    // 0x0148   (0x0001)  
 	unsigned char                                      UnknownData09_5[0x3];                                       // 0x0149   (0x0003)  MISSED
 	FInt32Interval                                     CullDistance;                                               // 0x014C   (0x0008)  
 	bool                                               bEnableStaticLighting : 1;                                  // 0x0154:0 (0x0001)  
@@ -169,7 +169,7 @@ public:
 	bool                                               bEvaluateWorldPositionOffset : 1;                           // 0x0164:1 (0x0001)  
 	unsigned char                                      UnknownData13_4[0x3];                                       // 0x0165   (0x0003)  MISSED
 	FBodyInstance                                      BodyInstance;                                               // 0x0168   (0x0160)  
-	SDK_UNDEFINED(1,1478) /* TEnumAsByte<EHasCustomNavigableGeometry> */ __um(CustomNavigableGeometry);            // 0x02C8   (0x0001)  
+	SDK_UNDEFINED(1,1503) /* TEnumAsByte<EHasCustomNavigableGeometry> */ __um(CustomNavigableGeometry);            // 0x02C8   (0x0001)  
 	FLightingChannels                                  LightingChannels;                                           // 0x02C9   (0x0001)  
 	unsigned char                                      UnknownData14_5[0x2];                                       // 0x02CA   (0x0002)  MISSED
 	bool                                               bRenderCustomDepth : 1;                                     // 0x02CC:0 (0x0001)  
@@ -272,7 +272,7 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.InteractiveFoliageActor.CapsuleTouched
-	// void CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& OverlapInfo); // [0x70067e0] Final|Native|Protected|HasOutParms 
+	// void CapsuleTouched(class UPrimitiveComponent* OverlappedComp, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& OverlapInfo); // [0x7016540] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/Foliage.InteractiveFoliageComponent
@@ -329,7 +329,7 @@ public:
 
 	/// Functions
 	// Function /Script/Foliage.ProceduralFoliageSpawner.Simulate
-	// void Simulate(int32_t NumSteps);                                                                                      // [0x7006ca0] Final|Native|Public|BlueprintCallable 
+	// void Simulate(int32_t NumSteps);                                                                                      // [0x7016a00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/Foliage.ProceduralFoliageInstance

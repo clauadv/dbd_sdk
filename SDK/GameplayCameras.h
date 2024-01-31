@@ -88,7 +88,7 @@ struct FFOscillator
 { 
 	float                                              Amplitude;                                                  // 0x0000   (0x0004)  
 	float                                              Frequency;                                                  // 0x0004   (0x0004)  
-	SDK_UNDEFINED(1,4098) /* TEnumAsByte<EInitialOscillatorOffset> */ __um(InitialOffset);                         // 0x0008   (0x0001)  
+	SDK_UNDEFINED(1,4192) /* TEnumAsByte<EInitialOscillatorOffset> */ __um(InitialOffset);                         // 0x0008   (0x0001)  
 	EOscillatorWaveform                                Waveform;                                                   // 0x0009   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x2];                                       // 0x000A   (0x0002)  MISSED
 };
@@ -141,17 +141,17 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.MatineeCameraShake.StartMatineeCameraShakeFromSource
-	// class UMatineeCameraShake* StartMatineeCameraShakeFromSource(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, class UCameraShakeSourceComponent* SourceComponent, float Scale, ECameraShakePlaySpace PlaySpace, FRotator UserPlaySpaceRot); // [0x4c644f0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UMatineeCameraShake* StartMatineeCameraShakeFromSource(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, class UCameraShakeSourceComponent* SourceComponent, float Scale, ECameraShakePlaySpace PlaySpace, FRotator UserPlaySpaceRot); // [0x4c34440] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayCameras.MatineeCameraShake.StartMatineeCameraShake
-	// class UMatineeCameraShake* StartMatineeCameraShake(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, float Scale, ECameraShakePlaySpace PlaySpace, FRotator UserPlaySpaceRot); // [0x4c64320] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// class UMatineeCameraShake* StartMatineeCameraShake(class APlayerCameraManager* PlayerCameraManager, class UClass* ShakeClass, float Scale, ECameraShakePlaySpace PlaySpace, FRotator UserPlaySpaceRot); // [0x4c34270] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/GameplayCameras.MatineeCameraShake.ReceiveStopShake
-	// void ReceiveStopShake(bool bImmediately);                                                                             // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void ReceiveStopShake(bool bImmediately);                                                                             // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayCameras.MatineeCameraShake.ReceivePlayShake
-	// void ReceivePlayShake(float Scale);                                                                                   // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void ReceivePlayShake(float Scale);                                                                                   // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/GameplayCameras.MatineeCameraShake.ReceiveIsFinished
-	// bool ReceiveIsFinished();                                                                                             // [0x454cb10] Native|Event|Public|BlueprintEvent|Const 
+	// bool ReceiveIsFinished();                                                                                             // [0x44e1890] Native|Event|Public|BlueprintEvent|Const 
 	// Function /Script/GameplayCameras.MatineeCameraShake.BlueprintUpdateCameraShake
-	// void BlueprintUpdateCameraShake(float DeltaTime, float alpha, FMinimalViewInfo& POV, FMinimalViewInfo& ModifiedPOV);  // [0x61c32d0] Event|Public|HasOutParms|BlueprintEvent 
+	// void BlueprintUpdateCameraShake(float DeltaTime, float alpha, FMinimalViewInfo& POV, FMinimalViewInfo& ModifiedPOV);  // [0x61d2f50] Event|Public|HasOutParms|BlueprintEvent 
 };
 
 /// Class /Script/GameplayCameras.MatineeCameraShakePattern
@@ -177,7 +177,7 @@ public:
 
 	/// Functions
 	// Function /Script/GameplayCameras.MatineeCameraShakeFunctionLibrary.Conv_MatineeCameraShake
-	// class UMatineeCameraShake* Conv_MatineeCameraShake(class UCameraShakeBase* CameraShake);                              // [0x4c642a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UMatineeCameraShake* Conv_MatineeCameraShake(class UCameraShakeBase* CameraShake);                              // [0x4c341f0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Struct /Script/GameplayCameras.PerlinNoiseShaker

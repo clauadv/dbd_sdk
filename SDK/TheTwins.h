@@ -75,12 +75,14 @@ public:
 };
 
 /// Class /Script/TheTwins.Appraisal
-/// Size: 0x0018 (0x0003C8 - 0x0003E0)
+/// Size: 0x0020 (0x0003C8 - 0x0003E8)
 class UAppraisal : public UPerk
 { 
 public:
 	float                                              _chestSearchSpeedMultiplier;                                // 0x03C8   (0x000C)  
-	unsigned char                                      UnknownData00_6[0xC];                                       // 0x03D4   (0x000C)  MISSED
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
+	class UClass*                                      _fastChestSearchEffectClass;                                // 0x03D8   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x03E0   (0x0008)  MISSED
 };
 
 /// Class /Script/TheTwins.PossessPlayer
@@ -88,15 +90,15 @@ public:
 class UPossessPlayer : public UChargeableInteractionDefinition
 { 
 public:
-	FDBDTunableRowHandle                               _possessThePlayerMaxCharge;                                 // 0x0788   (0x0028)  
-	unsigned char                                      UnknownData00_6[0x10];                                      // 0x07B0   (0x0010)  MISSED
+	FDBDTunableRowHandle                               _possessThePlayerMaxCharge;                                 // 0x0790   (0x0028)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x07B8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.PossessPlayer.Cosmetic_OnPossessStart
-	// void Cosmetic_OnPossessStart(class ADBDPlayer* Player);                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPossessStart(class ADBDPlayer* Player);                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.PossessPlayer.Cosmetic_OnPossessCancelled
-	// void Cosmetic_OnPossessCancelled(class ADBDPlayer* Player);                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPossessCancelled(class ADBDPlayer* Player);                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheTwins.PossessTheConjoinedTwin
@@ -109,9 +111,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.PossessTheConjoinedTwin.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e475b0] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e57560] Final|Native|Private 
 	// Function /Script/TheTwins.PossessTheConjoinedTwin.OnPowerCollected
-	// void OnPowerCollected(class ADBDPlayer* collector);                                                                   // [0x5e47220] Final|Native|Private 
+	// void OnPowerCollected(class ADBDPlayer* collector);                                                                   // [0x5e571d0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.AutoPossessTheConjoinedTwin
@@ -131,17 +133,17 @@ public:
 };
 
 /// Class /Script/TheTwins.BeingPossessedInteraction
-/// Size: 0x0080 (0x000790 - 0x000810)
+/// Size: 0x0090 (0x000790 - 0x000820)
 class UBeingPossessedInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	FTunableStat                                       _beingPossessedMaxCharge;                                   // 0x0788   (0x0080)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0808   (0x0008)  MISSED
+	FTunableStat                                       _beingPossessedMaxCharge;                                   // 0x0790   (0x0080)  
+	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0810   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.BeingPossessedInteraction.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5e415e0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5e51720] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.BrotherBlindFlashlightableLightingStrategy
@@ -157,18 +159,18 @@ public:
 class UChargeTwinJumpInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x40];                                      // 0x0790   (0x0040)  MISSED
-	FDBDTunableRowHandle                               _chargeJumpMaxCharge;                                       // 0x07D0   (0x0028)  
-	FDBDTunableRowHandle                               _interactionViewPitchMax;                                   // 0x07F8   (0x0028)  
-	FDBDTunableRowHandle                               _interactionViewPitchMin;                                   // 0x0820   (0x0028)  
-	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0848   (0x0030)  MISSED
-	FDBDTunableRowHandle                               _cancelCooldownTime;                                        // 0x0878   (0x0028)  
-	unsigned char                                      UnknownData02_6[0x40];                                      // 0x08A0   (0x0040)  MISSED
+	unsigned char                                      UnknownData00_2[0x48];                                      // 0x0790   (0x0048)  MISSED
+	FDBDTunableRowHandle                               _chargeJumpMaxCharge;                                       // 0x07D8   (0x0028)  
+	FDBDTunableRowHandle                               _interactionViewPitchMax;                                   // 0x0800   (0x0028)  
+	FDBDTunableRowHandle                               _interactionViewPitchMin;                                   // 0x0828   (0x0028)  
+	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0850   (0x0030)  MISSED
+	FDBDTunableRowHandle                               _cancelCooldownTime;                                        // 0x0880   (0x0028)  
+	unsigned char                                      UnknownData02_6[0x38];                                      // 0x08A8   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.ChargeTwinJumpInteraction.Cosmetic_OnJumpReadyChanged
-	// void Cosmetic_OnJumpReadyChanged(class ADBDPlayer* twin, bool Ready);                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnJumpReadyChanged(class ADBDPlayer* twin, bool Ready);                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheTwins.ConjoinedTwin
@@ -211,13 +213,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.ConjoinedTwin.Server_SendAttackInput
-	// void Server_SendAttackInput(bool Pressed);                                                                            // [0x5e417a0] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void Server_SendAttackInput(bool Pressed);                                                                            // [0x5e518e0] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/TheTwins.ConjoinedTwin.OnFinishedPlayingEvent
-	// void OnFinishedPlayingEvent(FGameplayTag gameEventType, FGameEventData& GameEventData);                               // [0x5e412d0] Final|Native|Private|HasOutParms 
+	// void OnFinishedPlayingEvent(FGameplayTag gameEventType, FGameEventData& GameEventData);                               // [0x5e51410] Final|Native|Private|HasOutParms 
 	// Function /Script/TheTwins.ConjoinedTwin.Cosmetic_OnOnGroundUncontrolledChanged
-	// void Cosmetic_OnOnGroundUncontrolledChanged(bool onGroundAndUncontrolled);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnOnGroundUncontrolledChanged(bool onGroundAndUncontrolled);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.ConjoinedTwin.Authority_OnFirecrackerInRangeBegin
-	// void Authority_OnFirecrackerInRangeBegin(FFirecrackerEffectData& effectData);                                         // [0x5e40fa0] Final|Native|Protected|HasOutParms 
+	// void Authority_OnFirecrackerInRangeBegin(FFirecrackerEffectData& effectData);                                         // [0x5e510e0] Final|Native|Protected|HasOutParms 
 };
 
 /// Class /Script/TheTwins.ConjoinedTwinAnimInstance
@@ -261,7 +263,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.ConjoinedTwinAnimInstance.GetOwningConjoinedTwin
-	// class AConjoinedTwin* GetOwningConjoinedTwin();                                                                       // [0x5e41270] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class AConjoinedTwin* GetOwningConjoinedTwin();                                                                       // [0x5e513b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheTwins.ConjoinedTwinInteractable
@@ -310,7 +312,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.Deception.OnOwningPlayerFakedEnteringLockerCosmetic
-	// void OnOwningPlayerFakedEnteringLockerCosmetic();                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnOwningPlayerFakedEnteringLockerCosmetic();                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheTwins.DestroyTwin
@@ -318,9 +320,9 @@ public:
 class UDestroyTwin : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x48];                                      // 0x0790   (0x0048)  MISSED
-	FDBDTunableRowHandle                               _destroyTwinMaxCharge;                                      // 0x07D8   (0x0028)  
-	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0800   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_2[0x50];                                      // 0x0790   (0x0050)  MISSED
+	FDBDTunableRowHandle                               _destroyTwinMaxCharge;                                      // 0x07E0   (0x0028)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0808   (0x0008)  MISSED
 };
 
 /// Class /Script/TheTwins.Hoarder
@@ -339,13 +341,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.Hoarder.OnItemRemovedFromPlayer
-	// void OnItemRemovedFromPlayer(class ACollectable* Item, EInventoryType inventoryType);                                 // [0x5e41510] Final|Native|Private 
+	// void OnItemRemovedFromPlayer(class ACollectable* Item, EInventoryType inventoryType);                                 // [0x5e51650] Final|Native|Private 
 	// Function /Script/TheTwins.Hoarder.OnItemAddedToPlayer
-	// void OnItemAddedToPlayer(class ACollectable* Item, EInventoryType inventoryType, class ACamperPlayer* Player);        // [0x5e41400] Final|Native|Private 
+	// void OnItemAddedToPlayer(class ACollectable* Item, EInventoryType inventoryType, class ACamperPlayer* Player);        // [0x5e51540] Final|Native|Private 
 	// Function /Script/TheTwins.Hoarder.Local_ThrowBubbleIndicator
-	// void Local_ThrowBubbleIndicator(EPerkInteractionObjectType camperInteractionType, class AActor* objectActor, class ACamperPlayer* interactingCamperPlayer); // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void Local_ThrowBubbleIndicator(EPerkInteractionObjectType camperInteractionType, class AActor* objectActor, class ACamperPlayer* interactingCamperPlayer); // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.Hoarder.GetBubbleIndicatorLifetime
-	// float GetBubbleIndicatorLifetime();                                                                                   // [0x5e411e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetBubbleIndicatorLifetime();                                                                                   // [0x5e51320] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheTwins.IsTwinRecallReady
@@ -358,7 +360,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.IsTwinRecallReady.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5e41600] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5e51740] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.K22AchievementTagTeam
@@ -370,40 +372,41 @@ public:
 };
 
 /// Class /Script/TheTwins.K22Power
-/// Size: 0x0170 (0x0004C8 - 0x000638)
+/// Size: 0x0178 (0x0004C8 - 0x000640)
 class AK22Power : public ACollectable
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x04C8   (0x0018)  MISSED
 	class UChargeableComponent*                        _releaseConjoinedTwinChargeable;                            // 0x04E0   (0x0008)  
 	class UChargeableComponent*                        _possessConjoinedTwinChargeable;                            // 0x04E8   (0x0008)  
-	unsigned char                                      UnknownData01_5[0x18];                                      // 0x04F0   (0x0018)  MISSED
-	class AConjoinedTwin*                              _conjoinedTwin;                                             // 0x0508   (0x0008)  
-	class AConjoinedTwin*                              _conjoinedTwinParadise;                                     // 0x0510   (0x0008)  
-	class UPowerChargeComponent*                       _powerCharge;                                               // 0x0518   (0x0008)  
-	class UK22PowerChargePresentationItemProgressComponent* _powerChargePresentationItemProgress;                  // 0x0520   (0x0008)  
-	FDBDTunableRowHandle                               _powerMaxCharge;                                            // 0x0528   (0x0028)  
-	class UClass*                                      _conjoinedTwinClass;                                        // 0x0550   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x18];                                      // 0x0558   (0x0018)  MISSED
-	FDBDTunableRowHandle                               _powerRechargeRate;                                         // 0x0570   (0x0028)  
-	FDBDTunableRowHandle                               _timeBeforeAutoDestroy;                                     // 0x0598   (0x0028)  
-	FDBDTunableRowHandle                               _timeBeforeRecallAvailable;                                 // 0x05C0   (0x0028)  
-	unsigned char                                      UnknownData03_6[0x50];                                      // 0x05E8   (0x0050)  MISSED
+	class UClass*                                      _killerDormantStealthStatusEffectClass;                     // 0x04F0   (0x0008)  
+	unsigned char                                      UnknownData01_5[0x18];                                      // 0x04F8   (0x0018)  MISSED
+	class AConjoinedTwin*                              _conjoinedTwin;                                             // 0x0510   (0x0008)  
+	class AConjoinedTwin*                              _conjoinedTwinParadise;                                     // 0x0518   (0x0008)  
+	class UPowerChargeComponent*                       _powerCharge;                                               // 0x0520   (0x0008)  
+	class UK22PowerChargePresentationItemProgressComponent* _powerChargePresentationItemProgress;                  // 0x0528   (0x0008)  
+	FDBDTunableRowHandle                               _powerMaxCharge;                                            // 0x0530   (0x0028)  
+	class UClass*                                      _conjoinedTwinClass;                                        // 0x0558   (0x0008)  
+	unsigned char                                      UnknownData02_5[0x18];                                      // 0x0560   (0x0018)  MISSED
+	FDBDTunableRowHandle                               _powerRechargeRate;                                         // 0x0578   (0x0028)  
+	FDBDTunableRowHandle                               _timeBeforeAutoDestroy;                                     // 0x05A0   (0x0028)  
+	FDBDTunableRowHandle                               _timeBeforeRecallAvailable;                                 // 0x05C8   (0x0028)  
+	unsigned char                                      UnknownData03_6[0x50];                                      // 0x05F0   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.K22Power.OnRep_ConjoinedTwin
-	// void OnRep_ConjoinedTwin();                                                                                           // [0x5e41640] Final|Native|Private 
+	// void OnRep_ConjoinedTwin();                                                                                           // [0x5e51780] Final|Native|Private 
 	// Function /Script/TheTwins.K22Power.OnPowerChargeEmpty
-	// void OnPowerChargeEmpty();                                                                                            // [0x5e41620] Final|Native|Private 
+	// void OnPowerChargeEmpty();                                                                                            // [0x5e51760] Final|Native|Private 
 	// Function /Script/TheTwins.K22Power.OnFirstAttachmentToSister
-	// void OnFirstAttachmentToSister();                                                                                     // [0x5e413e0] Final|Native|Private 
+	// void OnFirstAttachmentToSister();                                                                                     // [0x5e51520] Final|Native|Private 
 	// Function /Script/TheTwins.K22Power.GetConjoinedTwin
-	// class AConjoinedTwin* GetConjoinedTwin();                                                                             // [0x5e41210] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AConjoinedTwin* GetConjoinedTwin();                                                                             // [0x5e51350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.K22Power.Authority_OnPossessTwinChargePercentChanged
-	// void Authority_OnPossessTwinChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5e41040] Final|Native|Private 
+	// void Authority_OnPossessTwinChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5e51180] Final|Native|Private 
 	// Function /Script/TheTwins.K22Power.Authority_OnDestroyTwinChargePercentChanged
-	// void Authority_OnDestroyTwinChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5e40e90] Final|Native|Private 
+	// void Authority_OnDestroyTwinChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5e50fd0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.K22PowerChargePresentationItemProgressComponent
@@ -417,7 +420,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.K22PowerChargePresentationItemProgressComponent.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e41680] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e517c0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.K22ScoreComponent
@@ -429,12 +432,10 @@ public:
 };
 
 /// Class /Script/TheTwins.KillerBeingPossessedInteraction
-/// Size: 0x0010 (0x000810 - 0x000820)
+/// Size: 0x0000 (0x000820 - 0x000820)
 class UKillerBeingPossessedInteraction : public UBeingPossessedInteraction
 { 
 public:
-	class UCurveFloat*                                 _wakeUpSpeedCurve;                                          // 0x0810   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0818   (0x0008)  MISSED
 };
 
 /// Class /Script/TheTwins.PossessionComponent
@@ -451,31 +452,31 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.PossessionComponent.Server_StartPossessionOf
-	// void Server_StartPossessionOf(class ADBDPlayer* playerToPossess, bool shouldStartBeingPossessedInteraction);          // [0x5e47890] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_StartPossessionOf(class ADBDPlayer* playerToPossess, bool shouldStartBeingPossessedInteraction);          // [0x5e57840] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheTwins.PossessionComponent.Server_NotifyPossessionDone
-	// void Server_NotifyPossessionDone();                                                                                   // [0x5e477f0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_NotifyPossessionDone();                                                                                   // [0x5e577a0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheTwins.PossessionComponent.Server_NotifyBeingPossessedInteractionStarted
-	// void Server_NotifyBeingPossessedInteractionStarted();                                                                 // [0x4e01240] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_NotifyBeingPossessedInteractionStarted();                                                                 // [0x4dd4860] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheTwins.PossessionComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5e47090] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5e57040] Final|Native|Private 
 	// Function /Script/TheTwins.PossessionComponent.Multicast_StartPossessionOf
-	// void Multicast_StartPossessionOf(class ADBDPlayer* playerToPossess);                                                  // [0x59bc440] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartPossessionOf(class ADBDPlayer* playerToPossess);                                                  // [0x59c2dd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.PossessionComponent.Multicast_NotifyPossessionDone
-	// void Multicast_NotifyPossessionDone();                                                                                // [0x4e01260] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_NotifyPossessionDone();                                                                                // [0x4dd4880] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.PossessionComponent.IsPossessed
-	// bool IsPossessed();                                                                                                   // [0x5e46810] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPossessed();                                                                                                   // [0x5e567c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.PossessionComponent.IsDormant
-	// bool IsDormant();                                                                                                     // [0x5e467e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDormant();                                                                                                     // [0x5e56790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.PossessionComponent.CosmeticLocal_OnUncontrolled
-	// void CosmeticLocal_OnUncontrolled(class ADBDPlayer* Player);                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void CosmeticLocal_OnUncontrolled(class ADBDPlayer* Player);                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.PossessionComponent.CosmeticLocal_OnControlled
-	// void CosmeticLocal_OnControlled(class ADBDPlayer* Player);                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void CosmeticLocal_OnControlled(class ADBDPlayer* Player);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.PossessionComponent.Cosmetic_OnControlledChanged
-	// void Cosmetic_OnControlledChanged(class ADBDPlayer* Player, bool IsControlled);                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnControlledChanged(class ADBDPlayer* Player, bool IsControlled);                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.PossessionComponent.Client_WaitForBeingPossessedInteractionToStart
-	// void Client_WaitForBeingPossessedInteractionToStart();                                                                // [0x4db2a10] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_WaitForBeingPossessedInteractionToStart();                                                                // [0x4d82970] Final|Net|NetReliableNative|Event|Private|NetClient 
 	// Function /Script/TheTwins.PossessionComponent.Client_StartStateMachineDriverChangeProcess
-	// void Client_StartStateMachineDriverChangeProcess();                                                                   // [0x587e9c0] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_StartStateMachineDriverChangeProcess();                                                                   // [0x5882360] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/TheTwins.KillerPossessionComponent
@@ -490,7 +491,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.KillerPossessionComponent.OnRep_ShouldDeactivateCollisionsWithSurvivors
-	// void OnRep_ShouldDeactivateCollisionsWithSurvivors();                                                                 // [0x5e41660] Final|Native|Private 
+	// void OnRep_ShouldDeactivateCollisionsWithSurvivors();                                                                 // [0x5e517a0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.PossessNegationEffectComponent
@@ -498,15 +499,15 @@ public:
 class UPossessNegationEffectComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,5204) /* FMulticastInlineDelegate */ __um(PlayCantPossessSound);                              // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5594) /* FMulticastInlineDelegate */ __um(PlayCantPossessSound);                              // 0x00B8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00C8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.PossessNegationEffectComponent.PlayCantPossessSound__DelegateSignature
-	// void PlayCantPossessSound__DelegateSignature();                                                                       // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void PlayCantPossessSound__DelegateSignature();                                                                       // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheTwins.PossessNegationEffectComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4e01240] Native|Protected     
+	// void OnLevelReadyToPlay();                                                                                            // [0x4dd4860] Native|Protected     
 };
 
 /// Class /Script/TheTwins.KillerPossessNegationEffectComponent
@@ -519,7 +520,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.KillerPossessNegationEffectComponent.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e41710] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e51850] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.Oppression
@@ -533,9 +534,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.Oppression.GetPerkCooldownAtLevel
-	// float GetPerkCooldownAtLevel();                                                                                       // [0x5e412a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkCooldownAtLevel();                                                                                       // [0x5e513e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.Oppression.GetNumberGensAffectedByPerkAtLevel
-	// float GetNumberGensAffectedByPerkAtLevel();                                                                           // [0x5e41240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetNumberGensAffectedByPerkAtLevel();                                                                           // [0x5e51380] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheTwins.PossessTheKiller
@@ -547,12 +548,13 @@ public:
 };
 
 /// Class /Script/TheTwins.PowerStruggle
-/// Size: 0x0010 (0x0003C8 - 0x0003D8)
+/// Size: 0x0018 (0x0003C8 - 0x0003E0)
 class UPowerStruggle : public UPerk
 { 
 public:
 	float                                              _wigglePercentToActivatePerk;                               // 0x03C8   (0x000C)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x03D4   (0x0004)  MISSED
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
+	class UClass*                                      _revealPalletWhenKOEffectClass;                             // 0x03D8   (0x0008)  
 };
 
 /// Class /Script/TheTwins.PushTwinOnLockerInteraction
@@ -560,18 +562,18 @@ public:
 class UPushTwinOnLockerInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	class UChargeableComponent*                        _pushTwinOnLockerChargeable;                                // 0x0788   (0x0008)  
-	FDBDTunableRowHandle                               _pushTwinOnLockerMaxCharge;                                 // 0x0790   (0x0028)  
-	unsigned char                                      UnknownData00_6[0x38];                                      // 0x07B8   (0x0038)  MISSED
+	class UChargeableComponent*                        _pushTwinOnLockerChargeable;                                // 0x0790   (0x0008)  
+	FDBDTunableRowHandle                               _pushTwinOnLockerMaxCharge;                                 // 0x0798   (0x0028)  
+	unsigned char                                      UnknownData00_6[0x30];                                      // 0x07C0   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.PushTwinOnLockerInteraction.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e47640] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e575f0] Final|Native|Private 
 	// Function /Script/TheTwins.PushTwinOnLockerInteraction.OnRep_PushTwinOnLockerChargeable
-	// void OnRep_PushTwinOnLockerChargeable();                                                                              // [0x5e47550] Final|Native|Private 
+	// void OnRep_PushTwinOnLockerChargeable();                                                                              // [0x5e57500] Final|Native|Private 
 	// Function /Script/TheTwins.PushTwinOnLockerInteraction.Authority_OnPlayerInLockerChanged
-	// void Authority_OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker); // [0x5e46460] Final|Native|Private 
+	// void Authority_OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker); // [0x5e56410] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.RecallTwin
@@ -584,7 +586,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.RecallTwin.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5dbaa50] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5dc8850] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.ReleaseConjoinedTwin
@@ -592,30 +594,30 @@ public:
 class UReleaseConjoinedTwin : public UChargeableInteractionDefinition
 { 
 public:
-	FDBDTunableRowHandle                               _releaseMaxCharge;                                          // 0x0788   (0x0028)  
-	FTunableStat                                       _releaseExitTime;                                           // 0x07B0   (0x0080)  
-	unsigned char                                      UnknownData00_5[0x40];                                      // 0x0830   (0x0040)  MISSED
-	bool                                               _releaseAnimationWentToTheEnd;                              // 0x0870   (0x0001)  
-	unsigned char                                      UnknownData01_6[0x8F];                                      // 0x0871   (0x008F)  MISSED
+	FDBDTunableRowHandle                               _releaseMaxCharge;                                          // 0x0790   (0x0028)  
+	FTunableStat                                       _releaseExitTime;                                           // 0x07B8   (0x0080)  
+	unsigned char                                      UnknownData00_5[0x3C];                                      // 0x0838   (0x003C)  MISSED
+	bool                                               _releaseAnimationWentToTheEnd;                              // 0x0874   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x8B];                                      // 0x0875   (0x008B)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e476d0] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e57680] Final|Native|Private 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.OnRep_ReleaseAnimationWentToTheEnd
-	// void OnRep_ReleaseAnimationWentToTheEnd();                                                                            // [0x5e47570] Final|Native|Private 
+	// void OnRep_ReleaseAnimationWentToTheEnd();                                                                            // [0x5e57520] Final|Native|Private 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.OnPowerCollected
-	// void OnPowerCollected(class ADBDPlayer* collector);                                                                   // [0x5e472b0] Final|Native|Private 
+	// void OnPowerCollected(class ADBDPlayer* collector);                                                                   // [0x5e57260] Final|Native|Private 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.OnKillerStunned
-	// void OnKillerStunned(FGameplayTag gameEventType, FGameEventData& GameEventData);                                      // [0x5e46f80] Final|Native|Private|HasOutParms 
+	// void OnKillerStunned(FGameplayTag gameEventType, FGameEventData& GameEventData);                                      // [0x5e56f30] Final|Native|Private|HasOutParms 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.Cosmetic_OnReleaseTwinInteractionUpdateStart
-	// void Cosmetic_OnReleaseTwinInteractionUpdateStart(class ADBDPlayer* sister, class AConjoinedTwin* brother);           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnReleaseTwinInteractionUpdateStart(class ADBDPlayer* sister, class AConjoinedTwin* brother);           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.Cosmetic_OnReleaseTwinInteractionUpdate
-	// void Cosmetic_OnReleaseTwinInteractionUpdate(class ADBDPlayer* sister, class AConjoinedTwin* brother, float DeltaTime); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnReleaseTwinInteractionUpdate(class ADBDPlayer* sister, class AConjoinedTwin* brother, float DeltaTime); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.Cosmetic_OnReleaseChargeComplete
-	// void Cosmetic_OnReleaseChargeComplete(class ADBDPlayer* sister, class AConjoinedTwin* brother);                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnReleaseChargeComplete(class ADBDPlayer* sister, class AConjoinedTwin* brother);                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.ReleaseConjoinedTwin.Cosmetic_OnReleaseCancelled
-	// void Cosmetic_OnReleaseCancelled(class ADBDPlayer* sister, class AConjoinedTwin* brother);                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnReleaseCancelled(class ADBDPlayer* sister, class AConjoinedTwin* brother);                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheTwins.RemoveTwin
@@ -623,16 +625,16 @@ public:
 class URemoveTwin : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x38];                                      // 0x0790   (0x0038)  MISSED
-	FDBDTunableRowHandle                               _removeTwinMaxCharge;                                       // 0x07C8   (0x0028)  
-	FDBDTunableRowHandle                               _removeTwinExitTime;                                        // 0x07F0   (0x0028)  
-	float                                              _brotherRemoveDistanceFromSurvivor;                         // 0x0818   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x14];                                      // 0x081C   (0x0014)  MISSED
+	unsigned char                                      UnknownData00_2[0x40];                                      // 0x0790   (0x0040)  MISSED
+	FDBDTunableRowHandle                               _removeTwinMaxCharge;                                       // 0x07D0   (0x0028)  
+	FDBDTunableRowHandle                               _removeTwinExitTime;                                        // 0x07F8   (0x0028)  
+	float                                              _brotherRemoveDistanceFromSurvivor;                         // 0x0820   (0x0004)  
+	unsigned char                                      UnknownData01_6[0xC];                                       // 0x0824   (0x000C)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.RemoveTwin.OnRemoveMontageEnd
-	// void OnRemoveMontageEnd(FAnimationMontageDescriptor Montage, bool interrupted, class ADBDPlayer* destroyingPlayer);   // [0x5e47340] Final|Native|Private 
+	// void OnRemoveMontageEnd(FAnimationMontageDescriptor Montage, bool interrupted, class ADBDPlayer* destroyingPlayer);   // [0x5e572f0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.SisterBlindFlashlightableLightingStrategy
@@ -645,7 +647,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.SisterBlindFlashlightableLightingStrategy.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e47760] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x5e57710] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TheTwinsCheatComponent
@@ -657,9 +659,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TheTwinsCheatComponent.Multicast_TrySendThePlayerBackInKiller
-	// void Multicast_TrySendThePlayerBackInKiller(class UTwinPossessionComponent* TwinPossessionComponent);                 // [0x58c5550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TrySendThePlayerBackInKiller(class UTwinPossessionComponent* TwinPossessionComponent);                 // [0x58cbe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.TheTwinsCheatComponent.DBD_TwinDestroyTheTwin
-	// void DBD_TwinDestroyTheTwin();                                                                                        // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_TwinDestroyTheTwin();                                                                                        // [0x4592da0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheTwins.TwinAOELingeringStatusEffect
@@ -673,7 +675,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinAOELingeringStatusEffect.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5d9d1d0] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5daa8c0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TwinAttachmentComponent
@@ -694,35 +696,35 @@ public:
 	bool                                               _hasBeenDetachedBySurvivorDamageChanged;                    // 0x01AA   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x5];                                       // 0x01AB   (0x0005)  MISSED
 	FDBDTunableRowHandle                               _cantEscapeByGateLingerDuration;                            // 0x01B0   (0x0028)  
-	SDK_UNDEFINED(80,5205) /* TMap<ADBDPlayer*, FFastTimer> */ __um(_escapeBlockerLingerTimers);                   // 0x01D8   (0x0050)  
+	SDK_UNDEFINED(80,5595) /* TMap<ADBDPlayer*, FFastTimer> */ __um(_escapeBlockerLingerTimers);                   // 0x01D8   (0x0050)  
 	FGameplayTagContainer                              _notCancelableInteractionTags;                              // 0x0228   (0x0020)  
 
 
 	/// Functions
 	// Function /Script/TheTwins.TwinAttachmentComponent.OnRep_AttachedPlayer
-	// void OnRep_AttachedPlayer(class ADBDPlayer* oldAttachedPlayer);                                                       // [0x5e474c0] Final|Native|Private 
+	// void OnRep_AttachedPlayer(class ADBDPlayer* oldAttachedPlayer);                                                       // [0x5e57470] Final|Native|Private 
 	// Function /Script/TheTwins.TwinAttachmentComponent.OnMoriMontageEnd
-	// void OnMoriMontageEnd(FAnimationMontageDescriptor Montage, bool interrupted);                                         // [0x5e470d0] Final|Native|Private 
+	// void OnMoriMontageEnd(FAnimationMontageDescriptor Montage, bool interrupted);                                         // [0x5e57080] Final|Native|Private 
 	// Function /Script/TheTwins.TwinAttachmentComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5e470b0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5e57060] Final|Native|Private 
 	// Function /Script/TheTwins.TwinAttachmentComponent.OnAttachedSurvivorDamageStateChanged
-	// void OnAttachedSurvivorDamageStateChanged(ECamperDamageState oldState, ECamperDamageState NewState);                  // [0x5e46d60] Final|Native|Private 
+	// void OnAttachedSurvivorDamageStateChanged(ECamperDamageState oldState, ECamperDamageState NewState);                  // [0x5e56d10] Final|Native|Private 
 	// Function /Script/TheTwins.TwinAttachmentComponent.Multicast_QuickDestroyTwin
-	// void Multicast_QuickDestroyTwin();                                                                                    // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_QuickDestroyTwin();                                                                                    // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.TwinAttachmentComponent.IsAttachedToSurvivor
-	// bool IsAttachedToSurvivor();                                                                                          // [0x5e467b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAttachedToSurvivor();                                                                                          // [0x5e56760] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.TwinAttachmentComponent.IsAttachedToSister
-	// bool IsAttachedToSister();                                                                                            // [0x5e46780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsAttachedToSister();                                                                                            // [0x5e56730] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.TwinAttachmentComponent.Cosmetic_OnTwinDetachedFromSurvivor
-	// void Cosmetic_OnTwinDetachedFromSurvivor(class ADBDPlayer* Survivor, class ADBDPlayer* brother);                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinDetachedFromSurvivor(class ADBDPlayer* Survivor, class ADBDPlayer* brother);                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinAttachmentComponent.Cosmetic_OnTwinDetachedFromSister
-	// void Cosmetic_OnTwinDetachedFromSister(class ADBDPlayer* sister, class ADBDPlayer* brother);                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinDetachedFromSister(class ADBDPlayer* sister, class ADBDPlayer* brother);                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinAttachmentComponent.Cosmetic_OnTwinAttachedToSurvivor
-	// void Cosmetic_OnTwinAttachedToSurvivor(class ADBDPlayer* Survivor, class ADBDPlayer* brother);                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinAttachedToSurvivor(class ADBDPlayer* Survivor, class ADBDPlayer* brother);                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinAttachmentComponent.Cosmetic_OnTwinAttachedToSister
-	// void Cosmetic_OnTwinAttachedToSister(class ADBDPlayer* sister, class ADBDPlayer* brother, bool isFirstAttachment);    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinAttachedToSister(class ADBDPlayer* sister, class ADBDPlayer* brother, bool isFirstAttachment);    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinAttachmentComponent.Authority_OnRemoveTwinChargePercentChanged
-	// void Authority_OnRemoveTwinChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5e46530] Final|Native|Private 
+	// void Authority_OnRemoveTwinChargePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5e564e0] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TwinBaseAddon
@@ -730,13 +732,14 @@ public:
 class UTwinBaseAddon : public UItemAddon
 { 
 public:
-	FName                                              _statusEffectId;                                            // 0x02B8   (0x000C)  
-	float                                              _customParam;                                               // 0x02C4   (0x0004)  
+	class UClass*                                      _statusEffectClass;                                         // 0x02B8   (0x0008)  
+	float                                              _customParam;                                               // 0x02C0   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x02C4   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheTwins.TwinBaseAddon.Authority_OnTwinSet
-	// void Authority_OnTwinSet(class AConjoinedTwin* twin);                                                                 // [0x5e46660] Final|Native|Private 
+	// void Authority_OnTwinSet(class AConjoinedTwin* twin);                                                                 // [0x5e56610] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TwinBaseKillerInstinctEffect
@@ -751,11 +754,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinBaseKillerInstinctEffect.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5e463d0] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5e56380] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TwinBeingPossessedInteraction
-/// Size: 0x0000 (0x000810 - 0x000810)
+/// Size: 0x0000 (0x000820 - 0x000820)
 class UTwinBeingPossessedInteraction : public UBeingPossessedInteraction
 { 
 public:
@@ -785,15 +788,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinDestructionComponent.OnTwinQuickDestroy
-	// void OnTwinQuickDestroy(class AConjoinedTwin* owningTwin);                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnTwinQuickDestroy(class AConjoinedTwin* owningTwin);                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinDestructionComponent.OnDyingMontageEnd
-	// void OnDyingMontageEnd(FAnimationMontageDescriptor Montage, bool interrupted);                                        // [0x5e46e30] Final|Native|Private 
+	// void OnDyingMontageEnd(FAnimationMontageDescriptor Montage, bool interrupted);                                        // [0x5e56de0] Final|Native|Private 
 	// Function /Script/TheTwins.TwinDestructionComponent.Cosmetic_OnTwinDestroyedFromSurvivorRemove
-	// void Cosmetic_OnTwinDestroyedFromSurvivorRemove(class AConjoinedTwin* owningTwin);                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinDestroyedFromSurvivorRemove(class AConjoinedTwin* owningTwin);                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinDestructionComponent.Cosmetic_OnTwinDestroyedFromKick
-	// void Cosmetic_OnTwinDestroyedFromKick(class AConjoinedTwin* owningTwin);                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinDestroyedFromKick(class AConjoinedTwin* owningTwin);                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinDestructionComponent.Authority_OnTwinQuickDestroyOver
-	// void Authority_OnTwinQuickDestroyOver();                                                                              // [0x5e46640] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_OnTwinQuickDestroyOver();                                                                              // [0x5e565f0] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheTwins.TwinFirstPersonViewComponent
@@ -826,7 +829,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinHuskStateComponent.IsDeadFromSurvivorBack
-	// bool IsDeadFromSurvivorBack();                                                                                        // [0x585d830] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDeadFromSurvivorBack();                                                                                        // [0x5861e60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheTwins.TwinInspectEmptyLocker
@@ -861,29 +864,29 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinJumpAttack.Server_StopJump
-	// void Server_StopJump();                                                                                               // [0x5e47990] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void Server_StopJump();                                                                                               // [0x5e57940] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/TheTwins.TwinJumpAttack.Server_OnJumpStartTwin
-	// void Server_OnJumpStartTwin();                                                                                        // [0x5e47840] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void Server_OnJumpStartTwin();                                                                                        // [0x5e577f0] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/TheTwins.TwinJumpAttack.OnRep_ShouldTwinHaveJumpObjectType
-	// void OnRep_ShouldTwinHaveJumpObjectType();                                                                            // [0x5e47590] Final|Native|Private 
+	// void OnRep_ShouldTwinHaveJumpObjectType();                                                                            // [0x5e57540] Final|Native|Private 
 	// Function /Script/TheTwins.TwinJumpAttack.Multicast_SetIsForbiddenLandingLocation
-	// void Multicast_SetIsForbiddenLandingLocation(bool isForbiddenLocation);                                               // [0x5e46cd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_SetIsForbiddenLandingLocation(bool isForbiddenLocation);                                               // [0x5e56c80] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.TwinJumpAttack.Multicast_DestroyTwinOnWrongLanding
-	// void Multicast_DestroyTwinOnWrongLanding();                                                                           // [0x5916cd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_DestroyTwinOnWrongLanding();                                                                           // [0x591c7f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.TwinJumpAttack.Multicast_AttachToSurvivor
-	// void Multicast_AttachToSurvivor(class ADBDPlayer* survivorToAttachTo);                                                // [0x5e46c40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_AttachToSurvivor(class ADBDPlayer* survivorToAttachTo);                                                // [0x5e56bf0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheTwins.TwinJumpAttack.Cosmetic_OnJumpStarted
-	// void Cosmetic_OnJumpStarted(class AConjoinedTwin* owningTwin);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnJumpStarted(class AConjoinedTwin* owningTwin);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheTwins.TwinJumpAttack.Cosmetic_OnJumpObstructed
-	// void Cosmetic_OnJumpObstructed(class AConjoinedTwin* owningTwin);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnJumpObstructed(class AConjoinedTwin* owningTwin);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheTwins.TwinJumpAttack.Cosmetic_OnJumpLanded
-	// void Cosmetic_OnJumpLanded(class AConjoinedTwin* owningTwin);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnJumpLanded(class AConjoinedTwin* owningTwin);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheTwins.TwinJumpAttack.Cosmetic_OnJumpCooldownChanged
-	// void Cosmetic_OnJumpCooldownChanged(bool isInJumpCooldown, class AConjoinedTwin* owningTwin);                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnJumpCooldownChanged(bool isInJumpCooldown, class AConjoinedTwin* owningTwin);                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinJumpAttack.Cosmetic_OnIsForbiddenLandingLocationChanged
-	// void Cosmetic_OnIsForbiddenLandingLocationChanged(bool isForbiddenLocation, class AConjoinedTwin* twin);              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsForbiddenLandingLocationChanged(bool isForbiddenLocation, class AConjoinedTwin* twin);              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinJumpAttack.Client_Debug_PrintFinalDecisionOnScreen
-	// void Client_Debug_PrintFinalDecisionOnScreen(bool foundPath);                                                         // [0x5e466f0] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_Debug_PrintFinalDecisionOnScreen(bool foundPath);                                                         // [0x5e566a0] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/TheTwins.TwinJumpAttackOpenSubstate
@@ -896,9 +899,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinJumpAttackOpenSubstate.Local_OnTwinOverlapEnter
-	// void Local_OnTwinOverlapEnter(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& Hit); // [0x5e46a20] Final|Native|Private|HasOutParms 
+	// void Local_OnTwinOverlapEnter(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& Hit); // [0x5e569d0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheTwins.TwinJumpAttackOpenSubstate.Local_OnTwinCapsuleHit
-	// void Local_OnTwinCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x5e46840] Final|Native|Private|HasOutParms|HasDefaults 
+	// void Local_OnTwinCapsuleHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, FHitResult& Hit); // [0x5e567f0] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/TheTwins.TwinJumpAttackSuccessSubstate
@@ -933,9 +936,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinJumpAudioMutedEffect.Cosmetic_OnTwinUnmuted
-	// void Cosmetic_OnTwinUnmuted();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinUnmuted();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinJumpAudioMutedEffect.Cosmetic_OnTwinMuted
-	// void Cosmetic_OnTwinMuted();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinMuted();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheTwins.TwinJumpTargetVisibleEffect
@@ -950,9 +953,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinJumpTargetVisibleEffect.OnJumpTargetTick
-	// void OnJumpTargetTick(FVector Location);                                                                              // [0x5e49470] Final|Native|Private|HasDefaults 
+	// void OnJumpTargetTick(FVector Location);                                                                              // [0x5e59420] Final|Native|Private|HasDefaults 
 	// Function /Script/TheTwins.TwinJumpTargetVisibleEffect.OnHideTargetPosition
-	// void OnHideTargetPosition();                                                                                          // [0x5e49450] Final|Native|Private 
+	// void OnHideTargetPosition();                                                                                          // [0x5e59400] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TwinLockerBlockerComponent
@@ -969,19 +972,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.OnPushedMontageStopped
-	// void OnPushedMontageStopped(FAnimationMontageDescriptor montageDescriptor);                                           // [0x5e49860] Final|Native|Private 
+	// void OnPushedMontageStopped(FAnimationMontageDescriptor montageDescriptor);                                           // [0x5e59810] Final|Native|Private 
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.OnPushedMontageStarted
-	// void OnPushedMontageStarted(FAnimationMontageDescriptor montageDescriptor, float Rate);                               // [0x5e49720] Final|Native|Private 
+	// void OnPushedMontageStarted(FAnimationMontageDescriptor montageDescriptor, float Rate);                               // [0x5e596d0] Final|Native|Private 
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.OnPushedMontageEnded
-	// void OnPushedMontageEnded(FAnimationMontageDescriptor montageDescriptor, bool interrupted);                           // [0x5e495d0] Final|Native|Private 
+	// void OnPushedMontageEnded(FAnimationMontageDescriptor montageDescriptor, bool interrupted);                           // [0x5e59580] Final|Native|Private 
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.OnPlayerInLockerChanged
-	// void OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker);          // [0x5e49500] Final|Native|Private 
+	// void OnPlayerInLockerChanged(class ADBDPlayer* previousPlayerInLocker, class ADBDPlayer* newPlayerInLocker);          // [0x5e594b0] Final|Native|Private 
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.IsTwinAttachedToLocker
-	// bool IsTwinAttachedToLocker();                                                                                        // [0x49bd800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTwinAttachedToLocker();                                                                                        // [0x5c57110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.Cosmetic_OnTwinOnLockerChanged
-	// void Cosmetic_OnTwinOnLockerChanged(bool isOnLocker);                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnTwinOnLockerChanged(bool isOnLocker);                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheTwins.TwinLockerBlockerComponent.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5e493a0] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5e59350] Final|Native|Private 
 };
 
 /// Class /Script/TheTwins.TwinLullabyRangeAdditiveEffect
@@ -1085,8 +1088,8 @@ public:
 
 	/// Functions
 	// Function /Script/TheTwins.TwinSubjectProvider.OnTwinSet
-	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x501bb80] Final|Native|Private 
+	// void OnTwinSet(class AConjoinedTwin* twin);                                                                           // [0x4ff9420] Final|Native|Private 
 	// Function /Script/TheTwins.TwinSubjectProvider.ListenToTwinSet
-	// void ListenToTwinSet(class ASlasherPlayer* killer);                                                                   // [0x5e493c0] Final|Native|Private 
+	// void ListenToTwinSet(class ASlasherPlayer* killer);                                                                   // [0x5e59370] Final|Native|Private 
 };
 

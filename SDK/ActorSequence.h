@@ -29,7 +29,7 @@ struct FActorSequenceObjectReference
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	FGuid                                              ActorId;                                                    // 0x0004   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,3048) /* FString */               __um(PathToComponent);                                      // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,3113) /* FString */               __um(PathToComponent);                                      // 0x0018   (0x0010)  
 };
 
 /// Struct /Script/ActorSequence.ActorSequenceObjectReferences

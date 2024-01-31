@@ -169,9 +169,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.DroneRestrictedPlacementAreaStrategy.OnDroneEndPlay
-	// void OnDroneEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0x5c9dbe0] Final|Native|Private 
+	// void OnDroneEndPlay(class AActor* Actor, TEnumAsByte<EEndPlayReason> EndPlayReason);                                  // [0x5caa980] Final|Native|Private 
 	// Function /Script/TheK31.DroneRestrictedPlacementAreaStrategy.OnDroneAcquiredChanged
-	// void OnDroneAcquiredChanged(bool acquired);                                                                           // [0x5c9db50] Final|Native|Private 
+	// void OnDroneAcquiredChanged(bool acquired);                                                                           // [0x5caa8f0] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.HackableDroneState
@@ -188,7 +188,7 @@ class UHitPlayerAfterRecentDetectionScoreEmitter : public UPlayerScoreEmitter
 public:
 	float                                              _timeSinceDetectionDuration;                                // 0x0038   (0x0004)  
 	FGameplayTag                                       _scoreEvent;                                                // 0x003C   (0x000C)  
-	SDK_UNDEFINED(80,4119) /* TMap<ADBDPlayer*, float> */ __um(_trackers);                                         // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,4212) /* TMap<ADBDPlayer*, float> */ __um(_trackers);                                         // 0x0048   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x30];                                      // 0x0098   (0x0030)  MISSED
 };
 
@@ -199,32 +199,32 @@ class UHitPlayerInActiveZoneScoreEmitter : public UPlayerScoreEmitter
 public:
 	float                                              _activeZoneLingeringDuration;                               // 0x0038   (0x0004)  
 	FGameplayTag                                       _scoreEvent;                                                // 0x003C   (0x000C)  
-	SDK_UNDEFINED(80,4120) /* TMap<AActor*, FActiveZoneOverlapTracker> */ __um(_trackers);                         // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,4213) /* TMap<AActor*, FActiveZoneOverlapTracker> */ __um(_trackers);                         // 0x0048   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0098   (0x0020)  MISSED
 };
 
 /// Class /Script/TheK31.InspectK31DroneInteraction
-/// Size: 0x0170 (0x000790 - 0x000900)
+/// Size: 0x0180 (0x000790 - 0x000910)
 class UInspectK31DroneInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
-	class UClass*                                      _actionProcessorClass;                                      // 0x07A0   (0x0008)  
-	FDBDTunableRowHandle                               _inputInterval;                                             // 0x07A8   (0x0028)  
-	bool                                               _enableMaxSpeedSlowdown;                                    // 0x07D0   (0x0001)  
-	unsigned char                                      UnknownData01_5[0x7];                                       // 0x07D1   (0x0007)  MISSED
-	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x07D8   (0x0008)  
-	class UCurveFloat*                                 _dechargingSpeedCurve;                                      // 0x07E0   (0x0008)  
-	unsigned char                                      UnknownData02_5[0x28];                                      // 0x07E8   (0x0028)  MISSED
-	class UK31DroneActionProcessor*                    _actionProcessor;                                           // 0x0810   (0x0008)  
-	unsigned char                                      UnknownData03_6[0xE8];                                      // 0x0818   (0x00E8)  MISSED
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0790   (0x0018)  MISSED
+	class UClass*                                      _actionProcessorClass;                                      // 0x07A8   (0x0008)  
+	FDBDTunableRowHandle                               _inputInterval;                                             // 0x07B0   (0x0028)  
+	bool                                               _enableMaxSpeedSlowdown;                                    // 0x07D8   (0x0001)  
+	unsigned char                                      UnknownData01_5[0x7];                                       // 0x07D9   (0x0007)  MISSED
+	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x07E0   (0x0008)  
+	class UCurveFloat*                                 _dechargingSpeedCurve;                                      // 0x07E8   (0x0008)  
+	unsigned char                                      UnknownData02_5[0x28];                                      // 0x07F0   (0x0028)  MISSED
+	class UK31DroneActionProcessor*                    _actionProcessor;                                           // 0x0818   (0x0008)  
+	unsigned char                                      UnknownData03_6[0xF0];                                      // 0x0820   (0x00F0)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK31.InspectK31DroneInteraction.Server_SetIsPressingInput
-	// void Server_SetIsPressingInput(bool isPressing);                                                                      // [0x5c9def0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetIsPressingInput(bool isPressing);                                                                      // [0x5caac90] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK31.InspectK31DroneInteraction.OnChargeCompletedChanged
-	// void OnChargeCompletedChanged(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                             // [0x5c9da50] Final|Native|Private|HasOutParms 
+	// void OnChargeCompletedChanged(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                             // [0x5caa7f0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK31.K31AnalyticsComponent
@@ -253,21 +253,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31AnimInstance.ResetIsReceivingADronePassively
-	// void ResetIsReceivingADronePassively();                                                                               // [0x5c9de20] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsReceivingADronePassively();                                                                               // [0x5caabc0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK31.K31AnimInstance.ResetIsRecallingADrone
-	// void ResetIsRecallingADrone();                                                                                        // [0x5c9de00] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsRecallingADrone();                                                                                        // [0x5caaba0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK31.K31AnimInstance.ResetIsDeployingADrone
-	// void ResetIsDeployingADrone();                                                                                        // [0x5c9dde0] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsDeployingADrone();                                                                                        // [0x5caab80] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK31.K31AnimInstance.ResetIsActivatingADrone
-	// void ResetIsActivatingADrone();                                                                                       // [0x5c0bc60] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsActivatingADrone();                                                                                       // [0x5c191e0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK31.K31AnimInstance.OnGameEventReceived
-	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5c9dcb0] Final|Native|Private|HasOutParms 
+	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5caaa50] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK31.K31AnimInstance.OnCustomizationAnimationMappingIDChanged
-	// void OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                         // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                         // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31AnimInstance.GetCustomizationMappingID
-	// int32_t GetCustomizationMappingID();                                                                                  // [0x5c9d820] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCustomizationMappingID();                                                                                  // [0x5caa5c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31AnimInstance.GetCustoAnimTags
-	// TArray<FName> GetCustoAnimTags();                                                                                     // [0x5c9d7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetCustoAnimTags();                                                                                     // [0x5caa540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31ClawTrap
@@ -279,19 +279,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31ClawTrap.OnAnimNotifyManuallyRemoveTrap
-	// void OnAnimNotifyManuallyRemoveTrap();                                                                                // [0x5c9da30] Final|Native|Public|BlueprintCallable 
+	// void OnAnimNotifyManuallyRemoveTrap();                                                                                // [0x5caa7d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31ClawTrap.Cosmetic_Spark
-	// void Cosmetic_Spark();                                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_Spark();                                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31ClawTrap.Cosmetic_OnTrapRemoved
-	// void Cosmetic_OnTrapRemoved(bool wasRemovedAutomatically);                                                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTrapRemoved(bool wasRemovedAutomatically);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31ClawTrap.Cosmetic_OnTrapAdded
-	// void Cosmetic_OnTrapAdded();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTrapAdded();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31ClawTrap.Cosmetic_OnIsBroadcastingChanged
-	// void Cosmetic_OnIsBroadcastingChanged(bool isBroadcasting);                                                           // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnIsBroadcastingChanged(bool isBroadcasting);                                                           // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31ClawTrap.Cosmetic_OnBatteryChargeUpdated
-	// void Cosmetic_OnBatteryChargeUpdated(float newCharge);                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnBatteryChargeUpdated(float newCharge);                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31ClawTrap.Cosmetic_OnAddedByDrone
-	// void Cosmetic_OnAddedByDrone(class AK31Drone* originatingDrone, float clawTrapCosmeticDelayDuration);                 // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnAddedByDrone(class AK31Drone* originatingDrone, float clawTrapCosmeticDelayDuration);                 // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.K31Drone
@@ -327,15 +327,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31Drone.OnAcquiredChanged
-	// void OnAcquiredChanged(bool acquired);                                                                                // [0x5c9d9a0] Final|Native|Private 
+	// void OnAcquiredChanged(bool acquired);                                                                                // [0x5caa740] Final|Native|Private 
 	// Function /Script/TheK31.K31Drone.Native_OnLocallyObservedChanged
-	// void Native_OnLocallyObservedChanged();                                                                               // [0x5c9d980] Final|Native|Private 
+	// void Native_OnLocallyObservedChanged();                                                                               // [0x5caa720] Final|Native|Private 
 	// Function /Script/TheK31.K31Drone.Cosmetic_OnRevertToScoutingCurrentChargeChanged
-	// void Cosmetic_OnRevertToScoutingCurrentChargeChanged(float chargePercentage);                                         // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Cosmetic_OnRevertToScoutingCurrentChargeChanged(float chargePercentage);                                         // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31Drone.Cosmetic_OnLocallyObservedChanged
-	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Cosmetic_OnLocallyObservedChanged();                                                                             // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31Drone.Cosmetic_OnIsHackableStateChanged
-	// void Cosmetic_OnIsHackableStateChanged(bool IsHackable);                                                              // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Cosmetic_OnIsHackableStateChanged(bool IsHackable);                                                              // [0x61d2f50] Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.K31DroneActionProcessor
@@ -347,9 +347,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneActionProcessor.Server_RequestAction
-	// void Server_RequestAction(FK31DroneActionRequest Request);                                                            // [0x5c9de40] Net|NetReliableNative|Event|Protected|NetServer 
+	// void Server_RequestAction(FK31DroneActionRequest Request);                                                            // [0x5caabe0] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/TheK31.K31DroneActionProcessor.Client_ReceiveActionResponse
-	// void Client_ReceiveActionResponse(FK31DroneActionResponse Response);                                                  // [0x5c9d6e0] Net|NetReliableNative|Event|Protected|NetClient 
+	// void Client_ReceiveActionResponse(FK31DroneActionResponse Response);                                                  // [0x5caa480] Net|NetReliableNative|Event|Protected|NetClient 
 };
 
 /// Class /Script/TheK31.K31DroneState
@@ -384,11 +384,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneActiveState.GetRevertToScoutingMaxCharge
-	// float GetRevertToScoutingMaxCharge();                                                                                 // [0x5c9d880] Final|Native|Public|BlueprintCallable 
+	// float GetRevertToScoutingMaxCharge();                                                                                 // [0x5caa620] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneActiveState.GetRevertToScoutingCurrentCharge
-	// float GetRevertToScoutingCurrentCharge();                                                                             // [0x5c9d850] Final|Native|Public|BlueprintCallable 
+	// float GetRevertToScoutingCurrentCharge();                                                                             // [0x5caa5f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneActiveState.Authority_OnChargeDepleted
-	// void Authority_OnChargeDepleted();                                                                                    // [0x5c9ce90] Final|Native|Private 
+	// void Authority_OnChargeDepleted();                                                                                    // [0x5ca9c30] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.K31DroneAnimInstance
@@ -480,23 +480,23 @@ public:
 	class UPrimitiveComponent*                         _killerDetectionPrimitive;                                  // 0x0128   (0x0008)  
 	class UPrimitiveComponent*                         _survivorDetectionPrimitive;                                // 0x0130   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0138   (0x0030)  MISSED
-	SDK_UNDEFINED(80,4121) /* TSet<ADBDPlayer*> */     __um(_overlappingSurvivors);                                // 0x0168   (0x0050)  
+	SDK_UNDEFINED(80,4214) /* TSet<ADBDPlayer*> */     __um(_overlappingSurvivors);                                // 0x0168   (0x0050)  
 	unsigned char                                      UnknownData02_5[0x8];                                       // 0x01B8   (0x0008)  MISSED
-	SDK_UNDEFINED(80,4122) /* TMap<ADBDPlayer*, bool> */ __um(_overlappingKillerToVisibilityMap);                  // 0x01C0   (0x0050)  
+	SDK_UNDEFINED(80,4215) /* TMap<ADBDPlayer*, bool> */ __um(_overlappingKillerToVisibilityMap);                  // 0x01C0   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x28];                                      // 0x0210   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneHackableAvoidanceSensor.Init
-	// void Init(class UPrimitiveComponent* killerPrimitive, class UPrimitiveComponent* survivorPrimitive);                  // [0x5c9d8b0] Final|Native|Public|BlueprintCallable 
+	// void Init(class UPrimitiveComponent* killerPrimitive, class UPrimitiveComponent* survivorPrimitive);                  // [0x5caa650] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneHackableAvoidanceSensor.Authority_OnSurvivorCollisionEnd
-	// void Authority_OnSurvivorCollisionEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5c9d560] Final|Native|Private 
+	// void Authority_OnSurvivorCollisionEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5caa300] Final|Native|Private 
 	// Function /Script/TheK31.K31DroneHackableAvoidanceSensor.Authority_OnSurvivorCollisionBegin
-	// void Authority_OnSurvivorCollisionBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5c9d340] Final|Native|Private|HasOutParms 
+	// void Authority_OnSurvivorCollisionBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5caa0e0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK31.K31DroneHackableAvoidanceSensor.Authority_OnKillerCollisionEnd
-	// void Authority_OnKillerCollisionEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5c9d1e0] Final|Native|Private 
+	// void Authority_OnKillerCollisionEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5ca9f80] Final|Native|Private 
 	// Function /Script/TheK31.K31DroneHackableAvoidanceSensor.Authority_OnKillerCollisionBegin
-	// void Authority_OnKillerCollisionBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5c9cfc0] Final|Native|Private|HasOutParms 
+	// void Authority_OnKillerCollisionBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5ca9d60] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK31.K31DroneHackableComponent
@@ -511,9 +511,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneHackableComponent.OnRep_IsHackable
-	// void OnRep_IsHackable();                                                                                              // [0x5ca11f0] Final|Native|Private 
+	// void OnRep_IsHackable();                                                                                              // [0x5cade70] Final|Native|Private 
 	// Function /Script/TheK31.K31DroneHackableComponent.IsHackable
-	// bool IsHackable();                                                                                                    // [0x49bd800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHackable();                                                                                                    // [0x5c57110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31DroneInitializingState
@@ -535,59 +535,66 @@ public:
 };
 
 /// Class /Script/TheK31.K31DroneLaserController
-/// Size: 0x0040 (0x0000B8 - 0x0000F8)
+/// Size: 0x0078 (0x0000B8 - 0x000130)
 class UK31DroneLaserController : public UActorComponent
 { 
 public:
 	class ULocalPlayerTrackerComponent*                _localPlayerTracker;                                        // 0x00B8   (0x0008)  
 	class ADBDPlayer*                                  _locallyObservedPlayer;                                     // 0x00C0   (0x0008)  
-	unsigned char                                      UnknownData00_5[0x28];                                      // 0x00C8   (0x0028)  MISSED
-	class AK31DroneLaserScanActor*                     _laserActor;                                                // 0x00F0   (0x0008)  
+	unsigned char                                      UnknownData00_5[0x40];                                      // 0x00C8   (0x0040)  MISSED
+	class AK31DroneLaserScanActor*                     _laserActor;                                                // 0x0108   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x20];                                      // 0x0110   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneLaserController.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x5ca10e0] Final|Native|Private 
+	// void OnLocallyObservedChanged();                                                                                      // [0x5cadd60] Final|Native|Private 
+	// Function /Script/TheK31.K31DroneLaserController.Local_OnIdleChanged
+	// void Local_OnIdleChanged(bool isIdle, float idleStartTime);                                                           // [0x5cadb30] Final|Native|Private 
+	// Function /Script/TheK31.K31DroneLaserController.Local_OnCrouchChanged
+	// void Local_OnCrouchChanged(bool isCrouched);                                                                          // [0x5cadaa0] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.K31DroneLaserScanActor
-/// Size: 0x0320 (0x000230 - 0x000550)
+/// Size: 0x0330 (0x000230 - 0x000560)
 class AK31DroneLaserScanActor : public AActor
 { 
 public:
 	class UMaterialInstance*                           LaserScanMeshMaterial;                                      // 0x0230   (0x0008)  
-	float                                              StaticCapturesLightAngle;                                   // 0x0238   (0x0004)  
-	float                                              DynamicCapturesLightAngle;                                  // 0x023C   (0x0004)  
-	float                                              DepthCaptureNearPlaneOffset;                                // 0x0240   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0244   (0x0004)  MISSED
-	class UStaticMeshComponent*                        FrontLaserScanSM;                                           // 0x0248   (0x0008)  
-	class UStaticMeshComponent*                        BackLaserScanSM;                                            // 0x0250   (0x0008)  
-	class UGMShadowDepthCaptureComponent*              FrontDepthCaptureComponentDynamic;                          // 0x0258   (0x0008)  
-	class UGMShadowDepthCaptureComponent*              BackDepthCaptureComponentDynamic;                           // 0x0260   (0x0008)  
-	class UGMShadowDepthCaptureComponent*              XDepthCaptureComponentStatic;                               // 0x0268   (0x0008)  
-	class UGMShadowDepthCaptureComponent*              YDepthCaptureComponentStatic;                               // 0x0270   (0x0008)  
-	class UGMShadowDepthCaptureComponent*              NegXDepthCaptureComponentStatic;                            // 0x0278   (0x0008)  
-	class UGMShadowDepthCaptureComponent*              NegYDepthCaptureComponentStatic;                            // 0x0280   (0x0008)  
-	FBHVRPerDetailModeInt                              DynamicDepthCaptureSizeWidth;                               // 0x0288   (0x00A0)  
-	FBHVRPerDetailModeInt                              DynamicDepthCaptureSizeHeight;                              // 0x0328   (0x00A0)  
-	FBHVRPerDetailModeInt                              StaticDepthCaptureSizeWidth;                                // 0x03C8   (0x00A0)  
-	FBHVRPerDetailModeInt                              StaticDepthCaptureSizeHeight;                               // 0x0468   (0x00A0)  
-	unsigned char                                      UnknownData01_6[0x48];                                      // 0x0508   (0x0048)  MISSED
+	class UMaterialInstance*                           LaserScanMeshMaterialUndetectable;                          // 0x0238   (0x0008)  
+	float                                              StaticCapturesLightAngle;                                   // 0x0240   (0x0004)  
+	float                                              DynamicCapturesLightAngle;                                  // 0x0244   (0x0004)  
+	float                                              DepthCaptureNearPlaneOffset;                                // 0x0248   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x024C   (0x0004)  MISSED
+	class UStaticMeshComponent*                        FrontLaserScanSM;                                           // 0x0250   (0x0008)  
+	class UStaticMeshComponent*                        BackLaserScanSM;                                            // 0x0258   (0x0008)  
+	class UGMShadowDepthCaptureComponent*              FrontDepthCaptureComponentDynamic;                          // 0x0260   (0x0008)  
+	class UGMShadowDepthCaptureComponent*              BackDepthCaptureComponentDynamic;                           // 0x0268   (0x0008)  
+	class UGMShadowDepthCaptureComponent*              XDepthCaptureComponentStatic;                               // 0x0270   (0x0008)  
+	class UGMShadowDepthCaptureComponent*              YDepthCaptureComponentStatic;                               // 0x0278   (0x0008)  
+	class UGMShadowDepthCaptureComponent*              NegXDepthCaptureComponentStatic;                            // 0x0280   (0x0008)  
+	class UGMShadowDepthCaptureComponent*              NegYDepthCaptureComponentStatic;                            // 0x0288   (0x0008)  
+	FBHVRPerDetailModeInt                              DynamicDepthCaptureSizeWidth;                               // 0x0290   (0x00A0)  
+	FBHVRPerDetailModeInt                              DynamicDepthCaptureSizeHeight;                              // 0x0330   (0x00A0)  
+	FBHVRPerDetailModeInt                              StaticDepthCaptureSizeWidth;                                // 0x03D0   (0x00A0)  
+	FBHVRPerDetailModeInt                              StaticDepthCaptureSizeHeight;                               // 0x0470   (0x00A0)  
+	class UMaterialInstance*                           _defaultLaserScanMeshMaterial;                              // 0x0510   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x48];                                      // 0x0518   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneLaserScanActor.UpdateLaserScanMeshMaterial
-	// void UpdateLaserScanMeshMaterial(class UMaterialInstance* newLaserScanMeshMaterial);                                  // [0x5ca13d0] Final|Native|Public|BlueprintCallable 
+	// void UpdateLaserScanMeshMaterial(class UMaterialInstance* newLaserScanMeshMaterial);                                  // [0x5cae050] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneLaserScanActor.SetLaserVisibility
-	// void SetLaserVisibility(bool visible);                                                                                // [0x5ca1340] Final|Native|Public|BlueprintCallable 
+	// void SetLaserVisibility(bool visible);                                                                                // [0x5cadfc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneLaserScanActor.RequestStaticDepthCapturesUpdate
-	// void RequestStaticDepthCapturesUpdate();                                                                              // [0x5ca1320] Final|Native|Public|BlueprintCallable 
+	// void RequestStaticDepthCapturesUpdate();                                                                              // [0x5cadfa0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneLaserScanActor.InitDroneLaserScan
-	// void InitDroneLaserScan();                                                                                            // [0x5ca0f30] Final|Native|Public|BlueprintCallable 
+	// void InitDroneLaserScan();                                                                                            // [0x5cada50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneLaserScanActor.DeactivateDroneLaserScan
-	// void DeactivateDroneLaserScan();                                                                                      // [0x57dfc00] Final|Native|Public|BlueprintCallable 
+	// void DeactivateDroneLaserScan();                                                                                      // [0x57e0b20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK31.K31DroneLaserScanActor.ActivateDroneLaserScan
-	// void ActivateDroneLaserScan();                                                                                        // [0x5ca0df0] Final|Native|Public|BlueprintCallable 
+	// void ActivateDroneLaserScan();                                                                                        // [0x5cad910] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/TheK31.DroneDeployDatum
@@ -629,11 +636,11 @@ class UK31DroneMovementComponent : public UMovementComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x48];                                      // 0x00F8   (0x0048)  MISSED
-	SDK_UNDEFINED(16,4123) /* FMulticastInlineDelegate */ __um(OnDeployLocationChangedEvent);                      // 0x0140   (0x0010)  
-	SDK_UNDEFINED(16,4124) /* FMulticastInlineDelegate */ __um(OnAttachToCharacterForDeployChangedEvent);          // 0x0150   (0x0010)  
-	SDK_UNDEFINED(16,4125) /* FMulticastInlineDelegate */ __um(OnAccelerationChangedEvent);                        // 0x0160   (0x0010)  
-	SDK_UNDEFINED(16,4126) /* FMulticastInlineDelegate */ __um(OnFlightHeightChangedBlueprintEvent);               // 0x0170   (0x0010)  
-	SDK_UNDEFINED(16,4127) /* FMulticastInlineDelegate */ __um(OnMovementModeChangedBlueprintEvent);               // 0x0180   (0x0010)  
+	SDK_UNDEFINED(16,4216) /* FMulticastInlineDelegate */ __um(OnDeployLocationChangedEvent);                      // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,4217) /* FMulticastInlineDelegate */ __um(OnAttachToCharacterForDeployChangedEvent);          // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,4218) /* FMulticastInlineDelegate */ __um(OnAccelerationChangedEvent);                        // 0x0160   (0x0010)  
+	SDK_UNDEFINED(16,4219) /* FMulticastInlineDelegate */ __um(OnFlightHeightChangedBlueprintEvent);               // 0x0170   (0x0010)  
+	SDK_UNDEFINED(16,4220) /* FMulticastInlineDelegate */ __um(OnMovementModeChangedBlueprintEvent);               // 0x0180   (0x0010)  
 	FStatProperty                                      _rotationRate;                                              // 0x0190   (0x0088)  
 	FStatProperty                                      _rotationRateStealthMode;                                   // 0x0218   (0x0088)  
 	float                                              _rotationLerpTime;                                          // 0x02A0   (0x0004)  
@@ -670,27 +677,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneMovementComponent.OnRep_ReplicatedMovement
-	// void OnRep_ReplicatedMovement(FDroneRepMovement& oldRepMovement);                                                     // [0x5ca1210] Final|Native|Private|HasOutParms 
+	// void OnRep_ReplicatedMovement(FDroneRepMovement& oldRepMovement);                                                     // [0x5cade90] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK31.K31DroneMovementComponent.OnRep_DeployDatum
-	// void OnRep_DeployDatum(FDroneDeployDatum& oldDeployDatum);                                                            // [0x5ca1120] Final|Native|Private|HasOutParms 
+	// void OnRep_DeployDatum(FDroneDeployDatum& oldDeployDatum);                                                            // [0x5cadda0] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK31.K31DroneMovementComponent.OnDeployLocationChangedEvent__DelegateSignature
-	// void OnDeployLocationChangedEvent__DelegateSignature();                                                               // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnDeployLocationChangedEvent__DelegateSignature();                                                               // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK31.K31DroneMovementComponent.OnAttachToCharacterForDeployChangedEvent__DelegateSignature
-	// void OnAttachToCharacterForDeployChangedEvent__DelegateSignature();                                                   // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnAttachToCharacterForDeployChangedEvent__DelegateSignature();                                                   // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK31.K31DroneMovementComponent.OnAccelerationChangedEvent__DelegateSignature
-	// void OnAccelerationChangedEvent__DelegateSignature(FVector& Acceleration);                                            // [0x61c32d0] MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults 
+	// void OnAccelerationChangedEvent__DelegateSignature(FVector& Acceleration);                                            // [0x61d2f50] MulticastDelegate|Public|Delegate|HasOutParms|HasDefaults 
 	// Function /Script/TheK31.K31DroneMovementComponent.MovementBlueprintEvent__DelegateSignature
-	// void MovementBlueprintEvent__DelegateSignature();                                                                     // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void MovementBlueprintEvent__DelegateSignature();                                                                     // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK31.K31DroneMovementComponent.IsMeshAttachedToCharacterForDeploy
-	// bool IsMeshAttachedToCharacterForDeploy();                                                                            // [0x5ca0f50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsMeshAttachedToCharacterForDeploy();                                                                            // [0x5cada70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31DroneMovementComponent.HasReachedDeployLocation
-	// bool HasReachedDeployLocation();                                                                                      // [0x5ca0f00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool HasReachedDeployLocation();                                                                                      // [0x5cada20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31DroneMovementComponent.GetTargetFlightHeight
-	// EDroneFlyingHeight GetTargetFlightHeight();                                                                           // [0x5ca0ed0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EDroneFlyingHeight GetTargetFlightHeight();                                                                           // [0x5cad9f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31DroneMovementComponent.GetMovementMode
-	// EK31DroneMovementMode GetMovementMode();                                                                              // [0x5ca0e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EK31DroneMovementMode GetMovementMode();                                                                              // [0x5cad990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31DroneMovementComponent.GetDistanceToTarget
-	// float GetDistanceToTarget();                                                                                          // [0x5ca0e40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetDistanceToTarget();                                                                                          // [0x5cad960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31DroneOutlineUpdateStrategy
@@ -762,8 +769,8 @@ class UK31DroneScoutDetectionComponent : public UActorComponent
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x00B8   (0x0018)  MISSED
 	TArray<FK31DroneScoutDetectionSphereRaycastStruct> _raycastSphereData;                                         // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(80,4128) /* TMap<ACamperPlayer*, FSurvivorDroneFrameDatum> */ __um(_survivorLastFrameData);      // 0x00E0   (0x0050)  
-	SDK_UNDEFINED(80,4129) /* TMap<ACamperPlayer*, FSurvivorDroneFrameDatum> */ __um(_survivorCurrentFrameData);   // 0x0130   (0x0050)  
+	SDK_UNDEFINED(80,4221) /* TMap<ACamperPlayer*, FSurvivorDroneFrameDatum> */ __um(_survivorLastFrameData);      // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,4222) /* TMap<ACamperPlayer*, FSurvivorDroneFrameDatum> */ __um(_survivorCurrentFrameData);   // 0x0130   (0x0050)  
 	TArray<class ACamperPlayer*>                       _detectedSurvivors;                                         // 0x0180   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x90];                                      // 0x0190   (0x0090)  MISSED
 	FDBDTunableRowHandle                               _baseDetectionConeYawHalfAngleDegrees;                      // 0x0220   (0x0028)  
@@ -775,9 +782,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneScoutDetectionComponent.OnLaserDeactivate
-	// void OnLaserDeactivate(class UActorComponent* Component);                                                             // [0x5ca1050] Final|Native|Private 
+	// void OnLaserDeactivate(class UActorComponent* Component);                                                             // [0x5cadcd0] Final|Native|Private 
 	// Function /Script/TheK31.K31DroneScoutDetectionComponent.OnLaserActive
-	// void OnLaserActive(class UActorComponent* Component, bool Reset);                                                     // [0x5ca0f80] Final|Native|Private 
+	// void OnLaserActive(class UActorComponent* Component, bool Reset);                                                     // [0x5cadc00] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.K31DroneScoutingState
@@ -803,7 +810,7 @@ class UK31DroneStateController : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x00B8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,4130) /* FMulticastInlineDelegate */ __um(OnStateChangedBlueprintEvent);                      // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,4223) /* FMulticastInlineDelegate */ __um(OnStateChangedBlueprintEvent);                      // 0x00E8   (0x0010)  
 	TArray<class UClass*>                              _stateClasses;                                              // 0x00F8   (0x0010)  
 	class UClass*                                      _defaultStateClass;                                         // 0x0108   (0x0008)  
 	class AGameStateBase*                              _gameState;                                                 // 0x0110   (0x0008)  
@@ -817,15 +824,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31DroneStateController.OnStateChangedBlueprintEvent__DelegateSignature
-	// void OnStateChangedBlueprintEvent__DelegateSignature(EK31DroneStateID oldState, EK31DroneStateID NewState);           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnStateChangedBlueprintEvent__DelegateSignature(EK31DroneStateID oldState, EK31DroneStateID NewState);           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK31.K31DroneStateController.OnRep_States
-	// void OnRep_States();                                                                                                  // [0x5ca1300] Final|Native|Private 
+	// void OnRep_States();                                                                                                  // [0x5cadf80] Final|Native|Private 
 	// Function /Script/TheK31.K31DroneStateController.OnRep_AuthorityRepCurrentState
-	// void OnRep_AuthorityRepCurrentState();                                                                                // [0x5ca1100] Final|Native|Private 
+	// void OnRep_AuthorityRepCurrentState();                                                                                // [0x5cadd80] Final|Native|Private 
 	// Function /Script/TheK31.K31DroneStateController.GetPreviousStateID
-	// EK31DroneStateID GetPreviousStateID();                                                                                // [0x5ca0ea0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EK31DroneStateID GetPreviousStateID();                                                                                // [0x5cad9c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31DroneStateController.GetCurrentStateID
-	// EK31DroneStateID GetCurrentStateID();                                                                                 // [0x5ca0e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EK31DroneStateID GetCurrentStateID();                                                                                 // [0x5cad930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31DroneStealthState
@@ -857,7 +864,7 @@ class UK31DroneZoneComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x00B8   (0x0018)  MISSED
-	SDK_UNDEFINED(80,4131) /* TMap<ADBDPlayer*, FK31PlayerDroneZoneStruct> */ __um(_playerDroneZoneStructMap);     // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,4224) /* TMap<ADBDPlayer*, FK31PlayerDroneZoneStruct> */ __um(_playerDroneZoneStructMap);     // 0x00D0   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x10];                                      // 0x0120   (0x0010)  MISSED
 	FDBDTunableRowHandle                               _maxDistanceXY;                                             // 0x0130   (0x0028)  
 	FDBDTunableRowHandle                               _maxDistanceZ;                                              // 0x0158   (0x0028)  
@@ -874,7 +881,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31FXInterface.Cosmetic_TriggerSurvivorAppearOnRadarEvent
-	// void Cosmetic_TriggerSurvivorAppearOnRadarEvent();                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_TriggerSurvivorAppearOnRadarEvent();                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.K31HasteEffect
@@ -904,11 +911,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31MenuAnimInstance.OnCustomizationAnimationMappingIDChanged
-	// void OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                         // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnCustomizationAnimationMappingIDChanged(int32_t animationMappingIndex);                                         // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31MenuAnimInstance.GetCustomizationMappingID
-	// int32_t GetCustomizationMappingID();                                                                                  // [0x5ca4880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCustomizationMappingID();                                                                                  // [0x5cb16c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31MenuAnimInstance.GetCustoAnimTags
-	// TArray<FName> GetCustoAnimTags();                                                                                     // [0x5ca4800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetCustoAnimTags();                                                                                     // [0x5cb1640] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31P01
@@ -926,9 +933,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31P01.GetHasteEffectMovementSpeedIncrease
-	// float GetHasteEffectMovementSpeedIncrease();                                                                          // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectMovementSpeedIncrease();                                                                          // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31P01.GetHasteEffectDurationAtLevel
-	// float GetHasteEffectDurationAtLevel();                                                                                // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectDurationAtLevel();                                                                                // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31P02
@@ -946,15 +953,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31P02.Multicast_RevealAndMakeSurvivorScream
-	// void Multicast_RevealAndMakeSurvivorScream(class ACamperPlayer* Survivor);                                            // [0x501b930] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_RevealAndMakeSurvivorScream(class ACamperPlayer* Survivor);                                            // [0x4ff91d0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK31.K31P02.GetScreamDistance
-	// float GetScreamDistance();                                                                                            // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScreamDistance();                                                                                            // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31P02.GetRevealAuraSeconds
-	// float GetRevealAuraSeconds();                                                                                         // [0x5023110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRevealAuraSeconds();                                                                                         // [0x5000ca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31P02.GetActivePerkDurationAtLevel
-	// float GetActivePerkDurationAtLevel();                                                                                 // [0x5ca47a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivePerkDurationAtLevel();                                                                                 // [0x5cb15e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31P02.BP_RevealAndMakeSurvivorScream
-	// void BP_RevealAndMakeSurvivorScream(class ACamperPlayer* survivorPlayer);                                             // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_RevealAndMakeSurvivorScream(class ACamperPlayer* survivorPlayer);                                             // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.K31P03
@@ -971,9 +978,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31P03.GetReduceHealingSpeedEffectSeconds
-	// float GetReduceHealingSpeedEffectSeconds();                                                                           // [0x500a8f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetReduceHealingSpeedEffectSeconds();                                                                           // [0x4fe81a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31P03.GetHealPenaltyAtLevel
-	// float GetHealPenaltyAtLevel();                                                                                        // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHealPenaltyAtLevel();                                                                                        // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31PlayerZoneStatus
@@ -982,7 +989,7 @@ class UK31PlayerZoneStatus : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x48];                                      // 0x00B8   (0x0048)  MISSED
-	SDK_UNDEFINED(80,4132) /* TMap<UK31DroneZoneComponent*, FK31DroneZoneOverlapDatum> */ __um(_overlappingZones); // 0x0100   (0x0050)  
+	SDK_UNDEFINED(80,4225) /* TMap<UK31DroneZoneComponent*, FK31DroneZoneOverlapDatum> */ __um(_overlappingZones); // 0x0100   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x30];                                      // 0x0150   (0x0030)  MISSED
 };
 
@@ -1016,11 +1023,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31Power.OnRepPowerState
-	// void OnRepPowerState();                                                                                               // [0x5ca4bb0] Final|Native|Private|Const 
+	// void OnRepPowerState();                                                                                               // [0x5cb19f0] Final|Native|Private|Const 
 	// Function /Script/TheK31.K31Power.OnRepPowerCooldownTimer
-	// void OnRepPowerCooldownTimer();                                                                                       // [0x5ca4b90] Final|Native|Private 
+	// void OnRepPowerCooldownTimer();                                                                                       // [0x5cb19d0] Final|Native|Private 
 	// Function /Script/TheK31.K31Power.Authority_UpdateHasteBasedOnScannedSurvivors
-	// void Authority_UpdateHasteBasedOnScannedSurvivors();                                                                  // [0x5ca4780] Final|Native|Private|Const 
+	// void Authority_UpdateHasteBasedOnScannedSurvivors();                                                                  // [0x5cb15c0] Final|Native|Private|Const 
 };
 
 /// Class /Script/TheK31.K31PowerChargePresentationItemProgressComponent
@@ -1050,9 +1057,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31PowerCosmeticHelper.Cosmetic_IsOnPowerCooldownUpdatedEvent
-	// void Cosmetic_IsOnPowerCooldownUpdatedEvent(bool isPowerOnCooldown);                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_IsOnPowerCooldownUpdatedEvent(bool isPowerOnCooldown);                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK31.K31PowerCosmeticHelper.Cosmetic_DoesRadarDetectAnySurvivorsUpdatedEvent
-	// void Cosmetic_DoesRadarDetectAnySurvivorsUpdatedEvent(bool doesRadarDetectAnySurvivors);                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_DoesRadarDetectAnySurvivorsUpdatedEvent(bool doesRadarDetectAnySurvivors);                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.K31PowerSubAnimInstance
@@ -1086,11 +1093,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31RadarAnimInstance.ResetIsRecallingADrone
-	// void ResetIsRecallingADrone();                                                                                        // [0x59bbdd0] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsRecallingADrone();                                                                                        // [0x59c2760] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK31.K31RadarAnimInstance.ResetIsActivatingADrone
-	// void ResetIsActivatingADrone();                                                                                       // [0x59bbe10] Final|Native|Protected|BlueprintCallable 
+	// void ResetIsActivatingADrone();                                                                                       // [0x59c27a0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK31.K31RadarAnimInstance.OnGameEventReceived
-	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5ca4a60] Final|Native|Private|HasOutParms 
+	// void OnGameEventReceived(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                    // [0x5cb18a0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK31.K31Scanner
@@ -1098,7 +1105,7 @@ public:
 class UK31Scanner : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4133) /* FMulticastInlineDelegate */ __um(OnScannerUpdated);                                  // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,4226) /* FMulticastInlineDelegate */ __um(OnScannerUpdated);                                  // 0x00B8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x00C8   (0x0018)  MISSED
 	FStatProperty                                      _radarRadius;                                               // 0x00E0   (0x0088)  
 	FDBDTunableRowHandle                               _levelHeightThreshold;                                      // 0x0168   (0x0028)  
@@ -1106,15 +1113,15 @@ public:
 	unsigned char                                      UnknownData01_5[0x28];                                      // 0x0198   (0x0028)  MISSED
 	class AActor*                                      _owningActor;                                               // 0x01C0   (0x0008)  
 	unsigned char                                      UnknownData02_5[0x10];                                      // 0x01C8   (0x0010)  MISSED
-	SDK_UNDEFINED(80,4134) /* TSet<ADBDPlayer*> */     __um(_playersShownOnRadar);                                 // 0x01D8   (0x0050)  
+	SDK_UNDEFINED(80,4227) /* TSet<ADBDPlayer*> */     __um(_playersShownOnRadar);                                 // 0x01D8   (0x0050)  
 	unsigned char                                      UnknownData03_6[0x8];                                       // 0x0228   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK31.K31Scanner.OnScannerUpdated__DelegateSignature
-	// void OnScannerUpdated__DelegateSignature();                                                                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnScannerUpdated__DelegateSignature();                                                                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK31.K31Scanner.GetEncodedPoints
-	// TArray<FLinearColor> GetEncodedPoints();                                                                              // [0x5ca48b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FLinearColor> GetEncodedPoints();                                                                              // [0x5cb16f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.K31SurvivorAnimInstance
@@ -1181,23 +1188,23 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.OnRep_RemoveClawTrapInteraction
-	// void OnRep_RemoveClawTrapInteraction();                                                                               // [0x5ca4d70] Final|Native|Private 
+	// void OnRep_RemoveClawTrapInteraction();                                                                               // [0x5cb1bb0] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.OnRep_OriginatingPower
-	// void OnRep_OriginatingPower(class AK31Power* oldPower);                                                               // [0x5ca4c50] Final|Native|Private 
+	// void OnRep_OriginatingPower(class AK31Power* oldPower);                                                               // [0x5cb1a90] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.OnRep_IsTrapped
-	// void OnRep_IsTrapped();                                                                                               // [0x5ca4c30] Final|Native|Private 
+	// void OnRep_IsTrapped();                                                                                               // [0x5cb1a70] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.OnRep_IsBroadcasting
-	// void OnRep_IsBroadcasting();                                                                                          // [0x5ca4bf0] Final|Native|Private 
+	// void OnRep_IsBroadcasting();                                                                                          // [0x5cb1a30] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5ca4b70] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x5cb19b0] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.OnCamperEscaped
-	// void OnCamperEscaped(FGameplayTag gameEventType, FGameEventData& GameEventData);                                      // [0x5ca4950] Final|Native|Private|HasOutParms 
+	// void OnCamperEscaped(FGameplayTag gameEventType, FGameEventData& GameEventData);                                      // [0x5cb1790] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.Multicast_ClawTrapAddedByDrone
-	// void Multicast_ClawTrapAddedByDrone(class AK31Drone* originatingDrone);                                               // [0x58c5550] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ClawTrapAddedByDrone(class AK31Drone* originatingDrone);                                               // [0x58cbe00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.GetClawTrapCosmeticDelayDuration
-	// float GetClawTrapCosmeticDelayDuration();                                                                             // [0x5ca47d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetClawTrapCosmeticDelayDuration();                                                                             // [0x5cb1610] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.K31SurvivorClawTrapComponent.Authority_OnDamageStateChanged
-	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);            // [0x5ca45e0] Final|Native|Private 
+	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);            // [0x5cb1420] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.K31SurvivorCosmeticHelperActor
@@ -1213,19 +1220,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_UpdateLockOnProgress
-	// void Cosmetic_UpdateLockOnProgress(float currentProgressPercent, bool IsFullyLockedOn);                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_UpdateLockOnProgress(float currentProgressPercent, bool IsFullyLockedOn);                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_OnIsTrappedByClawTrap
-	// void Cosmetic_OnIsTrappedByClawTrap(bool IsTrapped);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsTrappedByClawTrap(bool IsTrapped);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_OnIsSurvivorImmuneToDetection
-	// void Cosmetic_OnIsSurvivorImmuneToDetection(bool isImmuneToDetection, int32_t numLockOns);                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsSurvivorImmuneToDetection(bool isImmuneToDetection, int32_t numLockOns);                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_OnIsSurvivorDetectedAndVisibleOnScanner
-	// void Cosmetic_OnIsSurvivorDetectedAndVisibleOnScanner(bool isSurvivorDetectedAndVisibleOnScanner);                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsSurvivorDetectedAndVisibleOnScanner(bool isSurvivorDetectedAndVisibleOnScanner);                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_OnIsOverlappingActiveZoneChanged
-	// void Cosmetic_OnIsOverlappingActiveZoneChanged(bool isOverlappingActiveZone);                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsOverlappingActiveZoneChanged(bool isOverlappingActiveZone);                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_OnIsBroadcasting
-	// void Cosmetic_OnIsBroadcasting(bool isBroadcasting);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIsBroadcasting(bool isBroadcasting);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.K31SurvivorCosmeticHelperActor.Cosmetic_OnDetectedByDrone
-	// void Cosmetic_OnDetectedByDrone(class AK31Drone* Drone, bool isOnCooldown);                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDetectedByDrone(class AK31Drone* Drone, bool isOnCooldown);                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.K31SurvivorDetection
@@ -1265,15 +1272,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.K31SurvivorDetection.OnRep_OriginatingPower
-	// void OnRep_OriginatingPower(class AK31Power* oldPower);                                                               // [0x5ca4ce0] Final|Native|Private 
+	// void OnRep_OriginatingPower(class AK31Power* oldPower);                                                               // [0x5cb1b20] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorDetection.OnRep_IsFullyLockedOn
-	// void OnRep_IsFullyLockedOn();                                                                                         // [0x5ca4c10] Final|Native|Private 
+	// void OnRep_IsFullyLockedOn();                                                                                         // [0x5cb1a50] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorDetection.OnRep_ChargeableComponent
-	// void OnRep_ChargeableComponent();                                                                                     // [0x5ca4bd0] Final|Native|Private 
+	// void OnRep_ChargeableComponent();                                                                                     // [0x5cb1a10] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorDetection.Authority_OnDamageStateChanged
-	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);            // [0x5ca46b0] Final|Native|Private 
+	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);            // [0x5cb14f0] Final|Native|Private 
 	// Function /Script/TheK31.K31SurvivorDetection.Authority_OnChargeCompleted
-	// void Authority_OnChargeCompleted(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                          // [0x5ca44e0] Final|Native|Private|HasOutParms 
+	// void Authority_OnChargeCompleted(bool COMPLETED, TArray<AActor*>& instigatorsForCompletion);                          // [0x5cb1320] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK31.K31SurvivorExposedEffect
@@ -1296,8 +1303,8 @@ class UK31TrapProximitySensor : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x40];                                      // 0x00B8   (0x0040)  MISSED
-	SDK_UNDEFINED(80,4135) /* TSet<UGameplayTagContainerComponent*> */ __um(_registeredObjectStates);              // 0x00F8   (0x0050)  
-	SDK_UNDEFINED(80,4136) /* TSet<ADBDPlayer*> */     __um(_trappedPlayersInZone);                                // 0x0148   (0x0050)  
+	SDK_UNDEFINED(80,4228) /* TSet<UGameplayTagContainerComponent*> */ __um(_registeredObjectStates);              // 0x00F8   (0x0050)  
+	SDK_UNDEFINED(80,4229) /* TSet<ADBDPlayer*> */     __um(_trappedPlayersInZone);                                // 0x0148   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0198   (0x0008)  MISSED
 };
 
@@ -1322,16 +1329,16 @@ class UK31WeakPointScoreEmitter : public UPlayerScoreEmitter
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0038   (0x0018)  MISSED
-	SDK_UNDEFINED(80,4137) /* TMap<ACamperPlayer*, FSurvivorWeakPointScoreDatum> */ __um(_registeredSurvivors);    // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,4230) /* TMap<ACamperPlayer*, FSurvivorWeakPointScoreDatum> */ __um(_registeredSurvivors);    // 0x0050   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/TheK31.K31WeakPointScoreEmitter.Authority_OnLevelReadyToPlay
-	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5ca7670] Final|Native|Private 
+	// void Authority_OnLevelReadyToPlay();                                                                                  // [0x5cb45c0] Final|Native|Private 
 	// Function /Script/TheK31.K31WeakPointScoreEmitter.Authority_OnDechargeEnd
-	// void Authority_OnDechargeEnd(class UChargeableComponent* ChargeableComponent);                                        // [0x5ca7550] Final|Native|Private 
+	// void Authority_OnDechargeEnd(class UChargeableComponent* ChargeableComponent);                                        // [0x5cb44a0] Final|Native|Private 
 	// Function /Script/TheK31.K31WeakPointScoreEmitter.Authority_OnDechargeBegin
-	// void Authority_OnDechargeBegin(class UChargeableComponent* ChargeableComponent);                                      // [0x5ca74c0] Final|Native|Private 
+	// void Authority_OnDechargeBegin(class UChargeableComponent* ChargeableComponent);                                      // [0x5cb4410] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.KillerMakeUniqueSurvivorsScreamAchievement
@@ -1339,7 +1346,7 @@ public:
 class UKillerMakeUniqueSurvivorsScreamAchievement : public UOnGameEventAchievement
 { 
 public:
-	SDK_UNDEFINED(80,4138) /* TSet<AActor*> */         __um(_alreadyProcessedSurvivors);                           // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,4231) /* TSet<AActor*> */         __um(_alreadyProcessedSurvivors);                           // 0x0080   (0x0050)  
 };
 
 /// Class /Script/TheK31.RecallK31DroneAction
@@ -1368,9 +1375,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S35P01.GetFastVaultsTimeSecondsAtLevel
-	// float GetFastVaultsTimeSecondsAtLevel();                                                                              // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFastVaultsTimeSecondsAtLevel();                                                                              // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S35P01.GetCooldownDurationSeconds
-	// float GetCooldownDurationSeconds();                                                                                   // [0x500a8f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationSeconds();                                                                                   // [0x4fe81a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.S35P02
@@ -1381,13 +1388,13 @@ public:
 	float                                              _hasteEffectDurationSeconds;                                // 0x03C8   (0x000C)  
 	float                                              _hasteEffectMovementSpeedIncrease;                          // 0x03D4   (0x0004)  
 	class UClass*                                      _hasteEffectClass;                                          // 0x03D8   (0x0008)  
-	SDK_UNDEFINED(80,4139) /* TMap<ADBDPlayer*, UStatusEffect*> */ __um(_survivorBuffs);                           // 0x03E0   (0x0050)  
+	SDK_UNDEFINED(80,4232) /* TMap<ADBDPlayer*, UStatusEffect*> */ __um(_survivorBuffs);                           // 0x03E0   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0430   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK31.S35P02.GetHasteEffectDurationAtLevel
-	// float GetHasteEffectDurationAtLevel();                                                                                // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectDurationAtLevel();                                                                                // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.S35P02Effect
@@ -1415,11 +1422,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S35P03.OnRep_IsStatusEffectActiveOnOwningSurvivor
-	// void OnRep_IsStatusEffectActiveOnOwningSurvivor();                                                                    // [0x5ca7870] Final|Native|Private 
+	// void OnRep_IsStatusEffectActiveOnOwningSurvivor();                                                                    // [0x5cb47c0] Final|Native|Private 
 	// Function /Script/TheK31.S35P03.GetPerkRange
-	// float GetPerkRange();                                                                                                 // [0x5020c90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkRange();                                                                                                 // [0x4ffe550] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S35P03.GetCooldownDurationAtLevel
-	// float GetCooldownDurationAtLevel();                                                                                   // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationAtLevel();                                                                                   // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.S35P03Effect
@@ -1435,7 +1442,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S35P03Effect.OnRep_GiveBuffToPlayer
-	// void OnRep_GiveBuffToPlayer();                                                                                        // [0x5ca7830] Final|Native|Private 
+	// void OnRep_GiveBuffToPlayer();                                                                                        // [0x5cb4780] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.S36P01
@@ -1456,15 +1463,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S36P01.GetHasteEffectMovementSpeedIncrease
-	// float GetHasteEffectMovementSpeedIncrease();                                                                          // [0x500aa10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectMovementSpeedIncrease();                                                                          // [0x4fe82c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P01.GetHasteEffectDurationSeconds
-	// float GetHasteEffectDurationSeconds();                                                                                // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteEffectDurationSeconds();                                                                                // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P01.GetExhaustedEffectDurationAtLevel
-	// float GetExhaustedEffectDurationAtLevel();                                                                            // [0x50230e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustedEffectDurationAtLevel();                                                                            // [0x5000c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P01.GetActivationDurationAtLevel
-	// float GetActivationDurationAtLevel();                                                                                 // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationDurationAtLevel();                                                                                 // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P01.Authority_OnIsRunningAndMovingChanged
-	// void Authority_OnIsRunningAndMovingChanged(bool isRunningAndMoving);                                                  // [0x5ca75e0] Final|Native|Private 
+	// void Authority_OnIsRunningAndMovingChanged(bool isRunningAndMoving);                                                  // [0x5cb4530] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.S36P02
@@ -1486,11 +1493,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S36P02.OnRecoverAbilityButtonTriggeredCosmetic
-	// void OnRecoverAbilityButtonTriggeredCosmetic(class ACamperPlayer* OwningSurvivor);                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnRecoverAbilityButtonTriggeredCosmetic(class ACamperPlayer* OwningSurvivor);                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK31.S36P02.GetBrokenStatusDurationAtLevel
-	// float GetBrokenStatusDurationAtLevel();                                                                               // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBrokenStatusDurationAtLevel();                                                                               // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P02.Authority_OnCamperHealthStateChange
-	// void Authority_OnCamperHealthStateChange(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);       // [0x5ca73f0] Final|Native|Private 
+	// void Authority_OnCamperHealthStateChange(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);       // [0x5cb4340] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.S36P02Interaction
@@ -1502,7 +1509,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S36P02Interaction.OnRecoverInteractionUsed_Cosmetic
-	// void OnRecoverInteractionUsed_Cosmetic(class ACamperPlayer* Survivor);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnRecoverInteractionUsed_Cosmetic(class ACamperPlayer* Survivor);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK31.S36P03
@@ -1522,11 +1529,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S36P03.OnRep_IsStatusEffectActiveOnOwningSurvivor
-	// void OnRep_IsStatusEffectActiveOnOwningSurvivor();                                                                    // [0x5ca7870] Final|Native|Private 
+	// void OnRep_IsStatusEffectActiveOnOwningSurvivor();                                                                    // [0x5cb47c0] Final|Native|Private 
 	// Function /Script/TheK31.S36P03.GetPerkRange
-	// float GetPerkRange();                                                                                                 // [0x500f7a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkRange();                                                                                                 // [0x4fed080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P03.GetCooldownDurationAtLevel
-	// float GetCooldownDurationAtLevel();                                                                                   // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDurationAtLevel();                                                                                   // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK31.S36P03Effect
@@ -1542,9 +1549,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.S36P03Effect.ShouldGiveBuff
-	// bool ShouldGiveBuff();                                                                                                // [0x5ca7890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool ShouldGiveBuff();                                                                                                // [0x5cb47e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK31.S36P03Effect.OnRep_GiveBuffToPlayer
-	// void OnRep_GiveBuffToPlayer();                                                                                        // [0x5ca7850] Final|Native|Private 
+	// void OnRep_GiveBuffToPlayer();                                                                                        // [0x5cb47a0] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.SurvivorHackDroneInteraction
@@ -1566,7 +1573,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.SurvivorHackDroneInteraction.Authority_OnMinigameEnd
-	// void Authority_OnMinigameEnd(class ACamperPlayer* Survivor, EDirectionalMinigameResult Result);                       // [0x5ca7690] Final|Native|Private 
+	// void Authority_OnMinigameEnd(class ACamperPlayer* Survivor, EDirectionalMinigameResult Result);                       // [0x5cb45e0] Final|Native|Private 
 };
 
 /// Class /Script/TheK31.SurvivorRemoveClawTrapInteraction
@@ -1585,7 +1592,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK31.SurvivorRemoveClawTrapInteraction.Authority_OnMinigameEnd
-	// void Authority_OnMinigameEnd(class ACamperPlayer* Survivor, EDirectionalMinigameResult Result);                       // [0x5ca7760] Final|Native|Private 
+	// void Authority_OnMinigameEnd(class ACamperPlayer* Survivor, EDirectionalMinigameResult Result);                       // [0x5cb46b0] Final|Native|Private 
 };
 
 /// Struct /Script/TheK31.ActiveZoneOverlapTracker

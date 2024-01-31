@@ -63,27 +63,27 @@ public:
 
 	/// Functions
 	// Function /Script/WinterEvent2023.MrMarch.OnRep_MrMarchState
-	// void OnRep_MrMarchState(EMrMarchState previousState);                                                                 // [0x5e57ca0] Final|Native|Private 
+	// void OnRep_MrMarchState(EMrMarchState previousState);                                                                 // [0x5e67f40] Final|Native|Private 
 	// Function /Script/WinterEvent2023.MrMarch.OnPlayerJumpscareTriggered
-	// void OnPlayerJumpscareTriggered(class ADBDPlayer* Player, FVector& Location);                                         // [0x61c32d0] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void OnPlayerJumpscareTriggered(class ADBDPlayer* Player, FVector& Location);                                         // [0x61d2f50] Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/WinterEvent2023.MrMarch.Multicast_StartMrMarchDestruction
-	// void Multicast_StartMrMarchDestruction();                                                                             // [0x4326c90] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartMrMarchDestruction();                                                                             // [0x42c4540] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/WinterEvent2023.MrMarch.Multicast_OnPlayerJumpscared
-	// void Multicast_OnPlayerJumpscared(class ADBDPlayer* Player, FVector jumpscareLocation);                               // [0x5e57bd0] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
+	// void Multicast_OnPlayerJumpscared(class ADBDPlayer* Player, FVector jumpscareLocation);                               // [0x5e67e70] Final|Net|NetReliableNative|Event|NetMulticast|Private|HasDefaults 
 	// Function /Script/WinterEvent2023.MrMarch.DBD_MrMarchSpawn
-	// void DBD_MrMarchSpawn();                                                                                              // [0x5e57bb0] Final|Exec|Native|Protected 
+	// void DBD_MrMarchSpawn();                                                                                              // [0x5e67e50] Final|Exec|Native|Protected 
 	// Function /Script/WinterEvent2023.MrMarch.DBD_MrMarchDestroy
-	// void DBD_MrMarchDestroy();                                                                                            // [0x5e57b90] Final|Exec|Native|Protected 
+	// void DBD_MrMarchDestroy();                                                                                            // [0x5e67e30] Final|Exec|Native|Protected 
 	// Function /Script/WinterEvent2023.MrMarch.Cosmetic_OnSpawned
-	// void Cosmetic_OnSpawned();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSpawned();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.MrMarch.Cosmetic_OnDestroyed
-	// void Cosmetic_OnDestroyed();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnDestroyed();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.MrMarch.Authority_OnJumpscareTriggerZoneExited
-	// void Authority_OnJumpscareTriggerZoneExited(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5e57a30] Final|Native|Private 
+	// void Authority_OnJumpscareTriggerZoneExited(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5e67cd0] Final|Native|Private 
 	// Function /Script/WinterEvent2023.MrMarch.Authority_OnJumpscareTriggerZoneEntered
-	// void Authority_OnJumpscareTriggerZoneEntered(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5e57810] Final|Native|Private|HasOutParms 
+	// void Authority_OnJumpscareTriggerZoneEntered(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5e67ab0] Final|Native|Private|HasOutParms 
 	// Function /Script/WinterEvent2023.MrMarch.Authority_OnJumpscareFinished
-	// void Authority_OnJumpscareFinished();                                                                                 // [0x5e577f0] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_OnJumpscareFinished();                                                                                 // [0x5e67a90] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/WinterEvent2023.MrMarchAnimInstance
@@ -95,7 +95,7 @@ public:
 	bool                                               _isInJumpscare;                                             // 0x02C1   (0x0001)  
 	bool                                               _isBeingDestroyed;                                          // 0x02C2   (0x0001)  
 	bool                                               _isSpawned;                                                 // 0x02C3   (0x0001)  
-	SDK_UNDEFINED(8,5224) /* TWeakObjectPtr<AMrMarch*> */ __um(_mrMarch);                                          // 0x02C4   (0x0008)  
+	SDK_UNDEFINED(8,5614) /* TWeakObjectPtr<AMrMarch*> */ __um(_mrMarch);                                          // 0x02C4   (0x0008)  
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x02CC   (0x0004)  MISSED
 };
 
@@ -134,41 +134,41 @@ public:
 
 	/// Functions
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.OnRep_SnowballThrowInteraction
-	// void OnRep_SnowballThrowInteraction();                                                                                // [0x5e58b40] Final|Native|Private 
+	// void OnRep_SnowballThrowInteraction();                                                                                // [0x5e68de0] Final|Native|Private 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.OnRep_SnowballLauncherController
-	// void OnRep_SnowballLauncherController();                                                                              // [0x5e58b20] Final|Native|Private 
+	// void OnRep_SnowballLauncherController();                                                                              // [0x5e68dc0] Final|Native|Private 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.OnRep_CooldownTimer
-	// void OnRep_CooldownTimer();                                                                                           // [0x5e58b00] Final|Native|Private 
+	// void OnRep_CooldownTimer();                                                                                           // [0x5e68da0] Final|Native|Private 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.OnOwningCamperGuidedStateChanged
-	// void OnOwningCamperGuidedStateChanged();                                                                              // [0x5e58ae0] Final|Native|Private 
+	// void OnOwningCamperGuidedStateChanged();                                                                              // [0x5e68d80] Final|Native|Private 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.OnCamperDamageStateChanged
-	// void OnCamperDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);                // [0x5e58a10] Final|Native|Private 
+	// void OnCamperDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);                // [0x5e68cb0] Final|Native|Private 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnVFXVignetteTagAddedOrRemoved
-	// void Cosmetic_OnVFXVignetteTagAddedOrRemoved(class ADBDPlayer* Player, bool added);                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnVFXVignetteTagAddedOrRemoved(class ADBDPlayer* Player, bool added);                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnThrownSnowballHitPlayer
-	// void Cosmetic_OnThrownSnowballHitPlayer(class ADBDPlayer* OwningPlayer, class ADBDPlayer* hitPlayer);                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnThrownSnowballHitPlayer(class ADBDPlayer* OwningPlayer, class ADBDPlayer* hitPlayer);                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnThrownSnowballHitCollision
-	// void Cosmetic_OnThrownSnowballHitCollision(class ADBDPlayer* OwningPlayer, FImpactInfo ImpactInfo);                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnThrownSnowballHitCollision(class ADBDPlayer* OwningPlayer, FImpactInfo ImpactInfo);                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnSnowballThrowStart
-	// void Cosmetic_OnSnowballThrowStart(class ADBDPlayer* OwningPlayer);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowballThrowStart(class ADBDPlayer* OwningPlayer);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnSnowballThrown
-	// void Cosmetic_OnSnowballThrown();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowballThrown();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnSnowballsDepleted
-	// void Cosmetic_OnSnowballsDepleted(class ADBDPlayer* OwningPlayer);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowballsDepleted(class ADBDPlayer* OwningPlayer);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnSnowballCollected
-	// void Cosmetic_OnSnowballCollected();                                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowballCollected();                                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnPlayerUnhidden
-	// void Cosmetic_OnPlayerUnhidden(class ADBDPlayer* OwningPlayer);                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerUnhidden(class ADBDPlayer* OwningPlayer);                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnPlayerHidden
-	// void Cosmetic_OnPlayerHidden(class ADBDPlayer* OwningPlayer);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerHidden(class ADBDPlayer* OwningPlayer);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnPlayerDiedOrBeingKilled
-	// void Cosmetic_OnPlayerDiedOrBeingKilled(class ADBDPlayer* deadPlayer);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerDiedOrBeingKilled(class ADBDPlayer* deadPlayer);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnLocallyObservedChanged
-	// void Cosmetic_OnLocallyObservedChanged(bool IsLocallyObserved, class ADBDPlayer* OwningPlayer);                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnLocallyObservedChanged(bool IsLocallyObserved, class ADBDPlayer* OwningPlayer);                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnCamperPickUpEndOrDropped
-	// void Cosmetic_OnCamperPickUpEndOrDropped(class ADBDPlayer* pickedUpPlayer);                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCamperPickUpEndOrDropped(class ADBDPlayer* pickedUpPlayer);                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.SnowballPlayerComponent.Cosmetic_OnCamperPickedUp
-	// void Cosmetic_OnCamperPickedUp(class ADBDPlayer* pickedUpPlayer);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCamperPickedUp(class ADBDPlayer* pickedUpPlayer);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/WinterEvent2023.SnowballProjectileLauncher
@@ -219,11 +219,11 @@ public:
 
 	/// Functions
 	// Function /Script/WinterEvent2023.Snowpile.Cosmetic_OnStartedInteracting
-	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer);                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer);                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.Snowpile.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/WinterEvent2023.Snowpile.Cosmetic_OnInteractionCancelled
-	// void Cosmetic_OnInteractionCancelled(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCancelled(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/WinterEvent2023.SnowpileInteraction
@@ -273,8 +273,8 @@ public:
 
 	/// Functions
 	// Function /Script/WinterEvent2023.Winter2023EventComponent.DBD_Winter2023SetMaxMrMarchAndPercentChance
-	// void DBD_Winter2023SetMaxMrMarchAndPercentChance(int32_t maxMrMarch, float percentChance);                            // [0x5e596f0] Final|Exec|Native|Private 
+	// void DBD_Winter2023SetMaxMrMarchAndPercentChance(int32_t maxMrMarch, float percentChance);                            // [0x5e69990] Final|Exec|Native|Private 
 	// Function /Script/WinterEvent2023.Winter2023EventComponent.DBD_Winter2023ForceRespawnSnowmen
-	// void DBD_Winter2023ForceRespawnSnowmen();                                                                             // [0x5e596d0] Final|Exec|Native|Private 
+	// void DBD_Winter2023ForceRespawnSnowmen();                                                                             // [0x5e69970] Final|Exec|Native|Private 
 };
 

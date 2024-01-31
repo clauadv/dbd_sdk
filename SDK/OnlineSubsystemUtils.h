@@ -146,7 +146,7 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
-	// void ClientOnConnected();                                                                                             // [0x43c1740] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void ClientOnConnected();                                                                                             // [0x435f040] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/OnlineSubsystemUtils.OnlineBeaconHostObject
@@ -154,7 +154,7 @@ public:
 class AOnlineBeaconHostObject : public AActor
 { 
 public:
-	SDK_UNDEFINED(16,1595) /* FString */               __um(BeaconTypeName);                                       // 0x0230   (0x0010)  
+	SDK_UNDEFINED(16,1620) /* FString */               __um(BeaconTypeName);                                       // 0x0230   (0x0010)  
 	class UClass*                                      ClientBeaconActorClass;                                     // 0x0240   (0x0008)  
 	TArray<class AOnlineBeaconClient*>                 ClientActors;                                               // 0x0248   (0x0010)  
 };
@@ -168,9 +168,9 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
-	// void GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, FName AchievementID, bool& bFoundID, float& Progress); // [0x43bd0b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, FName AchievementID, bool& bFoundID, float& progress); // [0x435a9b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementDescription
-	// void GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, FName AchievementID, bool& bFoundID, FText& Title, FText& LockedDescription, FText& UnlockedDescription, bool& bHidden); // [0x43bcd40] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, FName AchievementID, bool& bFoundID, FText& Title, FText& LockedDescription, FText& UnlockedDescription, bool& bHidden); // [0x435a640] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.AchievementQueryCallbackProxy
@@ -178,16 +178,16 @@ public:
 class UAchievementQueryCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1596) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1597) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1621) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1622) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0058   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
-	// class UAchievementQueryCallbackProxy* CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x43bbab0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAchievementQueryCallbackProxy* CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x43593b0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievementDescriptions
-	// class UAchievementQueryCallbackProxy* CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x43bb9e0] Final|Native|Static|Public|BlueprintCallable 
+	// class UAchievementQueryCallbackProxy* CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x43592e0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.AchievementWriteCallbackProxy
@@ -195,14 +195,14 @@ public:
 class UAchievementWriteCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1598) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1599) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1623) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1624) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x38];                                      // 0x0058   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.AchievementWriteCallbackProxy.WriteAchievementProgress
-	// class UAchievementWriteCallbackProxy* WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, FName AchievementName, float Progress, int32_t UserTag); // [0x43bdb20] Final|Native|Static|Public|BlueprintCallable 
+	// class UAchievementWriteCallbackProxy* WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, FName AchievementName, float progress, int32_t UserTag); // [0x435b420] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.ConnectionCallbackProxy
@@ -210,14 +210,14 @@ public:
 class UConnectionCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1600) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1601) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1625) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1626) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x28];                                      // 0x0058   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.ConnectionCallbackProxy.ConnectToService
-	// class UConnectionCallbackProxy* ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x43bbb80] Final|Native|Static|Public|BlueprintCallable 
+	// class UConnectionCallbackProxy* ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x4359480] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.CreateSessionCallbackProxy
@@ -225,14 +225,14 @@ public:
 class UCreateSessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1602) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1603) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1627) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1628) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x0058   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.CreateSessionCallbackProxy.CreateSession
-	// class UCreateSessionCallbackProxy* CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int32_t PublicConnections, bool bUseLAN); // [0x43bc3b0] Final|Native|Static|Public|BlueprintCallable 
+	// class UCreateSessionCallbackProxy* CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int32_t PublicConnections, bool bUseLAN); // [0x4359cb0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.DestroySessionCallbackProxy
@@ -240,14 +240,14 @@ public:
 class UDestroySessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1604) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1605) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1629) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1630) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x28];                                      // 0x0058   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.DestroySessionCallbackProxy.DestroySession
-	// class UDestroySessionCallbackProxy* DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x43bc500] Final|Native|Static|Public|BlueprintCallable 
+	// class UDestroySessionCallbackProxy* DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController); // [0x4359e00] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.EndMatchCallbackProxy
@@ -255,14 +255,14 @@ public:
 class UEndMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1606) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1607) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1631) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1632) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x30];                                      // 0x0058   (0x0030)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.EndMatchCallbackProxy.EndMatch
-	// class UEndMatchCallbackProxy* EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<Class> MatchActor, FString MatchID, TEnumAsByte<EMPMatchOutcome> LocalPlayerOutcome, TEnumAsByte<EMPMatchOutcome> OtherPlayersOutcome); // [0x43bc5d0] Final|Native|Static|Public|BlueprintCallable 
+	// class UEndMatchCallbackProxy* EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<Class> MatchActor, FString MatchID, TEnumAsByte<EMPMatchOutcome> LocalPlayerOutcome, TEnumAsByte<EMPMatchOutcome> OtherPlayersOutcome); // [0x4359ed0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.EndTurnCallbackProxy
@@ -270,14 +270,14 @@ public:
 class UEndTurnCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1608) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1609) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1633) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1634) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x28];                                      // 0x0058   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.EndTurnCallbackProxy.EndTurn
-	// class UEndTurnCallbackProxy* EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, TScriptInterface<Class> TurnBasedMatchInterface); // [0x43bc800] Final|Native|Static|Public|BlueprintCallable 
+	// class UEndTurnCallbackProxy* EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, TScriptInterface<Class> TurnBasedMatchInterface); // [0x435a100] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.FindSessionsCallbackProxy
@@ -285,22 +285,22 @@ public:
 class UFindSessionsCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1610) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1611) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1635) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1636) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x40];                                      // 0x0058   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.FindSessionsCallbackProxy.GetServerName
-	// FString GetServerName(FBlueprintSessionResult& Result);                                                               // [0x43bd8c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// FString GetServerName(FBlueprintSessionResult& Result);                                                               // [0x435b1c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/OnlineSubsystemUtils.FindSessionsCallbackProxy.GetPingInMs
-	// int32_t GetPingInMs(FBlueprintSessionResult& Result);                                                                 // [0x43bd6a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t GetPingInMs(FBlueprintSessionResult& Result);                                                                 // [0x435afa0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/OnlineSubsystemUtils.FindSessionsCallbackProxy.GetMaxPlayers
-	// int32_t GetMaxPlayers(FBlueprintSessionResult& Result);                                                               // [0x43bd480] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t GetMaxPlayers(FBlueprintSessionResult& Result);                                                               // [0x435ad80] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/OnlineSubsystemUtils.FindSessionsCallbackProxy.GetCurrentPlayers
-	// int32_t GetCurrentPlayers(FBlueprintSessionResult& Result);                                                           // [0x43bd260] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// int32_t GetCurrentPlayers(FBlueprintSessionResult& Result);                                                           // [0x435ab60] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/OnlineSubsystemUtils.FindSessionsCallbackProxy.FindSessions
-	// class UFindSessionsCallbackProxy* FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int32_t MaxResults, bool bUseLAN); // [0x43bc9c0] Final|Native|Static|Public|BlueprintCallable 
+	// class UFindSessionsCallbackProxy* FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int32_t MaxResults, bool bUseLAN); // [0x435a2c0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
@@ -308,14 +308,14 @@ public:
 class UFindTurnBasedMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1612) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1613) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1637) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1638) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x38];                                      // 0x0058   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy.FindTurnBasedMatch
-	// class UFindTurnBasedMatchCallbackProxy* FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<Class> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, bool ShowExistingMatches); // [0x43bcb10] Final|Native|Static|Public|BlueprintCallable 
+	// class UFindTurnBasedMatchCallbackProxy* FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<Class> MatchActor, int32_t MinPlayers, int32_t MaxPlayers, int32_t PlayerGroup, bool ShowExistingMatches); // [0x435a410] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.InAppPurchaseCallbackProxy
@@ -323,14 +323,14 @@ public:
 class UInAppPurchaseCallbackProxy : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1614) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1615) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1639) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1640) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x38];                                      // 0x0050   (0x0038)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseCallbackProxy.CreateProxyObjectForInAppPurchase
-	// class UInAppPurchaseCallbackProxy* CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, FInAppPurchaseProductRequest& ProductRequest); // [0x43bbd40] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UInAppPurchaseCallbackProxy* CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, FInAppPurchaseProductRequest& ProductRequest); // [0x4359640] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.InAppPurchaseCallbackProxy2
@@ -338,18 +338,18 @@ public:
 class UInAppPurchaseCallbackProxy2 : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1616) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1617) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1641) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1642) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x60];                                      // 0x0050   (0x0060)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseUnprocessedPurchases
-	// class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchaseUnprocessedPurchases(class APlayerController* PlayerController); // [0x43bc320] Final|Native|Static|Public|BlueprintCallable 
+	// class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchaseUnprocessedPurchases(class APlayerController* PlayerController); // [0x4359c20] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchaseQueryOwned
-	// class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchaseQueryOwned(class APlayerController* PlayerController); // [0x43bc050] Final|Native|Static|Public|BlueprintCallable 
+	// class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchaseQueryOwned(class APlayerController* PlayerController); // [0x4359950] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseCallbackProxy2.CreateProxyObjectForInAppPurchase
-	// class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, FInAppPurchaseProductRequest2& ProductRequest); // [0x43bbc50] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UInAppPurchaseCallbackProxy2* CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, FInAppPurchaseProductRequest2& ProductRequest); // [0x4359550] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
@@ -357,14 +357,14 @@ public:
 class UInAppPurchaseQueryCallbackProxy : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1618) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1619) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1643) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1644) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x0050   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.CreateProxyObjectForInAppPurchaseQuery
-	// class UInAppPurchaseQueryCallbackProxy* CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<FString>& ProductIdentifiers); // [0x43bbf40] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UInAppPurchaseQueryCallbackProxy* CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<FString>& ProductIdentifiers); // [0x4359840] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2
@@ -372,14 +372,14 @@ public:
 class UInAppPurchaseQueryCallbackProxy2 : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1620) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1621) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1645) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1646) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0050   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy2.CreateProxyObjectForInAppPurchaseQuery
-	// class UInAppPurchaseQueryCallbackProxy2* CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<FString>& ProductIdentifiers); // [0x43bbe30] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UInAppPurchaseQueryCallbackProxy2* CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<FString>& ProductIdentifiers); // [0x4359730] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
@@ -387,14 +387,14 @@ public:
 class UInAppPurchaseRestoreCallbackProxy : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1622) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1623) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1647) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1648) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x0050   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.CreateProxyObjectForInAppPurchaseRestore
-	// class UInAppPurchaseRestoreCallbackProxy* CreateProxyObjectForInAppPurchaseRestore(TArray<FInAppPurchaseProductRequest>& ConsumableProductFlags, class APlayerController* PlayerController); // [0x43bc200] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UInAppPurchaseRestoreCallbackProxy* CreateProxyObjectForInAppPurchaseRestore(TArray<FInAppPurchaseProductRequest>& ConsumableProductFlags, class APlayerController* PlayerController); // [0x4359b00] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2
@@ -402,14 +402,14 @@ public:
 class UInAppPurchaseRestoreCallbackProxy2 : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1624) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1625) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1649) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1650) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x60];                                      // 0x0050   (0x0060)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy2.CreateProxyObjectForInAppPurchaseRestore
-	// class UInAppPurchaseRestoreCallbackProxy2* CreateProxyObjectForInAppPurchaseRestore(TArray<FInAppPurchaseProductRequest2>& ConsumableProductFlags, class APlayerController* PlayerController); // [0x43bc0e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UInAppPurchaseRestoreCallbackProxy2* CreateProxyObjectForInAppPurchaseRestore(TArray<FInAppPurchaseProductRequest2>& ConsumableProductFlags, class APlayerController* PlayerController); // [0x43599e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.IpConnection
@@ -448,14 +448,14 @@ public:
 class UJoinSessionCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1626) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1627) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1651) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1652) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x130];                                     // 0x0058   (0x0130)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.JoinSessionCallbackProxy.JoinSession
-	// class UJoinSessionCallbackProxy* JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, FBlueprintSessionResult& SearchResult); // [0x43c1ba0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UJoinSessionCallbackProxy* JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, FBlueprintSessionResult& SearchResult); // [0x435f4a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.LeaderboardBlueprintLibrary
@@ -467,7 +467,7 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.LeaderboardBlueprintLibrary.WriteLeaderboardInteger
-	// bool WriteLeaderboardInteger(class APlayerController* PlayerController, FName StatName, int32_t StatValue);           // [0x43c2db0] Final|Native|Static|Public|BlueprintCallable 
+	// bool WriteLeaderboardInteger(class APlayerController* PlayerController, FName StatName, int32_t StatValue);           // [0x43606b0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
@@ -475,14 +475,14 @@ public:
 class ULeaderboardFlushCallbackProxy : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1628) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1629) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1653) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1654) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x20];                                      // 0x0050   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.CreateProxyObjectForFlush
-	// class ULeaderboardFlushCallbackProxy* CreateProxyObjectForFlush(class APlayerController* PlayerController, FName SessionName); // [0x43c19c0] Final|Native|Static|Public|BlueprintCallable 
+	// class ULeaderboardFlushCallbackProxy* CreateProxyObjectForFlush(class APlayerController* PlayerController, FName SessionName); // [0x435f2c0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
@@ -490,14 +490,14 @@ public:
 class ULeaderboardQueryCallbackProxy : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,1630) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1631) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1655) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1656) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0040   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0050   (0x0050)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.CreateProxyObjectForIntQuery
-	// class ULeaderboardQueryCallbackProxy* CreateProxyObjectForIntQuery(class APlayerController* PlayerController, FName StatName); // [0x43c1ab0] Final|Native|Static|Public|BlueprintCallable 
+	// class ULeaderboardQueryCallbackProxy* CreateProxyObjectForIntQuery(class APlayerController* PlayerController, FName StatName); // [0x435f3b0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.LogoutCallbackProxy
@@ -505,14 +505,14 @@ public:
 class ULogoutCallbackProxy : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,1632) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1633) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1657) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1658) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x18];                                      // 0x0058   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.LogoutCallbackProxy.Logout
-	// class ULogoutCallbackProxy* Logout(class UObject* WorldContextObject, class APlayerController* PlayerController);     // [0x43c1cf0] Final|Native|Static|Public|BlueprintCallable 
+	// class ULogoutCallbackProxy* Logout(class UObject* WorldContextObject, class APlayerController* PlayerController);     // [0x435f5f0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.OnlineBeaconHost
@@ -531,7 +531,7 @@ public:
 class UOnlineEngineInterfaceImpl : public UOnlineEngineInterface
 { 
 public:
-	SDK_UNDEFINED(80,1634) /* TMap<FName, FName> */    __um(MappedUniqueNetIdTypes);                               // 0x0030   (0x0050)  
+	SDK_UNDEFINED(80,1659) /* TMap<FName, FName> */    __um(MappedUniqueNetIdTypes);                               // 0x0030   (0x0050)  
 	TArray<FName>                                      CompatibleUniqueNetIdTypes;                                 // 0x0080   (0x0010)  
 	FName                                              VoiceSubsystemNameOverride;                                 // 0x0090   (0x000C)  
 	unsigned char                                      UnknownData00_6[0xFC];                                      // 0x009C   (0x00FC)  MISSED
@@ -541,9 +541,9 @@ public:
 /// Size: 0x0040 (0x000000 - 0x000040)
 struct FPIELoginSettingsInternal
 { 
-	SDK_UNDEFINED(16,1635) /* FString */               __um(ID);                                                   // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1636) /* FString */               __um(Token);                                                // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1637) /* FString */               __um(Type);                                                 // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1660) /* FString */               __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1661) /* FString */               __um(Token);                                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1662) /* FString */               __um(Type);                                                 // 0x0020   (0x0010)  
 	TArray<char>                                       TokenBytes;                                                 // 0x0030   (0x0010)  
 };
 
@@ -573,8 +573,8 @@ public:
 struct FPlayerReservation
 { 
 	FUniqueNetIdRepl                                   UniqueId;                                                   // 0x0000   (0x0028)  
-	SDK_UNDEFINED(16,1638) /* FString */               __um(ValidationStr);                                        // 0x0028   (0x0010)  
-	SDK_UNDEFINED(16,1639) /* FString */               __um(platform);                                             // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1663) /* FString */               __um(ValidationStr);                                        // 0x0028   (0x0010)  
+	SDK_UNDEFINED(16,1664) /* FString */               __um(platform);                                             // 0x0038   (0x0010)  
 	bool                                               bAllowCrossplay;                                            // 0x0048   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0049   (0x0003)  MISSED
 	float                                              ElapsedTime;                                                // 0x004C   (0x0004)  
@@ -597,7 +597,7 @@ class APartyBeaconClient : public AOnlineBeaconClient
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x02C8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,1640) /* FString */               __um(DestSessionId);                                        // 0x02F8   (0x0010)  
+	SDK_UNDEFINED(16,1665) /* FString */               __um(DestSessionId);                                        // 0x02F8   (0x0010)  
 	FPartyReservation                                  PendingReservation;                                         // 0x0308   (0x0050)  
 	EClientRequestType                                 RequestType;                                                // 0x0358   (0x0001)  
 	bool                                               bPendingReservationSent;                                    // 0x0359   (0x0001)  
@@ -607,23 +607,23 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ServerUpdateReservationRequest
-	// void ServerUpdateReservationRequest(FString SESSIONID, FPartyReservation ReservationUpdate);                          // [0x43c2a50] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdateReservationRequest(FString SESSIONID, FPartyReservation ReservationUpdate);                          // [0x4360350] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ServerReservationRequest
-	// void ServerReservationRequest(FString SESSIONID, FPartyReservation Reservation);                                      // [0x43c25c0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerReservationRequest(FString SESSIONID, FPartyReservation Reservation);                                      // [0x435fec0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ServerRemoveMemberFromReservationRequest
-	// void ServerRemoveMemberFromReservationRequest(FString SESSIONID, FPartyReservation ReservationUpdate);                // [0x43c2330] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerRemoveMemberFromReservationRequest(FString SESSIONID, FPartyReservation ReservationUpdate);                // [0x435fc30] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ServerCancelReservationRequest
-	// void ServerCancelReservationRequest(FUniqueNetIdRepl PartyLeader);                                                    // [0x43c2220] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerCancelReservationRequest(FUniqueNetIdRepl PartyLeader);                                                    // [0x435fb20] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ServerAddOrUpdateReservationRequest
-	// void ServerAddOrUpdateReservationRequest(FString SESSIONID, FPartyReservation Reservation);                           // [0x43c1f90] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerAddOrUpdateReservationRequest(FString SESSIONID, FPartyReservation Reservation);                           // [0x435f890] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationUpdates
-	// void ClientSendReservationUpdates(int32_t NumRemainingReservations);                                                  // [0x43c18a0] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientSendReservationUpdates(int32_t NumRemainingReservations);                                                  // [0x435f1a0] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ClientSendReservationFull
-	// void ClientSendReservationFull();                                                                                     // [0x43c1860] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientSendReservationFull();                                                                                     // [0x435f160] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ClientReservationResponse
-	// void ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);                             // [0x43c1760] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);                             // [0x435f060] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/OnlineSubsystemUtils.PartyBeaconClient.ClientCancelReservationResponse
-	// void ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);                       // [0x43c1640] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientCancelReservationResponse(TEnumAsByte<EPartyReservationResult> ReservationResponse);                       // [0x435ef40] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Class /Script/OnlineSubsystemUtils.PartyBeaconHost
@@ -644,8 +644,8 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FPartyBeaconCrossplayPlatformMapping
 { 
-	SDK_UNDEFINED(16,1641) /* FString */               __um(PlatformName);                                         // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1642) /* FString */               __um(PlatformType);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1666) /* FString */               __um(PlatformName);                                         // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1667) /* FString */               __um(PlatformType);                                         // 0x0010   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystemUtils.PartyBeaconState
@@ -663,7 +663,7 @@ public:
 	int32_t                                            ForceTeamNum;                                               // 0x005C   (0x0004)  
 	bool                                               bRestrictCrossConsole;                                      // 0x0060   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0061   (0x0007)  MISSED
-	SDK_UNDEFINED(16,1643) /* TArray<FString> */       __um(PlatformCrossplayRestrictions);                        // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1668) /* TArray<FString> */       __um(PlatformCrossplayRestrictions);                        // 0x0068   (0x0010)  
 	TArray<FPartyBeaconCrossplayPlatformMapping>       PlatformTypeMapping;                                        // 0x0078   (0x0010)  
 	bool                                               bEnableRemovalRequests;                                     // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0089   (0x0007)  MISSED
@@ -676,14 +676,14 @@ public:
 class UQuitMatchCallbackProxy : public UOnlineBlueprintCallProxyBase
 { 
 public:
-	SDK_UNDEFINED(16,1644) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1645) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1669) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1670) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x28];                                      // 0x0058   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.QuitMatchCallbackProxy.QuitMatch
-	// class UQuitMatchCallbackProxy* QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, TEnumAsByte<EMPMatchOutcome> Outcome, int32_t TurnTimeoutInSeconds); // [0x43c1dc0] Final|Native|Static|Public|BlueprintCallable 
+	// class UQuitMatchCallbackProxy* QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, TEnumAsByte<EMPMatchOutcome> Outcome, int32_t TurnTimeoutInSeconds); // [0x435f6c0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.ShowLoginUICallbackProxy
@@ -691,14 +691,14 @@ public:
 class UShowLoginUICallbackProxy : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,1646) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,1647) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,1671) /* FMulticastInlineDelegate */ __um(OnSuccess);                                         // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,1672) /* FMulticastInlineDelegate */ __um(OnFailure);                                         // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0058   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.ShowLoginUICallbackProxy.ShowExternalLoginUI
-	// class UShowLoginUICallbackProxy* ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController); // [0x43c2ce0] Final|Native|Static|Public|BlueprintCallable 
+	// class UShowLoginUICallbackProxy* ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController); // [0x43605e0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/OnlineSubsystemUtils.SpectatorReservation
@@ -715,7 +715,7 @@ class ASpectatorBeaconClient : public AOnlineBeaconClient
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x02C8   (0x0030)  MISSED
-	SDK_UNDEFINED(16,1648) /* FString */               __um(DestSessionId);                                        // 0x02F8   (0x0010)  
+	SDK_UNDEFINED(16,1673) /* FString */               __um(DestSessionId);                                        // 0x02F8   (0x0010)  
 	FSpectatorReservation                              PendingReservation;                                         // 0x0308   (0x0078)  
 	ESpectatorClientRequestType                        RequestType;                                                // 0x0380   (0x0001)  
 	bool                                               bPendingReservationSent;                                    // 0x0381   (0x0001)  
@@ -725,17 +725,17 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.SpectatorBeaconClient.ServerReservationRequest
-	// void ServerReservationRequest(FString SESSIONID, FSpectatorReservation Reservation);                                  // [0x43c2850] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerReservationRequest(FString SESSIONID, FSpectatorReservation Reservation);                                  // [0x4360150] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.SpectatorBeaconClient.ServerCancelReservationRequest
-	// void ServerCancelReservationRequest(FUniqueNetIdRepl Spectator);                                                      // [0x43c2220] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerCancelReservationRequest(FUniqueNetIdRepl Spectator);                                                      // [0x435fb20] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationUpdates
-	// void ClientSendReservationUpdates(int32_t NumRemainingReservations);                                                  // [0x43c1930] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientSendReservationUpdates(int32_t NumRemainingReservations);                                                  // [0x435f230] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/OnlineSubsystemUtils.SpectatorBeaconClient.ClientSendReservationFull
-	// void ClientSendReservationFull();                                                                                     // [0x43c1880] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientSendReservationFull();                                                                                     // [0x435f180] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/OnlineSubsystemUtils.SpectatorBeaconClient.ClientReservationResponse
-	// void ClientReservationResponse(TEnumAsByte<ESpectatorReservationResult> ReservationResponse);                         // [0x43c17e0] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientReservationResponse(TEnumAsByte<ESpectatorReservationResult> ReservationResponse);                         // [0x435f0e0] Net|NetReliableNative|Event|Public|NetClient 
 	// Function /Script/OnlineSubsystemUtils.SpectatorBeaconClient.ClientCancelReservationResponse
-	// void ClientCancelReservationResponse(TEnumAsByte<ESpectatorReservationResult> ReservationResponse);                   // [0x43c16c0] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientCancelReservationResponse(TEnumAsByte<ESpectatorReservationResult> ReservationResponse);                   // [0x435efc0] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Class /Script/OnlineSubsystemUtils.SpectatorBeaconHost
@@ -775,9 +775,9 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.TestBeaconClient.ServerPong
-	// void ServerPong();                                                                                                    // [0x43c3ce0] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
+	// void ServerPong();                                                                                                    // [0x43615e0] Net|NetReliableNative|Event|Public|NetServer|NetValidate 
 	// Function /Script/OnlineSubsystemUtils.TestBeaconClient.ClientPing
-	// void ClientPing();                                                                                                    // [0x43c3630] Net|NetReliableNative|Event|Public|NetClient 
+	// void ClientPing();                                                                                                    // [0x4360f30] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Class /Script/OnlineSubsystemUtils.TestBeaconHost
@@ -796,13 +796,13 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.TurnBasedBlueprintLibrary.RegisterTurnBasedMatchInterfaceObject
-	// void RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object); // [0x43c3be0] Final|Native|Static|Public|BlueprintCallable 
+	// void RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object); // [0x43614e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetPlayerDisplayName
-	// void GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, int32_t PlayerIndex, FString& PlayerDisplayName); // [0x43c39b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, int32_t PlayerIndex, FString& PlayerDisplayName); // [0x43612b0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetMyPlayerIndex
-	// void GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, int32_t& PlayerIndex); // [0x43c3800] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, int32_t& PlayerIndex); // [0x4361100] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OnlineSubsystemUtils.TurnBasedBlueprintLibrary.GetIsMyTurn
-	// void GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, bool& bIsMyTurn); // [0x43c3650] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, FString MatchID, bool& bIsMyTurn); // [0x4360f50] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OnlineSubsystemUtils.VoipListenerSynthComponent
@@ -815,7 +815,7 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystemUtils.VoipListenerSynthComponent.IsIdling
-	// bool IsIdling();                                                                                                      // [0x43c3bb0] Final|Native|Public|BlueprintCallable 
+	// bool IsIdling();                                                                                                      // [0x43614b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/OnlineSubsystemUtils.BlueprintSessionResult
@@ -829,75 +829,75 @@ struct FBlueprintSessionResult
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FInAppPurchaseReceiptInfo2
 { 
-	SDK_UNDEFINED(16,1649) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1650) /* FString */               __um(ItemId);                                               // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1651) /* FString */               __um(ValidationInfo);                                       // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1674) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1675) /* FString */               __um(ItemId);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1676) /* FString */               __um(ValidationInfo);                                       // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemUtils.OnlineProxyStoreOffer
 /// Size: 0x0110 (0x000000 - 0x000110)
 struct FOnlineProxyStoreOffer
 { 
-	SDK_UNDEFINED(16,1652) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
-	SDK_UNDEFINED(24,1653) /* FText */                 __um(Title);                                                // 0x0010   (0x0018)  
-	SDK_UNDEFINED(24,1654) /* FText */                 __um(Description);                                          // 0x0028   (0x0018)  
-	SDK_UNDEFINED(24,1655) /* FText */                 __um(LongDescription);                                      // 0x0040   (0x0018)  
-	SDK_UNDEFINED(24,1656) /* FText */                 __um(RegularPriceText);                                     // 0x0058   (0x0018)  
+	SDK_UNDEFINED(16,1677) /* FString */               __um(OfferId);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(24,1678) /* FText */                 __um(Title);                                                // 0x0010   (0x0018)  
+	SDK_UNDEFINED(24,1679) /* FText */                 __um(Description);                                          // 0x0028   (0x0018)  
+	SDK_UNDEFINED(24,1680) /* FText */                 __um(LongDescription);                                      // 0x0040   (0x0018)  
+	SDK_UNDEFINED(24,1681) /* FText */                 __um(RegularPriceText);                                     // 0x0058   (0x0018)  
 	int32_t                                            RegularPrice;                                               // 0x0070   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	SDK_UNDEFINED(24,1657) /* FText */                 __um(PriceText);                                            // 0x0078   (0x0018)  
+	SDK_UNDEFINED(24,1682) /* FText */                 __um(PriceText);                                            // 0x0078   (0x0018)  
 	int32_t                                            NumericPrice;                                               // 0x0090   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0094   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1658) /* FString */               __um(CurrencyCode);                                         // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,1683) /* FString */               __um(CurrencyCode);                                         // 0x0098   (0x0010)  
 	FDateTime                                          ReleaseDate;                                                // 0x00A8   (0x0008)  
 	FDateTime                                          ExpirationDate;                                             // 0x00B0   (0x0008)  
 	EOnlineProxyStoreOfferDiscountType                 DiscountType;                                               // 0x00B8   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x7];                                       // 0x00B9   (0x0007)  MISSED
-	SDK_UNDEFINED(80,1659) /* TMap<FString, FString> */ __um(DynamicFields);                                       // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,1684) /* TMap<FString, FString> */ __um(DynamicFields);                                       // 0x00C0   (0x0050)  
 };
 
 /// Struct /Script/OnlineSubsystemUtils.InAppPurchaseRestoreInfo2
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FInAppPurchaseRestoreInfo2
 { 
-	SDK_UNDEFINED(16,1660) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1661) /* FString */               __um(ItemId);                                               // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1662) /* FString */               __um(ValidationInfo);                                       // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1685) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1686) /* FString */               __um(ItemId);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1687) /* FString */               __um(ValidationInfo);                                       // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemUtils.InAppPurchaseReceiptInfo
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FInAppPurchaseReceiptInfo
 { 
-	SDK_UNDEFINED(16,1663) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1664) /* FString */               __um(ItemId);                                               // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1665) /* FString */               __um(ValidationInfo);                                       // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1688) /* FString */               __um(ItemName);                                             // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1689) /* FString */               __um(ItemId);                                               // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1690) /* FString */               __um(ValidationInfo);                                       // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystemUtils.InAppPurchaseProductInfo2
 /// Size: 0x00F8 (0x000000 - 0x0000F8)
 struct FInAppPurchaseProductInfo2
 { 
-	SDK_UNDEFINED(16,1666) /* FString */               __um(Identifier);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,1667) /* FString */               __um(TransactionIdentifier);                                // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,1668) /* FString */               __um(DisplayName);                                          // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,1669) /* FString */               __um(DisplayDescription);                                   // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,1670) /* FString */               __um(DisplayPrice);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,1691) /* FString */               __um(Identifier);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1692) /* FString */               __um(TransactionIdentifier);                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,1693) /* FString */               __um(DisplayName);                                          // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,1694) /* FString */               __um(DisplayDescription);                                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1695) /* FString */               __um(DisplayPrice);                                         // 0x0040   (0x0010)  
 	float                                              RawPrice;                                                   // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0054   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1671) /* FString */               __um(CurrencyCode);                                         // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,1672) /* FString */               __um(CurrencySymbol);                                       // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,1673) /* FString */               __um(DecimalSeparator);                                     // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,1674) /* FString */               __um(GroupingSeparator);                                    // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,1675) /* FString */               __um(ReceiptData);                                          // 0x0098   (0x0010)  
-	SDK_UNDEFINED(80,1676) /* TMap<FString, FString> */ __um(DynamicFields);                                       // 0x00A8   (0x0050)  
+	SDK_UNDEFINED(16,1696) /* FString */               __um(CurrencyCode);                                         // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,1697) /* FString */               __um(CurrencySymbol);                                       // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,1698) /* FString */               __um(DecimalSeparator);                                     // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,1699) /* FString */               __um(GroupingSeparator);                                    // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,1700) /* FString */               __um(ReceiptData);                                          // 0x0098   (0x0010)  
+	SDK_UNDEFINED(80,1701) /* TMap<FString, FString> */ __um(DynamicFields);                                       // 0x00A8   (0x0050)  
 };
 
 /// Struct /Script/OnlineSubsystemUtils.InAppPurchaseProductRequest2
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FInAppPurchaseProductRequest2
 { 
-	SDK_UNDEFINED(16,1677) /* FString */               __um(ProductIdentifier);                                    // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,1702) /* FString */               __um(ProductIdentifier);                                    // 0x0000   (0x0010)  
 	bool                                               bIsConsumable;                                              // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };

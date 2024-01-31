@@ -24,15 +24,13 @@ public:
 };
 
 /// Class /Script/Anniversary.CrownPickupInteraction
-/// Size: 0x0050 (0x000790 - 0x0007E0)
+/// Size: 0x0030 (0x000790 - 0x0007C0)
 class UCrownPickupInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x28];                                      // 0x0790   (0x0028)  MISSED
-	FName                                              _attachToSocketName;                                        // 0x07B8   (0x000C)  
-	FGameplayTag                                       _pickupScoreEvent;                                          // 0x07C4   (0x000C)  
-	bool                                               _isInteractionChargeComplete;                               // 0x07D0   (0x0001)  
-	unsigned char                                      UnknownData01_6[0xF];                                       // 0x07D1   (0x000F)  MISSED
+	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0790   (0x0018)  MISSED
+	FName                                              _attachToSocketName;                                        // 0x07A8   (0x000C)  
+	FGameplayTag                                       _pickupScoreEvent;                                          // 0x07B4   (0x000C)  
 };
 
 /// Class /Script/Anniversary.CrownPillarInteractable
@@ -60,19 +58,19 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary.CrownPillarInteractable.OnLocallyObservedChanged
-	// void OnLocallyObservedChanged();                                                                                      // [0x4da1f60] Final|Native|Private 
+	// void OnLocallyObservedChanged();                                                                                      // [0x4d71e40] Final|Native|Private 
 	// Function /Script/Anniversary.CrownPillarInteractable.Local_OnIntroCompleted
-	// void Local_OnIntroCompleted();                                                                                        // [0x4da1f40] Final|Native|Private 
+	// void Local_OnIntroCompleted();                                                                                        // [0x4d71e20] Final|Native|Private 
 	// Function /Script/Anniversary.CrownPillarInteractable.IsLocallyObservedPlayerEquippedWithAnniversaryOffering
-	// bool IsLocallyObservedPlayerEquippedWithAnniversaryOffering();                                                        // [0x4da1f10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocallyObservedPlayerEquippedWithAnniversaryOffering();                                                        // [0x4d71df0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/Anniversary.CrownPillarInteractable.Cosmetic_OnStoppedInteracting
-	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary.CrownPillarInteractable.Cosmetic_OnStartedInteracting
-	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary.CrownPillarInteractable.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Anniversary.CrownPillarInteractable.Cosmetic_OnInteractionCancelled
-	// void Cosmetic_OnInteractionCancelled();                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCancelled();                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Anniversary.CrownPillarOutlineUpdateStrategy
@@ -97,6 +95,6 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary.CrownPlayerComponent.Cosmetic_SetVFXParticlesVisibility
-	// void Cosmetic_SetVFXParticlesVisibility(bool IsVisible);                                                              // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetVFXParticlesVisibility(bool IsVisible);                                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 

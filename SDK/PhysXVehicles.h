@@ -134,49 +134,49 @@ public:
 
 	/// Functions
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
-	// void SetUseAutoGears(bool bUseAuto);                                                                                  // [0x4d3d920] Final|Native|Public|BlueprintCallable 
+	// void SetUseAutoGears(bool bUseAuto);                                                                                  // [0x4d0d730] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetThrottleInput
-	// void SetThrottleInput(float Throttle);                                                                                // [0x4d3d8a0] Final|Native|Public|BlueprintCallable 
+	// void SetThrottleInput(float Throttle);                                                                                // [0x4d0d6b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetTargetGear
-	// void SetTargetGear(int32_t GearNum, bool bImmediate);                                                                 // [0x4d3d7d0] Final|Native|Public|BlueprintCallable 
+	// void SetTargetGear(int32_t GearNum, bool bImmediate);                                                                 // [0x4d0d5e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetSteeringInput
-	// void SetSteeringInput(float Steering);                                                                                // [0x4d3d750] Final|Native|Public|BlueprintCallable 
+	// void SetSteeringInput(float Steering);                                                                                // [0x4d0d560] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetHandbrakeInput
-	// void SetHandbrakeInput(bool bNewHandbrake);                                                                           // [0x4d3d5f0] Final|Native|Public|BlueprintCallable 
+	// void SetHandbrakeInput(bool bNewHandbrake);                                                                           // [0x4d0d400] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
-	// void SetGroupsToIgnoreMask(FNavAvoidanceMask& GroupMask);                                                             // [0x4d3d560] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetGroupsToIgnoreMask(FNavAvoidanceMask& GroupMask);                                                             // [0x4d0d370] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnore
-	// void SetGroupsToIgnore(int32_t GroupFlags);                                                                           // [0x4d3d4d0] Final|Native|Public|BlueprintCallable 
+	// void SetGroupsToIgnore(int32_t GroupFlags);                                                                           // [0x4d0d2e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
-	// void SetGroupsToAvoidMask(FNavAvoidanceMask& GroupMask);                                                              // [0x4d3d440] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetGroupsToAvoidMask(FNavAvoidanceMask& GroupMask);                                                              // [0x4d0d250] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoid
-	// void SetGroupsToAvoid(int32_t GroupFlags);                                                                            // [0x4d3d3b0] Final|Native|Public|BlueprintCallable 
+	// void SetGroupsToAvoid(int32_t GroupFlags);                                                                            // [0x4d0d1c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetGearUp
-	// void SetGearUp(bool bNewGearUp);                                                                                      // [0x4d3d320] Final|Native|Public|BlueprintCallable 
+	// void SetGearUp(bool bNewGearUp);                                                                                      // [0x4d0d130] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetGearDown
-	// void SetGearDown(bool bNewGearDown);                                                                                  // [0x4d3d290] Final|Native|Public|BlueprintCallable 
+	// void SetGearDown(bool bNewGearDown);                                                                                  // [0x4d0d0a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetBrakeInput
-	// void SetBrakeInput(float Brake);                                                                                      // [0x4d3d070] Final|Native|Public|BlueprintCallable 
+	// void SetBrakeInput(float Brake);                                                                                      // [0x4d0ce80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
-	// void SetAvoidanceGroupMask(FNavAvoidanceMask& GroupMask);                                                             // [0x4d3cfe0] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetAvoidanceGroupMask(FNavAvoidanceMask& GroupMask);                                                             // [0x4d0cdf0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroup
-	// void SetAvoidanceGroup(int32_t GroupFlags);                                                                           // [0x4d3cf50] Final|Native|Public|BlueprintCallable 
+	// void SetAvoidanceGroup(int32_t GroupFlags);                                                                           // [0x4d0cd60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceEnabled
-	// void SetAvoidanceEnabled(bool bEnable);                                                                               // [0x4d3cec0] Final|Native|Public|BlueprintCallable 
+	// void SetAvoidanceEnabled(bool bEnable);                                                                               // [0x4d0ccd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.ServerUpdateState
-	// void ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32_t CurrentGear); // [0x4d3ccd0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
+	// void ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32_t CurrentGear); // [0x4d0cae0] Net|NetReliableNative|Event|Protected|NetServer|NetValidate 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.GetUseAutoGears
-	// bool GetUseAutoGears();                                                                                               // [0x4d3cc40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool GetUseAutoGears();                                                                                               // [0x4d0ca50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.GetTargetGear
-	// int32_t GetTargetGear();                                                                                              // [0x4d3cc10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetTargetGear();                                                                                              // [0x4d0ca20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.GetForwardSpeed
-	// float GetForwardSpeed();                                                                                              // [0x4d3cb50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetForwardSpeed();                                                                                              // [0x4d0c960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.GetEngineRotationSpeed
-	// float GetEngineRotationSpeed();                                                                                       // [0x4d3cb20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEngineRotationSpeed();                                                                                       // [0x4d0c930] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.GetEngineMaxRotationSpeed
-	// float GetEngineMaxRotationSpeed();                                                                                    // [0x4d3caf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetEngineMaxRotationSpeed();                                                                                    // [0x4d0c900] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.WheeledVehicleMovementComponent.GetCurrentGear
-	// int32_t GetCurrentGear();                                                                                             // [0x4d3cac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetCurrentGear();                                                                                             // [0x4d0c8d0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PhysXVehicles.SimpleWheeledVehicleMovementComponent
@@ -188,11 +188,11 @@ public:
 
 	/// Functions
 	// Function /Script/PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetSteerAngle
-	// void SetSteerAngle(float SteerAngle, int32_t WheelIndex);                                                             // [0x4d3d680] Final|Native|Public|BlueprintCallable 
+	// void SetSteerAngle(float SteerAngle, int32_t WheelIndex);                                                             // [0x4d0d490] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetDriveTorque
-	// void SetDriveTorque(float DriveTorque, int32_t WheelIndex);                                                           // [0x4d3d1c0] Final|Native|Public|BlueprintCallable 
+	// void SetDriveTorque(float DriveTorque, int32_t WheelIndex);                                                           // [0x4d0cfd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/PhysXVehicles.SimpleWheeledVehicleMovementComponent.SetBrakeTorque
-	// void SetBrakeTorque(float BrakeTorque, int32_t WheelIndex);                                                           // [0x4d3d0f0] Final|Native|Public|BlueprintCallable 
+	// void SetBrakeTorque(float BrakeTorque, int32_t WheelIndex);                                                           // [0x4d0cf00] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/PhysXVehicles.TireConfigMaterialFriction
@@ -227,7 +227,7 @@ public:
 
 	/// Functions
 	// Function /Script/PhysXVehicles.VehicleAnimInstance.GetVehicle
-	// class AWheeledVehicle* GetVehicle();                                                                                  // [0x4d3cc70] Final|Native|Public|BlueprintCallable 
+	// class AWheeledVehicle* GetVehicle();                                                                                  // [0x4d0ca80] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/PhysXVehicles.VehicleWheel
@@ -257,7 +257,7 @@ public:
 	float                                              SuspensionMaxDrop;                                          // 0x0084   (0x0004)  
 	float                                              SuspensionNaturalFrequency;                                 // 0x0088   (0x0004)  
 	float                                              SuspensionDampingRatio;                                     // 0x008C   (0x0004)  
-	SDK_UNDEFINED(1,4940) /* TEnumAsByte<EWheelSweepType> */ __um(SweepType);                                      // 0x0090   (0x0001)  
+	SDK_UNDEFINED(1,5329) /* TEnumAsByte<EWheelSweepType> */ __um(SweepType);                                      // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0091   (0x0003)  MISSED
 	float                                              MaxBrakeTorque;                                             // 0x0094   (0x0004)  
 	float                                              MaxHandBrakeTorque;                                         // 0x0098   (0x0004)  
@@ -279,13 +279,13 @@ public:
 
 	/// Functions
 	// Function /Script/PhysXVehicles.VehicleWheel.IsInAir
-	// bool IsInAir();                                                                                                       // [0x4d3cca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInAir();                                                                                                       // [0x4d0cab0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.VehicleWheel.GetSuspensionOffset
-	// float GetSuspensionOffset();                                                                                          // [0x4d3cbe0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSuspensionOffset();                                                                                          // [0x4d0c9f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.VehicleWheel.GetSteerAngle
-	// float GetSteerAngle();                                                                                                // [0x4d3cbb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSteerAngle();                                                                                                // [0x4d0c9c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/PhysXVehicles.VehicleWheel.GetRotationAngle
-	// float GetRotationAngle();                                                                                             // [0x4d3cb80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRotationAngle();                                                                                             // [0x4d0c990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/PhysXVehicles.WheeledVehicle
@@ -314,7 +314,7 @@ struct FVehicleEngineData
 /// Size: 0x001C (0x000000 - 0x00001C)
 struct FVehicleDifferential4WData
 { 
-	SDK_UNDEFINED(1,4941) /* TEnumAsByte<EVehicleDifferential4W> */ __um(DifferentialType);                        // 0x0000   (0x0001)  
+	SDK_UNDEFINED(1,5330) /* TEnumAsByte<EVehicleDifferential4W> */ __um(DifferentialType);                        // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
 	float                                              FrontRearSplit;                                             // 0x0004   (0x0004)  
 	float                                              FrontLeftRightSplit;                                        // 0x0008   (0x0004)  

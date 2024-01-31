@@ -19,7 +19,7 @@ public:
 
 	/// Functions
 	// Function /Script/OpenColorIO.OpenColorIOBlueprintLibrary.ApplyColorSpaceTransform
-	// bool ApplyColorSpaceTransform(class UObject* WorldContextObject, FOpenColorIOColorConversionSettings& ConversionSettings, class UTexture* InputTexture, class UTextureRenderTarget2D* OutputRenderTarget); // [0x4c231a0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool ApplyColorSpaceTransform(class UObject* WorldContextObject, FOpenColorIOColorConversionSettings& ConversionSettings, class UTexture* InputTexture, class UTextureRenderTarget2D* OutputRenderTarget); // [0x4bf2dd0] Final|RequiredAPI|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Class /Script/OpenColorIO.OpenColorIOColorTransform
@@ -28,8 +28,8 @@ class UOpenColorIOColorTransform : public UObject
 { 
 public:
 	class UOpenColorIOConfiguration*                   ConfigurationOwner;                                         // 0x0030   (0x0008)  
-	SDK_UNDEFINED(16,4919) /* FString */               __um(SourceColorSpace);                                     // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4920) /* FString */               __um(DestinationColorSpace);                                // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5308) /* FString */               __um(SourceColorSpace);                                     // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5309) /* FString */               __um(DestinationColorSpace);                                // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x48];                                      // 0x0058   (0x0048)  MISSED
 };
 
@@ -37,10 +37,10 @@ public:
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FOpenColorIOColorSpace
 { 
-	SDK_UNDEFINED(16,4921) /* FString */               __um(ColorSpaceName);                                       // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5310) /* FString */               __um(ColorSpaceName);                                       // 0x0000   (0x0010)  
 	int32_t                                            ColorSpaceIndex;                                            // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4922) /* FString */               __um(FamilyName);                                           // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,5311) /* FString */               __um(FamilyName);                                           // 0x0018   (0x0010)  
 };
 
 /// Class /Script/OpenColorIO.OpenColorIOConfiguration
@@ -64,15 +64,15 @@ public:
 
 	/// Functions
 	// Function /Script/OpenColorIO.OpenColorIODisplayExtensionWrapper.SetSceneExtensionIsActiveFunctions
-	// void SetSceneExtensionIsActiveFunctions(TArray<FSceneViewExtensionIsActiveFunctor>& IsActiveFunctions);               // [0x4c23770] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSceneExtensionIsActiveFunctions(TArray<FSceneViewExtensionIsActiveFunctor>& IsActiveFunctions);               // [0x4bf33a0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OpenColorIO.OpenColorIODisplayExtensionWrapper.SetSceneExtensionIsActiveFunction
-	// void SetSceneExtensionIsActiveFunction(FSceneViewExtensionIsActiveFunctor& IsActiveFunction);                         // [0x4c23680] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void SetSceneExtensionIsActiveFunction(FSceneViewExtensionIsActiveFunctor& IsActiveFunction);                         // [0x4bf32b0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/OpenColorIO.OpenColorIODisplayExtensionWrapper.SetOpenColorIOConfiguration
-	// void SetOpenColorIOConfiguration(FOpenColorIODisplayConfiguration InDisplayConfiguration);                            // [0x4c23560] Final|Native|Public|BlueprintCallable 
+	// void SetOpenColorIOConfiguration(FOpenColorIODisplayConfiguration InDisplayConfiguration);                            // [0x4bf3190] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OpenColorIO.OpenColorIODisplayExtensionWrapper.RemoveSceneExtension
-	// void RemoveSceneExtension();                                                                                          // [0x4c23540] Final|Native|Public|BlueprintCallable 
+	// void RemoveSceneExtension();                                                                                          // [0x4bf3170] Final|Native|Public|BlueprintCallable 
 	// Function /Script/OpenColorIO.OpenColorIODisplayExtensionWrapper.CreateOpenColorIODisplayExtension
-	// class UOpenColorIODisplayExtensionWrapper* CreateOpenColorIODisplayExtension(FOpenColorIODisplayConfiguration InDisplayConfiguration, FSceneViewExtensionIsActiveFunctor& IsActiveFunction); // [0x4c23370] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UOpenColorIODisplayExtensionWrapper* CreateOpenColorIODisplayExtension(FOpenColorIODisplayConfiguration InDisplayConfiguration, FSceneViewExtensionIsActiveFunctor& IsActiveFunction); // [0x4bf2fa0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/OpenColorIO.OpenColorIOColorConversionSettings

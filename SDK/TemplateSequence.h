@@ -28,9 +28,9 @@ class UTemplateSequence : public UMovieSceneSequence
 { 
 public:
 	class UMovieScene*                                 MovieScene;                                                 // 0x0068   (0x0008)  
-	SDK_UNDEFINED(48,4094) /* TWeakObjectPtr<UClass*> */ __um(BoundActorClass);                                    // 0x0070   (0x0030)  
-	SDK_UNDEFINED(48,4095) /* TWeakObjectPtr<AActor*> */ __um(BoundPreviewActor);                                  // 0x00A0   (0x0030)  
-	SDK_UNDEFINED(80,4096) /* TMap<FGuid, FName> */    __um(BoundActorComponents);                                 // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(48,4188) /* TWeakObjectPtr<UClass*> */ __um(BoundActorClass);                                    // 0x0070   (0x0030)  
+	SDK_UNDEFINED(48,4189) /* TWeakObjectPtr<AActor*> */ __um(BoundPreviewActor);                                  // 0x00A0   (0x0030)  
+	SDK_UNDEFINED(80,4190) /* TMap<FGuid, FName> */    __um(BoundActorComponents);                                 // 0x00D0   (0x0050)  
 };
 
 /// Class /Script/TemplateSequence.CameraAnimationSequence
@@ -95,7 +95,7 @@ public:
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FTemplateSequenceBindingOverrideData
 { 
-	SDK_UNDEFINED(8,4097) /* TWeakObjectPtr<UObject*> */ __um(Object);                                             // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,4191) /* TWeakObjectPtr<UObject*> */ __um(Object);                                             // 0x0000   (0x0008)  
 	bool                                               bOverridesDefault;                                          // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0009   (0x0003)  MISSED
 };
@@ -116,15 +116,15 @@ public:
 
 	/// Functions
 	// Function /Script/TemplateSequence.TemplateSequenceActor.SetSequence
-	// void SetSequence(class UTemplateSequence* InSequence);                                                                // [0x4c4ee70] Final|Native|Public|BlueprintCallable 
+	// void SetSequence(class UTemplateSequence* InSequence);                                                                // [0x4c1eaa0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.SetBinding
-	// void SetBinding(class AActor* Actor, bool bOverridesDefault);                                                         // [0x4c4eda0] Final|Native|Public|BlueprintCallable 
+	// void SetBinding(class AActor* Actor, bool bOverridesDefault);                                                         // [0x4c1e9d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.LoadSequence
-	// class UTemplateSequence* LoadSequence();                                                                              // [0x4c4ed70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTemplateSequence* LoadSequence();                                                                              // [0x4c1e9a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.GetSequencePlayer
-	// class UTemplateSequencePlayer* GetSequencePlayer();                                                                   // [0x4c4ed40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTemplateSequencePlayer* GetSequencePlayer();                                                                   // [0x4c1e970] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TemplateSequence.TemplateSequenceActor.GetSequence
-	// class UTemplateSequence* GetSequence();                                                                               // [0x4c4ed10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UTemplateSequence* GetSequence();                                                                               // [0x4c1e940] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TemplateSequence.TemplateSequencePlayer
@@ -137,7 +137,7 @@ public:
 
 	/// Functions
 	// Function /Script/TemplateSequence.TemplateSequencePlayer.CreateTemplateSequencePlayer
-	// class UTemplateSequencePlayer* CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, FMovieSceneSequencePlaybackSettings Settings, class ATemplateSequenceActor*& OutActor); // [0x4c4eb90] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// class UTemplateSequencePlayer* CreateTemplateSequencePlayer(class UObject* WorldContextObject, class UTemplateSequence* TemplateSequence, FMovieSceneSequencePlaybackSettings Settings, class ATemplateSequenceActor*& OutActor); // [0x4c1e7c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 };
 
 /// Struct /Script/TemplateSequence.TemplateSectionPropertyScale

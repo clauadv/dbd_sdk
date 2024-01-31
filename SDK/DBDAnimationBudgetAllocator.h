@@ -27,7 +27,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDAnimationBudgetAllocator.DBDSkeletalMeshComponentBudgeted.SetAnimationDependency
-	// void SetAnimationDependency(class USkeletalMeshComponent* meshDependency);                                            // [0x4ecf950] Native|Public|BlueprintCallable 
+	// void SetAnimationDependency(class USkeletalMeshComponent* meshDependency);                                            // [0x4ea68e0] Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDAnimationBudgetAllocator.AnimBudgeterSignificanceStrategy

@@ -212,11 +212,11 @@ struct FMovieSceneEasingSettings
 { 
 	int32_t                                            AutoEaseInDuration;                                         // 0x0000   (0x0004)  
 	int32_t                                            AutoEaseOutDuration;                                        // 0x0004   (0x0004)  
-	SDK_UNDEFINED(16,918) /* TScriptInterface<Class> */ __um(EaseIn);                                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,923) /* TScriptInterface<Class> */ __um(EaseIn);                                              // 0x0008   (0x0010)  
 	bool                                               bManualEaseIn;                                              // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0019   (0x0003)  MISSED
 	int32_t                                            ManualEaseInDuration;                                       // 0x001C   (0x0004)  
-	SDK_UNDEFINED(16,919) /* TScriptInterface<Class> */ __um(EaseOut);                                             // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,924) /* TScriptInterface<Class> */ __um(EaseOut);                                             // 0x0020   (0x0010)  
 	bool                                               bManualEaseOut;                                             // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0031   (0x0003)  MISSED
 	int32_t                                            ManualEaseOutDuration;                                      // 0x0034   (0x0004)  
@@ -266,37 +266,37 @@ public:
 
 	/// Functions
 	// Function /Script/MovieScene.MovieSceneSection.SetRowIndex
-	// void SetRowIndex(int32_t NewRowIndex);                                                                                // [0x70f7290] Final|Native|Public|BlueprintCallable 
+	// void SetRowIndex(int32_t NewRowIndex);                                                                                // [0x7107010] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetPreRollFrames
-	// void SetPreRollFrames(int32_t InPreRollFrames);                                                                       // [0x70f7200] Final|Native|Public|BlueprintCallable 
+	// void SetPreRollFrames(int32_t InPreRollFrames);                                                                       // [0x7106f80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetPostRollFrames
-	// void SetPostRollFrames(int32_t InPostRollFrames);                                                                     // [0x70f7170] Final|Native|Public|BlueprintCallable 
+	// void SetPostRollFrames(int32_t InPostRollFrames);                                                                     // [0x7106ef0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetOverlapPriority
-	// void SetOverlapPriority(int32_t NewPriority);                                                                         // [0x70f6f40] Final|Native|Public|BlueprintCallable 
+	// void SetOverlapPriority(int32_t NewPriority);                                                                         // [0x7106cc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetIsLocked
-	// void SetIsLocked(bool bInIsLocked);                                                                                   // [0x70f6eb0] Final|Native|Public|BlueprintCallable 
+	// void SetIsLocked(bool bInIsLocked);                                                                                   // [0x7106c30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetIsActive
-	// void SetIsActive(bool bInIsActive);                                                                                   // [0x70f6e00] Final|Native|Public|BlueprintCallable 
+	// void SetIsActive(bool bInIsActive);                                                                                   // [0x7106b80] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetCompletionMode
-	// void SetCompletionMode(EMovieSceneCompletionMode InCompletionMode);                                                   // [0x70f6b50] Final|Native|Public|BlueprintCallable 
+	// void SetCompletionMode(EMovieSceneCompletionMode InCompletionMode);                                                   // [0x71068d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.SetBlendType
-	// void SetBlendType(EMovieSceneBlendType InBlendType);                                                                  // [0x70f6ad0] RequiredAPI|Native|Public|BlueprintCallable 
+	// void SetBlendType(EMovieSceneBlendType InBlendType);                                                                  // [0x7106850] RequiredAPI|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSection.IsLocked
-	// bool IsLocked();                                                                                                      // [0x70f5ef0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsLocked();                                                                                                      // [0x7105c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.IsActive
-	// bool IsActive();                                                                                                      // [0x70f5ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActive();                                                                                                      // [0x7105c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.GetRowIndex
-	// int32_t GetRowIndex();                                                                                                // [0x4d78f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetRowIndex();                                                                                                // [0x4d48d50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.GetPreRollFrames
-	// int32_t GetPreRollFrames();                                                                                           // [0x70f5e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPreRollFrames();                                                                                           // [0x7105b90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.GetPostRollFrames
-	// int32_t GetPostRollFrames();                                                                                          // [0x70f5df0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPostRollFrames();                                                                                          // [0x7105b70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.GetOverlapPriority
-	// int32_t GetOverlapPriority();                                                                                         // [0x70f5da0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetOverlapPriority();                                                                                         // [0x7105b20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.GetCompletionMode
-	// EMovieSceneCompletionMode GetCompletionMode();                                                                        // [0x70f5b40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMovieSceneCompletionMode GetCompletionMode();                                                                        // [0x71058c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSection.GetBlendType
-	// FOptionalMovieSceneBlendType GetBlendType();                                                                          // [0x70f5a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FOptionalMovieSceneBlendType GetBlendType();                                                                          // [0x7105780] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MovieScene.MovieSceneTrackEvalOptions
@@ -368,9 +368,9 @@ public:
 
 	/// Functions
 	// Function /Script/MovieScene.MovieSceneSequence.FindBindingsByTag
-	// TArray<FMovieSceneObjectBindingID> FindBindingsByTag(FName InBindingName);                                            // [0x70f5910] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FMovieSceneObjectBindingID> FindBindingsByTag(FName InBindingName);                                            // [0x7105690] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequence.FindBindingByTag
-	// FMovieSceneObjectBindingID FindBindingByTag(FName InBindingName);                                                     // [0x70f5840] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FMovieSceneObjectBindingID FindBindingByTag(FName InBindingName);                                                     // [0x71055c0] Final|RequiredAPI|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/MovieScene.MovieSceneSequenceLoopCount
@@ -404,12 +404,12 @@ struct FMovieSceneSequencePlaybackSettings
 /// Size: 0x00E8 (0x000000 - 0x0000E8)
 struct FMovieSceneRootEvaluationTemplateInstance
 { 
-	SDK_UNDEFINED(8,920) /* TWeakObjectPtr<UMovieSceneSequence*> */ __um(WeakRootSequence);                        // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,925) /* TWeakObjectPtr<UMovieSceneSequence*> */ __um(WeakRootSequence);                        // 0x0000   (0x0008)  
 	class UMovieSceneCompiledDataManager*              CompiledDataManager;                                        // 0x0008   (0x0008)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0010   (0x0008)  MISSED
 	class UMovieSceneEntitySystemLinker*               EntitySystemLinker;                                         // 0x0018   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x70];                                      // 0x0020   (0x0070)  MISSED
-	SDK_UNDEFINED(80,921) /* TMap<FMovieSceneSequenceID, UObject*> */ __um(DirectorInstances);                     // 0x0090   (0x0050)  
+	SDK_UNDEFINED(80,926) /* TMap<FMovieSceneSequenceID, UObject*> */ __um(DirectorInstances);                     // 0x0090   (0x0050)  
 	unsigned char                                      UnknownData02_6[0x8];                                       // 0x00E0   (0x0008)  MISSED
 };
 
@@ -418,7 +418,7 @@ struct FMovieSceneRootEvaluationTemplateInstance
 struct FMovieSceneSequenceReplProperties
 { 
 	FFrameTime                                         LastKnownPosition;                                          // 0x0000   (0x0008)  
-	SDK_UNDEFINED(1,922) /* TEnumAsByte<EMovieScenePlayerStatus> */ __um(LastKnownStatus);                         // 0x0008   (0x0001)  
+	SDK_UNDEFINED(1,927) /* TEnumAsByte<EMovieScenePlayerStatus> */ __um(LastKnownStatus);                         // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0009   (0x0003)  MISSED
 	int32_t                                            LastKnownNumLoops;                                          // 0x000C   (0x0004)  
 };
@@ -429,12 +429,12 @@ class UMovieSceneSequencePlayer : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x238];                                     // 0x0030   (0x0238)  MISSED
-	SDK_UNDEFINED(16,923) /* FMulticastInlineDelegate */ __um(OnPlay);                                             // 0x0268   (0x0010)  
-	SDK_UNDEFINED(16,924) /* FMulticastInlineDelegate */ __um(OnPlayReverse);                                      // 0x0278   (0x0010)  
-	SDK_UNDEFINED(16,925) /* FMulticastInlineDelegate */ __um(OnStop);                                             // 0x0288   (0x0010)  
-	SDK_UNDEFINED(16,926) /* FMulticastInlineDelegate */ __um(OnPause);                                            // 0x0298   (0x0010)  
-	SDK_UNDEFINED(16,927) /* FMulticastInlineDelegate */ __um(OnFinished);                                         // 0x02A8   (0x0010)  
-	SDK_UNDEFINED(1,928) /* TEnumAsByte<EMovieScenePlayerStatus> */ __um(Status);                                  // 0x02B8   (0x0001)  
+	SDK_UNDEFINED(16,928) /* FMulticastInlineDelegate */ __um(OnPlay);                                             // 0x0268   (0x0010)  
+	SDK_UNDEFINED(16,929) /* FMulticastInlineDelegate */ __um(OnPlayReverse);                                      // 0x0278   (0x0010)  
+	SDK_UNDEFINED(16,930) /* FMulticastInlineDelegate */ __um(OnStop);                                             // 0x0288   (0x0010)  
+	SDK_UNDEFINED(16,931) /* FMulticastInlineDelegate */ __um(OnPause);                                            // 0x0298   (0x0010)  
+	SDK_UNDEFINED(16,932) /* FMulticastInlineDelegate */ __um(OnFinished);                                         // 0x02A8   (0x0010)  
+	SDK_UNDEFINED(1,933) /* TEnumAsByte<EMovieScenePlayerStatus> */ __um(Status);                                  // 0x02B8   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x02B9   (0x0003)  MISSED
 	bool                                               bReversePlayback : 1;                                       // 0x02BC:0 (0x0001)  
 	unsigned char                                      UnknownData02_4[0x3];                                       // 0x02BD   (0x0003)  MISSED
@@ -448,96 +448,96 @@ public:
 	FMovieSceneRootEvaluationTemplateInstance          RootTemplateInstance;                                       // 0x02F0   (0x00E8)  
 	unsigned char                                      UnknownData04_5[0x68];                                      // 0x03D8   (0x0068)  MISSED
 	FMovieSceneSequenceReplProperties                  NetSyncProps;                                               // 0x0440   (0x0010)  
-	SDK_UNDEFINED(16,929) /* TScriptInterface<Class> */ __um(PlaybackClient);                                      // 0x0450   (0x0010)  
+	SDK_UNDEFINED(16,934) /* TScriptInterface<Class> */ __um(PlaybackClient);                                      // 0x0450   (0x0010)  
 	class UMovieSceneSequenceTickManager*              TickManager;                                                // 0x0460   (0x0008)  
 	unsigned char                                      UnknownData05_6[0x88];                                      // 0x0468   (0x0088)  MISSED
 
 
 	/// Functions
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime
-	// void StopAtCurrentTime();                                                                                             // [0x70f7410] Final|Native|Public|BlueprintCallable 
+	// void StopAtCurrentTime();                                                                                             // [0x7107190] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.Stop
-	// void Stop();                                                                                                          // [0x70f73f0] Final|Native|Public|BlueprintCallable 
+	// void Stop();                                                                                                          // [0x7107170] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.SetTimeRange
-	// void SetTimeRange(float starttime, float Duration);                                                                   // [0x70f7320] Final|Native|Public|BlueprintCallable 
+	// void SetTimeRange(float starttime, float Duration);                                                                   // [0x71070a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.SetPlayRate
-	// void SetPlayRate(float PlayRate);                                                                                     // [0x70f6fd0] Final|Native|Public|BlueprintCallable 
+	// void SetPlayRate(float PlayRate);                                                                                     // [0x7106d50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition
-	// void SetPlaybackPosition(FMovieSceneSequencePlaybackParams PlaybackParams);                                           // [0x70f7050] Final|Native|Public|BlueprintCallable 
+	// void SetPlaybackPosition(FMovieSceneSequencePlaybackParams PlaybackParams);                                           // [0x7106dd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.SetFrameRate
-	// void SetFrameRate(FFrameRate FrameRate);                                                                              // [0x70f6d70] Final|Native|Public|BlueprintCallable 
+	// void SetFrameRate(FFrameRate FrameRate);                                                                              // [0x7106af0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.SetFrameRange
-	// void SetFrameRange(int32_t StartFrame, int32_t Duration, float SubFrames);                                            // [0x70f6c60] Final|Native|Public|BlueprintCallable 
+	// void SetFrameRange(int32_t StartFrame, int32_t Duration, float SubFrames);                                            // [0x71069e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts
-	// void SetDisableCameraCuts(bool bInDisableCameraCuts);                                                                 // [0x70f6bd0] Final|Native|Public|BlueprintCallable 
+	// void SetDisableCameraCuts(bool bInDisableCameraCuts);                                                                 // [0x7106950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.ScrubToSeconds
-	// void ScrubToSeconds(float TimeInSeconds);                                                                             // [0x70f6a20] Final|Native|Public|BlueprintCallable 
+	// void ScrubToSeconds(float TimeInSeconds);                                                                             // [0x71067a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.ScrubToMarkedFrame
-	// bool ScrubToMarkedFrame(FString InLabel);                                                                             // [0x70f6910] Final|Native|Public|BlueprintCallable 
+	// bool ScrubToMarkedFrame(FString InLabel);                                                                             // [0x7106690] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.ScrubToFrame
-	// void ScrubToFrame(FFrameTime NewPosition);                                                                            // [0x70f6860] Final|Native|Public|BlueprintCallable 
+	// void ScrubToFrame(FFrameTime NewPosition);                                                                            // [0x71065e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.Scrub
-	// void Scrub();                                                                                                         // [0x70f6840] Final|Native|Public|BlueprintCallable 
+	// void Scrub();                                                                                                         // [0x71065c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent
-	// void RPC_OnStopEvent(FFrameTime StoppedTime);                                                                         // [0x70f6780] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void RPC_OnStopEvent(FFrameTime StoppedTime);                                                                         // [0x7106500] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.RPC_ExplicitServerUpdateEvent
-	// void RPC_ExplicitServerUpdateEvent(EUpdatePositionMethod Method, FFrameTime RelevantTime);                            // [0x70f66a0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void RPC_ExplicitServerUpdateEvent(EUpdatePositionMethod Method, FFrameTime RelevantTime);                            // [0x7106420] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.RestoreState
-	// void RestoreState();                                                                                                  // [0x70f6820] Final|Native|Public|BlueprintCallable 
+	// void RestoreState();                                                                                                  // [0x71065a0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.PlayToSeconds
-	// void PlayToSeconds(float TimeInSeconds);                                                                              // [0x70f65f0] Final|Native|Public|BlueprintCallable 
+	// void PlayToSeconds(float TimeInSeconds);                                                                              // [0x7106370] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.PlayToMarkedFrame
-	// bool PlayToMarkedFrame(FString InLabel);                                                                              // [0x70f64e0] Final|Native|Public|BlueprintCallable 
+	// bool PlayToMarkedFrame(FString InLabel);                                                                              // [0x7106260] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.PlayToFrame
-	// void PlayToFrame(FFrameTime NewPosition);                                                                             // [0x70f6430] Final|Native|Public|BlueprintCallable 
+	// void PlayToFrame(FFrameTime NewPosition);                                                                             // [0x71061b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.PlayTo
-	// void PlayTo(FMovieSceneSequencePlaybackParams PlaybackParams);                                                        // [0x70f6310] Final|Native|Public|BlueprintCallable 
+	// void PlayTo(FMovieSceneSequencePlaybackParams PlaybackParams);                                                        // [0x7106090] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.PlayReverse
-	// void PlayReverse();                                                                                                   // [0x70f62f0] Final|Native|Public|BlueprintCallable 
+	// void PlayReverse();                                                                                                   // [0x7106070] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.PlayLooping
-	// void PlayLooping(int32_t NumLoops);                                                                                   // [0x70f6260] Final|Native|Public|BlueprintCallable 
+	// void PlayLooping(int32_t NumLoops);                                                                                   // [0x7105fe0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.Play
-	// void Play();                                                                                                          // [0x70f6240] Final|Native|Public|BlueprintCallable 
+	// void Play();                                                                                                          // [0x7105fc0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.Pause
-	// void Pause();                                                                                                         // [0x70f6220] Final|Native|Public|BlueprintCallable 
+	// void Pause();                                                                                                         // [0x7105fa0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.JumpToSeconds
-	// void JumpToSeconds(float TimeInSeconds);                                                                              // [0x70f6170] Final|Native|Public|BlueprintCallable 
+	// void JumpToSeconds(float TimeInSeconds);                                                                              // [0x7105ef0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.JumpToMarkedFrame
-	// bool JumpToMarkedFrame(FString InLabel);                                                                              // [0x70f6060] Final|Native|Public|BlueprintCallable 
+	// bool JumpToMarkedFrame(FString InLabel);                                                                              // [0x7105de0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.JumpToFrame
-	// void JumpToFrame(FFrameTime NewPosition);                                                                             // [0x70f5fb0] Final|Native|Public|BlueprintCallable 
+	// void JumpToFrame(FFrameTime NewPosition);                                                                             // [0x7105d30] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.IsReversed
-	// bool IsReversed();                                                                                                    // [0x70f5f80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsReversed();                                                                                                    // [0x7105d00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.IsPlaying
-	// bool IsPlaying();                                                                                                     // [0x70f5f50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPlaying();                                                                                                     // [0x7105cd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.IsPaused
-	// bool IsPaused();                                                                                                      // [0x70f5f20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPaused();                                                                                                      // [0x7105ca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GoToEndAndStop
-	// void GoToEndAndStop();                                                                                                // [0x70f5ea0] Final|Native|Public|BlueprintCallable 
+	// void GoToEndAndStop();                                                                                                // [0x7105c20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetStartTime
-	// FQualifiedFrameTime GetStartTime();                                                                                   // [0x70f5e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetStartTime();                                                                                   // [0x7105bd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetSequence
-	// class UMovieSceneSequence* GetSequence();                                                                             // [0x70f5e30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMovieSceneSequence* GetSequence();                                                                             // [0x7105bb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetPlayRate
-	// float GetPlayRate();                                                                                                  // [0x70f5dc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPlayRate();                                                                                                  // [0x7105b40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetObjectBindings
-	// TArray<FMovieSceneObjectBindingID> GetObjectBindings(class UObject* inObject);                                        // [0x70f5cc0] Final|Native|Public|BlueprintCallable 
+	// TArray<FMovieSceneObjectBindingID> GetObjectBindings(class UObject* inObject);                                        // [0x7105a40] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetFrameRate
-	// FFrameRate GetFrameRate();                                                                                            // [0x70f5ca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FFrameRate GetFrameRate();                                                                                            // [0x7105a20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetFrameDuration
-	// int32_t GetFrameDuration();                                                                                           // [0x70f5c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetFrameDuration();                                                                                           // [0x71059f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetEndTime
-	// FQualifiedFrameTime GetEndTime();                                                                                     // [0x70f5c10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetEndTime();                                                                                     // [0x7105990] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetDuration
-	// FQualifiedFrameTime GetDuration();                                                                                    // [0x70f5bd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetDuration();                                                                                    // [0x7105950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts
-	// bool GetDisableCameraCuts();                                                                                          // [0x70f5ba0] Final|Native|Public|BlueprintCallable 
+	// bool GetDisableCameraCuts();                                                                                          // [0x7105920] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetCurrentTime
-	// FQualifiedFrameTime GetCurrentTime();                                                                                 // [0x70f5b60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FQualifiedFrameTime GetCurrentTime();                                                                                 // [0x71058e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.GetBoundObjects
-	// TArray<UObject*> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding);                                           // [0x70f5a30] Final|Native|Public|BlueprintCallable 
+	// TArray<UObject*> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding);                                           // [0x71057b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
-	// void ChangePlaybackDirection();                                                                                       // [0x70f5820] Final|Native|Public|BlueprintCallable 
+	// void ChangePlaybackDirection();                                                                                       // [0x71055a0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Struct /Script/MovieScene.MovieSceneSectionParameters
@@ -568,17 +568,17 @@ public:
 	char                                               NetworkMask;                                                // 0x0120   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0121   (0x0007)  MISSED
 	class UMovieSceneSequence*                         SubSequence;                                                // 0x0128   (0x0008)  
-	SDK_UNDEFINED(28,930) /* TLazyObjectPtr<AActor*> */ __um(ActorToRecord);                                       // 0x0130   (0x001C)  
+	SDK_UNDEFINED(28,935) /* TLazyObjectPtr<AActor*> */ __um(ActorToRecord);                                       // 0x0130   (0x001C)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x014C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,931) /* FString */                __um(TargetSequenceName);                                   // 0x0150   (0x0010)  
+	SDK_UNDEFINED(16,936) /* FString */                __um(TargetSequenceName);                                   // 0x0150   (0x0010)  
 	FDirectoryPath                                     TargetPathToRecordTo;                                       // 0x0160   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/MovieScene.MovieSceneSubSection.SetSequence
-	// void SetSequence(class UMovieSceneSequence* Sequence);                                                                // [0x70fa5e0] Final|Native|Public|BlueprintCallable 
+	// void SetSequence(class UMovieSceneSequence* Sequence);                                                                // [0x710a360] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MovieScene.MovieSceneSubSection.GetSequence
-	// class UMovieSceneSequence* GetSequence();                                                                             // [0x70fa5b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UMovieSceneSequence* GetSequence();                                                                             // [0x710a330] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/MovieScene.MovieSceneEntitySystem
@@ -607,13 +607,13 @@ public:
 
 	/// Functions
 	// Function /Script/MovieScene.MovieSceneCustomClockSource.OnTick
-	// void OnTick(float DeltaSeconds, float InPlayRate);                                                                    // [0x49e2690] Native|Public        
+	// void OnTick(float DeltaSeconds, float InPlayRate);                                                                    // [0x70fa3c0] Native|Public        
 	// Function /Script/MovieScene.MovieSceneCustomClockSource.OnStopPlaying
-	// void OnStopPlaying(FQualifiedFrameTime& InStopTime);                                                                  // [0x70ea660] Native|Public|HasOutParms 
+	// void OnStopPlaying(FQualifiedFrameTime& InStopTime);                                                                  // [0x70fa310] Native|Public|HasOutParms 
 	// Function /Script/MovieScene.MovieSceneCustomClockSource.OnStartPlaying
-	// void OnStartPlaying(FQualifiedFrameTime& InStartTime);                                                                // [0x70ea5b0] Native|Public|HasOutParms 
+	// void OnStartPlaying(FQualifiedFrameTime& InStartTime);                                                                // [0x70fa260] Native|Public|HasOutParms 
 	// Function /Script/MovieScene.MovieSceneCustomClockSource.OnRequestCurrentTime
-	// FFrameTime OnRequestCurrentTime(FQualifiedFrameTime& InCurrentTime, float InPlayRate);                                // [0x70ea4b0] Native|Public|HasOutParms 
+	// FFrameTime OnRequestCurrentTime(FQualifiedFrameTime& InCurrentTime, float InPlayRate);                                // [0x70fa160] Native|Public|HasOutParms 
 };
 
 /// Class /Script/MovieScene.MovieSceneDeterminismSource
@@ -684,7 +684,7 @@ struct FMovieSceneSpawnable
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0043   (0x0001)  MISSED
 	FGuid                                              Guid;                                                       // 0x0044   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0054   (0x0004)  MISSED
-	SDK_UNDEFINED(16,932) /* FString */                __um(Name);                                                 // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,937) /* FString */                __um(Name);                                                 // 0x0058   (0x0010)  
 	class UObject*                                     ObjectTemplate;                                             // 0x0068   (0x0008)  
 	TArray<FGuid>                                      ChildPossessables;                                          // 0x0070   (0x0010)  
 	ESpawnOwnership                                    Ownership;                                                  // 0x0080   (0x0001)  
@@ -698,7 +698,7 @@ struct FMovieScenePossessable
 { 
 	TArray<FName>                                      Tags;                                                       // 0x0000   (0x0010)  
 	FGuid                                              Guid;                                                       // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,933) /* FString */                __um(Name);                                                 // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,938) /* FString */                __um(Name);                                                 // 0x0020   (0x0010)  
 	class UClass*                                      PossessedObjectClass;                                       // 0x0030   (0x0008)  
 	FGuid                                              ParentGuid;                                                 // 0x0038   (0x0010)  
 };
@@ -708,7 +708,7 @@ struct FMovieScenePossessable
 struct FMovieSceneBinding
 { 
 	FGuid                                              ObjectGuid;                                                 // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,934) /* FString */                __um(BindingName);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,939) /* FString */                __um(BindingName);                                          // 0x0010   (0x0010)  
 	TArray<class UMovieSceneTrack*>                    Tracks;                                                     // 0x0020   (0x0010)  
 };
 
@@ -718,7 +718,7 @@ struct FMovieSceneMarkedFrame
 { 
 	FFrameNumber                                       FrameNumber;                                                // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(16,935) /* FString */                __um(label);                                                // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,940) /* FString */                __um(label);                                                // 0x0008   (0x0010)  
 	bool                                               bIsDeterminismFence;                                        // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x0019   (0x0007)  MISSED
 };
@@ -731,7 +731,7 @@ public:
 	TArray<FMovieSceneSpawnable>                       Spawnables;                                                 // 0x0058   (0x0010)  
 	TArray<FMovieScenePossessable>                     Possessables;                                               // 0x0068   (0x0010)  
 	TArray<FMovieSceneBinding>                         ObjectBindings;                                             // 0x0078   (0x0010)  
-	SDK_UNDEFINED(80,936) /* TMap<FName, FMovieSceneObjectBindingIDs> */ __um(BindingGroups);                      // 0x0088   (0x0050)  
+	SDK_UNDEFINED(80,941) /* TMap<FName, FMovieSceneObjectBindingIDs> */ __um(BindingGroups);                      // 0x0088   (0x0050)  
 	TArray<class UMovieSceneTrack*>                    MasterTracks;                                               // 0x00D8   (0x0010)  
 	class UMovieSceneTrack*                            CameraCutTrack;                                             // 0x00E8   (0x0008)  
 	FMovieSceneFrameRange                              SelectionRange;                                             // 0x00F0   (0x0010)  
@@ -759,7 +759,7 @@ struct FMovieSceneObjectBindingID
 struct FMovieSceneBindingOverrideData
 { 
 	FMovieSceneObjectBindingID                         ObjectBindingId;                                            // 0x0000   (0x0018)  
-	SDK_UNDEFINED(8,937) /* TWeakObjectPtr<UObject*> */ __um(Object);                                              // 0x0018   (0x0008)  
+	SDK_UNDEFINED(8,942) /* TWeakObjectPtr<UObject*> */ __um(Object);                                              // 0x0018   (0x0008)  
 	bool                                               bOverridesDefault;                                          // 0x0020   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0021   (0x0003)  MISSED
 };
@@ -865,15 +865,15 @@ struct FMovieSceneTemplateGenerationLedger
 { 
 	FMovieSceneTrackIdentifier                         LastTrackIdentifier;                                        // 0x0000   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0004   (0x0004)  MISSED
-	SDK_UNDEFINED(80,938) /* TMap<FGuid, FMovieSceneTrackIdentifier> */ __um(TrackSignatureToTrackIdentifier);     // 0x0008   (0x0050)  
-	SDK_UNDEFINED(80,939) /* TMap<FGuid, FMovieSceneFrameRange> */ __um(SubSectionRanges);                         // 0x0058   (0x0050)  
+	SDK_UNDEFINED(80,943) /* TMap<FGuid, FMovieSceneTrackIdentifier> */ __um(TrackSignatureToTrackIdentifier);     // 0x0008   (0x0050)  
+	SDK_UNDEFINED(80,944) /* TMap<FGuid, FMovieSceneFrameRange> */ __um(SubSectionRanges);                         // 0x0058   (0x0050)  
 };
 
 /// Struct /Script/MovieScene.MovieSceneEvaluationTemplate
 /// Size: 0x0160 (0x000000 - 0x000160)
 struct FMovieSceneEvaluationTemplate
 { 
-	SDK_UNDEFINED(80,940) /* TMap<FMovieSceneTrackIdentifier, FMovieSceneEvaluationTrack> */ __um(Tracks);         // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,945) /* TMap<FMovieSceneTrackIdentifier, FMovieSceneEvaluationTrack> */ __um(Tracks);         // 0x0000   (0x0050)  
 	unsigned char                                      UnknownData00_5[0x50];                                      // 0x0050   (0x0050)  MISSED
 	FGuid                                              SequenceSignature;                                          // 0x00A0   (0x0010)  
 	FMovieSceneEvaluationTemplateSerialNumber          TemplateSerialNumber;                                       // 0x00B0   (0x0004)  
@@ -910,8 +910,8 @@ struct FMovieSceneSequenceHierarchy
 { 
 	FMovieSceneSequenceHierarchyNode                   RootNode;                                                   // 0x0000   (0x0018)  
 	FMovieSceneSubSequenceTree                         Tree;                                                       // 0x0018   (0x0060)  
-	SDK_UNDEFINED(80,941) /* TMap<FMovieSceneSequenceID, FMovieSceneSubSequenceData> */ __um(SubSequences);        // 0x0078   (0x0050)  
-	SDK_UNDEFINED(80,942) /* TMap<FMovieSceneSequenceID, FMovieSceneSequenceHierarchyNode> */ __um(Hierarchy);     // 0x00C8   (0x0050)  
+	SDK_UNDEFINED(80,946) /* TMap<FMovieSceneSequenceID, FMovieSceneSubSequenceData> */ __um(SubSequences);        // 0x0078   (0x0050)  
+	SDK_UNDEFINED(80,947) /* TMap<FMovieSceneSequenceID, FMovieSceneSequenceHierarchyNode> */ __um(Hierarchy);     // 0x00C8   (0x0050)  
 };
 
 /// Struct /Script/MovieScene.MovieSceneEvaluationFieldEntityTree
@@ -925,7 +925,7 @@ struct FMovieSceneEvaluationFieldEntityTree
 /// Size: 0x000C (0x000000 - 0x00000C)
 struct FMovieSceneEvaluationFieldEntityKey
 { 
-	SDK_UNDEFINED(8,943) /* TWeakObjectPtr<UObject*> */ __um(EntityOwner);                                         // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,948) /* TWeakObjectPtr<UObject*> */ __um(EntityOwner);                                         // 0x0000   (0x0008)  
 	uint32_t                                           EntityID;                                                   // 0x0008   (0x0004)  
 };
 
@@ -941,7 +941,7 @@ struct FMovieSceneEvaluationFieldEntity
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FMovieSceneEvaluationFieldEntityMetaData
 { 
-	SDK_UNDEFINED(16,944) /* FString */                __um(OverrideBoundPropertyPath);                            // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,949) /* FString */                __um(OverrideBoundPropertyPath);                            // 0x0000   (0x0010)  
 	FFrameNumber                                       ForcedTime;                                                 // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
 	ESectionEvaluationFlags                            Flags;                                                      // 0x0018   (0x0001)  
@@ -1081,10 +1081,10 @@ class UMovieSceneCompiledDataManager : public UObject
 { 
 public:
 	unsigned char                                      UnknownData00_2[0xB0];                                      // 0x0030   (0x00B0)  MISSED
-	SDK_UNDEFINED(80,945) /* TMap<int32_t, FMovieSceneSequenceHierarchy> */ __um(Hierarchies);                     // 0x00E0   (0x0050)  
-	SDK_UNDEFINED(80,946) /* TMap<int32_t, FMovieSceneEvaluationTemplate> */ __um(TrackTemplates);                 // 0x0130   (0x0050)  
-	SDK_UNDEFINED(80,947) /* TMap<int32_t, FMovieSceneEvaluationField> */ __um(TrackTemplateFields);               // 0x0180   (0x0050)  
-	SDK_UNDEFINED(80,948) /* TMap<int32_t, FMovieSceneEntityComponentField> */ __um(EntityComponentFields);        // 0x01D0   (0x0050)  
+	SDK_UNDEFINED(80,950) /* TMap<int32_t, FMovieSceneSequenceHierarchy> */ __um(Hierarchies);                     // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,951) /* TMap<int32_t, FMovieSceneEvaluationTemplate> */ __um(TrackTemplates);                 // 0x0130   (0x0050)  
+	SDK_UNDEFINED(80,952) /* TMap<int32_t, FMovieSceneEvaluationField> */ __um(TrackTemplateFields);               // 0x0180   (0x0050)  
+	SDK_UNDEFINED(80,953) /* TMap<int32_t, FMovieSceneEntityComponentField> */ __um(EntityComponentFields);        // 0x01D0   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0220   (0x0018)  MISSED
 };
 
@@ -1123,7 +1123,7 @@ public:
 
 	/// Functions
 	// Function /Script/MovieScene.MovieSceneEasingFunction.OnEvaluate
-	// float OnEvaluate(float Interp);                                                                                       // [0x61c32d0] Event|Protected|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
+	// float OnEvaluate(float Interp);                                                                                       // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent|BlueprintPure|Const 
 };
 
 /// Struct /Script/MovieScene.MovieSceneEntitySystemGraphNodes
@@ -1165,7 +1165,7 @@ public:
 class UMovieSceneEvaluationHookSystem : public UMovieSceneEntitySystem
 { 
 public:
-	SDK_UNDEFINED(80,949) /* TMap<FMovieSceneEvaluationInstanceKey, FMovieSceneEvaluationHookEventContainer> */ __um(PendingEventsByRootInstance); // 0x0048   (0x0050)  
+	SDK_UNDEFINED(80,954) /* TMap<FMovieSceneEvaluationInstanceKey, FMovieSceneEvaluationHookEventContainer> */ __um(PendingEventsByRootInstance); // 0x0048   (0x0050)  
 };
 
 /// Class /Script/MovieScene.MovieSceneFolder
@@ -1177,7 +1177,7 @@ public:
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x003C   (0x0004)  MISSED
 	TArray<class UMovieSceneFolder*>                   ChildFolders;                                               // 0x0040   (0x0010)  
 	TArray<class UMovieSceneTrack*>                    ChildMasterTracks;                                          // 0x0050   (0x0010)  
-	SDK_UNDEFINED(16,950) /* TArray<FString> */        __um(ChildObjectBindingStrings);                            // 0x0060   (0x0010)  
+	SDK_UNDEFINED(16,955) /* TArray<FString> */        __um(ChildObjectBindingStrings);                            // 0x0060   (0x0010)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0070   (0x0010)  MISSED
 };
 
@@ -1241,7 +1241,7 @@ public:
 struct FMovieSceneSequenceActorPointers
 { 
 	class AActor*                                      SequenceActor;                                              // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,951) /* TScriptInterface<Class> */ __um(SequenceActorInterface);                              // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,956) /* TScriptInterface<Class> */ __um(SequenceActorInterface);                              // 0x0008   (0x0010)  
 };
 
 /// Class /Script/MovieScene.MovieSceneSequenceTickManager
@@ -1384,7 +1384,7 @@ struct FMovieSceneEvalTemplate : FMovieSceneEvalTemplateBase
 { 
 	EMovieSceneCompletionMode                          CompletionMode;                                             // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0011   (0x0003)  MISSED
-	SDK_UNDEFINED(8,952) /* TWeakObjectPtr<UMovieSceneSection*> */ __um(SourceSectionPtr);                         // 0x0014   (0x0008)  
+	SDK_UNDEFINED(8,957) /* TWeakObjectPtr<UMovieSceneSection*> */ __um(SourceSectionPtr);                         // 0x0014   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x001C   (0x0004)  MISSED
 };
 
@@ -1396,7 +1396,7 @@ struct FMovieSceneTangentData
 	float                                              LeaveTangent;                                               // 0x0004   (0x0004)  
 	float                                              ArriveTangentWeight;                                        // 0x0008   (0x0004)  
 	float                                              LeaveTangentWeight;                                         // 0x000C   (0x0004)  
-	SDK_UNDEFINED(1,953) /* TEnumAsByte<ERichCurveTangentWeightMode> */ __um(TangentWeightMode);                   // 0x0010   (0x0001)  
+	SDK_UNDEFINED(1,958) /* TEnumAsByte<ERichCurveTangentWeightMode> */ __um(TangentWeightMode);                   // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0011   (0x0003)  MISSED
 };
 
@@ -1406,8 +1406,8 @@ struct FMovieSceneFloatValue
 { 
 	float                                              value;                                                      // 0x0000   (0x0004)  
 	FMovieSceneTangentData                             Tangent;                                                    // 0x0004   (0x0014)  
-	SDK_UNDEFINED(1,954) /* TEnumAsByte<ERichCurveInterpMode> */ __um(InterpMode);                                 // 0x0018   (0x0001)  
-	SDK_UNDEFINED(1,955) /* TEnumAsByte<ERichCurveTangentMode> */ __um(TangentMode);                               // 0x0019   (0x0001)  
+	SDK_UNDEFINED(1,959) /* TEnumAsByte<ERichCurveInterpMode> */ __um(InterpMode);                                 // 0x0018   (0x0001)  
+	SDK_UNDEFINED(1,960) /* TEnumAsByte<ERichCurveTangentMode> */ __um(TangentMode);                               // 0x0019   (0x0001)  
 	char                                               PaddingByte;                                                // 0x001A   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x1];                                       // 0x001B   (0x0001)  MISSED
 };
@@ -1422,8 +1422,8 @@ struct FMovieSceneKeyHandleMap : FKeyHandleLookupTable
 /// Size: 0x0098 (0x000008 - 0x0000A0)
 struct FMovieSceneFloatChannel : FMovieSceneChannel
 { 
-	SDK_UNDEFINED(1,956) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PreInfinityExtrap);                       // 0x0008   (0x0001)  
-	SDK_UNDEFINED(1,957) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PostInfinityExtrap);                      // 0x0009   (0x0001)  
+	SDK_UNDEFINED(1,961) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PreInfinityExtrap);                       // 0x0008   (0x0001)  
+	SDK_UNDEFINED(1,962) /* TEnumAsByte<ERichCurveExtrapolation> */ __um(PostInfinityExtrap);                      // 0x0009   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x000A   (0x0006)  MISSED
 	TArray<FFrameNumber>                               Times;                                                      // 0x0010   (0x0010)  
 	TArray<FMovieSceneFloatValue>                      Values;                                                     // 0x0020   (0x0010)  
@@ -1468,7 +1468,7 @@ struct FMovieScenePropertySectionData
 { 
 	FName                                              PropertyName;                                               // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,958) /* FString */                __um(PropertyPath);                                         // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,963) /* FString */                __um(PropertyPath);                                         // 0x0010   (0x0010)  
 };
 
 /// Struct /Script/MovieScene.MovieScenePropertySectionTemplate
@@ -1491,7 +1491,7 @@ struct FTrackInstanceInputComponent
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FMovieSceneEvaluationHookComponent
 { 
-	SDK_UNDEFINED(16,959) /* TScriptInterface<Class> */ __um(Interface);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,964) /* TScriptInterface<Class> */ __um(Interface);                                           // 0x0000   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0010   (0x0010)  MISSED
 };
 
@@ -1524,34 +1524,34 @@ struct FMovieSceneDeterminismData
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FMovieSceneSectionGroup
 { 
-	SDK_UNDEFINED(16,960) /* TArray<TWeakObjectPtr<UMovieSceneSection*>> */ __um(Sections);                        // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,965) /* TArray<TWeakObjectPtr<UMovieSceneSection*>> */ __um(Sections);                        // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/MovieScene.MovieSceneObjectBindingIDs
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FMovieSceneObjectBindingIDs
 { 
-	TArray<FMovieSceneObjectBindingID>                 Ids;                                                        // 0x0000   (0x0010)  
+	TArray<FMovieSceneObjectBindingID>                 IDs;                                                        // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/MovieScene.MovieSceneTrackLabels
 /// Size: 0x0010 (0x000000 - 0x000010)
 struct FMovieSceneTrackLabels
 { 
-	SDK_UNDEFINED(16,961) /* TArray<FString> */        __um(Strings);                                              // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,966) /* TArray<FString> */        __um(Strings);                                              // 0x0000   (0x0010)  
 };
 
 /// Struct /Script/MovieScene.MovieSceneEditorData
 /// Size: 0x00F0 (0x000000 - 0x0000F0)
 struct FMovieSceneEditorData
 { 
-	SDK_UNDEFINED(80,962) /* TMap<FString, FMovieSceneExpansionState> */ __um(ExpansionStates);                    // 0x0000   (0x0050)  
-	SDK_UNDEFINED(16,963) /* TArray<FString> */        __um(PinnedNodes);                                          // 0x0050   (0x0010)  
+	SDK_UNDEFINED(80,967) /* TMap<FString, FMovieSceneExpansionState> */ __um(ExpansionStates);                    // 0x0000   (0x0050)  
+	SDK_UNDEFINED(16,968) /* TArray<FString> */        __um(PinnedNodes);                                          // 0x0050   (0x0010)  
 	double                                             ViewStart;                                                  // 0x0060   (0x0008)  
 	double                                             ViewEnd;                                                    // 0x0068   (0x0008)  
 	double                                             WorkStart;                                                  // 0x0070   (0x0008)  
 	double                                             WorkEnd;                                                    // 0x0078   (0x0008)  
-	SDK_UNDEFINED(80,964) /* TSet<FFrameNumber> */     __um(MarkedFrames);                                         // 0x0080   (0x0050)  
+	SDK_UNDEFINED(80,969) /* TSet<FFrameNumber> */     __um(MarkedFrames);                                         // 0x0080   (0x0050)  
 	FFloatRange                                        WorkingRange;                                               // 0x00D0   (0x0010)  
 	FFloatRange                                        ViewRange;                                                  // 0x00E0   (0x0010)  
 };
@@ -1673,7 +1673,7 @@ struct FMovieSceneEvaluationTrack
 	uint16_t                                           EvaluationPriority;                                         // 0x0010   (0x0002)  
 	EEvaluationMethod                                  EvaluationMethod;                                           // 0x0012   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0013   (0x0001)  MISSED
-	SDK_UNDEFINED(8,965) /* TWeakObjectPtr<UMovieSceneTrack*> */ __um(SourceTrack);                                // 0x0014   (0x0008)  
+	SDK_UNDEFINED(8,970) /* TWeakObjectPtr<UMovieSceneTrack*> */ __um(SourceTrack);                                // 0x0014   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x001C   (0x0004)  MISSED
 	TArray<FMovieSceneEvalTemplatePtr>                 ChildTemplates;                                             // 0x0020   (0x0010)  
 	FMovieSceneTrackImplementationPtr                  TrackTemplate;                                              // 0x0030   (0x0038)  
@@ -1688,7 +1688,7 @@ struct FMovieSceneEvaluationTrack
 /// Size: 0x001C (0x000000 - 0x00001C)
 struct FMovieSceneSubSectionData
 { 
-	SDK_UNDEFINED(8,966) /* TWeakObjectPtr<UMovieSceneSubSection*> */ __um(Section);                               // 0x0000   (0x0008)  
+	SDK_UNDEFINED(8,971) /* TWeakObjectPtr<UMovieSceneSubSection*> */ __um(Section);                               // 0x0000   (0x0008)  
 	FGuid                                              ObjectBindingId;                                            // 0x0008   (0x0010)  
 	ESectionEvaluationFlags                            Flags;                                                      // 0x0018   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x3];                                       // 0x0019   (0x0003)  MISSED
@@ -1720,7 +1720,7 @@ struct FGeneratedMovieSceneKeyStruct
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FMovieSceneObjectPathChannelKeyValue
 { 
-	SDK_UNDEFINED(48,967) /* TWeakObjectPtr<UObject*> */ __um(SoftPtr);                                            // 0x0000   (0x0030)  
+	SDK_UNDEFINED(48,972) /* TWeakObjectPtr<UObject*> */ __um(SoftPtr);                                            // 0x0000   (0x0030)  
 	class UObject*                                     HardPtr;                                                    // 0x0030   (0x0008)  
 };
 
@@ -1841,7 +1841,7 @@ struct FMovieSceneSequencePlaybackParams
 	FFrameTime                                         Frame;                                                      // 0x0000   (0x0008)  
 	float                                              Time;                                                       // 0x0008   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,968) /* FString */                __um(MarkedFrame);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,973) /* FString */                __um(MarkedFrame);                                          // 0x0010   (0x0010)  
 	EMovieScenePositionType                            PositionType;                                               // 0x0020   (0x0001)  
 	EUpdatePositionMethod                              UpdateMethod;                                               // 0x0021   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x6];                                       // 0x0022   (0x0006)  MISSED

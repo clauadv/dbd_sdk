@@ -20,7 +20,7 @@
 class UAddon_ThePig_JigsawSketch : public UItemAddon
 { 
 public:
-	SDK_UNDEFINED(80,5193) /* TMap<ACamperPlayer*, AGenerator*> */ __um(_trackedGeneratorRepairs);                 // 0x02B8   (0x0050)  
+	SDK_UNDEFINED(80,5583) /* TMap<ACamperPlayer*, AGenerator*> */ __um(_trackedGeneratorRepairs);                 // 0x02B8   (0x0050)  
 };
 
 /// Class /Script/ThePig.AttachReverseBearTrap
@@ -32,7 +32,7 @@ public:
 
 	/// Functions
 	// Function /Script/ThePig.AttachReverseBearTrap.GetCamper
-	// class ACamperPlayer* GetCamper();                                                                                     // [0x5de6080] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetCamper();                                                                                     // [0x5df52b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ThePig.DetectivesHunch
@@ -40,10 +40,10 @@ public:
 class UDetectivesHunch : public UPerk
 { 
 public:
-	SDK_UNDEFINED(80,5194) /* TSet<TWeakObjectPtr<UClass*>> */ __um(_interactableClasses);                         // 0x03C8   (0x0050)  
+	SDK_UNDEFINED(80,5584) /* TSet<TWeakObjectPtr<UClass*>> */ __um(_interactableClasses);                         // 0x03C8   (0x0050)  
 	float                                              _revealRanges;                                              // 0x0418   (0x000C)  
 	float                                              _revealDuration;                                            // 0x0424   (0x0004)  
-	SDK_UNDEFINED(80,5195) /* TMap<AActor*, FTimerHandle> */ __um(_actorToTimerMap);                               // 0x0428   (0x0050)  
+	SDK_UNDEFINED(80,5585) /* TMap<AActor*, FTimerHandle> */ __um(_actorToTimerMap);                               // 0x0428   (0x0050)  
 	unsigned char                                      UnknownData00_5[0x50];                                      // 0x0478   (0x0050)  MISSED
 	FObjectFastArray                                   _revealedActors;                                            // 0x04C8   (0x0148)  
 	unsigned char                                      UnknownData01_6[0x28];                                      // 0x0610   (0x0028)  MISSED
@@ -51,9 +51,9 @@ public:
 
 	/// Functions
 	// Function /Script/ThePig.DetectivesHunch.GetRevealRangeAtLevel
-	// float GetRevealRangeAtLevel();                                                                                        // [0x5de6650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRevealRangeAtLevel();                                                                                        // [0x5df5880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ThePig.DetectivesHunch.GetRevealDuration
-	// float GetRevealDuration();                                                                                            // [0x5de6630] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRevealDuration();                                                                                            // [0x5df5860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/ThePig.K11AnimInstance
@@ -139,18 +139,18 @@ public:
 class URemoveReverseBearTrapChargeable : public UChargeableInteractionDefinition
 { 
 public:
-	FDBDTunableRowHandle                               _audibleRangeOnSearch;                                      // 0x0788   (0x0028)  
-	class UClass*                                      _timedRevealStatusEffect;                                   // 0x07B0   (0x0008)  
-	unsigned char                                      UnknownData00_6[0x18];                                      // 0x07B8   (0x0018)  MISSED
+	FDBDTunableRowHandle                               _audibleRangeOnSearch;                                      // 0x0790   (0x0028)  
+	class UClass*                                      _timedRevealStatusEffect;                                   // 0x07B8   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x10];                                      // 0x07C0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/ThePig.RemoveReverseBearTrapChargeable.HasSuccessfullyRemoved
-	// bool HasSuccessfullyRemoved();                                                                                        // [0x5de76a0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool HasSuccessfullyRemoved();                                                                                        // [0x5df67e0] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/ThePig.RemoveReverseBearTrapChargeable.BP_OnFinishWithoutDetach
-	// void BP_OnFinishWithoutDetach(class ACamperPlayer* searchingPlayer);                                                  // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_OnFinishWithoutDetach(class ACamperPlayer* searchingPlayer);                                                  // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/ThePig.RemoveReverseBearTrapChargeable.BP_OnFinishWithDetach
-	// void BP_OnFinishWithDetach(class ACamperPlayer* searchingPlayer);                                                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_OnFinishWithDetach(class ACamperPlayer* searchingPlayer);                                                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/ThePig.RBTSurvivorPair

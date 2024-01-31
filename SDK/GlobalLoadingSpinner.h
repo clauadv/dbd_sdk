@@ -23,8 +23,8 @@ public:
 
 	/// Functions
 	// Function /DBDUICore/GlobalLoadingSpinner/WBP_GlobalLoadingSpinnerWidget.WBP_GlobalLoadingSpinnerWidget_C.SetGlobalSpinnerVisibility
-	// void SetGlobalSpinnerVisibility(bool IsVisible);                                                                      // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void SetGlobalSpinnerVisibility(bool IsVisible);                                                                      // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /DBDUICore/GlobalLoadingSpinner/WBP_GlobalLoadingSpinnerWidget.WBP_GlobalLoadingSpinnerWidget_C.ExecuteUbergraph_WBP_GlobalLoadingSpinnerWidget
-	// void ExecuteUbergraph_WBP_GlobalLoadingSpinnerWidget(int32_t EntryPoint);                                             // [0x61c32d0] Final                
+	// void ExecuteUbergraph_WBP_GlobalLoadingSpinnerWidget(int32_t EntryPoint);                                             // [0x61d2f50] Final                
 };
 

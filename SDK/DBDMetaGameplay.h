@@ -19,13 +19,13 @@ public:
 	unsigned char                                      UnknownData00_2[0x40];                                      // 0x0108   (0x0040)  MISSED
 	class UCurveFloat*                                 _chasePointsByDurationCurve;                                // 0x0148   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0150   (0x0018)  MISSED
-	SDK_UNDEFINED(80,4552) /* TMap<ACamperPlayer*, float> */ __um(_hookedPlayersPenaltyDelay);                     // 0x0168   (0x0050)  
+	SDK_UNDEFINED(80,4945) /* TMap<ACamperPlayer*, float> */ __um(_hookedPlayersPenaltyDelay);                     // 0x0168   (0x0050)  
 	class UClass*                                      _rankTunablesClass;                                         // 0x01B8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/DBDMetaGameplay.DBDEmblem_KillerChaser.OnChaseStart
-	// void OnChaseStart(class ADBDPlayer* chasedPlayer);                                                                    // [0x50b7de0] Final|Native|Public  
+	// void OnChaseStart(class ADBDPlayer* chasedPlayer);                                                                    // [0x509bbc0] Final|Native|Public  
 };
 
 /// Class /Script/DBDMetaGameplay.DBDEmblem_KillerDevout
@@ -40,7 +40,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDMetaGameplay.DBDEmblem_KillerDevout.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x50b80a0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x509be80] Final|Native|Private 
 };
 
 /// Class /Script/DBDMetaGameplay.DBDEmblem_KillerGatekeeper
@@ -57,13 +57,13 @@ class UDBDEmblem_KillerMalicious : public UDBDEmblem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0108   (0x0010)  MISSED
-	SDK_UNDEFINED(80,4553) /* TMap<ACamperPlayer*, int32_t> */ __um(_remainingSurvivorHookStates);                 // 0x0118   (0x0050)  
+	SDK_UNDEFINED(80,4946) /* TMap<ACamperPlayer*, int32_t> */ __um(_remainingSurvivorHookStates);                 // 0x0118   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0168   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDMetaGameplay.DBDEmblem_KillerMalicious.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x50b83f0] Final|Native|Public  
+	// void OnLevelReadyToPlay();                                                                                            // [0x509c1d0] Final|Native|Public  
 };
 
 /// Class /Script/DBDMetaGameplay.DBDEmblem_SurvivorBenevolent
@@ -89,7 +89,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDMetaGameplay.DBDEmblem_SurvivorEvader.OnChaseStartEvent
-	// void OnChaseStartEvent(class ADBDPlayer* chasedPlayer);                                                               // [0x50b8840] Final|Native|Public  
+	// void OnChaseStartEvent(class ADBDPlayer* chasedPlayer);                                                               // [0x509c620] Final|Native|Public  
 };
 
 /// Class /Script/DBDMetaGameplay.DBDEmblem_SurvivorLightbringer
@@ -113,6 +113,6 @@ public:
 
 	/// Functions
 	// Function /Script/DBDMetaGameplay.DBDEmblem_SurvivorUnbroken.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x50b8bf0] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x509c9d0] Final|Native|Private 
 };
 

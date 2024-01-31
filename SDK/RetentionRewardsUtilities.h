@@ -47,18 +47,18 @@ public:
 /// Size: 0x0068 (0x000000 - 0x000068)
 struct FRetentionReward
 { 
-	SDK_UNDEFINED(16,4955) /* FString */               __um(ItemId);                                               // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5341) /* FString */               __um(ItemId);                                               // 0x0000   (0x0010)  
 	uint32_t                                           Amount;                                                     // 0x0010   (0x0004)  
 	ERewardItemType                                    RewardType;                                                 // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
-	SDK_UNDEFINED(80,4956) /* TMap<FName, FString> */  __um(GameSpecificData);                                     // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,5342) /* TMap<FName, FString> */  __um(GameSpecificData);                                     // 0x0018   (0x0050)  
 };
 
 /// Struct /Script/RetentionRewardsUtilities.RetentionCalendar
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FRetentionCalendar
 { 
-	SDK_UNDEFINED(16,4957) /* FString */               __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5343) /* FString */               __um(ID);                                                   // 0x0000   (0x0010)  
 	FDateTime                                          starttime;                                                  // 0x0010   (0x0008)  
 	FDateTime                                          EndTime;                                                    // 0x0018   (0x0008)  
 	EClaimType                                         ClaimType;                                                  // 0x0020   (0x0001)  

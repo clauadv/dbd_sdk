@@ -10,12 +10,14 @@
 /// dependency: Engine
 
 /// Class /Script/DBDGraphics.FogOverrideComponent
-/// Size: 0x0040 (0x0000B8 - 0x0000F8)
+/// Size: 0x0048 (0x0000B8 - 0x000100)
 class UFogOverrideComponent : public UActorComponent
 { 
 public:
 	float                                              _interpolationDistance;                                     // 0x00B8   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x3C];                                      // 0x00BC   (0x003C)  MISSED
+	unsigned char                                      UnknownData00_5[0x3C];                                      // 0x00BC   (0x003C)  MISSED
+	bool                                               _canBeDisabledByGameType;                                   // 0x00F8   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00F9   (0x0007)  MISSED
 };
 
 /// Class /Script/DBDGraphics.FogOverrideManager

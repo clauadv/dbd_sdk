@@ -81,16 +81,16 @@ enum class EZombieGender : uint8_t
 class UActivateK24PowerInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0790   (0x0008)  MISSED
-	FDBDTunableRowHandle                               _interactionViewPitchMax;                                   // 0x0798   (0x0028)  
-	FDBDTunableRowHandle                               _interactionViewPitchMin;                                   // 0x07C0   (0x0028)  
-	FDBDTunableRowHandle                               _maximumTimeToTriggerRegularAttack;                         // 0x07E8   (0x0028)  
-	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0810   (0x0010)  MISSED
+	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0790   (0x0010)  MISSED
+	FDBDTunableRowHandle                               _interactionViewPitchMax;                                   // 0x07A0   (0x0028)  
+	FDBDTunableRowHandle                               _interactionViewPitchMin;                                   // 0x07C8   (0x0028)  
+	FDBDTunableRowHandle                               _maximumTimeToTriggerRegularAttack;                         // 0x07F0   (0x0028)  
+	unsigned char                                      UnknownData01_6[0x8];                                       // 0x0818   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK24.ActivateK24PowerInteraction.SetK24Power
-	// void SetK24Power(class AK24Power* K24Power);                                                                          // [0x5b1d020] Final|Native|Public|BlueprintCallable 
+	// void SetK24Power(class AK24Power* K24Power);                                                                          // [0x5b29db0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK24.Addon_K24_04
@@ -157,11 +157,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.BlastMine.TrapAttachedToGenerator_Cosmetic
-	// void TrapAttachedToGenerator_Cosmetic(class AGenerator* trappedGenerator);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void TrapAttachedToGenerator_Cosmetic(class AGenerator* trappedGenerator);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.BlastMine.ThrowBubbleIndicator_Cosmetic
-	// void ThrowBubbleIndicator_Cosmetic(FTransform Location);                                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasDefaults|BlueprintEvent 
+	// void ThrowBubbleIndicator_Cosmetic(FTransform Location);                                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK24.BlastMine.Client_TrapActivatedLoudNotification
-	// void Client_TrapActivatedLoudNotification(FTransform Location);                                                       // [0x5b1cc50] Final|Net|NetReliableNative|Event|Private|HasDefaults|NetClient 
+	// void Client_TrapActivatedLoudNotification(FTransform Location);                                                       // [0x5b298e0] Final|Net|NetReliableNative|Event|Private|HasDefaults|NetClient 
 };
 
 /// Class /Script/TheK24.BlastMineFirecracker
@@ -170,7 +170,7 @@ class ABlastMineFirecracker : public AFirecracker
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x30];                                      // 0x0390   (0x0030)  MISSED
-	SDK_UNDEFINED(16,5093) /* FMulticastInlineDelegate */ __um(OnTrapRemovedBlueprintEvent);                       // 0x03C0   (0x0010)  
+	SDK_UNDEFINED(16,5483) /* FMulticastInlineDelegate */ __um(OnTrapRemovedBlueprintEvent);                       // 0x03C0   (0x0010)  
 	class AGenerator*                                  _trappedGenerator;                                          // 0x03D0   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x03D8   (0x0008)  MISSED
 	class USimpleStateMachine*                         _stateMachine;                                              // 0x03E0   (0x0008)  
@@ -184,13 +184,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.BlastMineFirecracker.OnTrapRemovedBlueprintEvent__DelegateSignature
-	// void OnTrapRemovedBlueprintEvent__DelegateSignature(EBlastMineRemovedReason removedReason);                           // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnTrapRemovedBlueprintEvent__DelegateSignature(EBlastMineRemovedReason removedReason);                           // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK24.BlastMineFirecracker.OnRep_Lifetime
-	// void OnRep_Lifetime();                                                                                                // [0x5b1d000] Final|Native|Private 
+	// void OnRep_Lifetime();                                                                                                // [0x5b29d90] Final|Native|Private 
 	// Function /Script/TheK24.BlastMineFirecracker.OnRep_AuthorityExplosionCount
-	// void OnRep_AuthorityExplosionCount();                                                                                 // [0x5b1cfa0] Final|Native|Private 
+	// void OnRep_AuthorityExplosionCount();                                                                                 // [0x5b29d30] Final|Native|Private 
 	// Function /Script/TheK24.BlastMineFirecracker.OnRep_AuthorityCurrentState
-	// void OnRep_AuthorityCurrentState();                                                                                   // [0x5b1cf80] Final|Native|Private 
+	// void OnRep_AuthorityCurrentState();                                                                                   // [0x5b29d10] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.BlastMineKickSensor
@@ -208,7 +208,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.BlastMineKickSensor.Authority_OnKickChargeablePercentChanged
-	// void Authority_OnKickChargeablePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5b1c990] Final|Native|Private 
+	// void Authority_OnKickChargeablePercentChanged(class UChargeableComponent* ChargeableComponent, float PercentCompletionChange, float TotalPercentComplete); // [0x5b29620] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.BlastMineState_Explode
@@ -269,18 +269,18 @@ class UBlastMineVisibilityController : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x70];                                      // 0x00B8   (0x0070)  MISSED
-	SDK_UNDEFINED(80,5094) /* TSet<UFXSystemComponent*> */ __um(_systems);                                         // 0x0128   (0x0050)  
-	SDK_UNDEFINED(80,5095) /* TSet<UMeshComponent*> */ __um(_meshes);                                              // 0x0178   (0x0050)  
+	SDK_UNDEFINED(80,5484) /* TSet<UFXSystemComponent*> */ __um(_systems);                                         // 0x0128   (0x0050)  
+	SDK_UNDEFINED(80,5485) /* TSet<UMeshComponent*> */ __um(_meshes);                                              // 0x0178   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01C8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK24.BlastMineVisibilityController.IsVisible
-	// bool IsVisible();                                                                                                     // [0x5b1cda0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsVisible();                                                                                                     // [0x5b29a30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.BlastMineVisibilityController.AddMeshComponent
-	// void AddMeshComponent(class UMeshComponent* MeshComponent);                                                           // [0x5b1c870] Final|Native|Public|BlueprintCallable 
+	// void AddMeshComponent(class UMeshComponent* MeshComponent);                                                           // [0x5b29500] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK24.BlastMineVisibilityController.AddFXSystem
-	// void AddFXSystem(class UFXSystemComponent* System);                                                                   // [0x5b1c7e0] Final|Native|Public|BlueprintCallable 
+	// void AddFXSystem(class UFXSystemComponent* System);                                                                   // [0x5b29470] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK24.BlindZombieFlashlightableLightingStrategy
@@ -363,7 +363,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.Counterforce.Multicast_ShowTotemAura
-	// void Multicast_ShowTotemAura(class ATotem* Totem);                                                                    // [0x501b930] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ShowTotemAura(class ATotem* Totem);                                                                    // [0x4ff91d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK24.EnvQueryContext_ZombiePatrolAreaPoint
@@ -374,7 +374,7 @@ public:
 };
 
 /// Class /Script/TheK24.Eruption
-/// Size: 0x0050 (0x0003C8 - 0x000418)
+/// Size: 0x0058 (0x0003C8 - 0x000420)
 class UEruption : public UPerk
 { 
 public:
@@ -387,24 +387,24 @@ public:
 	float                                              _screamRevealLocationDuration;                              // 0x0400   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0404   (0x0004)  MISSED
 	class UClass*                                      _survivorEffectClass;                                       // 0x0408   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0410   (0x0008)  MISSED
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0410   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK24.Eruption.Multicast_TriggerPerk
-	// void Multicast_TriggerPerk(TArray<AGenerator*> explodingGenerators);                                                  // [0x5020b90] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_TriggerPerk(TArray<AGenerator*> highlightedGenerators, TArray<AGenerator*> explodingGenerators);       // [0x5b29af0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK24.Eruption.Multicast_HighlightGenerator
-	// void Multicast_HighlightGenerator(class AGenerator* Generator);                                                       // [0x5869f30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_HighlightGenerator(class AGenerator* Generator);                                                       // [0x586e260] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK24.Eruption.GetSurvivorImposedStatusEffectDurationAtLevel
-	// float GetSurvivorImposedStatusEffectDurationAtLevel();                                                                // [0x500a9b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSurvivorImposedStatusEffectDurationAtLevel();                                                                // [0x4fe8260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.Eruption.GetScreamRevealLocationDuration
-	// float GetScreamRevealLocationDuration();                                                                              // [0x5b1cd70] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetScreamRevealLocationDuration();                                                                              // [0x5b29a00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.Eruption.GetGeneratorRegressPercentageAtLevel
-	// float GetGeneratorRegressPercentageAtLevel();                                                                         // [0x50230e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGeneratorRegressPercentageAtLevel();                                                                         // [0x5000c70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.Eruption.Cosmetic_OnGeneratorHighlightStart
-	// void Cosmetic_OnGeneratorHighlightStart(class AGenerator* highlightedGenerator);                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnGeneratorHighlightStart(class AGenerator* highlightedGenerator);                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.Eruption.Cosmetic_OnGeneratorHighlightEnd
-	// void Cosmetic_OnGeneratorHighlightEnd(class AGenerator* highlightedGenerator);                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnGeneratorHighlightEnd(class AGenerator* highlightedGenerator);                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK24.EruptionIconStrategy
@@ -427,15 +427,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.Flashbang.OnRep_GeneratorsRepairProgress
-	// void OnRep_GeneratorsRepairProgress();                                                                                // [0x5b1cfe0] Final|Native|Private 
+	// void OnRep_GeneratorsRepairProgress();                                                                                // [0x5b29d70] Final|Native|Private 
 	// Function /Script/TheK24.Flashbang.GetGeneratorRepairPercentToCraftFlashbangAtLevel
-	// float GetGeneratorRepairPercentToCraftFlashbangAtLevel();                                                             // [0x500a890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGeneratorRepairPercentToCraftFlashbangAtLevel();                                                             // [0x4fe8140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.Flashbang.Cosmetic_OnGeneratorRepairProgressionTargetAchieved
-	// void Cosmetic_OnGeneratorRepairProgressionTargetAchieved();                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnGeneratorRepairProgressionTargetAchieved();                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.Flashbang.Client_OnGeneratorRepairProgressionTargetAchieved
-	// void Client_OnGeneratorRepairProgressionTargetAchieved();                                                             // [0x501b910] Final|Net|Native|Event|Private|NetClient 
+	// void Client_OnGeneratorRepairProgressionTargetAchieved();                                                             // [0x4fe8460] Final|Net|Native|Event|Private|NetClient 
 	// Function /Script/TheK24.Flashbang.Authority_OnRepairProgressApplied
-	// void Authority_OnRepairProgressApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5b1caa0] Final|Native|Private 
+	// void Authority_OnRepairProgressApplied(float individualChargeAmount, float totalChargeAmount, class AActor* chargeInstigator, bool wasCoop, float DeltaTime); // [0x5b29730] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.GeneratorBlastMinePlacerComponent
@@ -451,7 +451,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.GeneratorBlastMinePlacerComponent.OnRep_BlastMine
-	// void OnRep_BlastMine();                                                                                               // [0x5b1cfc0] Final|Native|Private 
+	// void OnRep_BlastMine();                                                                                               // [0x5b29d50] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.Hysteria
@@ -463,14 +463,14 @@ public:
 	float                                              _perkCooldownDuration;                                      // 0x03D4   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x03E0   (0x0008)  MISSED
 	class UClass*                                      _obliviousEffectClass;                                      // 0x03E8   (0x0008)  
-	SDK_UNDEFINED(80,5096) /* TMap<ACamperPlayer*, UHysteriaObliviousEffect*> */ __um(_obliviousEffectPerSurvivorMap); // 0x03F0   (0x0050)  
+	SDK_UNDEFINED(80,5486) /* TMap<ACamperPlayer*, UHysteriaObliviousEffect*> */ __um(_obliviousEffectPerSurvivorMap); // 0x03F0   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/TheK24.Hysteria.GetPerkCooldownDurationAtLevel
-	// float GetPerkCooldownDurationAtLevel();                                                                               // [0x500a980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPerkCooldownDurationAtLevel();                                                                               // [0x4fe8230] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.Hysteria.GetObliviousEffectDurationAtLevel
-	// float GetObliviousEffectDurationAtLevel();                                                                            // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetObliviousEffectDurationAtLevel();                                                                            // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK24.HysteriaObliviousEffect
@@ -497,38 +497,37 @@ public:
 };
 
 /// Class /Script/TheK24.InjectSerumInteraction
-/// Size: 0x00C0 (0x000790 - 0x000850)
+/// Size: 0x00D0 (0x000790 - 0x000860)
 class UInjectSerumInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	FTunableStat                                       _injectSerumKillerInstinctTime;                             // 0x0788   (0x0080)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0808   (0x0008)  MISSED
-	FGameplayTag                                       _scoreEvent;                                                // 0x0810   (0x000C)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x081C   (0x0004)  MISSED
-	FDBDTunableRowHandle                               _serumApplyHeal;                                            // 0x0820   (0x0028)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0848   (0x0008)  MISSED
+	class UClass*                                      _killerInstinctStatusEffectClass;                           // 0x0790   (0x0008)  
+	FTunableStat                                       _injectSerumKillerInstinctTime;                             // 0x0798   (0x0080)  
+	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0818   (0x0008)  MISSED
+	FGameplayTag                                       _scoreEvent;                                                // 0x0820   (0x000C)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x082C   (0x0004)  MISSED
+	FDBDTunableRowHandle                               _serumApplyHeal;                                            // 0x0830   (0x0028)  
+	unsigned char                                      UnknownData02_6[0x8];                                       // 0x0858   (0x0008)  MISSED
 
 
 	/// Functions
-	// Function /Script/TheK24.InjectSerumInteraction.OnSurvivorCured_Cosmetic
-	// void OnSurvivorCured_Cosmetic();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.InjectSerumInteraction.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5b1cef0] Final|Native|Private 
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5b29c80] Final|Native|Private 
 	// Function /Script/TheK24.InjectSerumInteraction.GetInjectionTarget
-	// class ACamperPlayer* GetInjectionTarget();                                                                            // [0x5b1cd40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetInjectionTarget();                                                                            // [0x5b299d0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.InjectSerumInteraction.Authority_CureSurvivor
-	// void Authority_CureSurvivor(class ACamperPlayer* CamperPlayer);                                                       // [0x5b1c900] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_CureSurvivor(class ACamperPlayer* CamperPlayer);                                                       // [0x5b29590] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 };
 
 /// Class /Script/TheK24.InjectSerumOther
-/// Size: 0x0000 (0x000850 - 0x000850)
+/// Size: 0x0000 (0x000860 - 0x000860)
 class UInjectSerumOther : public UInjectSerumInteraction
 { 
 public:
 };
 
 /// Class /Script/TheK24.InjectSerumSelf
-/// Size: 0x0000 (0x000850 - 0x000850)
+/// Size: 0x0000 (0x000860 - 0x000860)
 class UInjectSerumSelf : public UInjectSerumInteraction
 { 
 public:
@@ -549,7 +548,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24AnimInstance.OnKillerPowerLevelChanged
-	// void OnKillerPowerLevelChanged(int32_t powerlevel);                                                                   // [0x5b1ce60] Final|Native|Private 
+	// void OnKillerPowerLevelChanged(int32_t powerlevel);                                                                   // [0x5b29bf0] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.K24CharacterFXComponent
@@ -557,15 +556,15 @@ public:
 class UK24CharacterFXComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,5097) /* FMulticastInlineDelegate */ __um(OnPowerLevelChangedFx);                             // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,5098) /* FMulticastInlineDelegate */ __um(Local_OnKillerHitZombie);                           // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,5099) /* FMulticastInlineDelegate */ __um(Local_OnKillerContaminatedSurvivor);                // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,5487) /* FMulticastInlineDelegate */ __um(OnPowerLevelChangedFx);                             // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5488) /* FMulticastInlineDelegate */ __um(Local_OnKillerHitZombie);                           // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,5489) /* FMulticastInlineDelegate */ __um(Local_OnKillerContaminatedSurvivor);                // 0x00D8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x28];                                      // 0x00E8   (0x0028)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK24.K24CharacterFXComponent.Local_OnKillerPowerLevelChanged
-	// void Local_OnKillerPowerLevelChanged(int32_t powerlevel);                                                             // [0x5b1cdd0] Final|Native|Private 
+	// void Local_OnKillerPowerLevelChanged(int32_t powerlevel);                                                             // [0x5b29a60] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.K24CheatComponent
@@ -579,21 +578,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24CheatComponent.DBD_TeleportZombiesTo
-	// void DBD_TeleportZombiesTo(float X, float Y, float Z);                                                                // [0x5b20730] Final|Exec|Native|Public 
+	// void DBD_TeleportZombiesTo(float X, float Y, float Z);                                                                // [0x5b2d4c0] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24ZombieFall
-	// void DBD_K24ZombieFall(float Zvalue);                                                                                 // [0x49bd730] Final|Exec|Native|Public 
+	// void DBD_K24ZombieFall(float Zvalue);                                                                                 // [0x496cad0] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24StopAllZombies
-	// void DBD_K24StopAllZombies();                                                                                         // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K24StopAllZombies();                                                                                         // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24StartAllZombies
-	// void DBD_K24StartAllZombies();                                                                                        // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K24StartAllZombies();                                                                                        // [0x4592da0] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24SpawnZombieOnKiller
-	// void DBD_K24SpawnZombieOnKiller();                                                                                    // [0x5b20710] Final|Exec|Native|Public 
+	// void DBD_K24SpawnZombieOnKiller();                                                                                    // [0x5b2d4a0] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24SetPowerLevelPoints
-	// void DBD_K24SetPowerLevelPoints(float value);                                                                         // [0x49bd730] Final|Exec|Native|Public 
+	// void DBD_K24SetPowerLevelPoints(float value);                                                                         // [0x496cad0] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24SetContaminationOnSurvivor
-	// void DBD_K24SetContaminationOnSurvivor(bool value);                                                                   // [0x5818260] Final|Exec|Native|Public 
+	// void DBD_K24SetContaminationOnSurvivor(bool value);                                                                   // [0x581c030] Final|Exec|Native|Public 
 	// Function /Script/TheK24.K24CheatComponent.DBD_K24ComeToMeMyZombies
-	// void DBD_K24ComeToMeMyZombies();                                                                                      // [0x45fe020] Final|Exec|Native|Public 
+	// void DBD_K24ComeToMeMyZombies();                                                                                      // [0x4592da0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheK24.K24PounceAttack
@@ -605,7 +604,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24PounceAttack.Server_HitZombie
-	// void Server_HitZombie(class AZombieCharacter* zombie, float TargetLocationTimestamp);                                 // [0x5b20d40] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_HitZombie(class AZombieCharacter* zombie, float TargetLocationTimestamp);                                 // [0x5b2dad0] Final|Net|NetReliableNative|Event|Private|NetServer 
 };
 
 /// Class /Script/TheK24.K24Power
@@ -642,43 +641,43 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24Power.WhipAttackStart_Cosmetic
-	// void WhipAttackStart_Cosmetic();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void WhipAttackStart_Cosmetic();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.WhipAttackMove_Cosmetic
-	// void WhipAttackMove_Cosmetic(FVector whipStartLocation, FVector whipEndLocation, bool isFirstRayCast);                // [0x61c32d0] BlueprintCosmetic|Event|Public|HasDefaults|BlueprintEvent 
+	// void WhipAttackMove_Cosmetic(FVector whipStartLocation, FVector whipEndLocation, bool isFirstRayCast);                // [0x61d2f50] BlueprintCosmetic|Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.WhipAttackHit_Cosmetic
-	// void WhipAttackHit_Cosmetic(FVector whipStartLocation, FVector impactPointLocation, FVector whipEndLocation, bool isFirstHit, FVector ImpactNormal, FName phyMaterial, bool hitACharacter); // [0x61c32d0] BlueprintCosmetic|Event|Public|HasDefaults|BlueprintEvent 
+	// void WhipAttackHit_Cosmetic(FVector whipStartLocation, FVector impactPointLocation, FVector whipEndLocation, bool isFirstHit, FVector ImpactNormal, FName phyMaterial, bool hitACharacter); // [0x61d2f50] BlueprintCosmetic|Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.WhipAttackEnd_Cosmetic
-	// void WhipAttackEnd_Cosmetic();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void WhipAttackEnd_Cosmetic();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.Server_PowerDestroyPallet
-	// void Server_PowerDestroyPallet(class APallet* Pallet);                                                                // [0x5b20f80] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_PowerDestroyPallet(class APallet* Pallet);                                                                // [0x5b2dd10] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK24.K24Power.Server_PowerDestroyBreakable
-	// void Server_PowerDestroyBreakable(class ABreakableBase* breakable);                                                   // [0x5b20ef0] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_PowerDestroyBreakable(class ABreakableBase* breakable);                                                   // [0x5b2dc80] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK24.K24Power.Server_KillAZombie
-	// void Server_KillAZombie(class AZombieCharacter* zombie, EAttackType attackType);                                      // [0x5b20e20] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_KillAZombie(class AZombieCharacter* zombie, EAttackType attackType);                                      // [0x5b2dbb0] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK24.K24Power.PowerHitStateEnd_Cosmetic
-	// void PowerHitStateEnd_Cosmetic(FVector whipStartLocation, FVector whipEndLocation);                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|HasDefaults|BlueprintEvent 
+	// void PowerHitStateEnd_Cosmetic(FVector whipStartLocation, FVector whipEndLocation);                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|HasDefaults|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.PowerCooldownEnd_Cosmetic
-	// void PowerCooldownEnd_Cosmetic();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void PowerCooldownEnd_Cosmetic();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.OnRep_PowerLevelPoints
-	// void OnRep_PowerLevelPoints();                                                                                        // [0x5b20b90] Final|Native|Private 
+	// void OnRep_PowerLevelPoints();                                                                                        // [0x5b2d920] Final|Native|Private 
 	// Function /Script/TheK24.K24Power.OnPowerStop_Cosmetic
-	// void OnPowerStop_Cosmetic();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnPowerStop_Cosmetic();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.OnPowerStartCharge_Cosmetic
-	// void OnPowerStartCharge_Cosmetic();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnPowerStartCharge_Cosmetic();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.OnPowerLevelChanged_Cosmetic
-	// void OnPowerLevelChanged_Cosmetic(int32_t powerlevel);                                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnPowerLevelChanged_Cosmetic(int32_t powerlevel);                                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.K24Power.Multicast_PowerDestroyPallet
-	// void Multicast_PowerDestroyPallet(class APallet* Pallet);                                                             // [0x5b209d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_PowerDestroyPallet(class APallet* Pallet);                                                             // [0x5b2d760] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK24.K24Power.Multicast_PowerDestroyBreakable
-	// void Multicast_PowerDestroyBreakable(class ABreakableBase* breakable);                                                // [0x5087b00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_PowerDestroyBreakable(class ABreakableBase* breakable);                                                // [0x50696d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK24.K24Power.IsInPower
-	// bool IsInPower();                                                                                                     // [0x5b20980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInPower();                                                                                                     // [0x5b2d710] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.K24Power.GetWhipLength
-	// float GetWhipLength();                                                                                                // [0x5b20880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetWhipLength();                                                                                                // [0x5b2d610] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.K24Power.GetPowerLevel
-	// int32_t GetPowerLevel();                                                                                              // [0x5b20850] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPowerLevel();                                                                                              // [0x5b2d5e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.K24Power.Authority_OnSurvivorContaminated
-	// void Authority_OnSurvivorContaminated(EContaminator contaminator);                                                    // [0x5b20420] Final|Native|Public  
+	// void Authority_OnSurvivorContaminated(EContaminator contaminator);                                                    // [0x5b2d1b0] Final|Native|Public  
 };
 
 /// Class /Script/TheK24.K24PowerAnimInstance
@@ -728,11 +727,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24PowerAnimInstance.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5b20b10] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5b2d8a0] Final|Native|Private 
 	// Function /Script/TheK24.K24PowerAnimInstance.OnKillerPowerLevelChanged
-	// void OnKillerPowerLevelChanged(int32_t powerlevel);                                                                   // [0x5b20a80] Final|Native|Private 
+	// void OnKillerPowerLevelChanged(int32_t powerlevel);                                                                   // [0x5b2d810] Final|Native|Private 
 	// Function /Script/TheK24.K24PowerAnimInstance.OnIntroCompleted
-	// void OnIntroCompleted();                                                                                              // [0x5b20a60] Final|Native|Private 
+	// void OnIntroCompleted();                                                                                              // [0x5b2d7f0] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.k24PowerCooldownInteraction
@@ -749,7 +748,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.k24PowerCooldownInteraction.SetK24Power
-	// void SetK24Power(class AK24Power* K24Power);                                                                          // [0x5b21010] Final|Native|Public|BlueprintCallable 
+	// void SetK24Power(class AK24Power* K24Power);                                                                          // [0x5b2dda0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK24.K24PowerPresentationItemProgressComponent
@@ -762,7 +761,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24PowerPresentationItemProgressComponent.SetK24Power
-	// void SetK24Power(class AK24Power* K24Power);                                                                          // [0x57ebc00] Final|Native|Public|BlueprintCallable 
+	// void SetK24Power(class AK24Power* K24Power);                                                                          // [0x57eeff0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK24.K24SlashAttack
@@ -786,11 +785,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.K24WhipAttack.Server_HitBreakableOrZombie
-	// void Server_HitBreakableOrZombie();                                                                                   // [0x5b20d20] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_HitBreakableOrZombie();                                                                                   // [0x5b2dab0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK24.K24WhipAttack.Server_ContaminatePlayer
-	// void Server_ContaminatePlayer(class ACamperPlayer* Target, float TargetLocationTimestamp);                            // [0x5b20c40] Net|NetReliableNative|Event|Public|NetServer 
+	// void Server_ContaminatePlayer(class ACamperPlayer* Target, float TargetLocationTimestamp);                            // [0x5b2d9d0] Net|NetReliableNative|Event|Public|NetServer 
 	// Function /Script/TheK24.K24WhipAttack.Client_ContaminationResult
-	// void Client_ContaminationResult(class ADBDPlayer* Target, bool IsValid);                                              // [0x5b20640] Net|NetReliableNative|Event|Public|NetClient 
+	// void Client_ContaminationResult(class ADBDPlayer* Target, bool IsValid);                                              // [0x5b2d3d0] Net|NetReliableNative|Event|Public|NetClient 
 };
 
 /// Class /Script/TheK24.K24WhipAttackOpenSubstate
@@ -850,11 +849,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.LethalPursuer.Server_ActivatePerk
-	// void Server_ActivatePerk();                                                                                           // [0x501b910] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_ActivatePerk();                                                                                           // [0x4fe8460] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK24.LethalPursuer.Local_OnIntroCompleted
-	// void Local_OnIntroCompleted();                                                                                        // [0x5b209b0] Final|Native|Private 
+	// void Local_OnIntroCompleted();                                                                                        // [0x5b2d740] Final|Native|Private 
 	// Function /Script/TheK24.LethalPursuer.GetSurvivorRevealDurationAtLevel
-	// float GetSurvivorRevealDurationAtLevel();                                                                             // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSurvivorRevealDurationAtLevel();                                                                             // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK24.Resurgence
@@ -877,9 +876,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.RookieSpirit.OnRep_NumberOfGreatSkillChecksOnGeneratorRepair
-	// void OnRep_NumberOfGreatSkillChecksOnGeneratorRepair();                                                               // [0x5b20b70] Final|Native|Private 
+	// void OnRep_NumberOfGreatSkillChecksOnGeneratorRepair();                                                               // [0x5b2d900] Final|Native|Private 
 	// Function /Script/TheK24.RookieSpirit.HandleGeneratorIsDamagedChanged
-	// void HandleGeneratorIsDamagedChanged(class AGenerator* Generator, class ADBDPlayer* Player);                          // [0x5b208b0] Final|Native|Private 
+	// void HandleGeneratorIsDamagedChanged(class AGenerator* Generator, class ADBDPlayer* Player);                          // [0x5b2d640] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.SupplyCrateOutlineUpdateStrategy
@@ -908,19 +907,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.SurvivorContaminationComponent.OnRep_IsContaminated
-	// void OnRep_IsContaminated();                                                                                          // [0x5b20b50] Final|Native|Private 
+	// void OnRep_IsContaminated();                                                                                          // [0x5b2d8e0] Final|Native|Private 
 	// Function /Script/TheK24.SurvivorContaminationComponent.OnRep_InjectSerumInteractions
-	// void OnRep_InjectSerumInteractions();                                                                                 // [0x5b20b30] Final|Native|Private 
+	// void OnRep_InjectSerumInteractions();                                                                                 // [0x5b2d8c0] Final|Native|Private 
 	// Function /Script/TheK24.SurvivorContaminationComponent.OnContaminationCured_Cosmetic
-	// void OnContaminationCured_Cosmetic();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnContaminationCured_Cosmetic();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.SurvivorContaminationComponent.OnContaminated_SFX_Stinger_Cosmetic
-	// void OnContaminated_SFX_Stinger_Cosmetic();                                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnContaminated_SFX_Stinger_Cosmetic();                                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.SurvivorContaminationComponent.OnContaminated_Cosmetic
-	// void OnContaminated_Cosmetic(EContaminator contaminator);                                                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnContaminated_Cosmetic(EContaminator contaminator);                                                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.SurvivorContaminationComponent.Multicast_OnContaminated_Cosmetic
-	// void Multicast_OnContaminated_Cosmetic(EContaminator contaminator);                                                   // [0x58190a0] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_OnContaminated_Cosmetic(EContaminator contaminator);                                                   // [0x581ce70] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK24.SurvivorContaminationComponent.IsContaminated
-	// bool IsContaminated();                                                                                                // [0x57f10f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsContaminated();                                                                                                // [0x57f4360] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK24.TheK24Utilities
@@ -973,9 +972,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombieAIController.OnSlasherSet
-	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x5b20bb0] Final|Native|Private 
+	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x5b2d940] Final|Native|Private 
 	// Function /Script/TheK24.ZombieAIController.Authority_OnTargetPerceptionUpdated
-	// void Authority_OnTargetPerceptionUpdated(class AActor* Actor, FAIStimulus Stimulus);                                  // [0x5b204a0] Final|Native|Private 
+	// void Authority_OnTargetPerceptionUpdated(class AActor* Actor, FAIStimulus Stimulus);                                  // [0x5b2d230] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.ZombieAnimInstance
@@ -1032,7 +1031,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombieAttractedByGeneratorBTService.OnInRangeChanged
-	// void OnInRangeChanged(bool inRange, class AGenerator* Generator);                                                     // [0x5b24060] Final|Native|Private 
+	// void OnInRangeChanged(bool inRange, class AGenerator* Generator);                                                     // [0x5b30df0] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.ZombieBlindableComponent
@@ -1070,7 +1069,7 @@ public:
 	EZombieGender                                      _zombieGender;                                              // 0x0720   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x7];                                       // 0x0721   (0x0007)  MISSED
 	class USkeletalMesh*                               _femaleSkeletalMesh;                                        // 0x0728   (0x0008)  
-	SDK_UNDEFINED(16,5100) /* FString */               __um(_audioSwitchState);                                    // 0x0730   (0x0010)  
+	SDK_UNDEFINED(16,5490) /* FString */               __um(_audioSwitchState);                                    // 0x0730   (0x0010)  
 	class UZombieBlindableComponent*                   _blindableComponent;                                        // 0x0740   (0x0008)  
 	class UChargeableComponent*                        _blindingChargeableComponent;                               // 0x0748   (0x0008)  
 	class UFirecrackerEffectHandlerComponent*          _firecrackerEffectHandlerComponent;                         // 0x0750   (0x0008)  
@@ -1092,43 +1091,43 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombieCharacter.ZombieKilledByKiller_Cosmetic
-	// void ZombieKilledByKiller_Cosmetic(EAttackType attackType);                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void ZombieKilledByKiller_Cosmetic(EAttackType attackType);                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.ZombieCharacter.SetCharacterActive_Cosmetic
-	// void SetCharacterActive_Cosmetic(bool value);                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void SetCharacterActive_Cosmetic(bool value);                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.ZombieCharacter.OnZombieStateChanged_Cosmetic
-	// void OnZombieStateChanged_Cosmetic(EZombieState ZombieState);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnZombieStateChanged_Cosmetic(EZombieState ZombieState);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.ZombieCharacter.OnSlasherSet
-	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x5b241d0] Final|Native|Private 
+	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x5b30f60] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.OnRep_ZombieState
-	// void OnRep_ZombieState(EZombieState previousState);                                                                   // [0x5b24150] Final|Native|Private 
+	// void OnRep_ZombieState(EZombieState previousState);                                                                   // [0x5b30ee0] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.OnRep_ZombieGender
-	// void OnRep_ZombieGender();                                                                                            // [0x5b24130] Final|Native|Private 
+	// void OnRep_ZombieGender();                                                                                            // [0x5b30ec0] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.OnFemaleGenderSet_Cosmetic
-	// void OnFemaleGenderSet_Cosmetic();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void OnFemaleGenderSet_Cosmetic();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK24.ZombieCharacter.OnEndOverlapZombieAttackDetector
-	// void OnEndOverlapZombieAttackDetector(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5b23f00] Final|Native|Private 
+	// void OnEndOverlapZombieAttackDetector(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5b30c90] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.OnBeginOverlapZombieAttackDetector
-	// void OnBeginOverlapZombieAttackDetector(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5b23ce0] Final|Native|Private|HasOutParms 
+	// void OnBeginOverlapZombieAttackDetector(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5b30a70] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK24.ZombieCharacter.Multicast_ZombieKilledByKillerCosmetic
-	// void Multicast_ZombieKilledByKillerCosmetic(EAttackType attackType);                                                  // [0x5b23c60] Final|Net|Native|Event|NetMulticast|Private 
+	// void Multicast_ZombieKilledByKillerCosmetic(EAttackType attackType);                                                  // [0x5b309f0] Final|Net|Native|Event|NetMulticast|Private 
 	// Function /Script/TheK24.ZombieCharacter.GetZombieGender
-	// EZombieGender GetZombieGender();                                                                                      // [0x5b23c30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EZombieGender GetZombieGender();                                                                                      // [0x5b309c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.ZombieCharacter.GetOtherCharactersVerticalCollisionsHandler
-	// class UOtherCharactersVerticalCollisionsHandler* GetOtherCharactersVerticalCollisionsHandler();                       // [0x5b23c10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UOtherCharactersVerticalCollisionsHandler* GetOtherCharactersVerticalCollisionsHandler();                       // [0x5b309a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.ZombieCharacter.GetAuthoritativeMovementComponent
-	// class UAuthoritativeMovementComponent* GetAuthoritativeMovementComponent();                                           // [0x5b23bd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UAuthoritativeMovementComponent* GetAuthoritativeMovementComponent();                                           // [0x5b30960] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.ZombieCharacter.GetAudioSwitchState
-	// FString GetAudioSwitchState();                                                                                        // [0x5b23b50] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FString GetAudioSwitchState();                                                                                        // [0x5b308e0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK24.ZombieCharacter.Authority_OnZombieStateChanged
-	// void Authority_OnZombieStateChanged(EZombieState ZombieState);                                                        // [0x5b23ad0] Final|Native|Private 
+	// void Authority_OnZombieStateChanged(EZombieState ZombieState);                                                        // [0x5b30860] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.Authority_OnFlashlightRemoved
-	// void Authority_OnFlashlightRemoved(class UFlashlightComponent* Flashlight);                                           // [0x5b23630] Final|Native|Private 
+	// void Authority_OnFlashlightRemoved(class UFlashlightComponent* Flashlight);                                           // [0x5b303c0] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.Authority_OnFlashlightAdded
-	// void Authority_OnFlashlightAdded(class UFlashlightComponent* Flashlight);                                             // [0x5b235a0] Final|Native|Private 
+	// void Authority_OnFlashlightAdded(class UFlashlightComponent* Flashlight);                                             // [0x5b30330] Final|Native|Private 
 	// Function /Script/TheK24.ZombieCharacter.Authority_OnFirecrackerInRangeBegin
-	// void Authority_OnFirecrackerInRangeBegin(FFirecrackerEffectData& effectData);                                         // [0x5b23500] Final|Native|Private|HasOutParms 
+	// void Authority_OnFirecrackerInRangeBegin(FFirecrackerEffectData& effectData);                                         // [0x5b30290] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK24.ZombieCharacter.Authority_DeactivateZombieAndStartRespawnTimer
-	// void Authority_DeactivateZombieAndStartRespawnTimer();                                                                // [0x5b234e0] Final|Native|Private 
+	// void Authority_DeactivateZombieAndStartRespawnTimer();                                                                // [0x5b30270] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.ZombieChaseStateBTService
@@ -1150,12 +1149,12 @@ public:
 class UZombieCustomizationComponent : public UCustomizedSkeletalMesh
 { 
 public:
-	SDK_UNDEFINED(8,5101) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_survivorSource);                              // 0x0430   (0x0008)  
+	SDK_UNDEFINED(8,5491) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_survivorSource);                              // 0x0430   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/TheK24.ZombieCustomizationComponent.Multicast_SetZombieCustomization
-	// void Multicast_SetZombieCustomization(class ACamperPlayer* Survivor);                                                 // [0x507e2f0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_SetZombieCustomization(class ACamperPlayer* Survivor);                                                 // [0x505fd60] Net|NetReliableNative|Event|NetMulticast|Public 
 };
 
 /// Class /Script/TheK24.ZombieEscapeDoorPointsActor
@@ -1191,7 +1190,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombieFallDetectorComponent.Authority_OnMovementModeChange
-	// void Authority_OnMovementModeChange(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x5b239c0] Final|Native|Private 
+	// void Authority_OnMovementModeChange(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x5b30750] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.ZombieOutlineUpdateStrategy
@@ -1216,7 +1215,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombieResurrector.Authority_OnKillerPowerLevelChanged
-	// void Authority_OnKillerPowerLevelChanged(int32_t powerlevel);                                                         // [0x5b236e0] Final|Native|Private 
+	// void Authority_OnKillerPowerLevelChanged(int32_t powerlevel);                                                         // [0x5b30470] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.ZombieRotateTowardsTargetBTTask
@@ -1238,7 +1237,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombiesInterestEventManager.Authority_OnLoudNoiseTriggered
-	// void Authority_OnLoudNoiseTriggered(class AActor* originator, class AActor* instigatingActor, FVector Location, bool shouldTrack, float& audibleRange, bool isQuickAction, bool isDeceivingNoise); // [0x5b23770] Final|Native|Private|HasOutParms|HasDefaults 
+	// void Authority_OnLoudNoiseTriggered(class AActor* originator, class AActor* instigatingActor, FVector Location, bool shouldTrack, float& audibleRange, bool isQuickAction, bool isDeceivingNoise); // [0x5b30500] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/TheK24.ZombiesManagement
@@ -1258,7 +1257,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK24.ZombiesManagement.Authority_OnIntroComplete
-	// void Authority_OnIntroComplete();                                                                                     // [0x5b236c0] Final|Native|Private 
+	// void Authority_OnIntroComplete();                                                                                     // [0x5b30450] Final|Native|Private 
 };
 
 /// Class /Script/TheK24.ZombiesPatrolAreaManager

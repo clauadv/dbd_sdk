@@ -534,8 +534,8 @@ public:
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00E5   (0x0003)  MISSED
 	FAIRoll                                            StartRoll;                                                  // 0x00E8   (0x0024)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x010C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,3111) /* FString */               __um(StartInteractionID);                                   // 0x0110   (0x0010)  
-	SDK_UNDEFINED(16,3112) /* FString */               __um(StopInteractionID);                                    // 0x0120   (0x0010)  
+	SDK_UNDEFINED(16,3183) /* FString */               __um(StartInteractionID);                                   // 0x0110   (0x0010)  
+	SDK_UNDEFINED(16,3184) /* FString */               __um(StopInteractionID);                                    // 0x0120   (0x0010)  
 	float                                              MinHoldInputTime;                                           // 0x0130   (0x0004)  
 	bool                                               AutoReleaseHoldInputWhenCharged;                            // 0x0134   (0x0001)  
 	unsigned char                                      UnknownData02_6[0x5B];                                      // 0x0135   (0x005B)  MISSED
@@ -561,9 +561,9 @@ public:
 
 	/// Functions
 	// Function /Script/DBDBots.AISkill_DirectionalMinigame.OnMinigameStart
-	// void OnMinigameStart(TArray<EDirectionalInputKey> Sequence, int32_t currentIndex);                                    // [0x4f9ca50] Final|Native|Private 
+	// void OnMinigameStart(TArray<EDirectionalInputKey> Sequence, int32_t currentIndex);                                    // [0x4f78d60] Final|Native|Private 
 	// Function /Script/DBDBots.AISkill_DirectionalMinigame.OnMinigameEnd
-	// void OnMinigameEnd(EDirectionalMinigameResult Result);                                                                // [0x4f9c9d0] Final|Native|Private 
+	// void OnMinigameEnd(EDirectionalMinigameResult Result);                                                                // [0x4f78ce0] Final|Native|Private 
 };
 
 /// Class /Script/DBDBots.AISkill_Diversion
@@ -606,7 +606,7 @@ public:
 	float                                              SearchHeightAmplifierActivationHeight;                      // 0x0134   (0x0004)  
 	bool                                               IsUnsafeAction;                                             // 0x0138   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0139   (0x0007)  MISSED
-	SDK_UNDEFINED(16,3113) /* FString */               __um(UnsafeInteractionID);                                  // 0x0140   (0x0010)  
+	SDK_UNDEFINED(16,3185) /* FString */               __um(UnsafeInteractionID);                                  // 0x0140   (0x0010)  
 	bool                                               UnsafeActionUsesItemAddons;                                 // 0x0150   (0x0001)  
 	bool                                               UnsafeActionIsSelfInteraction;                              // 0x0151   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x2];                                       // 0x0152   (0x0002)  MISSED
@@ -620,7 +620,7 @@ public:
 class UAISkill_FindInteractable : public UAISkill_Find
 { 
 public:
-	SDK_UNDEFINED(16,3114) /* FString */               __um(RequiredInteractionId);                                // 0x0180   (0x0010)  
+	SDK_UNDEFINED(16,3186) /* FString */               __um(RequiredInteractionId);                                // 0x0180   (0x0010)  
 	EInputInteractionType                              RequiredInteractionInputType;                               // 0x0190   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0191   (0x0007)  MISSED
 };
@@ -635,7 +635,7 @@ public:
 };
 
 /// Class /Script/DBDBots.AISkill_FindCollectable_Camper
-/// Size: 0x0040 (0x0001A0 - 0x0001E0)
+/// Size: 0x0050 (0x0001A0 - 0x0001F0)
 class UAISkill_FindCollectable_Camper : public UAISkill_FindCollectable
 { 
 public:
@@ -643,9 +643,10 @@ public:
 	float                                              CollectOverWeightRatioDifference;                           // 0x01A4   (0x0004)  
 	FAITunableParameter                                WantToKeepEmptyItemPenalty;                                 // 0x01A8   (0x0010)  
 	FAITunableParameter                                CloseItemDistThreshold;                                     // 0x01B8   (0x0010)  
-	FAITunableParameter                                CloseItemWeightBonus;                                       // 0x01C8   (0x0010)  
-	float                                              EmptyItemChargeThreshold;                                   // 0x01D8   (0x0004)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x01DC   (0x0004)  MISSED
+	FAITunableParameter                                CloseItemWeightMultiplier;                                  // 0x01C8   (0x0010)  
+	FAITunableParameter                                ItemGoalWeightMultiplier;                                   // 0x01D8   (0x0010)  
+	float                                              EmptyItemChargeThreshold;                                   // 0x01E8   (0x0004)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x01EC   (0x0004)  MISSED
 };
 
 /// Class /Script/DBDBots.AISkill_FindCollectable_Hatchet
@@ -751,19 +752,20 @@ public:
 	FAITunableParameter                                BotDangerStateGoalWeight;                                   // 0x01F0   (0x0010)  
 	FAITunableParameter                                IncapacitatedAlliesGoalWeight;                              // 0x0200   (0x0010)  
 	FAITunableParameter                                BotInjuredStateGoalWeight;                                  // 0x0210   (0x0010)  
-	SDK_UNDEFINED(16,3115) /* TArray<TWeakObjectPtr<ACamperPlayer*>> */ __um(_hookedAndNotReassuredSurvivors);     // 0x0220   (0x0010)  
+	SDK_UNDEFINED(16,3187) /* TArray<TWeakObjectPtr<ACamperPlayer*>> */ __um(_hookedAndNotReassuredSurvivors);     // 0x0220   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0230   (0x0050)  MISSED
 };
 
 /// Class /Script/DBDBots.AISkill_FindInteractable_SolveCondemned
-/// Size: 0x0040 (0x000198 - 0x0001D8)
+/// Size: 0x0050 (0x000198 - 0x0001E8)
 class UAISkill_FindInteractable_SolveCondemned : public UAISkill_FindInteractable
 { 
 public:
 	FAITunableParameter                                NearCondemnedWeight;                                        // 0x0198   (0x0010)  
 	FAITunableParameter                                HighCondemnedThreshold;                                     // 0x01A8   (0x0010)  
-	FAITunableParameter                                SolveCondemnedBasicWeight;                                  // 0x01B8   (0x0010)  
-	FAITunableParameter                                CondemnedLevelProportionalWeight;                           // 0x01C8   (0x0010)  
+	FAITunableParameter                                MaxLockedCondemnThreshold;                                  // 0x01B8   (0x0010)  
+	FAITunableParameter                                SolveCondemnedBasicWeight;                                  // 0x01C8   (0x0010)  
+	FAITunableParameter                                CondemnedLevelProportionalWeight;                           // 0x01D8   (0x0010)  
 };
 
 /// Class /Script/DBDBots.AISkill_FindInteractable_SolveRBT
@@ -871,7 +873,7 @@ class UAISkill_Interaction_ForThePeople : public UAISkill_Interaction
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0190   (0x0008)  MISSED
-	SDK_UNDEFINED(16,3116) /* FString */               __um(BlockInteractionId);                                   // 0x0198   (0x0010)  
+	SDK_UNDEFINED(16,3188) /* FString */               __um(BlockInteractionId);                                   // 0x0198   (0x0010)  
 };
 
 /// Class /Script/DBDBots.AISkill_Interaction_GeneratorSecondaryInteraction
@@ -968,19 +970,16 @@ public:
 };
 
 /// Class /Script/DBDBots.AISkill_Interaction_SetGeneratorTrap
-/// Size: 0x0020 (0x0001B0 - 0x0001D0)
+/// Size: 0x0010 (0x0001B0 - 0x0001C0)
 class UAISkill_Interaction_SetGeneratorTrap : public UAISkill_Interaction_GeneratorSecondaryInteraction
 { 
 public:
 	float                                              MinGeneratorRepairPercentToSetTrap;                         // 0x01B0   (0x0004)  
-	float                                              CheckKillerDistanceInterval;                                // 0x01B4   (0x0004)  
-	float                                              MinKillerApproachingSpeed;                                  // 0x01B8   (0x0004)  
-	int32_t                                            MinKillerApproachingFastStreak;                             // 0x01BC   (0x0004)  
-	EAITerrorLevel                                     TerrorLevelToSetTrap;                                       // 0x01C0   (0x0001)  
-	EAITerrorLevel                                     TerrorLevelToSetTrapImmediately;                            // 0x01C1   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x2];                                       // 0x01C2   (0x0002)  MISSED
-	float                                              TerrorLevelCloseRange;                                      // 0x01C4   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x01C8   (0x0008)  MISSED
+	EAITerrorLevel                                     TerrorLevelToSetTrap;                                       // 0x01B4   (0x0001)  
+	EAITerrorLevel                                     TerrorLevelToSetTrapImmediately;                            // 0x01B5   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x01B6   (0x0002)  MISSED
+	float                                              TerrorLevelCloseRange;                                      // 0x01B8   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x01BC   (0x0004)  MISSED
 };
 
 /// Class /Script/DBDBots.AISkill_Interaction_StaticBlast
@@ -1055,7 +1054,7 @@ public:
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x01C9   (0x0007)  MISSED
 	TArray<FAIDetectedStimulus>                        _unfilteredTargets;                                         // 0x01D0   (0x0010)  
 	TArray<FAIDetectedStimulus>                        _filteredTargets;                                           // 0x01E0   (0x0010)  
-	SDK_UNDEFINED(80,3117) /* TMap<AActor*, FTargetMoveAwayToFastInfo> */ __um(_targetsMoveAwayTooFastInfo);       // 0x01F0   (0x0050)  
+	SDK_UNDEFINED(80,3189) /* TMap<AActor*, FTargetMoveAwayToFastInfo> */ __um(_targetsMoveAwayTooFastInfo);       // 0x01F0   (0x0050)  
 };
 
 /// Class /Script/DBDBots.AISkill_InteractionTarget_Aim
@@ -1126,10 +1125,11 @@ public:
 };
 
 /// Class /Script/DBDBots.AISkill_InteractionTarget_DashHillbilly
-/// Size: 0x0000 (0x000240 - 0x000240)
+/// Size: 0x0030 (0x000240 - 0x000270)
 class UAISkill_InteractionTarget_DashHillbilly : public UAISkill_InteractionTarget_Dash
 { 
 public:
+	unsigned char                                      UnknownData00_1[0x30];                                      // 0x0240   (0x0030)  MISSED
 };
 
 /// Class /Script/DBDBots.AISkill_InteractionTarget_DeadHard
@@ -1418,6 +1418,29 @@ public:
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00EC   (0x0004)  MISSED
 };
 
+/// Class /Script/DBDBots.AISkill_LeaveGeneratorInteraction
+/// Size: 0x0020 (0x0000E0 - 0x000100)
+class UAISkill_LeaveGeneratorInteraction : public UAISkill
+{ 
+public:
+	TArray<FPerkIdDropdown>                            Perks;                                                      // 0x00E0   (0x0010)  
+	FName                                              BBIsDoingLeaveGeneratorInteraction;                         // 0x00F0   (0x000C)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x00FC   (0x0004)  MISSED
+};
+
+/// Class /Script/DBDBots.AISkill_LeaveGenerator_SetGeneratorTrap
+/// Size: 0x0010 (0x000100 - 0x000110)
+class UAISkill_LeaveGenerator_SetGeneratorTrap : public UAISkill_LeaveGeneratorInteraction
+{ 
+public:
+	float                                              MinGeneratorRepairPercentToSetTrap;                         // 0x0100   (0x0004)  
+	EAITerrorLevel                                     TerrorLevelToSetTrap;                                       // 0x0104   (0x0001)  
+	EAITerrorLevel                                     TerrorLevelToSetTrapImmediately;                            // 0x0105   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0106   (0x0002)  MISSED
+	float                                              TerrorLevelCloseRange;                                      // 0x0108   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x4];                                       // 0x010C   (0x0004)  MISSED
+};
+
 /// Class /Script/DBDBots.AISkill_PlotTwist
 /// Size: 0x0030 (0x0000E0 - 0x000110)
 class UAISkill_PlotTwist : public UAISkill
@@ -1564,7 +1587,7 @@ public:
 class UBTDecorator_CompareInteractorCharge : public UBTDecorator_TickableBase
 { 
 public:
-	SDK_UNDEFINED(1,3118) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ChargePercentQuery);                     // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,3190) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ChargePercentQuery);                     // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0071   (0x0003)  MISSED
 	float                                              ChargePercentValue;                                         // 0x0074   (0x0004)  
 	FBlackboardKeySelector                             BBInteractorObj;                                            // 0x0078   (0x0030)  
@@ -1588,7 +1611,7 @@ class UBTDecorator_CompareModifierValues : public UBTDecorator_TickableBase
 { 
 public:
 	FModifierValueData                                 ModifierValueData1;                                         // 0x0070   (0x0020)  
-	SDK_UNDEFINED(1,3119) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ArithmeticOperation);                    // 0x0090   (0x0001)  
+	SDK_UNDEFINED(1,3191) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ArithmeticOperation);                    // 0x0090   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0091   (0x0003)  MISSED
 	FModifierValueData                                 ModifierValueData2;                                         // 0x0094   (0x0020)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00B4   (0x0004)  MISSED
@@ -1600,7 +1623,7 @@ class UBTDecorator_ContainsInteraction : public UBTDecorator_TickableBase
 { 
 public:
 	FBlackboardKeySelector                             BBInteractorObj;                                            // 0x0070   (0x0030)  
-	SDK_UNDEFINED(16,3120) /* TArray<FString> */       __um(InteractionIds);                                       // 0x00A0   (0x0010)  
+	SDK_UNDEFINED(16,3192) /* TArray<FString> */       __um(InteractionIds);                                       // 0x00A0   (0x0010)  
 };
 
 /// Class /Script/DBDBots.BTDecorator_ExtCompareBBEntries
@@ -1652,7 +1675,7 @@ public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0078   (0x0008)  MISSED
 	FAITunableParameter                                MaxTimeLimit;                                               // 0x0080   (0x0010)  
 	FBlackboardKeySelector                             BBFilterKey;                                                // 0x0090   (0x0030)  
-	SDK_UNDEFINED(1,3121) /* TEnumAsByte<EBasicKeyOperation> */ __um(FilterOperation);                             // 0x00C0   (0x0001)  
+	SDK_UNDEFINED(1,3193) /* TEnumAsByte<EBasicKeyOperation> */ __um(FilterOperation);                             // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x7];                                       // 0x00C1   (0x0007)  MISSED
 };
 
@@ -1661,7 +1684,7 @@ public:
 class UBTDecorator_GameplayModifierValue : public UBTDecorator_TickableBase
 { 
 public:
-	SDK_UNDEFINED(1,3122) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ArithmeticOperation);                    // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,3194) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ArithmeticOperation);                    // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0071   (0x0003)  MISSED
 	FModifierValueData                                 ModifierValueData;                                          // 0x0074   (0x0020)  
 	float                                              CompareToValue;                                             // 0x0094   (0x0004)  
@@ -1723,7 +1746,7 @@ struct FAIHasPerkCondition
 { 
 	FDataTableDropdown                                 perkId;                                                     // 0x0000   (0x0030)  
 	bool                                               CompareDisplayPercent;                                      // 0x0030   (0x0001)  
-	SDK_UNDEFINED(1,3123) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(DisplayPercentQuery);                    // 0x0031   (0x0001)  
+	SDK_UNDEFINED(1,3195) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(DisplayPercentQuery);                    // 0x0031   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x0032   (0x0002)  MISSED
 	float                                              DisplayPercentValue;                                        // 0x0034   (0x0004)  
 };
@@ -1779,11 +1802,11 @@ class UBTDecorator_IsCamperState : public UBTDecorator_TickableBase
 public:
 	FBlackboardKeySelector                             BBCamper;                                                   // 0x0070   (0x0030)  
 	ECamperDamageState                                 damageState;                                                // 0x00A0   (0x0001)  
-	SDK_UNDEFINED(1,3124) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(DamageOp);                               // 0x00A1   (0x0001)  
+	SDK_UNDEFINED(1,3196) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(DamageOp);                               // 0x00A1   (0x0001)  
 	EImmobilizedState                                  ImmobilizeState;                                            // 0x00A2   (0x0001)  
-	SDK_UNDEFINED(1,3125) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ImmobilizeOp);                           // 0x00A3   (0x0001)  
+	SDK_UNDEFINED(1,3197) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(ImmobilizeOp);                           // 0x00A3   (0x0001)  
 	EIsCamperStateOnFilter                             OnFilter;                                                   // 0x00A4   (0x0001)  
-	SDK_UNDEFINED(1,3126) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(OnOthersFilterOp);                       // 0x00A5   (0x0001)  
+	SDK_UNDEFINED(1,3198) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(OnOthersFilterOp);                       // 0x00A5   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x2];                                       // 0x00A6   (0x0002)  MISSED
 	int32_t                                            NbOnOthersCampers;                                          // 0x00A8   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x00AC   (0x0004)  MISSED
@@ -1802,29 +1825,30 @@ public:
 class UBTDecorator_IsGameState : public UBTDecorator_TickableBase
 { 
 public:
-	SDK_UNDEFINED(1,3127) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(RemainingObjectiveOp);                   // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,3199) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(RemainingObjectiveOp);                   // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0071   (0x0003)  MISSED
 	int32_t                                            NbRemainingObjectives;                                      // 0x0074   (0x0004)  
-	SDK_UNDEFINED(1,3128) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(SurvivorsLeftOp);                        // 0x0078   (0x0001)  
+	SDK_UNDEFINED(1,3200) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(SurvivorsLeftOp);                        // 0x0078   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0079   (0x0003)  MISSED
 	int32_t                                            NbSurvivorsLeft;                                            // 0x007C   (0x0004)  
 };
 
 /// Class /Script/DBDBots.BTDecorator_IsInteractionAvailable
-/// Size: 0x0058 (0x000070 - 0x0000C8)
+/// Size: 0x0088 (0x000070 - 0x0000F8)
 class UBTDecorator_IsInteractionAvailable : public UBTDecorator_TickableBase
 { 
 public:
 	EInteractionCheckType                              InteractionCheckType;                                       // 0x0070   (0x0001)  
 	EInputInteractionType                              inputType;                                                  // 0x0071   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0072   (0x0006)  MISSED
-	SDK_UNDEFINED(16,3129) /* TArray<FString> */       __um(InteractionIds);                                       // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,3201) /* TArray<FString> */       __um(InteractionIds);                                       // 0x0078   (0x0010)  
 	EIsInteractionAvailableOnFilter                    OnFilter;                                                   // 0x0088   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0089   (0x0007)  MISSED
 	FBlackboardKeySelector                             BBInteractor;                                               // 0x0090   (0x0030)  
-	bool                                               FailIfAnotherOngoingInteraction;                            // 0x00C0   (0x0001)  
-	bool                                               FailIfNotPerformingInteraction;                             // 0x00C1   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x6];                                       // 0x00C2   (0x0006)  MISSED
+	FBlackboardKeySelector                             BBInputType;                                                // 0x00C0   (0x0030)  
+	bool                                               FailIfAnotherOngoingInteraction;                            // 0x00F0   (0x0001)  
+	bool                                               FailIfNotPerformingInteraction;                             // 0x00F1   (0x0001)  
+	unsigned char                                      UnknownData02_6[0x6];                                       // 0x00F2   (0x0006)  MISSED
 };
 
 /// Class /Script/DBDBots.BTDecorator_IsInteractorAvailable
@@ -1872,7 +1896,7 @@ public:
 class UBTDecorator_IsTunable : public UBTDecorator_TickableBase
 { 
 public:
-	SDK_UNDEFINED(1,3130) /* TEnumAsByte<ETunableComparison> */ __um(Operator);                                    // 0x0070   (0x0001)  
+	SDK_UNDEFINED(1,3202) /* TEnumAsByte<ETunableComparison> */ __um(Operator);                                    // 0x0070   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0071   (0x0003)  MISSED
 	FAITunableParameter                                TunableValue;                                               // 0x0074   (0x0010)  
 	float                                              CompareToValue;                                             // 0x0084   (0x0004)  
@@ -2106,7 +2130,7 @@ public:
 	bool                                               RegisterAsDiscoveredWhenFound;                              // 0x01B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x01B1   (0x0007)  MISSED
 	FBlackboardKeySelector                             BBOnlyFromActor;                                            // 0x01B8   (0x0030)  
-	SDK_UNDEFINED(16,3131) /* TArray<FString> */       __um(OnlyWithInteractorIDs);                                // 0x01E8   (0x0010)  
+	SDK_UNDEFINED(16,3203) /* TArray<FString> */       __um(OnlyWithInteractorIDs);                                // 0x01E8   (0x0010)  
 	float                                              RejectIfTerrorIsCloserThanSelfMargin;                       // 0x01F8   (0x0004)  
 	float                                              RejectIfInTerrorRadius;                                     // 0x01FC   (0x0004)  
 	bool                                               RejectIfInPressureZone;                                     // 0x0200   (0x0001)  
@@ -2143,7 +2167,7 @@ public:
 	FBlackboardKeySelector                             BBUnsafeActionUsesItemAddons;                               // 0x0300   (0x0030)  
 	FBlackboardKeySelector                             BBUnsafeActionIsSelfInteraction;                            // 0x0330   (0x0030)  
 	FBlackboardKeySelector                             BBUnsafeActionRange;                                        // 0x0360   (0x0030)  
-	SDK_UNDEFINED(16,3132) /* FString */               __um(UnsafeInteractionID);                                  // 0x0390   (0x0010)  
+	SDK_UNDEFINED(16,3204) /* FString */               __um(UnsafeInteractionID);                                  // 0x0390   (0x0010)  
 	bool                                               UnsafeActionUsesItemAddons;                                 // 0x03A0   (0x0001)  
 	bool                                               UnsafeActionIsSelfInteraction;                              // 0x03A1   (0x0001)  
 	unsigned char                                      UnknownData06_5[0x2];                                       // 0x03A2   (0x0002)  MISSED
@@ -2153,19 +2177,26 @@ public:
 };
 
 /// Class /Script/DBDBots.BTService_FindInteractor_Camper
-/// Size: 0x0078 (0x0003B8 - 0x000430)
+/// Size: 0x00F0 (0x0003B8 - 0x0004A8)
 class UBTService_FindInteractor_Camper : public UBTService_FindInteractor
 { 
 public:
 	EFindInteractableCamperFilter                      StatusFilter;                                               // 0x03B8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x03B9   (0x0007)  MISSED
 	TArray<class UClass*>                              IgnoreWhenTargetStatusEffects;                              // 0x03C0   (0x0010)  
-	FAITunableParameter                                AllyDangerStateGoalWeight;                                  // 0x03D0   (0x0010)  
-	FAITunableParameter                                IncapacitatedAlliesGoalWeight;                              // 0x03E0   (0x0010)  
-	FAITunableParameter                                CrawlingRecoveryProgressGoalWeight;                         // 0x03F0   (0x0010)  
-	FAITunableParameter                                CrawlingDeathTimerGoalWeight;                               // 0x0400   (0x0010)  
-	FAITunableParameter                                IdealKillerDistanceFromCrawling;                            // 0x0410   (0x0010)  
-	FAITunableParameter                                MaxKillerProximityWeight;                                   // 0x0420   (0x0010)  
+	float                                              RequiredAttentionMovementFrequency;                         // 0x03D0   (0x0004)  
+	float                                              AttentionMovementFrequencyLerp;                             // 0x03D4   (0x0004)  
+	float                                              AttentionValidTime;                                         // 0x03D8   (0x0004)  
+	float                                              AttentionValidDistance;                                     // 0x03DC   (0x0004)  
+	float                                              AttentionCooldownReduction;                                 // 0x03E0   (0x0004)  
+	FAITunableParameter                                AllyDangerStateGoalWeight;                                  // 0x03E4   (0x0010)  
+	FAITunableParameter                                IncapacitatedAlliesGoalWeight;                              // 0x03F4   (0x0010)  
+	FAITunableParameter                                CrawlingRecoveryProgressGoalWeight;                         // 0x0404   (0x0010)  
+	FAITunableParameter                                CrawlingDeathTimerGoalWeight;                               // 0x0414   (0x0010)  
+	FAITunableParameter                                IdealKillerDistanceFromCrawling;                            // 0x0424   (0x0010)  
+	FAITunableParameter                                MaxKillerProximityWeight;                                   // 0x0434   (0x0010)  
+	FAITunableParameter                                AttentionWeight;                                            // 0x0444   (0x0010)  
+	unsigned char                                      UnknownData01_6[0x54];                                      // 0x0454   (0x0054)  MISSED
 };
 
 /// Class /Script/DBDBots.BTService_FindInteractor_Exit
@@ -2259,7 +2290,7 @@ public:
 	float                                              KillerTargetUpdateInterval;                                 // 0x046C   (0x0004)  
 	float                                              UnsafeSabotageHealthyMarginTime;                            // 0x0470   (0x0004)  
 	float                                              UnsafeSabotageInjuredMarginTime;                            // 0x0474   (0x0004)  
-	SDK_UNDEFINED(16,3133) /* FString */               __um(NoToolboxInteractionID);                               // 0x0478   (0x0010)  
+	SDK_UNDEFINED(16,3205) /* FString */               __um(NoToolboxInteractionID);                               // 0x0478   (0x0010)  
 };
 
 /// Class /Script/DBDBots.BTService_FindInteractor_Pallet
@@ -2298,12 +2329,40 @@ public:
 	FAITunableParameter                                WantToKeepEmptyItemPenalty;                                 // 0x03B8   (0x0010)  
 };
 
+/// Struct /Script/DBDBots.AISelfHelpInteraction
+/// Size: 0x0028 (0x000000 - 0x000028)
+struct FAISelfHelpInteraction
+{ 
+	SDK_UNDEFINED(16,3206) /* FString */               __um(InteractionID);                                        // 0x0000   (0x0010)  
+	EInputInteractionType                              inputType;                                                  // 0x0010   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0011   (0x0003)  MISSED
+	FAITunableParameter                                BasicWeight;                                                // 0x0014   (0x0010)  
+	bool                                               UsesSurvivorItem;                                           // 0x0024   (0x0001)  
+	bool                                               PreferHelpFromOther;                                        // 0x0025   (0x0001)  
+	bool                                               UsesAISkill;                                                // 0x0026   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x1];                                       // 0x0027   (0x0001)  MISSED
+};
+
+/// Class /Script/DBDBots.BTService_FindInteractor_Self
+/// Size: 0x00F0 (0x0003B8 - 0x0004A8)
+class UBTService_FindInteractor_Self : public UBTService_FindInteractor
+{ 
+public:
+	FBlackboardKeySelector                             BBInputType;                                                // 0x03B8   (0x0030)  
+	FBlackboardKeySelector                             BBIsSkillSelfInteraction;                                   // 0x03E8   (0x0030)  
+	TArray<FAISelfHelpInteraction>                     SelfHelpInteractions;                                       // 0x0418   (0x0010)  
+	FGameplayTag                                       SelfInteractionContext;                                     // 0x0428   (0x000C)  
+	float                                              SurvivorProximityRange;                                     // 0x0434   (0x0004)  
+	FAITunableParameter                                SurvivorProximityWeightPenalty;                             // 0x0438   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x60];                                      // 0x0448   (0x0060)  MISSED
+};
+
 /// Struct /Script/DBDBots.AICleansePerkCondition
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FAICleansePerkCondition
 { 
 	FDataTableDropdown                                 CleansePerkID;                                              // 0x0000   (0x0030)  
-	SDK_UNDEFINED(1,3134) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(DisplayPercentQuery);                    // 0x0030   (0x0001)  
+	SDK_UNDEFINED(1,3207) /* TEnumAsByte<EArithmeticKeyOperation> */ __um(DisplayPercentQuery);                    // 0x0030   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0031   (0x0003)  MISSED
 	float                                              DisplayPercentValue;                                        // 0x0034   (0x0004)  
 };
@@ -2328,7 +2387,7 @@ public:
 struct FInteractableWithInteractionId
 { 
 	class UClass*                                      InteractableClass;                                          // 0x0000   (0x0008)  
-	SDK_UNDEFINED(16,3135) /* FString */               __um(InteractionID);                                        // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,3208) /* FString */               __um(InteractionID);                                        // 0x0008   (0x0010)  
 };
 
 /// Class /Script/DBDBots.BTService_FindInteractor_Trap
@@ -2385,7 +2444,7 @@ public:
 	FAITunableParameter                                NotSensedReactionDelay;                                     // 0x0210   (0x0010)  
 	FAITunableParameter                                SensedReactionDelay;                                        // 0x0220   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x0230   (0x0018)  MISSED
-	SDK_UNDEFINED(80,3136) /* TMap<UDBDDangerPredictionComponent*, FDangerObjectData> */ __um(_lastDangerObjectsMap); // 0x0248   (0x0050)  
+	SDK_UNDEFINED(80,3209) /* TMap<UDBDDangerPredictionComponent*, FDangerObjectData> */ __um(_lastDangerObjectsMap); // 0x0248   (0x0050)  
 };
 
 /// Class /Script/DBDBots.BTService_FindObject_K32EmpTarget
@@ -2449,14 +2508,15 @@ public:
 };
 
 /// Class /Script/DBDBots.BTService_GoalCoordinator
-/// Size: 0x0098 (0x000078 - 0x000110)
+/// Size: 0x00A8 (0x000078 - 0x000120)
 class UBTService_GoalCoordinator : public UBTService
 { 
 public:
 	FAITunableParameter                                GoalChangeWeightBuffer;                                     // 0x0078   (0x0010)  
 	FBlackboardKeySelector                             BBLockedIntoGoal;                                           // 0x0088   (0x0030)  
-	unsigned char                                      UnknownData00_5[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(80,3137) /* TMap<UObject*, FAIGoalWeightContainer> */ __um(_managedGoals);                       // 0x00C0   (0x0050)  
+	FGameplayTag                                       AISkillFindContext;                                         // 0x00B8   (0x000C)  
+	unsigned char                                      UnknownData00_5[0xC];                                       // 0x00C4   (0x000C)  MISSED
+	SDK_UNDEFINED(80,3210) /* TMap<UObject*, FAIGoalWeightContainer> */ __um(_managedGoals);                       // 0x00D0   (0x0050)  
 };
 
 /// Class /Script/DBDBots.BTService_InputAtTiming
@@ -2474,7 +2534,7 @@ class UBTService_Patrol : public UBTService
 { 
 public:
 	FBlackboardKeySelector                             BBFilterKey;                                                // 0x0078   (0x0030)  
-	SDK_UNDEFINED(1,3138) /* TEnumAsByte<EBasicKeyOperation> */ __um(FilterOperation);                             // 0x00A8   (0x0001)  
+	SDK_UNDEFINED(1,3211) /* TEnumAsByte<EBasicKeyOperation> */ __um(FilterOperation);                             // 0x00A8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x00A9   (0x0003)  MISSED
 	FVector                                            NavMeshFindLocationExtents;                                 // 0x00AC   (0x000C)  
 	float                                              MinPatrolInvestigationDistance;                             // 0x00B8   (0x0004)  
@@ -2525,7 +2585,7 @@ public:
 	FGameplayTag                                       Context;                                                    // 0x0078   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0084   (0x0004)  MISSED
 	FBlackboardKeySelector                             BBFilterKey;                                                // 0x0088   (0x0030)  
-	SDK_UNDEFINED(1,3139) /* TEnumAsByte<EBasicKeyOperation> */ __um(FilterOperation);                             // 0x00B8   (0x0001)  
+	SDK_UNDEFINED(1,3212) /* TEnumAsByte<EBasicKeyOperation> */ __um(FilterOperation);                             // 0x00B8   (0x0001)  
 	bool                                               RunEveryFrame;                                              // 0x00B9   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x6];                                       // 0x00BA   (0x0006)  MISSED
 };
@@ -2536,7 +2596,7 @@ class UBTService_SetBBEntry : public UBTService_OnRelevantBase
 { 
 public:
 	FBlackboardKeySelector                             BBToSetKey;                                                 // 0x0080   (0x0030)  
-	SDK_UNDEFINED(16,3140) /* FString */               __um(ToSetValue);                                           // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,3213) /* FString */               __um(ToSetValue);                                           // 0x00B0   (0x0010)  
 	FAITunableParameter                                RandomSetChance;                                            // 0x00C0   (0x0010)  
 };
 
@@ -2612,7 +2672,7 @@ public:
 };
 
 /// Class /Script/DBDBots.BTService_StateMonitor_Camper
-/// Size: 0x05A8 (0x0000D8 - 0x000680)
+/// Size: 0x0638 (0x0000D8 - 0x000710)
 class UBTService_StateMonitor_Camper : public UBTService_StateMonitor
 { 
 public:
@@ -2658,7 +2718,16 @@ public:
 	FAITunableParameter                                ChasedScoreKillerUndetectable;                              // 0x064C   (0x0010)  
 	FAITunableParameter                                ChasedScoreKillerRangedAndDash;                             // 0x065C   (0x0010)  
 	FAITunableParameter                                ChasedScoreKillerChaseTarget;                               // 0x066C   (0x0010)  
-	unsigned char                                      UnknownData00_6[0x4];                                       // 0x067C   (0x0004)  MISSED
+	FAITunableParameter                                PressureScoreDistanceWhenUnknownLocation;                   // 0x067C   (0x0010)  
+	FAITunableParameter                                PressureScorePredictedTargetMultiplier;                     // 0x068C   (0x0010)  
+	FAITunableParameter                                PressureScoreKillerMaxDirectionAngle;                       // 0x069C   (0x0010)  
+	FAITunableParameter                                PressureScoreKillerDirectionMaxMultiplier;                  // 0x06AC   (0x0010)  
+	FAITunableParameter                                PressureScoreSurvivorVisibilityTime;                        // 0x06BC   (0x0010)  
+	FAITunableParameter                                PressureScoreMaxMultiplierWhenSurvivorVisible;              // 0x06CC   (0x0010)  
+	FAITunableParameter                                PressureScoreKillerRangedAndDashDistancePenalty;            // 0x06DC   (0x0010)  
+	FAITunableParameter                                PressureScoreChaseTargetMultiplier;                         // 0x06EC   (0x0010)  
+	FAITunableParameter                                PressureScoreMaxScore;                                      // 0x06FC   (0x0010)  
+	unsigned char                                      UnknownData00_6[0x4];                                       // 0x070C   (0x0004)  MISSED
 };
 
 /// Class /Script/DBDBots.BTService_StateMonitor_Slasher
@@ -2686,7 +2755,7 @@ public:
 	float                                              SeenFriendlyStimuliExpiryInSeconds;                         // 0x018C   (0x0004)  
 	float                                              ForcedStimulusInSightDistance;                              // 0x0190   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0194   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3141) /* TMap<AActor*, float> */  __um(_seenFriendlyStimuli);                                 // 0x0198   (0x0050)  
+	SDK_UNDEFINED(80,3214) /* TMap<AActor*, float> */  __um(_seenFriendlyStimuli);                                 // 0x0198   (0x0050)  
 };
 
 /// Class /Script/DBDBots.BTService_StimuliMonitor_Camper
@@ -2801,7 +2870,7 @@ public:
 	bool                                               FailTaskOnUndodgeableDangerObject;                          // 0x018C   (0x0001)  
 	bool                                               IgnoreDangerObjects;                                        // 0x018D   (0x0001)  
 	unsigned char                                      UnknownData04_5[0x1A];                                      // 0x018E   (0x001A)  MISSED
-	SDK_UNDEFINED(80,3142) /* TMap<AActor*, bool> */   __um(_seenActorsMap);                                       // 0x01A8   (0x0050)  
+	SDK_UNDEFINED(80,3215) /* TMap<AActor*, bool> */   __um(_seenActorsMap);                                       // 0x01A8   (0x0050)  
 	unsigned char                                      UnknownData05_6[0x58];                                      // 0x01F8   (0x0058)  MISSED
 };
 
@@ -2860,7 +2929,7 @@ class UBTTask_RotateToBBInteractor : public UBTTask_BlueprintBase
 { 
 public:
 	FBlackboardKeySelector                             BBInteractorObj;                                            // 0x00B0   (0x0030)  
-	SDK_UNDEFINED(16,3143) /* TArray<FString> */       __um(InteractionIds);                                       // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,3216) /* TArray<FString> */       __um(InteractionIds);                                       // 0x00E0   (0x0010)  
 };
 
 /// Class /Script/DBDBots.BTTask_RunSkills
@@ -2878,7 +2947,7 @@ class UBTTask_SetBBEntry : public UBTTaskNode
 { 
 public:
 	FBlackboardKeySelector                             BBToSetKey;                                                 // 0x0078   (0x0030)  
-	SDK_UNDEFINED(16,3144) /* FString */               __um(ToSetValue);                                           // 0x00A8   (0x0010)  
+	SDK_UNDEFINED(16,3217) /* FString */               __um(ToSetValue);                                           // 0x00A8   (0x0010)  
 };
 
 /// Class /Script/DBDBots.BTTask_SetBBEntryTime
@@ -2988,16 +3057,16 @@ public:
 	class UDBDAIPassiveCameraComponent*                _aiPassiveCamera;                                           // 0x06A8   (0x0008)  
 	class UDBDAIEnemyTrackerComponent*                 _enemyTracker;                                              // 0x06B0   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x06B8   (0x0008)  MISSED
-	SDK_UNDEFINED(80,3145) /* TMap<FGameplayTag, FAISkillDynamicSubtreeStruct> */ __um(_setDynamicSubtrees);       // 0x06C0   (0x0050)  
+	SDK_UNDEFINED(80,3218) /* TMap<FGameplayTag, FAISkillDynamicSubtreeStruct> */ __um(_setDynamicSubtrees);       // 0x06C0   (0x0050)  
 	TArray<class UAISkill*>                            _aiSkills;                                                  // 0x0710   (0x0010)  
 	unsigned char                                      UnknownData02_6[0x58];                                      // 0x0720   (0x0058)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDBots.DBDAIBTController.OnPawnBump
-	// void OnPawnBump(class AActor* SelfActor, class AActor* OtherActor, FVector NormalImpulse, FHitResult& Hit);           // [0x4facb10] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnPawnBump(class AActor* SelfActor, class AActor* OtherActor, FVector NormalImpulse, FHitResult& Hit);           // [0x4f88580] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/DBDBots.DBDAIBTController.Authority_FinishedPlaying
-	// void Authority_FinishedPlaying();                                                                                     // [0x4facad0] Final|Native|Private 
+	// void Authority_FinishedPlaying();                                                                                     // [0x4f88560] Final|Native|Private 
 };
 
 /// Class /Script/DBDBots.DBDAIBTUtilities
@@ -3008,7 +3077,7 @@ public:
 };
 
 /// Class /Script/DBDBots.DBDAIEnemyTrackerComponent
-/// Size: 0x0080 (0x0000B8 - 0x000138)
+/// Size: 0x0088 (0x0000B8 - 0x000140)
 class UDBDAIEnemyTrackerComponent : public UActorComponent
 { 
 public:
@@ -3017,13 +3086,15 @@ public:
 	float                                              DataUpdateInterval;                                         // 0x00C8   (0x0004)  
 	float                                              TargetPredictionUpdateInterval;                             // 0x00CC   (0x0004)  
 	FAITunableParameter                                PotentialTargetedLocationRange;                             // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(80,3146) /* TMap<TWeakObjectPtr<ACharacter*>, FAITrackedEnemyData> */ __um(_trackedEnemiesData); // 0x00E0   (0x0050)  
-	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0130   (0x0008)  MISSED
+	float                                              BaseKnownInfoExpirationTime;                                // 0x00E0   (0x0004)  
+	float                                              DistanceInfoExpirationTime;                                 // 0x00E4   (0x0004)  
+	SDK_UNDEFINED(80,3219) /* TMap<TWeakObjectPtr<ACharacter*>, FAITrackedEnemyData> */ __um(_trackedEnemiesData); // 0x00E8   (0x0050)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0138   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDBots.DBDAIEnemyTrackerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4facaf0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x4f8c7c0] Final|Native|Private 
 };
 
 /// Class /Script/DBDBots.DBDAIGoalComponent
@@ -3032,8 +3103,8 @@ class UDBDAIGoalComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(80,3147) /* TMap<UObject*, FAIGoal> */ __um(_activeGoals);                                       // 0x00C0   (0x0050)  
-	SDK_UNDEFINED(80,3148) /* TMap<UObject*, FAIGoalWeightContainer> */ __um(_foundWeightedGoals);                 // 0x0110   (0x0050)  
+	SDK_UNDEFINED(80,3220) /* TMap<UObject*, FAIGoal> */ __um(_activeGoals);                                       // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,3221) /* TMap<UObject*, FAIGoalWeightContainer> */ __um(_foundWeightedGoals);                 // 0x0110   (0x0050)  
 };
 
 /// Class /Script/DBDBots.DBDAIPassiveCameraComponent
@@ -3056,7 +3127,7 @@ public:
 };
 
 /// Class /Script/DBDBots.DBDAIPerceptionComponent
-/// Size: 0x0260 (0x000198 - 0x0003F8)
+/// Size: 0x0278 (0x000198 - 0x000410)
 class UDBDAIPerceptionComponent : public UAIPerceptionComponent
 { 
 public:
@@ -3068,22 +3139,25 @@ public:
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01E9   (0x0003)  MISSED
 	float                                              CameraOffset;                                               // 0x01EC   (0x0004)  
 	float                                              StimulusHalfFOV;                                            // 0x01F0   (0x0004)  
-	unsigned char                                      UnknownData02_5[0x4];                                       // 0x01F4   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3149) /* TMap<UClass*, UObject*> */ __um(_objOverridingSenses);                               // 0x01F8   (0x0050)  
-	TArray<class UAISenseConfig*>                      _originalSenseConfigs;                                      // 0x0248   (0x0010)  
-	TArray<FAIDetectedStimulus>                        _detectedHostileStimuli;                                    // 0x0258   (0x0010)  
-	FAIDetectedStimulus                                _bestDetectedHostileStimulus;                               // 0x0268   (0x0088)  
-	FAIDetectedStimulus                                _lastBestDetectedHostileStimulusInMemory;                   // 0x02F0   (0x0088)  
-	unsigned char                                      UnknownData03_5[0x60];                                      // 0x0378   (0x0060)  MISSED
-	FAITunableParameter                                _activePhaseWalkingNoiseMaxRange;                           // 0x03D8   (0x0010)  
-	float                                              ThreatDividerForNonControlledActor;                         // 0x03E8   (0x0004)  
-	float                                              HighThreatDistanceForNonControlledActor;                    // 0x03EC   (0x0004)  
-	float                                              CurrentThreatDivider;                                       // 0x03F0   (0x0004)  
-	float                                              TerrorDistanceMultiplierForNonControlledActor;              // 0x03F4   (0x0004)  
+	float                                              OutOfChaseFullPeripheralVisionRange;                        // 0x01F4   (0x0004)  
+	float                                              InChaseFullPeripheralVisionRange;                           // 0x01F8   (0x0004)  
+	float                                              DarknessMaxVisionRange;                                     // 0x01FC   (0x0004)  
+	SDK_UNDEFINED(80,3222) /* TMap<UClass*, UObject*> */ __um(_objOverridingSenses);                               // 0x0200   (0x0050)  
+	TArray<class UAISenseConfig*>                      _originalSenseConfigs;                                      // 0x0250   (0x0010)  
+	TArray<FAIDetectedStimulus>                        _detectedHostileStimuli;                                    // 0x0260   (0x0010)  
+	FAIDetectedStimulus                                _bestDetectedHostileStimulus;                               // 0x0270   (0x0088)  
+	FAIDetectedStimulus                                _lastBestDetectedHostileStimulusInMemory;                   // 0x02F8   (0x0088)  
+	unsigned char                                      UnknownData02_5[0x6C];                                      // 0x0380   (0x006C)  MISSED
+	FAITunableParameter                                _activePhaseWalkingNoiseMaxRange;                           // 0x03EC   (0x0010)  
+	float                                              ThreatDividerForNonControlledActor;                         // 0x03FC   (0x0004)  
+	float                                              HighThreatDistanceForNonControlledActor;                    // 0x0400   (0x0004)  
+	float                                              CurrentThreatDivider;                                       // 0x0404   (0x0004)  
+	float                                              TerrorDistanceMultiplierForNonControlledActor;              // 0x0408   (0x0004)  
+	unsigned char                                      UnknownData03_6[0x4];                                       // 0x040C   (0x0004)  MISSED
 };
 
 /// Class /Script/DBDBots.DBDAIStateComponent
-/// Size: 0x0290 (0x0000B8 - 0x000348)
+/// Size: 0x02A0 (0x0000B8 - 0x000358)
 class UDBDAIStateComponent : public UActorComponent
 { 
 public:
@@ -3092,10 +3166,10 @@ public:
 	int32_t                                            DireStateAtHookedCount;                                     // 0x00C4   (0x0004)  
 	float                                              MidObjectiveStateProgressionRatio;                          // 0x00C8   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x00CC   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3150) /* TMap<EAIObjectiveState, FDangerStateGameStateMapContainer> */ __um(GameStateTable);  // 0x00D0   (0x0050)  
-	SDK_UNDEFINED(80,3151) /* TMap<EAIDifficultyLevel, FGameStatePressureZoneLevelMapContainer> */ __um(PressureZoneLevelTable); // 0x0120   (0x0050)  
-	SDK_UNDEFINED(80,3152) /* TMap<EAIDifficultyLevel, float> */ __um(MinRadiusPressureZoneHabituation);           // 0x0170   (0x0050)  
-	SDK_UNDEFINED(80,3153) /* TMap<EAIPressureZoneLevel, float> */ __um(PressureZoneHighToLowRangeLerpRatios);     // 0x01C0   (0x0050)  
+	SDK_UNDEFINED(80,3223) /* TMap<EAIObjectiveState, FDangerStateGameStateMapContainer> */ __um(GameStateTable);  // 0x00D0   (0x0050)  
+	SDK_UNDEFINED(80,3224) /* TMap<EAIDifficultyLevel, FGameStatePressureZoneLevelMapContainer> */ __um(PressureZoneLevelTable); // 0x0120   (0x0050)  
+	SDK_UNDEFINED(80,3225) /* TMap<EAIDifficultyLevel, float> */ __um(MinRadiusPressureZoneHabituation);           // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,3226) /* TMap<EAIPressureZoneLevel, float> */ __um(PressureZoneHighToLowRangeLerpRatios);     // 0x01C0   (0x0050)  
 	float                                              DefaultChasedPhaseOutDuration;                              // 0x0210   (0x0004)  
 	float                                              InjuredChasedPhaseOutDuration;                              // 0x0214   (0x0004)  
 	float                                              DefaultBeingAimedAtPhaseOutDuration;                        // 0x0218   (0x0004)  
@@ -3110,16 +3184,18 @@ public:
 	float                                              NotMovingCheckInterval;                                     // 0x023C   (0x0004)  
 	float                                              NotMovingSpeedPercent;                                      // 0x0240   (0x0004)  
 	char                                               NotMovingContinuousTimes;                                   // 0x0244   (0x0001)  
-	unsigned char                                      UnknownData02_6[0x103];                                     // 0x0245   (0x0103)  MISSED
+	unsigned char                                      UnknownData02_5[0x3];                                       // 0x0245   (0x0003)  MISSED
+	FAITunableParameter                                SpecialAttackReactionTimeMultiplier;                        // 0x0248   (0x0010)  
+	unsigned char                                      UnknownData03_6[0x100];                                     // 0x0258   (0x0100)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDBots.DBDAIStateComponent.OnUniqueGameplayEvent
-	// void OnUniqueGameplayEvent(EDBDScoreTypes EventType, float Amount, class AActor* Instigator, class AActor* Target);   // [0x4fb0940] Final|Native|Private 
+	// void OnUniqueGameplayEvent(EDBDScoreTypes EventType, float Amount, class AActor* Instigator, class AActor* Target);   // [0x4f8ca20] Final|Native|Private 
 	// Function /Script/DBDBots.DBDAIStateComponent.OnStartAimingEventDispatched
-	// void OnStartAimingEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                         // [0x4fb0830] Final|Native|Private|HasOutParms 
+	// void OnStartAimingEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                         // [0x4f8c910] Final|Native|Private|HasOutParms 
 	// Function /Script/DBDBots.DBDAIStateComponent.OnSpecialAttackEventDispatched
-	// void OnSpecialAttackEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x4fb0720] Final|Native|Private|HasOutParms 
+	// void OnSpecialAttackEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                       // [0x4f8c800] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/DBDBots.DBDBehaviorTreeComponent
@@ -3128,7 +3204,7 @@ class UDBDBehaviorTreeComponent : public UBehaviorTreeComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0298   (0x0008)  MISSED
-	SDK_UNDEFINED(80,3154) /* TMap<UClass*, FRelevantNodeMemory> */ __um(_lastRelevantNodeMemories);               // 0x02A0   (0x0050)  
+	SDK_UNDEFINED(80,3227) /* TMap<UClass*, FRelevantNodeMemory> */ __um(_lastRelevantNodeMemories);               // 0x02A0   (0x0050)  
 	TArray<class UObject*>                             _createdObjects;                                            // 0x02F0   (0x0010)  
 };
 
@@ -3138,14 +3214,14 @@ class UDBDBlackboardComponent : public UBlackboardComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x01C0   (0x0010)  MISSED
-	SDK_UNDEFINED(80,3155) /* TMap<UObject*, FMindFocusObjectEntry> */ __um(_mindFocusEntries);                    // 0x01D0   (0x0050)  
-	SDK_UNDEFINED(80,3156) /* TMap<FGameplayTag, FVector> */ __um(_pinLocations);                                  // 0x0220   (0x0050)  
-	SDK_UNDEFINED(80,3157) /* TMap<FGameplayTag, UObject*> */ __um(_pinObjects);                                   // 0x0270   (0x0050)  
-	SDK_UNDEFINED(80,3158) /* TMap<UObject*, float> */ __um(_lostMindFocusEntries);                                // 0x02C0   (0x0050)  
-	SDK_UNDEFINED(80,3159) /* TMap<FGameplayTag, FWeightedWishedObjectMapContainer> */ __um(_objectWishListMap);   // 0x0310   (0x0050)  
-	SDK_UNDEFINED(80,3160) /* TSet<UObject*> */        __um(_discoveredObjects);                                   // 0x0360   (0x0050)  
-	SDK_UNDEFINED(80,3161) /* TSet<UObject*> */        __um(_intentionValidators);                                 // 0x03B0   (0x0050)  
-	SDK_UNDEFINED(80,3162) /* TSet<APallet*> */        __um(_convincingDreamPallets);                              // 0x0400   (0x0050)  
+	SDK_UNDEFINED(80,3228) /* TMap<UObject*, FMindFocusObjectEntry> */ __um(_mindFocusEntries);                    // 0x01D0   (0x0050)  
+	SDK_UNDEFINED(80,3229) /* TMap<FGameplayTag, FVector> */ __um(_pinLocations);                                  // 0x0220   (0x0050)  
+	SDK_UNDEFINED(80,3230) /* TMap<FGameplayTag, UObject*> */ __um(_pinObjects);                                   // 0x0270   (0x0050)  
+	SDK_UNDEFINED(80,3231) /* TMap<UObject*, float> */ __um(_lostMindFocusEntries);                                // 0x02C0   (0x0050)  
+	SDK_UNDEFINED(80,3232) /* TMap<FGameplayTag, FWeightedWishedObjectMapContainer> */ __um(_objectWishListMap);   // 0x0310   (0x0050)  
+	SDK_UNDEFINED(80,3233) /* TSet<UObject*> */        __um(_discoveredObjects);                                   // 0x0360   (0x0050)  
+	SDK_UNDEFINED(80,3234) /* TSet<UObject*> */        __um(_intentionValidators);                                 // 0x03B0   (0x0050)  
+	SDK_UNDEFINED(80,3235) /* TSet<APallet*> */        __um(_convincingDreamPallets);                              // 0x0400   (0x0050)  
 	TArray<class UAISkill*>                            _dropItemLocks;                                             // 0x0450   (0x0010)  
 };
 
@@ -3156,11 +3232,11 @@ class UDBDNavLinkCustomComponent : public UNavLinkCustomComponent
 public:
 	FVector                                            BaseLinkRelativeStart;                                      // 0x0198   (0x000C)  
 	FVector                                            BaseLinkRelativeEnd;                                        // 0x01A4   (0x000C)  
-	SDK_UNDEFINED(1,3163) /* TEnumAsByte<ENavLinkDirection> */ __um(BaseLinkDirection);                            // 0x01B0   (0x0001)  
+	SDK_UNDEFINED(1,3236) /* TEnumAsByte<ENavLinkDirection> */ __um(BaseLinkDirection);                            // 0x01B0   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x01B1   (0x0003)  MISSED
 	float                                              AutoSnapSmartLinkPointsUpHeight;                            // 0x01B4   (0x0004)  
 	float                                              AutoSnapSmartLinkPointsDownHeight;                          // 0x01B8   (0x0004)  
-	SDK_UNDEFINED(1,3164) /* TEnumAsByte<ECollisionChannel> */ __um(AutoSnapCollisionChannel);                     // 0x01BC   (0x0001)  
+	SDK_UNDEFINED(1,3237) /* TEnumAsByte<ECollisionChannel> */ __um(AutoSnapCollisionChannel);                     // 0x01BC   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x01BD   (0x0003)  MISSED
 	float                                              AutoSmartLinkDirectionMaxHeight;                            // 0x01C0   (0x0004)  
 	bool                                               DisableSmartLinkOnPathObstruction;                          // 0x01C4   (0x0001)  
@@ -3168,7 +3244,7 @@ public:
 	float                                              PathObstructionTestDistance;                                // 0x01C8   (0x0004)  
 	float                                              PathObstructionTestShapeRadius;                             // 0x01CC   (0x0004)  
 	float                                              PathObstructionTestHeightOffset;                            // 0x01D0   (0x0004)  
-	SDK_UNDEFINED(1,3165) /* TEnumAsByte<ECollisionChannel> */ __um(PathObstructionCollisionChannel);              // 0x01D4   (0x0001)  
+	SDK_UNDEFINED(1,3238) /* TEnumAsByte<ECollisionChannel> */ __um(PathObstructionCollisionChannel);              // 0x01D4   (0x0001)  
 	bool                                               DisableOtherSmartLinkInProximityOnEnable;                   // 0x01D5   (0x0001)  
 	bool                                               EnableOtherSmartLinkInProximityOnDisable;                   // 0x01D6   (0x0001)  
 	unsigned char                                      UnknownData03_5[0x1];                                       // 0x01D7   (0x0001)  MISSED
@@ -3180,7 +3256,7 @@ public:
 
 	/// Functions
 	// Function /Script/DBDBots.DBDNavLinkCustomComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4fb0700] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x4f8c7e0] Final|Native|Private 
 };
 
 /// Class /Script/DBDBots.DBDNavMeshExplorerComponent
@@ -3207,7 +3283,7 @@ public:
 	float                                              UnblockPathTimeLimit;                                       // 0x026C   (0x0004)  
 	float                                              UnblockPathReachDistance;                                   // 0x0270   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x124];                                     // 0x0274   (0x0124)  MISSED
-	SDK_UNDEFINED(80,3166) /* TSet<ANavLinkProxy*> */  __um(_onNavLinkProxies);                                    // 0x0398   (0x0050)  
+	SDK_UNDEFINED(80,3239) /* TSet<ANavLinkProxy*> */  __um(_onNavLinkProxies);                                    // 0x0398   (0x0050)  
 	unsigned char                                      UnknownData02_6[0xA0];                                      // 0x03E8   (0x00A0)  MISSED
 };
 
@@ -3354,6 +3430,18 @@ public:
 	unsigned char                                      UnknownData00_6[0x58];                                      // 0x02C8   (0x0058)  MISSED
 };
 
+/// Class /Script/DBDBots.EnvQueryTest_Loop
+/// Size: 0x0078 (0x000238 - 0x0002B0)
+class UEnvQueryTest_Loop : public UEnvQueryTest
+{ 
+public:
+	class UClass*                                      QuerierContext;                                             // 0x0238   (0x0008)  
+	FAIDataProviderFloatValue                          TowardLoopAngle;                                            // 0x0240   (0x0040)  
+	FAITunableParameter                                MinSafetyRatingAgainstMeleeHostileStimulus;                 // 0x0280   (0x0010)  
+	FAITunableParameter                                MinSafetyRatingAgainstRangedHostileStimulus;                // 0x0290   (0x0010)  
+	FAITunableParameter                                ExtraMinSafetyRatingAgainstFastVaultHostileStimulus;        // 0x02A0   (0x0010)  
+};
+
 /// Class /Script/DBDBots.EnvQueryTest_LureToDangerObject
 /// Size: 0x0010 (0x000238 - 0x000248)
 class UEnvQueryTest_LureToDangerObject : public UEnvQueryTest
@@ -3447,8 +3535,8 @@ public:
 class UNavigationQueryFilter_Slasher : public UNavigationQueryFilter_Player
 { 
 public:
-	SDK_UNDEFINED(80,3167) /* TMap<FString, float> */  __um(DefaultInteractionsTimeCost);                          // 0x0070   (0x0050)  
-	SDK_UNDEFINED(80,3168) /* TMap<FString, float> */  __um(FrenzyInteractionsTimeCost);                           // 0x00C0   (0x0050)  
+	SDK_UNDEFINED(80,3240) /* TMap<FString, float> */  __um(DefaultInteractionsTimeCost);                          // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,3241) /* TMap<FString, float> */  __um(FrenzyInteractionsTimeCost);                           // 0x00C0   (0x0050)  
 };
 
 /// Class /Script/DBDBots.NavigationQueryFilter_Slasher_Limited
@@ -3459,50 +3547,52 @@ public:
 };
 
 /// Class /Script/DBDBots.NavLinkProxy_Base
-/// Size: 0x0070 (0x000280 - 0x0002F0)
+/// Size: 0x0078 (0x000280 - 0x0002F8)
 class ANavLinkProxy_Base : public ANavLinkProxy
 { 
 public:
 	float                                              WaitLinkOffset;                                             // 0x0280   (0x0004)  
 	float                                              MoveOnEndPointTimeLimit;                                    // 0x0284   (0x0004)  
 	int32_t                                            NbMaxLinkUsers;                                             // 0x0288   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x028C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3169) /* TMap<ADBDPlayer*, FMoveLinkPlayerInfo> */ __um(_players);                            // 0x0290   (0x0050)  
-	TArray<class ADBDPlayer*>                          _linkUsedByPlayers;                                         // 0x02E0   (0x0010)  
+	float                                              ReachedRadius;                                              // 0x028C   (0x0004)  
+	float                                              ReachedHeight;                                              // 0x0290   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0294   (0x0004)  MISSED
+	SDK_UNDEFINED(80,3242) /* TMap<ADBDPlayer*, FMoveLinkPlayerInfo> */ __um(_players);                            // 0x0298   (0x0050)  
+	TArray<class ADBDPlayer*>                          _linkUsedByPlayers;                                         // 0x02E8   (0x0010)  
 
 
 	/// Functions
 	// Function /Script/DBDBots.NavLinkProxy_Base.OnSmartLinkReachedCallback
-	// void OnSmartLinkReachedCallback(class AActor* MovingActor, FVector& DestinationPoint);                                // [0x4fb3810] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnSmartLinkReachedCallback(class AActor* MovingActor, FVector& DestinationPoint);                                // [0x4f90560] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/DBDBots.NavLinkProxy_Base.AutoAdjustSmartLinkPoints
-	// void AutoAdjustSmartLinkPoints();                                                                                     // [0x4fb37d0] Final|Native|Public|BlueprintCallable 
+	// void AutoAdjustSmartLinkPoints();                                                                                     // [0x4f90520] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/DBDBots.NavLinkProxy_DirectMove
-/// Size: 0x0068 (0x0002F0 - 0x000358)
+/// Size: 0x0068 (0x0002F8 - 0x000360)
 class ANavLinkProxy_DirectMove : public ANavLinkProxy_Base
 { 
 public:
-	TArray<FVector>                                    CustomPathPoints;                                           // 0x02F0   (0x0010)  
-	float                                              MoveToPathPointTimeLimit;                                   // 0x0300   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0304   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3170) /* TMap<ADBDPlayer*, UNavMovePath*> */ __um(_playersOnPath);                            // 0x0308   (0x0050)  
+	TArray<FVector>                                    CustomPathPoints;                                           // 0x02F8   (0x0010)  
+	float                                              MoveToPathPointTimeLimit;                                   // 0x0308   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x030C   (0x0004)  MISSED
+	SDK_UNDEFINED(80,3243) /* TMap<ADBDPlayer*, UNavMovePath*> */ __um(_playersOnPath);                            // 0x0310   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/DBDBots.NavLinkProxy_DirectMove.OnDisplayDebugInfo
-	// void OnDisplayDebugInfo();                                                                                            // [0x4fb37f0] Final|Native|Private 
+	// void OnDisplayDebugInfo();                                                                                            // [0x4f90540] Final|Native|Private 
 };
 
 /// Class /Script/DBDBots.NavLinkProxy_Interaction
-/// Size: 0x00A8 (0x0002F0 - 0x000398)
+/// Size: 0x00A8 (0x0002F8 - 0x0003A0)
 class ANavLinkProxy_Interaction : public ANavLinkProxy_Base
 { 
 public:
-	SDK_UNDEFINED(80,3171) /* TMap<EPlayerRole, FNavLinkInteractPlayerSetup> */ __um(PlayerSetups);                // 0x02F0   (0x0050)  
-	float                                              InteractionStartTimeLimit;                                  // 0x0340   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0344   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3172) /* TMap<ADBDPlayer*, float> */ __um(_playersInteractionInputAtTime);                    // 0x0348   (0x0050)  
+	SDK_UNDEFINED(80,3244) /* TMap<EPlayerRole, FNavLinkInteractPlayerSetup> */ __um(PlayerSetups);                // 0x02F8   (0x0050)  
+	float                                              InteractionStartTimeLimit;                                  // 0x0348   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x034C   (0x0004)  MISSED
+	SDK_UNDEFINED(80,3245) /* TMap<ADBDPlayer*, float> */ __um(_playersInteractionInputAtTime);                    // 0x0350   (0x0050)  
 };
 
 /// Class /Script/DBDBots.NavMovePath
@@ -3554,7 +3644,7 @@ public:
 	float                                              InactivePathTimePenalty;                                    // 0x006C   (0x0004)  
 	float                                              SwapPathTimePenalty;                                        // 0x0070   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0074   (0x0004)  MISSED
-	SDK_UNDEFINED(16,3173) /* FString */               __um(BreakPalletInteractionId);                             // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,3246) /* FString */               __um(BreakPalletInteractionId);                             // 0x0078   (0x0010)  
 	float                                              OnPathRadius;                                               // 0x0088   (0x0004)  
 	float                                              ClosePathPointRadius;                                       // 0x008C   (0x0004)  
 	float                                              MaxEvadeInteractableWeightDistance;                         // 0x0090   (0x0004)  
@@ -3618,11 +3708,11 @@ public:
 class UPathStrategy_FleeLoop : public UPathStrategy_Flee
 { 
 public:
-	SDK_UNDEFINED(80,3174) /* TMap<EAIDifficultyLevel, FGameStateEvadeLoopStrategyMapContainer> */ __um(GameStateFleeLoopStrategyTable); // 0x00C8   (0x0050)  
-	SDK_UNDEFINED(80,3175) /* TMap<EAIFleeLoopStrategy, UPathBuilder_EvadeLoop*> */ __um(FleeLoopStrategyPathBuilders); // 0x0118   (0x0050)  
+	SDK_UNDEFINED(80,3247) /* TMap<EAIDifficultyLevel, FGameStateEvadeLoopStrategyMapContainer> */ __um(GameStateFleeLoopStrategyTable); // 0x00C8   (0x0050)  
+	SDK_UNDEFINED(80,3248) /* TMap<EAIFleeLoopStrategy, UPathBuilder_EvadeLoop*> */ __um(FleeLoopStrategyPathBuilders); // 0x0118   (0x0050)  
 	float                                              CanBranchUnderEndPathDistance;                              // 0x0168   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x016C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3176) /* TMap<EAIFleeLoopStrategy, FAIRoll> */ __um(BranchRolls);                             // 0x0170   (0x0050)  
+	SDK_UNDEFINED(80,3249) /* TMap<EAIFleeLoopStrategy, FAIRoll> */ __um(BranchRolls);                             // 0x0170   (0x0050)  
 	float                                              RejectLoopBranchUnderEndPointsDistance;                     // 0x01C0   (0x0004)  
 	float                                              RejectBranchPointNearerHostileSourceDistance;               // 0x01C4   (0x0004)  
 	float                                              RejectBranchUnderNavLinkDistance;                           // 0x01C8   (0x0004)  
@@ -3644,7 +3734,7 @@ class UPathStrategy_FleeLure : public UPathStrategy_Flee
 public:
 	float                                              MaximumRangeToLureableDangerObject;                         // 0x00C8   (0x0004)  
 	float                                              MaxActiveTimeSecondsEndgame;                                // 0x00CC   (0x0004)  
-	SDK_UNDEFINED(16,3177) /* TArray<FString> */       __um(LostFocusInteractionIds);                              // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,3250) /* TArray<FString> */       __um(LostFocusInteractionIds);                              // 0x00D0   (0x0010)  
 };
 
 /// Class /Script/DBDBots.PathStrategySelector
@@ -3664,9 +3754,9 @@ public:
 class UPathStrategySelector_Flee : public UPathStrategySelector
 { 
 public:
-	SDK_UNDEFINED(80,3178) /* TMap<EAIFleePathStrategy, UPathStrategy*> */ __um(FleePathStrategies);               // 0x0070   (0x0050)  
+	SDK_UNDEFINED(80,3251) /* TMap<EAIFleePathStrategy, UPathStrategy*> */ __um(FleePathStrategies);               // 0x0070   (0x0050)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x00C0   (0x0008)  MISSED
-	SDK_UNDEFINED(80,3179) /* TMap<EAIFleePathStrategy, UPathStrategy*> */ __um(_activeFleePathStrategiesMap);     // 0x00C8   (0x0050)  
+	SDK_UNDEFINED(80,3252) /* TMap<EAIFleePathStrategy, UPathStrategy*> */ __um(_activeFleePathStrategiesMap);     // 0x00C8   (0x0050)  
 };
 
 /// Struct /Script/DBDBots.DistanceToTargetData
@@ -3685,6 +3775,13 @@ struct FTargetMoveAwayToFastInfo
 	float                                              AccumulatedTime;                                            // 0x0000   (0x0004)  
 	float                                              CooldownUntilTime;                                          // 0x0004   (0x0004)  
 	FAIDetectedStimulus                                Stimulus;                                                   // 0x0008   (0x0088)  
+};
+
+/// Struct /Script/DBDBots.AIGetAttentionMovement
+/// Size: 0x000C (0x000000 - 0x00000C)
+struct FAIGetAttentionMovement
+{ 
+	unsigned char                                      UnknownData00_1[0xC];                                       // 0x0000   (0x000C)  MISSED
 };
 
 /// Struct /Script/DBDBots.DreamPalletSpawnState
@@ -3712,7 +3809,7 @@ struct FDangerObjectData
 /// Size: 0x0058 (0x000000 - 0x000058)
 struct FAISkillDynamicSubtreeStruct
 { 
-	SDK_UNDEFINED(80,3180) /* TMap<UAISkill*, UBehaviorTree*> */ __um(AISkillDynamicSubtreeMap);                   // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,3253) /* TMap<UAISkill*, UBehaviorTree*> */ __um(AISkillDynamicSubtreeMap);                   // 0x0000   (0x0050)  
 	class UBehaviorTree*                               ConnectingSubtree;                                          // 0x0050   (0x0008)  
 };
 
@@ -3748,7 +3845,7 @@ struct FAIGoalWeight
 	FAIGoal                                            GoalInfo;                                                   // 0x0000   (0x0018)  
 	float                                              Weight;                                                     // 0x0018   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,3181) /* FString */               __um(WeightDebug);                                          // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,3254) /* FString */               __um(WeightDebug);                                          // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/DBDBots.AIGoalWeightContainer
@@ -3769,14 +3866,14 @@ struct FFocusPointData
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FGameStatePressureZoneLevelMapContainer
 { 
-	SDK_UNDEFINED(80,3182) /* TMap<EAIGameState, EAIPressureZoneLevel> */ __um(Map);                               // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,3255) /* TMap<EAIGameState, EAIPressureZoneLevel> */ __um(Map);                               // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/DBDBots.DangerStateGameStateMapContainer
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FDangerStateGameStateMapContainer
 { 
-	SDK_UNDEFINED(80,3183) /* TMap<EAIDangerState, EAIGameState> */ __um(Map);                                     // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,3256) /* TMap<EAIDangerState, EAIGameState> */ __um(Map);                                     // 0x0000   (0x0050)  
 };
 
 /// Struct /Script/DBDBots.RelevantNodeMemory
@@ -3794,7 +3891,7 @@ struct FMindFocusObjectEntry
 	TArray<class UObject*>                             FocusedBy;                                                  // 0x0000   (0x0010)  
 	float                                              FocusedStartTime;                                           // 0x0010   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0014   (0x0004)  MISSED
-	SDK_UNDEFINED(80,3184) /* TMap<FName, float> */    __um(CooldownMap);                                          // 0x0018   (0x0050)  
+	SDK_UNDEFINED(80,3257) /* TMap<FName, float> */    __um(CooldownMap);                                          // 0x0018   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x10];                                      // 0x0068   (0x0010)  MISSED
 };
 
@@ -3822,6 +3919,13 @@ struct FExplorableTileInfo
 	FBox                                               Bounds;                                                     // 0x0010   (0x001C)  
 };
 
+/// Struct /Script/DBDBots.EnvQueryTestLoopData
+/// Size: 0x0014 (0x000000 - 0x000014)
+struct FEnvQueryTestLoopData
+{ 
+	unsigned char                                      UnknownData00_1[0x14];                                      // 0x0000   (0x0014)  MISSED
+};
+
 /// Struct /Script/DBDBots.MoveLinkPlayerInfo
 /// Size: 0x0028 (0x000000 - 0x000028)
 struct FMoveLinkPlayerInfo
@@ -3835,7 +3939,7 @@ struct FNavLinkInteractPlayerSetup
 { 
 	EPawnInputPressTypes                               Input;                                                      // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
-	SDK_UNDEFINED(16,3185) /* TArray<FString> */       __um(InteractionIds);                                       // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,3258) /* TArray<FString> */       __um(InteractionIds);                                       // 0x0008   (0x0010)  
 	FAITunableParameter                                InputTimeDeviationInChase;                                  // 0x0018   (0x0010)  
 };
 
@@ -3864,6 +3968,6 @@ struct FPathToLoopInfo
 /// Size: 0x0050 (0x000000 - 0x000050)
 struct FGameStateEvadeLoopStrategyMapContainer
 { 
-	SDK_UNDEFINED(80,3186) /* TMap<EAIGameState, EAIFleeLoopStrategy> */ __um(Map);                                // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,3259) /* TMap<EAIGameState, EAIFleeLoopStrategy> */ __um(Map);                                // 0x0000   (0x0050)  
 };
 

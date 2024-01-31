@@ -90,7 +90,7 @@ public:
 
 	/// Functions
 	// Function /Script/Achievements.OnGameEventAchievement.OnScoreTypeEvent
-	// void OnScoreTypeEvent(EDBDScoreTypes scoreType, float Amount, class AActor* Instigator, class AActor* Target);        // [0x4d9d620] Native|Protected     
+	// void OnScoreTypeEvent(EDBDScoreTypes scoreType, float Amount, class AActor* Instigator, class AActor* Target);        // [0x4d6d6c0] Native|Protected     
 };
 
 /// Class /Script/Achievements.AddNewPerkAchievement
@@ -155,6 +155,13 @@ public:
 /// Class /Script/Achievements.FinishGameWithMercilessVictoryAchievement
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UFinishGameWithMercilessVictoryAchievement : public UOnGameEventAchievement
+{ 
+public:
+};
+
+/// Class /Script/Achievements.GreatSkillCheckWhileInjuredAchievement
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UGreatSkillCheckWhileInjuredAchievement : public UOnGameEventAchievement
 { 
 public:
 };
@@ -347,9 +354,9 @@ public:
 
 	/// Functions
 	// Function /Script/Achievements.SurvivorRevealedKillerAuraAchievement.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x4d9d600] Final|Native|Public  
+	// void OnLevelReadyToPlay();                                                                                            // [0x4d6d6a0] Final|Native|Public  
 	// Function /Script/Achievements.SurvivorRevealedKillerAuraAchievement.Local_OnRevealKillerAura
-	// void Local_OnRevealKillerAura();                                                                                      // [0x4d9d5e0] Final|Native|Public  
+	// void Local_OnRevealKillerAura();                                                                                      // [0x4d6d680] Final|Native|Public  
 };
 
 /// Class /Script/Achievements.TotalPlaytimeAchievement

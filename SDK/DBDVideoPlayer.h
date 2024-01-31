@@ -39,19 +39,19 @@ public:
 	class UUserWidget*                                 VideoPlayerWidget;                                          // 0x0290   (0x0008)  
 	class UAudioComponent*                             _audioComponent;                                            // 0x0298   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x18];                                      // 0x02A0   (0x0018)  MISSED
-	SDK_UNDEFINED(48,4580) /* TWeakObjectPtr<UMediaSource*> */ __um(_source);                                      // 0x02B8   (0x0030)  
+	SDK_UNDEFINED(48,4974) /* TWeakObjectPtr<UMediaSource*> */ __um(_source);                                      // 0x02B8   (0x0030)  
 	unsigned char                                      UnknownData02_6[0x10];                                      // 0x02E8   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/DBDVideoPlayer.VideoThumbnailPlayer.OnVideoAssetLoaded
-	// void OnVideoAssetLoaded();                                                                                            // [0x859b530] Final|Native|Private 
+	// void OnVideoAssetLoaded();                                                                                            // [0x85acc70] Final|Native|Private 
 	// Function /Script/DBDVideoPlayer.VideoThumbnailPlayer.OnMediaOpened
-	// void OnMediaOpened(FString OpenedUrl);                                                                                // [0x859b440] Final|Native|Private 
+	// void OnMediaOpened(FString OpenedUrl);                                                                                // [0x85acb80] Final|Native|Private 
 	// Function /Script/DBDVideoPlayer.VideoThumbnailPlayer.OnMediaClosed
-	// void OnMediaClosed();                                                                                                 // [0x859b420] Final|Native|Private 
+	// void OnMediaClosed();                                                                                                 // [0x85acb60] Final|Native|Private 
 	// Function /Script/DBDVideoPlayer.VideoThumbnailPlayer.OnEndReached
-	// void OnEndReached();                                                                                                  // [0x859b400] Final|Native|Private 
+	// void OnEndReached();                                                                                                  // [0x85acb40] Final|Native|Private 
 };
 
 /// Struct /Script/DBDVideoPlayer.VideoThumbnailProperties
@@ -62,7 +62,7 @@ struct FVideoThumbnailProperties : FDBDTableRowBase
 	bool                                               _hasAudio;                                                  // 0x0014   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0015   (0x0003)  MISSED
 	FVector2D                                          _size;                                                      // 0x0018   (0x0008)  
-	SDK_UNDEFINED(48,4581) /* TWeakObjectPtr<UMediaSource*> */ __um(_source);                                      // 0x0020   (0x0030)  
+	SDK_UNDEFINED(48,4975) /* TWeakObjectPtr<UMediaSource*> */ __um(_source);                                      // 0x0020   (0x0030)  
 	float                                              _fadeInDuration;                                            // 0x0050   (0x0004)  
 	float                                              _fadeOutDuration;                                           // 0x0054   (0x0004)  
 	float                                              _delayDuration;                                             // 0x0058   (0x0004)  

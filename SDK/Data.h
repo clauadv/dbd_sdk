@@ -177,6 +177,13 @@ class UHealFromDyingAchievementBP_C : public UHealFromDyingAchievement
 public:
 };
 
+/// Class /Game/Data/Achievements/GreatSkillCheckWhileInjuredAchievementBP.GreatSkillCheckWhileInjuredAchievementBP_C
+/// Size: 0x0000 (0x000080 - 0x000080)
+class UGreatSkillCheckWhileInjuredAchievementBP_C : public UGreatSkillCheckWhileInjuredAchievement
+{ 
+public:
+};
+
 /// Class /Game/Data/Achievements/FinishGameWithMercilessVictoryAchievementBP.FinishGameWithMercilessVictoryAchievementBP_C
 /// Size: 0x0000 (0x000080 - 0x000080)
 class UFinishGameWithMercilessVictoryAchievementBP_C : public UFinishGameWithMercilessVictoryAchievement

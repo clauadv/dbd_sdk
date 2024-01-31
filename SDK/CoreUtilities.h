@@ -58,13 +58,13 @@ public:
 
 	/// Functions
 	// Function /Script/CoreUtilities.CoreUtilities.GetWorldFromContext
-	// class UWorld* GetWorldFromContext(class UObject* WorldContextObject);                                                 // [0x8269e30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UWorld* GetWorldFromContext(class UObject* WorldContextObject);                                                 // [0x827ac20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CoreUtilities.CoreUtilities.GetRandomValuesFromArray
-	// TArray<int32_t> GetRandomValuesFromArray(TArray<int32_t>& Values, int32_t numberOfDesiredValues);                     // [0x8269cf0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// TArray<int32_t> GetRandomValuesFromArray(TArray<int32_t>& Values, int32_t numberOfDesiredValues);                     // [0x827aae0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/CoreUtilities.CoreUtilities.GetGlobalWorld
-	// class UWorld* GetGlobalWorld();                                                                                       // [0x8269cc0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UWorld* GetGlobalWorld();                                                                                       // [0x827aab0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/CoreUtilities.CoreUtilities.GetGameInstance
-	// class UGameInstance* GetGameInstance(class UObject* WorldContextObject);                                              // [0x8269c30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UGameInstance* GetGameInstance(class UObject* WorldContextObject);                                              // [0x827aa20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/CoreUtilities.PropertyParser
@@ -76,7 +76,7 @@ public:
 
 	/// Functions
 	// Function /Script/CoreUtilities.PropertyParser.CopyProperties
-	// void CopyProperties(class UActorComponent* Dest, class UActorComponent* Origin, bool copyTransform, TArray<FName> propertiesToExclude); // [0x826a320] Final|Native|Static|Public|BlueprintCallable 
+	// void CopyProperties(class UActorComponent* Dest, class UActorComponent* Origin, bool copyTransform, TArray<FName> propertiesToExclude); // [0x827b110] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Struct /Script/CoreUtilities.DelegateHandleWrapper

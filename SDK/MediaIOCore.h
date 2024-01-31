@@ -122,9 +122,9 @@ public:
 
 	/// Functions
 	// Function /Script/MediaIOCore.MediaOutput.Validate
-	// bool Validate(FString& OutFailureReason);                                                                             // [0x454cd00] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
+	// bool Validate(FString& OutFailureReason);                                                                             // [0x44e1a80] Native|Public|HasOutParms|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MediaIOCore.MediaOutput.CreateMediaCapture
-	// class UMediaCapture* CreateMediaCapture();                                                                            // [0x454ca90] Final|Native|Public|BlueprintCallable 
+	// class UMediaCapture* CreateMediaCapture();                                                                            // [0x44e1810] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MediaIOCore.MediaCapture
@@ -132,7 +132,7 @@ public:
 class UMediaCapture : public UObject
 { 
 public:
-	SDK_UNDEFINED(16,4880) /* FMulticastInlineDelegate */ __um(OnStateChanged);                                    // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5272) /* FMulticastInlineDelegate */ __um(OnStateChanged);                                    // 0x0030   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x18];                                      // 0x0040   (0x0018)  MISSED
 	class UMediaOutput*                                MediaOutput;                                                // 0x0058   (0x0008)  
 	unsigned char                                      UnknownData01_5[0x20];                                      // 0x0060   (0x0020)  MISSED
@@ -142,21 +142,21 @@ public:
 
 	/// Functions
 	// Function /Script/MediaIOCore.MediaCapture.UpdateTextureRenderTarget2D
-	// bool UpdateTextureRenderTarget2D(class UTextureRenderTarget2D* RenderTarget);                                         // [0x454cc60] Final|Native|Public|BlueprintCallable 
+	// bool UpdateTextureRenderTarget2D(class UTextureRenderTarget2D* RenderTarget);                                         // [0x44e19e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MediaIOCore.MediaCapture.StopCapture
-	// void StopCapture(bool bAllowPendingFrameToBeProcess);                                                                 // [0x454cbd0] Final|Native|Public|BlueprintCallable 
+	// void StopCapture(bool bAllowPendingFrameToBeProcess);                                                                 // [0x44e1950] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MediaIOCore.MediaCapture.SetMediaOutput
-	// void SetMediaOutput(class UMediaOutput* InMediaOutput);                                                               // [0x454cb40] Final|Native|Public|BlueprintCallable 
+	// void SetMediaOutput(class UMediaOutput* InMediaOutput);                                                               // [0x44e18c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MediaIOCore.MediaCapture.GetState
-	// EMediaCaptureState GetState();                                                                                        // [0x454cb10] Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EMediaCaptureState GetState();                                                                                        // [0x44e1890] Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MediaIOCore.MediaCapture.GetDesiredSize
-	// FIntPoint GetDesiredSize();                                                                                           // [0x454cae0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FIntPoint GetDesiredSize();                                                                                           // [0x44e1860] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MediaIOCore.MediaCapture.GetDesiredPixelFormat
-	// TEnumAsByte<EPixelFormat> GetDesiredPixelFormat();                                                                    // [0x454cac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TEnumAsByte<EPixelFormat> GetDesiredPixelFormat();                                                                    // [0x44e1840] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/MediaIOCore.MediaCapture.CaptureTextureRenderTarget2D
-	// bool CaptureTextureRenderTarget2D(class UTextureRenderTarget2D* RenderTarget, FMediaCaptureOptions CaptureOptions);   // [0x454c9a0] Final|Native|Public|BlueprintCallable 
+	// bool CaptureTextureRenderTarget2D(class UTextureRenderTarget2D* RenderTarget, FMediaCaptureOptions CaptureOptions);   // [0x44e1720] Final|Native|Public|BlueprintCallable 
 	// Function /Script/MediaIOCore.MediaCapture.CaptureActiveSceneViewport
-	// bool CaptureActiveSceneViewport(FMediaCaptureOptions CaptureOptions);                                                 // [0x454c900] Final|Native|Public|BlueprintCallable 
+	// bool CaptureActiveSceneViewport(FMediaCaptureOptions CaptureOptions);                                                 // [0x44e1680] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/MediaIOCore.FileMediaCapture
@@ -175,7 +175,7 @@ public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x0038   (0x0008)  MISSED
 	FImageWriteOptions                                 WriteOptions;                                               // 0x0040   (0x0060)  
 	FDirectoryPath                                     FilePath;                                                   // 0x00A0   (0x0010)  
-	SDK_UNDEFINED(16,4881) /* FString */               __um(BaseFileName);                                         // 0x00B0   (0x0010)  
+	SDK_UNDEFINED(16,5273) /* FString */               __um(BaseFileName);                                         // 0x00B0   (0x0010)  
 	bool                                               bOverrideDesiredSize;                                       // 0x00C0   (0x0001)  
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x00C1   (0x0003)  MISSED
 	FIntPoint                                          DesiredSize;                                                // 0x00C4   (0x0008)  

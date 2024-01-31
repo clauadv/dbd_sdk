@@ -165,99 +165,99 @@ public:
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.UpdateExternalTrackingHMDPosition
-	// void UpdateExternalTrackingHMDPosition(FTransform& ExternalTrackingTransform);                                        // [0x6b14ab0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void UpdateExternalTrackingHMDPosition(FTransform& ExternalTrackingTransform);                                        // [0x6b244f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetXRTimedInputActionDelegate
-	// void SetXRTimedInputActionDelegate(FName& ActionName, FDelegateProperty& InDelegate);                                 // [0x6b149a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetXRTimedInputActionDelegate(FName& ActionName, FDelegateProperty& InDelegate);                                 // [0x6b243e0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetXRDisconnectDelegate
-	// void SetXRDisconnectDelegate(FDelegateProperty& InDisconnectedDelegate);                                              // [0x6b148f0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void SetXRDisconnectDelegate(FDelegateProperty& InDisconnectedDelegate);                                              // [0x6b24330] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetWorldToMetersScale
-	// void SetWorldToMetersScale(class UObject* WorldContext, float NewScale);                                              // [0x6b14830] Final|Native|Static|Public|BlueprintCallable 
+	// void SetWorldToMetersScale(class UObject* WorldContext, float NewScale);                                              // [0x6b24270] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetTrackingOrigin
-	// void SetTrackingOrigin(TEnumAsByte<EHMDTrackingOrigin> Origin);                                                       // [0x6b14740] Final|Native|Static|Public|BlueprintCallable 
+	// void SetTrackingOrigin(TEnumAsByte<EHMDTrackingOrigin> Origin);                                                       // [0x6b24180] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenTexture
-	// void SetSpectatorScreenTexture(class UTexture* InTexture);                                                            // [0x6b14620] Final|Native|Static|Public|BlueprintCallable 
+	// void SetSpectatorScreenTexture(class UTexture* InTexture);                                                            // [0x6b24060] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenModeTexturePlusEyeLayout
-	// void SetSpectatorScreenModeTexturePlusEyeLayout(FVector2D EyeRectMin, FVector2D EyeRectMax, FVector2D TextureRectMin, FVector2D TextureRectMax, bool bDrawEyeFirst, bool bClearBlack, bool bUseAlpha); // [0x6b14410] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void SetSpectatorScreenModeTexturePlusEyeLayout(FVector2D EyeRectMin, FVector2D EyeRectMax, FVector2D TextureRectMin, FVector2D TextureRectMax, bool bDrawEyeFirst, bool bClearBlack, bool bUseAlpha); // [0x6b23e50] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetSpectatorScreenMode
-	// void SetSpectatorScreenMode(ESpectatorScreenMode Mode);                                                               // [0x6b143a0] Final|Native|Static|Public|BlueprintCallable 
+	// void SetSpectatorScreenMode(ESpectatorScreenMode Mode);                                                               // [0x6b23de0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.SetClippingPlanes
-	// void SetClippingPlanes(float Near, float Far);                                                                        // [0x6b14120] Final|Native|Static|Public|BlueprintCallable 
+	// void SetClippingPlanes(float Near, float Far);                                                                        // [0x6b23b60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ResetOrientationAndPosition
-	// void ResetOrientationAndPosition(float Yaw, TEnumAsByte<EOrientPositionSelector> Options);                            // [0x6b13fd0] Final|Native|Static|Public|BlueprintCallable 
+	// void ResetOrientationAndPosition(float Yaw, TEnumAsByte<EOrientPositionSelector> Options);                            // [0x6b23a10] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsSpectatorScreenModeControllable
-	// bool IsSpectatorScreenModeControllable();                                                                             // [0x6b13f80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSpectatorScreenModeControllable();                                                                             // [0x6b239c0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsInLowPersistenceMode
-	// bool IsInLowPersistenceMode();                                                                                        // [0x48e3600] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsInLowPersistenceMode();                                                                                        // [0x48783e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayEnabled
-	// bool IsHeadMountedDisplayEnabled();                                                                                   // [0x6b13f50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsHeadMountedDisplayEnabled();                                                                                   // [0x6b23990] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsHeadMountedDisplayConnected
-	// bool IsHeadMountedDisplayConnected();                                                                                 // [0x6b13f20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsHeadMountedDisplayConnected();                                                                                 // [0x6b23960] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.IsDeviceTracking
-	// bool IsDeviceTracking(FXRDeviceId& XRDeviceId);                                                                       // [0x6b13e80] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool IsDeviceTracking(FXRDeviceId& XRDeviceId);                                                                       // [0x6b238c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.HasValidTrackingPosition
-	// bool HasValidTrackingPosition();                                                                                      // [0x6b13e50] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool HasValidTrackingPosition();                                                                                      // [0x6b23890] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetXRSystemFlags
-	// int32_t GetXRSystemFlags();                                                                                           // [0x6b13e20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetXRSystemFlags();                                                                                           // [0x6b23860] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetWorldToMetersScale
-	// float GetWorldToMetersScale(class UObject* WorldContext);                                                             // [0x6b13d90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetWorldToMetersScale(class UObject* WorldContext);                                                             // [0x6b237d0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetVRFocusState
-	// void GetVRFocusState(bool& bUseFocus, bool& bHasFocus);                                                               // [0x6b13c30] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void GetVRFocusState(bool& bUseFocus, bool& bHasFocus);                                                               // [0x6b23670] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetVersionString
-	// FString GetVersionString();                                                                                           // [0x6b13d10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FString GetVersionString();                                                                                           // [0x6b23750] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingToWorldTransform
-	// FTransform GetTrackingToWorldTransform(class UObject* WorldContext);                                                  // [0x6b13b70] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FTransform GetTrackingToWorldTransform(class UObject* WorldContext);                                                  // [0x6b235b0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingSensorParameters
-	// void GetTrackingSensorParameters(FVector& Origin, FRotator& Rotation, float& LeftFOV, float& RightFOV, float& TopFOV, float& BottomFOV, float& distance, float& NearPlane, float& FarPlane, bool& IsActive, int32_t index); // [0x6b13790] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void GetTrackingSensorParameters(FVector& Origin, FRotator& Rotation, float& LeftFOV, float& RightFOV, float& TopFOV, float& BottomFOV, float& distance, float& NearPlane, float& FarPlane, bool& IsActive, int32_t index); // [0x6b231d0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingOriginTransform
-	// bool GetTrackingOriginTransform(TEnumAsByte<EHMDTrackingOrigin> Origin, FTransform& OutTransform);                    // [0x6b13670] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetTrackingOriginTransform(TEnumAsByte<EHMDTrackingOrigin> Origin, FTransform& OutTransform);                    // [0x6b230b0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetTrackingOrigin
-	// TEnumAsByte<EHMDTrackingOrigin> GetTrackingOrigin();                                                                  // [0x6b13630] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TEnumAsByte<EHMDTrackingOrigin> GetTrackingOrigin();                                                                  // [0x6b23070] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetScreenPercentage
-	// float GetScreenPercentage();                                                                                          // [0x6b13600] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetScreenPercentage();                                                                                          // [0x6b23040] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPositionalTrackingCameraParameters
-	// void GetPositionalTrackingCameraParameters(FVector& CameraOrigin, FRotator& CameraRotation, float& HFOV, float& VFOV, float& CameraDistance, float& NearPlane, float& FarPlane); // [0x6b13390] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void GetPositionalTrackingCameraParameters(FVector& CameraOrigin, FRotator& CameraRotation, float& HFOV, float& VFOV, float& CameraDistance, float& NearPlane, float& FarPlane); // [0x6b22dd0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPlayAreaRect
-	// bool GetPlayAreaRect(FTransform& OutTransform, FVector2D& OutRect);                                                   // [0x6b13270] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetPlayAreaRect(FTransform& OutTransform, FVector2D& OutRect);                                                   // [0x6b22cb0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPlayAreaBounds
-	// FVector2D GetPlayAreaBounds(TEnumAsByte<EHMDTrackingOrigin> Origin);                                                  // [0x6b131e0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// FVector2D GetPlayAreaBounds(TEnumAsByte<EHMDTrackingOrigin> Origin);                                                  // [0x6b22c20] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetPixelDensity
-	// float GetPixelDensity();                                                                                              // [0x6b131b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// float GetPixelDensity();                                                                                              // [0x6b22bf0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetOrientationAndPosition
-	// void GetOrientationAndPosition(FRotator& DeviceRotation, FVector& DevicePosition);                                    // [0x6b12fe0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
+	// void GetOrientationAndPosition(FRotator& DeviceRotation, FVector& DevicePosition);                                    // [0x6b22a20] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetNumOfTrackingSensors
-	// int32_t GetNumOfTrackingSensors();                                                                                    // [0x6b12fb0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetNumOfTrackingSensors();                                                                                    // [0x6b229f0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetMotionControllerData
-	// void GetMotionControllerData(class UObject* WorldContext, EControllerHand Hand, FXRMotionControllerData& MotionControllerData); // [0x6b12e20] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetMotionControllerData(class UObject* WorldContext, EControllerHand Hand, FXRMotionControllerData& MotionControllerData); // [0x6b22860] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDWornState
-	// TEnumAsByte<EHMDWornState> GetHMDWornState();                                                                         // [0x6b12d00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// TEnumAsByte<EHMDWornState> GetHMDWornState();                                                                         // [0x6b22740] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDDeviceName
-	// FName GetHMDDeviceName();                                                                                             // [0x6b12cc0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// FName GetHMDDeviceName();                                                                                             // [0x6b22700] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetHMDData
-	// void GetHMDData(class UObject* WorldContext, FXRHMDData& HMDData);                                                    // [0x6b12bd0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void GetHMDData(class UObject* WorldContext, FXRHMDData& HMDData);                                                    // [0x6b22610] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDeviceWorldPose
-	// void GetDeviceWorldPose(class UObject* WorldContext, FXRDeviceId& XRDeviceId, bool& bIsTracked, FRotator& Orientation, bool& bHasPositionalTracking, FVector& position); // [0x6b129a0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetDeviceWorldPose(class UObject* WorldContext, FXRDeviceId& XRDeviceId, bool& bIsTracked, FRotator& Orientation, bool& bHasPositionalTracking, FVector& position); // [0x6b223e0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetDevicePose
-	// void GetDevicePose(FXRDeviceId& XRDeviceId, bool& bIsTracked, FRotator& Orientation, bool& bHasPositionalTracking, FVector& position); // [0x6b127b0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void GetDevicePose(FXRDeviceId& XRDeviceId, bool& bIsTracked, FRotator& Orientation, bool& bHasPositionalTracking, FVector& position); // [0x6b221f0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.GetControllerTransformForTime
-	// bool GetControllerTransformForTime(class UObject* WorldContext, int32_t ControllerIndex, FName MotionSource, FTimespan Time, bool& bTimeWasUsed, FRotator& Orientation, FVector& position, bool& bProvidedLinearVelocity, FVector& LinearVelocity, bool& bProvidedAngularVelocity, FVector& AngularVelocityRadPerSec, bool& bProvidedLinearAcceleration, FVector& LinearAcceleration); // [0x6b12360] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// bool GetControllerTransformForTime(class UObject* WorldContext, int32_t ControllerIndex, FName MotionSource, FTimespan Time, bool& bTimeWasUsed, FRotator& Orientation, FVector& position, bool& bProvidedLinearVelocity, FVector& LinearVelocity, bool& bProvidedAngularVelocity, FVector& AngularVelocityRadPerSec, bool& bProvidedLinearAcceleration, FVector& LinearAcceleration); // [0x6b21da0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnumerateTrackedDevices
-	// TArray<FXRDeviceId> EnumerateTrackedDevices(FName SystemId, EXRTrackedDeviceType DeviceType);                         // [0x6b12230] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FXRDeviceId> EnumerateTrackedDevices(FName SystemId, EXRTrackedDeviceType DeviceType);                         // [0x6b21c70] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableLowPersistenceMode
-	// void EnableLowPersistenceMode(bool bEnable);                                                                          // [0x58c0290] Final|Native|Static|Public|BlueprintCallable 
+	// void EnableLowPersistenceMode(bool bEnable);                                                                          // [0x58c6b60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.EnableHMD
-	// bool EnableHMD(bool bEnable);                                                                                         // [0x6b121a0] Final|Native|Static|Public|BlueprintCallable 
+	// bool EnableHMD(bool bEnable);                                                                                         // [0x6b21be0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.DisconnectRemoteXRDevice
-	// void DisconnectRemoteXRDevice();                                                                                      // [0x6b12180] Final|Native|Static|Public|BlueprintCallable 
+	// void DisconnectRemoteXRDevice();                                                                                      // [0x6b21bc0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ConnectRemoteXRDevice
-	// TEnumAsByte<EXRDeviceConnectionResult> ConnectRemoteXRDevice(FString IpAddress, int32_t BitRate);                     // [0x6b12020] Final|Native|Static|Public|BlueprintCallable 
+	// TEnumAsByte<EXRDeviceConnectionResult> ConnectRemoteXRDevice(FString IpAddress, int32_t BitRate);                     // [0x6b21a60] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ConfigureGestures
-	// bool ConfigureGestures(FXRGestureConfig& GestureConfig);                                                              // [0x6b11f80] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// bool ConfigureGestures(FXRGestureConfig& GestureConfig);                                                              // [0x6b219c0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.ClearXRTimedInputActionDelegate
-	// void ClearXRTimedInputActionDelegate(FName& ActionPath);                                                              // [0x6b11ef0] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
+	// void ClearXRTimedInputActionDelegate(FName& ActionPath);                                                              // [0x6b21930] Final|Native|Static|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.CalibrateExternalTrackingToHMD
-	// void CalibrateExternalTrackingToHMD(FTransform& ExternalTrackingTransform);                                           // [0x6b11e20] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// void CalibrateExternalTrackingToHMD(FTransform& ExternalTrackingTransform);                                           // [0x6b21860] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.HeadMountedDisplayFunctionLibrary.BreakKey
-	// void BreakKey(FKey InKey, FString& InteractionProfile, EControllerHand& Hand, FName& MotionSource, FString& Indentifier, FString& Component); // [0x6b11b60] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
+	// void BreakKey(FKey InKey, FString& InteractionProfile, EControllerHand& Hand, FName& MotionSource, FString& Indentifier, FString& Component); // [0x6b215a0] Final|Native|Static|Public|HasOutParms|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/HeadMountedDisplay.HandKeypointConversion
@@ -269,7 +269,7 @@ public:
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.HandKeypointConversion.Conv_HandKeypointToInt32
-	// int32_t Conv_HandKeypointToInt32(EHandKeypoint Input);                                                                // [0x6b12100] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t Conv_HandKeypointToInt32(EHandKeypoint Input);                                                                // [0x6b21b40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/HeadMountedDisplay.MotionControllerComponent
@@ -296,27 +296,27 @@ public:
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.SetTrackingSource
-	// void SetTrackingSource(EControllerHand NewSource);                                                                    // [0x6b147b0] Final|Native|Public|BlueprintCallable 
+	// void SetTrackingSource(EControllerHand NewSource);                                                                    // [0x6b241f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.SetTrackingMotionSource
-	// void SetTrackingMotionSource(FName NewSource);                                                                        // [0x6b146a0] Final|Native|Public|BlueprintCallable 
+	// void SetTrackingMotionSource(FName NewSource);                                                                        // [0x6b240e0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.SetShowDeviceModel
-	// void SetShowDeviceModel(bool bShowControllerModel);                                                                   // [0x6b14310] Final|Native|Public|BlueprintCallable 
+	// void SetShowDeviceModel(bool bShowControllerModel);                                                                   // [0x6b23d50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.SetDisplayModelSource
-	// void SetDisplayModelSource(FName NewDisplayModelSource);                                                              // [0x6b14270] Final|Native|Public|BlueprintCallable 
+	// void SetDisplayModelSource(FName NewDisplayModelSource);                                                              // [0x6b23cb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.SetCustomDisplayMesh
-	// void SetCustomDisplayMesh(class UStaticMesh* NewDisplayMesh);                                                         // [0x6b141e0] Final|Native|Public|BlueprintCallable 
+	// void SetCustomDisplayMesh(class UStaticMesh* NewDisplayMesh);                                                         // [0x6b23c20] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.SetAssociatedPlayerIndex
-	// void SetAssociatedPlayerIndex(int32_t NewPlayer);                                                                     // [0x6b14090] Final|Native|Public|BlueprintCallable 
+	// void SetAssociatedPlayerIndex(int32_t NewPlayer);                                                                     // [0x6b23ad0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.OnMotionControllerUpdated
-	// void OnMotionControllerUpdated();                                                                                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnMotionControllerUpdated();                                                                                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.IsTracked
-	// bool IsTracked();                                                                                                     // [0x6b13fb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTracked();                                                                                                     // [0x6b239f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.GetTrackingSource
-	// EControllerHand GetTrackingSource();                                                                                  // [0x6b13b40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EControllerHand GetTrackingSource();                                                                                  // [0x6b23580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.GetParameterValue
-	// float GetParameterValue(FName InName, bool& bValueFound);                                                             // [0x6b130b0] Final|Native|Protected|HasOutParms|BlueprintCallable 
+	// float GetParameterValue(FName InName, bool& bValueFound);                                                             // [0x6b22af0] Final|Native|Protected|HasOutParms|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionControllerComponent.GetHandJointPosition
-	// FVector GetHandJointPosition(int32_t jointIndex, bool& bValueFound);                                                  // [0x6b12d30] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
+	// FVector GetHandJointPosition(int32_t jointIndex, bool& bValueFound);                                                  // [0x6b22770] Final|Native|Protected|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary
@@ -328,41 +328,41 @@ public:
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.SetIsControllerMotionTrackingEnabledByDefault
-	// void SetIsControllerMotionTrackingEnabledByDefault(bool enable);                                                      // [0x6b16d10] Final|Native|Static|Public|BlueprintCallable 
+	// void SetIsControllerMotionTrackingEnabledByDefault(bool enable);                                                      // [0x6b26750] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForSource
-	// bool IsMotionTrackingEnabledForSource(int32_t PlayerIndex, FName SourceName);                                         // [0x6b16c30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsMotionTrackingEnabledForSource(int32_t PlayerIndex, FName SourceName);                                         // [0x6b26670] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForDevice
-	// bool IsMotionTrackingEnabledForDevice(int32_t PlayerIndex, EControllerHand Hand);                                     // [0x6b16b60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsMotionTrackingEnabledForDevice(int32_t PlayerIndex, EControllerHand Hand);                                     // [0x6b265a0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackingEnabledForComponent
-	// bool IsMotionTrackingEnabledForComponent(class UMotionControllerComponent* MotionControllerComponent);                // [0x6b16ad0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsMotionTrackingEnabledForComponent(class UMotionControllerComponent* MotionControllerComponent);                // [0x6b26510] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionTrackedDeviceCountManagementNecessary
-	// bool IsMotionTrackedDeviceCountManagementNecessary();                                                                 // [0x6b16aa0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsMotionTrackedDeviceCountManagementNecessary();                                                                 // [0x6b264e0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.IsMotionSourceTracking
-	// bool IsMotionSourceTracking(int32_t PlayerIndex, FName SourceName);                                                   // [0x6b169c0] Final|Native|Static|Public|BlueprintCallable 
+	// bool IsMotionSourceTracking(int32_t PlayerIndex, FName SourceName);                                                   // [0x6b26400] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMotionTrackingEnabledControllerCount
-	// int32_t GetMotionTrackingEnabledControllerCount();                                                                    // [0x6b16970] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetMotionTrackingEnabledControllerCount();                                                                    // [0x6b263b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetMaximumMotionTrackedControllerCount
-	// int32_t GetMaximumMotionTrackedControllerCount();                                                                     // [0x6b16940] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetMaximumMotionTrackedControllerCount();                                                                     // [0x6b26380] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.GetActiveTrackingSystemName
-	// FName GetActiveTrackingSystemName();                                                                                  // [0x6b16900] Final|Native|Static|Public|BlueprintCallable 
+	// FName GetActiveTrackingSystemName();                                                                                  // [0x6b26340] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnumerateMotionSources
-	// TArray<FName> EnumerateMotionSources();                                                                               // [0x6b16880] Final|Native|Static|Public|BlueprintCallable 
+	// TArray<FName> EnumerateMotionSources();                                                                               // [0x6b262c0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfSource
-	// bool EnableMotionTrackingOfSource(int32_t PlayerIndex, FName SourceName);                                             // [0x6b167a0] Final|Native|Static|Public|BlueprintCallable 
+	// bool EnableMotionTrackingOfSource(int32_t PlayerIndex, FName SourceName);                                             // [0x6b261e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingOfDevice
-	// bool EnableMotionTrackingOfDevice(int32_t PlayerIndex, EControllerHand Hand);                                         // [0x6b166d0] Final|Native|Static|Public|BlueprintCallable 
+	// bool EnableMotionTrackingOfDevice(int32_t PlayerIndex, EControllerHand Hand);                                         // [0x6b26110] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.EnableMotionTrackingForComponent
-	// bool EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);                   // [0x6b16640] Final|Native|Static|Public|BlueprintCallable 
+	// bool EnableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);                   // [0x6b26080] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfSource
-	// void DisableMotionTrackingOfSource(int32_t PlayerIndex, FName SourceName);                                            // [0x6b16570] Final|Native|Static|Public|BlueprintCallable 
+	// void DisableMotionTrackingOfSource(int32_t PlayerIndex, FName SourceName);                                            // [0x6b25fb0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfDevice
-	// void DisableMotionTrackingOfDevice(int32_t PlayerIndex, EControllerHand Hand);                                        // [0x6b164b0] Final|Native|Static|Public|BlueprintCallable 
+	// void DisableMotionTrackingOfDevice(int32_t PlayerIndex, EControllerHand Hand);                                        // [0x6b25ef0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfControllersForPlayer
-	// void DisableMotionTrackingOfControllersForPlayer(int32_t PlayerIndex);                                                // [0x6b16430] Final|Native|Static|Public|BlueprintCallable 
+	// void DisableMotionTrackingOfControllersForPlayer(int32_t PlayerIndex);                                                // [0x6b25e70] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingOfAllControllers
-	// void DisableMotionTrackingOfAllControllers();                                                                         // [0x6b16410] Final|Native|Static|Public|BlueprintCallable 
+	// void DisableMotionTrackingOfAllControllers();                                                                         // [0x6b25e50] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.MotionTrackedDeviceFunctionLibrary.DisableMotionTrackingForComponent
-	// void DisableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);                  // [0x6b16390] Final|Native|Static|Public|BlueprintCallable 
+	// void DisableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);                  // [0x6b25dd0] Final|Native|Static|Public|BlueprintCallable 
 };
 
 /// Class /Script/HeadMountedDisplay.VRNotificationsComponent
@@ -370,17 +370,17 @@ public:
 class UVRNotificationsComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,4686) /* FMulticastInlineDelegate */ __um(HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate); // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,4687) /* FMulticastInlineDelegate */ __um(HMDTrackingInitializedDelegate);                    // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,4688) /* FMulticastInlineDelegate */ __um(HMDRecenteredDelegate);                             // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,4689) /* FMulticastInlineDelegate */ __um(HMDLostDelegate);                                   // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,4690) /* FMulticastInlineDelegate */ __um(HMDReconnectedDelegate);                            // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,4691) /* FMulticastInlineDelegate */ __um(HMDConnectCanceledDelegate);                        // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,4692) /* FMulticastInlineDelegate */ __um(HMDPutOnHeadDelegate);                              // 0x0118   (0x0010)  
-	SDK_UNDEFINED(16,4693) /* FMulticastInlineDelegate */ __um(HMDRemovedFromHeadDelegate);                        // 0x0128   (0x0010)  
-	SDK_UNDEFINED(16,4694) /* FMulticastInlineDelegate */ __um(VRControllerRecenteredDelegate);                    // 0x0138   (0x0010)  
-	SDK_UNDEFINED(16,4695) /* FMulticastInlineDelegate */ __um(XRTrackingOriginChangedDelegate);                   // 0x0148   (0x0010)  
-	SDK_UNDEFINED(16,4696) /* FMulticastInlineDelegate */ __um(XRPlayAreaChangedDelegate);                         // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,5080) /* FMulticastInlineDelegate */ __um(HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate); // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5081) /* FMulticastInlineDelegate */ __um(HMDTrackingInitializedDelegate);                    // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,5082) /* FMulticastInlineDelegate */ __um(HMDRecenteredDelegate);                             // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,5083) /* FMulticastInlineDelegate */ __um(HMDLostDelegate);                                   // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,5084) /* FMulticastInlineDelegate */ __um(HMDReconnectedDelegate);                            // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,5085) /* FMulticastInlineDelegate */ __um(HMDConnectCanceledDelegate);                        // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,5086) /* FMulticastInlineDelegate */ __um(HMDPutOnHeadDelegate);                              // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,5087) /* FMulticastInlineDelegate */ __um(HMDRemovedFromHeadDelegate);                        // 0x0128   (0x0010)  
+	SDK_UNDEFINED(16,5088) /* FMulticastInlineDelegate */ __um(VRControllerRecenteredDelegate);                    // 0x0138   (0x0010)  
+	SDK_UNDEFINED(16,5089) /* FMulticastInlineDelegate */ __um(XRTrackingOriginChangedDelegate);                   // 0x0148   (0x0010)  
+	SDK_UNDEFINED(16,5090) /* FMulticastInlineDelegate */ __um(XRPlayAreaChangedDelegate);                         // 0x0158   (0x0010)  
 };
 
 /// Class /Script/HeadMountedDisplay.XRAssetFunctionLibrary
@@ -392,9 +392,9 @@ public:
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.XRAssetFunctionLibrary.AddNamedDeviceVisualizationComponentBlocking
-	// class UPrimitiveComponent* AddNamedDeviceVisualizationComponentBlocking(class AActor* Target, FName SystemName, FName DeviceName, bool bManualAttachment, FTransform& RelativeTransform, FXRDeviceId& XRDeviceId); // [0x6b16110] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UPrimitiveComponent* AddNamedDeviceVisualizationComponentBlocking(class AActor* Target, FName SystemName, FName DeviceName, bool bManualAttachment, FTransform& RelativeTransform, FXRDeviceId& XRDeviceId); // [0x6b25b50] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.XRAssetFunctionLibrary.AddDeviceVisualizationComponentBlocking
-	// class UPrimitiveComponent* AddDeviceVisualizationComponentBlocking(class AActor* Target, FXRDeviceId& XRDeviceId, bool bManualAttachment, FTransform& RelativeTransform); // [0x6b15a80] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UPrimitiveComponent* AddDeviceVisualizationComponentBlocking(class AActor* Target, FXRDeviceId& XRDeviceId, bool bManualAttachment, FTransform& RelativeTransform); // [0x6b254c0] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent
@@ -402,17 +402,17 @@ public:
 class UAsyncTask_LoadXRDeviceVisComponent : public UBlueprintAsyncActionBase
 { 
 public:
-	SDK_UNDEFINED(16,4697) /* FMulticastInlineDelegate */ __um(OnModelLoaded);                                     // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,4698) /* FMulticastInlineDelegate */ __um(OnLoadFailure);                                     // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,5091) /* FMulticastInlineDelegate */ __um(OnModelLoaded);                                     // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,5092) /* FMulticastInlineDelegate */ __um(OnLoadFailure);                                     // 0x0048   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x0058   (0x0008)  MISSED
 	class UPrimitiveComponent*                         SpawnedComponent;                                           // 0x0060   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddNamedDeviceVisualizationComponentAsync
-	// class UAsyncTask_LoadXRDeviceVisComponent* AddNamedDeviceVisualizationComponentAsync(class AActor* Target, FName SystemName, FName DeviceName, bool bManualAttachment, FTransform& RelativeTransform, FXRDeviceId& XRDeviceId, class UPrimitiveComponent*& NewComponent); // [0x6b15e50] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAsyncTask_LoadXRDeviceVisComponent* AddNamedDeviceVisualizationComponentAsync(class AActor* Target, FName SystemName, FName DeviceName, bool bManualAttachment, FTransform& RelativeTransform, FXRDeviceId& XRDeviceId, class UPrimitiveComponent*& NewComponent); // [0x6b25890] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent.AddDeviceVisualizationComponentAsync
-	// class UAsyncTask_LoadXRDeviceVisComponent* AddDeviceVisualizationComponentAsync(class AActor* Target, FXRDeviceId& XRDeviceId, bool bManualAttachment, FTransform& RelativeTransform, class UPrimitiveComponent*& NewComponent); // [0x6b15850] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
+	// class UAsyncTask_LoadXRDeviceVisComponent* AddDeviceVisualizationComponentAsync(class AActor* Target, FXRDeviceId& XRDeviceId, bool bManualAttachment, FTransform& RelativeTransform, class UPrimitiveComponent*& NewComponent); // [0x6b25290] Final|Native|Static|Public|HasOutParms|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/HeadMountedDisplay.XRLoadingScreenFunctionLibrary
@@ -424,15 +424,15 @@ public:
 
 	/// Functions
 	// Function /Script/HeadMountedDisplay.XRLoadingScreenFunctionLibrary.ShowLoadingScreen
-	// void ShowLoadingScreen();                                                                                             // [0x6b16f50] Final|Native|Static|Public|BlueprintCallable 
+	// void ShowLoadingScreen();                                                                                             // [0x6b26990] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.XRLoadingScreenFunctionLibrary.SetLoadingScreen
-	// void SetLoadingScreen(class UTexture* Texture, FVector2D Scale, FVector Offset, bool bShowLoadingMovie, bool bShowOnSet); // [0x6b16d90] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void SetLoadingScreen(class UTexture* Texture, FVector2D Scale, FVector Offset, bool bShowLoadingMovie, bool bShowOnSet); // [0x6b267d0] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.XRLoadingScreenFunctionLibrary.HideLoadingScreen
-	// void HideLoadingScreen();                                                                                             // [0x6b169a0] Final|Native|Static|Public|BlueprintCallable 
+	// void HideLoadingScreen();                                                                                             // [0x6b263e0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.XRLoadingScreenFunctionLibrary.ClearLoadingScreenSplashes
-	// void ClearLoadingScreenSplashes();                                                                                    // [0x6b16370] Final|Native|Static|Public|BlueprintCallable 
+	// void ClearLoadingScreenSplashes();                                                                                    // [0x6b25db0] Final|Native|Static|Public|BlueprintCallable 
 	// Function /Script/HeadMountedDisplay.XRLoadingScreenFunctionLibrary.AddLoadingScreenSplash
-	// void AddLoadingScreenSplash(class UTexture* Texture, FVector Translation, FRotator Rotation, FVector2D Size, FRotator DeltaRotation, bool bClearBeforeAdd); // [0x6b15c50] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
+	// void AddLoadingScreenSplash(class UTexture* Texture, FVector Translation, FRotator Rotation, FVector2D Size, FRotator DeltaRotation, bool bClearBeforeAdd); // [0x6b25690] Final|Native|Static|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Struct /Script/HeadMountedDisplay.XRMotionControllerData

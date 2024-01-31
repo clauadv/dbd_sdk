@@ -19,31 +19,31 @@
 /// dependency: StatSystem
 
 /// Class /Script/TheSpirit.ActivePhaseWalkInteraction
-/// Size: 0x0170 (0x000790 - 0x000900)
+/// Size: 0x0180 (0x000790 - 0x000910)
 class UActivePhaseWalkInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	FTunableStat                                       _fullyChargedSpeed;                                         // 0x0788   (0x0080)  
-	float                                              _accelerationMultiplier;                                    // 0x0808   (0x0004)  
-	unsigned char                                      UnknownData00_5[0x4];                                       // 0x080C   (0x0004)  MISSED
-	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0810   (0x0008)  
-	FDBDTunableRowHandle                               _phaseWalkPenaltyThreshold;                                 // 0x0818   (0x0028)  
-	FDBDTunableRowHandle                               _phaseWalkPenaltyValue;                                     // 0x0840   (0x0028)  
-	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0868   (0x0008)  MISSED
-	FTunableStat                                       _activePhaseWalkChargeDuration;                             // 0x0870   (0x0080)  
-	class UAnimMontage*                                _activePhaseWalkChargingMontage;                            // 0x08F0   (0x0008)  
-	unsigned char                                      UnknownData02_6[0x8];                                       // 0x08F8   (0x0008)  MISSED
+	FTunableStat                                       _fullyChargedSpeed;                                         // 0x0790   (0x0080)  
+	float                                              _accelerationMultiplier;                                    // 0x0810   (0x0004)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0814   (0x0004)  MISSED
+	class UCurveFloat*                                 _chargingSpeedCurve;                                        // 0x0818   (0x0008)  
+	FDBDTunableRowHandle                               _phaseWalkPenaltyThreshold;                                 // 0x0820   (0x0028)  
+	FDBDTunableRowHandle                               _phaseWalkPenaltyValue;                                     // 0x0848   (0x0028)  
+	unsigned char                                      UnknownData01_5[0x8];                                       // 0x0870   (0x0008)  MISSED
+	FTunableStat                                       _activePhaseWalkChargeDuration;                             // 0x0878   (0x0080)  
+	class UAnimMontage*                                _activePhaseWalkChargingMontage;                            // 0x08F8   (0x0008)  
+	unsigned char                                      UnknownData02_6[0x10];                                      // 0x0900   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheSpirit.ActivePhaseWalkInteraction.OnPowerCollected
-	// void OnPowerCollected(class ADBDPlayer* collector);                                                                   // [0x5df8630] Final|Native|Private 
+	// void OnPowerCollected(class ADBDPlayer* collector);                                                                   // [0x5e08530] Final|Native|Private 
 	// Function /Script/TheSpirit.ActivePhaseWalkInteraction.OnPlayerLocallyObservedChanged
-	// void OnPlayerLocallyObservedChanged(class ADBDPlayer* Player);                                                        // [0x5df85a0] Final|Native|Private 
+	// void OnPlayerLocallyObservedChanged(class ADBDPlayer* Player);                                                        // [0x5e084a0] Final|Native|Private 
 	// Function /Script/TheSpirit.ActivePhaseWalkInteraction.GetChargeTime
-	// float GetChargeTime();                                                                                                // [0x5df8570] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetChargeTime();                                                                                                // [0x5e08470] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.ActivePhaseWalkInteraction.Cosmetic_ResetChargeVFX
-	// void Cosmetic_ResetChargeVFX(class ADBDPlayer* Player);                                                               // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ResetChargeVFX(class ADBDPlayer* Player);                                                               // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheSpirit.Autodidact
@@ -58,19 +58,20 @@ public:
 };
 
 /// Class /Script/TheSpirit.Deliverance
-/// Size: 0x0020 (0x0003C8 - 0x0003E8)
+/// Size: 0x0028 (0x0003C8 - 0x0003F0)
 class UDeliverance : public UPerk
 { 
 public:
 	float                                              _brokenEffectDurationPerLevel;                              // 0x03C8   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
 	class UClass*                                      _selfUnhookAlwaysSucceedEffectClass;                        // 0x03D8   (0x0008)  
-	class UStatusEffect*                               _selfUnhookAlwaysSucceedEffect;                             // 0x03E0   (0x0008)  
+	class UClass*                                      _brokenEffectClass;                                         // 0x03E0   (0x0008)  
+	class UStatusEffect*                               _selfUnhookAlwaysSucceedEffect;                             // 0x03E8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/TheSpirit.Deliverance.GetBrokenEffectDurationAtLevel
-	// float GetBrokenEffectDurationAtLevel();                                                                               // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetBrokenEffectDurationAtLevel();                                                                               // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheSpirit.Diversion
@@ -87,15 +88,16 @@ public:
 
 	/// Functions
 	// Function /Script/TheSpirit.Diversion.Authority_OnOwningSurvivorDamageStateChanged
-	// void Authority_OnOwningSurvivorDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState); // [0x5df8ab0] Final|Native|Private 
+	// void Authority_OnOwningSurvivorDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState); // [0x5e089b0] Final|Native|Private 
 };
 
 /// Class /Script/TheSpirit.DriedCherryBlossom
-/// Size: 0x0008 (0x0002D8 - 0x0002E0)
+/// Size: 0x0010 (0x0002D8 - 0x0002E8)
 class UDriedCherryBlossom : public USimpleSpawnEffectsOnAllSurvivorsAddon
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x8];                                       // 0x02D8   (0x0008)  MISSED
+	class UClass*                                      _spiritDriedCherryBlossomStatusEffectClass;                 // 0x02D8   (0x0008)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x02E0   (0x0008)  MISSED
 };
 
 /// Class /Script/TheSpirit.KatsumoriTalisman
@@ -127,7 +129,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheSpirit.OwningPlayerInSpiritHuskRange.OnKillerSet
-	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5df91f0] Final|Native|Public  
+	// void OnKillerSet(class ASlasherPlayer* killer);                                                                       // [0x5e090f0] Final|Native|Public  
 };
 
 /// Class /Script/TheSpirit.PhaseWalkingComponent
@@ -136,11 +138,11 @@ class UPhaseWalkingComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,4153) /* FMulticastInlineDelegate */ __um(OnPhaseWalkInfoReceived);                           // 0x00C0   (0x0010)  
-	SDK_UNDEFINED(16,4154) /* FMulticastInlineDelegate */ __um(OnGameEndedVFX);                                    // 0x00D0   (0x0010)  
-	SDK_UNDEFINED(16,4155) /* FMulticastInlineDelegate */ __um(TriggerSurvivorVisibilityVFX);                      // 0x00E0   (0x0010)  
-	SDK_UNDEFINED(16,4156) /* FMulticastInlineDelegate */ __um(TriggerKillerVisibilityVFX);                        // 0x00F0   (0x0010)  
-	SDK_UNDEFINED(16,4157) /* FMulticastInlineDelegate */ __um(OnMaxActivePhaseWalkCharges);                       // 0x0100   (0x0010)  
+	SDK_UNDEFINED(16,4246) /* FMulticastInlineDelegate */ __um(OnPhaseWalkInfoReceived);                           // 0x00C0   (0x0010)  
+	SDK_UNDEFINED(16,4247) /* FMulticastInlineDelegate */ __um(OnGameEndedVFX);                                    // 0x00D0   (0x0010)  
+	SDK_UNDEFINED(16,4248) /* FMulticastInlineDelegate */ __um(TriggerSurvivorVisibilityVFX);                      // 0x00E0   (0x0010)  
+	SDK_UNDEFINED(16,4249) /* FMulticastInlineDelegate */ __um(TriggerKillerVisibilityVFX);                        // 0x00F0   (0x0010)  
+	SDK_UNDEFINED(16,4250) /* FMulticastInlineDelegate */ __um(OnMaxActivePhaseWalkCharges);                       // 0x0100   (0x0010)  
 	class UClass*                                      _huskClass;                                                 // 0x0110   (0x0008)  
 	FTagStateBool                                      _isActivePhaseWalking;                                      // 0x0118   (0x0030)  
 	FTagStateBool                                      _isPassivePhaseWalking;                                     // 0x0148   (0x0030)  
@@ -170,57 +172,57 @@ public:
 
 	/// Functions
 	// Function /Script/TheSpirit.PhaseWalkingComponent.UpdateSurvivorVisibility
-	// void UpdateSurvivorVisibility(bool visible);                                                                          // [0x5dfa320] Final|Native|Public|BlueprintCallable 
+	// void UpdateSurvivorVisibility(bool visible);                                                                          // [0x5e0a220] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.UpdateKillerVisibility
-	// void UpdateKillerVisibility();                                                                                        // [0x5dfa300] Final|Native|Public|BlueprintCallable 
+	// void UpdateKillerVisibility();                                                                                        // [0x5e0a200] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.SpawnPassivePhaseWalkHusks
-	// void SpawnPassivePhaseWalkHusks();                                                                                    // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void SpawnPassivePhaseWalkHusks();                                                                                    // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.Server_Broadcast_PhaseWalk
-	// void Server_Broadcast_PhaseWalk(FPhaseWalkInfo PhaseWalkInfo);                                                        // [0x5dfa210] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_Broadcast_PhaseWalk(FPhaseWalkInfo PhaseWalkInfo);                                                        // [0x5e0a110] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.RefillActivePhaseWalkCharges
-	// void RefillActivePhaseWalkCharges();                                                                                  // [0x5dfa1f0] Final|Native|Protected|BlueprintCallable 
+	// void RefillActivePhaseWalkCharges();                                                                                  // [0x5e0a0f0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5dfa1d0] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5e0a0d0] Final|Native|Private 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.Multicast_Broadcast_PhaseWalk
-	// void Multicast_Broadcast_PhaseWalk(FPhaseWalkInfo PhaseWalkInfo);                                                     // [0x5dfa0e0] Final|Net|NetReliableNative|Event|NetMulticast|Private|NetValidate 
+	// void Multicast_Broadcast_PhaseWalk(FPhaseWalkInfo PhaseWalkInfo);                                                     // [0x5e09fe0] Final|Net|NetReliableNative|Event|NetMulticast|Private|NetValidate 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.ModifyActivePhaseWalkCharges
-	// void ModifyActivePhaseWalkCharges(float Delta);                                                                       // [0x5dfa060] Final|Native|Public|BlueprintCallable 
+	// void ModifyActivePhaseWalkCharges(float Delta);                                                                       // [0x5e09f60] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.MakePassivePhaseWalkHusksVisible
-	// void MakePassivePhaseWalkHusksVisible(FTransform& huskTransform, float opacityValue, float speedValue);               // [0x61c32d0] Event|Protected|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
+	// void MakePassivePhaseWalkHusksVisible(FTransform& huskTransform, float opacityValue, float speedValue);               // [0x61d2f50] Event|Protected|HasOutParms|HasDefaults|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.Local_PhaseWalk
-	// void Local_PhaseWalk(FPhaseWalkInfo& PhaseWalkInfo);                                                                  // [0x5df9f90] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void Local_PhaseWalk(FPhaseWalkInfo& PhaseWalkInfo);                                                                  // [0x5e09e90] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.Local_EndPhaseWalks
-	// void Local_EndPhaseWalks();                                                                                           // [0x5df9f70] Final|Native|Public|BlueprintCallable 
+	// void Local_EndPhaseWalks();                                                                                           // [0x5e09e70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.IsPhaseWalking
-	// bool IsPhaseWalking();                                                                                                // [0x5df9f40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPhaseWalking();                                                                                                // [0x5e09e40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.IsPassivePhaseWalking
-	// bool IsPassivePhaseWalking();                                                                                         // [0x5df9f10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPassivePhaseWalking();                                                                                         // [0x5e09e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.IsDecoyActive
-	// bool IsDecoyActive();                                                                                                 // [0x5df9ee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDecoyActive();                                                                                                 // [0x5e09de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.IsActivePhaseWalking
-	// bool IsActivePhaseWalking();                                                                                          // [0x5df9ea0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsActivePhaseWalking();                                                                                          // [0x5e09da0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.GetSpiritPassivePhaseWalkHusksCountToSpawn
-	// int32_t GetSpiritPassivePhaseWalkHusksCountToSpawn();                                                                 // [0x5df9e70] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetSpiritPassivePhaseWalkHusksCountToSpawn();                                                                 // [0x5e09d70] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.GetPassivePhaseWalkTimer
-	// FDBDTimer GetPassivePhaseWalkTimer();                                                                                 // [0x5df9e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// FDBDTimer GetPassivePhaseWalkTimer();                                                                                 // [0x5e09d10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.GetHusk
-	// class AActor* GetHusk();                                                                                              // [0x5df9de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class AActor* GetHusk();                                                                                              // [0x5e09ce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.GetDecoySlasherComponent
-	// class UDecoySlasherComponent* GetDecoySlasherComponent();                                                             // [0x5df9db0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UDecoySlasherComponent* GetDecoySlasherComponent();                                                             // [0x5e09cb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.GetActivePhaseWalkCharges
-	// float GetActivePhaseWalkCharges();                                                                                    // [0x5df9d80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivePhaseWalkCharges();                                                                                    // [0x5e09c80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.GetActivePhaseWalkChargePercentage
-	// float GetActivePhaseWalkChargePercentage();                                                                           // [0x5df9d40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivePhaseWalkChargePercentage();                                                                           // [0x5e09c40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.DBD_RefillActivePhaseWalkCharges
-	// void DBD_RefillActivePhaseWalkCharges();                                                                              // [0x45fe020] Final|Exec|Native|Private 
+	// void DBD_RefillActivePhaseWalkCharges();                                                                              // [0x4592da0] Final|Exec|Native|Private 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.CanStartActivePhaseWalk
-	// bool CanStartActivePhaseWalk();                                                                                       // [0x5df9d00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanStartActivePhaseWalk();                                                                                       // [0x5e09c00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.PhaseWalkingComponent.Authority_SetIsInPostActivePhaseWalk
-	// void Authority_SetIsInPostActivePhaseWalk(bool value);                                                                // [0x5df9c70] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_SetIsInPostActivePhaseWalk(bool value);                                                                // [0x5e09b70] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheSpirit.Rancor
-/// Size: 0x0020 (0x0003C8 - 0x0003E8)
+/// Size: 0x0030 (0x0003C8 - 0x0003F8)
 class URancor : public UPerk
 { 
 public:
@@ -228,15 +230,17 @@ public:
 	float                                              _killerRevealToObsessionDuration;                           // 0x03CC   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x8];                                       // 0x03D8   (0x0008)  MISSED
 	class UStatusEffect*                               _exposedStatusEffect;                                       // 0x03E0   (0x0008)  
+	class UClass*                                      _timedRevealKillerEffectClass;                              // 0x03E8   (0x0008)  
+	class UClass*                                      _rancorEffectClass;                                         // 0x03F0   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/TheSpirit.Rancor.SpawnBubbleAtSurvivorsLocation
-	// void SpawnBubbleAtSurvivorsLocation();                                                                                // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void SpawnBubbleAtSurvivorsLocation();                                                                                // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheSpirit.Rancor.GetSurvivorRevealDuration
-	// float GetSurvivorRevealDuration();                                                                                    // [0x501b8a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSurvivorRevealDuration();                                                                                    // [0x4ff9160] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheSpirit.Rancor.GetKillerRevealToObsessionDurationAtLevel
-	// float GetKillerRevealToObsessionDurationAtLevel();                                                                    // [0x500a950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetKillerRevealToObsessionDurationAtLevel();                                                                    // [0x4fe8200] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheSpirit.SpiritFury
@@ -250,7 +254,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheSpirit.SpiritFury.GetPalletToBreakCountAtLevel
-	// int32_t GetPalletToBreakCountAtLevel();                                                                               // [0x5dfa790] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetPalletToBreakCountAtLevel();                                                                               // [0x5e0a6a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheSpirit.SpiritHuskAnimInstance
@@ -284,7 +288,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheSpirit.SpiritHuskOutlineUpdateStrategy.OnSlasherSet
-	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x5dfacf0] Final|Native|Private 
+	// void OnSlasherSet(class ASlasherPlayer* Slasher);                                                                     // [0x5e0ac00] Final|Native|Private 
 };
 
 /// Class /Script/TheSpirit.ThrowRockInteraction

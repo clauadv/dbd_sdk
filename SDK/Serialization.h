@@ -50,10 +50,10 @@ struct FStructSerializerObjectTestStruct
 { 
 	class UClass*                                      Class;                                                      // 0x0000   (0x0008)  
 	class UClass*                                      SubClass;                                                   // 0x0008   (0x0008)  
-	SDK_UNDEFINED(48,4969) /* TWeakObjectPtr<UClass*> */ __um(SoftClass);                                          // 0x0010   (0x0030)  
+	SDK_UNDEFINED(48,5358) /* TWeakObjectPtr<UClass*> */ __um(SoftClass);                                          // 0x0010   (0x0030)  
 	class UObject*                                     Object;                                                     // 0x0040   (0x0008)  
-	SDK_UNDEFINED(8,4970) /* TWeakObjectPtr<UMetaData*> */ __um(WeakObject);                                       // 0x0048   (0x0008)  
-	SDK_UNDEFINED(48,4971) /* TWeakObjectPtr<UMetaData*> */ __um(SoftObject);                                      // 0x0050   (0x0030)  
+	SDK_UNDEFINED(8,5359) /* TWeakObjectPtr<UMetaData*> */ __um(WeakObject);                                       // 0x0048   (0x0008)  
+	SDK_UNDEFINED(48,5360) /* TWeakObjectPtr<UMetaData*> */ __um(SoftObject);                                      // 0x0050   (0x0030)  
 	FSoftClassPath                                     ClassPath;                                                  // 0x0080   (0x0020)  
 	FSoftObjectPath                                    ObjectPath;                                                 // 0x00A0   (0x0020)  
 };
@@ -65,8 +65,8 @@ struct FStructSerializerBuiltinTestStruct
 	FGuid                                              Guid;                                                       // 0x0000   (0x0010)  
 	FName                                              Name;                                                       // 0x0010   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x001C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4972) /* FString */               __um(String);                                               // 0x0020   (0x0010)  
-	SDK_UNDEFINED(24,4973) /* FText */                 __um(Text);                                                 // 0x0030   (0x0018)  
+	SDK_UNDEFINED(16,5361) /* FString */               __um(String);                                               // 0x0020   (0x0010)  
+	SDK_UNDEFINED(24,5362) /* FText */                 __um(Text);                                                 // 0x0030   (0x0018)  
 	FVector                                            Vector;                                                     // 0x0048   (0x000C)  
 	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0054   (0x000C)  MISSED
 	FVector4                                           Vector4;                                                    // 0x0060   (0x0010)  
@@ -95,20 +95,20 @@ struct FStructSerializerArrayTestStruct
 /// Size: 0x0140 (0x000000 - 0x000140)
 struct FStructSerializerMapTestStruct
 { 
-	SDK_UNDEFINED(80,4974) /* TMap<int32_t, FString> */ __um(IntToStr);                                            // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,4975) /* TMap<FString, FString> */ __um(StrToStr);                                            // 0x0050   (0x0050)  
-	SDK_UNDEFINED(80,4976) /* TMap<FString, FVector> */ __um(StrToVec);                                            // 0x00A0   (0x0050)  
-	SDK_UNDEFINED(80,4977) /* TMap<FString, FStructSerializerBuiltinTestStruct> */ __um(StrToStruct);              // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,5363) /* TMap<int32_t, FString> */ __um(IntToStr);                                            // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,5364) /* TMap<FString, FString> */ __um(StrToStr);                                            // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,5365) /* TMap<FString, FVector> */ __um(StrToVec);                                            // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,5366) /* TMap<FString, FStructSerializerBuiltinTestStruct> */ __um(StrToStruct);              // 0x00F0   (0x0050)  
 };
 
 /// Struct /Script/Serialization.StructSerializerSetTestStruct
 /// Size: 0x0140 (0x000000 - 0x000140)
 struct FStructSerializerSetTestStruct
 { 
-	SDK_UNDEFINED(80,4978) /* TSet<FString> */         __um(StrSet);                                               // 0x0000   (0x0050)  
-	SDK_UNDEFINED(80,4979) /* TSet<int32_t> */         __um(IntSet);                                               // 0x0050   (0x0050)  
-	SDK_UNDEFINED(80,4980) /* TSet<FName> */           __um(NameSet);                                              // 0x00A0   (0x0050)  
-	SDK_UNDEFINED(80,4981) /* TSet<FStructSerializerBuiltinTestStruct> */ __um(StructSet);                         // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,5367) /* TSet<FString> */         __um(StrSet);                                               // 0x0000   (0x0050)  
+	SDK_UNDEFINED(80,5368) /* TSet<int32_t> */         __um(IntSet);                                               // 0x0050   (0x0050)  
+	SDK_UNDEFINED(80,5369) /* TSet<FName> */           __um(NameSet);                                              // 0x00A0   (0x0050)  
+	SDK_UNDEFINED(80,5370) /* TSet<FStructSerializerBuiltinTestStruct> */ __um(StructSet);                         // 0x00F0   (0x0050)  
 };
 
 /// Struct /Script/Serialization.StructSerializerTestStruct

@@ -98,11 +98,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34Dodson.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5d67490] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5d74680] Final|Native|Private 
 	// Function /Script/TheK34.K34Dodson.Cosmetic_OnExitDodson
-	// void Cosmetic_OnExitDodson();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnExitDodson();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK34.K34Dodson.Cosmetic_OnEnterDodson
-	// void Cosmetic_OnEnterDodson();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnEnterDodson();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK34.K34DodsonComponent
@@ -121,9 +121,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34DodsonComponent.OnRep_IsDodson
-	// void OnRep_IsDodson();                                                                                                // [0x5d676f0] Final|Native|Private 
+	// void OnRep_IsDodson();                                                                                                // [0x5d748e0] Final|Native|Private 
 	// Function /Script/TheK34.K34DodsonComponent.IsDodson
-	// bool IsDodson();                                                                                                      // [0x5d676c0] Final|Native|Public|BlueprintCallable 
+	// bool IsDodson();                                                                                                      // [0x5d748b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK34.K34EnterTipToeModeInteraction
@@ -166,7 +166,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x7];                                       // 0x0239   (0x0007)  MISSED
 	FTunableStat                                       _footstepLifetime;                                          // 0x0240   (0x0080)  
 	FTunableStat                                       _footstepMaximumVisibilityDistance;                         // 0x02C0   (0x0080)  
-	SDK_UNDEFINED(16,3604) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0340   (0x0010)  
+	SDK_UNDEFINED(16,3694) /* FMulticastInlineDelegate */ __um(OnAcquiredChanged);                                 // 0x0340   (0x0010)  
 	bool                                               _isActive;                                                  // 0x0350   (0x0001)  
 	unsigned char                                      UnknownData02_5[0x47];                                      // 0x0351   (0x0047)  MISSED
 	class AActor*                                      _owningActor;                                               // 0x0398   (0x0008)  
@@ -177,11 +177,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34Footstep.OnRep_IsActive
-	// void OnRep_IsActive();                                                                                                // [0x5d67fd0] Final|Native|Private 
+	// void OnRep_IsActive();                                                                                                // [0x5d751c0] Final|Native|Private 
 	// Function /Script/TheK34.K34Footstep.GetOwningActorsVelocity
-	// FVector GetOwningActorsVelocity();                                                                                    // [0x5d67f90] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetOwningActorsVelocity();                                                                                    // [0x5d75180] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34Footstep.Cosmetic_TriggerFootstepVisibility
-	// void Cosmetic_TriggerFootstepVisibility(EK34Foot footType, bool IsVisible);                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_TriggerFootstepVisibility(EK34Foot footType, bool IsVisible);                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK34.K34FootstepsComponent
@@ -207,33 +207,33 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_UndetectableStart
-	// void Cosmetic_UndetectableStart();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UndetectableStart();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_UndetectableEnd
-	// void Cosmetic_UndetectableEnd();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UndetectableEnd();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_StartSliceAndDiceAttack
-	// void Cosmetic_StartSliceAndDiceAttack();                                                                              // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_StartSliceAndDiceAttack();                                                                              // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_ScamperStart
-	// void Cosmetic_ScamperStart(bool isOnPallet, bool isChaining);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_ScamperStart(bool isOnPallet, bool isChaining);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_ScamperEnd
-	// void Cosmetic_ScamperEnd(bool isOnPallet, bool isChaining);                                                           // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_ScamperEnd(bool isOnPallet, bool isChaining);                                                           // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_OnTipToeModeCooldownFinished
-	// void Cosmetic_OnTipToeModeCooldownFinished();                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTipToeModeCooldownFinished();                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_OnExitDodson
-	// void Cosmetic_OnExitDodson();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnExitDodson();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_OnEnterDodson
-	// void Cosmetic_OnEnterDodson();                                                                                        // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnEnterDodson();                                                                                        // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_HideyHoModeDurationWarningTimeUp
-	// void Cosmetic_HideyHoModeDurationWarningTimeUp();                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_HideyHoModeDurationWarningTimeUp();                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_ExitTipToeMode
-	// void Cosmetic_ExitTipToeMode();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_ExitTipToeMode();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_ExitSliceAndDice
-	// void Cosmetic_ExitSliceAndDice();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_ExitSliceAndDice();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_EnterTipToeMode
-	// void Cosmetic_EnterTipToeMode();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_EnterTipToeMode();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_EnterSliceAndDice
-	// void Cosmetic_EnterSliceAndDice();                                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_EnterSliceAndDice();                                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK34.K34FXInterface.Cosmetic_EndSliceAndDiceAttack
-	// void Cosmetic_EndSliceAndDiceAttack();                                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_EndSliceAndDiceAttack();                                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK34.K34KillerAttackSubAnimInstance
@@ -267,9 +267,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34P01.Client_UpdateHudIcon
-	// void Client_UpdateHudIcon(float percent);                                                                             // [0x5d68db0] Final|Net|Native|Event|Private|NetClient 
+	// void Client_UpdateHudIcon(float percent);                                                                             // [0x5d75fa0] Final|Net|Native|Event|Private|NetClient 
 	// Function /Script/TheK34.K34P01.Authority_OnTotemStateChanged
-	// void Authority_OnTotemStateChanged(ETotemState oldState, ETotemState NewState);                                       // [0x5d68ce0] Final|Native|Private 
+	// void Authority_OnTotemStateChanged(ETotemState oldState, ETotemState NewState);                                       // [0x5d75ed0] Final|Native|Private 
 };
 
 /// Class /Script/TheK34.K34P02
@@ -288,9 +288,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34P02.Multicast_RevealAndMakeSurvivorScream
-	// void Multicast_RevealAndMakeSurvivorScream(class ACamperPlayer* Survivor);                                            // [0x501b930] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_RevealAndMakeSurvivorScream(class ACamperPlayer* Survivor);                                            // [0x4ff91d0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK34.K34P02.BP_RevealAndMakeSurvivorScream
-	// void BP_RevealAndMakeSurvivorScream(class ACamperPlayer* survivorPlayer);                                             // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_RevealAndMakeSurvivorScream(class ACamperPlayer* survivorPlayer);                                             // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK34.K34P03
@@ -312,7 +312,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34P03.HasAnyGeneratorsInRange
-	// bool HasAnyGeneratorsInRange();                                                                                       // [0x58e0f00] Final|Native|Public|Const 
+	// bool HasAnyGeneratorsInRange();                                                                                       // [0x58e76b0] Final|Native|Public|Const 
 };
 
 /// Class /Script/TheK34.K34P03IconStrategy
@@ -403,11 +403,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34Power.OnKillerIntroCompleted
-	// void OnKillerIntroCompleted();                                                                                        // [0x5d6a1c0] Final|Native|Public|Const 
+	// void OnKillerIntroCompleted();                                                                                        // [0x5d773b0] Final|Native|Public|Const 
 	// Function /Script/TheK34.K34Power.OnFootstepAddedToPool
-	// void OnFootstepAddedToPool(class AActor* Actor);                                                                      // [0x5d6a130] Final|Native|Private|Const 
+	// void OnFootstepAddedToPool(class AActor* Actor);                                                                      // [0x5d77320] Final|Native|Private|Const 
 	// Function /Script/TheK34.K34Power.GetOwningKiller
-	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x5d6a100] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x5d772f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK34.K34PowerAnimInstance
@@ -445,30 +445,30 @@ public:
 };
 
 /// Class /Script/TheK34.K34ScamperChargeableInteraction
-/// Size: 0x0250 (0x000790 - 0x0009E0)
+/// Size: 0x0260 (0x000790 - 0x0009F0)
 class UK34ScamperChargeableInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	EScamperPhase                                      _currentPhase;                                              // 0x0788   (0x0001)  
-	unsigned char                                      UnknownData00_5[0x1C7];                                     // 0x0789   (0x01C7)  MISSED
-	SDK_UNDEFINED(80,3605) /* TMap<EScamperPhase, FK34ScamperMovementSpeedSetting> */ __um(_scamperMovementSpeedSettings); // 0x0950   (0x0050)  
-	float                                              _chainVaultDetectionRange;                                  // 0x09A0   (0x0004)  
-	float                                              _serverChainVaultDetectionRange;                            // 0x09A4   (0x0004)  
-	FDBDTunableRowHandle                               _chainingHeldInputBuffer;                                   // 0x09A8   (0x0028)  
-	float                                              _chainVaultSweepRadius;                                     // 0x09D0   (0x0004)  
-	float                                              _cameraTransitionToThirdPersonViewDuration;                 // 0x09D4   (0x0004)  
-	unsigned char                                      UnknownData01_6[0x8];                                       // 0x09D8   (0x0008)  MISSED
+	EScamperPhase                                      _currentPhase;                                              // 0x0790   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x1C7];                                     // 0x0791   (0x01C7)  MISSED
+	SDK_UNDEFINED(80,3695) /* TMap<EScamperPhase, FK34ScamperMovementSpeedSetting> */ __um(_scamperMovementSpeedSettings); // 0x0958   (0x0050)  
+	float                                              _chainVaultDetectionRange;                                  // 0x09A8   (0x0004)  
+	float                                              _serverChainVaultDetectionRange;                            // 0x09AC   (0x0004)  
+	FDBDTunableRowHandle                               _chainingHeldInputBuffer;                                   // 0x09B0   (0x0028)  
+	float                                              _chainVaultSweepRadius;                                     // 0x09D8   (0x0004)  
+	float                                              _cameraTransitionToThirdPersonViewDuration;                 // 0x09DC   (0x0004)  
+	unsigned char                                      UnknownData01_6[0x10];                                      // 0x09E0   (0x0010)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK34.K34ScamperChargeableInteraction.Server_ActivateChaining
-	// void Server_ActivateChaining(class UInteractionDefinition* chainInteraction);                                         // [0x50aead0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_ActivateChaining(class UInteractionDefinition* chainInteraction);                                         // [0x50928b0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK34.K34ScamperChargeableInteraction.OnRep_CurrentPhase
-	// void OnRep_CurrentPhase();                                                                                            // [0x5d6adb0] Final|Native|Private 
+	// void OnRep_CurrentPhase();                                                                                            // [0x5d77fa0] Final|Native|Private 
 	// Function /Script/TheK34.K34ScamperChargeableInteraction.Cosmetic_EndChargingPhase
-	// void Cosmetic_EndChargingPhase();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_EndChargingPhase();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK34.K34ScamperChargeableInteraction.Cosmetic_BeginChargingPhase
-	// void Cosmetic_BeginChargingPhase();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_BeginChargingPhase();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK34.K34ScoringComponent
@@ -534,7 +534,7 @@ class AK34TipToeDistraction : public AActor
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0230   (0x0010)  MISSED
-	SDK_UNDEFINED(16,3606) /* FMulticastInlineDelegate */ __um(_onAcquiredChanged);                                // 0x0240   (0x0010)  
+	SDK_UNDEFINED(16,3696) /* FMulticastInlineDelegate */ __um(_onAcquiredChanged);                                // 0x0240   (0x0010)  
 	FDBDTunableRowHandle                               _maximumVisibilityDistance;                                 // 0x0250   (0x0028)  
 	FDBDTunableRowHandle                               _footStepSpawnRate;                                         // 0x0278   (0x0028)  
 	FDBDTunableRowHandle                               _chanceToRandomlyTurnBackOnPath;                            // 0x02A0   (0x0028)  
@@ -560,21 +560,21 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34TipToeDistraction.Multicast_ShowDistractionDebug
-	// void Multicast_ShowDistractionDebug(float HalfSize, float Radius);                                                    // [0x5d6bbf0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_ShowDistractionDebug(float HalfSize, float Radius);                                                    // [0x5d78e10] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK34.K34TipToeDistraction.Multicast_OnSpawned
-	// void Multicast_OnSpawned(class ADBDPlayer* OwningPlayer);                                                             // [0x5bdc5f0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSpawned(class ADBDPlayer* OwningPlayer);                                                             // [0x5be9de0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK34.K34TipToeDistraction.Multicast_OnDeactivated
-	// void Multicast_OnDeactivated();                                                                                       // [0x5b98c20] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnDeactivated();                                                                                       // [0x5ba6220] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK34.K34TipToeDistraction.GetOwningPlayer
-	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x5d6bbc0] Final|Native|Protected|BlueprintCallable 
+	// class ADBDPlayer* GetOwningPlayer();                                                                                  // [0x5d78de0] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK34.K34TipToeDistraction.GetFootAudioSurfaceName
-	// FString GetFootAudioSurfaceName();                                                                                    // [0x5d6bb40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// FString GetFootAudioSurfaceName();                                                                                    // [0x5d78d60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeDistraction.GetCustomizedAudio
-	// class UCustomizedAudioComponent* GetCustomizedAudio();                                                                // [0x5d6bb10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UCustomizedAudioComponent* GetCustomizedAudio();                                                                // [0x5d78d30] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeDistraction.GetAkComponent
-	// class UAkComponent* GetAkComponent();                                                                                 // [0x5aefde0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class UAkComponent* GetAkComponent();                                                                                 // [0x5d78d00] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeDistraction.Cosmetic_OnFootHitGround
-	// void Cosmetic_OnFootHitGround();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnFootHitGround();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK34.K34TipToeModeComponent
@@ -613,39 +613,39 @@ public:
 	unsigned char                                      UnknownData03_5[0x7];                                       // 0x0629   (0x0007)  MISSED
 	class UClass*                                      _tipToeDistractionClass;                                    // 0x0630   (0x0008)  
 	class UClass*                                      _navQueryFilter;                                            // 0x0638   (0x0008)  
-	SDK_UNDEFINED(80,3607) /* TMap<ACamperPlayer*, FCamperDistractionData> */ __um(_authority_survivorsData);      // 0x0640   (0x0050)  
+	SDK_UNDEFINED(80,3697) /* TMap<ACamperPlayer*, FCamperDistractionData> */ __um(_authority_survivorsData);      // 0x0640   (0x0050)  
 	unsigned char                                      UnknownData04_6[0x20];                                      // 0x0690   (0x0020)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK34.K34TipToeModeComponent.OnRep_TipToeModeDurationWarningTimeUpTimer
-	// void OnRep_TipToeModeDurationWarningTimeUpTimer();                                                                    // [0x5d6c7c0] Final|Native|Private 
+	// void OnRep_TipToeModeDurationWarningTimeUpTimer();                                                                    // [0x5d79a20] Final|Native|Private 
 	// Function /Script/TheK34.K34TipToeModeComponent.OnRep_IsInTipToeModeCooldown
-	// void OnRep_IsInTipToeModeCooldown();                                                                                  // [0x5d6c7a0] Final|Native|Protected|Const 
+	// void OnRep_IsInTipToeModeCooldown();                                                                                  // [0x5d79a00] Final|Native|Protected|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.OnRep_IsInTipToeMode
-	// void OnRep_IsInTipToeMode();                                                                                          // [0x5d6c780] Final|Native|Protected 
+	// void OnRep_IsInTipToeMode();                                                                                          // [0x5d799e0] Final|Native|Protected 
 	// Function /Script/TheK34.K34TipToeModeComponent.IsInTipToeMode
-	// bool IsInTipToeMode();                                                                                                // [0x57dfe70] Final|Native|Public|BlueprintCallable 
+	// bool IsInTipToeMode();                                                                                                // [0x57e78d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK34.K34TipToeModeComponent.GetTipToeModeDuration
-	// float GetTipToeModeDuration();                                                                                        // [0x5d6c750] Final|Native|Public|BlueprintCallable 
+	// float GetTipToeModeDuration();                                                                                        // [0x5d799b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK34.K34TipToeModeComponent.GetTipToeModeCooldownDuration
-	// float GetTipToeModeCooldownDuration();                                                                                // [0x5d6c720] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTipToeModeCooldownDuration();                                                                                // [0x5d79980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.GetRemainingTipToeModeDuration
-	// float GetRemainingTipToeModeDuration();                                                                               // [0x5d6c6f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingTipToeModeDuration();                                                                               // [0x5d79950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.GetRemainingTipToeModeCooldownDuration
-	// float GetRemainingTipToeModeCooldownDuration();                                                                       // [0x5d6c6c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingTipToeModeCooldownDuration();                                                                       // [0x5d79920] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.GetKiller
-	// class ASlasherPlayer* GetKiller();                                                                                    // [0x5d6c690] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetKiller();                                                                                    // [0x5d798f0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.CanEnterTipToeMode
-	// bool CanEnterTipToeMode();                                                                                            // [0x5d6c660] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool CanEnterTipToeMode();                                                                                            // [0x5d798c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.Authority_SetIsInTipToeMode
-	// void Authority_SetIsInTipToeMode(bool IsInTipToeMode);                                                                // [0x5d6c5d0] Final|Native|Public|BlueprintCallable 
+	// void Authority_SetIsInTipToeMode(bool IsInTipToeMode, bool triggerExitEvent);                                         // [0x5d797f0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK34.K34TipToeModeComponent.Authority_ReduceDuration
-	// void Authority_ReduceDuration(float reductionPercentage);                                                             // [0x5d6c550] Final|Native|Public|BlueprintCallable 
+	// void Authority_ReduceDuration(float reductionPercentage);                                                             // [0x5d79770] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheK34.K34TipToeModeComponent.Authority_ReduceCooldown
-	// void Authority_ReduceCooldown(float reductionPercentage);                                                             // [0x5d6c4d0] Final|Native|Public|BlueprintCallable|Const 
+	// void Authority_ReduceCooldown(float reductionPercentage);                                                             // [0x5d796f0] Final|Native|Public|BlueprintCallable|Const 
 	// Function /Script/TheK34.K34TipToeModeComponent.Authority_OnIntroCompleted
-	// void Authority_OnIntroCompleted();                                                                                    // [0x5d6c4b0] Final|Native|Public  
+	// void Authority_OnIntroCompleted();                                                                                    // [0x5d796d0] Final|Native|Public  
 };
 
 /// Class /Script/TheK34.K34Utilities
@@ -657,9 +657,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK34.K34Utilities.GetK34VFXFeetPool
-	// class UAuthoritativeActorPoolComponent* GetK34VFXFeetPool(class ADBDPlayer* Player);                                  // [0x5d6ca00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UAuthoritativeActorPoolComponent* GetK34VFXFeetPool(class ADBDPlayer* Player);                                  // [0x5d79c60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK34.K34Utilities.GetK34Power
-	// class AK34Power* GetK34Power(class ADBDPlayer* Player);                                                               // [0x5d6c970] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK34Power* GetK34Power(class ADBDPlayer* Player);                                                               // [0x5d79bd0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK34.K34VaultInteraction

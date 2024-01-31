@@ -56,7 +56,7 @@ struct FNamedInterfaceDef
 { 
 	FName                                              InterfaceName;                                              // 0x0000   (0x000C)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x000C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4904) /* FString */               __um(InterfaceClassName);                                   // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5293) /* FString */               __um(InterfaceClassName);                                   // 0x0010   (0x0010)  
 };
 
 /// Class /Script/OnlineSubsystem.NamedInterfaces
@@ -78,43 +78,43 @@ public:
 
 	/// Functions
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
-	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                       // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnMatchReceivedTurn(FString Match, bool bDidBecomeActive);                                                       // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/OnlineSubsystem.TurnBasedMatchInterface.OnMatchEnded
-	// void OnMatchEnded(FString Match);                                                                                     // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void OnMatchEnded(FString Match);                                                                                     // [0x61d2f50] Event|Public|BlueprintEvent 
 };
 
 /// Struct /Script/OnlineSubsystem.InAppPurchaseProductInfo
 /// Size: 0x00A8 (0x000000 - 0x0000A8)
 struct FInAppPurchaseProductInfo
 { 
-	SDK_UNDEFINED(16,4905) /* FString */               __um(Identifier);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4906) /* FString */               __um(TransactionIdentifier);                                // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,4907) /* FString */               __um(DisplayName);                                          // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,4908) /* FString */               __um(DisplayDescription);                                   // 0x0030   (0x0010)  
-	SDK_UNDEFINED(16,4909) /* FString */               __um(DisplayPrice);                                         // 0x0040   (0x0010)  
+	SDK_UNDEFINED(16,5294) /* FString */               __um(Identifier);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5295) /* FString */               __um(TransactionIdentifier);                                // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5296) /* FString */               __um(DisplayName);                                          // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5297) /* FString */               __um(DisplayDescription);                                   // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,5298) /* FString */               __um(DisplayPrice);                                         // 0x0040   (0x0010)  
 	float                                              RawPrice;                                                   // 0x0050   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x0054   (0x0004)  MISSED
-	SDK_UNDEFINED(16,4910) /* FString */               __um(CurrencyCode);                                         // 0x0058   (0x0010)  
-	SDK_UNDEFINED(16,4911) /* FString */               __um(CurrencySymbol);                                       // 0x0068   (0x0010)  
-	SDK_UNDEFINED(16,4912) /* FString */               __um(DecimalSeparator);                                     // 0x0078   (0x0010)  
-	SDK_UNDEFINED(16,4913) /* FString */               __um(GroupingSeparator);                                    // 0x0088   (0x0010)  
-	SDK_UNDEFINED(16,4914) /* FString */               __um(ReceiptData);                                          // 0x0098   (0x0010)  
+	SDK_UNDEFINED(16,5299) /* FString */               __um(CurrencyCode);                                         // 0x0058   (0x0010)  
+	SDK_UNDEFINED(16,5300) /* FString */               __um(CurrencySymbol);                                       // 0x0068   (0x0010)  
+	SDK_UNDEFINED(16,5301) /* FString */               __um(DecimalSeparator);                                     // 0x0078   (0x0010)  
+	SDK_UNDEFINED(16,5302) /* FString */               __um(GroupingSeparator);                                    // 0x0088   (0x0010)  
+	SDK_UNDEFINED(16,5303) /* FString */               __um(ReceiptData);                                          // 0x0098   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystem.InAppPurchaseRestoreInfo
 /// Size: 0x0030 (0x000000 - 0x000030)
 struct FInAppPurchaseRestoreInfo
 { 
-	SDK_UNDEFINED(16,4915) /* FString */               __um(Identifier);                                           // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4916) /* FString */               __um(ReceiptData);                                          // 0x0010   (0x0010)  
-	SDK_UNDEFINED(16,4917) /* FString */               __um(TransactionIdentifier);                                // 0x0020   (0x0010)  
+	SDK_UNDEFINED(16,5304) /* FString */               __um(Identifier);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5305) /* FString */               __um(ReceiptData);                                          // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5306) /* FString */               __um(TransactionIdentifier);                                // 0x0020   (0x0010)  
 };
 
 /// Struct /Script/OnlineSubsystem.InAppPurchaseProductRequest
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FInAppPurchaseProductRequest
 { 
-	SDK_UNDEFINED(16,4918) /* FString */               __um(ProductIdentifier);                                    // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5307) /* FString */               __um(ProductIdentifier);                                    // 0x0000   (0x0010)  
 	bool                                               bIsConsumable;                                              // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0011   (0x0007)  MISSED
 };

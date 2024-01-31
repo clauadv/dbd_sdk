@@ -15,6 +15,7 @@
 /// dependency: DBDAnimation
 /// dependency: DBDAttack
 /// dependency: DBDCompetence
+/// dependency: DBDGameplay
 /// dependency: DeadByDaylight
 /// dependency: Engine
 /// dependency: GameplayTags
@@ -53,15 +54,15 @@ public:
 	float                                              _detectionCapsuleRadius;                                    // 0x02D0   (0x0004)  
 	unsigned char                                      UnknownData00_5[0x4];                                       // 0x02D4   (0x0004)  MISSED
 	class UCapsuleComponent*                           _survivorDetector;                                          // 0x02D8   (0x0008)  
-	SDK_UNDEFINED(80,5174) /* TSet<AActor*> */         __um(_alreadyDetectedPlayers);                              // 0x02E0   (0x0050)  
+	SDK_UNDEFINED(80,5564) /* TSet<AActor*> */         __um(_alreadyDetectedPlayers);                              // 0x02E0   (0x0050)  
 	unsigned char                                      UnknownData01_6[0x18];                                      // 0x0330   (0x0018)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheNurse.AnxiousGaspAddon.PlayScream
-	// void PlayScream(class ACamperPlayer* Survivor);                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent|Const 
+	// void PlayScream(class ACamperPlayer* Survivor);                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent|Const 
 	// Function /Script/TheNurse.AnxiousGaspAddon.OnDetectorOverlapBegin
-	// void OnDetectorOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5d9bf40] Final|Native|Private|HasOutParms 
+	// void OnDetectorOverlapBegin(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5da9450] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheNurse.BaseInstantBlinkInteraction
@@ -111,13 +112,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.BalancedLanding.Server_WarnBalancedLandingPredicted
-	// void Server_WarnBalancedLandingPredicted();                                                                           // [0x5905d40] Final|Net|NetReliableNative|Event|Private|NetServer|BlueprintCallable 
+	// void Server_WarnBalancedLandingPredicted();                                                                           // [0x590b5d0] Final|Net|NetReliableNative|Event|Private|NetServer|BlueprintCallable 
 	// Function /Script/TheNurse.BalancedLanding.GetSprintDuration
-	// float GetSprintDuration();                                                                                            // [0x5020cf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetSprintDuration();                                                                                            // [0x4ffe5b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BalancedLanding.GetExhaustionDurationAtLevel
-	// float GetExhaustionDurationAtLevel();                                                                                 // [0x500a890] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustionDurationAtLevel();                                                                                 // [0x4fe8140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BalancedLanding.Client_UnvalidateBalanceLanding
-	// void Client_UnvalidateBalanceLanding();                                                                               // [0x501b910] Final|Net|NetReliableNative|Event|Private|NetClient 
+	// void Client_UnvalidateBalanceLanding();                                                                               // [0x4fe8460] Final|Net|NetReliableNative|Event|Private|NetClient 
 };
 
 /// Class /Script/TheNurse.BaseNursePerk
@@ -163,13 +164,13 @@ public:
 };
 
 /// Class /Script/TheNurse.BlinkInteraction
-/// Size: 0x0120 (0x000790 - 0x0008B0)
+/// Size: 0x0140 (0x000790 - 0x0008D0)
 class UBlinkInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_2[0x58];                                      // 0x0790   (0x0058)  MISSED
-	FStatProperty                                      _chargeTime;                                                // 0x07E8   (0x0088)  
-	unsigned char                                      UnknownData01_6[0x40];                                      // 0x0870   (0x0040)  MISSED
+	unsigned char                                      UnknownData00_2[0x78];                                      // 0x0790   (0x0078)  MISSED
+	FStatProperty                                      _chargeTime;                                                // 0x0808   (0x0088)  
+	unsigned char                                      UnknownData01_6[0x40];                                      // 0x0890   (0x0040)  MISSED
 };
 
 /// Class /Script/TheNurse.BlinkPlayerComponent
@@ -186,15 +187,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.BlinkPlayerComponent.Server_StartBlink
-	// void Server_StartBlink(FBlinkParams Params);                                                                          // [0x5d9c220] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_StartBlink(FBlinkParams Params);                                                                          // [0x5da9730] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheNurse.BlinkPlayerComponent.Server_EndBlink
-	// void Server_EndBlink();                                                                                               // [0x4db2a10] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_EndBlink();                                                                                               // [0x4d82970] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheNurse.BlinkPlayerComponent.Multicast_StartBlink
-	// void Multicast_StartBlink(FBlinkParams Params);                                                                       // [0x5d9bda0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartBlink(FBlinkParams Params);                                                                       // [0x5da92b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheNurse.BlinkPlayerComponent.Multicast_EndBlink
-	// void Multicast_EndBlink();                                                                                            // [0x4e01240] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_EndBlink();                                                                                            // [0x4dd4860] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheNurse.BlinkPlayerComponent.Local_OnMovementModeChanged
-	// void Local_OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x5d9bc90] Final|Native|Private 
+	// void Local_OnMovementModeChanged(class ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, char PreviousCustomMode); // [0x5da91a0] Final|Native|Private 
 };
 
 /// Class /Script/TheNurse.BlinkPowerDebugComponent
@@ -210,24 +211,24 @@ public:
 class UBlinkPowerEventDispatcher : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,5175) /* FMulticastInlineDelegate */ __um(OnFinishPlaying);                                   // 0x00B8   (0x0010)  
-	SDK_UNDEFINED(16,5176) /* FMulticastInlineDelegate */ __um(OnStartBlinkChargeEvent);                           // 0x00C8   (0x0010)  
-	SDK_UNDEFINED(16,5177) /* FMulticastInlineDelegate */ __um(OnUpdateBlinkChargeEvent);                          // 0x00D8   (0x0010)  
-	SDK_UNDEFINED(16,5178) /* FMulticastInlineDelegate */ __um(OnStopBlinkChargeEvent);                            // 0x00E8   (0x0010)  
-	SDK_UNDEFINED(16,5179) /* FMulticastInlineDelegate */ __um(OnEnterBlinkEvent);                                 // 0x00F8   (0x0010)  
-	SDK_UNDEFINED(16,5180) /* FMulticastInlineDelegate */ __um(OnUpdateBlinkEvent);                                // 0x0108   (0x0010)  
-	SDK_UNDEFINED(16,5181) /* FMulticastInlineDelegate */ __um(OnExitBlinkEvent);                                  // 0x0118   (0x0010)  
-	SDK_UNDEFINED(16,5182) /* FMulticastInlineDelegate */ __um(OnEnterChainBlinkEvent);                            // 0x0128   (0x0010)  
-	SDK_UNDEFINED(16,5183) /* FMulticastInlineDelegate */ __um(OnUpdateChainBlinkEvent);                           // 0x0138   (0x0010)  
-	SDK_UNDEFINED(16,5184) /* FMulticastInlineDelegate */ __um(OnExitChainBlinkEvent);                             // 0x0148   (0x0010)  
-	SDK_UNDEFINED(16,5185) /* FMulticastInlineDelegate */ __um(OnEnterCooldownEvent);                              // 0x0158   (0x0010)  
-	SDK_UNDEFINED(16,5186) /* FMulticastInlineDelegate */ __um(OnUpdateCooldownEvent);                             // 0x0168   (0x0010)  
-	SDK_UNDEFINED(16,5187) /* FMulticastInlineDelegate */ __um(OnExitCooldownEvent);                               // 0x0178   (0x0010)  
-	SDK_UNDEFINED(16,5188) /* FMulticastInlineDelegate */ __um(OnIsBlinkingChangedEvent);                          // 0x0188   (0x0010)  
-	SDK_UNDEFINED(16,5189) /* FMulticastInlineDelegate */ __um(OnIsChargingBlinkChangedEvent);                     // 0x0198   (0x0010)  
-	SDK_UNDEFINED(16,5190) /* FMulticastInlineDelegate */ __um(OnBlinkChargeFullEvent);                            // 0x01A8   (0x0010)  
-	SDK_UNDEFINED(16,5191) /* FMulticastInlineDelegate */ __um(OnBlinkPowerStateChangedEvent);                     // 0x01B8   (0x0010)  
-	SDK_UNDEFINED(16,5192) /* FMulticastInlineDelegate */ __um(OnBlinkChargesChangedEvent);                        // 0x01C8   (0x0010)  
+	SDK_UNDEFINED(16,5565) /* FMulticastInlineDelegate */ __um(OnFinishPlaying);                                   // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5566) /* FMulticastInlineDelegate */ __um(OnStartBlinkChargeEvent);                           // 0x00C8   (0x0010)  
+	SDK_UNDEFINED(16,5567) /* FMulticastInlineDelegate */ __um(OnUpdateBlinkChargeEvent);                          // 0x00D8   (0x0010)  
+	SDK_UNDEFINED(16,5568) /* FMulticastInlineDelegate */ __um(OnStopBlinkChargeEvent);                            // 0x00E8   (0x0010)  
+	SDK_UNDEFINED(16,5569) /* FMulticastInlineDelegate */ __um(OnEnterBlinkEvent);                                 // 0x00F8   (0x0010)  
+	SDK_UNDEFINED(16,5570) /* FMulticastInlineDelegate */ __um(OnUpdateBlinkEvent);                                // 0x0108   (0x0010)  
+	SDK_UNDEFINED(16,5571) /* FMulticastInlineDelegate */ __um(OnExitBlinkEvent);                                  // 0x0118   (0x0010)  
+	SDK_UNDEFINED(16,5572) /* FMulticastInlineDelegate */ __um(OnEnterChainBlinkEvent);                            // 0x0128   (0x0010)  
+	SDK_UNDEFINED(16,5573) /* FMulticastInlineDelegate */ __um(OnUpdateChainBlinkEvent);                           // 0x0138   (0x0010)  
+	SDK_UNDEFINED(16,5574) /* FMulticastInlineDelegate */ __um(OnExitChainBlinkEvent);                             // 0x0148   (0x0010)  
+	SDK_UNDEFINED(16,5575) /* FMulticastInlineDelegate */ __um(OnEnterCooldownEvent);                              // 0x0158   (0x0010)  
+	SDK_UNDEFINED(16,5576) /* FMulticastInlineDelegate */ __um(OnUpdateCooldownEvent);                             // 0x0168   (0x0010)  
+	SDK_UNDEFINED(16,5577) /* FMulticastInlineDelegate */ __um(OnExitCooldownEvent);                               // 0x0178   (0x0010)  
+	SDK_UNDEFINED(16,5578) /* FMulticastInlineDelegate */ __um(OnIsBlinkingChangedEvent);                          // 0x0188   (0x0010)  
+	SDK_UNDEFINED(16,5579) /* FMulticastInlineDelegate */ __um(OnIsChargingBlinkChangedEvent);                     // 0x0198   (0x0010)  
+	SDK_UNDEFINED(16,5580) /* FMulticastInlineDelegate */ __um(OnBlinkChargeFullEvent);                            // 0x01A8   (0x0010)  
+	SDK_UNDEFINED(16,5581) /* FMulticastInlineDelegate */ __um(OnBlinkPowerStateChangedEvent);                     // 0x01B8   (0x0010)  
+	SDK_UNDEFINED(16,5582) /* FMulticastInlineDelegate */ __um(OnBlinkChargesChangedEvent);                        // 0x01C8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0xC8];                                      // 0x01D8   (0x00C8)  MISSED
 };
 
@@ -271,49 +272,49 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.Setup
-	// void Setup(FBlinkPowerSetupParams& Params);                                                                           // [0x5d9c390] Final|Native|Public|HasOutParms|BlueprintCallable 
+	// void Setup(FBlinkPowerSetupParams& Params);                                                                           // [0x5da98a0] Final|Native|Public|HasOutParms|BlueprintCallable 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.Server_TriggerCooldown
-	// void Server_TriggerCooldown(float Duration);                                                                          // [0x4e265c0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_TriggerCooldown(float Duration);                                                                          // [0x4dfb440] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.Server_TriggerChainBlink
-	// void Server_TriggerChainBlink(int32_t remainingBlinkCharges, float blinkTimeStamp);                                   // [0x5d9c2c0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_TriggerChainBlink(int32_t remainingBlinkCharges, float blinkTimeStamp);                                   // [0x5da97d0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.Server_SetState
-	// void Server_SetState(EBlinkPowerState State);                                                                         // [0x5819020] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_SetState(EBlinkPowerState State);                                                                         // [0x581cdf0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.Server_InterruptDuringChainBlink
-	// void Server_InterruptDuringChainBlink(class AActor* interruptedPlayer);                                               // [0x58c5550] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_InterruptDuringChainBlink(class AActor* interruptedPlayer);                                               // [0x58cbe00] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.OnRep_BlinkState
-	// void OnRep_BlinkState(EBlinkPowerState oldState);                                                                     // [0x5d9c1a0] Final|Native|Private 
+	// void OnRep_BlinkState(EBlinkPowerState oldState);                                                                     // [0x5da96b0] Final|Native|Private 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.OnRep_BlinkCharges
-	// void OnRep_BlinkCharges();                                                                                            // [0x5d9c180] Final|Native|Private 
+	// void OnRep_BlinkCharges();                                                                                            // [0x5da9690] Final|Native|Private 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.OnLevelReadyToPlay
-	// void OnLevelReadyToPlay();                                                                                            // [0x5d9c160] Final|Native|Private 
+	// void OnLevelReadyToPlay();                                                                                            // [0x5da9670] Final|Native|Private 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.OnAttackStarted
-	// void OnAttackStarted(EAttackType attackType);                                                                         // [0x5d9bec0] Final|Native|Private 
+	// void OnAttackStarted(EAttackType attackType);                                                                         // [0x5da93d0] Final|Native|Private 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.OnAttackFinished
-	// void OnAttackFinished(EAttackType attackType);                                                                        // [0x5d9be40] Final|Native|Private 
+	// void OnAttackFinished(EAttackType attackType);                                                                        // [0x5da9350] Final|Native|Private 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.IsChargingBlink
-	// bool IsChargingBlink();                                                                                               // [0x5d9bc60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsChargingBlink();                                                                                               // [0x5da9170] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.IsChargeFull
-	// bool IsChargeFull();                                                                                                  // [0x5d9bc30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsChargeFull();                                                                                                  // [0x5da9140] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.IsBlinking
-	// bool IsBlinking();                                                                                                    // [0x5d9bc00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBlinking();                                                                                                    // [0x5da9110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetRechargeProgressPercent
-	// float GetRechargeProgressPercent();                                                                                   // [0x5d9bbd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRechargeProgressPercent();                                                                                   // [0x5da90e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetPowerState
-	// EBlinkPowerState GetPowerState();                                                                                     // [0x5d9bba0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EBlinkPowerState GetPowerState();                                                                                     // [0x5da90b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetCooldownTimerDuration
-	// float GetCooldownTimerDuration();                                                                                     // [0x5d9bb70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownTimerDuration();                                                                                     // [0x5da9080] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetCooldownRemainingTime
-	// float GetCooldownRemainingTime();                                                                                     // [0x5d9bb40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownRemainingTime();                                                                                     // [0x5da9050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetCooldownProgressPercent
-	// float GetCooldownProgressPercent();                                                                                   // [0x5d9bb10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownProgressPercent();                                                                                   // [0x5da9020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetChainBlinkTimerDuration
-	// float GetChainBlinkTimerDuration();                                                                                   // [0x5d9bae0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChainBlinkTimerDuration();                                                                                   // [0x5da8ff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetChainBlinkRemainingTime
-	// float GetChainBlinkRemainingTime();                                                                                   // [0x5d9bab0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChainBlinkRemainingTime();                                                                                   // [0x5da8fc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetChainBlinkProgressPercent
-	// float GetChainBlinkProgressPercent();                                                                                 // [0x5d9ba80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetChainBlinkProgressPercent();                                                                                 // [0x5da8f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.BlinkPowerPlayerComponent.GetBlinkCharges
-	// int32_t GetBlinkCharges();                                                                                            // [0x5d9ba50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetBlinkCharges();                                                                                            // [0x5da8f60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheNurse.BlinkTargetFinder
@@ -392,7 +393,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.K04AnimInstance.OnBlinkTriggered
-	// void OnBlinkTriggered();                                                                                              // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnBlinkTriggered();                                                                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheNurse.KavanaghsLastBreathAddon
@@ -446,7 +447,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.NurseAnimInstance.OnBlinkTriggered
-	// void OnBlinkTriggered();                                                                                              // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnBlinkTriggered();                                                                                              // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheNurse.NurseAttackPicker
@@ -455,6 +456,16 @@ class UNurseAttackPicker : public USlasherAttackPickerComponent
 { 
 public:
 	unsigned char                                      UnknownData00_1[0x18];                                      // 0x00B8   (0x0018)  MISSED
+};
+
+/// Class /Script/TheNurse.NurseCalling
+/// Size: 0x0028 (0x0003C8 - 0x0003F0)
+class UNurseCalling : public UPerk
+{ 
+public:
+	float                                              _auraRevealDistance;                                        // 0x03C8   (0x000C)  
+	unsigned char                                      UnknownData00_5[0x4];                                       // 0x03D4   (0x0004)  MISSED
+	FForAllSurvivorsStatusEffectImposer                _nurseCallingEffectImposer;                                 // 0x03D8   (0x0018)  
 };
 
 /// Class /Script/TheNurse.NurseFXInterface
@@ -466,9 +477,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.NurseFXInterface.Cosmetic_SpawnSpasmodicBreathVignette
-	// void Cosmetic_SpawnSpasmodicBreathVignette();                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_SpawnSpasmodicBreathVignette();                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheNurse.NurseFXInterface.Cosmetic_OnSpasmodicBreathAddonEffectActive
-	// void Cosmetic_OnSpasmodicBreathAddonEffectActive(bool activeValue);                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnSpasmodicBreathAddonEffectActive(bool activeValue);                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheNurse.NurseHelper
@@ -480,7 +491,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.NurseHelper.GetBlinkPowerItem
-	// class ABlinkPowerItem* GetBlinkPowerItem(class ADBDPlayer* Player);                                                   // [0x5d9d2c0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class ABlinkPowerItem* GetBlinkPowerItem(class ADBDPlayer* Player);                                                   // [0x5daa9b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheNurse.SpasmodicBreathAddon
@@ -517,7 +528,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.StreetwiseEffect.Authority_OnInRangeChanged
-	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5d9d1d0] Final|Native|Private 
+	// void Authority_OnInRangeChanged(bool inRange);                                                                        // [0x5daa8c0] Final|Native|Private 
 };
 
 /// Class /Script/TheNurse.ThanatophobiaEffect
@@ -542,11 +553,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheNurse.ThanatophobiaPerk.GetNumSurvivorsForAdditionalSpeedModifier
-	// int32_t GetNumSurvivorsForAdditionalSpeedModifier();                                                                  // [0x5d9d350] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetNumSurvivorsForAdditionalSpeedModifier();                                                                  // [0x5daaa40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.ThanatophobiaPerk.GetAdditionalActionSpeedModifierAtLevel
-	// float GetAdditionalActionSpeedModifierAtLevel();                                                                      // [0x5d9d290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAdditionalActionSpeedModifierAtLevel();                                                                      // [0x5daa980] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheNurse.ThanatophobiaPerk.GetActionSpeedModifierAtLevel
-	// float GetActionSpeedModifierAtLevel();                                                                                // [0x5d9d260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActionSpeedModifierAtLevel();                                                                                // [0x5daa950] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Struct /Script/TheNurse.BlinkParams

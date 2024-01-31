@@ -76,39 +76,39 @@ public:
 };
 
 /// Class /Script/TheK30.DrawPatrolPathInteraction
-/// Size: 0x01D0 (0x0007C0 - 0x000990)
+/// Size: 0x01D0 (0x0007D0 - 0x0009A0)
 class UDrawPatrolPathInteraction : public UBasicChargeableInteraction
 { 
 public:
-	SDK_UNDEFINED(16,5122) /* FMulticastInlineDelegate */ __um(OnChargeStateChanged);                              // 0x07C0   (0x0010)  
-	unsigned char                                      UnknownData00_5[0x40];                                      // 0x07D0   (0x0040)  MISSED
-	FSecondaryInteractionProperties                    _giveOrderProperties;                                       // 0x0810   (0x0038)  
-	FSecondaryInteractionProperties                    _releaseInteractionProperties;                              // 0x0848   (0x0038)  
-	FDBDTunableRowHandle                               _maximumInteractionDuration;                                // 0x0880   (0x0028)  
-	FDBDTunableRowHandle                               _pathLengthWarningPercent;                                  // 0x08A8   (0x0028)  
-	FDBDTunableRowHandle                               _pathDrawingDurationWarningPercent;                         // 0x08D0   (0x0028)  
-	FDBDTunableRowHandle                               _minSlopeToCheckStepUp;                                     // 0x08F8   (0x0028)  
-	class UClass*                                      _postPowerHasteClass;                                       // 0x0920   (0x0008)  
-	FDBDTunableRowHandle                               _postPowerHasteValue;                                       // 0x0928   (0x0028)  
-	class UCurveFloat*                                 _hasteDurationByPathLength;                                 // 0x0950   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x38];                                      // 0x0958   (0x0038)  MISSED
+	SDK_UNDEFINED(16,5512) /* FMulticastInlineDelegate */ __um(OnChargeStateChanged);                              // 0x07C8   (0x0010)  
+	unsigned char                                      UnknownData00_5[0x40];                                      // 0x07D8   (0x0040)  MISSED
+	FSecondaryInteractionProperties                    _giveOrderProperties;                                       // 0x0818   (0x0038)  
+	FSecondaryInteractionProperties                    _releaseInteractionProperties;                              // 0x0850   (0x0038)  
+	FDBDTunableRowHandle                               _maximumInteractionDuration;                                // 0x0888   (0x0028)  
+	FDBDTunableRowHandle                               _pathLengthWarningPercent;                                  // 0x08B0   (0x0028)  
+	FDBDTunableRowHandle                               _pathDrawingDurationWarningPercent;                         // 0x08D8   (0x0028)  
+	FDBDTunableRowHandle                               _minSlopeToCheckStepUp;                                     // 0x0900   (0x0028)  
+	class UClass*                                      _postPowerHasteClass;                                       // 0x0928   (0x0008)  
+	FDBDTunableRowHandle                               _postPowerHasteValue;                                       // 0x0930   (0x0028)  
+	class UCurveFloat*                                 _hasteDurationByPathLength;                                 // 0x0958   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x40];                                      // 0x0960   (0x0040)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK30.DrawPatrolPathInteraction.SetIsCharging
-	// void SetIsCharging(bool IsCharging);                                                                                  // [0x5c44280] Final|Native|Protected|BlueprintCallable 
+	// void SetIsCharging(bool IsCharging);                                                                                  // [0x5c50600] Final|Native|Protected|BlueprintCallable 
 	// Function /Script/TheK30.DrawPatrolPathInteraction.Server_StartPatrol
-	// void Server_StartPatrol();                                                                                            // [0x5c0f430] Net|NetReliableNative|Event|Protected|NetServer 
+	// void Server_StartPatrol();                                                                                            // [0x5c505e0] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/TheK30.DrawPatrolPathInteraction.Server_SendOrder
-	// void Server_SendOrder(class AInteractable* Target);                                                                   // [0x5c441f0] Net|NetReliableNative|Event|Protected|NetServer 
+	// void Server_SendOrder(class AInteractable* Target);                                                                   // [0x5c50550] Net|NetReliableNative|Event|Protected|NetServer 
 	// Function /Script/TheK30.DrawPatrolPathInteraction.OnChargeStateChanged__DelegateSignature
-	// void OnChargeStateChanged__DelegateSignature(bool IsCharging, bool IsChargeCompleted);                                // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnChargeStateChanged__DelegateSignature(bool IsCharging, bool IsChargeCompleted);                                // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK30.DrawPatrolPathInteraction.OnCancellationTimerCompleted
-	// void OnCancellationTimerCompleted();                                                                                  // [0x5c43aa0] Final|Native|Private 
+	// void OnCancellationTimerCompleted();                                                                                  // [0x5c4fe00] Final|Native|Private 
 	// Function /Script/TheK30.DrawPatrolPathInteraction.IsCharging
-	// bool IsCharging();                                                                                                    // [0x5c43a80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsCharging();                                                                                                    // [0x5c4fde0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.DrawPatrolPathInteraction.IsChargeCompleted
-	// bool IsChargeCompleted();                                                                                             // [0x5c43a60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsChargeCompleted();                                                                                             // [0x5c4fdc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK30.FloatingCameraNavigationComponent
@@ -117,22 +117,22 @@ class UFloatingCameraNavigationComponent : public UActorComponent
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x00B8   (0x0018)  MISSED
-	SDK_UNDEFINED(8,5123) /* TWeakObjectPtr<UObjectPlacerComponent*> */ __um(_ownerObjectPlacer);                  // 0x00D0   (0x0008)  
+	SDK_UNDEFINED(8,5513) /* TWeakObjectPtr<UObjectPlacerComponent*> */ __um(_ownerObjectPlacer);                  // 0x00D0   (0x0008)  
 	FDBDTunableRowHandle                               _snappingDistance;                                          // 0x00D8   (0x0028)  
 	FDBDTunableRowHandle                               _previewSnappingTime;                                       // 0x0100   (0x0028)  
 	FDBDTunableRowHandle                               _drawPathModeYawInputLimit;                                 // 0x0128   (0x0028)  
 	FTunableStat                                       _floatingCameraMaxSpeed;                                    // 0x0150   (0x0080)  
 	FDBDTunableRowHandle                               _floatingCameraAccelerationMultiplier;                      // 0x01D0   (0x0028)  
 	FDBDTunableRowHandle                               _strafeMovementSpeedMultiplier;                             // 0x01F8   (0x0028)  
-	SDK_UNDEFINED(8,5124) /* TWeakObjectPtr<ADBDPlayer*> */ __um(_playerOwner);                                    // 0x0220   (0x0008)  
+	SDK_UNDEFINED(8,5514) /* TWeakObjectPtr<ADBDPlayer*> */ __um(_playerOwner);                                    // 0x0220   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x48];                                      // 0x0228   (0x0048)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK30.FloatingCameraNavigationComponent.Server_EnableWalkOffLegdes
-	// void Server_EnableWalkOffLegdes(bool IsEnabled);                                                                      // [0x5c44160] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_EnableWalkOffLegdes(bool IsEnabled);                                                                      // [0x5c504c0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK30.FloatingCameraNavigationComponent.Multicast_EnableWalkOffLegdes
-	// void Multicast_EnableWalkOffLegdes(bool IsEnabled);                                                                   // [0x508e480] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_EnableWalkOffLegdes(bool IsEnabled);                                                                   // [0x5070b90] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 };
 
 /// Class /Script/TheK30.GuardAttackableComponent
@@ -151,7 +151,7 @@ public:
 	FDBDTunableRowHandle                               _killerInstinctEffectDuration;                              // 0x00C0   (0x0028)  
 	EDetectionZone                                     _detectionZoneToUse;                                        // 0x00E8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x00E9   (0x0007)  MISSED
-	SDK_UNDEFINED(80,5125) /* TSet<TWeakObjectPtr<ACamperPlayer*>> */ __um(_survivorsInZone);                      // 0x00F0   (0x0050)  
+	SDK_UNDEFINED(80,5515) /* TSet<TWeakObjectPtr<ACamperPlayer*>> */ __um(_survivorsInZone);                      // 0x00F0   (0x0050)  
 };
 
 /// Class /Script/TheK30.GuardOrderBase
@@ -198,9 +198,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.GuardController.OnTargetPerceptionUpdated
-	// void OnTargetPerceptionUpdated(class AActor* Actor, FAIStimulus Stimulus);                                            // [0x5c43e20] Final|Native|Private 
+	// void OnTargetPerceptionUpdated(class AActor* Actor, FAIStimulus Stimulus);                                            // [0x5c50180] Final|Native|Private 
 	// Function /Script/TheK30.GuardController.OnLoudNoiseTriggered
-	// void OnLoudNoiseTriggered(class AActor* originator, class AActor* instigatingActor, FVector Location, bool shouldTrack, float& audibleRange, bool isQuickAction, bool isDeceivingNoise); // [0x5c43ac0] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnLoudNoiseTriggered(class AActor* originator, class AActor* instigatingActor, FVector Location, bool shouldTrack, float& audibleRange, bool isQuickAction, bool isDeceivingNoise); // [0x5c4fe20] Final|Native|Private|HasOutParms|HasDefaults 
 };
 
 /// Class /Script/TheK30.GuardDamageGenerator
@@ -229,27 +229,27 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.GuardFlag.OnRep_HuntedSurvivor
-	// void OnRep_HuntedSurvivor();                                                                                          // [0x5c43d30] Final|Native|Private 
+	// void OnRep_HuntedSurvivor();                                                                                          // [0x5c50090] Final|Native|Private 
 	// Function /Script/TheK30.GuardFlag.Multicast_OnCamperCapturedFlag
-	// void Multicast_OnCamperCapturedFlag(class ADBDPlayer* huntedSurvivor);                                                // [0x590c260] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnCamperCapturedFlag(class ADBDPlayer* huntedSurvivor);                                                // [0x5911580] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK30.GuardFlag.GetHuntedSurvivor
-	// class ADBDPlayer* GetHuntedSurvivor();                                                                                // [0x5c43a40] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// class ADBDPlayer* GetHuntedSurvivor();                                                                                // [0x5c4fda0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.GuardFlag.GetFlagPickupHasteDuration
-	// float GetFlagPickupHasteDuration();                                                                                   // [0x5c43a10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFlagPickupHasteDuration();                                                                                   // [0x5c4fd70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.GuardFlag.GetFlagPickupEnduranceDuration
-	// float GetFlagPickupEnduranceDuration();                                                                               // [0x5c439e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetFlagPickupEnduranceDuration();                                                                               // [0x5c4fd40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.GuardFlag.GetActivationTimeLeft
-	// float GetActivationTimeLeft();                                                                                        // [0x5c439b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivationTimeLeft();                                                                                        // [0x5c4fd10] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.GuardFlag.Cosmetic_OnSurvivorCapturedFlag
-	// void Cosmetic_OnSurvivorCapturedFlag(class ADBDPlayer* previouslyHuntedSurvivor);                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSurvivorCapturedFlag(class ADBDPlayer* previouslyHuntedSurvivor);                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.GuardFlag.Cosmetic_OnFlagSpawned
-	// void Cosmetic_OnFlagSpawned(float activationTimerDuration);                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnFlagSpawned(float activationTimerDuration);                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.GuardFlag.Cosmetic_OnFlagDisappearDueToHuntEnding
-	// void Cosmetic_OnFlagDisappearDueToHuntEnding(class ADBDPlayer* previouslyHuntedSurvivor);                             // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnFlagDisappearDueToHuntEnding(class ADBDPlayer* previouslyHuntedSurvivor);                             // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.GuardFlag.Cosmetic_OnFlagActivationTimerCompleted
-	// void Cosmetic_OnFlagActivationTimerCompleted();                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnFlagActivationTimerCompleted();                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.GuardFlag.Authority_OnBeginOverlap
-	// void Authority_OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& HitResult); // [0x5c431e0] Final|Native|Private|HasOutParms 
+	// void Authority_OnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* Other, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& HitResult); // [0x5c4f540] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK30.GuardFlagOUtlineUpdateStrategy
@@ -266,7 +266,7 @@ public:
 class UGuardHuntComponent : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,5126) /* FMulticastInlineDelegate */ __um(OnGuardPhaseProgressUpdate);                        // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,5516) /* FMulticastInlineDelegate */ __um(OnGuardPhaseProgressUpdate);                        // 0x00B8   (0x0010)  
 	unsigned char                                      UnknownData00_5[0x24];                                      // 0x00C8   (0x0024)  MISSED
 	float                                              _maxPathingDetourLength;                                    // 0x00EC   (0x0004)  
 	float                                              _distanceBeforeGoingToNextWaypoint;                         // 0x00F0   (0x0004)  
@@ -285,17 +285,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.GuardHuntComponent.OnRep_HuntStartingLocation
-	// void OnRep_HuntStartingLocation();                                                                                    // [0x5c43d10] Final|Native|Private 
+	// void OnRep_HuntStartingLocation();                                                                                    // [0x5c50070] Final|Native|Private 
 	// Function /Script/TheK30.GuardHuntComponent.OnRep_HuntedSurvivor
-	// void OnRep_HuntedSurvivor(class ACamperPlayer* previousChasedSurvivor);                                               // [0x5c43d50] Final|Native|Private 
+	// void OnRep_HuntedSurvivor(class ACamperPlayer* previousChasedSurvivor);                                               // [0x5c500b0] Final|Native|Private 
 	// Function /Script/TheK30.GuardHuntComponent.OnGuardPhaseProgressUpdate__DelegateSignature
-	// void OnGuardPhaseProgressUpdate__DelegateSignature(float completionProgress);                                         // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnGuardPhaseProgressUpdate__DelegateSignature(float completionProgress);                                         // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK30.GuardHuntComponent.GetHuntedSurvivor
-	// class ACamperPlayer* GetHuntedSurvivor();                                                                             // [0x4df5b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ACamperPlayer* GetHuntedSurvivor();                                                                             // [0x4dc8700] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.GuardHuntComponent.Authority_OnCamperUnhooked
-	// void Authority_OnCamperUnhooked(FGameplayTag GameplayTag, FGameEventData& GameEventData);                             // [0x5c43510] Final|Native|Private|HasOutParms 
+	// void Authority_OnCamperUnhooked(FGameplayTag GameplayTag, FGameEventData& GameEventData);                             // [0x5c4f870] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK30.GuardHuntComponent.Authority_OnCamperInjuredOrDowned
-	// void Authority_OnCamperInjuredOrDowned(FGameplayTag GameplayTag, FGameEventData& GameEventData);                      // [0x5c43400] Final|Native|Private|HasOutParms 
+	// void Authority_OnCamperInjuredOrDowned(FGameplayTag GameplayTag, FGameEventData& GameEventData);                      // [0x5c4f760] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheK30.GuardHuntTeleport
@@ -350,7 +350,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.GuardPatrolComponent.OnRep_IsPatrolling
-	// void OnRep_IsPatrolling();                                                                                            // [0x5c43de0] Final|Native|Private 
+	// void OnRep_IsPatrolling();                                                                                            // [0x5c50140] Final|Native|Private 
 };
 
 /// Class /Script/TheK30.GuardPullSurvivorOutOfLocker
@@ -376,9 +376,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.GuardSlowingZone.OnZoneEndOverlap
-	// void OnZoneEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                       // [0x5c44090] Final|Native|Protected 
+	// void OnZoneEndOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                       // [0x5c503f0] Final|Native|Protected 
 	// Function /Script/TheK30.GuardSlowingZone.OnZoneBeginOverlap
-	// void OnZoneBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                     // [0x5c43fc0] Final|Native|Protected 
+	// void OnZoneBeginOverlap(class AActor* OverlappedActor, class AActor* OtherActor);                                     // [0x5c50320] Final|Native|Protected 
 };
 
 /// Class /Script/TheK30.GuardPalletSlowingZone
@@ -391,7 +391,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.GuardPalletSlowingZone.OnRep_LinkedPallet
-	// void OnRep_LinkedPallet();                                                                                            // [0x5c43e00] Final|Native|Private 
+	// void OnRep_LinkedPallet();                                                                                            // [0x5c50160] Final|Native|Private 
 };
 
 /// Class /Script/TheK30.K30BaseStatusEffectAddon
@@ -416,7 +416,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30InflictStatusOnEndHuntAddon.Authority_OnEndHunt
-	// void Authority_OnEndHunt(class ADBDPlayer* Player, EGuardHuntEndReason huntEndReason);                                // [0x5c47530] Native|Protected     
+	// void Authority_OnEndHunt(class ADBDPlayer* Player, EGuardHuntEndReason huntEndReason);                                // [0x5c538b0] Native|Protected     
 };
 
 /// Class /Script/TheK30.K30Addon14
@@ -438,7 +438,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30ApplyStatusOnWakeUpAddon.Authority_OnWakeUp
-	// void Authority_OnWakeUp(class AKnightGuard* currentGuard);                                                            // [0x5c43920] Native|Protected     
+	// void Authority_OnWakeUp(class AKnightGuard* currentGuard);                                                            // [0x5c4fc80] Native|Protected     
 };
 
 /// Class /Script/TheK30.K30Addon16
@@ -461,9 +461,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30Addon17.Multicast_OnMakeSurvivorScream
-	// void Multicast_OnMakeSurvivorScream(class ADBDPlayer* Player, float lifetime);                                        // [0x5b20d40] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_OnMakeSurvivorScream(class ADBDPlayer* Player, float Lifetime);                                        // [0x5b2dad0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK30.K30Addon17.BP_RevealAndMakeSurvivorScream
-	// void BP_RevealAndMakeSurvivorScream(class ADBDPlayer* survivorPlayer, float screamRevealDuration);                    // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_RevealAndMakeSurvivorScream(class ADBDPlayer* survivorPlayer, float screamRevealDuration);                    // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK30.K30Addon19
@@ -487,18 +487,18 @@ public:
 	class UClass*                                      _gateBlockerEffectClass;                                    // 0x0300   (0x0008)  
 	float                                              _trailPassThroughWindowBlockTime;                           // 0x0308   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x030C   (0x0004)  MISSED
-	SDK_UNDEFINED(80,5127) /* TMap<ACamperPlayer*, UStatusEffect*> */ __um(_playerGateBlockerStatusEffects);       // 0x0310   (0x0050)  
+	SDK_UNDEFINED(80,5517) /* TMap<ACamperPlayer*, UStatusEffect*> */ __um(_playerGateBlockerStatusEffects);       // 0x0310   (0x0050)  
 
 
 	/// Functions
 	// Function /Script/TheK30.K30Addon20.Authority_OnTrailCameraGoThroughWindow
-	// void Authority_OnTrailCameraGoThroughWindow(class AWindow* Window);                                                   // [0x5c43890] Final|Native|Private 
+	// void Authority_OnTrailCameraGoThroughWindow(class AWindow* Window);                                                   // [0x5c4fbf0] Final|Native|Private 
 	// Function /Script/TheK30.K30Addon20.Authority_OnStartHunt
-	// void Authority_OnStartHunt(class ADBDPlayer* Player);                                                                 // [0x5c43800] Final|Native|Private 
+	// void Authority_OnStartHunt(class ADBDPlayer* Player);                                                                 // [0x5c4fb60] Final|Native|Private 
 	// Function /Script/TheK30.K30Addon20.Authority_OnHuntedSurvivorVault
-	// void Authority_OnHuntedSurvivorVault(FGameplayTag gameEventType, FGameEventData& GameEventData);                      // [0x5c436f0] Final|Native|Private|HasOutParms 
+	// void Authority_OnHuntedSurvivorVault(FGameplayTag gameEventType, FGameEventData& GameEventData);                      // [0x5c4fa50] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK30.K30Addon20.Authority_OnEndHunt
-	// void Authority_OnEndHunt(class ADBDPlayer* Player, EGuardHuntEndReason huntEndReason);                                // [0x5c43620] Final|Native|Private 
+	// void Authority_OnEndHunt(class ADBDPlayer* Player, EGuardHuntEndReason huntEndReason);                                // [0x5c4f980] Final|Native|Private 
 };
 
 /// Class /Script/TheK30.K30AnimInstance
@@ -522,11 +522,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30CheatComponent.DBD_K30ToggleGuardAttackDespawn
-	// void DBD_K30ToggleGuardAttackDespawn(int32_t despawnOnAttack);                                                        // [0x5c47920] Final|Exec|Native|Public 
+	// void DBD_K30ToggleGuardAttackDespawn(int32_t despawnOnAttack);                                                        // [0x5c53ca0] Final|Exec|Native|Public 
 	// Function /Script/TheK30.K30CheatComponent.DBD_K30SetPatrolAndHuntDuration
-	// void DBD_K30SetPatrolAndHuntDuration(float secondsToPatrol);                                                          // [0x5c478a0] Final|Exec|Native|Public 
+	// void DBD_K30SetPatrolAndHuntDuration(float secondsToPatrol);                                                          // [0x5c53c20] Final|Exec|Native|Public 
 	// Function /Script/TheK30.K30CheatComponent.DBD_K30SetNextGuardIndex
-	// void DBD_K30SetNextGuardIndex(int32_t nextGuardIndex);                                                                // [0x5c47810] Final|Exec|Native|Public 
+	// void DBD_K30SetNextGuardIndex(int32_t nextGuardIndex);                                                                // [0x5c53b90] Final|Exec|Native|Public 
 };
 
 /// Class /Script/TheK30.K30InflictStatusOnDetectedAddon
@@ -538,7 +538,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30InflictStatusOnDetectedAddon.Authority_OnDetected
-	// void Authority_OnDetected(class ADBDPlayer* Player);                                                                  // [0x5c43920] Native|Protected     
+	// void Authority_OnDetected(class ADBDPlayer* Player);                                                                  // [0x5c4fc80] Native|Protected     
 };
 
 /// Class /Script/TheK30.K30InflictStatusOnGuardHitAddon
@@ -550,7 +550,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30InflictStatusOnGuardHitAddon.Authority_OnGuardHit
-	// void Authority_OnGuardHit(class ADBDPlayer* Player);                                                                  // [0x5c47600] Final|Native|Protected 
+	// void Authority_OnGuardHit(class ADBDPlayer* Player);                                                                  // [0x5c53980] Final|Native|Protected 
 };
 
 /// Class /Script/TheK30.K30KnightHuskOutlineUpdateStrategy
@@ -590,13 +590,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30P02.GetScreamInterval
-	// float GetScreamInterval();                                                                                            // [0x5c47e00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScreamInterval();                                                                                            // [0x5c54180] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30P02.Authority_UncursePlayer
-	// void Authority_UncursePlayer();                                                                                       // [0x5c477f0] Final|Native|Private 
+	// void Authority_UncursePlayer();                                                                                       // [0x5c53b70] Final|Native|Private 
 	// Function /Script/TheK30.K30P02.Authority_OnTotemStateChanged
-	// void Authority_OnTotemStateChanged(ETotemState oldState, ETotemState NewState);                                       // [0x5c47720] Final|Native|Public  
+	// void Authority_OnTotemStateChanged(ETotemState oldState, ETotemState NewState);                                       // [0x5c53aa0] Final|Native|Public  
 	// Function /Script/TheK30.K30P02.Authority_OnSurvivorFirstScream
-	// void Authority_OnSurvivorFirstScream(class ADBDPlayer* Player);                                                       // [0x5c47690] Final|Native|Public  
+	// void Authority_OnSurvivorFirstScream(class ADBDPlayer* Player);                                                       // [0x5c53a10] Final|Native|Public  
 };
 
 /// Class /Script/TheK30.K30P02ScreamStatusEffect
@@ -612,19 +612,19 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.Multicast_MakePlayerScream
-	// void Multicast_MakePlayerScream(float screamRevealDuration);                                                          // [0x5c48040] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_MakePlayerScream(float screamRevealDuration);                                                          // [0x5c543c0] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.IsTimerPaused
-	// bool IsTimerPaused();                                                                                                 // [0x5c47f90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTimerPaused();                                                                                                 // [0x5c54310] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.IsTimerActive
-	// bool IsTimerActive();                                                                                                 // [0x5c47f60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTimerActive();                                                                                                 // [0x5c542e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.GetTimerRemainingTime
-	// float GetTimerRemainingTime();                                                                                        // [0x5c47e90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimerRemainingTime();                                                                                        // [0x5c54210] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.GetTimerElapsedTime
-	// float GetTimerElapsedTime();                                                                                          // [0x5c47e60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimerElapsedTime();                                                                                          // [0x5c541e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.GetTimerDuration
-	// float GetTimerDuration();                                                                                             // [0x5c47e30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTimerDuration();                                                                                             // [0x5c541b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30P02ScreamStatusEffect.BP_MakeSurvivorScream
-	// void BP_MakeSurvivorScream(class ADBDPlayer* survivorPlayer, float screamRevealDuration);                             // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void BP_MakeSurvivorScream(class ADBDPlayer* survivorPlayer, float screamRevealDuration);                             // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK30.K30P03
@@ -643,9 +643,9 @@ class AK30Power : public ACollectable
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x04C8   (0x0008)  MISSED
-	SDK_UNDEFINED(16,5128) /* FMulticastInlineDelegate */ __um(OnMoriBegin);                                       // 0x04D0   (0x0010)  
-	SDK_UNDEFINED(16,5129) /* FMulticastInlineDelegate */ __um(OnMoriEnd);                                         // 0x04E0   (0x0010)  
-	SDK_UNDEFINED(16,5130) /* FMulticastInlineDelegate */ __um(OnPowerStateChanged);                               // 0x04F0   (0x0010)  
+	SDK_UNDEFINED(16,5518) /* FMulticastInlineDelegate */ __um(OnMoriBegin);                                       // 0x04D0   (0x0010)  
+	SDK_UNDEFINED(16,5519) /* FMulticastInlineDelegate */ __um(OnMoriEnd);                                         // 0x04E0   (0x0010)  
+	SDK_UNDEFINED(16,5520) /* FMulticastInlineDelegate */ __um(OnPowerStateChanged);                               // 0x04F0   (0x0010)  
 	unsigned char                                      UnknownData01_5[0x30];                                      // 0x0500   (0x0030)  MISSED
 	class UInteractor*                                 _interactor;                                                // 0x0530   (0x0008)  
 	class UDrawPatrolPathInteraction*                  _drawPathInteraction;                                       // 0x0538   (0x0008)  
@@ -685,35 +685,35 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30Power.Server_OnSnappingStateChanged
-	// void Server_OnSnappingStateChanged(bool IsSnapping);                                                                  // [0x57d6df0] Final|Net|NetReliableNative|Event|Private|NetServer 
+	// void Server_OnSnappingStateChanged(bool IsSnapping);                                                                  // [0x57d90c0] Final|Net|NetReliableNative|Event|Private|NetServer 
 	// Function /Script/TheK30.K30Power.SendPathNearlyEndingWarning
-	// void SendPathNearlyEndingWarning();                                                                                   // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void SendPathNearlyEndingWarning();                                                                                   // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.K30Power.OnRep_KnightHusk
-	// void OnRep_KnightHusk();                                                                                              // [0x5c484f0] Final|Native|Private 
+	// void OnRep_KnightHusk();                                                                                              // [0x5c54870] Final|Native|Private 
 	// Function /Script/TheK30.K30Power.OnPowerStateChanged__DelegateSignature
-	// void OnPowerStateChanged__DelegateSignature(EPowerState previousState, EPowerState NewState);                         // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnPowerStateChanged__DelegateSignature(EPowerState previousState, EPowerState NewState);                         // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK30.K30Power.OnOrderTargetChanged
-	// void OnOrderTargetChanged();                                                                                          // [0x5c48440] Final|Native|Private 
+	// void OnOrderTargetChanged();                                                                                          // [0x5c547c0] Final|Native|Private 
 	// Function /Script/TheK30.K30Power.OnMoriStateChanged__DelegateSignature
-	// void OnMoriStateChanged__DelegateSignature();                                                                         // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnMoriStateChanged__DelegateSignature();                                                                         // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK30.K30Power.OnInteractionStateChanged
-	// void OnInteractionStateChanged(bool IsCharging, bool IsChargeCompleted);                                              // [0x5c48370] Final|Native|Public  
+	// void OnInteractionStateChanged(bool IsCharging, bool IsChargeCompleted);                                              // [0x5c546f0] Final|Native|Public  
 	// Function /Script/TheK30.K30Power.OnEndOverlapWindow
-	// void OnEndOverlapWindow(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5c48210] Final|Native|Private 
+	// void OnEndOverlapWindow(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x5c54590] Final|Native|Private 
 	// Function /Script/TheK30.K30Power.Multicast_OnSnappingStateChanged
-	// void Multicast_OnSnappingStateChanged(bool IsSnapping);                                                               // [0x5c48180] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSnappingStateChanged(bool IsSnapping);                                                               // [0x5c54500] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK30.K30Power.IsSnapping
-	// bool IsSnapping();                                                                                                    // [0x5c47f30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsSnapping();                                                                                                    // [0x5c542b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30Power.IsDrawingPath
-	// bool IsDrawingPath();                                                                                                 // [0x5c47ef0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsDrawingPath();                                                                                                 // [0x5c54270] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30Power.IsChargingPower
-	// bool IsChargingPower();                                                                                               // [0x5c47ec0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsChargingPower();                                                                                               // [0x5c54240] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.K30Power.Cosmetic_UpdateRemainingPathLength
-	// void Cosmetic_UpdateRemainingPathLength(float remainingPathLengthPercent);                                            // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_UpdateRemainingPathLength(float remainingPathLengthPercent);                                            // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.K30Power.Cosmetic_OnPathDrawAvailableEnd
-	// void Cosmetic_OnPathDrawAvailableEnd();                                                                               // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnPathDrawAvailableEnd();                                                                               // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.K30Power.Cosmetic_OnPathDrawAvailableBegin
-	// void Cosmetic_OnPathDrawAvailableBegin();                                                                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnPathDrawAvailableBegin();                                                                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK30.K30PowerPresentationComponent
@@ -749,11 +749,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30SurvivorCosmeticHelperActor.Cosmetic_OnSurvivorCaptureFlagBuffActivationStateChanged
-	// void Cosmetic_OnSurvivorCaptureFlagBuffActivationStateChanged(bool isFlagCaptureBuffActive);                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSurvivorCaptureFlagBuffActivationStateChanged(bool isFlagCaptureBuffActive);                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.K30SurvivorCosmeticHelperActor.Cosmetic_OnHuntEnd
-	// void Cosmetic_OnHuntEnd();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnHuntEnd();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.K30SurvivorCosmeticHelperActor.Cosmetic_OnHuntBegin
-	// void Cosmetic_OnHuntBegin();                                                                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnHuntBegin();                                                                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK30.K30SurvivorStatusComponent
@@ -763,8 +763,8 @@ class UK30SurvivorStatusComponent : public UActorComponent
 public:
 	unsigned char                                      UnknownData00_2[0x8];                                       // 0x00B8   (0x0008)  MISSED
 	class ACamperPlayer*                               _owningSurvivor;                                            // 0x00C0   (0x0008)  
-	SDK_UNDEFINED(8,5131) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_detectedSurvivor);                            // 0x00C8   (0x0008)  
-	SDK_UNDEFINED(8,5132) /* TWeakObjectPtr<AK30Power*> */ __um(_k30Power);                                        // 0x00D0   (0x0008)  
+	SDK_UNDEFINED(8,5521) /* TWeakObjectPtr<ACamperPlayer*> */ __um(_detectedSurvivor);                            // 0x00C8   (0x0008)  
+	SDK_UNDEFINED(8,5522) /* TWeakObjectPtr<AK30Power*> */ __um(_k30Power);                                        // 0x00D0   (0x0008)  
 };
 
 /// Class /Script/TheK30.K30Utilities
@@ -776,15 +776,15 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.K30Utilities.GetNextGuardIndex
-	// int32_t GetNextGuardIndex(class AActor* TheK30);                                                                      // [0x5c47c80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetNextGuardIndex(class AActor* TheK30);                                                                      // [0x5c54000] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK30.K30Utilities.GetNextGuard
-	// class AKnightGuard* GetNextGuard(class AActor* TheK30);                                                               // [0x5c47bf0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AKnightGuard* GetNextGuard(class AActor* TheK30);                                                               // [0x5c53f70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK30.K30Utilities.GetK30Power
-	// class AK30Power* GetK30Power(class AActor* TheK30);                                                                   // [0x5c47b60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AK30Power* GetK30Power(class AActor* TheK30);                                                                   // [0x5c53ee0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK30.K30Utilities.GetCurrentGuardIndex
-	// int32_t GetCurrentGuardIndex(class AActor* TheK30);                                                                   // [0x5c47a40] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// int32_t GetCurrentGuardIndex(class AActor* TheK30);                                                                   // [0x5c53dc0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheK30.K30Utilities.GetCurrentGuard
-	// class AKnightGuard* GetCurrentGuard(class AActor* TheK30);                                                            // [0x5c479b0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class AKnightGuard* GetCurrentGuard(class AActor* TheK30);                                                            // [0x5c53d30] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 
 /// Class /Script/TheK30.KnightGuard
@@ -835,61 +835,61 @@ public:
 	unsigned char                                      UnknownData03_5[0x4];                                       // 0x16D8   (0x0004)  MISSED
 	FName                                              _guardAnimTag;                                              // 0x16DC   (0x000C)  
 	unsigned char                                      UnknownData04_5[0x60];                                      // 0x16E8   (0x0060)  MISSED
-	SDK_UNDEFINED(80,5133) /* TSet<AActor*> */         __um(_overlappingSurvivorsAndVaults);                       // 0x1748   (0x0050)  
+	SDK_UNDEFINED(80,5523) /* TSet<AActor*> */         __um(_overlappingSurvivorsAndVaults);                       // 0x1748   (0x0050)  
 	unsigned char                                      UnknownData05_6[0x8];                                       // 0x1798   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK30.KnightGuard.OnRep_OwningKiller
-	// void OnRep_OwningKiller();                                                                                            // [0x5c48510] Final|Native|Private 
+	// void OnRep_OwningKiller();                                                                                            // [0x5c54890] Final|Native|Private 
 	// Function /Script/TheK30.KnightGuard.OnRep_IsActive
-	// void OnRep_IsActive(bool previousIsActive);                                                                           // [0x5c48460] Final|Native|Private 
+	// void OnRep_IsActive(bool previousIsActive);                                                                           // [0x5c547e0] Final|Native|Private 
 	// Function /Script/TheK30.KnightGuard.Multicast_OnPatrolEnded
-	// void Multicast_OnPatrolEnded(class ADBDPlayer* foundSurvivor);                                                        // [0x5c480f0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_OnPatrolEnded(class ADBDPlayer* foundSurvivor);                                                        // [0x5c54470] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheK30.KnightGuard.Multicast_OnOrderEnded
-	// void Multicast_OnOrderEnded();                                                                                        // [0x5c480d0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_OnOrderEnded();                                                                                        // [0x5c54450] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheK30.KnightGuard.Multicast_CosmeticHuntEnded
-	// void Multicast_CosmeticHuntEnded(EGuardHuntEndReason Reason);                                                         // [0x5c47fc0] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_CosmeticHuntEnded(EGuardHuntEndReason Reason);                                                         // [0x5c54340] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheK30.KnightGuard.GetPatrollingVisionRangeBaseValue
-	// float GetPatrollingVisionRangeBaseValue();                                                                            // [0x5c47dd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPatrollingVisionRangeBaseValue();                                                                            // [0x5c54150] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetPatrolDuration
-	// float GetPatrolDuration();                                                                                            // [0x5c47da0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPatrolDuration();                                                                                            // [0x5c54120] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetPatrolComponent
-	// class UGuardPatrolComponent* GetPatrolComponent();                                                                    // [0x5c47d70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class UGuardPatrolComponent* GetPatrolComponent();                                                                    // [0x5c540f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetOwningKiller
-	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x5c47d40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ASlasherPlayer* GetOwningKiller();                                                                              // [0x5c540c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetOrderDuration
-	// float GetOrderDuration();                                                                                             // [0x5c47d10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetOrderDuration();                                                                                             // [0x5c54090] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetImmediateGeneratorRegressionPercent
-	// float GetImmediateGeneratorRegressionPercent();                                                                       // [0x5c47b30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetImmediateGeneratorRegressionPercent();                                                                       // [0x5c53eb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetHuntDuration
-	// float GetHuntDuration();                                                                                              // [0x5c47b00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHuntDuration();                                                                                              // [0x5c53e80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.GetHuntAuraVisibilityMinDistanceToKiller
-	// float GetHuntAuraVisibilityMinDistanceToKiller();                                                                     // [0x5c47ad0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHuntAuraVisibilityMinDistanceToKiller();                                                                     // [0x5c53e50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_StopOverlappingVaultOrSurvivor
-	// void Cosmetic_StopOverlappingVaultOrSurvivor();                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_StopOverlappingVaultOrSurvivor();                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_StartOverlappingVaultOrSurvivor
-	// void Cosmetic_StartOverlappingVaultOrSurvivor();                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_StartOverlappingVaultOrSurvivor();                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_ShowGuard
-	// void Cosmetic_ShowGuard();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_ShowGuard();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnPatrolStarted
-	// void Cosmetic_OnPatrolStarted();                                                                                      // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnPatrolStarted();                                                                                      // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnPatrolEnded
-	// void Cosmetic_OnPatrolEnded(class ADBDPlayer* foundSurvivor);                                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPatrolEnded(class ADBDPlayer* foundSurvivor);                                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnOrderStarted
-	// void Cosmetic_OnOrderStarted();                                                                                       // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnOrderStarted();                                                                                       // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnOrderEnded
-	// void Cosmetic_OnOrderEnded();                                                                                         // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnOrderEnded();                                                                                         // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnHuntTeleportStarted
-	// void Cosmetic_OnHuntTeleportStarted(float Duration);                                                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnHuntTeleportStarted(float Duration);                                                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnHuntEnded
-	// void Cosmetic_OnHuntEnded(EGuardHuntEndReason Reason);                                                                // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnHuntEnded(EGuardHuntEndReason Reason);                                                                // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_OnGuardVisionRadiusChanged
-	// void Cosmetic_OnGuardVisionRadiusChanged(bool IsVisible, float Radius, float Angle);                                  // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnGuardVisionRadiusChanged(bool IsVisible, float Radius, float Angle);                                  // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_HuntChaseStarted
-	// void Cosmetic_HuntChaseStarted();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_HuntChaseStarted();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightGuard.Cosmetic_HideGuard
-	// void Cosmetic_HideGuard();                                                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_HideGuard();                                                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheK30.GuardAnimInstance
@@ -960,17 +960,17 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.KnightOrderComponent.OnTargetChanged__DelegateSignature
-	// void OnTargetChanged__DelegateSignature();                                                                            // [0x61c32d0] MulticastDelegate|Public|Delegate 
+	// void OnTargetChanged__DelegateSignature();                                                                            // [0x61d2f50] MulticastDelegate|Public|Delegate 
 	// Function /Script/TheK30.KnightOrderComponent.OnGameEventDispatched
-	// void OnGameEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x5c4aee0] Final|Native|Private|HasOutParms 
+	// void OnGameEventDispatched(FGameplayTag gameEventType, FGameEventData& GameEventData);                                // [0x5c57230] Final|Native|Private|HasOutParms 
 	// Function /Script/TheK30.KnightOrderComponent.OnCurrentInteractionFinished
-	// void OnCurrentInteractionFinished();                                                                                  // [0x5c4adf0] Final|Native|Private 
+	// void OnCurrentInteractionFinished();                                                                                  // [0x5c57140] Final|Native|Private 
 	// Function /Script/TheK30.KnightOrderComponent.GetTargetingRange
-	// float GetTargetingRange();                                                                                            // [0x5c4ad30] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetTargetingRange();                                                                                            // [0x5c57050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.KnightOrderComponent.Cosmetic_OnTargetableObjectsChanged
-	// void Cosmetic_OnTargetableObjectsChanged(class AInteractable* Object, bool isTargetable);                             // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnTargetableObjectsChanged(class AInteractable* Object, bool isTargetable);                             // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.KnightOrderComponent.Cosmetic_OnNewTargetSelected
-	// void Cosmetic_OnNewTargetSelected(class AInteractable* newTarget, class AInteractable* oldTarget);                    // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void Cosmetic_OnNewTargetSelected(class AInteractable* newTarget, class AInteractable* oldTarget);                    // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/TheK30.NavigationQueryFilter_Guard
@@ -1014,7 +1014,7 @@ struct FTrailSettings
 	FDBDTunableRowHandle                               MinimumDistanceBetweenVisualNodes;                          // 0x0028   (0x0028)  
 	float                                              CapsuleHalfHeight;                                          // 0x0050   (0x0004)  
 	float                                              CapsuleRadius;                                              // 0x0054   (0x0004)  
-	SDK_UNDEFINED(1,5134) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannel);                             // 0x0058   (0x0001)  
+	SDK_UNDEFINED(1,5524) /* TEnumAsByte<ECollisionChannel> */ __um(CollisionChannel);                             // 0x0058   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0059   (0x0007)  MISSED
 	class UClass*                                      _trailNodeClass;                                            // 0x0060   (0x0008)  
 };
@@ -1033,25 +1033,25 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.PatrolTrailComponent.IsTrailCompleted
-	// bool IsTrailCompleted();                                                                                              // [0x49bd800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsTrailCompleted();                                                                                              // [0x5c57110] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.GetPreviousNode
-	// class ATrailNode* GetPreviousNode(class ATrailNode* currentNode);                                                     // [0x5c4ac60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ATrailNode* GetPreviousNode(class ATrailNode* currentNode);                                                     // [0x5c56f80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.GetNextNode
-	// class ATrailNode* GetNextNode(class ATrailNode* currentNode);                                                         // [0x5c4abc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ATrailNode* GetNextNode(class ATrailNode* currentNode);                                                         // [0x5c56ee0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.GetLastPosition
-	// FVector GetLastPosition();                                                                                            // [0x5c4ab80] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
+	// FVector GetLastPosition();                                                                                            // [0x5c56ea0] Final|Native|Public|HasDefaults|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.GetLastNode
-	// class ATrailNode* GetLastNode();                                                                                      // [0x5c4ab50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ATrailNode* GetLastNode();                                                                                      // [0x5c56e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.GetFirstNode
-	// class ATrailNode* GetFirstNode();                                                                                     // [0x5c4aac0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// class ATrailNode* GetFirstNode();                                                                                     // [0x5c56e10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.GetCurrentTrailLength
-	// float GetCurrentTrailLength();                                                                                        // [0x5c4aa90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCurrentTrailLength();                                                                                        // [0x5c56de0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.DoesTrailExist
-	// bool DoesTrailExist();                                                                                                // [0x5c4aa60] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool DoesTrailExist();                                                                                                // [0x5c56db0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.PatrolTrailComponent.Authority_StopRecordingTrail
-	// void Authority_StopRecordingTrail();                                                                                  // [0x5c4aa40] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_StopRecordingTrail();                                                                                  // [0x5c56d90] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheK30.PatrolTrailComponent.Authority_StartRecordingTrail
-	// void Authority_StartRecordingTrail();                                                                                 // [0x5c4aa20] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_StartRecordingTrail();                                                                                 // [0x5c56d70] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheK30.S34P01
@@ -1075,31 +1075,31 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.S34P01.Server_AbilityTwoPressed
-	// void Server_AbilityTwoPressed(bool IsPressed);                                                                        // [0x5c4b050] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
+	// void Server_AbilityTwoPressed(bool IsPressed);                                                                        // [0x5c573a0] Final|Net|NetReliableNative|Event|Private|NetServer|NetValidate 
 	// Function /Script/TheK30.S34P01.OnRep_IsPerkActive
-	// void OnRep_IsPerkActive();                                                                                            // [0x5c4b010] Final|Native|Private 
+	// void OnRep_IsPerkActive();                                                                                            // [0x5c57360] Final|Native|Private 
 	// Function /Script/TheK30.S34P01.OnRep_IsAccumulatingTokens
-	// void OnRep_IsAccumulatingTokens();                                                                                    // [0x5c4aff0] Final|Native|Private 
+	// void OnRep_IsAccumulatingTokens();                                                                                    // [0x5c57340] Final|Native|Private 
 	// Function /Script/TheK30.S34P01.OnDamageStateChanged
-	// void OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);                  // [0x5c4ae10] Final|Native|Private 
+	// void OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);                  // [0x5c57160] Final|Native|Private 
 	// Function /Script/TheK30.S34P01.Multicast_OnUseTokens
-	// void Multicast_OnUseTokens();                                                                                         // [0x501b910] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnUseTokens();                                                                                         // [0x4fe8460] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheK30.S34P01.IsPerkActive
-	// bool IsPerkActive();                                                                                                  // [0x5c4adc0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsPerkActive();                                                                                                  // [0x5c570e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.S34P01.GetInitialCountdownAtLevel
-	// float GetInitialCountdownAtLevel();                                                                                   // [0x5c4ab20] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetInitialCountdownAtLevel();                                                                                   // [0x5c56e40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.S34P01.Cosmetic_OnUseCharge
-	// void Cosmetic_OnUseCharge(class ADBDPlayer* OwningPlayer);                                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnUseCharge(class ADBDPlayer* OwningPlayer);                                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.S34P01.Cosmetic_OnStopChargingPerk
-	// void Cosmetic_OnStopChargingPerk(class ADBDPlayer* OwningPlayer);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStopChargingPerk(class ADBDPlayer* OwningPlayer);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.S34P01.Cosmetic_OnStartChargingPerk
-	// void Cosmetic_OnStartChargingPerk(class ADBDPlayer* OwningPlayer);                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartChargingPerk(class ADBDPlayer* OwningPlayer);                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.S34P01.Cosmetic_OnFullCharge
-	// void Cosmetic_OnFullCharge(class ADBDPlayer* OwningPlayer);                                                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnFullCharge(class ADBDPlayer* OwningPlayer);                                                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheK30.S34P01.Authority_OnSkillCheckResponse
-	// void Authority_OnSkillCheckResponse(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, bool hadInput, ESkillCheckCustomType Type, float ChargeChange); // [0x5c4a7e0] Final|Native|Private 
+	// void Authority_OnSkillCheckResponse(bool success, bool Bonus, class ADBDPlayer* Player, bool TriggerLoudNoise, bool hadInput, ESkillCheckCustomType Type, float ChargeChange); // [0x5c56b30] Final|Native|Private 
 	// Function /Script/TheK30.S34P01.Authority_OnAccumulateRedirectedCharge
-	// void Authority_OnAccumulateRedirectedCharge(float ChargeAmount, float maxCharge);                                     // [0x5c4a710] Final|Native|Public  
+	// void Authority_OnAccumulateRedirectedCharge(float ChargeAmount, float maxCharge);                                     // [0x5c56a60] Final|Native|Public  
 };
 
 /// Class /Script/TheK30.S34P02
@@ -1111,25 +1111,21 @@ public:
 };
 
 /// Class /Script/TheK30.S34P03
-/// Size: 0x00D0 (0x0003C8 - 0x000498)
+/// Size: 0x0080 (0x0003C8 - 0x000448)
 class US34P03 : public UPerk
 { 
 public:
-	TArray<class AGenerator*>                          _generatorsInRange;                                         // 0x03C8   (0x0010)  
-	SDK_UNDEFINED(80,5135) /* TMap<ADBDPlayer*, UStatusEffect*> */ __um(_activeStatusEffects);                     // 0x03D8   (0x0050)  
-	unsigned char                                      UnknownData00_5[0x50];                                      // 0x0428   (0x0050)  MISSED
-	float                                              _generatorRangeFromPlayer;                                  // 0x0478   (0x0004)  
-	unsigned char                                      UnknownData01_5[0x4];                                       // 0x047C   (0x0004)  MISSED
-	class UClass*                                      _repairSpeedModifierClass;                                  // 0x0480   (0x0008)  
-	float                                              _repairSpeedValues;                                         // 0x0488   (0x000C)  
-	unsigned char                                      UnknownData02_6[0x4];                                       // 0x0494   (0x0004)  MISSED
+	SDK_UNDEFINED(80,5525) /* TMap<ADBDPlayer*, UStatusEffect*> */ __um(_activeStatusEffects);                     // 0x03C8   (0x0050)  
+	class UClass*                                      _repairSpeedModifierClass;                                  // 0x0418   (0x0008)  
+	class UClass*                                      _revealGeneratorAurasInRangeEffectClass;                    // 0x0420   (0x0008)  
+	float                                              _repairSpeedValues;                                         // 0x0428   (0x000C)  
+	float                                              _generatorRanges;                                           // 0x0434   (0x000C)  
+	unsigned char                                      UnknownData00_6[0x8];                                       // 0x0440   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/TheK30.S34P03.GetRepairSpeedAtLevel
-	// float GetRepairSpeedAtLevel();                                                                                        // [0x5c4ad00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
-	// Function /Script/TheK30.S34P03.GetGeneratorRangeFromPlayer
-	// float GetGeneratorRangeFromPlayer();                                                                                  // [0x5c4aaf0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRepairSpeedAtLevel();                                                                                        // [0x5c57020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheK30.TrailNode
@@ -1143,14 +1139,14 @@ public:
 
 	/// Functions
 	// Function /Script/TheK30.TrailNode.OnRep_PreviousNodePosition
-	// void OnRep_PreviousNodePosition();                                                                                    // [0x5c4b030] Final|Native|Protected 
+	// void OnRep_PreviousNodePosition();                                                                                    // [0x5c57380] Final|Native|Protected 
 	// Function /Script/TheK30.TrailNode.IsOwnerLocallyObserved
-	// bool IsOwnerLocallyObserved();                                                                                        // [0x5c4ad90] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsOwnerLocallyObserved();                                                                                        // [0x5c570b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.TrailNode.IsFirstNode
-	// bool IsFirstNode();                                                                                                   // [0x5c4ad60] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsFirstNode();                                                                                                   // [0x5c57080] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheK30.TrailNode.Cosmetic_PrepareForRemoval
-	// void Cosmetic_PrepareForRemoval();                                                                                    // [0x61c32d0] Event|Public|BlueprintEvent 
+	// void Cosmetic_PrepareForRemoval();                                                                                    // [0x61d2f50] Event|Public|BlueprintEvent 
 	// Function /Script/TheK30.TrailNode.Client_UpdateTrail
-	// void Client_UpdateTrail();                                                                                            // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void Client_UpdateTrail();                                                                                            // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 

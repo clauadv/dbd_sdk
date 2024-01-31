@@ -25,9 +25,9 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2020.BlightedSerumAddon.OnRep_DashInteraction
-	// void OnRep_DashInteraction();                                                                                         // [0x598dad0] Final|Native|Private 
+	// void OnRep_DashInteraction();                                                                                         // [0x5994be0] Final|Native|Private 
 	// Function /Script/Halloween2020.BlightedSerumAddon.OnBlightedDashEnabledVfxSfx
-	// void OnBlightedDashEnabledVfxSfx();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Public|BlueprintEvent 
+	// void OnBlightedDashEnabledVfxSfx();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Public|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2020.BlightedSerumCollisionInteraction
@@ -42,7 +42,7 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2020.BlightedSerumCollisionInteraction.SetCooldownInteraction
-	// void SetCooldownInteraction(class UBlightedSerumCooldownInteraction* cooldownInteraction);                            // [0x598dc60] Final|Native|Public|BlueprintCallable 
+	// void SetCooldownInteraction(class UBlightedSerumCooldownInteraction* cooldownInteraction);                            // [0x5994d70] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Halloween2020.BlightedSerumCooldownInteraction
@@ -78,9 +78,9 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2020.BlightedSerumDashInteraction.SetCooldownInteraction
-	// void SetCooldownInteraction(class UBlightedSerumCooldownInteraction* cooldownInteraction);                            // [0x598dc60] Final|Native|Public|BlueprintCallable 
+	// void SetCooldownInteraction(class UBlightedSerumCooldownInteraction* cooldownInteraction);                            // [0x5994d70] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Halloween2020.BlightedSerumDashInteraction.SetCollisionInteraction
-	// void SetCollisionInteraction(class UBlightedSerumCollisionInteraction* collisionInteraction);                         // [0x598dfa0] Final|Native|Public|BlueprintCallable 
+	// void SetCollisionInteraction(class UBlightedSerumCollisionInteraction* collisionInteraction);                         // [0x59950b0] Final|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/Halloween2020.ToxinPlantInteractable
@@ -93,14 +93,14 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2020.ToxinPlantInteractable.SetToxinPlantComplete
-	// void SetToxinPlantComplete(bool IsComplete);                                                                          // [0x598e3a0] Final|Native|Public|BlueprintCallable 
+	// void SetToxinPlantComplete(bool IsComplete);                                                                          // [0x59954b0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/Halloween2020.ToxinPlantInteractable.OnToxinPlantComplete
-	// void OnToxinPlantComplete();                                                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnToxinPlantComplete();                                                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/Halloween2020.ToxinPlantInteractable.OnSalvageInteractionStart
-	// void OnSalvageInteractionStart();                                                                                     // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnSalvageInteractionStart();                                                                                     // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/Halloween2020.ToxinPlantInteractable.OnSalvageInteractionFinished
-	// void OnSalvageInteractionFinished();                                                                                  // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnSalvageInteractionFinished();                                                                                  // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/Halloween2020.ToxinPlantInteractable.IsToxinPlantComplete
-	// bool IsToxinPlantComplete();                                                                                          // [0x598e370] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsToxinPlantComplete();                                                                                          // [0x5995480] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 

@@ -32,20 +32,20 @@ public:
 
 	/// Functions
 	// Function /Script/InputUtilities.AxisFlickMasher.OnAxisFlicked2
-	// void OnAxisFlicked2();                                                                                                // [0x59c1470] Final|Native|Private 
+	// void OnAxisFlicked2();                                                                                                // [0x59c7f90] Final|Native|Private 
 	// Function /Script/InputUtilities.AxisFlickMasher.OnAxisFlicked1
-	// void OnAxisFlicked1();                                                                                                // [0x59c1450] Final|Native|Private 
+	// void OnAxisFlicked1();                                                                                                // [0x59c7f70] Final|Native|Private 
 };
 
 /// Class /Script/InputUtilities.ButtonPressTracker
-/// Size: 0x0050 (0x000038 - 0x000088)
+/// Size: 0x0058 (0x000038 - 0x000090)
 class UButtonPressTracker : public ULocalPlayerSubsystem
 { 
 public:
 	unsigned char                                      UnknownData00_2[0x18];                                      // 0x0038   (0x0018)  MISSED
-	SDK_UNDEFINED(8,1258) /* TWeakObjectPtr<UInputComponent*> */ __um(_trackedInputComponent);                     // 0x0050   (0x0008)  
-	SDK_UNDEFINED(8,1259) /* TWeakObjectPtr<UPlayerInput*> */ __um(_playerInput);                                  // 0x0058   (0x0008)  
-	unsigned char                                      UnknownData01_6[0x28];                                      // 0x0060   (0x0028)  MISSED
+	SDK_UNDEFINED(8,1263) /* TWeakObjectPtr<UInputComponent*> */ __um(_trackedInputComponent);                     // 0x0050   (0x0008)  
+	SDK_UNDEFINED(8,1264) /* TWeakObjectPtr<UPlayerInput*> */ __um(_playerInput);                                  // 0x0058   (0x0008)  
+	unsigned char                                      UnknownData01_6[0x30];                                      // 0x0060   (0x0030)  MISSED
 };
 
 /// Class /Script/InputUtilities.InputMasher
@@ -74,8 +74,8 @@ struct FButtonSequenceData : FTableRowBase
 	TArray<FName>                                      Sequence;                                                   // 0x0018   (0x0010)  
 	int32_t                                            TIMEOUT;                                                    // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_5[0x4];                                       // 0x002C   (0x0004)  MISSED
-	SDK_UNDEFINED(16,1260) /* TArray<FString> */       __um(Platforms);                                            // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,1265) /* TArray<FString> */       __um(Platforms);                                            // 0x0030   (0x0010)  
 	int32_t                                            MinKeysForFailedAttempt;                                    // 0x0040   (0x0004)  
-	unsigned char                                      UnknownData02_6[0x4];                                       // 0x0044   (0x0004)  MISSED
+	int32_t                                            MinKeysForAttemptToLockInputs;                              // 0x0044   (0x0004)  
 };
 

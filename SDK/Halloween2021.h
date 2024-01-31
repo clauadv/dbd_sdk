@@ -58,22 +58,22 @@ public:
 
 	/// Functions
 	// Function /Script/Halloween2021.Pumpkin.OnInteractionCompleted
-	// void OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2021.Pumpkin.Cosmetic_OnStoppedInteracting
-	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStoppedInteracting();                                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2021.Pumpkin.Cosmetic_OnStartedInteracting
-	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnStartedInteracting(class ADBDPlayer* interactingPlayer, float interactionDuration);                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2021.Pumpkin.Cosmetic_OnIntroCompleted
-	// void Cosmetic_OnIntroCompleted();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnIntroCompleted();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/Halloween2021.Pumpkin.Cosmetic_OnInteractionCompleted
-	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnInteractionCompleted(class ADBDPlayer* interactingPlayer);                                            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/Halloween2021.PumpkinInteraction
-/// Size: 0x0030 (0x000790 - 0x0007C0)
+/// Size: 0x0010 (0x000790 - 0x0007A0)
 class UPumpkinInteraction : public UChargeableInteractionDefinition
 { 
 public:
-	unsigned char                                      UnknownData00_1[0x30];                                      // 0x0790   (0x0030)  MISSED
+	unsigned char                                      UnknownData00_1[0x10];                                      // 0x0790   (0x0010)  MISSED
 };
 

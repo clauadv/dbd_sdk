@@ -27,7 +27,7 @@ public:
 
 	/// Functions
 	// Function /Script/QueryService.ActorPairQueryEvaluatorSubscriberTest.OnRangeChanged
-	// void OnRangeChanged(bool inRange);                                                                                    // [0x85d0f20] Final|Native|Public  
+	// void OnRangeChanged(bool inRange);                                                                                    // [0x85e1e00] Final|Native|Public  
 };
 
 /// Struct /Script/QueryService.ActorPairQuery
@@ -35,7 +35,7 @@ public:
 struct FActorPairQuery
 { 
 	unsigned char                                      UnknownData00_2[0x10];                                      // 0x0000   (0x0010)  MISSED
-	SDK_UNDEFINED(80,1694) /* TMap<uint32_t, FDistanceTrackerCase> */ __um(_distanceTrackerCases);                 // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,1719) /* TMap<uint32_t, FDistanceTrackerCase> */ __um(_distanceTrackerCases);                 // 0x0010   (0x0050)  
 	uint32_t                                           _caseIndex;                                                 // 0x0060   (0x0004)  
 	bool                                               _usePlanarDistance;                                         // 0x0064   (0x0001)  
 	bool                                               _isHeightRangeLimited;                                      // 0x0065   (0x0001)  
@@ -59,17 +59,5 @@ struct FDistanceTrackerCase
 	FActorPairQueryHeightRange                         _heightRange;                                               // 0x001C   (0x0008)  
 	bool                                               _inRange;                                                   // 0x0024   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x3];                                       // 0x0025   (0x0003)  MISSED
-};
-
-/// Struct /Script/QueryService.ActorsInRangeBool
-/// Size: 0x0040 (0x000000 - 0x000040)
-struct FActorsInRangeBool
-{ 
-	class UActorPairQueryEvaluatorComponent*           _actorPairQueryComponent;                                   // 0x0000   (0x0008)  
-	class AActor*                                      _sourceActor;                                               // 0x0008   (0x0008)  
-	class AActor*                                      _otherActor;                                                // 0x0010   (0x0008)  
-	float                                              _range;                                                     // 0x0018   (0x0004)  
-	bool                                               _inRange;                                                   // 0x001C   (0x0001)  
-	unsigned char                                      UnknownData00_6[0x23];                                      // 0x001D   (0x0023)  MISSED
 };
 

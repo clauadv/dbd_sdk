@@ -49,7 +49,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.AISkill_InteractionTarget_ThrowAntidote.OnPathUpdated
-	// void OnPathUpdated();                                                                                                 // [0x5a28f30] Final|Native|Protected 
+	// void OnPathUpdated();                                                                                                 // [0x5a32170] Final|Native|Protected 
 };
 
 /// Class /Script/TheClown.AISkill_InteractionTarget_ThrowToxin
@@ -116,35 +116,35 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.BaseGasCloudProjectile.SetIsDissipating
-	// void SetIsDissipating(bool IsDissipating);                                                                            // [0x5a2a120] Final|Native|Public|BlueprintCallable 
+	// void SetIsDissipating(bool IsDissipating);                                                                            // [0x5a33350] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.BaseGasCloudProjectile.SetIgnoredActors
-	// void SetIgnoredActors();                                                                                              // [0x5a2a100] Final|Native|Private 
+	// void SetIgnoredActors();                                                                                              // [0x5a33330] Final|Native|Private 
 	// Function /Script/TheClown.BaseGasCloudProjectile.SetGasAudioActive
-	// void SetGasAudioActive(bool activated);                                                                               // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void SetGasAudioActive(bool activated);                                                                               // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.BaseGasCloudProjectile.OnOverlapEnd
-	// void OnOverlapEnd(class UPrimitiveComponent* hitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, int32_t OtherBodyIndex); // [0x5a29fa0] Final|Native|Public  
+	// void OnOverlapEnd(class UPrimitiveComponent* hitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, int32_t OtherBodyIndex); // [0x5a331d0] Final|Native|Public  
 	// Function /Script/TheClown.BaseGasCloudProjectile.OnOverlapBegin
-	// void OnOverlapBegin(class UPrimitiveComponent* hitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a29d80] Final|Native|Public|HasOutParms 
+	// void OnOverlapBegin(class UPrimitiveComponent* hitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x5a32fb0] Final|Native|Public|HasOutParms 
 	// Function /Script/TheClown.BaseGasCloudProjectile.OnDelayedActivationStart
-	// void OnDelayedActivationStart(float Delay);                                                                           // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnDelayedActivationStart(float Delay);                                                                           // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.BaseGasCloudProjectile.OnAcquiredChanged
-	// void OnAcquiredChanged(bool acquired);                                                                                // [0x5a29cf0] Final|Native|Private 
+	// void OnAcquiredChanged(bool acquired);                                                                                // [0x5a32f20] Final|Native|Private 
 	// Function /Script/TheClown.BaseGasCloudProjectile.Multicast_DissipateGasCloud
-	// void Multicast_DissipateGasCloud();                                                                                   // [0x58b2330] Net|NetReliableNative|Event|NetMulticast|Public 
+	// void Multicast_DissipateGasCloud();                                                                                   // [0x58b7b60] Net|NetReliableNative|Event|NetMulticast|Public 
 	// Function /Script/TheClown.BaseGasCloudProjectile.IsSurvivorDetectionEnabled
-	// bool IsSurvivorDetectionEnabled();                                                                                    // [0x5a29cc0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsSurvivorDetectionEnabled();                                                                                    // [0x5a32ef0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheClown.BaseGasCloudProjectile.IsDissipating
-	// bool IsDissipating();                                                                                                 // [0x5a29ca0] Final|Native|Public|BlueprintCallable|BlueprintPure 
+	// bool IsDissipating();                                                                                                 // [0x5a32ed0] Final|Native|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheClown.BaseGasCloudProjectile.GetGasType
-	// EBombType GetGasType();                                                                                               // [0x5a29c80] Final|Native|Public|BlueprintCallable 
+	// EBombType GetGasType();                                                                                               // [0x5a32eb0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.BaseGasCloudProjectile.DissipateGasCloud
-	// void DissipateGasCloud();                                                                                             // [0x58c0160] Native|Event|Public|BlueprintCallable|BlueprintEvent 
+	// void DissipateGasCloud();                                                                                             // [0x58c6a30] Native|Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheClown.BaseGasCloudProjectile.Authority_SetCumulativeLifetime
-	// void Authority_SetCumulativeLifetime(float value);                                                                    // [0x5a29c00] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
+	// void Authority_SetCumulativeLifetime(float value);                                                                    // [0x5a32e30] Final|BlueprintAuthorityOnly|Native|Protected|BlueprintCallable 
 	// Function /Script/TheClown.BaseGasCloudProjectile.Authority_GetCumulativeLifetime
-	// float Authority_GetCumulativeLifetime();                                                                              // [0x5a29bd0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float Authority_GetCumulativeLifetime();                                                                              // [0x5a32e00] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.BaseGasCloudProjectile.ActivateCosmetic_BP
-	// void ActivateCosmetic_BP();                                                                                           // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void ActivateCosmetic_BP();                                                                                           // [0x61d2f50] Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheClown.AntidoteCloudProjectile
@@ -168,13 +168,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.BoilOverPerk.GetGreatHeightsValue
-	// float GetGreatHeightsValue();                                                                                         // [0x5a2a670] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetGreatHeightsValue();                                                                                         // [0x5a33860] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.BoilOverPerk.GetAdditionnalWigglingProgressAtLevel
-	// float GetAdditionnalWigglingProgressAtLevel();                                                                        // [0x5a2a640] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAdditionnalWigglingProgressAtLevel();                                                                        // [0x5a33830] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.BoilOverPerk.Authority_OnWiggleEnd
-	// void Authority_OnWiggleEnd();                                                                                         // [0x5a2a620] Final|Native|Private 
+	// void Authority_OnWiggleEnd();                                                                                         // [0x5a33810] Final|Native|Private 
 	// Function /Script/TheClown.BoilOverPerk.Authority_OnPlayerPickedUpEnd
-	// void Authority_OnPlayerPickedUpEnd(class ADBDPlayer* picker);                                                         // [0x5a2a590] Final|Native|Private 
+	// void Authority_OnPlayerPickedUpEnd(class ADBDPlayer* picker);                                                         // [0x5a33780] Final|Native|Private 
 };
 
 /// Class /Script/TheClown.BombLauncher
@@ -190,23 +190,23 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.BombLauncher.SetProjectileSpeedCurve
-	// void SetProjectileSpeedCurve(class UCurveFloat* newProjectileSpeedCurve);                                             // [0x57e0d70] Final|Native|Public|BlueprintCallable 
+	// void SetProjectileSpeedCurve(class UCurveFloat* newProjectileSpeedCurve);                                             // [0x5a33ee0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.BombLauncher.SetProjectilePitchCurve
-	// void SetProjectilePitchCurve(class UCurveFloat* newProjectilePitchCurve);                                             // [0x5a2ac30] Final|Native|Public|BlueprintCallable 
+	// void SetProjectilePitchCurve(class UCurveFloat* newProjectilePitchCurve);                                             // [0x5a33e50] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.BombLauncher.SetPercentThrowStrength
-	// void SetPercentThrowStrength(float throwStrength);                                                                    // [0x5a2abb0] Final|Native|Public|BlueprintCallable 
+	// void SetPercentThrowStrength(float throwStrength);                                                                    // [0x5a33dd0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.BombLauncher.Server_SwitchBombType
-	// void Server_SwitchBombType();                                                                                         // [0x5a2ab60] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
+	// void Server_SwitchBombType();                                                                                         // [0x5a33d80] Net|NetReliableNative|Event|Public|NetServer|BlueprintCallable|NetValidate 
 	// Function /Script/TheClown.BombLauncher.LocalLaunch
-	// void LocalLaunch(float percentThrowStrength);                                                                         // [0x5a2aae0] Final|Native|Public|BlueprintCallable 
+	// void LocalLaunch(float percentThrowStrength);                                                                         // [0x5a33d00] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.BombLauncher.Local_SwitchBombType
-	// void Local_SwitchBombType();                                                                                          // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void Local_SwitchBombType();                                                                                          // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheClown.BombLauncher.IsBombFullyCharged
-	// bool IsBombFullyCharged();                                                                                            // [0x5a2aab0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// bool IsBombFullyCharged();                                                                                            // [0x5a33cd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.BombLauncher.GetPercentThrowStrenght
-	// float GetPercentThrowStrenght();                                                                                      // [0x5a2aa90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetPercentThrowStrenght();                                                                                      // [0x5a33cb0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.BombLauncher.GetCurrentBombType
-	// EBombType GetCurrentBombType();                                                                                       // [0x5835be0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// EBombType GetCurrentBombType();                                                                                       // [0x5a33c80] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheClown.ClownFingersAnimInstance
@@ -228,7 +228,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.DanceWithMePerk.Authority_OnPerkActivate
-	// void Authority_OnPerkActivate(FGameplayTag GameplayTag, FGameEventData& GameEventData);                               // [0x5a2b010] Final|Native|Private|HasOutParms 
+	// void Authority_OnPerkActivate(FGameplayTag GameplayTag, FGameEventData& GameEventData);                               // [0x5a342c0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheClown.GasDizzyCosmeticEffect
@@ -242,9 +242,9 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.GasDizzyCosmeticEffect.SetWantsDizzyEffectActive
-	// void SetWantsDizzyEffectActive(bool IsActive);                                                                        // [0x5a2b320] Final|Native|Public|BlueprintCallable 
+	// void SetWantsDizzyEffectActive(bool IsActive);                                                                        // [0x5a345d0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.GasDizzyCosmeticEffect.Cosmetic_SetDizzyEffectActive
-	// void Cosmetic_SetDizzyEffectActive(bool IsActive);                                                                    // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetDizzyEffectActive(bool IsActive);                                                                    // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/TheClown.GassedStatusEffect
@@ -255,8 +255,8 @@ public:
 	bool                                               _isInCloud;                                                 // 0x0350   (0x0001)  
 	bool                                               _isInAntidoteCloud;                                         // 0x0351   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x6];                                       // 0x0352   (0x0006)  MISSED
-	SDK_UNDEFINED(80,5064) /* TSet<ABaseGasCloudProjectile*> */ __um(_overlappingClouds);                          // 0x0358   (0x0050)  
-	SDK_UNDEFINED(80,5065) /* TSet<ABaseGasCloudProjectile*> */ __um(_overlappingAntidoteClouds);                  // 0x03A8   (0x0050)  
+	SDK_UNDEFINED(80,5454) /* TSet<ABaseGasCloudProjectile*> */ __um(_overlappingClouds);                          // 0x0358   (0x0050)  
+	SDK_UNDEFINED(80,5455) /* TSet<ABaseGasCloudProjectile*> */ __um(_overlappingAntidoteClouds);                  // 0x03A8   (0x0050)  
 	unsigned char                                      UnknownData01_5[0x8];                                       // 0x03F8   (0x0008)  MISSED
 	uint16_t                                           _totalTimesEnteringToxicClouds;                             // 0x0400   (0x0002)  
 	unsigned char                                      UnknownData02_6[0x6];                                       // 0x0402   (0x0006)  MISSED
@@ -264,47 +264,47 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.GassedStatusEffect.UpdateAntidoteEffectVFX
-	// void UpdateAntidoteEffectVFX(float durationRemaining);                                                                // [0x61c32d0] Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void UpdateAntidoteEffectVFX(float durationRemaining);                                                                // [0x61d2f50] Event|Protected|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.SetRemainingDuration
-	// void SetRemainingDuration(float value);                                                                               // [0x5a2c1a0] Final|Native|Public|BlueprintCallable 
+	// void SetRemainingDuration(float value);                                                                               // [0x5a35440] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.GassedStatusEffect.SetRemainingAntidoteDuration
-	// void SetRemainingAntidoteDuration(float value);                                                                       // [0x5a2c120] Final|Native|Public|BlueprintCallable 
+	// void SetRemainingAntidoteDuration(float value);                                                                       // [0x5a353c0] Final|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.GassedStatusEffect.OnToxinEffectEnd
-	// void OnToxinEffectEnd(float durationSkipped);                                                                         // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnToxinEffectEnd(float durationSkipped);                                                                         // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.OnToxinEffectBegin
-	// void OnToxinEffectBegin(float effectDuration);                                                                        // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnToxinEffectBegin(float effectDuration);                                                                        // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.OnToxinCured
-	// void OnToxinCured();                                                                                                  // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnToxinCured();                                                                                                  // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.OnRep_TotalTimesEnteringToxicClouds
-	// void OnRep_TotalTimesEnteringToxicClouds();                                                                           // [0x5a2c100] Final|Native|Private 
+	// void OnRep_TotalTimesEnteringToxicClouds();                                                                           // [0x5a353a0] Final|Native|Private 
 	// Function /Script/TheClown.GassedStatusEffect.OnRep_IsInAntidoteCloud
-	// void OnRep_IsInAntidoteCloud();                                                                                       // [0x5a2c0e0] Final|Native|Private 
+	// void OnRep_IsInAntidoteCloud();                                                                                       // [0x5a35380] Final|Native|Private 
 	// Function /Script/TheClown.GassedStatusEffect.OnDirectBottleHit
-	// void OnDirectBottleHit(EBombType bottleType);                                                                         // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void OnDirectBottleHit(EBombType bottleType);                                                                         // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.OnAntidoteEffectEnd
-	// void OnAntidoteEffectEnd(float durationSkipped);                                                                      // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnAntidoteEffectEnd(float durationSkipped);                                                                      // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.OnAntidoteEffectBegin
-	// void OnAntidoteEffectBegin(float effectDuration);                                                                     // [0x61c32d0] Event|Protected|BlueprintEvent 
+	// void OnAntidoteEffectBegin(float effectDuration);                                                                     // [0x61d2f50] Event|Protected|BlueprintEvent 
 	// Function /Script/TheClown.GassedStatusEffect.IsInCloud
-	// bool IsInCloud();                                                                                                     // [0x5a2c0b0] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInCloud();                                                                                                     // [0x5a35350] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.GassedStatusEffect.IsInAntidoteCloud
-	// bool IsInAntidoteCloud();                                                                                             // [0x5a2c080] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
+	// bool IsInAntidoteCloud();                                                                                             // [0x5a35320] Final|Native|Protected|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.GassedStatusEffect.GetRemainingDuration
-	// float GetRemainingDuration();                                                                                         // [0x5a2c050] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingDuration();                                                                                         // [0x5a352f0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.GassedStatusEffect.GetRemainingAntidoteDuration
-	// float GetRemainingAntidoteDuration();                                                                                 // [0x5020e70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetRemainingAntidoteDuration();                                                                                 // [0x4ffe730] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.GassedStatusEffect.GetCloudEffectDuration
-	// float GetCloudEffectDuration();                                                                                       // [0x5a2c020] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCloudEffectDuration();                                                                                       // [0x5a352c0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.GassedStatusEffect.GetAntidoteCloudEffectDuration
-	// float GetAntidoteCloudEffectDuration();                                                                               // [0x5a2bff0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAntidoteCloudEffectDuration();                                                                               // [0x5a35290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheClown.GassedStatusEffect.Authority_SetIsInCloud
-	// void Authority_SetIsInCloud(bool value);                                                                              // [0x5a2bf60] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_SetIsInCloud(bool value);                                                                              // [0x5a35200] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.GassedStatusEffect.Authority_SetIsInAntidoteCloud
-	// void Authority_SetIsInAntidoteCloud(bool value);                                                                      // [0x5a2bed0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_SetIsInAntidoteCloud(bool value);                                                                      // [0x5a35170] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.GassedStatusEffect.Authority_RemoveOverlappingCloud
-	// void Authority_RemoveOverlappingCloud(class ABaseGasCloudProjectile* cloud);                                          // [0x5a2be40] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_RemoveOverlappingCloud(class ABaseGasCloudProjectile* cloud);                                          // [0x5a350e0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 	// Function /Script/TheClown.GassedStatusEffect.Authority_AddOverlappingCloud
-	// void Authority_AddOverlappingCloud(class ABaseGasCloudProjectile* cloud);                                             // [0x5a2bdb0] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
+	// void Authority_AddOverlappingCloud(class ABaseGasCloudProjectile* cloud);                                             // [0x5a35050] Final|BlueprintAuthorityOnly|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/TheClown.GassedSurvivorSubAnimInstance
@@ -330,7 +330,7 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.PopGoesTheWeasel.GetActivePerkDurationAtLevel
-	// float GetActivePerkDurationAtLevel();                                                                                 // [0x500a800] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetActivePerkDurationAtLevel();                                                                                 // [0x4fe80b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/TheClown.SurvivorGasCloudEffect
@@ -353,14 +353,14 @@ public:
 
 	/// Functions
 	// Function /Script/TheClown.TheClownUtilities.IsGassed
-	// bool IsGassed(class ADBDPlayer* Player);                                                                              // [0x5a2cd10] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsGassed(class ADBDPlayer* Player);                                                                              // [0x5a35fb0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheClown.TheClownUtilities.IsAffectedByAntidote
-	// bool IsAffectedByAntidote(class ADBDPlayer* Player);                                                                  // [0x5a2cc80] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool IsAffectedByAntidote(class ADBDPlayer* Player);                                                                  // [0x5a35f20] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheClown.TheClownUtilities.GetGassedStatusEffect
-	// class UGassedStatusEffect* GetGassedStatusEffect(class ADBDPlayer* Player);                                           // [0x5a2cbf0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UGassedStatusEffect* GetGassedStatusEffect(class ADBDPlayer* Player);                                           // [0x5a35e90] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheClown.TheClownUtilities.GetActiveGasCloudTrackerComponent
-	// class UActiveGasCloudTrackerComponent* GetActiveGasCloudTrackerComponent(class UObject* WorldContextObject);          // [0x5a2cb60] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// class UActiveGasCloudTrackerComponent* GetActiveGasCloudTrackerComponent(class UObject* WorldContextObject);          // [0x5a35e00] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 	// Function /Script/TheClown.TheClownUtilities.CanBeGassed
-	// bool CanBeGassed(class ADBDPlayer* Player);                                                                           // [0x5a2cad0] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
+	// bool CanBeGassed(class ADBDPlayer* Player);                                                                           // [0x5a35d70] Final|Native|Static|Public|BlueprintCallable|BlueprintPure 
 };
 

@@ -22,6 +22,6 @@ public:
 
 	/// Functions
 	// Function /Script/Anniversary2021.Anniversary2021EventComponent.Authority_OnIntroComplete
-	// void Authority_OnIntroComplete();                                                                                     // [0x4da3130] Final|Native|Private 
+	// void Authority_OnIntroComplete();                                                                                     // [0x4d73010] Final|Native|Private 
 };
 

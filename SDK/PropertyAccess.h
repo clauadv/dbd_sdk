@@ -138,7 +138,7 @@ struct FPropertyAccessIndirectionChain
 	unsigned char                                      UnknownData00_2[0x20];                                      // 0x0000   (0x0020)  MISSED
 	int32_t                                            IndirectionStartIndex;                                      // 0x0020   (0x0004)  
 	int32_t                                            IndirectionEndIndex;                                        // 0x0024   (0x0004)  
-	int32_t                                            EventId;                                                    // 0x0028   (0x0004)  
+	int32_t                                            eventID;                                                    // 0x0028   (0x0004)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x002C   (0x0004)  MISSED
 };
 

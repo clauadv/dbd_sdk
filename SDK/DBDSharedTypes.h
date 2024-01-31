@@ -164,6 +164,69 @@ enum class EArchiveMenuState : uint8_t
 	EArchiveMenuState__EArchiveMenuState_MAX                                         = 6
 };
 
+/// Enum /Script/DBDSharedTypes.ESortingOrder
+/// Size: 0x03
+enum class ESortingOrder : uint8_t
+{
+	ESortingOrder__Descending                                                        = 0,
+	ESortingOrder__Ascending                                                         = 1,
+	ESortingOrder__ESortingOrder_MAX                                                 = 2
+};
+
+/// Enum /Script/DBDSharedTypes.ESortingOption
+/// Size: 0x07
+enum class ESortingOption : uint8_t
+{
+	ESortingOption__None                                                             = 0,
+	ESortingOption__ByRarity                                                         = 1,
+	ESortingOption__ByDate                                                           = 2,
+	ESortingOption__ByName                                                           = 4,
+	ESortingOption__ByOwnership                                                      = 8,
+	ESortingOption__ByPrice                                                          = 16,
+	ESortingOption__ESortingOption_MAX                                               = 17
+};
+
+/// Enum /Script/DBDSharedTypes.ELoadoutSlot
+/// Size: 0x11
+enum class ELoadoutSlot : uint8_t
+{
+	ELoadoutSlot__SKIN                                                               = 0,
+	ELoadoutSlot__ITEM_POWER                                                         = 1,
+	ELoadoutSlot__ADD_ON                                                             = 2,
+	ELoadoutSlot__ADD_ON4                                                            = 3,
+	ELoadoutSlot__PERK                                                               = 4,
+	ELoadoutSlot__PERK6                                                              = 5,
+	ELoadoutSlot__PERK7                                                              = 6,
+	ELoadoutSlot__PERK8                                                              = 7,
+	ELoadoutSlot__FAVOR                                                              = 8,
+	ELoadoutSlot__COUNT                                                              = 9,
+	ELoadoutSlot__ELoadoutSlot_MAX                                                   = 10
+};
+
+/// Enum /Script/DBDSharedTypes.EGameType
+/// Size: 0x08
+enum class EGameType : uint8_t
+{
+	EGameType__Online                                                                = 0,
+	EGameType__KillYourFriends                                                       = 1,
+	EGameType__Tutorial                                                              = 4,
+	EGameType__TutorialBotMatch                                                      = 5,
+	EGameType__SecretBotMatch                                                        = 6,
+	EGameType__DreadByDaylight                                                       = 10,
+	EGameType__None                                                                  = 11,
+	EGameType__EGameType_MAX                                                         = 12
+};
+
+/// Enum /Script/DBDSharedTypes.EMenuOpened
+/// Size: 0x04
+enum class EMenuOpened : uint8_t
+{
+	EMenuOpened__MainMenu                                                            = 0,
+	EMenuOpened__PlaySubMenu                                                         = 1,
+	EMenuOpened__LTESubMenu                                                          = 2,
+	EMenuOpened__EMenuOpened_MAX                                                     = 3
+};
+
 /// Enum /Script/DBDSharedTypes.EHelpType
 /// Size: 0x04
 enum class EHelpType : uint8_t
@@ -184,31 +247,38 @@ enum class EPopupButtonType : uint8_t
 	EPopupButtonType__EPopupButtonType_MAX                                           = 3
 };
 
-/// Enum /Script/DBDSharedTypes.ELoadoutSlot
-/// Size: 0x11
-enum class ELoadoutSlot : uint8_t
+/// Enum /Script/DBDSharedTypes.EItemAvailability
+/// Size: 0x04
+enum class EItemAvailability : uint8_t
 {
-	ELoadoutSlot__SKIN                                                               = 0,
-	ELoadoutSlot__ITEM_POWER                                                         = 1,
-	ELoadoutSlot__ADD_ON                                                             = 2,
-	ELoadoutSlot__ADD_ON4                                                            = 3,
-	ELoadoutSlot__PERK                                                               = 4,
-	ELoadoutSlot__PERK6                                                              = 5,
-	ELoadoutSlot__PERK7                                                              = 6,
-	ELoadoutSlot__PERK8                                                              = 7,
-	ELoadoutSlot__FAVOR                                                              = 8,
-	ELoadoutSlot__COUNT                                                              = 9,
-	ELoadoutSlot__ELoadoutSlot_MAX                                                   = 10
+	EItemAvailability__Available                                                     = 0,
+	EItemAvailability__Disabled                                                      = 1,
+	EItemAvailability__Retired                                                       = 2,
+	EItemAvailability__EItemAvailability_MAX                                         = 3
 };
 
-/// Enum /Script/DBDSharedTypes.EItemSorting
-/// Size: 0x04
-enum class EItemSorting : uint8_t
+/// Enum /Script/DBDSharedTypes.EInventoryItemType
+/// Size: 0x18
+enum class EInventoryItemType : uint8_t
 {
-	EItemSorting__ByRarity                                                           = 0,
-	EItemSorting__ByParentOutfitName                                                 = 1,
-	EItemSorting__ByItemName                                                         = 2,
-	EItemSorting__EItemSorting_MAX                                                   = 3
+	EInventoryItemType__None                                                         = 0,
+	EInventoryItemType__Item                                                         = 1,
+	EInventoryItemType__ItemAddOn                                                    = 2,
+	EInventoryItemType__CamperPerk                                                   = 3,
+	EInventoryItemType__Power                                                        = 4,
+	EInventoryItemType__PowerAddOn                                                   = 5,
+	EInventoryItemType__SlasherPerk                                                  = 6,
+	EInventoryItemType__Favor                                                        = 7,
+	EInventoryItemType__Customization                                                = 8,
+	EInventoryItemType__IridescentShardsPack                                         = 9,
+	EInventoryItemType__AuricCellsPack                                               = 10,
+	EInventoryItemType__BloodPointsPack                                              = 11,
+	EInventoryItemType__FreeTicket                                                   = 12,
+	EInventoryItemType__Chest                                                        = 13,
+	EInventoryItemType__SuperChest                                                   = 14,
+	EInventoryItemType__EntityBox                                                    = 15,
+	EInventoryItemType__Count                                                        = 16,
+	EInventoryItemType__EInventoryItemType_MAX                                       = 17
 };
 
 /// Enum /Script/DBDSharedTypes.EControlMode
@@ -478,16 +548,6 @@ enum class ELoadoutPartState : uint8_t
 	ELoadoutPartState__ELoadoutPartState_MAX                                         = 6
 };
 
-/// Enum /Script/DBDSharedTypes.EItemAvailability
-/// Size: 0x04
-enum class EItemAvailability : uint8_t
-{
-	EItemAvailability__Available                                                     = 0,
-	EItemAvailability__Disabled                                                      = 1,
-	EItemAvailability__Retired                                                       = 2,
-	EItemAvailability__EItemAvailability_MAX                                         = 3
-};
-
 /// Enum /Script/DBDSharedTypes.EStatusEffectType
 /// Size: 0x05
 enum class EStatusEffectType : uint8_t
@@ -497,30 +557,6 @@ enum class EStatusEffectType : uint8_t
 	EStatusEffectType__Debuff                                                        = 2,
 	EStatusEffectType__Count                                                         = 3,
 	EStatusEffectType__EStatusEffectType_MAX                                         = 4
-};
-
-/// Enum /Script/DBDSharedTypes.EInventoryItemType
-/// Size: 0x18
-enum class EInventoryItemType : uint8_t
-{
-	EInventoryItemType__None                                                         = 0,
-	EInventoryItemType__Item                                                         = 1,
-	EInventoryItemType__ItemAddOn                                                    = 2,
-	EInventoryItemType__CamperPerk                                                   = 3,
-	EInventoryItemType__Power                                                        = 4,
-	EInventoryItemType__PowerAddOn                                                   = 5,
-	EInventoryItemType__SlasherPerk                                                  = 6,
-	EInventoryItemType__Favor                                                        = 7,
-	EInventoryItemType__Customization                                                = 8,
-	EInventoryItemType__IridescentShardsPack                                         = 9,
-	EInventoryItemType__AuricCellsPack                                               = 10,
-	EInventoryItemType__BloodPointsPack                                              = 11,
-	EInventoryItemType__FreeTicket                                                   = 12,
-	EInventoryItemType__Chest                                                        = 13,
-	EInventoryItemType__SuperChest                                                   = 14,
-	EInventoryItemType__EntityBox                                                    = 15,
-	EInventoryItemType__Count                                                        = 16,
-	EInventoryItemType__EInventoryItemType_MAX                                       = 17
 };
 
 /// Enum /Script/DBDSharedTypes.EKillerAbilities
@@ -614,7 +650,7 @@ enum class ELeanState : uint8_t
 };
 
 /// Enum /Script/DBDSharedTypes.EAudioCustomizationCategory
-/// Size: 0x10
+/// Size: 0x11
 enum class EAudioCustomizationCategory : uint8_t
 {
 	EAudioCustomizationCategory__None                                                = 0,
@@ -626,7 +662,8 @@ enum class EAudioCustomizationCategory : uint8_t
 	EAudioCustomizationCategory__AudioCharacterWeapon                                = 6,
 	EAudioCustomizationCategory__AudioCharacterAmbiance                              = 7,
 	EAudioCustomizationCategory__AudioCharacterState                                 = 8,
-	EAudioCustomizationCategory__EAudioCustomizationCategory_MAX                     = 9
+	EAudioCustomizationCategory__AudioCharacterCollection                            = 9,
+	EAudioCustomizationCategory__EAudioCustomizationCategory_MAX                     = 10
 };
 
 /// Enum /Script/DBDSharedTypes.EAntiAliasingMode
@@ -726,19 +763,6 @@ enum class EDailyRitualState : uint8_t
 	EDailyRitualState__EDailyRitualState_MAX                                         = 3
 };
 
-/// Enum /Script/DBDSharedTypes.EGameType
-/// Size: 0x07
-enum class EGameType : uint8_t
-{
-	EGameType__Online                                                                = 0,
-	EGameType__KillYourFriends                                                       = 1,
-	EGameType__Tutorial                                                              = 4,
-	EGameType__TutorialBotMatch                                                      = 5,
-	EGameType__SecretBotMatch                                                        = 6,
-	EGameType__None                                                                  = 7,
-	EGameType__EGameType_MAX                                                         = 8
-};
-
 /// Enum /Script/DBDSharedTypes.EDirectionalMinigameResult
 /// Size: 0x04
 enum class EDirectionalMinigameResult : uint8_t
@@ -796,7 +820,7 @@ enum class EBlindType : uint8_t
 };
 
 /// Enum /Script/DBDSharedTypes.EDBDScoreCategory
-/// Size: 0x16
+/// Size: 0x17
 enum class EDBDScoreCategory : uint8_t
 {
 	EDBDScoreCategory__DBD_CamperScoreCat_Objectives                                 = 0,
@@ -813,8 +837,9 @@ enum class EDBDScoreCategory : uint8_t
 	EDBDScoreCategory__DBD_ScoreCat_Bonus                                            = 11,
 	EDBDScoreCategory__DBD_ScoreCat_MatchIncentive                                   = 12,
 	EDBDScoreCategory__DBD_ScoreCat_BonusEvents                                      = 13,
-	EDBDScoreCategory__Count                                                         = 14,
-	EDBDScoreCategory__EDBDScoreCategory_MAX                                         = 15
+	EDBDScoreCategory__DBD_ScoreCat_LteIncentive                                     = 14,
+	EDBDScoreCategory__Count                                                         = 15,
+	EDBDScoreCategory__EDBDScoreCategory_MAX                                         = 16
 };
 
 /// Enum /Script/DBDSharedTypes.EDirectionalMiniGameType
@@ -848,6 +873,23 @@ enum class ELoadingTransitionType : uint8_t
 	ELoadingTransitionType__TravelToInGame                                           = 1,
 	ELoadingTransitionType__TravelToSplash                                           = 2,
 	ELoadingTransitionType__ELoadingTransitionType_MAX                               = 3
+};
+
+/// Enum /Script/DBDSharedTypes.EDBDFeatureType
+/// Size: 0x11
+enum class EDBDFeatureType : uint8_t
+{
+	EDBDFeatureType__None                                                            = 0,
+	EDBDFeatureType__Archives                                                        = 1,
+	EDBDFeatureType__DailyRituals                                                    = 2,
+	EDBDFeatureType__CustomGame                                                      = 3,
+	EDBDFeatureType__Bloodweb                                                        = 4,
+	EDBDFeatureType__Offerings                                                       = 5,
+	EDBDFeatureType__Items                                                           = 6,
+	EDBDFeatureType__Addons                                                          = 7,
+	EDBDFeatureType__EventStore                                                      = 8,
+	EDBDFeatureType__LTE                                                             = 9,
+	EDBDFeatureType__EDBDFeatureType_MAX                                             = 10
 };
 
 /// Enum /Script/DBDSharedTypes.EFPSLimit
@@ -897,6 +939,81 @@ enum class EMatchingStatusEffectType : uint8_t
 	EMatchingStatusEffectType__EMatchingStatusEffectType_MAX                         = 5
 };
 
+/// Enum /Script/DBDSharedTypes.EFlexibleTunableType
+/// Size: 0x06
+enum class EFlexibleTunableType : uint8_t
+{
+	EFlexibleTunableType__BooleanTunable                                             = 0,
+	EFlexibleTunableType__FloatTunable                                               = 1,
+	EFlexibleTunableType__IntTunable                                                 = 2,
+	EFlexibleTunableType__StringTunable                                              = 3,
+	EFlexibleTunableType__StringArrayTunable                                         = 4,
+	EFlexibleTunableType__EFlexibleTunableType_MAX                                   = 5
+};
+
+/// Enum /Script/DBDSharedTypes.EGameTypeModifierName
+/// Size: 0x57
+enum class EGameTypeModifierName : uint8_t
+{
+	EGameTypeModifierName__Invalid                                                   = 0,
+	EGameTypeModifierName__AllowsAchievementProgression                              = 1,
+	EGameTypeModifierName__AllowsBloodpointGain                                      = 2,
+	EGameTypeModifierName__AllowsItemAddons                                          = 3,
+	EGameTypeModifierName__AllowsProgression                                         = 4,
+	EGameTypeModifierName__CanTransitionToStore                                      = 5,
+	EGameTypeModifierName__CanUseBetaFeatures                                        = 6,
+	EGameTypeModifierName__CanZoomOnCharms                                           = 7,
+	EGameTypeModifierName__CreatesSession                                            = 8,
+	EGameTypeModifierName__IsMultiplayer                                             = 9,
+	EGameTypeModifierName__KeepsItemAfterGame                                        = 10,
+	EGameTypeModifierName__LocksPerksUntilProgression                                = 11,
+	EGameTypeModifierName__MenuNavigationDataHasRoleSuffix                           = 12,
+	EGameTypeModifierName__RequiresKillerOfflineLobby                                = 13,
+	EGameTypeModifierName__SendsAnalyticsForBotPlayer                                = 14,
+	EGameTypeModifierName__SendsGameStartEvent                                       = 15,
+	EGameTypeModifierName__SendsHookedAnalytics                                      = 16,
+	EGameTypeModifierName__SupportsCommentator                                       = 17,
+	EGameTypeModifierName__SupportsGameplaySpawners                                  = 18,
+	EGameTypeModifierName__SupportsMatchIncentives                                   = 19,
+	EGameTypeModifierName__SupportsMatchmakingBan                                    = 20,
+	EGameTypeModifierName__SupportsObsession                                         = 21,
+	EGameTypeModifierName__UsesMatchmaking                                           = 22,
+	EGameTypeModifierName__AllowsChangingRole                                        = 23,
+	EGameTypeModifierName__AllowsLoadout                                             = 24,
+	EGameTypeModifierName__AllowsQuestProgression                                    = 25,
+	EGameTypeModifierName__CanDisableFogOverrides                                    = 26,
+	EGameTypeModifierName__CanUseActiveSpecialEvent                                  = 27,
+	EGameTypeModifierName__ForcesDefaultCustomization                                = 28,
+	EGameTypeModifierName__HasMatchRules                                             = 29,
+	EGameTypeModifierName__IsABotMatchType                                           = 30,
+	EGameTypeModifierName__IsLimitedTimeExperience                                   = 31,
+	EGameTypeModifierName__ModifiesGamePreset                                        = 32,
+	EGameTypeModifierName__PartySupportsBothRoles                                    = 33,
+	EGameTypeModifierName__PerksAreMaximumLevel                                      = 34,
+	EGameTypeModifierName__RequiresDataBackup                                        = 35,
+	EGameTypeModifierName__SendsExtraOnboardingAnalytics                             = 36,
+	EGameTypeModifierName__SupportsBots                                              = 37,
+	EGameTypeModifierName__SupportsSecretBots                                        = 38,
+	EGameTypeModifierName__UsesOnlineModeLoadout                                     = 39,
+	EGameTypeModifierName__MaxAllowedObservers                                       = 40,
+	EGameTypeModifierName__MaxKillersToStartMatch                                    = 41,
+	EGameTypeModifierName__MaxSurvivorsToStartMatch                                  = 42,
+	EGameTypeModifierName__MinKillersToStartMatch                                    = 43,
+	EGameTypeModifierName__MinSurvivorsToStartMatch                                  = 44,
+	EGameTypeModifierName__NumLoadoutPresets                                         = 45,
+	EGameTypeModifierName__InGameChestCountModifier                                  = 46,
+	EGameTypeModifierName__AllowsLoadoutItemAddons                                   = 47,
+	EGameTypeModifierName__AllowsLoadoutItems                                        = 48,
+	EGameTypeModifierName__AllowsLoadoutOfferings                                    = 49,
+	EGameTypeModifierName__AllowsLoadoutPerks                                        = 50,
+	EGameTypeModifierName__AudioGroupState                                           = 51,
+	EGameTypeModifierName__LevelLightingOverride                                     = 52,
+	EGameTypeModifierName__MenuNavigationDataPrefix                                  = 53,
+	EGameTypeModifierName__DisabledInventory                                         = 54,
+	EGameTypeModifierName__DisabledPanelTabs                                         = 55,
+	EGameTypeModifierName__EGameTypeModifierName_MAX                                 = 56
+};
+
 /// Enum /Script/DBDSharedTypes.EBarColor
 /// Size: 0x04
 enum class EBarColor : uint8_t
@@ -939,6 +1056,16 @@ enum class EInteractionLayer : uint8_t
 	EInteractionLayer__VE_MAX                                                        = 2
 };
 
+/// Enum /Script/DBDSharedTypes.EItemSorting
+/// Size: 0x04
+enum class EItemSorting : uint8_t
+{
+	EItemSorting__ByRarity                                                           = 0,
+	EItemSorting__ByParentOutfitName                                                 = 1,
+	EItemSorting__ByItemName                                                         = 2,
+	EItemSorting__EItemSorting_MAX                                                   = 3
+};
+
 /// Enum /Script/DBDSharedTypes.ECustomizationModifier
 /// Size: 0x06
 enum class ECustomizationModifier : uint8_t
@@ -949,6 +1076,16 @@ enum class ECustomizationModifier : uint8_t
 	ECustomizationModifier__Visceral                                                 = 3,
 	ECustomizationModifier__Count                                                    = 4,
 	ECustomizationModifier__ECustomizationModifier_MAX                               = 5
+};
+
+/// Enum /Script/DBDSharedTypes.ELoadoutTypePermission
+/// Size: 0x04
+enum class ELoadoutTypePermission : uint8_t
+{
+	ELoadoutTypePermission__Forbidden                                                = 0,
+	ELoadoutTypePermission__Inventory                                                = 1,
+	ELoadoutTypePermission__Allowed                                                  = 2,
+	ELoadoutTypePermission__ELoadoutTypePermission_MAX                               = 3
 };
 
 /// Enum /Script/DBDSharedTypes.EOnboardingTutorialType
@@ -1302,6 +1439,28 @@ public:
 	unsigned char                                      UnknownData00_6[0x4];                                       // 0x003C   (0x0004)  MISSED
 };
 
+/// Struct /Script/DBDSharedTypes.DBDFeatureLockProgress
+/// Size: 0x000C (0x000000 - 0x00000C)
+struct FDBDFeatureLockProgress
+{ 
+	bool                                               _wasSeen;                                                   // 0x0000   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0001   (0x0003)  MISSED
+	int32_t                                            _totalSteps;                                                // 0x0004   (0x0004)  
+	int32_t                                            _remainingSteps;                                            // 0x0008   (0x0004)  
+};
+
+/// Struct /Script/DBDSharedTypes.StoreRedirectionData
+/// Size: 0x0018 (0x000000 - 0x000018)
+struct FStoreRedirectionData
+{ 
+	int32_t                                            CharacterIndex;                                             // 0x0000   (0x0004)  
+	ECustomizationCategory                             category;                                                   // 0x0004   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0005   (0x0003)  MISSED
+	FName                                              ItemId;                                                     // 0x0008   (0x000C)  
+	EPlayerRole                                        PlayerRole;                                                 // 0x0014   (0x0001)  
+	unsigned char                                      UnknownData01_6[0x3];                                       // 0x0015   (0x0003)  MISSED
+};
+
 /// Struct /Script/DBDSharedTypes.CustomTransformation
 /// Size: 0x0014 (0x000000 - 0x000014)
 struct FCustomTransformation
@@ -1399,14 +1558,50 @@ struct FFriendData
 	unsigned char                                      UnknownData00_1[0x60];                                      // 0x0000   (0x0060)  MISSED
 };
 
+/// Struct /Script/DBDSharedTypes.GameplayMutatorSpawnableComponent
+/// Size: 0x0038 (0x000000 - 0x000038)
+struct FGameplayMutatorSpawnableComponent
+{ 
+	SDK_UNDEFINED(48,833) /* TWeakObjectPtr<UClass*> */ __um(Component);                                           // 0x0000   (0x0030)  
+	bool                                               ShouldSpawnOnSurvivor;                                      // 0x0030   (0x0001)  
+	bool                                               ShouldSpawnOnKiller;                                        // 0x0031   (0x0001)  
+	bool                                               ShouldSpawnOnGameState;                                     // 0x0032   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x1];                                       // 0x0033   (0x0001)  MISSED
+	float                                              CustomParam;                                                // 0x0034   (0x0004)  
+};
+
+/// Struct /Script/DBDSharedTypes.GameTypeSettings
+/// Size: 0x0068 (0x000008 - 0x000070)
+struct FGameTypeSettings : FDBDTableRowBase
+{ 
+	EGameType                                          gameType;                                                   // 0x0008   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
+	SDK_UNDEFINED(80,834) /* TMap<EGameTypeModifierName, FTypeFlexibleTunable> */ __um(Modifiers);                 // 0x0010   (0x0050)  
+	TArray<FGameplayMutatorSpawnableComponent>         Mutators;                                                   // 0x0060   (0x0010)  
+};
+
+/// Struct /Script/DBDSharedTypes.TypeFlexibleTunable
+/// Size: 0x0030 (0x000008 - 0x000038)
+struct FTypeFlexibleTunable : FDBDTableRowBase
+{ 
+	EFlexibleTunableType                               SetType;                                                    // 0x0008   (0x0001)  
+	bool                                               _boolValue;                                                 // 0x0009   (0x0001)  
+	unsigned char                                      UnknownData00_5[0x2];                                       // 0x000A   (0x0002)  MISSED
+	float                                              _floatValue;                                                // 0x000C   (0x0004)  
+	int32_t                                            _intValue;                                                  // 0x0010   (0x0004)  
+	unsigned char                                      UnknownData01_5[0x4];                                       // 0x0014   (0x0004)  MISSED
+	SDK_UNDEFINED(16,835) /* FString */                __um(_stringValue);                                         // 0x0018   (0x0010)  
+	SDK_UNDEFINED(16,836) /* TArray<FString> */        __um(_arrayValue);                                          // 0x0028   (0x0010)  
+};
+
 /// Struct /Script/DBDSharedTypes.HelpCategoryData
 /// Size: 0x0048 (0x000008 - 0x000050)
 struct FHelpCategoryData : FDBDTableRowBase
 { 
 	EHelpType                                          Type;                                                       // 0x0008   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0009   (0x0007)  MISSED
-	SDK_UNDEFINED(24,833) /* FText */                  __um(Title);                                                // 0x0010   (0x0018)  
-	SDK_UNDEFINED(24,834) /* FText */                  __um(Description);                                          // 0x0028   (0x0018)  
+	SDK_UNDEFINED(24,837) /* FText */                  __um(Title);                                                // 0x0010   (0x0018)  
+	SDK_UNDEFINED(24,838) /* FText */                  __um(Description);                                          // 0x0028   (0x0018)  
 	TArray<FName>                                      TopicIds;                                                   // 0x0040   (0x0010)  
 };
 
@@ -1414,7 +1609,7 @@ struct FHelpCategoryData : FDBDTableRowBase
 /// Size: 0x0020 (0x000008 - 0x000028)
 struct FHelpContextMappingData : FDBDTableRowBase
 { 
-	SDK_UNDEFINED(16,835) /* FString */                __um(ContextName);                                          // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,839) /* FString */                __um(ContextName);                                          // 0x0008   (0x0010)  
 	TArray<FName>                                      TopicIds;                                                   // 0x0018   (0x0010)  
 };
 
@@ -1422,19 +1617,27 @@ struct FHelpContextMappingData : FDBDTableRowBase
 /// Size: 0x0090 (0x000008 - 0x000098)
 struct FHelpTopicData : FDBDTableRowBase
 { 
-	SDK_UNDEFINED(24,836) /* FText */                  __um(Title);                                                // 0x0008   (0x0018)  
-	SDK_UNDEFINED(24,837) /* FText */                  __um(Description);                                          // 0x0020   (0x0018)  
-	SDK_UNDEFINED(16,838) /* FString */                __um(ImagePath);                                            // 0x0038   (0x0010)  
-	SDK_UNDEFINED(16,839) /* FString */                __um(IconPath);                                             // 0x0048   (0x0010)  
-	SDK_UNDEFINED(16,840) /* FString */                __um(VideoId);                                              // 0x0058   (0x0010)  
-	SDK_UNDEFINED(48,841) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                            // 0x0068   (0x0030)  
+	SDK_UNDEFINED(24,840) /* FText */                  __um(Title);                                                // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,841) /* FText */                  __um(Description);                                          // 0x0020   (0x0018)  
+	SDK_UNDEFINED(16,842) /* FString */                __um(ImagePath);                                            // 0x0038   (0x0010)  
+	SDK_UNDEFINED(16,843) /* FString */                __um(IconPath);                                             // 0x0048   (0x0010)  
+	SDK_UNDEFINED(16,844) /* FString */                __um(VideoId);                                              // 0x0058   (0x0010)  
+	SDK_UNDEFINED(48,845) /* TWeakObjectPtr<UTexture2D*> */ __um(Icon);                                            // 0x0068   (0x0030)  
+};
+
+/// Struct /Script/DBDSharedTypes.AlertRewardEventSkinUIDataRow
+/// Size: 0x0018 (0x000008 - 0x000020)
+struct FAlertRewardEventSkinUIDataRow : FTableRowBase
+{ 
+	SDK_UNDEFINED(16,846) /* FString */                __um(EventThemeLabel);                                      // 0x0008   (0x0010)  
+	class UTexture2D*                                  BackgroundTexture;                                          // 0x0018   (0x0008)  
 };
 
 /// Struct /Script/DBDSharedTypes.TooltipEventSkinUIDataRow
 /// Size: 0x0018 (0x000008 - 0x000020)
 struct FTooltipEventSkinUIDataRow : FTableRowBase
 { 
-	SDK_UNDEFINED(16,842) /* FString */                __um(EventBannerLabel);                                     // 0x0008   (0x0010)  
+	SDK_UNDEFINED(16,847) /* FString */                __um(EventBannerLabel);                                     // 0x0008   (0x0010)  
 	class UTexture2D*                                  HeaderDecorationTexture;                                    // 0x0018   (0x0008)  
 };
 
@@ -1461,16 +1664,16 @@ struct FRarityMaterialDataRow : FDBDTableRowBase
 struct FReportFeedbackData
 { 
 	FDateTime                                          BanTimestamp;                                               // 0x0000   (0x0008)  
-	SDK_UNDEFINED(24,843) /* FText */                  __um(Reason);                                               // 0x0008   (0x0018)  
+	SDK_UNDEFINED(24,848) /* FText */                  __um(Reason);                                               // 0x0008   (0x0018)  
 	TArray<int64_t>                                    MessageIds;                                                 // 0x0020   (0x0010)  
-	SDK_UNDEFINED(16,844) /* FString */                __um(RecipientId);                                          // 0x0030   (0x0010)  
+	SDK_UNDEFINED(16,849) /* FString */                __um(RecipientId);                                          // 0x0030   (0x0010)  
 };
 
 /// Struct /Script/DBDSharedTypes.ScreenIndicatorViewData
 /// Size: 0x0038 (0x000000 - 0x000038)
 struct FScreenIndicatorViewData
 { 
-	SDK_UNDEFINED(16,845) /* FString */                __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,850) /* FString */                __um(ID);                                                   // 0x0000   (0x0010)  
 	EHudScreenIndicatorType                            IndicatorType;                                              // 0x0010   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x0011   (0x0003)  MISSED
 	FVector2D                                          ViewportSize;                                               // 0x0014   (0x0008)  
@@ -1489,6 +1692,6 @@ struct FSpecialEventDetailsTabData
 	EDetailsTabLayout                                  Layout;                                                     // 0x0000   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x7];                                       // 0x0001   (0x0007)  MISSED
 	TArray<FSpecialEventDetailsTabContentData>         Content;                                                    // 0x0008   (0x0010)  
-	SDK_UNDEFINED(48,846) /* TWeakObjectPtr<UTexture2D*> */ __um(Image);                                           // 0x0018   (0x0030)  
+	SDK_UNDEFINED(48,851) /* TWeakObjectPtr<UTexture2D*> */ __um(Image);                                           // 0x0018   (0x0030)  
 };
 

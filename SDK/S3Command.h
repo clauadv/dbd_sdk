@@ -13,8 +13,8 @@
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FAccessKey
 { 
-	SDK_UNDEFINED(16,4958) /* FString */               __um(KeyId);                                                // 0x0000   (0x0010)  
-	SDK_UNDEFINED(16,4959) /* FString */               __um(Key);                                                  // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5344) /* FString */               __um(KeyId);                                                // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5345) /* FString */               __um(Key);                                                  // 0x0010   (0x0010)  
 };
 
 /// Class /Script/S3Command.AccessKeys
@@ -29,7 +29,7 @@ public:
 /// Size: 0x0018 (0x000000 - 0x000018)
 struct FEmblemTunableItem
 { 
-	SDK_UNDEFINED(16,4960) /* FString */               __um(ID);                                                   // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5346) /* FString */               __um(ID);                                                   // 0x0000   (0x0010)  
 	double                                             value;                                                      // 0x0010   (0x0008)  
 };
 
@@ -38,7 +38,7 @@ struct FEmblemTunableItem
 struct FEmblemTunableData
 { 
 	TArray<FEmblemTunableItem>                         EmblemValues;                                               // 0x0000   (0x0010)  
-	SDK_UNDEFINED(80,4961) /* TMap<FString, FEmblemThreshold> */ __um(EmblemThresholds);                           // 0x0010   (0x0050)  
+	SDK_UNDEFINED(80,5347) /* TMap<FString, FEmblemThreshold> */ __um(EmblemThresholds);                           // 0x0010   (0x0050)  
 };
 
 /// Struct /Script/S3Command.EmblemThreshold

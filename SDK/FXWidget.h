@@ -32,10 +32,10 @@ public:
 
 	/// Functions
 	// Function /Script/FXWidget.FXUserWidgetBase.StopParticle
-	// void StopParticle();                                                                                                  // [0x4c593a0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|Const 
+	// void StopParticle();                                                                                                  // [0x4c29160] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|Const 
 	// Function /Script/FXWidget.FXUserWidgetBase.PlayParticle
-	// void PlayParticle(float StartAtTime, int32_t NumLoopsToPlay);                                                         // [0x4c592d0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|Const 
+	// void PlayParticle(float StartAtTime, int32_t NumLoopsToPlay);                                                         // [0x4c29090] Final|BlueprintCosmetic|Native|Public|BlueprintCallable|Const 
 	// Function /Script/FXWidget.FXUserWidgetBase.GetNiagaraFX
-	// class UNiagaraComponent* GetNiagaraFX();                                                                              // [0x4c592b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// class UNiagaraComponent* GetNiagaraFX();                                                                              // [0x4c29070] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 

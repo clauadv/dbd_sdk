@@ -19,7 +19,7 @@ public:
 /// Size: 0x0020 (0x000000 - 0x000020)
 struct FJsonObjectWrapper
 { 
-	SDK_UNDEFINED(16,4856) /* FString */               __um(JsonString);                                           // 0x0000   (0x0010)  
+	SDK_UNDEFINED(16,5250) /* FString */               __um(JsonString);                                           // 0x0000   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x10];                                      // 0x0010   (0x0010)  MISSED
 };
 

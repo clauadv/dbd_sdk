@@ -47,19 +47,19 @@ public:
 
 	/// Functions
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_MirrorsWalletWithdraw
-	// void DBD_MirrorsWalletWithdraw(FString CurrencyName, int32_t value);                                                  // [0x44bdad0] Final|Exec|Native|Public 
+	// void DBD_MirrorsWalletWithdraw(FString CurrencyName, int32_t value);                                                  // [0x44527c0] Final|Exec|Native|Public 
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_MirrorsWalletGetCurrency
-	// void DBD_MirrorsWalletGetCurrency(FString CurrencyName);                                                              // [0x44bd9e0] Final|Exec|Native|Public 
+	// void DBD_MirrorsWalletGetCurrency(FString CurrencyName);                                                              // [0x44526d0] Final|Exec|Native|Public 
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_MirrorsSaveTestValue
-	// void DBD_MirrorsSaveTestValue(FString StateName, int32_t Version);                                                    // [0x44bdad0] Final|Exec|Native|Public 
+	// void DBD_MirrorsSaveTestValue(FString StateName, int32_t Version);                                                    // [0x44527c0] Final|Exec|Native|Public 
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_MirrorsGetValue
-	// void DBD_MirrorsGetValue(FString StateName);                                                                          // [0x44bd9e0] Final|Exec|Native|Public 
+	// void DBD_MirrorsGetValue(FString StateName);                                                                          // [0x44526d0] Final|Exec|Native|Public 
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_IsDlcInstalled
-	// bool DBD_IsDlcInstalled(FString inString);                                                                            // [0x44bd930] Final|Exec|Native|Public 
+	// bool DBD_IsDlcInstalled(FString inString);                                                                            // [0x4452620] Final|Exec|Native|Public 
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_GrantPromoItems
-	// bool DBD_GrantPromoItems();                                                                                           // [0x44bd900] Final|Exec|Native|Public 
+	// bool DBD_GrantPromoItems();                                                                                           // [0x44525f0] Final|Exec|Native|Public 
 	// Function /Script/OnlinePresence.OnlinePresenceExternalCommands.DBD_GenerateTestItems
-	// bool DBD_GenerateTestItems();                                                                                         // [0x44bd900] Final|Exec|Native|Public 
+	// bool DBD_GenerateTestItems();                                                                                         // [0x44525f0] Final|Exec|Native|Public 
 };
 
 /// Class /Script/OnlinePresence.SteamConfig

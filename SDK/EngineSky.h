@@ -24,7 +24,7 @@ public:
 	unsigned char                                      UnknownData01_5[0x3];                                       // 0x0259   (0x0003)  MISSED
 	float                                              Sun_height;                                                 // 0x025C   (0x0004)  
 	float                                              Sun_brightness;                                             // 0x0260   (0x0004)  
-	float                                              Horizon_falloff;                                            // 0x0264   (0x0004)  
+	float                                              Horizon_Falloff;                                            // 0x0264   (0x0004)  
 	FLinearColor                                       Zenith_Color;                                               // 0x0268   (0x0010)  
 	FLinearColor                                       Horizon_color;                                              // 0x0278   (0x0010)  
 	FLinearColor                                       Cloud_color;                                                // 0x0288   (0x0010)  
@@ -40,10 +40,10 @@ public:
 
 	/// Functions
 	// Function /Engine/EngineSky/BP_Sky_Sphere.BP_Sky_Sphere_C.RefreshMaterial
-	// void RefreshMaterial();                                                                                               // [0x61c32d0] Public|BlueprintCallable|BlueprintEvent 
+	// void RefreshMaterial();                                                                                               // [0x61d2f50] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Engine/EngineSky/BP_Sky_Sphere.BP_Sky_Sphere_C.UpdateSunDirection
-	// void UpdateSunDirection();                                                                                            // [0x61c32d0] Public|BlueprintCallable|BlueprintEvent 
+	// void UpdateSunDirection();                                                                                            // [0x61d2f50] Public|BlueprintCallable|BlueprintEvent 
 	// Function /Engine/EngineSky/BP_Sky_Sphere.BP_Sky_Sphere_C.UserConstructionScript
-	// void UserConstructionScript();                                                                                        // [0x61c32d0] Event|Public|BlueprintCallable|BlueprintEvent 
+	// void UserConstructionScript();                                                                                        // [0x61d2f50] Event|Public|BlueprintCallable|BlueprintEvent 
 };
 

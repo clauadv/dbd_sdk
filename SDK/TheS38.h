@@ -54,29 +54,29 @@ public:
 
 	/// Functions
 	// Function /Script/TheS38.S38P01.Multicast_OnSecondaryPerkEffect
-	// void Multicast_OnSecondaryPerkEffect(bool shouldScream);                                                              // [0x5dffe40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSecondaryPerkEffect(bool shouldScream);                                                              // [0x5e0fd50] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheS38.S38P01.Multicast_OnAnimationStart
-	// void Multicast_OnAnimationStart();                                                                                    // [0x5905d40] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnAnimationStart();                                                                                    // [0x590b5d0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheS38.S38P01.GetUnsupportedItemAddons
-	// TArray<FName> GetUnsupportedItemAddons();                                                                             // [0x5dffe00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<FName> GetUnsupportedItemAddons();                                                                             // [0x5e0fd10] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P01.GetHasteDuration
-	// float GetHasteDuration();                                                                                             // [0x5dffdd0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteDuration();                                                                                             // [0x5e0fce0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P01.GetHasteAmount
-	// float GetHasteAmount();                                                                                               // [0x5b1cd70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteAmount();                                                                                               // [0x5b29a00] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P01.GetExposedDuration
-	// float GetExposedDuration();                                                                                           // [0x501b840] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExposedDuration();                                                                                           // [0x4ff9100] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P01.GetExhaustionDurationAtLevel
-	// float GetExhaustionDurationAtLevel();                                                                                 // [0x5de6650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExhaustionDurationAtLevel();                                                                                 // [0x5df5880] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P01.GetCollectableClasses
-	// TArray<UClass*> GetCollectableClasses();                                                                              // [0x5dffd40] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<UClass*> GetCollectableClasses();                                                                              // [0x5e0fc50] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P01.Cosmetic_MakeSurvivorScream
-	// void Cosmetic_MakeSurvivorScream();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_MakeSurvivorScream();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheS38.S38P01.Authority_OnPerkActivated
-	// void Authority_OnPerkActivated(FGameplayTag gameEventType, FGameEventData& GameEventData);                            // [0x5dffc30] Final|Native|Private|HasOutParms 
+	// void Authority_OnPerkActivated(FGameplayTag gameEventType, FGameEventData& GameEventData);                            // [0x5e0fb40] Final|Native|Private|HasOutParms 
 	// Function /Script/TheS38.S38P01.Authority_OnAnimationFinish
-	// void Authority_OnAnimationFinish();                                                                                   // [0x5dffc10] Final|Native|Private 
+	// void Authority_OnAnimationFinish();                                                                                   // [0x5e0fb20] Final|Native|Private 
 	// Function /Script/TheS38.S38P01.Authority_GiveSecondaryPerkEffect
-	// void Authority_GiveSecondaryPerkEffect();                                                                             // [0x5dffbf0] Final|Native|Private 
+	// void Authority_GiveSecondaryPerkEffect();                                                                             // [0x5e0fb00] Final|Native|Private 
 };
 
 /// Class /Script/TheS38.S38P01Interaction
@@ -110,29 +110,29 @@ public:
 
 	/// Functions
 	// Function /Script/TheS38.S38P02.OnSurvivorScream
-	// void OnSurvivorScream();                                                                                              // [0x5e006b0] Final|Native|Private 
+	// void OnSurvivorScream();                                                                                              // [0x5e105c0] Final|Native|Private 
 	// Function /Script/TheS38.S38P02.Multicast_MakeSurvivorScream
-	// void Multicast_MakeSurvivorScream(int32_t timesToScream);                                                             // [0x5023140] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_MakeSurvivorScream(int32_t timesToScream);                                                             // [0x5000cd0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/TheS38.S38P02.GetScreamDuration
-	// float GetScreamDuration();                                                                                            // [0x500aa70] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetScreamDuration();                                                                                            // [0x4fe8320] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.GetMinRandomScreamDelay
-	// float GetMinRandomScreamDelay();                                                                                      // [0x5e00690] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMinRandomScreamDelay();                                                                                      // [0x5e105a0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.GetMaxScreamCount
-	// int32_t GetMaxScreamCount();                                                                                          // [0x5e00670] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// int32_t GetMaxScreamCount();                                                                                          // [0x5e10580] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.GetMaxRandomScreamDelay
-	// float GetMaxRandomScreamDelay();                                                                                      // [0x5e00650] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetMaxRandomScreamDelay();                                                                                      // [0x5e10560] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.GetExtraAuraDurationPerExtraScream
-	// float GetExtraAuraDurationPerExtraScream();                                                                           // [0x500aa90] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetExtraAuraDurationPerExtraScream();                                                                           // [0x4fe8340] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.GetCooldownDuration
-	// float GetCooldownDuration();                                                                                          // [0x5e00630] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetCooldownDuration();                                                                                          // [0x5e10540] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.GetAuraDurationAtLevel
-	// float GetAuraDurationAtLevel();                                                                                       // [0x500a9b0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetAuraDurationAtLevel();                                                                                       // [0x4fe8260] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P02.EnableInteractions
-	// void EnableInteractions();                                                                                            // [0x5e00610] Final|Native|Private 
+	// void EnableInteractions();                                                                                            // [0x5e10520] Final|Native|Private 
 	// Function /Script/TheS38.S38P02.Cosmetic_MakeSurvivorScream
-	// void Cosmetic_MakeSurvivorScream();                                                                                   // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_MakeSurvivorScream();                                                                                   // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/TheS38.S38P02.Authority_OnIsApplicableChanged
-	// void Authority_OnIsApplicableChanged(class UGameplayModifierContainer* Container, bool IsApplicable);                 // [0x5e00540] Final|Native|Private 
+	// void Authority_OnIsApplicableChanged(class UGameplayModifierContainer* Container, bool IsApplicable);                 // [0x5e10450] Final|Native|Private 
 };
 
 /// Class /Script/TheS38.S38P02StatusEffect
@@ -158,13 +158,13 @@ public:
 
 	/// Functions
 	// Function /Script/TheS38.S38P03.GetHasteDurationAtLevel
-	// float GetHasteDurationAtLevel();                                                                                      // [0x500a9e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// float GetHasteDurationAtLevel();                                                                                      // [0x4fe8290] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 	// Function /Script/TheS38.S38P03.Authority_OnPickSelfUp
-	// void Authority_OnPickSelfUp(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                 // [0x5e00c50] Final|Native|Private|HasOutParms 
+	// void Authority_OnPickSelfUp(FGameplayTag GameplayTag, FGameEventData& GameEventData);                                 // [0x5e10b60] Final|Native|Private|HasOutParms 
 	// Function /Script/TheS38.S38P03.Authority_OnPerkActivated
-	// void Authority_OnPerkActivated(FGameplayTag gameEventType, FGameEventData& GameEventData);                            // [0x5e00b40] Final|Native|Private|HasOutParms 
+	// void Authority_OnPerkActivated(FGameplayTag gameEventType, FGameEventData& GameEventData);                            // [0x5e10a50] Final|Native|Private|HasOutParms 
 	// Function /Script/TheS38.S38P03.Authority_OnExitGatesPowered
-	// void Authority_OnExitGatesPowered(FGameplayTag gameEventType, FGameEventData& GameEventData);                         // [0x5e00a30] Final|Native|Private|HasOutParms 
+	// void Authority_OnExitGatesPowered(FGameplayTag gameEventType, FGameEventData& GameEventData);                         // [0x5e10940] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/TheS38.S38P03Interaction
@@ -188,11 +188,11 @@ public:
 
 	/// Functions
 	// Function /Script/TheS38.S38P03OnGroundStatusEffect.Authority_OnPickSelfUp
-	// void Authority_OnPickSelfUp(FGameplayTag gameEventType, FGameEventData& GameEventData);                               // [0x5e01200] Final|Native|Private|HasOutParms 
+	// void Authority_OnPickSelfUp(FGameplayTag gameEventType, FGameEventData& GameEventData);                               // [0x5e11110] Final|Native|Private|HasOutParms 
 	// Function /Script/TheS38.S38P03OnGroundStatusEffect.Authority_OnCamperHealthChange
-	// void Authority_OnCamperHealthChange(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);            // [0x5e01130] Final|Native|Private 
+	// void Authority_OnCamperHealthChange(ECamperDamageState oldDamageState, ECamperDamageState newDamageState);            // [0x5e11040] Final|Native|Private 
 	// Function /Script/TheS38.S38P03OnGroundStatusEffect.Authority_HealSelf
-	// void Authority_HealSelf();                                                                                            // [0x5e01110] Final|Native|Private 
+	// void Authority_HealSelf();                                                                                            // [0x5e11020] Final|Native|Private 
 };
 
 /// Class /Script/TheS38.SurvivorPerkAnimInstance

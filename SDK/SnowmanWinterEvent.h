@@ -80,9 +80,9 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.HideInSnowmanInteraction.Multicast_StopControllingSnowman
-	// void Multicast_StopControllingSnowman(class ADBDPlayer* Player);                                                      // [0x50ae490] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_StopControllingSnowman(class ADBDPlayer* Player);                                                      // [0x5092240] Net|NetReliableNative|Event|NetMulticast|Protected 
 	// Function /Script/SnowmanWinterEvent.HideInSnowmanInteraction.Multicast_StartControllingSnowman
-	// void Multicast_StartControllingSnowman(class ADBDPlayer* Player);                                                     // [0x59dba40] Net|NetReliableNative|Event|NetMulticast|Protected 
+	// void Multicast_StartControllingSnowman(class ADBDPlayer* Player);                                                     // [0x59e2080] Net|NetReliableNative|Event|NetMulticast|Protected 
 };
 
 /// Class /Script/SnowmanWinterEvent.KillerHideInSnowmanInteraction
@@ -114,7 +114,7 @@ public:
 	class USphereComponent*                            _playerDetector;                                            // 0x02F8   (0x0008)  
 	FGameplayTagContainer                              _tagsPreventingPlayerHit;                                   // 0x0300   (0x0020)  
 	class UPoolableProjectileComponent*                _poolableProjectileComponent;                               // 0x0320   (0x0008)  
-	SDK_UNDEFINED(80,5027) /* TSet<ABaseProjectile*> */ __um(_cachedProjectilesInGame);                            // 0x0328   (0x0050)  
+	SDK_UNDEFINED(80,5416) /* TSet<ABaseProjectile*> */ __um(_cachedProjectilesInGame);                            // 0x0328   (0x0050)  
 	unsigned char                                      UnknownData01_5[0xC];                                       // 0x0378   (0x000C)  MISSED
 	float                                              _poolDelayTime;                                             // 0x0384   (0x0004)  
 	unsigned char                                      UnknownData02_6[0x30];                                      // 0x0388   (0x0030)  MISSED
@@ -122,15 +122,15 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SnowballProjectile.OnPlayerDetectorHit
-	// void OnPlayerDetectorHit(class UPrimitiveComponent* PrimitiveComponent, FHitResult& HitResult);                       // [0x59dc1e0] Final|Native|Private|HasOutParms 
+	// void OnPlayerDetectorHit(class UPrimitiveComponent* PrimitiveComponent, FHitResult& HitResult);                       // [0x59e2820] Final|Native|Private|HasOutParms 
 	// Function /Script/SnowmanWinterEvent.SnowballProjectile.OnCollisionComponentHit
-	// void OnCollisionComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, FVector NormalImpulse, FHitResult& HitResult); // [0x59dc000] Final|Native|Private|HasOutParms|HasDefaults 
+	// void OnCollisionComponentHit(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComponent, FVector NormalImpulse, FHitResult& HitResult); // [0x59e2640] Final|Native|Private|HasOutParms|HasDefaults 
 	// Function /Script/SnowmanWinterEvent.SnowballProjectile.Cosmetic_OnSnowballThrown
-	// void Cosmetic_OnSnowballThrown(FVector& launchDirection, float launchSpeed);                                          // [0x61c32d0] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
+	// void Cosmetic_OnSnowballThrown(FVector& launchDirection, float launchSpeed);                                          // [0x61d2f50] BlueprintCosmetic|Event|Protected|HasOutParms|HasDefaults|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.SnowballProjectile.Cosmetic_OnPlayerHit
-	// void Cosmetic_OnPlayerHit(class ADBDPlayer* hitPlayer, FImpactInfo ImpactInfo);                                       // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnPlayerHit(class ADBDPlayer* hitPlayer, FImpactInfo ImpactInfo);                                       // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.SnowballProjectile.Cosmetic_OnCollisionHit
-	// void Cosmetic_OnCollisionHit(class AActor* hitActor, FImpactInfo ImpactInfo);                                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCollisionHit(class AActor* hitActor, FImpactInfo ImpactInfo);                                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Struct /Script/SnowmanWinterEvent.SnowmanSpawnData
@@ -162,15 +162,15 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SnowmanBase.OnRep_SpawnData
-	// void OnRep_SpawnData();                                                                                               // [0x59de8c0] Final|Native|Private 
+	// void OnRep_SpawnData();                                                                                               // [0x59e4f00] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanBase.OnRep_MaterialVariantIndex
-	// void OnRep_MaterialVariantIndex();                                                                                    // [0x59de8a0] Final|Native|Private 
+	// void OnRep_MaterialVariantIndex();                                                                                    // [0x59e4ee0] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanBase.OnRep_IsHidden
-	// void OnRep_IsHidden();                                                                                                // [0x59de880] Final|Native|Private 
+	// void OnRep_IsHidden();                                                                                                // [0x59e4ec0] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanBase.OnRep_IsAcquiredFromPool
-	// void OnRep_IsAcquiredFromPool();                                                                                      // [0x59de860] Final|Native|Private 
+	// void OnRep_IsAcquiredFromPool();                                                                                      // [0x59e4ea0] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanBase.Cosmetic_SetSnowmanMaterialVariant
-	// void Cosmetic_SetSnowmanMaterialVariant(int32_t materialVariantIndex);                                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_SetSnowmanMaterialVariant(int32_t materialVariantIndex);                                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 };
 
 /// Class /Script/SnowmanWinterEvent.Snowman
@@ -204,69 +204,69 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.Snowman.OnTransitionBackToKillerFinished
-	// void OnTransitionBackToKillerFinished(class ASlasherPlayer* killer);                                                  // [0x59dde20] Final|Native|Private 
+	// void OnTransitionBackToKillerFinished(class ASlasherPlayer* killer);                                                  // [0x59e4460] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.OnRep_SnowmanState
-	// void OnRep_SnowmanState();                                                                                            // [0x59dde00] Final|Native|Private 
+	// void OnRep_SnowmanState();                                                                                            // [0x59e4440] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.OnRep_SnowmanDestructionType
-	// void OnRep_SnowmanDestructionType();                                                                                  // [0x59ddde0] Final|Native|Private 
+	// void OnRep_SnowmanDestructionType();                                                                                  // [0x59e4420] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.OnRep_PlayerUsingSnowman
-	// void OnRep_PlayerUsingSnowman();                                                                                      // [0x59dddc0] Final|Native|Private 
+	// void OnRep_PlayerUsingSnowman();                                                                                      // [0x59e4400] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.OnRep_IsMoving
-	// void OnRep_IsMoving();                                                                                                // [0x59ddda0] Final|Native|Private 
+	// void OnRep_IsMoving();                                                                                                // [0x59e43e0] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.OnRep_HighFiveFollower
-	// void OnRep_HighFiveFollower();                                                                                        // [0x59ddd80] Final|Native|Private 
+	// void OnRep_HighFiveFollower();                                                                                        // [0x59e43c0] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.OnFinishedPlaying
-	// void OnFinishedPlaying(FGameplayTag gameEventType, FGameEventData& GameEventData);                                    // [0x59ddc70] Final|Native|Public|HasOutParms 
+	// void OnFinishedPlaying(FGameplayTag gameEventType, FGameEventData& GameEventData);                                    // [0x59e42b0] Final|Native|Public|HasOutParms 
 	// Function /Script/SnowmanWinterEvent.Snowman.Multicast_StartSnowmanDestruction
-	// void Multicast_StartSnowmanDestruction(ESnowmanDestructionType snowmanDestructionType, bool unlockRequirementsSatisfiedForSurvivor, bool unlockRequirementsSatisfiedForKiller, class ADBDPlayer* playerInSnowman); // [0x59ddb00] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_StartSnowmanDestruction(ESnowmanDestructionType snowmanDestructionType, bool unlockRequirementsSatisfiedForSurvivor, bool unlockRequirementsSatisfiedForKiller, class ADBDPlayer* playerInSnowman); // [0x59e4140] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.Multicast_OnSnowmanStartBeingUsedBySurvivor
-	// void Multicast_OnSnowmanStartBeingUsedBySurvivor(class ACamperPlayer* survivorUsingSnowman);                          // [0x57fd120] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSnowmanStartBeingUsedBySurvivor(class ACamperPlayer* survivorUsingSnowman);                          // [0x5800560] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.Multicast_OnSnowmanStartBeingUsedByKiller
-	// void Multicast_OnSnowmanStartBeingUsedByKiller(class ASlasherPlayer* killerUsingSnowman);                             // [0x59dda70] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSnowmanStartBeingUsedByKiller(class ASlasherPlayer* killerUsingSnowman);                             // [0x59e40b0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.Multicast_OnSnowmanStartBeingControlledBySurvivor
-	// void Multicast_OnSnowmanStartBeingControlledBySurvivor(class ACamperPlayer* survivorUsingSnowman);                    // [0x58b1500] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSnowmanStartBeingControlledBySurvivor(class ACamperPlayer* survivorUsingSnowman);                    // [0x58b6c30] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.Multicast_OnSnowmanStartBeingControlledByKiller
-	// void Multicast_OnSnowmanStartBeingControlledByKiller(class ASlasherPlayer* killerUsingSnowman);                       // [0x59dd9e0] Final|Net|NetReliableNative|Event|NetMulticast|Private 
+	// void Multicast_OnSnowmanStartBeingControlledByKiller(class ASlasherPlayer* killerUsingSnowman);                       // [0x59e4020] Final|Net|NetReliableNative|Event|NetMulticast|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.Multicast_DrawDebugCollisionCheck
-	// void Multicast_DrawDebugCollisionCheck(FVector BoxExtent, float debugLifetime);                                       // [0x59dd900] Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults|Const 
+	// void Multicast_DrawDebugCollisionCheck(FVector BoxExtent, float debugLifetime);                                       // [0x59e3f40] Net|NetReliableNative|Event|NetMulticast|Public|HasDefaults|Const 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanStartBeingUsedBySurvivor
-	// void Cosmetic_OnSnowmanStartBeingUsedBySurvivor(class ACamperPlayer* survivorUsingSnowman);                           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanStartBeingUsedBySurvivor(class ACamperPlayer* survivorUsingSnowman);                           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanStartBeingUsedByKiller
-	// void Cosmetic_OnSnowmanStartBeingUsedByKiller(class ASlasherPlayer* killerUsingSnowman);                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanStartBeingUsedByKiller(class ASlasherPlayer* killerUsingSnowman);                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanStartBeingControlledBySurvivor
-	// void Cosmetic_OnSnowmanStartBeingControlledBySurvivor(class ACamperPlayer* survivorUsingSnowman);                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanStartBeingControlledBySurvivor(class ACamperPlayer* survivorUsingSnowman);                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanStartBeingControlledByKiller
-	// void Cosmetic_OnSnowmanStartBeingControlledByKiller(class ASlasherPlayer* killerUsingSnowman);                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanStartBeingControlledByKiller(class ASlasherPlayer* killerUsingSnowman);                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanSpawned
-	// void Cosmetic_OnSnowmanSpawned();                                                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanSpawned();                                                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanHighFive
-	// void Cosmetic_OnSnowmanHighFive(class ASnowman* otherSnowman);                                                        // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanHighFive(class ASnowman* otherSnowman);                                                        // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedBySurvivorRunExit
-	// void Cosmetic_OnSnowmanDestroyedBySurvivorRunExit(class ACamperPlayer* survivorUsingSnowman);                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedBySurvivorRunExit(class ACamperPlayer* survivorUsingSnowman);                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedByNonDamagingAttackWhileEmpty
-	// void Cosmetic_OnSnowmanDestroyedByNonDamagingAttackWhileEmpty();                                                      // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedByNonDamagingAttackWhileEmpty();                                                      // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedByNonDamagingAttackWhileControlled
-	// void Cosmetic_OnSnowmanDestroyedByNonDamagingAttackWhileControlled(class ADBDPlayer* playerUsingThisSnowman);         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedByNonDamagingAttackWhileControlled(class ADBDPlayer* playerUsingThisSnowman);         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedByKillerCancelExit
-	// void Cosmetic_OnSnowmanDestroyedByKillerCancelExit();                                                                 // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedByKillerCancelExit();                                                                 // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedByKillerAttackExit
-	// void Cosmetic_OnSnowmanDestroyedByKillerAttackExit(class ASlasherPlayer* killerUsingSnowman);                         // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedByKillerAttackExit(class ASlasherPlayer* killerUsingSnowman);                         // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedByAttackWhileEmpty
-	// void Cosmetic_OnSnowmanDestroyedByAttackWhileEmpty(class ASlasherPlayer* killerAttackingSnowman);                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedByAttackWhileEmpty(class ASlasherPlayer* killerAttackingSnowman);                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnSnowmanDestroyedByAttackWhileControlled
-	// void Cosmetic_OnSnowmanDestroyedByAttackWhileControlled(class ACamperPlayer* survivorUsingSnowman, class ASlasherPlayer* killerAttackingSnowman); // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedByAttackWhileControlled(class ACamperPlayer* survivorUsingSnowman, class ASlasherPlayer* killerAttackingSnowman); // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnKillerFinishTransitionOutOfSnowman
-	// void Cosmetic_OnKillerFinishTransitionOutOfSnowman(class ASlasherPlayer* killer);                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnKillerFinishTransitionOutOfSnowman(class ASlasherPlayer* killer);                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnCosmeticUnlockRequirementsSatisfiedForSurvivor
-	// void Cosmetic_OnCosmeticUnlockRequirementsSatisfiedForSurvivor(class ACamperPlayer* survivorUsingSnowman);            // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCosmeticUnlockRequirementsSatisfiedForSurvivor(class ACamperPlayer* survivorUsingSnowman);            // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnCosmeticUnlockRequirementsSatisfiedForKiller
-	// void Cosmetic_OnCosmeticUnlockRequirementsSatisfiedForKiller(class ASlasherPlayer* killerAttackingSnowman);           // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnCosmeticUnlockRequirementsSatisfiedForKiller(class ASlasherPlayer* killerAttackingSnowman);           // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Cosmetic_OnAdditionalActorHidden
-	// void Cosmetic_OnAdditionalActorHidden(class AActor* actorToHide);                                                     // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnAdditionalActorHidden(class AActor* actorToHide);                                                     // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.Snowman.Authority_OnSnowmanHandOverlapEnd
-	// void Authority_OnSnowmanHandOverlapEnd(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x59dd7a0] Final|Native|Private 
+	// void Authority_OnSnowmanHandOverlapEnd(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex); // [0x59e3de0] Final|Native|Private 
 	// Function /Script/SnowmanWinterEvent.Snowman.Authority_OnSnowmanHandOverlapBegin
-	// void Authority_OnSnowmanHandOverlapBegin(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x59dd580] Final|Native|Private|HasOutParms 
+	// void Authority_OnSnowmanHandOverlapBegin(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32_t OtherBodyIndex, bool bFromSweep, FHitResult& SweepResult); // [0x59e3bc0] Final|Native|Private|HasOutParms 
 };
 
 /// Class /Script/SnowmanWinterEvent.SnowmanAnimInstance
@@ -284,14 +284,14 @@ public:
 	bool                                               _isBeingDestroyedDueToKillerAttackWhileEmpty;               // 0x02C7   (0x0001)  
 	bool                                               _isSurvivorUsingSnowmanMoving;                              // 0x02C8   (0x0001)  
 	unsigned char                                      UnknownData00_5[0x3];                                       // 0x02C9   (0x0003)  MISSED
-	SDK_UNDEFINED(8,5028) /* TWeakObjectPtr<ASnowman*> */ __um(_snowman);                                          // 0x02CC   (0x0008)  
-	SDK_UNDEFINED(8,5029) /* TWeakObjectPtr<ADBDPlayer*> */ __um(_playerUsingSnowman);                             // 0x02D4   (0x0008)  
+	SDK_UNDEFINED(8,5417) /* TWeakObjectPtr<ASnowman*> */ __um(_snowman);                                          // 0x02CC   (0x0008)  
+	SDK_UNDEFINED(8,5418) /* TWeakObjectPtr<ADBDPlayer*> */ __um(_playerUsingSnowman);                             // 0x02D4   (0x0008)  
 	unsigned char                                      UnknownData01_6[0x4];                                       // 0x02DC   (0x0004)  MISSED
 
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SnowmanAnimInstance.Cosmetic_OnSnowmanDestroyedEvent
-	// void Cosmetic_OnSnowmanDestroyedEvent(ESnowmanDestructionType snowmanDestructionType);                                // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
+	// void Cosmetic_OnSnowmanDestroyedEvent(ESnowmanDestructionType snowmanDestructionType);                                // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintCallable|BlueprintEvent 
 };
 
 /// Class /Script/SnowmanWinterEvent.SnowmanAttackableComponent
@@ -319,7 +319,7 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SnowmanKillerPerspectiveChangeComponent.SetFirstPersonTargetData
-	// void SetFirstPersonTargetData(class ASlasherPlayer* killer);                                                          // [0x59deac0] Final|Native|Private 
+	// void SetFirstPersonTargetData(class ASlasherPlayer* killer);                                                          // [0x59e5100] Final|Native|Private 
 };
 
 /// Struct /Script/SnowmanWinterEvent.SnowmanSpawnLocationData
@@ -369,7 +369,7 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SnowmanSpawnPlacementStrategy.Authority_OnIntroCompletedOrLevelReadyToPlay
-	// void Authority_OnIntroCompletedOrLevelReadyToPlay();                                                                  // [0x59dee90] Final|Native|Private 
+	// void Authority_OnIntroCompletedOrLevelReadyToPlay();                                                                  // [0x59e54d0] Final|Native|Private 
 };
 
 /// Class /Script/SnowmanWinterEvent.SnowmanWinterEventComponent
@@ -383,13 +383,13 @@ public:
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SnowmanWinterEventComponent.DBD_Winter2021VisualizeCalculatedSpawnData
-	// void DBD_Winter2021VisualizeCalculatedSpawnData(float numberOfSeconds);                                               // [0x59df2e0] Final|Exec|Native|Private 
+	// void DBD_Winter2021VisualizeCalculatedSpawnData(float numberOfSeconds);                                               // [0x59e5920] Final|Exec|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanWinterEventComponent.DBD_Winter2021ShowSnowmenSpawnCollisionChecks
-	// void DBD_Winter2021ShowSnowmenSpawnCollisionChecks(float numberOfSeconds);                                            // [0x59df260] Final|Exec|Native|Private 
+	// void DBD_Winter2021ShowSnowmenSpawnCollisionChecks(float numberOfSeconds);                                            // [0x59e58a0] Final|Exec|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanWinterEventComponent.DBD_Winter2021RecalculateSpawnPoints
-	// void DBD_Winter2021RecalculateSpawnPoints();                                                                          // [0x59df240] Final|Exec|Native|Private 
+	// void DBD_Winter2021RecalculateSpawnPoints();                                                                          // [0x59e5880] Final|Exec|Native|Private 
 	// Function /Script/SnowmanWinterEvent.SnowmanWinterEventComponent.DBD_Winter2021ForceRespawnAllSnowmen
-	// void DBD_Winter2021ForceRespawnAllSnowmen();                                                                          // [0x59df220] Final|Exec|Native|Private 
+	// void DBD_Winter2021ForceRespawnAllSnowmen();                                                                          // [0x59e5860] Final|Exec|Native|Private 
 };
 
 /// Class /Script/SnowmanWinterEvent.SnowmanWinterEventPlayerComponent
@@ -398,7 +398,7 @@ class USnowmanWinterEventPlayerComponent : public UActorComponent
 { 
 public:
 	FDBDTunableRowHandle                               _maxTrackedTimeSinceSnowmanExit;                            // 0x00B8   (0x0028)  
-	SDK_UNDEFINED(80,5030) /* TSet<TWeakObjectPtr<ADBDPlayer*>> */ __um(_previouslyHighFivedPlayers);              // 0x00E0   (0x0050)  
+	SDK_UNDEFINED(80,5419) /* TSet<TWeakObjectPtr<ADBDPlayer*>> */ __um(_previouslyHighFivedPlayers);              // 0x00E0   (0x0050)  
 	unsigned char                                      UnknownData00_6[0x50];                                      // 0x0130   (0x0050)  MISSED
 };
 
@@ -415,15 +415,15 @@ public:
 	FDBDTunableRowHandle                               _timeToZoomExit;                                            // 0x07C0   (0x0028)  
 	TArray<FGameplayTag>                               _nonDamagingKillerSnowmanDestroyingEvents;                  // 0x07E8   (0x0010)  
 	TArray<FGameplayTag>                               _gameEventsToCauseScream;                                   // 0x07F8   (0x0010)  
-	SDK_UNDEFINED(16,5031) /* TArray<FString> */       __um(_overridingKillerInteractionIds);                      // 0x0808   (0x0010)  
+	SDK_UNDEFINED(16,5420) /* TArray<FString> */       __um(_overridingKillerInteractionIds);                      // 0x0808   (0x0010)  
 	bool                                               _shouldScreamOnExit;                                        // 0x0818   (0x0001)  
 	unsigned char                                      UnknownData01_6[0x47];                                      // 0x0819   (0x0047)  MISSED
 
 
 	/// Functions
 	// Function /Script/SnowmanWinterEvent.SurvivorHideInSnowmanInteraction.Cosmetic_OnSurvivorScreamFromExit
-	// void Cosmetic_OnSurvivorScreamFromExit(class ADBDPlayer* playerExiting);                                              // [0x61c32d0] BlueprintCosmetic|Event|Protected|BlueprintEvent 
+	// void Cosmetic_OnSurvivorScreamFromExit(class ADBDPlayer* playerExiting);                                              // [0x61d2f50] BlueprintCosmetic|Event|Protected|BlueprintEvent 
 	// Function /Script/SnowmanWinterEvent.SurvivorHideInSnowmanInteraction.Authority_OnDamageStateChanged
-	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x59df740] Final|Native|Private 
+	// void Authority_OnDamageStateChanged(ECamperDamageState oldDamageState, ECamperDamageState CurrentDamageState);        // [0x59e5d80] Final|Native|Private 
 };
 

@@ -22,7 +22,7 @@ struct FOverlayItem
 { 
 	FTimespan                                          starttime;                                                  // 0x0000   (0x0008)  
 	FTimespan                                          EndTime;                                                    // 0x0008   (0x0008)  
-	SDK_UNDEFINED(16,4923) /* FString */               __um(Text);                                                 // 0x0010   (0x0010)  
+	SDK_UNDEFINED(16,5312) /* FString */               __um(Text);                                                 // 0x0010   (0x0010)  
 	FVector2D                                          position;                                                   // 0x0020   (0x0008)  
 };
 
@@ -40,6 +40,6 @@ class ULocalizedOverlays : public UOverlays
 { 
 public:
 	class UBasicOverlays*                              DefaultOverlays;                                            // 0x0030   (0x0008)  
-	SDK_UNDEFINED(80,4924) /* TMap<FString, UBasicOverlays*> */ __um(LocaleToOverlaysMap);                         // 0x0038   (0x0050)  
+	SDK_UNDEFINED(80,5313) /* TMap<FString, UBasicOverlays*> */ __um(LocaleToOverlaysMap);                         // 0x0038   (0x0050)  
 };
 

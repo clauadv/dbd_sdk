@@ -63,25 +63,25 @@ public:
 	unsigned char                                      UnknownData02_5[0x13];                                      // 0x0385   (0x0013)  MISSED
 	class UGMAdaptiveShadowMapAtlas*                   _atlas;                                                     // 0x0398   (0x0008)  
 	class UGMAdaptiveShadowMapController*              _controller;                                                // 0x03A0   (0x0008)  
-	SDK_UNDEFINED(80,3594) /* TMap<UGMAdaptiveShadowMapSourceComponent*, UGMAdaptiveShadowMapSource*> */ __um(_shadowMapSources); // 0x03A8   (0x0050)  
+	SDK_UNDEFINED(80,3685) /* TMap<UGMAdaptiveShadowMapSourceComponent*, UGMAdaptiveShadowMapSource*> */ __um(_shadowMapSources); // 0x03A8   (0x0050)  
 	class UMaterialInstanceDynamic*                    _lightFunctionMaterialInstance;                             // 0x03F8   (0x0008)  
 
 
 	/// Functions
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.RebuildAtlas
-	// void RebuildAtlas();                                                                                                  // [0x598a4e0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RebuildAtlas();                                                                                                  // [0x5991600] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.RebuildAllAtlases
-	// void RebuildAllAtlases();                                                                                             // [0x598a4c0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void RebuildAllAtlases();                                                                                             // [0x59915e0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.IsControllerDonePreallocatingTiles
-	// bool IsControllerDonePreallocatingTiles();                                                                            // [0x598a490] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// bool IsControllerDonePreallocatingTiles();                                                                            // [0x59915b0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.GetTileSize
-	// int32_t GetTileSize();                                                                                                // [0x598a460] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// int32_t GetTileSize();                                                                                                // [0x5991580] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.GetTileCountY
-	// int32_t GetTileCountY();                                                                                              // [0x598a430] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// int32_t GetTileCountY();                                                                                              // [0x5991550] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.GetTileCountX
-	// int32_t GetTileCountX();                                                                                              // [0x598a400] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// int32_t GetTileCountX();                                                                                              // [0x5991520] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapControllerComponent.DumpDebugInfo
-	// void DumpDebugInfo();                                                                                                 // [0x598a3e0] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
+	// void DumpDebugInfo();                                                                                                 // [0x5991500] Final|BlueprintCosmetic|Native|Public|BlueprintCallable 
 };
 
 /// Class /Script/GraphicsExtensions.GMAdaptiveShadowMapSource
@@ -111,7 +111,7 @@ public:
 
 	/// Functions
 	// Function /Script/GraphicsExtensions.GMAdaptiveShadowMapSourceComponent.SetLightRadiusWithBounds
-	// void SetLightRadiusWithBounds(FVector BoundingSphereCenter, float BoundingSphereRadius);                              // [0x598a900] Final|Native|Public|HasDefaults|BlueprintCallable 
+	// void SetLightRadiusWithBounds(FVector BoundingSphereCenter, float BoundingSphereRadius);                              // [0x5991a20] Final|Native|Public|HasDefaults|BlueprintCallable 
 };
 
 /// Class /Script/GraphicsExtensions.GMAdaptiveShadowMapSourceComponentSpawner
@@ -189,6 +189,6 @@ public:
 
 	/// Functions
 	// Function /Script/GraphicsExtensions.GMShadowDepthCaptureComponent.RequestCaptureUpdate
-	// void RequestCaptureUpdate();                                                                                          // [0x598b4b0] Final|Native|Public|BlueprintCallable 
+	// void RequestCaptureUpdate();                                                                                          // [0x59925d0] Final|Native|Public|BlueprintCallable 
 };
 

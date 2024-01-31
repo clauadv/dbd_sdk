@@ -18,6 +18,6 @@ public:
 
 	/// Functions
 	// Function /Script/AutomationUtils.AutomationUtilsBlueprintLibrary.TakeGameplayAutomationScreenshot
-	// void TakeGameplayAutomationScreenshot(FString ScreenshotName, float MaxGlobalError, float MaxLocalError, FString MapNameOverride); // [0x4c7eaf0] Final|Native|Static|Public|BlueprintCallable 
+	// void TakeGameplayAutomationScreenshot(FString ScreenshotName, float MaxGlobalError, float MaxLocalError, FString MapNameOverride); // [0x4c4eab0] Final|Native|Static|Public|BlueprintCallable 
 };
 

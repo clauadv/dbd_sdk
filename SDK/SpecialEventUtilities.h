@@ -17,21 +17,21 @@
 class ARespawnableInteractable : public AInteractable
 { 
 public:
-	SDK_UNDEFINED(16,3533) /* FMulticastInlineDelegate */ __um(OnInteractionEnded);                                // 0x0338   (0x0010)  
-	SDK_UNDEFINED(16,3534) /* FMulticastInlineDelegate */ __um(OnIsInteractingChanged);                            // 0x0348   (0x0010)  
+	SDK_UNDEFINED(16,3624) /* FMulticastInlineDelegate */ __um(OnInteractionEnded);                                // 0x0338   (0x0010)  
+	SDK_UNDEFINED(16,3625) /* FMulticastInlineDelegate */ __um(OnIsInteractingChanged);                            // 0x0348   (0x0010)  
 	bool                                               _isHidden;                                                  // 0x0358   (0x0001)  
 	unsigned char                                      UnknownData00_6[0x7];                                       // 0x0359   (0x0007)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventUtilities.RespawnableInteractable.OnUnhidden
-	// void OnUnhidden();                                                                                                    // [0x43c3630] Native|Event|Protected|BlueprintEvent 
+	// void OnUnhidden();                                                                                                    // [0x4360f30] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventUtilities.RespawnableInteractable.OnRep_IsHidden
-	// void OnRep_IsHidden();                                                                                                // [0x59e2a60] Final|Native|Private 
+	// void OnRep_IsHidden();                                                                                                // [0x59e90a0] Final|Native|Private 
 	// Function /Script/SpecialEventUtilities.RespawnableInteractable.OnHidden
-	// void OnHidden();                                                                                                      // [0x58e20b0] Native|Event|Protected|BlueprintEvent 
+	// void OnHidden();                                                                                                      // [0x58e8890] Native|Event|Protected|BlueprintEvent 
 	// Function /Script/SpecialEventUtilities.RespawnableInteractable.IsHidden
-	// bool IsHidden();                                                                                                      // [0x59e2a30] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
+	// bool IsHidden();                                                                                                      // [0x59e9070] Final|Native|Private|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SpecialEventUtilities.RespawningEventComponent
@@ -45,9 +45,9 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventUtilities.RespawningEventComponent.DBD_ForceRespawnSpecialEventObject
-	// void DBD_ForceRespawnSpecialEventObject();                                                                            // [0x45fe020] Final|Exec|Native|Private 
+	// void DBD_ForceRespawnSpecialEventObject();                                                                            // [0x4592da0] Final|Exec|Native|Private 
 	// Function /Script/SpecialEventUtilities.RespawningEventComponent.Authority_OnIsInteractingWithAnyRespawnableInteractableChanged
-	// void Authority_OnIsInteractingWithAnyRespawnableInteractableChanged(class ARespawnableInteractable* RespawnableInteractable, bool IsInteracting); // [0x59e34f0] Native|Protected     
+	// void Authority_OnIsInteractingWithAnyRespawnableInteractableChanged(class ARespawnableInteractable* RespawnableInteractable, bool IsInteracting); // [0x59e9b30] Native|Protected     
 };
 
 /// Class /Script/SpecialEventUtilities.DebugTimedRespawnableTriggerCountdownTimer
@@ -61,7 +61,7 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventUtilities.DebugTimedRespawnableTriggerCountdownTimer.OnRep_CountdownTimeRemaining
-	// void OnRep_CountdownTimeRemaining();                                                                                  // [0x45fe020] Final|Native|Private 
+	// void OnRep_CountdownTimeRemaining();                                                                                  // [0x4592da0] Final|Native|Private 
 };
 
 /// Class /Script/SpecialEventUtilities.DisableActorOnEventsComponent
@@ -90,9 +90,9 @@ public:
 
 	/// Functions
 	// Function /Script/SpecialEventUtilities.InteractionRespawnableTrigger.Authority_OnNewRespawnableSubscribed
-	// void Authority_OnNewRespawnableSubscribed(class ARespawnableInteractable* newRespawnableInteractable);                // [0x59e24d0] Final|Native|Public  
+	// void Authority_OnNewRespawnableSubscribed(class ARespawnableInteractable* newRespawnableInteractable);                // [0x59e8b10] Final|Native|Public  
 	// Function /Script/SpecialEventUtilities.InteractionRespawnableTrigger.Authority_OnInteractionEnded
-	// void Authority_OnInteractionEnded(class ARespawnableInteractable* RespawnableInteractable);                           // [0x59e2440] Native|Public        
+	// void Authority_OnInteractionEnded(class ARespawnableInteractable* RespawnableInteractable);                           // [0x59e8a80] Native|Public        
 };
 
 /// Class /Script/SpecialEventUtilities.PlayerEventDispatcher
@@ -108,16 +108,16 @@ public:
 class URespawnablePositioner : public UActorComponent
 { 
 public:
-	SDK_UNDEFINED(16,3535) /* FMulticastInlineDelegate */ __um(OnIsInteractingWithAnyRespawnableInteractableChangedEvent); // 0x00B8   (0x0010)  
+	SDK_UNDEFINED(16,3626) /* FMulticastInlineDelegate */ __um(OnIsInteractingWithAnyRespawnableInteractableChangedEvent); // 0x00B8   (0x0010)  
 	TArray<class ARespawnableInteractable*>            _respawnableInteractables;                                  // 0x00C8   (0x0010)  
 	unsigned char                                      UnknownData00_6[0x8];                                       // 0x00D8   (0x0008)  MISSED
 
 
 	/// Functions
 	// Function /Script/SpecialEventUtilities.RespawnablePositioner.Authority_OnIsInteractingChangedEvent
-	// void Authority_OnIsInteractingChangedEvent(class ARespawnableInteractable* RespawnableInteractable, bool IsInteracting); // [0x59e2d30] Final|Native|Private 
+	// void Authority_OnIsInteractingChangedEvent(class ARespawnableInteractable* RespawnableInteractable, bool IsInteracting); // [0x59e9370] Final|Native|Private 
 	// Function /Script/SpecialEventUtilities.RespawnablePositioner.Authority_GetRespawnables
-	// TArray<ARespawnableInteractable*> Authority_GetRespawnables();                                                        // [0x59e2ca0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
+	// TArray<ARespawnableInteractable*> Authority_GetRespawnables();                                                        // [0x59e92e0] Final|Native|Public|BlueprintCallable|BlueprintPure|Const 
 };
 
 /// Class /Script/SpecialEventUtilities.RespawnableStrategy
